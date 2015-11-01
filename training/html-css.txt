@@ -1,0 +1,138 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-05-23T16:32:47+05:30
+
+====== html-css ======
+Created Friday 23 May 2014
+
+
+~~why different versions of html? why we are using xhtml?~~
+
+In <title> we are using & and when i remove it it gives error
+use &amp; instead
+
+why <META> tag is used. is it valid???
+No
+
+why xhtml is used
+
+why different versions of html? which one is best? which one are you using and why?
+what will happen if we don't use xmlns="http://www.w3.org/1999/xhtml"?
+how do we know wchih version to use?
+
+we tell browser which version we are using by DOCTYPE 
+
+In <title> we are using & and when i remove it it gives error
+why <META>, <SCRIPT> tag is used. is it valid???
+=> it should be lowercase
+
+can we use our defined attributes in tags; means with any tag like <b> tag?
+yes we can but it will not be validated by w3c
+
+who defines the value of attributes me or Design maker?
+what are indentation rules
+in div how do we know whether this class if preexisting 
+
+we have to define it ourselves.
+
+why blank <em></em> tags are used
+we add css class to these empty tags to put some image as background or some other styling...
+
+what are different changes that arise in browsers. what we do to make it all browser-compatible
+How to use developer tools? are they same in all browsers
+
+understand what element is to be used by identifying and what type of container to be used
+
+why hidden input types are used
+
+~~we are giving image src how is it changing continuously?~~
+~~because link is php[1.2] [2.1]~~
+
+~~when to use table and list~~
+we generally use div
+
+how space is present here between two divs [1.1]
+because of float in div
+
+how to know how much pixel to be given for size or padding
+we use photoshop to get the exact height, width of pics, it is useful in sprite also
+desiner creates UI and gives to coder.  coder analyzes UI in photoshop and gets to know font-family, size background info etc...
+
+
+in search jobs how items shown using scroll down are shown
+
+important tags:
+meta -> http-equiv, name, property, content
+link -> rel, href
+script -> language, src, type, 
+ div -> id, class, style
+table --> border, cellpadding, cellspacing, 
+TR, TD
+ noscript
+ form -> post
+ lists - ul, li
+ a -> href, style, target
+p -> class
+em
+span
+strong
+img -> height, width, style, alt, src, style
+iframe
+label
+input -> class, type
+textarea
+
+[ ] In HTML 4.01, the <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML.
+	 HTML5 is not based on SGML, and therefore does not require a reference to a DTD.
+
+**block vs inline**
+block: tags used to define the structure. such as <div>, <table>, <list>. they have default **display: block**... 
+		so they acquire width of their parent block. they can contain other block and inline elements
+		
+inline: tags used to show the content. such as <p>, <a> . they have default **display: inline... **
+		so they acquire width according to their content. next element is put just after this element.
+		they can contain inline elements only.
+		
+**using sprite**
+rather than sending each image differently we create single image in photoshop and send it. generally we get icon from this image
+
+**margin and padding**
+padding is within the border; it is internal to container. 
+margin is external to border; container is effected in this case.
+
+order of sizes is clockwise: Up Right Down Left
+
+**display:**
+display: inline      => shows inline elements
+	     : block	=> shows block elements
+		: none => element is not displayed
+	: inline-block => displays elements inline but top and down margin changes are allowed
+
+css can be external: in .css file external             ( lowest priority)
+		   internal: on the top of html page   ( high priority)
+		   nline: using style tag                               ( highest priority)
+
+**float( providing space between block elements):**
+rather than spacing between inline elements we use float with block elements. so these elements rather than going in vertical 
+become horizontal. 
+eg: float: left float:right 
+so space is automatically provided between these block elements
+
+@media tag can be used to define page layout according to device
+
+how css is applied to html elements
+http://snook.ca/archives/html_and_css/css-parent-selectors
+
+specifity play good role in defining css rules:
+http://stackoverflow.com/questions/13532939/how-do-browsers-process-and-apply-css-styles-to-dom-elements
+
+how to structure css files:
+http://stackoverflow.com/questions/182528/is-this-how-you-would-structure-your-css-stylesheet
+
+height is hieght of container while line-height is height b/w top of first line to top of second line
+
+margin vs padding: http://stackoverflow.com/questions/5958699/difference-between-margin-and-padding
+
+http://www.w3.org/TR/selectors/ defines the selectors for css
+
+inline vs inline-block: http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block

@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-05-22T18:27:32+05:30
+
+====== kibana ======
+Created Friday 22 May 2015
+
+localhost:5601
+
+we can point to only one elasticsearch_url in its config , beacuse it can get info about cluser nodes
+
+queries will be acc to GMT, so some data may not be visible which has time future of GMT

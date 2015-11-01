@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-04-13T17:41:41+05:30
+
+====== nginx ======
+Created Monday 13 April 2015
+
+https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts
+very well defines basiscs o

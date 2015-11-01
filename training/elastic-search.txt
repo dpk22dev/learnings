@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-05-22T18:27:27+05:30
+
+====== elastic-search ======
+Created Friday 22 May 2015
+
+listening: localhost:9200
+
+
+in kopf
+it will autodetect type of extra coloumn and allow insertion
+
+
+for allowing 
+[[/_cluster/settings]] transient
+
+for search:
+_search 
+[[/nodename/collection/_search]] 
+
+
