@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-06-19T12:29:00+05:30
+
+====== wp stack ======
+Created Thursday 19 June 2014
+
+why we are not using local-config.php
+
+we can use scm for svn configuration
+
+***** capistrano *****
+Capistrano has two main commands: 
+cap: which is used for viewing and running the tasks
+capify: which is used to set up a Rails project for use with Capistrano.
+
+**Capfile:** is to Capistrano as Makefile is to make and Rakefile is to rake. Capistrano expects a Capfile to be present and to contain the tasks or to include a Ruby file that does. 
+
+***** links *****
+http://www.knewton.com/tech/blog/2012/07/announcing-wp-stack/
+http://theme.fm/2011/08/tutorial-deploying-wordpress-with-capistrano-2082/
+wp-stack configuration:
+http://design.zhiwan.is/setting-up-mark-jaquiths-wp-stacks-and-wp-skeleton-for-capristrano-deployment/
+wordpress with capistrano
+http://marketpress.com/2013/deploying-wordpress-with-git-and-capistrano/
+configuring capistrano for ruby on rails
+http://www.linuxjournal.com/magazine/using-capistrano
+configuring capistrano for php
+http://www.claytonlz.com/2008/08/php-deployment-with-capistrano/
+
+

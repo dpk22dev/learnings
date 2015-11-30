@@ -1,0 +1,167 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-05-22T18:27:27+05:30
+
+====== elastic-search ======
+Created Friday 22 May 2015
+
+IR system
+
+listening: localhost:9200
+
+uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
+so we don;t need locking documents, which would have been difficult in distributed system
+
+PUT [[/college/student/1?version=3]] -d{  ... } if we change older version it will returen 409 conflict
+
+POST [[/college/student/1/_update]] -d { ... } , 
+GET -> change -> PUT
+herewe can pass retry_on_conflict: meaning in distributed environment if someone else has changed before us, version# will change so try this many times
+
+bulk indexing and searching is better than document by document
+
+pagination /_search?size=5&from=5
+
+/_search?q=name:deepak+sem:1
+sem must be present, need % encoding also
+
+[[/college/student/_mapping]] gives info of schema; datatype for each field
+we can update mapping by just PUT new json object for mapping, but we can't change existing fields
+
+process:
+tokenization: for full text search, it gets separated words/terms from document, sorts them, create DS like how many times term appears in that document
+term | doc1 | doc2 | doc3
+
+term normalization is used while inserting data, stemming, words with same meaning etc....
+term normalization is done at query time too
+
+this process of tokenization and normalization is called **analysis**
+
+so analyzer consist of tokenizer + token filters
+
+fields can be:
+boolean, byte, short, integer, long, float, double, string, date, object and multi_field, ip, geo_point, geo_shape
+
+for full text search, datatype  index is analysed, if want exact seaarch use not_analysed instead
+index:no makes strign not searchabel
+
+Filter:
+exact matching, exists yes/no, fast ,cacheable
+Query:
+full text search, relevance scoring, heavier, not cacheable
+
+apart from searching, we sometime require auto complete, but word prefixes are not yet indexed, so we use N-grams
+
+its not good for start of word, so we use Edge N-gram token filter
+but we need to apply these filters to name field mapping, but we also want to keep original field, so we use type:"multi_field"
+then we need to reindex all documents
+
+bool query:
+must
+must_not
+should
+
+gaussian curve with decreasing boost over geo query
+
+
+
+https://www.youtube.com/watch?v=7FLXjgB0PQI
+
+basic:
+http://cdn.oreillystatic.com/en/assets/1/event/115/An%20Elasticsearch%20Crash%20Course%20Presentation.pdf
+
+eg: snowball analyser
+analyzer: tokenize text and outputs terms, => stemming and stopwords
+ngrams: news => n, e, w, s, ne , ew, ws
+
+there are various analysers: like path heirarchy analyser
+
+scorign = relevance
+choice of various scorign algorithms
+
+query can fall into various categorise, we can compose queries using bool/dismax
+
+if type is defined for index, all documents in it should have fields conforming to that type
+
+books:
+https://www.elastic.co/guide/en/elasticsearch/guide/master/intro.html
+http://exploringelasticsearch.com/modeling_data.html#ch-modeling-data
+
+in kopf
+it will autodetect type of extra coloumn and allow insertion
+
+
+for allowing 
+[[/_cluster/settings]] transient
+
+for search:
+_search 
+[[/nodename/collection/_search]] 
+
+use 
+GET: 
+PUT: insett/update
+DELETE: delete
+http://localhost:9200/<index>/<type>/[<id>]
+
+http://localhost:9200/movies/movie/_search
+
+Basic free text search
+query-string-query: use POST
+{
+    "query": {
+        "query_string": {
+            "query": "kill"
+        }
+    }
+}
+
+use  "fields": ["title"] to search in title field only
+
+A filtered query is a query that has two properties, query and filter. When executed it filters the result of the query using the filter.
+
+{
+    "query": {
+        "filtered": {
+            "query": {
+                "query_string": {
+                    "query": "drama"
+                }
+            },
+            "filter": {
+                //Filter to apply to the query
+            }
+        }
+    }
+}
+
+The mapping defines how each field in the document is analyzed.
+https://www.elastic.co/guide/en/elasticsearch/reference/1.4/glossary.html
+
+query context generates score, how well this document matches query
+filter context doesn't  change score of documents, we use it to filter out results of query
+
+_score can be changed with the boost
+
+extra ' caused js in kopf to crash, see entries in browser and delete entry from index
+
+Use Elastica.io
+
+
+
+__quest__
+~~bool, term, filter~~
+aggregation, shards vs nodes, opetators: bool not etc, should have 
+~~score in elastic search~~
+~~how mapping and routign works~~ 
+~~field, mapping, routing, term, text~~
+facets, boost
+rewrite, boost, fuzziness
+
+how to remember and which query should be used
+how is json key value pair stored; what happens to key
+
+till multi-match-query
+
+
+meet jai and how naukri uses dns

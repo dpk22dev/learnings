@@ -1,0 +1,94 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-05-27T10:18:52+05:30
+
+====== questions ======
+Created Tuesday 27 May 2014
+
+how ruby, python is used in web devel
+how flash is used
+mootools
+sublime
+
+can we host multiple sites on apache
+
+***** rss vs atom *****
+rss 1.0 RDF protocol
+rss 2.0 
+
+.rss, .xml extension, we may need automatic-rss xml file generator
+rss-aggregator reads those xml and shows content; rss has standard channel and item tags
+remember to tell search engines to tell about rss-feeds and update the feeds regularly
+
+as an alternative we can atom which APP protocol and .atom/.xml extension
+
+***** webapp vs website *****
+most websites with quickly changing content will also rely on a sophisticated programmatic (and/or database) backend, but at least in principle they're only defined by their output. The web application on the other hand is essentially a program that runs remotely, and it depends fundamentally on a processing and a data storage backend.
+A web site is like a foundation and can host several web applications.  So a web site can have a message board, a blog, a photo gallery and many other types of web applications under it's cloud.
+
+***** websockets *****
+Websockets provide full-duplex communication channels over a single TCP connection. Because the connection is persistent, the server can now initiate communication with the browser. The server can send alerts, updates, notifications. 
+Once the connection has been established, all future message passing is over a socket rather than new HTTP request/response calls.
+
+***** AJAX *****
+AJAX has become the primary transport mechanism for data. This concept has been pushed further by browser-based application frameworks like Backbone and Angular which rely heavily on AJAX for data communication.
+Beyond the AJAX technology itself, a standardization has emerged in the industry around REST as the primary architectural style for developing **browser-based applications** (and **web-based APIs**).
+
+I think that while REST/AJAX has served the web community well, it is probably time to start looking ahead to the future.
+AJAX made XHR Long-Polling and XHR Streaming possible. 
+AJAX starts sucking when scaling becomes an issue; WebSockets beat AJAX at both small AND large scales, and something like socket.io (or a node.js server) is incredibly easy to set up... 
+
+***** web services *****
+
+***** web app vs browser app *****
+browsers communicate with web server and main functionality is on server side
+we have pushed computation load from server to browser so browser apps.
+
+when the browser wants to be notified of server events (i.e. push) then Comet techniques and WebSockets are certainly both viable options. If your application needs low-latency push events then this would be a factor in favor of WebSockets. On the other hand, if you need to co-exist with existing frameworks and deployed technologies (OAuth, RESTful APIs, proxies, load balancers) then this would be a factor in favor of Comet techniques (for now).
+network intermediaries not yet supporting WebSockets, including transparent proxies, reverse proxies, and load balancers are problem for websockets, so we should always have an HTTP-based fall-back method for sending data to the browsers.
+
+***** push vs pull *****
+Push, or server push, describes a style of Internet-based communication where the request for a given transaction is initiated by the publisher or central server. It is contrasted with pull, where the request for the transmission of information is initiated by the receiver or client.
+
+Email may also be a push system: The SMTP protocol is a push protocol. However, the last step—from mail server to desktop computer—typically uses a pull protocol like POP3 or IMAP. Modern e-mail clients make this step seem instantaneous by repeatedly polling the mail server, frequently checking it for new mail.
+
+**Techniques of server push:**
+**HTTP server push:**
+HTTP server push (also known as HTTP streaming) is a mechanism for sending unsolicited (asynchronous) data from a web server to a web browser.
+In this case web server does not terminate a connection after response data has been served to a client. The web server leaves the connection open so that if an event occurs (ex: change in internal data which needs to be reported to one or multiple clients), it can be sent out immediately. web servers offer this functionality via 
+**Pushlet:**
+In this technique, the server takes advantage of persistent HTTP connections, leaving the response perpetually "open" (i.e., the server never terminates the response), effectively fooling the browser to remain in "loading" mode after the initial page load could be considered complete. The server then periodically sends snippets of JavaScript to update the content of the page, thereby achieving push capability. By using this technique, the client doesn't need Java applets or other plug-ins in order to keep an open connection to the server; the client is automatically notified about new events, pushed by the server.[7][8] One serious drawback to this method, however, is the lack of control the server has over the browser timing out; a page refresh is always necessary if a timeout occurs on the browser end.
+**Long polling:**
+With long polling, the client requests information from the server exactly as in normal polling, except it issues its HTTP/S requests (polls) at a much slower frequency. Long polling is itself not a true push; long polling is a variation of the traditional polling technique, but it allows emulating a push mechanism under circumstances where a real push is not possible, such as sites with security policies that require rejection of incoming HTTP/S Requests.
+If the server does not have any information available for the client when the poll is received, instead of sending an empty response, the server holds the request open and waits for response information to become available. Once it does, the server immediately sends an HTTP/S response to the client, completing the open HTTP/S Request.
+
+API vs WebAPI and Service vs WebService
+API provide methods which third-party can call to get some work done, eg: API for linux kernel
+WebAPI provided by facebook, google. they contain business logic and communicated over http
+Service can be provided by demon. eg: in our case java service queries db and returns data. it might be running on same or different system.
+WebService type of service working vi web like XML-RPC, SOAP, REST 
+
+
+questions:
+websockets vs ajax
+single page application, angular js
+css framework like LESS or SASS, 
+a build tool like Grunt.js, 
+a generator like Yeoman, 
+a client-side dependency manager like Bower.js, 
+node.js on your server, 
+html5 boilerplate, 
+jQuery,
+ a client-side framework like Angular.js, 
+ a javascript-based database management system like MongoDB
+which one is better php + apache + nginx or python + some server or node js
+can python/ nodejs utilize multithreading
+open web standards
+comet or long-polling, HTTP Long-polling/HTTP Streaming, XHR Long-Polling and XHR Streaming, 
+how web servers provide push functionality via CGI
+server side events SSE
+
+***** imp links *****
+http://stackoverflow.com/questions/10377384/why-use-ajax-when-websockets-is-available
+http://stackoverflow.com/questions/11077857/what-are-long-polling-websockets-server-sent-events-sse-and-comet
+

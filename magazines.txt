@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-04-20T11:48:49+05:30
+
+====== magazines ======
+Created Monday 20 April 2015
+
+linux:
+http://www.linuxjournal.com/
+http://www.linux-magazine.com/
+
+web:
+http://www.smashingmagazine.com/
+
+db:
+http://www.dbta.com/
+
+net:
+http://www.networkcomputing.com/
+http://www.networkworld.com/
+
+
+https://www.digitalocean.com/community/tutorials
+
+security:
+http://hackingdude.com/

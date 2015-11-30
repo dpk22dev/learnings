@@ -1,0 +1,97 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-11-05T13:11:59+05:30
+
+====== smarty ======
+Created Thursday 05 November 2015
+
+http://www.smarty.net/docs/en/
+
+$smarty = new Smarty;
+$smarty->assign('name', 'george smith');
+$smarty->assign('address', '45th & Harris');
+$smarty->display('index.tpl');
+
+{$name|capitalize}
+capitalize is **modifier**, can be creating using plugin; Also, all php-functions can be used as modifiers implicitly (more below) and modifiers can be combined.
+we can pass attribute to modifier default using :
+{$articleTitle|default:'no title'}
+
+
+
+{include file="header.tpl" title="Info"}
+
+{html_options values=$id output=$names selected="5"}
+
+we can write { php code here }
+{* html comment here *}
+
+Smarty requires four directories which are by default named templates/, templates_c/, configs/ and cache/
+Each of these are definable by the Smarty class properties $template_dir, $compile_dir, $config_dir, and $cache_dir respectively
+
+Request variables such as $_GET, $_SESSION, etc are available via the reserved $smarty variable.
+
+Some attributes require boolean values (TRUE or FALSE). These can be specified as true and false. If an attribute has no value assigned it gets the default boolean value of true.
+
+With any other characters, for example a period(.) or $object->reference, then the variable must be surrounded by `backticks`.
+In addition Smarty3 does allow embedded Smarty tags in double quoted strings. This is useful if you want to include variables with modifiers, plugin or PHP function results.
+
+In Smarty templates, the { and } braces will be ignored so long as they are surrounded by white space. This behavior can be disabled by setting the Smarty class variable $auto_literal to false.
+
+{literal}..{/literal} blocks are used for escaping blocks of template logic. You can also escape the braces individually with {ldelim},{rdelim} tags or {$smarty.ldelim},{$smarty.rdelim} variables.
+
+You have the choice to assign variables to the scope of the main Smarty object, data objects created with createData(), and template objects created with createTemplate().
+$data = $smarty->createData();
+$data->assign('foo','data');
+
+The request variables such as $_GET, $_POST, $_COOKIE, $_SERVER, $_ENV and $_SESSION can be accessed as demonstrated in the examples below:
+{* display the value of the cookie "username" ($_COOKIE['username']) *}
+{$smarty.cookies.username}
+
+{$smarty.const.MY_CONST_VAL}
+
+
+{assign var=running_total value=$running_total+$some_array[$row].some_value}
+
+The {block} template source area of a child template will replace the correponding areas in the parent template(s).
+{$smarty.block.child}, {$smarty.block.parent} can be used to insert parent / child template in each other
+If a child template extends a parent template with the {extends} tag it may contain only {block} tags. Any other template content is ignored.
+
+
+{call} is used to call a template function defined by the {function} tag just like a plugin function.
+
+{call name=menu data=$menu}
+
+{capture} is used to collect the output of the template between the tags into a variable instead of displaying it. Any content between {capture name='foo'} and {/capture} is collected into the variable specified in the name attribute.
+
+{for $var=$start to $end step $step} loop with individual step size.
+
+{foreachelse} is executed when there are no values in the array variable.
+{foreach} properties are @index, @iteration, @first, @last, @show, @total.
+{foreach} constructs are {break}, {continue}.
+
+A {section} is for looping over sequentially indexed arrays of data, unlike {foreach} which is used to loop over a single associative array. 
+The {foreach} loop can do everything a {section} loop can do, and has a simpler and easier syntax. It is usually preferred over the {section} loop. {section} loops cannot loop over associative arrays, they must be numerically indexed, and sequential (0,1,2,...). For associative arrays, use the {foreach} loop.
+
+The name of the {section} can be anything you like, see PHP variables. It is used to reference the data within the {section}.
+
+{section name=anything loop=$myArray}
+  {$myArray[anything].foo}
+  {$name[anything]}
+  {$address[anything].bar}
+{/section}
+
+here anything is just like index in $myArray
+
+{section}'s can be nested as deep as you like. With nested {section}'s, you can access complex data structures, such as multi-dimensional arrays.
+
+{setfilter}...{/setfilter} blocks can be nested. The filter definition of inner blocks does replace the definition of the outer block.
+
+Values of config file variables can be in quotes, but not necessary. You can use either single or double quotes. If you have a value that spans more than one line, enclose the entire value with triple quotes (""").  
+
+ block and operate on the contents of this block. Block functions take precedence over custom functions of the same name, that is, you cannot have both custom function {func} and block function {func}..{/func}.
+
+__quest__
+diff b/w modifier and functions
+~~section and block in smarty~~
+~~how to write plugin/wxtension in smarty~~

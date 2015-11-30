@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-11-24T14:45:27+05:30
+
+====== sysad ======
+Created Tuesday 24 November 2015
+
+**debugging sysad**
+see queries using **show processlist **if any query is taking too long
+
+use top then press 1
+use F and then select item to sort by; press enter
+
+meaning of top commands
+http://www.computerhope.com/unix/top.htm
+use free -m for memory usage
+
+use iostat for disk io usage
+
+check if inodes are full: df -i 

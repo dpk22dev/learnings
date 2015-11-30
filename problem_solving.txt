@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-07-15T10:30:55+05:30
+
+====== problem solving ======
+Created Tuesday 15 July 2014
+
+first step should be to identify:
+what we want
+what is currently happening & why
+what changes should be made — discussion is good
+then we can make changes and analyse results
+
+greping key keywords in wordpress directory is useful; 

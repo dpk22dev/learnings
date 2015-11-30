@@ -1,0 +1,117 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-11-07T11:50:38+05:30
+
+====== DNS ======
+Created Saturday 07 November 2015
+
+we don't put css/js in akamai servers, we just point dns to akamai and configure akamai which server it should hit for content. it then caches the content and updates in the cluster.
+
+ESI can be used to cache page across akamai
+
+ICANN
+ARIN
+IETF
+
+is it possible to buy ssl certificate for IP only
+Yes
+http://stackoverflow.com/questions/2043617/is-it-possible-to-have-ssl-certificate-for-ip-address-not-domain-name
+
+dynamic IP Addresses previously used by spammers
+
+Resource records are the basic information element of the Domain Name System (DNS). They are distinguished by a type identification (A, MX, NS, etc.) and a DNS class (Internet, CHAOS, etc.). The records have a validity period (time-to-live) assigned to them, indicating when the information they hold must be refreshed from an authoritative name server. 
+
+why only 13 root servers
+https://miek.nl/posts/2013/Nov/10/13%20DNS%20root%20servers/
+root server locations:
+http://public-root.com/root-server-locations.htm
+
+tld zones
+http://www.iana.org/domains/root/db
+
+for various lookups
+http://mxtoolbox.com/
+
+who is actually accessing my site
+https://support.google.com/webmasters/answer/80553?hl=en
+
+email blacklist check
+http://mxtoolbox.com/blacklists.aspx
+
+spf record: sender policy framework
+https://support.google.com/a/answer/33786?hl=en
+https://en.wikipedia.org/wiki/Sender_Policy_Framework
+https://www.youtube.com/watch?v=G6BSk-l36-Y
+
+DKIM record
+https://scottlinux.com/2012/10/27/how-to-fetch-dkim-records-from-dns/
+send and check mail and get DKIM id
+
+ARIN record
+https://www.arin.net/resources/request/reversedns.html
+https://www.arin.net/knowledge/database.html
+
+ASN: put google there
+
+MX record
+https://en.wikipedia.org/wiki/MX_record
+
+blackhole server
+
+rahul jain : recruiter
+lokesh, amit
+
+check for reputation of ip, before puchasing using online tools
+http://ipremoval.sms.symantec.com/lookup/
+
+ warmup: send mails incrementally, ip bounce logs and reputation is checked regularly, 
+
+buy domain for ns-server also, put glue record for ns server on com servers
+ns-server is organization specific not domain specific
+use bind for ns
+
+various records 
+mysql -> SRV, give port, services, search
+internal mailing
+
+imp: A, CNAME, MX, TXT, SRV, NS, SOA, PTR or RDNS
+
+you purchased static IP, configured machine with this IP. Now you can run any service on this machine. world can reach you, access your service. but nobody remembers IP. you need domain. you checked if domain exists or not. if not purchased domain( monthly/yearly subscription etc... ).
+
+You need NS server( should be more than one... ) that can reply for queries of domains  in an organization. 
+
+TXT, ZONE file for root zone server, com servers
+
+Each domain has at least one authoritative DNS server that publishes information about that domain and the name servers of any domains subordinate to it
+
+An authoritative name server can either be a master server or a slave server. A master server is a server that stores the original (master) copies of all zone records. 
+
+dig +trace +additional naukri.com
+
+root zone 
+ftp://rs.internic.net/domain/root.zone
+
+tld info
+http://www.iana.org/domains/root/db
+
+anycast is used for single request response type services, in which tcp connection is not used. in case of tcp connection will be made to may be different machines
+
+
+__quest__
+SPF and txt how its done
+how mail validation is done
+how service records are added eg: something.resdex.com
+
+
+v=spf1 [[pre] type ] ... [mod]
+didn't understand http://www.zytrax.com/books/dns/ch9/spf.html
+
+
+man resolvconf
+man dnsmasq
+
+Resolvconf thus sets itself up as the intermediary between programs that supply nameserver information and applications that use that information.
+Normally  the  resolvconf  program  is  run only by network interface configuration programs such as pppd(8) (for ppp inter‐
+       faces); by DHCP clients such as dhclient(8); by ifup(8) and ifdown; and by DNS caches such as dnsmasq(8) (for  the  loopback
+       interface).  These programs obtain nameserver information from some source and push it to resolvconf.
+

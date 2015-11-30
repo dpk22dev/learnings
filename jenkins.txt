@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-11-27T12:10:24+05:30
+
+====== jenkins ======
+Created Friday 27 November 2015
+
+http://localhost:8181/view/All/newJob
