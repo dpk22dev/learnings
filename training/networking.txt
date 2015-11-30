@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-02-17T10:55:34+05:30
+
+====== networking ======
+Created Tuesday 17 February 2015
+
+read network conf: http://www.yolinux.com/TUTORIALS/LinuxTutorialNetworking.html
+kernel imp: Linux Kernel Networking by Rami Rosen
+
+whois: protocol, client to get info from whois database
+ifconfig
+dhclient
+
+do we still use classfull addressing
+broadcast, network, host addresses
+how subnet mask is propagated ? it it 

@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-05-27T17:26:56+05:30
+
+====== svn ======
+Created Tuesday 27 May 2014
+
+commit commits the changes to repo. update or revert only make changes locally.
+conflict can arise only if same set of lines of single file are changed by multiple users
+
+svn status: tells the status of files in local; we need to be sure about C -> conflicted files
+
+**use svn merge --dry-run http://address before actual svn merge**

@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-09-13T16:01:52+05:30
+
+====== node ======
+Created Saturday 13 September 2014
+
+sharing of code on server and client side
+Node.js shines in real-time web applications employing push technology over websockets.  The main idea of Node.js: use non-blocking, event-driven I/O to remain lightweight and efficient in the face of data-intensive real-time applications that run across distributed devices.
+don’t use Node.js for CPU-intensive operations; in fact, using it for heavy computation will annul nearly all of its advantages.
+Eg: assuming that each thread potentially has an accompanying 2 MB of memory with it, running on a system with 8 GB of RAM puts us at a theoretical maximum of 4000 concurrent connections, plus the cost of context-switching between threads. That’s the scenario you typically deal with in traditional web-serving techniques. By avoiding all that, Node.js achieves scalability levels of over 1M concurrent connections (as a proof-of-concept).
+
+Relational DB tools for Node.js are still in their early stages; they’re rather immature and not as pleasant to work with.
+
+***** links *****
+http://codecondo.com/10-web-application-frameworks-for-node-js/
+http://stackoverflow.com/questions/5062614/how-to-decide-when-to-use-node-js
+http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js

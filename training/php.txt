@@ -1,0 +1,216 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-05-26T10:55:27+05:30
+
+====== php ======
+Created Monday 26 May 2014
+
+***** namespace and use in php *****
+to avoid conflicts between names of classes, methods, variable names , constants etc we can give namespaces; its similar to directory structure, two files with same name can reside in different dirs
+
+but when we require file from different namespaces into our file they can conflict due to same classnames, now we USE use
+use provides aliasing of imported namespaces, namespace\class, namespace\functions, namespace\constats etc... it is similar to we can't copy same name directories to our directory although they are in different directories originally; but we can symlink them and give them different names
+similarly use namespace\classname as class1
+
+php is object-oriented
+but it is not same as purely object oriented languages till 5.3; it can misbehave in private constructs etc..
+
+== checks for equivalence ==
+
+=== checks for types as well ===
+
+' ' treates vars as strings; echo 'my age is $age' => my age is $age
+"" replaces vars in string; echo "my age is $age" => my age is 22 
+\ used for escaping; echo "my \$age is $age" => my $age is 22
+
+automatic indexing is allowed
+explicit indexing is allowed; 
+arr[0] = 'hello'
+arr[3] = 'world'
+
+associative array with explicit indexing is allowed:
+$arr['abc'] = 'abc@abc'
+
+foreach loop can be used in associative array
+
+json_encode( arr( 'a' => 'b' ) )
+converts array object in php to javascript object {"a":"b"}
+
+what are checks we make before js
+
+imp links: http://php.net/manual/en/language.expressions.php
+
+=>  always remember to include php containing functions
+=> value field of tag is used php when fetched using $_POST[] method take care while comparison or etc...
+=> take care to install all libraries. i forgot to install php5-mysql and php was not able to communicate with mysql; yet i was able to connect using command line
+
+Note that even though PHP borrows large portions of its syntax from C, the ',' is treated quite differently. It's not possible to create combined expressions in PHP using the comma-operator that C has, except in for() loops.
+
+1. if (func1() || func2())
+Now, if func1() returns true, func2() isn't run, since the expression
+will be true anyway.
+
+2. if (func1() && func2())
+Now, if func1() returns false, func2() isn't run, since the expression
+will be false anyway.
+
+substr_replace(string,replacement,start,length)  // replace string at start with lenght chars of replacement
+
+implode(separator,array)  // returns a string from array elements after concatinating elements with separator as delimitor
+
+explode(separator,string,limit)  // returns array after breaking string with separator as delimitor
+
+ dirname(__FILE__) //gives path of parent dir
+
+urlencode($d) // URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits.
+
+***** compile php *****
+php -l file.php
+
+
+
+strpos(string,find,start) // searches find in string after position start
+
+Takes a JSON encoded string and converts it into a PHP variable. 
+
+json_decode() // convert json object to php object
+
+$arrlength=count($cars); // returns number of elements in arry
+
+***** PCRE *****
+perl compatible regular-expression
+When using the PCRE functions, it is required that the pattern is enclosed by delimiters. A delimiter can be any non alphanumeric, non-backslash, non-whitespace character. 
+
+while using regex use single quote strings: always keep this in mind or use single quoted strings, because single quotes has less escape sequences interpreted.
+
+pattern should be enclosed by delimiter like / # ~
+Bracket style delimiters do not need to be escaped when they are used as meta characters within the pattern, but as with other delimiters they must be escaped when they are used as literal characters.
+use single quoted strings, because single quotes has less escape sequences interpreted.
+
+backslash \ can be used for specifying generic character types:
+\d any decimal digit
+\D any character that is not a decimal digit
+\h any horizontal whitespace character (since PHP 5.2.4)
+\H any character that is not a horizontal whitespace character (since PHP 5.2.4)
+\s any whitespace character
+\S any character that is not a whitespace character
+\v any vertical whitespace character (since PHP 5.2.4)
+\V any character that is not a vertical whitespace character (since PHP 5.2.4)
+\w any "word" character
+\W any "non-word" character
+
+Since 5.1.0, three additional escape sequences to match generic character types are available when UTF-8 mode is selected.
+\p{xx} a character with the xx property
+\P{xx} a character without the xx property
+\X an extended Unicode sequence
+
+Loosely coupled architecture is much more reusable than tightly coupled objects.
+If there is a constructor in both styles, PHP5 will give preference to the __construct() function and the other one will be ignored.
+the constants in class actually work like static variables, the only difference is that they are read-only.
+You can always check if a class is derived from another class by using the instanceof operator.
+
+Need of interface: suppose our application needs three drivers to connect to oracle, mysql, postGress. now three developeres write their own
+classes with their own methods. now app developer has to worry about which class's which method needs to be called. To avoid this and strictly
+telling driver developers to make connect(), disconnect(), execute() functions only we need interface.
+
+static methods can be a function which needs to be done many times and object creation using new is time expensive. eg: we just need a driver object, so no need to create a new DBManager object and commit it to memory as long as our scripts are executing.
+
+we can't use $this in static method as class is not instantiated, we have to use self instead. private static variable can be used if we want only static method to access it using self; and not from outside using :: operator.
+
+carefully choose private/public in class; if we chose public function and
+others are using this function; upon changing it to private will break their code.
+
+function names, magic constants are not case sensitive.
+
+***** passing interface object in method *****
+it means we can pass object of any class which implements this interface
+
+***** Udemy *****
+if your application uses security/authentication/important functionality; we should use require rather than include
+
+use smtp to send mail and imap to retreive messages
+
+cookies are ok for simple web application; but for large and complex web applications use sessions
+
+DES, extDES, MD5 should not be used as they are vulnerble
+Blowfist, sha256, sha512 can be used
+
+**commonly used functions in php:**
+isset( list of vars ); // returns true only if all vars are set
+isset( $var ) //returns true only if var exists and has value other than NULL
+null byte ( \0 ) is not equal to NULL
+defined( const ) // check if constant is defined ot not
+define() //case sensitively define a constant at runtime
+empty() // checks if variable does not exist or if its value equals FALSE. it does not generate a warning if the variable does not exist.
+follow:
+"" (an empty string)
+0 (0 as an integer)
+0.0 (0 as a float)
+"0" (0 as a string)
+NULL
+FALSE
+array() (an empty array)
+$var; (a variable declared, but without a value)
+
+assert_options() // set option for assert
+file() // read entire file in array
+file_get_contents() // read entire file content in string
+html_special_chars() // convert special chars in string to HTML entities; only small set of special chars are converted; use htmlentities() otherwise
+htmlentities() //all special chars having html entities are converted
+end() // advance internal array pointer to last
+count() // count all elements in array or something in object; recursive counting is also possible
+ord() or chr() // returns ascii value of first char of string
+pos() or current() // returns current element in array
+key() // returns key of current element of array
+list() //  Assign variables as if they were an array; eg: used to assign values got from db to variables
+each() //returns four elements array with 0, key, 1, value elements; used in conjuction with list for key-value pair array
+header() // caching, download dialog, authentication, redirect
+is_a() // checks if object is of this class or has this class as one of its parents
+parse_ini_file() // reading external key-value pair from conf file
+start_session() // start the session
+destroy_session() // close the session anytime
+filter_var() 
+filter_input()
+arr_pop() // deletes last element from array
+
+
+
+**Questions:**
+does php have same stack and heap architecture as in C
+where are function parameters and arguments stored in php
+when copying a object is it shallow copy what about clone
+diff b/w global and static
+can a static variable be private or protected
+what if we override private method or variable in subclass — i think we can't do it
+difference b/w abstract and interface
+if class is instantiated, will $this work in static function
+when we should use include rather than include_once
+diff b/w curl and soap
+diff b/w webservice and webapp
+diff b/w webapp and website
+what is footprint
+preg_* functions
+adding rss feed to url
+
+***** css trix *****
+non breaking space : 160 => line will not be wrapped around it
+breaking space: 32 
+
+***** PHPUnit *****
+setup and teardown funcitons in phpunit help in fixtures
+we can define testsuitenames and order in which files will be exectuted in phpUnits' XML file
+we can define execution timeout in xml file
+
+
+
+http://www.phpclasses.org/blog/post/117-PHP-compiler-performance.html
+http://www.scribd.com/doc/18171982/PHP-Compiler-Internals
+http://stackoverflow.com/questions/2772400/how-does-php-interface-with-apache
+
+
+
+**questiosns**
+why use private static variables 
+
+
+

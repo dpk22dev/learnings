@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-06-12T12:33:46+05:30
+
+====== abc ======
+Created Thursday 12 June 2014
+
+wp_commentmeta 	Each comment features information called the meta data and it is stored in the wp_commentmeta. 	  
+wp_comments 	       The comments within WordPress are stored in the wp_comments table. 	
+wp_links 	                       The wp_links holds information related to the links entered into the Links feature of WordPress. (This feature has been deprecated, but can be re-enabled with the Links Manager plugin.) 	
+
+wp_options 	               The Options set under the Administration > Settings panel are stored in the wp_options table. See Option Reference for option_name and default values. 	
+wp_postmeta 	       Each post features information called the meta data and it is stored in the wp_postmeta. Some plugins may add their own information to this table. 	
+wp_posts 	                       The core of the WordPress data is the posts. It is stored in the wp_posts table. Also Pages and navigation menu items are stored in this table. 	
+wp_terms 	               The categories for both posts and links and the tags for posts are found within the wp_terms table. 	
+wp_term_relationships 	Posts are associated with categories and tags from the wp_terms table and this association is maintained in the wp_term_relationships table. The association of links to their respective categories are also kept in this table.
+
+wp_term_taxonomy 	This table describes the taxonomy (category, link, or tag) for the entries in the wp_terms table.
+wp_usermeta 	        Each user features information called the meta data and it is stored in wp_usermeta. 	
+wp_users 	                        The list of users is maintained in table wp_users. 	
+
+multisite tables
+wp_blogs 	Each site created is stored in the table, wp_blogs. 	
+wp_blog_versions 	The current database version status of each site is maintained in the wp_blogs_versions table and is updated as each site is upgraded. 	
+wp_registration_log 	The wp_registration_log records the admin user created when each new site is created. 	
+wp_signups 	                This table holds the user that have registered for a site via the login registration process. User registration is enable in Administration > Super Admin > Options. 	
+wp_site 	                       The wp_site table contains the main site address. 	
+wp_sitecategories      If global terms (global_terms_enabled = true) are enabled for a site the wp_sitecategories table holds those terms. 	
+wp_sitemeta 	               Each site features information called the site data and it is stored in wp_sitemeta. Various option information, including the site admin is kept in this table. 
+wp_users 	                      The list of all users is maintained in table wp_users. Multisite add two fields not in the stand-alone version.	
+wp_usermeta 	      This table is not re-create for multisite, but meta data of users for each site are stored in wp_usermeta. 	
+Site Specific Tables    The data of the main site are stored in existing unnumbered tables. The data of additional sites are stored in new numbered tables. eg:  wp_2_commentmeta, wp_2_comments 	
