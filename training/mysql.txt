@@ -127,7 +127,53 @@ insert into site_mapping values( 1, 'a', 'n' ) on duplicate key id=id, flag=flag
 if multiple keys are used in duplicate key, it is OR of key that is used; eg if primary key coloums are duplicate or unique key coloumn is duplicate then only id, flag are updated....
 it's important which keys are we updating, here we are updating id, flag not site.... 
 
+**order of execution**
+FROM
+ON
+JOIN
+WHERE
+GROUP BY
+WITH CUBE or WITH ROLLUP
+HAVING
+SELECT
+DISTINCT
+ORDER BY
+TOP
 
+
+select City, CNT=Count(1)
+From Address
+Where State = 'MA'
+Group By City
+Having Count(1)>5
+
+***** multi master *****
+m-m is m-s on both ends, so it has inherent problems of m-s but these problems can be solved using mysql clustter but it also has its own problems
+m-s uses innoDB, while cluster uses NDB
+
+m-s is good for replication
+
+write on one master is reflected on other after some time. read/write can happen on anyone.
+in master slave, writes done on slave arenot reflcected on master.
+making them master slave and vice-versa is not enough; to avoid collisions on write, we need to make setting.
+
+
+
+The problem is that asynchronous replication will incur collisions and conflicts which needs to be resolved smartly by smartly-written and flawlessly implemented algorithms. You won't have that. Use MySQL cluster setup instead, if you need multi-master operations and can handle the limitations it brings.
+
+looks like multi master has its problems also.
+
+__quest:__
+does innodb provide transaction, concurrency -> by locking or not
+	-in single node, m-s arch
+does ndb provide transaction, concurrency -> by locking or not
+	-in single node, m-s arch
+
+possible problems with m-s and clustered env
+
+locking in mysql; is it storage engine dependent?
+what things are storage engine dependent
+transaction, concurrency
 
 
 

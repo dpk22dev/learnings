@@ -12,7 +12,46 @@ Eg: assuming that each thread potentially has an accompanying 2 MB of memory wit
 
 Relational DB tools for Node.js are still in their early stages; they’re rather immature and not as pleasant to work with.
 
+aim is to do maximum work using event emitters & handlers. we can include any module, which will add functions and run any code in that module. but provide handlers for results. i think getting data from file or web is provided callback method, which gets executed on completion.
+stream are interesting objects, which fire events when data comes, data is written, on error. we can provide hanlers for such scenarios. we can pipe streams into one other
+
+we have global objects and modules, which do the task for us.
+
+express framework does the routing.
+var express = require('express');
+app = express();
+
+// serve static content
+app.use( express.static('public') )
+
+// for get request of '/'
+app.get( '/', function( req, res ){ } );
+
+it can be used to create restful api easily.
+ It also facilitates creation of child processes to leverage parallel processing on multi-core cpu based systems.
+
+
+http://stackoverflow.com/questions/24391462/what-are-the-differences-between-mocha-chai-karma-jasmine-should-js-etc-te
+    Mocha and Jasmine are testing frameworks to test your code: they can use different assertion libraries, reporters, etc...
+
+    should.js is an assertion library - It works from IE9 onward and any other browser - so you need a testing framework to use it
+
+    chai is an assertion library "ecosystem": you can add plugins (I'm looking at you sinonJS) or just use it plain with its own version of should.js or expect.js - also here you need a testing framework in order to use it
+
+    karma is a testing environment that leverages the power of Mocha and Jasmine to test cross-browser, do E2E testing, and more
+
+
+
+
+
+
+nodejs arch:
+http://mcgill-csus.github.io/student_projects/Submission2.pdf
+
 ***** links *****
 http://codecondo.com/10-web-application-frameworks-for-node-js/
 http://stackoverflow.com/questions/5062614/how-to-decide-when-to-use-node-js
 http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
+
+Quest
+how does node's JS interaction with c libs/ tcp sockets happen

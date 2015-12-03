@@ -6,3 +6,5 @@ Creation-Date: 2015-06-01T11:59:56+05:30
 Created Monday 01 June 2015
 
 upstart is for linux
+
+lvs: linux virtual server is used for load balancing among services

@@ -15,3 +15,8 @@ dhclient
 do we still use classfull addressing
 broadcast, network, host addresses
 how subnet mask is propagated ? it it 
+
+how isp can provide anycast address, and routing is done in this case do we need special permissions from AS
+
+can we use anycast for websites or tcp based services, if no how cdn use it
+https://anuragbhatia.com/networking/different-cdn-technologies-dns-vs-anycast-routing/

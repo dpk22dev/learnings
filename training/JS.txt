@@ -57,6 +57,14 @@ use:
  delete myObj.a // to delete property of object
  delete g // to delete global var g
 
+**java script templates**
+https://embedthis.com/goahead/doc/users/jst.html
+Javascript Templates (JST) enable the easy creation of dynamic web pages and applications. Javascript Templates are HTML web pages that execute Embedded Javascript on the server before rendering the page back to the client.
+
+we provide js objects, maybe get them trough ajax and hide template inside textarea tad. on calling render it will just show contents. It is similar to smarty for separating logic and presentation layer.
+but i think angular js already handles all this.
+
+
 *** questions ***
 
 

@@ -109,6 +109,11 @@ instantiation of services. Service is never created untill required, once create
 
 container consists of parameters and services; parameters can be accessed using %name% where name can be defined in another file.yml, services can be accesssed using @serviceName; we can escape parameter name containing @ by prepending another @
 
+By surrounding the my_mailer.transport string in percent (%) signs, the container knows to look for a parameter with that name. When the container is built, it looks up the value of each parameter and uses it in the service definition.
+
+Natively, the service container only recognizes the parameters, services, and imports directives. Any other directives are handled by a service container extension.
+meaning things like framework, twig, asssetic is handled by extensions
+
 __SM code analysis__
 
 for showing captcha using reCaptcha php lib by goolge
@@ -188,5 +193,17 @@ in bundles what is inside DependencyInjection dirs
 should we create service for everything and inject
 understanding services-cache.yml nodes, 
 why aren't we using AppCache in web/app.php
+how bundles and extensions expose services
 
+hit comes to web first, its main task is to set environment and call app/bootstrap.php.cache and appkernel( which extends kernel) which has methods to load bundles and includes app/config ymls
+kernel does load class cache, initialize bundles and containers
+
+
+why bootstrap.php.cache
+http://stackoverflow.com/questions/12974132/whats-the-purpose-of-the-symfony2-bootstrap-php-cache-file
+just to save loading of each symfony framework class from various files, all classes are merged in single file and loaded once
+
+why cache has to be deleted only when yml changes not when php content is changed, if tis timestamp based
+
+terms: bundle, extension, container, service
 

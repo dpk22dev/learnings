@@ -5,6 +5,25 @@ Creation-Date: 2014-05-26T10:55:27+05:30
 ====== php ======
 Created Monday 26 May 2014
 
+*** HOW php works ***
+php source and its extensions itself are written in C, which are compiled to generate .so files which gets loaded by apache
+php written by us are interpreted and converted to OPCODE which gets executed, this OPCODE is run by php kind of VM ← limitation of interpreted languages, each time opcode has to be generated but compiled languages do it once
+but accelearators xCache, APC cache the OPCODE according to time stamp and use it each time
+
+apache worker MPM will create various threads and php will be loaded in these threads, php loaded here should be thread safe as it can access other thread's data; but php's thread safety is disputed
+http://stackoverflow.com/questions/1623914/what-is-thread-safe-or-non-thread-safe-in-php
+
+On an internal level, Node contains a pipeline interpreter for JavaScript commands: Google's V8 runtime engine. This in-terpreter converts JavaScript into C++ byte by byte. The resulting code is used to perform corresponding I/O oper-ations.
+
+i think, only libc can interact with OS system calls, so only c code can directly interact with libc. other code like c++ can be converted into .o file( which i consider compiled c code ) which can interact with libc. 
+but what about interpreted language like php, javascript. php creates opcode which get cached and interfpreted by their VM which is basically c. whatever opcode wants to do with OS is done goes through VM. 
+v8 engine converts JS code into assembly run it. but engine itself is written in c++.
+
+architecture of nodeJS is like,there is event loop  which prcocesses events and gives takss to n threads' pool, which return data back and then callback methods get called.
+
+
+
+
 ***** namespace and use in php *****
 to avoid conflicts between names of classes, methods, variable names , constants etc we can give namespaces; its similar to directory structure, two files with same name can reside in different dirs
 

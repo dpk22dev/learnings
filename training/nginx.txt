@@ -7,3 +7,11 @@ Created Monday 13 April 2015
 
 https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts
 very well defines basiscs o
+
+https://www.quora.com/How-can-nginx-handle-concurrent-requests-with-a-single-worker-process
+
+nginx architecture
+http://www.aosabook.org/en/nginx.html
+
+facebook scalability links:
+http://stackoverflow.com/questions/3533948/facebook-architecture
