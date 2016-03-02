@@ -23,6 +23,14 @@ While a controller can be any PHP callable (a function, method on an object, or 
 
 [[/app/config/parameters.yml]] 
 
+we can use listeners  in symfony in request, exception, response listeners; we can use these listeners to intercept them 
+we can register them in services.yml or inject them
+
+process, command can be used instead of exec
+run commands using php app/console  commandName --args
+
+we can avoid writing factory by using tagged services. it uses compiler pass which needs to be regiestered in bundle
+
 ***** use and include *****
 we need to include necessary php files. 
 we can define namespace and then use classes/functions from that namespace in other functions etc...
@@ -57,11 +65,11 @@ symfony handles routing of url to controller/action, rendering of template, diff
 
 we can tell the format in action:
 /**
- * @Route("/hello/{name}.{_format}",
- *     defaults = {"_format"="html"},
- *     requirements = { "_format" = "html|xml|json" },
- *     name = "hello"
- * )
+* @Route("/hello/{name}.{_format}",
+* defaults = {"_format"="html"},
+* requirements = { "_format" = "html|xml|json" },
+* name = "hello"
+* )
  */
 
 By throwing exception, throw new \Exception('Something went horribly wrong!'); symfony will convert into 500 error page response
@@ -109,13 +117,9 @@ instantiation of services. Service is never created untill required, once create
 
 container consists of parameters and services; parameters can be accessed using %name% where name can be defined in another file.yml, services can be accesssed using @serviceName; we can escape parameter name containing @ by prepending another @
 
-By surrounding the my_mailer.transport string in percent (%) signs, the container knows to look for a parameter with that name. When the container is built, it looks up the value of each parameter and uses it in the service definition.
 
-Natively, the service container only recognizes the parameters, services, and imports directives. Any other directives are handled by a service container extension.
-meaning things like framework, twig, asssetic is handled by extensions
 
 __SM code analysis__
-
 for showing captcha using reCaptcha php lib by goolge
 many of funcitons are available in util/common candidate, client, project related
 download util: for downloading application, candidate, progile as pdf, excel etc 
@@ -129,6 +133,37 @@ Notifier: get, insert, update notification into notifier db
 Publisher: posting jobs to various places
 Queue: putting and popping dataa from rabitMQ
 RPservice: fetching rp data
+
+**third party**
+autologger: looks like for autologin on mail verification, stores encrypted token in db and verifies it
+centrallogger: reads config.yml and accordingly logs
+	it can send mails and sms, we are using xml_content and use http://api.myvaluefirst.com/psms/servlet/psms.Eservice2 for sening sms
+	logs written to file, mysql and scribe logger	
+dnsresolver for resolving srv records
+encryptor for one way and two way encryption
+php xlsx writer third party for wrintng to excel files
+location finder : i think for distance diff b/w locations
+SPservice client to call services 
+PEST for json and xmlPEST requests
+Rauthenticator for SSO
+RestRequest to do curl for any verb
+resumeparser
+SSOManager uses Rauthenticator, autologger, CDNlib for session handling
+ncYAML uses sfYAML to parse yaml into php, but use file or apc cache or xcache for caching php
+
+**writing command**
+mycomamnd extends SMBaseCommand : which extends ContainerAwareCommand
+we write configure and execute options whcih inject services, can call other methds, 
+
+**wrinting Dao**
+CandidateDaoImpl extends BaseDaoNcPDO which implements BaseDao
+DBConnectionFactyoryNCPdo return Db connection for subscription, micrositepdodb , finds shardID for client using ncDatabaseManager third party
+
+some configs like assetversions are added as parameters in config.yml
+but databases.yml are not included directly, instead they are loaded using ncYaml third party and used for providing db connection
+similartly for logger, encryption, 
+
+
 
 
 __quest-ans__
@@ -171,8 +206,8 @@ we can use security.context inbuilt in php to set/unset token, sesssion for clea
 	
 for single signon we are using SSOFactory.class.php which which returns object of SessionManager class which internally uses RAuthenticator( main functionality is here ) for storing cookies, blocked ip in db and retreival and setting/unsetting single sign on session 
 
-how sms, mail sending is handled
-
+~~how sms, mail sending is handled~~
+	mail by using sendmail; sms by using api
 
 how form in controller is different from smarty views form creation, how we use it
 ~~Why so many Resources/configs in bundle, how to tell symfony to load those configs as well~~
@@ -186,24 +221,17 @@ usage of features.list, why have we created it
 how to tell symfony that we are creating utils, service, validator dirs in bundle, do we have to do this
 disscuss what each third party does
 
-why aren't we using doctrine
+~~why aren't we using doctrine~~
 read some FTs, what are written
-how are roles used defined in security.yml, are we using own cookies for auth
+how are roles used defined in security.yml~~, are we using own cookies for auth~~
 in bundles what is inside DependencyInjection dirs
 should we create service for everything and inject
 understanding services-cache.yml nodes, 
 why aren't we using AppCache in web/app.php
-how bundles and extensions expose services
 
-hit comes to web first, its main task is to set environment and call app/bootstrap.php.cache and appkernel( which extends kernel) which has methods to load bundles and includes app/config ymls
-kernel does load class cache, initialize bundles and containers
+why sumsapi, nlogger is used
+diff b/w ncfileupload and filestorageservice; didn't get why getfile are we using? what is role of upload callback
+forms storage
+php thumb and thrift service client are remaing
 
-
-why bootstrap.php.cache
-http://stackoverflow.com/questions/12974132/whats-the-purpose-of-the-symfony2-bootstrap-php-cache-file
-just to save loading of each symfony framework class from various files, all classes are merged in single file and loaded once
-
-why cache has to be deleted only when yml changes not when php content is changed, if tis timestamp based
-
-terms: bundle, extension, container, service
-
+how symfony knows about command name

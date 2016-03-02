@@ -37,4 +37,15 @@ but CGI is not efficient. fast CGI was used. php is run as separate process and 
 
 SCGI is protocol like fastCGI but easier to implement
 
+**documentation:**
+http://httpd.apache.org/docs/current/
+	read user guide, for understanding working
+
+
+check conf
+apache/bin/apachectl -t
+
+
+nginx/sbin/nginx -s reload
+
 

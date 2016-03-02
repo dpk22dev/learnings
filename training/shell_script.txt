@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-12-10T16:16:40+05:30
+
+====== shell script ======
+Created Thursday 10 December 2015
+
+tee can be used to redirect output to some file along with stdout.
+ls | tee -a outfile | grep 'word' 
+
+http://www.folkstalk.com/2011/12/good-examples-of-awk-command-in-unix.html
+
+awk 'BEGIN {start_action} {action} END {stop_action}' filename
+
+for a fixed format file, 
+{start_action} we can init something
+	we can change delimiter for file using BEGIN {FS=":"} according to file
+awk will process each row and you have access to each col in {action}
+{stop_action} we can print or do somethign
+
+we can use conditional, looping statements in awk
+usual task is to get coloumn and split it uisiong string functions provided by awk like split
+
+http://www.folkstalk.com/2012/01/sed-command-in-unix-examples.html
+Sed is a Stream Editor used for modifying the files in unix (or linux)
+
+grep can be used to search in file
+grep "word" inputFile
+grep -v "bot\|crawler" inputFIle 
+
+**use less instead  of more**
+g: go top of the file
+G: go bottom of the file
+/: search forward
+?: search backward
+N: show line number
+: goto line
+F: similar to tail -f, stop with ctrl+c
+S: split lines
+

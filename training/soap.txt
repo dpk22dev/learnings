@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-12-04T23:08:13+05:30
+
+====== soap ======
+Created Friday 04 December 2015
+
+http://www.sitepoint.com/web-services-with-php-and-soap-1/
+nusoap lib 
+
+soap message:
+soap header
+soap header end
+soap body
+	soap fault
+	soap fault end
+soap body end

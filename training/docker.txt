@@ -5,6 +5,33 @@ Creation-Date: 2015-04-08T15:14:40+05:30
 ====== docker ======
 Created Wednesday 08 April 2015
 
+installation:
+follow https://blog.docker.com/2015/07/new-apt-and-yum-repos/
+
+if docker-compose gives problem use latest compose 
+curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > [[/usr/local/bin/docker-compose]]
+
+
+
+
+running docker on ubuntu 15
+sudo gpasswd -a ${USER} docker
+/lib/systemd/system/docker.service
+systemctl daemon-reload
+service docker restart
+
+docker pull docker.infoedge.com:5000/naukri/csm
+docker pull docker.infoedge.com:5000/naukri/csmut
+docker pull docker.infoedge.com:5000/naukri/memcached
+docker pull docker.infoedge.com:5000/naukri/mariadb
+
+docker tag docker.infoedge.com:5000/naukri/mariadb naukri/mariadb
+docker tag docker.infoedge.com:5000/naukri/memcached naukri/memcached
+docker tag docker.infoedge.com:5000/naukri/csm naukri/csm
+docker tag docker.infoedge.com:5000/naukri/csmut naukri/csmut
+
+
+
 docker pull docker.infoedge.com:5000/naukri/php_nginx_build
 docker tag docker.infoedge.com:5000/naukri/php_nginx_build naukri/php_nginx_build
 

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-12-05T12:52:53+05:30
+
+====== memcache ======
+Created Saturday 05 December 2015
+
+how are we using memcache
+cachebundle is created which 
+cacheInterface; noCache, memCache, redisCache implement cacheInterface
+cacheFactory provide object acc to type of cache requested
+
+$this->memcached = new Memcached();
+$serverList = $this->memcached->getServerList();

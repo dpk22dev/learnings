@@ -137,6 +137,16 @@ git tag -l 'v3.2.7*'
 **delete branch on origin**
  git push --delete origin branch_name
 
+**adding remote** 
+git remote add origin https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
+
+**rules for rebasing b1 on to b2**
+git pull both the branches involved
+git checkout b1
+git rebase b2 // it will cut b1 and put it on b2
+git checkout b1
+git merge b2 // it will move b2 till b1
+
 ***** imp links *****
 http://stackoverflow.com/questions/4114095/[[http://stackoverflow.com/questions/4114095/revert-to-a-previous-git-commit|revert]][[-to-a-previous-git-commit]]
 fundamentals of git: http://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences/9204499#9204499

@@ -5,6 +5,9 @@ Creation-Date: 2015-07-14T17:12:02+05:30
 ====== design patterns ======
 Created Tuesday 14 July 2015
 
+SOLID:
+actors, responsibility, use case
+
 Creational Patterns
 These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new opreator. This gives program more flexibility in deciding which objects need to be created for a given use case.
 
@@ -14,3 +17,5 @@ These design patterns concern class and object composition. Concept of inheritan
 Behavioral Patterns
 These design patterns are specifically concerned with communication between objects.
 
+diff b/w singleton and static methods
+http://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-12-01T13:05:25+05:30
+
+====== http ======
+Created Tuesday 01 December 2015
+
+http://www.w3.org/Protocols/rfc2616/rfc2616.txt
+explains terms used in protocol, they areimportant, it exactly defines terms which we take as same
+
+difference b/w resource and entity
+https://lists.w3.org/Archives/Public/www-rdf-comments/2002JanMar/0148.html
+
+notice resource , entity, representation are different trhins

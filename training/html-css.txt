@@ -102,6 +102,11 @@ margin is external to border; container is effected in this case.
 
 order of sizes is clockwise: Up Right Down Left
 
+position static : means element will be placed in page where they have to be
+position relative: elements will be drawn first in page, only element which has relative position will be put on desired location; other wlements won't move
+position absolute: eleement with given class will be placed on particular position; other elements will be shifted to pick spaces
+
+
 **display:**
 display: inline      => shows inline elements
 	     : block	=> shows block elements
@@ -136,3 +141,6 @@ margin vs padding: http://stackoverflow.com/questions/5958699/difference-between
 http://www.w3.org/TR/selectors/ defines the selectors for css
 
 inline vs inline-block: http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
+
+**todo**
+read concepts of display, position, float with examples, forms and inputs, media

@@ -12,6 +12,13 @@ Eg: assuming that each thread potentially has an accompanying 2 MB of memory wit
 
 Relational DB tools for Node.js are still in their early stages; they’re rather immature and not as pleasant to work with.
 
+sharing of code on server and client side
+Node.js shines in real-time web applications employing push technology over websockets.  The main idea of Node.js: use non-blocking, event-driven I/O to remain lightweight and efficient in the face of data-intensive real-time applications that run across distributed devices.
+don’t use Node.js for CPU-intensive operations; in fact, using it for heavy computation will annul nearly all of its advantages.
+Eg: assuming that each thread potentially has an accompanying 2 MB of memory with it, running on a system with 8 GB of RAM puts us at a theoretical maximum of 4000 concurrent connections, plus the cost of context-switching between threads. That’s the scenario you typically deal with in traditional web-serving techniques. By avoiding all that, Node.js achieves scalability levels of over 1M concurrent connections (as a proof-of-concept).
+
+Relational DB tools for Node.js are still in their early stages; they’re rather immature and not as pleasant to work with.
+
 aim is to do maximum work using event emitters & handlers. we can include any module, which will add functions and run any code in that module. but provide handlers for results. i think getting data from file or web is provided callback method, which gets executed on completion.
 stream are interesting objects, which fire events when data comes, data is written, on error. we can provide hanlers for such scenarios. we can pipe streams into one other
 
@@ -41,7 +48,7 @@ http://stackoverflow.com/questions/24391462/what-are-the-differences-between-moc
     karma is a testing environment that leverages the power of Mocha and Jasmine to test cross-browser, do E2E testing, and more
 
 
-
+eg: mocha can be used with chai, should js alongwith karma for testing client side code for all browsers
 
 
 
@@ -55,3 +62,9 @@ http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
 
 Quest
 how does node's JS interaction with c libs/ tcp sockets happen
+
+
+***** links *****
+http://codecondo.com/10-web-application-frameworks-for-node-js/
+http://stackoverflow.com/questions/5062614/how-to-decide-when-to-use-node-js
+http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js

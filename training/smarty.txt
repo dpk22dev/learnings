@@ -7,6 +7,9 @@ Created Thursday 05 November 2015
 
 http://www.smarty.net/docs/en/
 
+**note:** add classes with constants in registerClasses under smarty: in config.yml
+
+
 $smarty = new Smarty;
 $smarty->assign('name', 'george smith');
 $smarty->assign('address', '45th & Harris');

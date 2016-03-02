@@ -7,6 +7,18 @@ Created Friday 22 May 2015
 
 localhost:5601
 
+we can add search query eg: COUNTRY:"IN"
+
 we can point to only one elasticsearch_url in its config , beacuse it can get info about cluser nodes
 
 queries will be acc to GMT, so some data may not be visible which has time future of GMT
+
+we use searches discover and save them
+use searches to create visualization from list
+combine multiple visualization into dashboard
+use settings: for reloading field data for indices
+	edit the searches, dashboards, visualizations
+
+read below https://www.timroes.de/2015/02/07/kibana-4-tutorial-part-3-visualize/ pie chart
+
+**quest**
