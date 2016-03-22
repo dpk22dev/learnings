@@ -1,0 +1,464 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-07T14:15:40+05:30
+
+====== psychology ======
+Created Monday 07 March 2016
+
+https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q
+
+study of behaviour and mental analysis.
+
+structuralism
+functionalism
+psychoanalysis
+behavioural study
+
+scientific method:
+1) question and theory
+2) hypothesis and testable prediction
+3) test with a replicable experiment
+
+case study: risk of generalisations
+sample bias has to be overcome
+correlation doesn't mean conclusion. correlation predict the possibility of cause and effect relation, but can't prove them
+
+experiment group vs messed group
+double blind procedure: experiment without telling groups
+
+everything psychology is biological:
+**excitatory neurotransmitter:** rev up neuron increasing the fire up potential
+eg: norepinepherine for arousal
+**inhibitory neurotransmitter:** chill neuron, decreasing likelihood of action
+eg: GABA, seratonin
+
+**hormones:** 
+chemical messengers manufactured by endocrine glands, travel through blood stream and affect other tissues. moods, arousal, attraction, aggression
+slower but lasting
+adrenal glands,pancreas,thyroid, parathyroid, testes, ovaries, pituatarly glands <--- master gland
+
+**feedback loop:** nervous system directs endocrine system which directs nervous system.
+brain -> gland -> brain
+
+function is localised. mind is what brain does.
+
+CNS: central nervous system; comamnd center
+PNS: peripheral nervous system; scout of sensory neurons which gather information and send back to CNS
+
+**OLD brain:** for reptiles
+brain stem, central core of brain
+medulla: beating of heart, breadting of lungs
+pons: automatic functions of movement, sleep and in advanced brain for relaying info b/w cerebellum and cerebral cortex
+thalamus: seeing, hearing, touching, tasting
+reticular formation: arousal
+cerebellum: for non-verbal learning, memory, perception of time, modulation of emotions, controlling voluntary movement
+
+**LIMBIC system:**
+hippocampus: border region for older braain and higher brain, learning and memory --- if hurt person may loose ability to retent new memories
+amygdalla: memory consolidation and emotion, fear, aggression
+hypothallamus: keeps body steady, body temprature, hunger, rewards
+
+**upper brain:** gray matter
+cereberum: perceive, think, speak 
+corpus colosum 
+cereberal cortex 20 billiions neurons connecting two hemispheres
+glial cells: support to parts
+
+**cerebral cortex divided into**:
+frontal lobe: planning, judging, abstract thinking, personality, speaking
+parietal lobe: touch, body position
+temporal lobe: sound, speech comprehension
+occipital lobe: site
+
+**sensation and perception** are different things
+person eyes are ok, he can see things but can't recognize other person. sensation is input of stimuli, while perception is organising and interpret info, and put into context giving it into meaning.
+**absolute threshold of stimulation**: percentage of stimuli
+**signal detection theory: **model of predicting how and when  a person will detect weak stimuli partly based on context. sensory adaptation
+**weber law**: logarithm scale changes not linear
+
+light: higher amplitude, greater intensity, greater brightness
+frequency : color
+young-helmholtz trichromatic theory: red, blue, green cons register any color
+oponent process theory:
+
+cons activate bipolar cells, which send message to optic nerve. then message is sent to visual cortex through thalamus.  different parts of cortex are responsible for different aspects of things like object perception, face , angle perception
+parallel processing happens as brain process form, depth, color, motion
+
+**homunculus:** 
+sound waves variation:
+short wave: high frequency or high pitch
+long wave: high wavelenth
+wave height or amplitude: loudness measured in decibels
+
+directional stereophonic hearing: 3d hearing
+
+outer ear
+middle ear: ossicle bones: hammer, anvil, stirrup
+inner ear: cochlea: fluid in motion cause hair cell to bend and send signals to auditory nerves
+
+auditory nerves send signal to auditory cortex 
+taste receptor: five
+
+sensory interaction: one sense can influence the other 
+
+particles go to nasal cavity and sensors send info to brain. brain relates that sense with past experience and we feel.
+
+touch: warmth, pressure
+
+balance of body maintained by fluid in ear. so after circling it takes time for fluid to steady, hence diziness.
+
+perceiving is beleiving, seeing is not beleiving
+perceptual set: psychological factors that determine how you perceive your environment.
+1) expectation
+2) context
+
+**form perception:**
+distinguishing figure from ground
+grouping: organizing with proximity, continuity, closure
+
+**depth perception:**
+both eyes provide binocular cue for perceiving depth.
+one eye: monocular cue for relative size
+texture gradient
+interposition
+
+**motion perception:**
+ brain perceives that enlarging objects are approaching, shrinking objects are retreating
+
+**constancy**
+regardless of motion, depth, color we can recognise objects
+
+brain constructs perception.
+
+**consiousness:**  awareness of ourselves and environment.
+stream of consiousness: continuously moving, shifting and unbroken stream.
+consiousness experience is constantly shifting. help plan our future.
+
+**states of consiousness:**
+suppose we see a squirel, our brain is churning 11 million raw data, but consious brain knows only 40 at time.
+dual processing: this is done by selective attention. consiousness is like spot light on busy stage. brain is parallely processing, but most of other stimuli go away.
+
+inattentional blindness 
+change blindness
+
+2) **sleep** is another state of consiousness
+periodic, natural, reversible and near total loss of consiousness.
+neuron repairement, growth, 
+NREM1 -> NREM2 -> NREM3 -> REM
+cycle through various stages
+various diseases with sleep: insomnia, sleep attack, sleep talking, walking, stopped breathing, 
+
+**why dreaming:**
+information  processing theory: storage of data in memory; development of neural connections
+
+3) **hippnosis**
+calm, trance-like state during which you tend to have heightened concentration and focus and more open to suggestions.
+20% are hynotisable. it can't make you do against your will.
+
+**dissosiation:** detachment from your surroundings. loss of sense of self
+
+hypnosis helps to selectively not attend to pain. some people are easily dissosiate.
+
+due to neuro-adatptation: capacity of brain increases for drug. can lead to physiological damage.
+
+**drugs can be** 
+depressants: slow down neural activity eg: alcohol, opium
+stimulants: excite neural activity eg: caffeine, cocain
+halluciogens: distort perceptions eg: LSD
+
+4) **hallucinations**
+
+**classical conditioning**
+animals exhibit associative learning
+
+preconditioning stimulus:
+unconditional stimulus + neutral stimulus =  natural response
+food + bell = saliva by dog
+
+after conditioning phase:
+conditioned stimulus = conditioned response
+bell = saliva
+
+so animals can learn or their brain can be trained
+
+**operant conditioning**
+behaviour is strengthened if followed by reinforcer or diminished if followed by punisher.
+positive and negative reinforcer
+
+only external stimuli shaped the behaviour. <-- controversy
+
+after few experiments **pure behaviourism**: 
+conditioning and assiciation, rewards and punishments => learning
+
+**social-cognitive learning: **
+we can think out of way of associations
+we are constantly building cognitive maps of our surroundings without explicitly telling us. we can tell someone path to park or place.
+
+**latent learning:** 
+learning by watching people or observing others. animals can learn by imitation.
+
+experiment: when we see others( specially we know ), getting reward or punishment, our brain reward system lights up.
+**mirror neurons** fire when performing certain actions and observing others doing it.
+exp: monkey watching doctor eating icecream
+
+learning is observing then imitating. it is important with whom you spend time.
+
+our memory makes us who we are... 
+memory: learning that has persisted over time. info that has been stored and in many cases can be recalled.
+
+**recall:** retreive info learned earlier
+**recognition**: choose between options given
+**relearning**: refreshing already learnt things, eg studying during exam
+
+working memory ---> long term memory
+**implicit memory**: retention independent of conscious recollection, automatic processing is hard to shut off
+**explicit memory**: facts and experiences that one can consciously know and store eg: study
+
+procedural memory
+episodic memory
+
+mneumonics and chunking can help us retain data. we can store using shallow processing to retain data for few time. but for storing longer ew need deep processing, based on actual meaning or semantics with the word.
+depth of memory: how much time spent to learn it, how much have you made it personal
+
+more retreival cues, better retreival. **priming: **activating associations non-consiously or memory less memory or **context dependent memory**.
+**state-dependent: **mood dependent
+**order-dependent**: primal, retreival memory
+
+don't remember:
+failed to encode
+retreival failure: inference with older or newer memeory
+storage decay
+
+memory is both reconstruction and reproduction of past events, so we can't ever be sure if memory is real, even if feels real.
+
+we all are product of story we tell ourselves.
+
+making sense of world:
+**concept**: mental grouping of similar objects, people, ideas or events.
+
+**prototype**: mental image or pinnacle example or certain thing.
+
+when we see new creature we put in bird category if it has feathers, concept of bird.
+
+**solve problems:**
+trial and error: long time taking
+algorithms: guarantees solution
+heuristics: mental shortcuts, more error prone than algorithms
+aha moment: right temporal lobe; sudden burst of solution
+
+**confirmation bias**: tendency to look for and favor evidence that confirms our ideas while avoiding or ignorign evidence of contrary/ over confidence
+
+people stick to same mental set and become anxious
+
+**availability heuristic**: mental shortcut relying on psychologically salient or easily imagined examples rather than actual odds or factual info.
+
+our thinking can be shrouded by frame. 95% chances of survival vs 5% chances of death
+
+kanji monkey proved that language can be acquired spontaneously through observation without planned training.
+
+if language considered some signs only, monkey can understand too but not grammer.
+
+phoneme: smallest sound without meaning
+morpheme: smallest unit carrying meaning, consists of phoneme eg: word, prefix, suffix
+grammer: use rules how to use morphemes
+
+infants: **receptive language**: ability to understand whats being said both to and about us. lip reading and creating sounds.
+babbling
+then **productive language**: creating words
+2 words
+
+kids learn to associate word to meaning through enforcements.
+
+chomsky: all human languages contain noun, verbs and adjectives and humns are borm with innate ability to acquire language and grammatical rules.
+
+thinking and language are different areas but are connected. expression of language, singing, talking are stored separately.
+
+instinct: complex, unlearned behaviours that have fixed pattern throughout species.
+
+**why motivation:**
+hunger pushes to food, smell pulls towards it. 
+boredom and stress
+
+sex, hunger, belong
+
+devastating effects of hunger
+
+**cognitive developmen**t:  
+development psychology: growth of knowledge
+as we grow we create schemas: mental framework that helps interpret information.
+we process information from environment as:
+assimilation: new experiences are created according to already created schema. eg: deer is kind of dog 
+accomodate: make separate schemas based on differences. deer and dog aer different
+
+four stage theory of cognitive development:
+1) sensory motor stage: babies experience through senses. has to see something to exist. they lack object permanence: things still exist when they are out of sight. after few months babies understand opposite.
+
+2) preoperational stage: 2 to 7yrs
+how is same fluid in two different shape object??
+**during first half:**
+**egocentrism:** hard to imaginge other person's point of view.
+do A has B as brother: Y. do B has you as brother. ???
+**animism**: imagination develops; think that cartoon or story characters have feelings
+**reversibility**: hard to imagine that smashed clay can be again rolled to ball
+these happen because of **centration**: child's ability to concentrate on just one aspect of problem or object like shape of container.
+
+**during second half:**
+building of theory of mind: understand other people's feeling and perceptions - as well as their own. => predict behaviour
+child now knows where i would look for object( at original position) if he has moved it not at other position.
+
+3) **concrete operational stage: 8 to 11 yrs**
+decentration: problem with reversability and conservation cease to be problem. start thinking logically.
+
+4) **formal operational: 12 to ...**
+
+touch is important, babies feel security and trust.
+
+some baby animals experience critical period when certain things have to happen for normal development.
+geese imprint: first moving thing is mother
+
+self recognition happens when we recognize ourselves in mirror. 15-18 months yrs old.
+
+ **erikson model**: table showing issues with each age interval. gives idea of conflict and growth over lives.
+
+**fluid intelligence**: ability to solve problems independent of your personal experience and education. adolescence has peak then it starts to decline.
+**crystallized intelligence**: knowledge based on facts, solidified by past experiences and prior learning. get stroger with age.
+
+how people projected their associations on random shapes. conclusion was used to understand personality
+
+**personality analysis:**
+1) psychoanalysis: freudien unconsciousness
+personality is developed by conflict b/w our impulses to do whatever we feel like and our restrain to control our urges.
+ID, EGO, SUPEREGO
+ego uses defence mechanisms to protect from fears:( reducing anxiety by unconsciously distorting reality) :
+a) REPRESSION: banishing thoughts that caused anxiety
+b) REGRESSION
+c) reactio formation
+d) projection
+e) rationalization
+f) displacement
+g) denial
+
+these factors help in building personality.
+
+2)trait theory:
+based on OCEAN(-----)
+personality traits are better at predicting our avg behaviour than what we do in specific situation.
+
+3) social cognitive theory
+reciprocal determinisim: people choose to be in environment and that environment tells us about our personality.
+so we are both the creator and product of situations aournd us.
+
+creative intelligence
+perceving, understanding, showing emotion.
+emotional intelligence: using emotions to enable adaptive or creative thinking.
+
+**arousal:** 
+increase in reactivity or wakefulness that primes us for some kind of action.
+
+two factor theory:
+emotion is not fired due to  physiological chanegs.
+emotion and physiological chanegs are two different aspects but fired at same time.
+
+we cause of physiological arousal need to be labeled the response as particular emotion. acc to exp person who is told nothing would happen would suppress the emotion.
+
+arousal spurs emotion but cognition directs it.
+
+top down vs bottom up
+love : takes high road, cognitive mind come between. eg reading love letter.
+
+fear: suddenly something comes before eyes, burst sound, takes low road, bypasses cortex => quick reaction
+fear, anger, sexual arousal → same activity patternin brain
+
+facial expression are universally common. facial expression can lower the emotion.
+
+10 basic emotions:
+joy, surprise, sadness, anger, disgust, contemp, shame, fear, guilt, interest or excitement
+
+pride, love : combination of above emotins
+
+short term stress => focus and awake
+
+chronic stress =>  stress harmones are released, which increase sugar level in blood. slow down the working of stomach, stop secretion of fluid digesting fluid, colon spasm, liver not releasing fluid for digesting fat/colestrol => blocking arteries and heart.
+
+feel emotions but don't let them run your life.
+
+sex: excitement, plateu, orgasm, resolution
+
+physiologically sex can be different psychologically. both males and females have testosterone and estrogen but in different amount accordingly. so psychologically things can be different. ⇒ not yet understood
+
+stress releiving, intimacy and social bonding.
+
+its easy to get into asylum but difficult to get out.
+deviant, disorder, distress of behaviour, emotions.
+
+psychological disorders can be due to physiological problems which can be treated. 
+biological , cultural, psychological effects are considered to create mental model, and then cure can be started.
+DSM-5 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+till chapter 28
+https://www.youtube.com/watch?v=75g4d5sF3xI
+
+__questions__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

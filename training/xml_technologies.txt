@@ -1,0 +1,114 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-03T08:54:59+05:30
+
+====== xml technologies ======
+Created Thursday 03 March 2016
+
+AIML: Artificial Intelligence Modelling Language.
+<aiml>, <category>, <pattern>, <template>
+
+AIML bot teaches us how human and machine can interact with machine language independently.like multiple questions can be converted into single question: means refering to other question
+eg who is xyz? or do you know who is xyz? 
+we can refer to mached syntax in pattern
+if we have proper xml format we can convert simple csv file to xml format input
+
+HTML and XML are markup language, we create document in these languages. DOM( document object model ) is API for HTML or XML. It defines logical structure of document and the way document is  accessed and manipulated.
+
+use <elem></elem>, but for empty tags we can write <elem/>
+attributes cna't be minimises eg: checked in html
+but in xml use <elem attr="attr"></elem>
+
+xml is not good for handling large amount of data, DBMS is good for that
+processing instruction to pass instruction to parser
+<?target instruction ?>
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+encoding: don't wory if using ascii. change it when using multibyte characters
+standalone: no means parser should look other references
+
+
+what should we made attribute. I think elements should be consistent accross document. eg: insted of <math>99</math> we could use <subject type="math">99</subject> because some might have math, some has bio etc..
+
+CDATA node info should not be processed by parser and should be passed as plain text
+comment node contains info about data and is ignored by apps
+put text with tags in CDATA section
+
+Entity: way to include characters that would otherwise be illegal to type in markup
+eg: &copyright; is general entity
+&amp; is character entity
+
+well formed document means its been checked for syntax errors. valid xml document means it has been tested against a set of rules. rules are specified in DTD or XMLSchema
+
+we can use css for changing looks of document, but for changing arrangement as well as looks of document, we have to use XSLT
+
+as DOM is language and platform independent, W3C uses abstract language called IDL( interface definition language ) to describe interfaces provided by API. programmer can use any language of choice, but that language should have mapping with IDL
+
+DOM represents document as tree and allows access to objects in tree. All XML content such as elements, CDATA, comments, instructions are presented as object or nodes
+text in element is separate node in tree, not part of element
+
+eg: XML document is read by parser and XML DOM is created which gets traversed and modified by application. It is language and platform independent
+
+root of xml tree has funcitnos like getElementByTagName() which returns elements with given tag names.
+other elements have funcitons like getParent(), getSiblings(), getAttributeNode('attr-name') as well other properties like childNodes meaning children of node as added as properties in this element
+
+getAttribute()
+**creation:** createElement(), createTextNode(), createComment(), createCDATASection(), createAttribute(), cloneNode()
+**addition:** appendChild(),  insertBefore(), setAttributeNode(), insertData(), replaceChild(), replaceData()
+removeChild(), removeAttribute()
+
+
+var value= node.nodeValue;
+If node is an Attribute then the value variable will be the value of the attribute; 
+if node is a Text node it will be the text content; if node is an Element it will be null.
+
+**DTD: **document type declaration: checks for validation of XML
+disadv: doesn't support namespaces
+suppoert only text string, not object oriented
+
+<!DOCTYPE name SYSTEM "address.dtd" [...]>
+<!DOCTYPE name PUBLIC "-//Beginning XML//DTD Address Example//EN">
+Public identifiers can follow any format, however, a commonly used format is called Formal Public Identifiers, or FPIs.
+
+**XSD: **xml schema definition, check validation of xml
+w3c recommendation and more flexible than DTD
+
+**XPath: **generally defines a pattern in order to select a set of nodes. These patterns are used by XSLT to do the transformations or by XPointer for addressing purpose.
+
+**XQuery** is to XML what sql to database.  XQuery uses XPath expressions to navigate through XML documents.
+It can be used to build and query web pages.
+
+**XSL**: extensible stylesheet language
+
+It is similar to XML as CSS is to HTML. 
+In order to understand and style an XML document, World Wide Web Consortium (W3C) developed XSL which can act as XML based Stylesheet Language.
+
+Following are the **main parts of XSL**.
+    XSLT - used to transform XML document into various other types of document.
+    XPath - used to navigate XML document.
+    XSL-FO - used to format XML document.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+resources links:
+https://www.youtube.com/watch?v=sRZw0rgOP4Q&index=8&list=PL14317B1DF3057EF1
+
+__questions__
+still don't understand concept of IDL, how is it done practically
+xsl:if , xsl:template : wht other tags are there
+why so many technologies like DTD, XSD?
+why XPath, XQuery when DOM is there?
+how are their parsers written? is it different from DOM parser
+how they have designed XPath or XQuery
+

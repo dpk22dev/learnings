@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-05T12:31:15+05:30
+
+====== quantum ======
+Created Saturday 05 March 2016
+
+what are changes high level programmer will face in programming
+will only save memory used: as n states can be stored in single bit, so for m bits m^n states can be stored but how will it make computation faster

@@ -8,3 +8,22 @@ Created Monday 01 June 2015
 upstart is for linux
 
 lvs: linux virtual server is used for load balancing among services
+
+notes: unix network programming volume 2, w. richard stevens
+IPC:
+pipe, fifo, system V message queue, posix message queue
+
+synchronisation:
+system V semaphores were added for synchronization of system V shared memory
+posix semaphores were added for synchronization of posix shared memory
+mutex and conditional variables: for threads but can  be used for process synchronizaiton
+read-write lock
+
+there is difference as system V semaphore, shared memory is kernel persistence while posix semaphore and shared memory is kernel persistent but can be filesystem persistence; but processes don't survive reboot also performance impact, its bad to choose filesystem persistence
+
+for communication using PIPE or FIFO IPCObject is shared among processes
+as the book describes there are various effects of fork, exec and _exit on various descriptors used for IPC as depicted in table
+
+
+
+

@@ -12,11 +12,25 @@ whois: protocol, client to get info from whois database
 ifconfig
 dhclient
 
-do we still use classfull addressing
-broadcast, network, host addresses
-how subnet mask is propagated ? it it 
 
-how isp can provide anycast address, and routing is done in this case do we need special permissions from AS
 
 can we use anycast for websites or tcp based services, if no how cdn use it
 https://anuragbhatia.com/networking/different-cdn-technologies-dns-vs-anycast-routing/
+
+
+__todo__
+
+
+__questions__
+what is diff b.w 10.140.0.0/20 and 10.140.12.0/20 <-- is it ok? what is right way of writing subnet
+do we still use classfull addressing
+broadcast, network, host addresses
+how subnet mask is propagated ? 
+
+what is virtual network, ussage and how to create one.
+configuring firewall and router
+creating VPN connection
+how tunneling is done? why?
+
+
+how isp can provide anycast address, and routing is done in this case do we need special permissions from AS

@@ -4,8 +4,6 @@ Creation-Date: 2014-06-11T12:26:49+05:30
 
 ====== JS ======
 Created Wednesday 11 June 2014
-
-====== JS ======
 two scopes: 
 global, 
 local: functional params are local vars

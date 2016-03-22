@@ -164,4 +164,3 @@ how is json key value pair stored; what happens to key
 till multi-match-query
 
 
-meet jai and how naukri uses dns

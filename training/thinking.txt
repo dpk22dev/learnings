@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-09T11:44:28+05:30
+
+====== thinking ======
+Created Wednesday 09 March 2016
+
+**problem solving:**
+first step should be to identify:
+what we want
+what is currently happening & why
+what changes should be made — discussion is good
+then we can make changes and analyse results
+
+there should be history wise pattern for technology. why is this technology this way. what was the original problem? what were proposed solutions? why this solution [[only? what]] were the problems faced and solutions for those micro-problems? 
+today we learn technology but we lack the experience of creating that technology. if we know the background problem and possible solutions. we can better understand the **concepts** of technology and use those concepts to solve another problem.
+
+understanding new technologies should be fast. generally we understand basic part but difficult parts make us to lack concept clearing. google search for tutorials and blogs is good for basic understanding, stack-overflow is good for clearing doubts. but diagrams, cartoon, video on youtube help us to better understand concepts. problem with most videos is that they don't take history as part; history teaches us the problem, various solutions, best chosen solution, improvements in those solutions. this timelines can help us to understand concepts rather than just technology.
+
+**Me time** is important. sometimes we don't know that we know the answers. we just need to connect the dots of experience knowledge. 

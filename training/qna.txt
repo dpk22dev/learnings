@@ -5,4 +5,29 @@ Creation-Date: 2016-02-29T22:30:52+05:30
 ====== qna ======
 Created Monday 29 February 2016
 
+__tech__
 what auth servers are possible? 
+guide setting up oauth server
+what are various encryption techniques and ciphers used? which one is better
+206 partial content ?
+
+does OS distributes threads on different processors
+is it necessary to every process to have shell associated, what about daemons? or terminal associated?
+tracking each user action: interaction with google-analytics 
+serving audio/video through apache, working of flash
+how code is copied in buffer, browser on button click
+what is diff b.w 10.140.0.0/20 and 10.140.12.0/20 <-- is it ok? what is right way of writing subnet
+
+__non tech__
+who does alexa analytics work
+logic behind cupoun sites
+how content is hidden in youtube/gaana? how buffering is done?
+natural language processing
+	speech processing and voice processing
+	~~text processing~~
+image processing and recognition 
+
+__science and maths__
+
+
+

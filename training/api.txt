@@ -16,7 +16,6 @@ symfony not good, use phalcon,
 using restler for MyNaukriAPI
 
 
-
 are we using oauth, but seen it in code
 how do we design urls? like /user[[/profile/{id}]] ; why don't [[/user/id]] and then [[/profile/pid]]; eg: [[/user/profiles/{profileId}/certifications]]; can we create any url we want
 

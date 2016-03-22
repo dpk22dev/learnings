@@ -1,0 +1,87 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-02T09:21:11+05:30
+
+====== todo ======
+Created Wednesday 02 March 2016
+
+__for now focus on knowledge gaining rather than problem solving__
+
+__p1__
+
+~~create timeline~~
+tech: http://www.tutorialspoint.com/
+	~~xml technologies~~, academic, software quality, 
+	
+~~natural language processing,~~
+	
+twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it
+src code for html/css for various websites
+writing extension for chrome, firefox
+writing extension for nginx, apache, device drivers for linux
+various new technologies and apps for them
+check mails, facebook, linkedin, 
+
+https://www.youtube.com/watch?v=oy3CJzyoaAc&index=2&list=PL2Qq6_3SVp4PQFoSaB-epDo8HWlmtL0Jx
+
+__p2__
+
+setting and using elastic search: queries
+lecture machine learning,  artificial intelligence
+read rfc for tcp, http, http2
+various diagrams and their usage: data flw diagram, uml diagram
+machine learning, data-analytics, image processing
+magento, angularjs
+read from http://highscalability.com/
+communication between machines : specially authenticated
+
+__p3__
+
+read from tutorials point software related things and get basic idea
+compiler how do they work
+read from linux journal, magazines
+write blogs for everyday experiences
+read rfc for SMTP, XAMPP, DNS
+learn html, css, js, jquery, bootstrap, angularjs
+learn laravel, magento: for db
+try to read source code for apache, nginx, xdebug, mysql
+read man for curl
+
+
+
+__don't do right now__
+quantum computer and physics
+reading OS, diving into linux kernel and device drivers
+learn go, haskell
+read korth for dbms
+linux networking essentials
+linux filesystem hierarchy
+linux internal
+linux kernet : full version
+
+__faltu__
+update splitwise: ~~purana milk wala,~~  ~~milks + dhahi + some bread entry~~?, **ask nitin for cylinder, last time sabji entry, //// 500 udhar, check net wala, 530 saman**
+~~see notting hills~~
+~~~~https://www.youtube.com/watch?v=LmdMp4iLDUc what is consicouness or https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q for various things: psychology and economics, over time~~~~
+image processing basics
+cartoon drawing, music definitions
+airtel refund sms on whatsapp: check if its ok
+
+~~cloud computing: Iaas, Paas, Saas~~
+big data: artificial intelligence, data analysis, machine learning
+Internet of things
+
+booting
+boot@127
+
+~~remove project from google cloud account~~
+
+
+
+
+
+
+
+
+
+

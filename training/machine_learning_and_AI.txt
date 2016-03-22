@@ -1,0 +1,112 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-09T14:29:45+05:30
+
+====== machine learning and AI ======
+Created Wednesday 09 March 2016
+
+The systems which exhibit intelligent behavior, learn, demonstrate, explain, and advice its users.
+perception, reasoning, problem solving, learning, linguistic intelligence
+
+Usage: Gaming, Natural language processing, Expert systems, speech recognition, handwriting recognition, intelligent robots
+
+ Initially AI problems, including Image Understanding (a really hard one), Signal Processing, Voice Understanding, and Text Understanding, were done by advanced algorithm and coding techniques.
+But machine learning is real AI enabling computer with generic understanding. Machine learning create intelligent systems is to have the system itself create and maintain its own World Models. Continuously, in response to sensory input.
+
+eg: in chess checking 10 steps ahead moves is not AI really. system has to learn from inputs what will be most probable step of user this time.
+
+**Intelligence:** The ability of a system to calculate, reason, perceive relationships and analogies, learn from experience, store and retrieve information from memory, solve problems, comprehend complex ideas, use natural language fluently, classify, generalize, and adapt new situations.
+
+intelligence can be:
+Linguistic intelligence, Musical intelligence, Logical-mathematical intelligence, Spatial intelligence, Bodily-Kinesthetic intelligence, Intra-personal intelligence, Interpersonal intelligence
+
+**reasoning:** 
+1) inductive: from specific observations, make general statement
+2) deductive: from general statments, examine the possibility to reach a specific conclusion
+
+**learning:**
+auditory 
+episodic
+motor 
+observational
+relational
+spatial
+stimulus response
+
+speech recognition: what was spoken
+voice recognition: who has spoken
+
+An **agent** is anything that can perceive its **environment** through sensors and acts upon that environment through **effectors**.
+
+Natural Language Understanding( NLU ) and Natural Language Generation( NLG )
+Problems: Lexical Ambiguity, Syntax level ambiguity, referential ambiguity
+
+intelligence is acquiring info, using that info for decision making. but it also includes thinking, creating new thoughts
+we can see the intelligence in other animals, but we can't measure it
+
+**Machine learning**
+eg: play checker: computer learns the patterns which lead to win and which to loss
+
+A computer is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, imroves with experience E.
+
+**types of learnings**
+1) Supervised learning
+ we are giving algo input and output data, algo learns the association b/w input and output. predicts the output when nput is given.
+**classes**: regression, classification
+eg: cancer prediction problems
+
+we can prove 
+with how much accuracy can algo give results under what conditions. 
+how much training data/iterations are required to keep result within some percentage.
+
+it depends on domain knowledge, how tools of machine learning are used. will they work for this particular problem?
+
+2) Unsupervised learning
+in supervised learning we are given training data. input and output is provided. But in unsupervised learning you are not given answer for data.  you have to find some pattern in data.
+eg: clustering, segmentation of customers, better quality sound in noise using independent component analysis algo
+
+3) Reinforcement learning
+based on rewards and punishments, learning
+specify: good and bad behaviours
+eg: robotics and web crawlers
+
+gradient descent: sometimes depend on where we started with( or initial theta )
+batch gradient descent: requires lot of calucations for large data for calculating theta(i)
+
+stochastic gradient descent: faster for large data set, won't actually converge to actual minimum. parameters will wander around parameters which get us minimum.
+
+linear subspace, basis of subspaces: https://www.khanacademy.org/math/linear-algebra/vectors_and_spaces/subspace_basis/v/linear-algebra-basis-of-a-subspace
+echelon transformations: http://stattrek.com/matrix-algebra/echelon-transform.aspx
+eigen value and vectors: https://www.khanacademy.org/math/linear-algebra/alternate_bases/eigen_everything/v/linear-algebra-eigenvalues-of-a-3x3-matrix
+
+usage of eigen values and vectors:
+Eigenvectors make understanding linear transformations easy. They are the "axes" (directions) along which a linear transformation acts simply by "stretching/compressing" and/or "flipping"; eigenvalues give you the factors by which this compression occurs. 
+http://math.stackexchange.com/questions/23312/what-is-the-importance-of-eigenvalues-eigenvectors
+
+
+
+
+
+
+
+
+
+
+
+
+
+__todo__
+read vector, prob, chp1
+till chap 2
+subspace and span usage and how to calculate
+how to calculate rank of matrix
+
+__questions__
+why use mean square root error instead of modulus of error
+why we use eigen space, echelon matrix ? what is their meaning
+
+
+
+
+
+

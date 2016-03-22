@@ -468,6 +468,32 @@ The visitor will typically click the link to add the feed to their feed reader.
 The RSS Widget displays the most recently published content from any source with an active feed. 
 
 
+wp_commentmeta 	Each comment features information called the meta data and it is stored in the wp_commentmeta. 	  
+wp_comments 	       The comments within WordPress are stored in the wp_comments table. 	
+wp_links 	                       The wp_links holds information related to the links entered into the Links feature of WordPress. (This feature has been deprecated, but can be re-enabled with the Links Manager plugin.) 	
+
+wp_options 	               The Options set under the Administration > Settings panel are stored in the wp_options table. See Option Reference for option_name and default values. 	
+wp_postmeta 	       Each post features information called the meta data and it is stored in the wp_postmeta. Some plugins may add their own information to this table. 	
+wp_posts 	                       The core of the WordPress data is the posts. It is stored in the wp_posts table. Also Pages and navigation menu items are stored in this table. 	
+wp_terms 	               The categories for both posts and links and the tags for posts are found within the wp_terms table. 	
+wp_term_relationships 	Posts are associated with categories and tags from the wp_terms table and this association is maintained in the wp_term_relationships table. The association of links to their respective categories are also kept in this table.
+
+wp_term_taxonomy 	This table describes the taxonomy (category, link, or tag) for the entries in the wp_terms table.
+wp_usermeta 	        Each user features information called the meta data and it is stored in wp_usermeta. 	
+wp_users 	                        The list of users is maintained in table wp_users. 	
+
+multisite tables
+wp_blogs 	Each site created is stored in the table, wp_blogs. 	
+wp_blog_versions 	The current database version status of each site is maintained in the wp_blogs_versions table and is updated as each site is upgraded. 	
+wp_registration_log 	The wp_registration_log records the admin user created when each new site is created. 	
+wp_signups 	                This table holds the user that have registered for a site via the login registration process. User registration is enable in Administration > Super Admin > Options. 	
+wp_site 	                       The wp_site table contains the main site address. 	
+wp_sitecategories      If global terms (global_terms_enabled = true) are enabled for a site the wp_sitecategories table holds those terms. 	
+wp_sitemeta 	               Each site features information called the site data and it is stored in wp_sitemeta. Various option information, including the site admin is kept in this table. 
+wp_users 	                      The list of all users is maintained in table wp_users. Multisite add two fields not in the stand-alone version.	
+wp_usermeta 	      This table is not re-create for multisite, but meta data of users for each site are stored in wp_usermeta. 	
+Site Specific Tables    The data of the main site are stored in existing unnumbered tables. The data of additional sites are stored in new numbered tables. eg:  wp_2_commentmeta, wp_2_comments 	
+
 
 links:
 http://codex.wordpress.org/Introduction_to_Blogging
@@ -496,95 +522,36 @@ common and config dirs are remaining
 error_reporting
 filters events
 
-in wp-settings.php go through each WPINC/*.php and write short description about its usage
-$.ajax code; understand ajax, rss
-inc/theme-options.php, widgets.php
-register_shutdown_function — register functions
+
+why we are not using local-config.php
+
+we can use scm for svn configuration
+
+***** capistrano *****
+Capistrano has two main commands: 
+cap: which is used for viewing and running the tasks
+capify: which is used to set up a Rails project for use with Capistrano.
+
+**Capfile:** is to Capistrano as Makefile is to make and Rakefile is to rake. Capistrano expects a Capfile to be present and to contain the tasks or to include a Ruby file that does. 
+
+***** links *****
+http://www.knewton.com/tech/blog/2012/07/announcing-wp-stack/
+http://theme.fm/2011/08/tutorial-deploying-wordpress-with-capistrano-2082/
+wp-stack configuration:
+http://design.zhiwan.is/setting-up-mark-jaquiths-wp-stacks-and-wp-skeleton-for-capristrano-deployment/
+wordpress with capistrano
+http://marketpress.com/2013/deploying-wordpress-with-git-and-capistrano/
+configuring capistrano for ruby on rails
+http://www.linuxjournal.com/magazine/using-capistrano
+configuring capistrano for php
+http://www.claytonlz.com/2008/08/php-deployment-with-capistrano/
+
 
 purpose of msJdIntegration class business wise
 group space
 how is size change in page handled in jobsearch code
 msJdIntegration code in jdview.php
 how to set up accnt;
-
-Analysing t1 theme:
-index.php — show posts
-404.php — what to be shown if page is not found
-a.php — statcom table creation
-author.php — display author archive pages
-comment.php — template for displaying Comments
-content-*.php — showing contents for page, image etc
-
-
-**inside theme (t1):**
-header-jd.php
-	comscore.php
-	header-jd-top.php
-		[[config/config.php]]
-		header-jd-template2.php
-		header-jd-template1.php
-		comscore.php
-	header-jd-bottom.php
-	debugFunction.php
-mapset.php
-	wp-config.php
-functions.php
-	inc/site-options.php
-	shortcode.php
-jdview.php
-	curl_reqst.php
-
-**inside page-templates:**
-1-column-no-sidebar.php
-	banner.php
-2-column-left-sidebar.php
-	banner.php
-2-column-right-sidebar.php
-	banner.php
-curl_reqst.php
-	config.php
-front-page.php
-	banner.php
-	curl_reqst.php
-	cluster.php
-jdview.php
-	common/ms_jd_flags_integration.php
-	common/ms_commonFunctions.php
-	banner.php
-	template/header-jd.php
-	careersite.php
-	jdview_applyBtnsTop.php
-jobsearch_naukri.php
-	curl_reqst.php
-	cluster.php
-jobsearch-template1.php
-	config.php
-	cluster.php
-	qsb.php
-jobsearch-template2.php
-	config.php
-	cluster.php
-	qsb.php
-people-template.php
-	banner.php
-a.php
-	config/config.php
-apply_redirection.php
-	config/config.php
-jdview_applyBtnsTop.php
-	config/config.php
-jobdescription-template.php
-	jobdescription-template1.php
-	jobdescription-template2.php
-jobdescription-template1.php
-	jdview.php
-	social_share.php
-jobdescription-template2.php
-	jdview.php
-
-
-common/newsuggest6.php  is used by js/jquery.searchbar.js
-msJdIntegration is used by page-templates/jdview.php
 
 http://themesandco.com/customizr/wordpress-actions-filters-and-hooks-a-guide-for-non-developers/
 http://www.rarst.net/wordpress/wordpress-core-load/

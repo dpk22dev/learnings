@@ -1,0 +1,87 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-14T17:28:02+05:30
+
+====== image processing ======
+Created Monday 14 March 2016
+
+books: gonzalez and woods
+
+we can see or images captured by our camera invloves small spectrum but can include other part of spectrum eg: x-ray for chips, body
+
+ultra-violet imaging, microscoping images, infra-red cameras, images created from scratch by computer
+
+we can see wide variety of intensity; but we can't see very dark and very bright area suppose in same room simultaneously, we need to adapt
+eg: moving to dark theater and coming out
+
+**weber law**: when background is dark, we need lots of change in intensity to capture change, but in bright background small changes can be noticed
+helpful in designing camera: 
+if we want to distinguish b/w objects we have to be careful if background is dark. 
+
+**mach band**: at boundary we perceive dark is darker and bright is brighter.
+
+fourier transform:
+https://www.youtube.com/watch?v=r18Gi8lSkfM
+we can add sine waves of various amplitudes and freq.
+
+even when inner rectangle is same color, as we lighter the outer rectangle color; inner color tend to look darker.
+
+our visual perception causes illusions. these illusions are as strong as original image.
+
+in camera we have filters, grid of sensors. light is sensed by camera. 
+even fully white-washed wall can have different intensity values
+eg: black and white sensor, only registering level of intensity can be used. but we can't deetect/store each intensity value, we instead would store approx. values. good camera: good sampling and better quantization
+**spatial discretization** and **level of quantization**( **grey values**) is important. 
+in case of color images, 
+advanced cameras acquires intenesities of R,G,B( instead of grey ) as three different images. 
+cheaper cameras acquire mosaic RGRG.. kind of pattern and interpolate, they actually capture 1/3 of image
+
+**resolution** is 24bits means, 24 bits are used to represent a pixel; may be 8bit level of quantization of each RGB.
+
+saturation: similar to human eye which can't distinguish b/w various level of colors, camera has limits in its quantization level. eg in b[[/w]] camera, some area is total shown as white or some area is totally black.
+
+**compression logic:** 
+not every pixel value is different => redundancy
+sometimes just few colors/grey values are used
+
+in symbol encoder, we use huffman encodeing.
+if we see histogram of pixels, some grey values have larger freq than other pixels.
+
+DCT( discrete cosine transform ) is easier to implement in h/w rather than KLT( kohnen leoeve transform ).
+markovian image: pixel depends on pixel next to it. DCT is equivalent to KLT in those images
+
+why 8x8 for DCT... wehn going from 2x2 to 8x8 or higher quality increases along with computation. research showed DCT is similar to KLT( under markovian conditions ) at 8x8.
+so used for today jpeg.
+
+jpeg does uniform quantization,  but we don't have to... we can use max-lloyd optimal quantizer instead.
+
+jpeg_ls : compress lossless
+
+you can not use things during encoding that decoder can't see.
+
+mpeg uses temporal prediction for frames. scene that is static, wvery frame will be same. predictor looks in previous frame for region, in current frame and predicts  in next frme.
+eg: backgroud might be same in frames
+error in predictions in static scenes is zero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from: https://www.youtube.com/watch?v=aaTSzyYPkik&list=PLZ9qNFMHZ-A79y1StvUUqgyL-O0fZh2rs&index=14
+__questions__
+

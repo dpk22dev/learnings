@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-16T19:45:17+05:30
+
+====== scaling ======
+Created Wednesday 16 March 2016
+
+running different things on different machines is helpful, as somethings might be dependent on some things whcih can break other things on upgrade.
+apache security upgrade might break mysql. ...
+
+we use puppet, chef... to start whole things up
+
+challenge: keeping prod == test == dev env
+getting forward on new version is easy, but rolling back is hard
+
+in container language: microservices are just process in their own clean environment
+
+read from http://highscalability.com/

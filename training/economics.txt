@@ -1,0 +1,311 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-07T12:17:56+05:30
+
+====== economics ======
+Created Monday 07 March 2016
+
+economics: making decisions based on limited resources to use them in best ways
+ macroeconomics vs microeconomics ask different questions and work at different scales like ecology vs cellular biology
+overall country economy vs how much employee should be hired for releasing product this year
+
+specialization makes people more products
+ppf : production possibilities frontier
+graph used for production for two goods, it can contain multiple goods but it makes it complex and less visual
+
+mutually beneficial: individual and companies should specialize in producing things whcih they have **comparative advantage **and they can trade with other countries that specialize in something else. this trade is mutually beneficial.
+
+quest:
+what to produce
+how to produce
+who gets it
+
+communism: abolishion of private property. goods and profits is distributed to each class. ideal and hard to acheive
+socialist: allows private property
+In both above cases govt decides above questions. this is command economy.
+
+competitive or free market : individual or company creates products based on profits. government makes regulations and laws. like worker conditions, amount of pollution etc,..
+
+circle of product oand resource market:
+household provides labour to resource market which gives them money. then money is given to product market to get product and services. there is govt as middle layer. 
+
+free markets can't solve all our problems. sometimes they can't be used for ethics like organ donations.
+
+**Macroeconomics**
+economy like other social sciences is study of humans behaviour. policy makers have these **goals**:
+1) keep economy growing : gross domestic product
+2) limit unemployment: unemployment rate
+3) keep prices stable: inflation rate
+
+**GDP:** value of all final goods and services produced within country in specifiec period of time( year )
+nominal GDP: GDP not adjusted for inflation
+real GDP: GDP adjusted for inflation
+recession: two or more successive quarters show decrease in real GDP
+depression: severe recession
+
+unemployment rate= #unemployed/#people-in-labourx100
+**frictional unemployed:** between jobs
+**structural unemployed:** tech/policy change unemplyed
+**cyclical unemployment:** due to recession <-- goal to reduce this
+
+realGDP and unemployment are inversly proportional
+
+goal is to keep inflation and deflation in check. **inflation** is measured by tracking the prices of a set amount of commonly purchased items( or **market basket**). the inflation rate is % change in price of that basket over time.
+due to deflation producers won't produce stuff, as well consumers might wait more for prices to go lower, decreasing the production.
+
+**business cycle:** economy is going too slow. eventually things stabilize, production cost falls since resource are sitting idle, and economy starts to expand again. this process of boom and burst is called business cycle.
+
+economy has **four componets making up GDP:**
+1) consumer spending
+2) business spening or investment
+3) government spending
+4) net export
+
+some economy depends on some componets heavily. changing them changes speed of economy.
+
+**per capita**: GDP/population-size
+it shows whether country is rich or poor, it is generally used for finding standard of living
+
+some countries are rich: **productivity: **ability to produce more output per worker, per hour. productivity depends on:
+land
+labour
+capital
+connectivity
+
+purchasing power:  
+
+**consumer price index:**
+measuer of inflation
+%increase in price of market basket
+real means price from past has been adjusted for inflation. nominal means price from past hasn't been adjusted for inflation. this adjustment is complex and includes technological advancements and other factors.
+inflation is result of having more money than goods and services
+
+Recessionary gap and inflationary gap in GDP : not sustainable cause problems
+
+**fiscal policy: **when economy is going too fast or too slow govt can step in and deaccelerate( **contractionary fiscal policy** by reducing money supply, increasing taxes, lower govt investment ) or accelerate( **expansionary fiscal policy** by cutting taxes, investing  )
+some economists argue economy will level itself over time, but govt adopts fiscal policy to control quickly. contractionary fiscal policy is generally not used. but for using expansionary fiscal policy govt has to **deficit spending .** it has to take debt if taxes already spent out.  but its not good to take debt if economy is already running at capacity; otherwise we can take debt and employee more people to boost economy. 
+we have ripple effect: if govt spends and get people employed, they save and can spend money on purchasing other products and services, thus keeping economy on rise. 
+
+deficit: more money to be spent than collected taxes. it might not be bad but deficit are completed by taking debts. thus debt comes fromm repeated deficits. if debt increases too much, its bad. we have to consider debt as percentage of GDP. govt. have **debt ceiling, **it cant issue debt more than this.
+
+reserve banks have goals:
+1) regulate and oversee nation's commercial banks to make sure they have enough money to avoid bank runs
+2) conduct monetry policy: increasing or decreasing money supply to speed up or slow down the economy.
+
+reserve banks use **expansionary monetary policy**( increasing money supply ) or **contactionary menetory policy**( by decreasing money supply )
+
+**Liquid assets:** asset that can be converted to cash quickly with minimal impact on priece received.
+
+**open market operations:** federal reserve buys/sells short term govt bonds.
+**govt bonds or treasury bills is IOU** issued by govt will pay back later.
+**QE** : quantitive easing, when reserve bank buys mortgages, loans
+
+govt uses fiscal policy or monetry policy for controlling economy.
+
+**money:**
+medium of exchange
+store of value
+unit of account
+
+gold reserve standard was used to print money. peice of paper has value because people think it has value, so it doen't have to be backed by gold. eg bitcoin
+
+stock market is one piece of financial system. **financial system** consists of:
+1) lender: household who have money now and want to increase money over time
+2) borrower: who want money right now for some need or business
+3) government
+
+it works in following ways:
+banks: debt
+bond market: debt
+stock market : equity
+
+**need:** financial markets with instruments like stocks and bonds, allow borrower to crowdsource the money they need to borrow. they raise their capital from lots of investors and spread the risk around.
+
+**mortgage:** girwi in hindi. If A wants to buy from B, B sells it to bank; bank now is owner. A gives money to bank overtime + interest and gets back ownership. bank can sell that to third party.
+
+**velocity of money:** number of times dollar is spent per year. when people spend money as quickly as possible it increase velocity which pushes inflation even faster.
+
+**hyperinflation: **when people spend money as quickly they get
+**liquidity trap: **people wait for further down of prices, decreasing production, layoff of workers; slowing down the economy.
+**stagflation: **stagnant economy + inflation, when output becomes stagnant and their prices rise
+
+smith: (capitalism) individual with self interest can increase national economy. govt. should not intervene
+marx: (communism ) govt should handle everything in economy
+keynsian school of economics: smith is ok, but govt should intervene in few times to bring back economy quickly. capitalism is not bad,it takes time for economy to come back to track.( chicago school of eco )
+austrian school of eco: govt shouldn't intervne
+
+new neoclassical synthesis: smith + keynsian
+
+**international trade:**
+net export: annual diff b/w export and import
+if( export > import ) => **trade surplus**
+else **trade deficit**
+
+international trade reshuffle jobs from one sector to  another.
+**protectionism:** putting high tariffs on imports and limiting number of foreign goods to protect local business; it usually hurts more. 
+WTO handles such problems other problems in internation trade.
+**exchange rates: **how much one currency  is worth to other currency during trade	
+eg: pesos : dollar :: 15 : 1
+**dollar appreciates:** if new ratio is 20 : 1, less dollars are required to purchase; import becomes cheaper => import increases while exported goods to other countries become expensive => export decreases
+**dollar depreciated: **if new ratio is 10:1, more dollars reqd to purchase, import costly => import decreases, exported goods to other countries become cheaper, export increases
+
+coutries buy/sell currencies to appreciate/depriciate currencies.
+
+**balance of payments: **
+**current account:** records sale and purchase of goods and services, investment income earned abroad, transfer like donations and foreign aids
+**financial account: ** records purchase and sale of financial asssets like stocks and bonds
+
+if US purchase $100billiion worth of computers from china which goes in current account, china can buy stocks and bonds with this money only, which goes in financial account. 
+the symmetry of money and goods has to be kept. if US only purchases, it increase trade deficit. but due to this symmetry both countries can benefit.
+
+globalization: global poverty, sustainable development, rules and regulations for working conditons, 
+
+wealth : assets - liabilities
+income
+we have wealth, income inequality
+
+necessary to avoid income inequility.
+
+**microeconomics**
+marginal analysis: how individual, business and govt make decisions => human behaviour
+we use marginal analysis during decisions.
+
+utility: satisfaction( utils )
+
+**law of diminishing marginal utility** 
+diamond water paradox:
+because diamond are relatively few in number, so satisfaction is high; but for water being in excess satisfaction of 1 more gallon of water is low
+
+**substitution effect:** as prices rise consumers will replace more expansive itesms with lsess costly alternatives
+along with law of diminishing marginal utility, substitution effect  shapes the demand curve.
+
+**elasticity of demand**
+eg: gasoline is **relatively inelastic of demand**, large % change in price leads to small % change in demand 
+
+it shown by distorted demand-supply graph.
+
+**elasticity of supply	**
+quantity of supply can change according to price quickly. eg: tshirts
+
+relative inelastic of supply like airplane makers, van gogh paintings
+
+**type of efficiencies:**
+**productive efficiency:** machines and resources are used to their fullest potential
+**allocated efficiency:** production represents consumer preferences
+
+**price signals**: what to produce acc to price, helps to use resource efficiently
+
+**price gouging**: selling price of goods are kept higher than intended. consumer exploitation. public economics controls analyse and control them.
+
+private companies are quicker in case of disaster for better customer relations.
+
+below cost pricing or **predatory pricing**: drive away competetors, while keeping prices low in loss.
+
+price control:
+**price ceiling, price floor**
+
+in terms of helping consumers and producers, economists consider price control counter-productive. but minimum wage can be helpful.
+
+price ceiling is not good as producers won't produce much causing shortages. price flooring is not good as consumer will tend to buy alternative products.
+
+**subsidy**: govt payment given to individual, org or business to offset cost to advance a public goal.
+it also might not be good.
+
+eg: due to agricultural subsidy farmers might think, they are earning minimum amount and stop to innovate
+
+**public good: **
+1) non-exclusion: if don't pay for defence, you will still get it;m and if pay extra you don't get extra benefit
+2) non-rivalry: shared property
+
+if good/product have above two criteria no private sector will produce them.
+
+**tragedy of commons: **common goods are often misused and exploited
+
+environmental economics handles such issues.
+
+negative and positive externality, govt steps in. it uses:
+**regulatory policy**: how much should they regulate
+**market based policy**: taxes and subsidy
+
+CAP and trade
+**rebound effect**: eg: if we put fuel efficient car in market, people might drive more
+
+**accounting profit**: revenue - just explicit costs
+**economic profit**: revenue - explicit costs and implicit costs( indirect opportunity costs)
+
+companies tend to make accounting profit instead of economic profit. they make zero economic profit.
+
+**normal profit**: minimum amount of profit company needs to earn to stay in business.
+
+costs:
+variable cost: change with amount produced. eg: wages, ingredients
+fixed cost: rent, owen
+
+total cost = VC + FC
+avg cost = total cost/things produced
+
+**economies of scale**: big companies can spread out their cost of production
+
+profit maximizing rule: 
+**marginal revenue**: additional revenue earned from selling another unit
+**marginal cost**: additional cost for producing another unit.
+
+if marginal cost < marginal revenue, should continue to produce
+
+if more resources are hired, they run up against law of **diminishing marginal returns.** if you add variable resources like workers to set number of fixed resources like ovens, the additional output generated from each additional worker will eventually decrease.
+
+**sunk cost**: cost that has already been paid and can't be recovered. shouldn't be considered moving forward.
+
+crony capitalism: single company monoplizing market
+	price discrimination can happen
+	
+anti trust law: mergers and acquisition laws need to be approved by govt agencies.
+
+horizontal integration: same domain mergers are not allowed
+vertical integration: not always subject to anti-trust regulation
+
+patents are another form of monopolizing for certain amount of time.
+
+deregularization: breaking up of AT&T into 7 companies.
+
+**game** **theory:** competetors end up in same place, almost same price
+
+
+**oligoloply**:  few large companies in market
+non price competetion, competetion is in quality, service etc..
+**carte**l: if competing companies make agreement and make collusion eg: OPEC controlling 80% of oil
+**collusion**: secret agreement or cooperation for illegal or deceitful purpose
+
+**anti-trust law** : doesn't allow cartel
+
+**behavioural economics: **most cases people rational. classical theory, fails sometimes.
+prices change perception. higher price, higher demand sometimes.
+
+**framing effect**: if people were entirely rational, they would consistently make same decision given idenctical options. but sometimes people's preferences are dependent on how opitons are presented. this cognitive bias is framing effect.
+
+nudge theory: psychological pricing. 
+risk : loss are more painful than winning is rewarding.
+loss aversion: pain of loosing 5cents on plastic bag vs getting 5 cents.
+we hate lossing: bonus given initially and returning on failure > bonus given at end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+till lecture 27
+__questions__
+read later accounting and finanace
+diff b/w finance and economics vs accounts

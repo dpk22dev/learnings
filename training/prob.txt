@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-15T12:32:05+05:30
+
+====== prob ======
+Created Tuesday 15 March 2016
+
+sample space: collection of all possible  results
+power set: {1,2,3,4,5,6}
+
+independent events: 
+event one doesn't effect event two. eg: tossing a coin two time, choosing one card, putting that card back and again choosing card from same deck after reshuffle
+dependent events like tossing coin again only when head comes at fiest time,  choosing card again after drawing first card
+
+mutually exclusive: 
+two events are mutually exclusive if they cannot be both true at same time. eg: head and tail at same time, so this is event is mutualy exclusive
+not mutually exclusive: drawing a red card and drawing a face card
+
+jointly or collectively exhaustive: at least one of event must occur. eg: flip of coin getting head
+
+mutually doesn't mean exhaustive and independent and vice versa
+
+Event:  prob
+A: 	P(A) in [0,1]
+not A: 	1 - P(A)
+A OR B : P( A U B ) = P( A ) + P( B ) - P( A ^ B )
+		: P( AU B ) = P( A ) + P( B ) if A and B are mutually exclusive
+A AND B: P( A ^ B ) = P(A|B) .P(B) = P(B|A).P(A)
+		  : P( A ^ B ) = P(A) .P(B) if A and B are independent
+A given B: P(A|B) = P( A^B)/P(B) = P(B|A).P(A) / P(B)
+
+given the output of switch on/off by coin, by human; can we find out whose output is whose.
+in both cases prob of 1 and 0 seems to be zero. but if we find pattern suppose of 3 tosses, random nature allows all of them to be equally likely. but humans favour some pattern. so these patterns will be uneven.
+
+**diff b/w probability and expected number**
+More practically, the expected value of a discrete random variable is the probability-weighted average of all possible values. In other words, each possible value the random variable can assume is multiplied by its probability of occurring, and the resulting products are summed to produce the expected value. The same works for continuous random variables, except the sum is replaced by an integral and the probabilities by probability densities. 
+
+The **Poisson distribution** is popular for modeling the number of times an event occurs in an interval of time or space.
+An event can occur 0, 1, 2, … times in an interval. The average number of events in an interval is designated \lambda (lambda). Lambda is the event rate, also called the rate parameter. The probability of observing k events in an interval is given by poisson equation.
+
+
+
+till https://www.youtube.com/watch?v=SqcxYnNlI3Y&index=34&list=PL06A16C388F14E6FE
+
+__questions__
+why random variable was introduced
+why we use expected number, 

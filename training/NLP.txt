@@ -1,0 +1,154 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-09T16:48:47+05:30
+
+====== NLP ======
+Created Wednesday 09 March 2016
+
+
+information extraction and sentiment analysis
+language translation and auto-option of next word
+
+mostly solved: spam detection, part of speech tagging, named entity recognition
+good progress: sentiment analysis, parsing, machine translation, information extraction
+still really hard: question answering in general, paraphrase, summarization, dialog without human knowing
+
+ambiguity is pervasive
+	eg: fed raises interest rates
+
+non standard english
+segmentation issue
+idioms
+neologisms
+tricky entity names
+
+knowledge about language
+knowledge about world knowledge
+
+text processing:
+	using regualar expression
+
+false positive: mathcing patterns which should not match eg: matching they when trying the, we improve these thus increasing accuracy or precision
+false negative: not matching which match
+eg: not matching The when trying the, we solve these thus increasing coverage or recall
+
+Every NLP task needs to:
+1) segmenting / tokenizing words in running text
+2) normalizing word formats
+3) segmenting sentencces in running text
+
+eg: I do uh.. main- mainly business data
+uh: fragment
+main filled pauses 
+**lemma:**  same stem, part of speech, rough word sense 
+eg: cat and cats = same lemma
+**wordforms**: full inlected surface form
+eg: cat and cats = different wordforms
+
+**type**: an element of vocabulary
+**token: **an instance of that type in running text
+
+N = #tokens
+V = vocabulary = set of types
+
+church and gayle: |V| > O( N^1/2 )
+
+eg:	
+phone conversation 2.4 million tokens(N), 20K types(V)
+**segmentation**
+problems in english: 
+don't
+ph.d.
+other-day, other day
+
+problems in frech, german, chinese, japanesse => 2.4 chars per character
+
+maximum matching word segmentation algo( greedy ):
+suppose we use it for english
+eg: thetabledownthere should be the table down there
+but gives theta bled own there
+it checks for longest matching word in dictionary
+
+not good for english without spaces, works well for chinese
+
+once we have done segmentation we need to normalize.
+**normalization:** indexed terms and query terms must have same form.
+eg: U.S.A and USA : always deleting periods
+we reduce all letters to lower case letters but exception should be in mind like Fed vs fed, SAIL vs sail, US vs us
+
+**Lemmatization**
+reduce inflections or variant forms to base form or
+finding correct dictionary headword form
+am, are, is -> be
+cars, car, car's -> car
+
+**Morphology:** study of morpheme
+**morpheme**: small meaniongfull units that make up words
+	stems: core meaning bearing unit
+	affixes: bits and pieces that adhere to stems
+
+eg: stems has stem as stem and s as affix
+	affixes has affix as stem and es as affix
+
+**stemming: **chopping of affixes 
+eg: automate, automatic, automation => automat
+**porter algo**: most common english stemmer
+step 1a: remove sses, ies, ss, s in order
+step 1b: (*v*) ing, ed -> NULL
+step 2: ational -> ate, izer -> ize
+.
+.
+.
+various rules
+
+dealing with complex morphology is necessary. eg turkish
+words has to be normalized and stemmed to get normal form.
+
+**segmenting out sentence**
+!,? unambiguous
+. ambiguous like abbreviations Ph.D., Dr. , 12.23=> solve this using binary classifier 
+
+use decision tree, probable words in begining of line, end of line
+generally we use machine learning to build decision tree
+
+minimum edit distance: for similarty for two strings
+in sentence min edit distance of words can help.
+in weighted min edit distance, we put cost for each operation.
+
+computational biology:
+needleman-wunsh algo
+smith-waterman algo
+
+**Language modeling:**
+assign a prob to sentence
+to measure good and bad in machine translation
+eg: P(high winds tonight) > P(large winds tonight)
+spell correction
+eg: P(fifteen minutes from now  ) > P(fifteen minuets from now)
+speech recognition
+eg: P(I saw a van) > P(eyes own of an )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+till https://www.youtube.com/watch?v=XkImc447pZo&list=PL8FFE3F391203C98C&index=4
+NLP: chapter 21
+
+
+exact meaning of lemma, type, token
+morphology in corpus
+
+
+

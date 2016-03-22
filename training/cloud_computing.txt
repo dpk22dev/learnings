@@ -1,0 +1,98 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-10T17:28:18+05:30
+
+====== cloud computing ======
+Created Thursday 10 March 2016
+
+Cloud Computing provides us means of accessing the applications as utilities over the Internet.
+
+Cloud Computing refers to manipulating, configuring, and accessing the hardware and software resources remotely. It enalbles platform independency, as s/w is not reqd to be installed locally.
+
+**Models:**
+1) Deployment model: access to cloud
+	public, private, hybrid, commounity
+	
+2) Service model
+	IaaS, PaaS, SaaS, XaaS
+
+Pro: Rapid elasticity
+
+Risks:
+**security:** data management and infra is provided to third party
+**LockIn: **difficulty in moving from one CSP( cloud service provideer ) to another
+**Insecure or Incomplete data deletion**
+
+we should understand do we really need this?
+Cloud computing value proposition
+cloud computing strategy planning
+
+we should choose CCP wisely considering maintainance and technical service provided.
+
+**technologies behind cloud computing:**
+virtualization
+service oriented architecture
+grid computing
+utility computing
+
+**cloud infra should implement:**
+transparency
+scalability
+intelligent monitoring
+security
+
+compute
+storage
+data services
+other services: 
+machine learning
+translation
+networking services
+scaling and load balancing
+management and monitoring
+
+Load balancing, microservices, authorization, SQL and noSQL databases, memcache, traffic splitting, logging, search, versioning, roll out and roll backs, and security scanning are all supported natively and are highly customizable.
+
+Software Development Kits (SDKs) for App Engine manages your application locally, while the Google Cloud Platform Console manages your application in production. 
+
+read about each tech
+advanced examples: including multiple techs opened in tabs
+view vids
+
+use http://planforcloud.rightscale.com/ to find cloud prcing comparisons
+
+GCE = compute engine VM: IaaS
+GKE =  container engine
+GAE = app engine: PaaS
+	sandbox: google provided services
+	endpoints: apis for android or in general
+	for in between: app engine managed VMs
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+till 42
+https://www.youtube.com/watch?v=ld_x3FQj9cs&index=35&list=PL2Qq6_3SVp4PQFoSaB-epDo8HWlmtL0Jx
+
+**todo**
+understand and use api explorer
+
+**Questions**
+learn about kubernetes
+what we have to do about scalability in gcloud
+
+
+
+
