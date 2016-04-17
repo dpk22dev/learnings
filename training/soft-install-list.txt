@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-22T15:00:27+05:30
+
+====== soft-install-list ======
+Created Tuesday 22 March 2016
+
+vim
+zim
+git
+virtual box
+nginx, apache, mysql, php
+docker, docker-compose
+netbeans, sublime
+classic-menu
+tomcat, ant
+gnupg
+node, npm, express
+meld
+subversion, scons
+graphviz
+collectd
+postgresql
+
+ethtool

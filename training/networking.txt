@@ -7,7 +7,9 @@ Created Tuesday 17 February 2015
 
 read network conf: http://www.yolinux.com/TUTORIALS/LinuxTutorialNetworking.html
 kernel imp: Linux Kernel Networking by Rami Rosen
+http://link.springer.com/book/10.1007%2F978-1-4302-6197-1
 
+http://www.tldp.org/LDP/nag2/nag2.pdf
 whois: protocol, client to get info from whois database
 ifconfig
 dhclient
@@ -17,15 +19,55 @@ dhclient
 can we use anycast for websites or tcp based services, if no how cdn use it
 https://anuragbhatia.com/networking/different-cdn-technologies-dns-vs-anycast-routing/
 
+the netmask on a host with an IP address defines what is internal and what is external. Hosts located internally (professionals say, “in the same subnetwork”) respond directly. Hosts located externally (“not in the same subnetwork”) only respond via a gateway or router
+
+ To connect 128 hosts to the Internet, for instance, you need a subnetwork with 256 IP addresses, from which only 254 are usable, because two IP addresses are needed for the structure of the subnetwork itself: the broadcast and the base network address.
+
+in ipv4 we don't have authentication of source, encryption of payload; need to use ipsec
+
+The most notable difference for the user is that any change manually done to /etc/
+resolv.conf will be lost as it gets overwritten each time something triggers resolvconf. Instead,
+resolvconf uses DHCP client hooks, and /etc/network/interfaces to generate a list of nameservers
+and domains to put in [[/etc/resolv.conf]]
+
+The order in which your system selects a method of resolving hostnames to IP addresses is controlled
+by the Name Service Switch (NSS) configuration file /etc/nsswitch.conf. 
+
+bridge: It makes forwarding decisions based on tables of MAC addresses which it builds by learning what hosts are connected to each network. A software bridge can be used within a Linux host in order to emulate a hardware bridge, for example in virtualization applications for sharing a NIC with one or more virtual NICs. 
+http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
+
+The most common settings provided by a DHCP server to DHCP clients include:
+IP address and netmask, IP address of the default-gateway to use, IP adresses of the DNS servers to use
+it can also provide:  Host Name,  Domain Name, Time Server, Print Server
+
+The socket buffer is the structure used to address and manage a packet over the entire time this
+packet is being processed in the kernel. During its travel across the layers packet headers of each layer are inserted in front of the payload.
+
+Not every network device in the Linux kernel represents a physical network adapter. There are network devices, such as the loopback network device, that offer a logical network functionality. the same goes for many other devices.
+network adapters have no representation in the device file system /dev/ , which means that they cannot be addressed by simple read-write operations. this is not possible because network devices work on a packet basis. it is configured using tools like ip, config.
+but it is available in kernel so can be seen in [[/proc]]
+
+
+PPP consists of following protocols:
+LCP link control protocol: for authentication uses PAP, CHAP, mix of pap/chap
+NCP network control protocol: eg if we use IP it uses IPCP, if IPX it uses IPXCP to send data
+
+
 
 __todo__
-
+ipv6 : https://www.youtube.com/watch?v=mvlBMogudkQ
+read man ip, ifconfig, route, ifup, resolv.conf, nss, brctl, 
+read bridging: http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
+networking: http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_LAN_Technologies
+read book: linux networking architecture and impl after page 78
 
 __questions__
 what is diff b.w 10.140.0.0/20 and 10.140.12.0/20 <-- is it ok? what is right way of writing subnet
 do we still use classfull addressing
 broadcast, network, host addresses
 how subnet mask is propagated ? 
+can we allow, disallow network level braodcast, how?
+are there tricks to access internet while using private ip network?
 
 what is virtual network, ussage and how to create one.
 configuring firewall and router
@@ -34,3 +76,23 @@ how tunneling is done? why?
 
 
 how isp can provide anycast address, and routing is done in this case do we need special permissions from AS
+why there is delay in transition from ipv4 to v6?
+
+services in ubuntu/debian for networking
+files responsible for networking 
+each router term and configuration of router
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

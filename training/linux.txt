@@ -24,6 +24,80 @@ there is difference as system V semaphore, shared memory is kernel persistence w
 for communication using PIPE or FIFO IPCObject is shared among processes
 as the book describes there are various effects of fork, exec and _exit on various descriptors used for IPC as depicted in table
 
+Processes operate exclusively in the user address space (i.e., in unprotected mode) of a processor, where they can access only the memory section allocated to them. An attempt to access memory sections of other processes or the kernel address space leads to an exception, which has to be dealt with by the kernel.
+When a process wants to access devices or use a functionality of the operating-system kernel, it has to use a system call to do this. A system call causes the processor to change to the protected mode, and access to the kernel address space is a function of the system call. All devices and memory sections can be accessed in protected mode, but only with methods of the kernel.
+
+linux doesn't take microkernel approach, it uses monolithic. modules are added/removed at runtime. this is similar to micro-kernel approach except, modules run in kernel mode in this case.
+
+An **ISO image** file is a snapshot of the data and layout of a CD or DVD, saved in ISO-9660 format.
+
+**dpkg vs apt**
+dpkg and apt are both package manager, but apt is more advanced. dpkg doesn't installs dependencies, but apt does.
+
+**lsblk**: for getting list of block devices attached to machine
+linux thinks that disk attached has multiple partitions, it gives access to disk and its partitions using [[/dev/sda]] names
+it understands data-structure handling the filestructure on disk, ie filesystem.
+it also has names for showing on list i.e. label
+
+it has maj:min for identifying device for device drivers, Traditionally, the major number identifies the driver associated with the device. The minor number is used by the kernel to determine exactly which device is being referred to. Depending on how your driver is written (as we will see below), you can either get a direct pointer to your device from the kernel, or you can use the minor number yourself as an index into a local array of devices.	
+**major-minor number of device driver:**
+The major number identifies the driver of a device. The major number can be specified when you register a device driver, but it has to be unique. we can ask kernel to assign also. The minor number is used to distinguish different devices used by the same driver. In Linux, a
+device driver can control more than one device, if the driver is designed as a reentrant driver.
+
+it has uuid for identifying disk: The Universally Unique Identifier can be used to identify a device independent form its mount point or device name. This is more and more important as many devices today support hot-plugging or are external anyway. Therefore it makes sometimes sense to access a device (for example in fstab) not by device name but by the UUID.
+
+it has knowledge where partition is mounted in filesystem heirarchy
+
+it looks like #software runnable threads should be equal to #hardware threads, if s/w threads are way much h/w threads problems may occur. blocked threads don't count.
+
+what cpu does during DMA
+during ISA bus, cpu couldn't do much except interrupt handling and some h/w checks etc... but PCI doesn't have concept of DMA. it has bus mastering. memory, io devices can master bus for some time. memory has higher bandwidth than io. so fair amount of time is available for cpu + it can still access cache.
+http://stackoverflow.com/questions/5150719/direct-memory-access-dma-how-does-it-work
+
+can multiple cores access same memory at same time
+this shows us we should be careful about architecture of cpu, bus and type of task we are planning to acheive maximum output from machine
+http://programmers.stackexchange.com/questions/183686/can-multiple-cpus-cores-access-the-same-ram-simutaneously
+
+**asynchronous vs non-blocking io**
+http://blog.omega-prime.co.uk/?p=155
+
+**process vs threads under linux**
+there is no distinction except, level of sharing of resources among threads. everything is almost thread
+http://stackoverflow.com/questions/807506/threads-vs-processes-in-linux
+
+**multicore processing**
+https://www.cs.cmu.edu/~fp/courses/15213-s06/lectures/27-multicore.pdf
+simultaneous multithreading can happen in single core, single processor. instructions from two independent threads can execute in single core's different functional branches. cores can be SMT enabled or not.
+2,4 or 8 simultaneous threads on single core, intel calling them hyperthreads. cache is private as well as shared among cores. this can cause cache coherence problem. solution: invalidation-based protocol with snooping
+
+**debugging sound in ubuntu**
+https://help.ubuntu.com/community/SoundTroubleshooting
+
+why [[/run]] and [[/var/run:]]
+http://askubuntu.com/questions/57297/why-has-var-run-been-migrated-to-run
+http://askubuntu.com/questions/303120/how-folders-created-in-var-run-on-each-reboot
+
+lshw
+
+********** todo **********
+udev: https://www.linux.com/news/udev-introduction-device-management-modern-linux-system
+read man udev, sysctl
+read ubuntu server guide after: DM multipath
+
+*********** questions  *****
+in case of io does all threads on all processors are waiting for bus? 
+yes
+is bus locked in case of DMA also?
+dma is dead. it used to be yes
+meaning of each parameter:
+after running lshw
+ resources: irq:126 memory:c0000000-c0ffffff memory:b0000000-bfffffff ioport:4000(size=64)
+
+
+
+
+
+
 
 
 

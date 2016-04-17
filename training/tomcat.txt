@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-05T17:50:23+05:30
+
+====== tomcat ======
+Created Tuesday 05 April 2016
+
+CATALINA_BASE: [[/usr/share/tomcat7]]
+CATALINA_HOME: 
+
+Filters  are  deployed  in  the  deployment  descriptor  file web.xml and  then  map  to  either  servlet  or  JSP names  or URL  patterns  in  your application's  deployment  descriptor.
+
+POJO: plain old java object
+pojo should not extend class, implement interface, have annotations eg: java beans
+frameworks like spring promote pojo based practice
+
+Hibernate : ORM for java
+
+{{./pasted_image.png}}
+
+
+configuration metadata which is needed for the container to know the followings:
+How to create a bean
+Bean's lifecycle details
+Bean's dependencies
+
+You can mix both, Constructor-based and Setter-based DI but it is a good rule of thumb to use constructor arguments for mandatory dependencies and setters for optional dependencies.
+
+
+
+
+
+
+
+
+
+
+
+
+~~spring, pojo, ejb containers~~
+
+questions:
+diff b/w servlet and jsp
+diff b/w making class file and interpreting and compiled java file
+where do javabeans, hibernate and struts come into play
+what is good way of writing jsp, its not good to write jsp with html itself
+does xslt processor run for resolving taglib
+what exactly is web container
+do we create config class by extending simpletagsupport class
+understanding of context: jsp context, servlet context
+scopes in expression language: pagescope, requestscope etc...
+what happens when multiple requests are coming in
+spring with tomcat
+diff b/w java se, ee, me
+do we so much extensively use beans.xml, don't we dynamically instantiate and add classes
+setting up eclipse

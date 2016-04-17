@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-05T10:36:46+05:30
+
+====== X server ======
+Created Tuesday 05 April 2016
+
+https://wiki.ubuntu.com/X/Architecture

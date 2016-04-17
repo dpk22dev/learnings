@@ -30,9 +30,14 @@ standalone: no means parser should look other references
 
 what should we made attribute. I think elements should be consistent accross document. eg: insted of <math>99</math> we could use <subject type="math">99</subject> because some might have math, some has bio etc..
 
+PCDATA: parsed character data
+PCDATA is text that WILL be parsed by a parser. The text will be examined by the parser for entities and markup.
+Tags inside the text will be treated as markup and entities will be expanded.
+However, parsed character data should not contain any &, <, or > characters; these need to be represented by the &amp; &lt; and &gt; entities, respectively.
+
 CDATA node info should not be processed by parser and should be passed as plain text
 comment node contains info about data and is ignored by apps
-put text with tags in CDATA section
+
 
 Entity: way to include characters that would otherwise be illegal to type in markup
 eg: &copyright; is general entity
@@ -72,8 +77,41 @@ Public identifiers can follow any format, however, a commonly used format is cal
 
 **XSD: **xml schema definition, check validation of xml
 w3c recommendation and more flexible than DTD
+its like jquery is to java-script, as we can do same thing in js but its easier and better to write in jquery; similarly we can write in dtd but its better to write in XSD. XSD internally uses XSchema.dtd. XSD uses very well defined and reusable dtd. we can put restrictions of pattern, length on data.
+
+why use XSD:
+It is easier to describe allowable document content
+It is easier to validate the correctness of data
+It is easier to define data facets (restrictions on data)
+It is easier to define data patterns (data formats)
+It is easier to convert data between different data types
+
+we can create a complex-type and several elements can refer to it.
+
+Simple elements cannot have attributes. If an element has attributes, it is considered to be of a complex type. But the attribute itself is always declared as a simple type.
 
 **XPath: **generally defines a pattern in order to select a set of nodes. These patterns are used by XSLT to do the transformations or by XPointer for addressing purpose.
+
+xath works with parsed XML. That means that some details of the original document aren’t accessible to
+you from XPath.  we have no way of knowing whether a text node in an XPath
+tree was in the original XML document as text, as an entity reference, or as part of a
+CDATA section.
+
+XPath 1.0 views an XML document as a tree of nodes.  XPath 2.0 views everything as a sequence.
+**seven kinds of nodes in XPath**:
+document, element, attribute, text, comment, proessing instruction, namespace nodes
+node-tests:
+node(), text(), comment()... similarly XPath2.0 adds element(), schema-element(), etc...
+
+You can use XPath 2.0 functions to see how many items are in a sequence, you can retrieve a subset of the items in the sequence, and you can insert or delete items at a particular point in the sequence. 
+eg: <xsl:sequence select="addressbook/address/city"/>
+<xsl:sequence select="('London', 'Adelaide', 'Rome')"/>
+
+for XPath1.0 context consists of: context node, context position, context-size, set of variables, set of all fucntions, set of all namespace declarations
+
+// means zero or more elements can occur between / and /
+
+
 
 **XQuery** is to XML what sql to database.  XQuery uses XPath expressions to navigate through XML documents.
 It can be used to build and query web pages.
@@ -84,21 +122,78 @@ It is similar to XML as CSS is to HTML.
 In order to understand and style an XML document, World Wide Web Consortium (W3C) developed XSL which can act as XML based Stylesheet Language.
 
 Following are the **main parts of XSL**.
-    XSLT - used to transform XML document into various other types of document.
-    XPath - used to navigate XML document.
-    XSL-FO - used to format XML document.
+	XSLT - used to transform XML document into various other types of document.
+	XPath - used to navigate XML document.
+	XSL-FO - used to format XML document.
+
+**SAX**
+it processes documents and fires events like start of document, finding of processing instruciton, start of element, end of element, uses less memory
+But it doesn't provide heirarchical tree, doesn't provide context info
+
+Most of XSLT parsers are based on DOM parser
+
+**Namespacing**
+<root 
+xmlns:f="http://www.w3.org/TR/furniture">
+<f:table>
+  <f:name>African Coffee Table</f:name>
+  <f:width>80</f:width>
+  <f:length>120</f:length>
+</f:table>
+</root>
+
+below doesn't require namespaced elements and attributes:
+<table xmlns="http://www.w3schools.com/furniture">
+  <name>African Coffee Table</name>
+  <width>80</width>
+  <length>120</length>
+</table>
+
+using css with xml to show elements es not recommended, use javascript or XSLT instead. XSLT is recommended style sheet language for XML as is CSS for HTML. XSLT is better than CSS as it can add/remove elements, attributes from file; get info using XPath, sort, arrange etc... these tasks are done by JS in case of HTML not by CSS.
 
 
+{{./pasted_image.png}}
 
+ref: http://www.w3schools.com/xml/pic_xpath.gif
 
+**element vs attributes**
+attributes are good for css but not so for xml, because attributes can't contain multiple values, not easily extendible, can't describe structure, so should be used rarely. data should be stored in elements and meta-data should be stored in attributes.
 
+here % is used for **parametrized entity**. 
+<!--external DTD example-->
+<!ENTITY **%** info "(id,surname,firstname)">
+<!ELEMENT lab_group_A **%info;**>
+<!ELEMENT lab_group_B %info;>
+<!ELEMENT lab_group_C %info;>
 
+NMTOKEN is generally used with attribute names.
 
+DTD for XSD just defines well formed ness of document, it doesn;t defines working/funcitonality of parser.
 
+**XSLT**
+**import vs include**: both insert content of another stylesheet into this one. difference is in priority. in import, An imported style sheet has lower precedence than the importing style sheet. while in include both have equal priority.
 
+**call-template**: calls a named template, if want to pass param, use with-param
+**apply-templates**: selected node changes according to template
+http://stackoverflow.com/questions/4478045/what-are-the-difference-between-call-template-and-apply-templates-in-xsl
 
+**tag vs element**
+text between < and > is tag; everything between start and end tag is element
 
+If your XSLT 2.0 processor is schema-aware (more on that shortly), you can define
+your own datatypes and use them inside XPath along with the XML Schema
+datatypes. If your XSLT 2.0 processor is not schema-aware, it still supports a num-
+ber of datatypes from XML Schema.
 
+**param vs variable**
+http://stackoverflow.com/questions/11854011/difference-between-xslparam-and-xslvariable
+we can change value of param from outside when call-template/apply-templates using with-param
+
+use select="/root/first/second" for absolute path, . for current node, .. for parent node etc... "frst/sec" for relative paths
+absolute path makes template difficult to reuse, but processor has to do less work in this case.
+
+**match vs select**
+The value of the match attribute is an XSLT pattern. Unlike an XPath expression, a pattern is not concerned with selecting a set of nodes from a given context. Instead, it has a more passive role. The above template rule effectively announces “I know how to process foo elements.” It will only get invoked when the node being iterated over is a foo element
 
 
 resources links:
@@ -106,9 +201,19 @@ https://www.youtube.com/watch?v=sRZw0rgOP4Q&index=8&list=PL14317B1DF3057EF1
 
 __questions__
 still don't understand concept of IDL, how is it done practically
-xsl:if , xsl:template : wht other tags are there
+~~xsl:if , xsl:template : wht other tags are there~~
+	based on their functionality all possible tags are defined in DTD
 why so many technologies like DTD, XSD?
 why XPath, XQuery when DOM is there?
 how are their parsers written? is it different from DOM parser
 how they have designed XPath or XQuery
 
+dtd, sgml, 
+various available parsers, algo for parser, html vs xml parsers
+wrintin basic parser
+xslt parser understands xsl namespaced elements and attributes and does functions? how to write our parser which can understand our custom namespaced elements and do functions... eg how ant script analysis is done?	 
+is XMLDom always created before answering XQuery or XPath?
+how XPath expression is evaluated?
+eg: how to create parser that understands DTD
+how does parser have info about where to find schema.dtd and 
+understanding how dom-parser builds DOM can help understand how XSLT parser works

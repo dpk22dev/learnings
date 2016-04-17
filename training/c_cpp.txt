@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-14T10:17:34+05:30
+
+====== c cpp ======
+Created Thursday 14 April 2016
+
+casting pointer to one struct to another:
+mimicking object orientation in c
+http://stackoverflow.com/questions/3766229/casting-one-struct-pointer-to-other-c
+
+

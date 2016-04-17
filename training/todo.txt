@@ -15,6 +15,7 @@ tech: http://www.tutorialspoint.com/
 	
 ~~natural language processing,~~
 	
+till biometric modalities
 twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it
 src code for html/css for various websites
 writing extension for chrome, firefox
@@ -23,6 +24,10 @@ various new technologies and apps for them
 check mails, facebook, linkedin, 
 
 https://www.youtube.com/watch?v=oy3CJzyoaAc&index=2&list=PL2Qq6_3SVp4PQFoSaB-epDo8HWlmtL0Jx
+payment gateway integration
+configuring tomcat, integration with xalan, solr
+http://www.ramkitech.com/2012/02/understanding-virtual-host-concept-in.html
+
 
 __p2__
 
@@ -48,7 +53,6 @@ try to read source code for apache, nginx, xdebug, mysql
 read man for curl
 
 
-
 __don't do right now__
 quantum computer and physics
 reading OS, diving into linux kernel and device drivers
@@ -62,6 +66,7 @@ linux kernet : full version
 __faltu__
 update splitwise: ~~purana milk wala,~~  ~~milks + dhahi + some bread entry~~?, **ask nitin for cylinder, last time sabji entry, //// 500 udhar, check net wala, 530 saman**
 ~~see notting hills~~
+220 dhobi, 38 milk, 74milk, 2100ebill, 74milk, 74, 136 sabji, 500 tiffin, 119milk
 ~~~~https://www.youtube.com/watch?v=LmdMp4iLDUc what is consicouness or https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q for various things: psychology and economics, over time~~~~
 image processing basics
 cartoon drawing, music definitions

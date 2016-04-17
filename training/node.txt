@@ -5,6 +5,13 @@ Creation-Date: 2014-09-13T16:01:52+05:30
 ====== node ======
 Created Saturday 13 September 2014
 
+how to delve in core code:
+take the file in reverse order of dependency:
+study example from documentation, study the code in source file and compare
+
+doing: util
+
+
 sharing of code on server and client side
 Node.js shines in real-time web applications employing push technology over websockets.  The main idea of Node.js: use non-blocking, event-driven I/O to remain lightweight and efficient in the face of data-intensive real-time applications that run across distributed devices.
 don’t use Node.js for CPU-intensive operations; in fact, using it for heavy computation will annul nearly all of its advantages.
@@ -39,29 +46,92 @@ it can be used to create restful api easily.
 
 
 http://stackoverflow.com/questions/24391462/what-are-the-differences-between-mocha-chai-karma-jasmine-should-js-etc-te
-    Mocha and Jasmine are testing frameworks to test your code: they can use different assertion libraries, reporters, etc...
+	Mocha and Jasmine are testing frameworks to test your code: they can use different assertion libraries, reporters, etc...
 
-    should.js is an assertion library - It works from IE9 onward and any other browser - so you need a testing framework to use it
+	should.js is an assertion library - It works from IE9 onward and any other browser - so you need a testing framework to use it
 
-    chai is an assertion library "ecosystem": you can add plugins (I'm looking at you sinonJS) or just use it plain with its own version of should.js or expect.js - also here you need a testing framework in order to use it
+	chai is an assertion library "ecosystem": you can add plugins (I'm looking at you sinonJS) or just use it plain with its own version of should.js or expect.js - also here you need a testing framework in order to use it
 
-    karma is a testing environment that leverages the power of Mocha and Jasmine to test cross-browser, do E2E testing, and more
+	karma is a testing environment that leverages the power of Mocha and Jasmine to test cross-browser, do E2E testing, and more
 
 
 eg: mocha can be used with chai, should js alongwith karma for testing client side code for all browsers
 
-
+**diff b/w export and module.exports**
+https://blog.tableflip.io/the-difference-between-module-exports-and-exports/
 
 nodejs arch:
 http://mcgill-csus.github.io/student_projects/Submission2.pdf
+
+parsing, object creation, garbage collection (except dom creation ) etc is handled by v8. v8 compiles java-script directly into assembly code rather than opcodes.( i guess it first converts into c++ code then into assembly code )
+
+The C++ Libuv library is responsible for Node’s asynchronous I/O operations and main event loop. It is composed of a fixed-size thread pool from which a thread is allocated for each I/O operation
+ Though it has a single execution thread, Node dispatched I/O operations in parallel, thus significantly increasing execution speed (as I/O tends to be a bottleneck). This portion of the application must coordinate with the operating system of the machine on which it is deployed.
+
+When Node is initialized, it informs the operating system that it should be notified when a new connection is made, and goes to sleep. With each new request from a client, a small heap allocation is generated to keep track of the connection and a callback is executed. Node handles each request sequentially using its Libuv library
+
+both es6 and prototypal inheritance is possible.
+ a net.Server object emits an event each time a peer connects to it; a fs.ReadStream emits an event when the file is opened; a stream emits an event whenever data is available to be read. All objects that emit events are instances of the EventEmitter class. 
+Node.js style prototypical inheritance using the util.inherits() method.
+
+Node.js includes a number of other statically linked libraries including OpenSSL. These other libraries are located in the deps/ directory in the Node.js source tree. 
+
+http_parser:
+macros with generation of ascii, error codes and method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ***** links *****
 http://codecondo.com/10-web-application-frameworks-for-node-js/
 http://stackoverflow.com/questions/5062614/how-to-decide-when-to-use-node-js
 http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
+node internals
+start: http://stackoverflow.com/questions/10680601/nodejs-event-loop
+libuv: http://nikhilm.github.io/uvbook/
+v8: https://www.quora.com/What-are-the-best-resources-to-understand-the-working-of-V8-engine
+~~http_parser: https://github.com/nodejs/http-parser~~
 
-Quest
+http://nodeguide.com/
+http://darksi.de/c.cpp-in-node/
+http://www.journaldev.com/7462/node-js-processing-model-single-threaded-model-with-event-loop-architecture
+http://stackoverflow.com/questions/8575442/internals-of-node-js-how-does-it-actually-work
+http://blog.zorinaq.com/?e=34
+
+
+
+
+
+**Quest**
 how does node's JS interaction with c libs/ tcp sockets happen
+how is interaction b/w node.js and node.cc and other c libs
+
+how, why things are desined this way
+where is v8 engines' code: may be its in libs and we just make calls to that in node' src code
+	http://thibaultlaurens.github.io/javascript/2013/04/29/how-the-v8-engine-works/
+	http://www.benfarrell.com/2013/01/03/c-and-node-js-an-unholy-combination-but-oh-so-right/
+	extending v8 engine,how
+	writing nodejs addon: http://code.tutsplus.com/tutorials/writing-nodejs-addons--cms-21771
+why c source code in nodejs: it might be for extending v8's functionality of interacting with OS, file-system etc...
+how is binding b/w node js api with underlying c libs; os.js, node_os.cc
+why _stream_readable requires stream and vice-versa
+
+why two exports.function = function(){ } and simple function(){ ... } in util.js
+how process object is used without inclusion in util.js
+isn't node good for multicore processors
+
 
 
 ***** links *****

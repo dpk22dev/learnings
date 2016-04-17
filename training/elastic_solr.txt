@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2015-05-22T18:27:27+05:30
 
-====== elastic-search ======
+====== elastic solr ======
 Created Friday 22 May 2015
 
 IR system
@@ -109,11 +109,11 @@ http://localhost:9200/movies/movie/_search
 Basic free text search
 query-string-query: use POST
 {
-    "query": {
-        "query_string": {
-            "query": "kill"
-        }
-    }
+	"query": {
+		"query_string": {
+			"query": "kill"
+		}
+	}
 }
 
 use  "fields": ["title"] to search in title field only
@@ -121,18 +121,18 @@ use  "fields": ["title"] to search in title field only
 A filtered query is a query that has two properties, query and filter. When executed it filters the result of the query using the filter.
 
 {
-    "query": {
-        "filtered": {
-            "query": {
-                "query_string": {
-                    "query": "drama"
-                }
-            },
-            "filter": {
-                //Filter to apply to the query
-            }
-        }
-    }
+	"query": {
+		"filtered": {
+			"query": {
+				"query_string": {
+					"query": "drama"
+				}
+			},
+			"filter": {
+				//Filter to apply to the query
+			}
+		}
+	}
 }
 
 The mapping defines how each field in the document is analyzed.
@@ -163,4 +163,9 @@ how is json key value pair stored; what happens to key
 
 till multi-match-query
 
+********************************* solr *************************************
+ adding documents to Solr, you need to specify the schema, represented in a file called schema.xml.
 
+ the stored attribute: to tell Solr to store the original text in the index somewhere. there are fields which aren't searched, but need to be displayed in the search results. You accomplish that by setting the field attributes to stored=true and indexed=false.
+
+https://cwiki.apache.org/confluence/display/solr/Getting+Started
