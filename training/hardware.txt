@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-17T18:45:51+05:30
+
+====== hardware ======
+Created Sunday 17 April 2016
+
+adruino: code is written in C, compiled and run
+raspberry pi: SingleBoardComputer : os can be installed and applicatinos can be run
+
+pen tablet, one by wacom
+
+
+
+
+
+
+
+
+
+
+
+
+
+******** todo **************
+raspberry pi: http://www.instructables.com/

@@ -12,3 +12,26 @@ difference b/w resource and entity
 https://lists.w3.org/Archives/Public/www-rdf-comments/2002JanMar/0148.html
 
 notice resource , entity, representation are different trhins
+
+how are params sent in http request:
+http://stackoverflow.com/questions/14551194/how-are-parameters-sent-in-an-http-post-request
+
+when to use multipart/form-data instead of application/x-www-form-urlencoded
+https://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.2
+
+Sending post data using curl:
+http://superuser.com/questions/361504/how-to-send-post-with-body-headers-and-http-params-using-curl
+http://superuser.com/questions/149329/what-is-the-curl-command-line-syntax-to-do-a-post-request
+
+when sending data from file use -d @data in command line, and use myfield=<myvalue> in file, content from file will be merged by curl
+
+special chars like @, " might be causing problem in curl request:
+http://stackoverflow.com/questions/10060093/special-characters-like-and-in-curl-post-data
+
+passing xslt as post data in curl:
+use --data-urlencode dataphp@data  ; remember not to use myfield=<myvalue>, only use xslt content in file
+example: 
+curl -X POST -d "hostid=83" -d actionpath=/relatedvideos" --data-urlencode dataxml@xml --data-urlencode dataxslt@xslt -H "content-type: application/x-www-form-urlencoded" "http://testdev.indiatimes.com:8365/preview.cms?upcache=2&msid=52020761&newlogin=0"
+
+
+

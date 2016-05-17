@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-05-13T17:59:39+05:30
+
+====== experience ======
+Created Friday 13 May 2016
+
+don't read all of framework at once. read few things, do practical, read more things.... it has never been good to read all everything at once.

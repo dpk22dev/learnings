@@ -1,0 +1,119 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-24T19:22:12+05:30
+
+====== electronics ======
+Created Sunday 24 April 2016
+
+mov: metal oxide varister; when voltage exceeds it blows up
+fuse: when more current passes, it melts
+
+inductor stores energy in magnetic field, no effect in case of dc its just a resister with few milliohms, but in ac it can act as low pass filter, smoothing the flow of ac. they oppose instantaneous change in current. store energy due to motion of electron => kinetic energy.
+
+capacitor stores energy in form of electric field. after some time, when potential reaches to potential of power source, it stops flow of current, when source is removed flow starts again.
+no effect on ac source though. they oppose instantaneous change in voltage. store energy due to position of electron => potential energy.
+
+
+transformer can be used to convert 200V ac to 12V ac, which can be converted to pulsating 12V DC(  fluctuates acc to input ) using bridge rectifier, using capacitor we can get fixed 5V DC.
+
+eg: 
+crystal is used at pin 18, 19 which sets frequency for internal oscillator.
+
+diode test for transistor
+for (BJT): bipolr junction transistor
+npn: current from Base to emitter and base to collector but not in between emitter and collector
+pnp: current from emitter to base and collector to base but no current between emitter and collector
+
+if we hold transistor with flat surface up, left to right are emitter base collector
+
+for mosfet:
+scr: silicon controlled rectifier
+
+we can using voltmeter ohm meter to find if there is connection b/w different pins
+
+for drivers: visit https://www.spartfun.com
+
+programming:
+DDRX: puts defined pin of X register as input or output
+PORTX: outputs to pin of X register
+INPX: inputs from pin of X register
+
+common logic:
+use AND to unset a pin
+use OR to set a pin
+use XOR to toggle pin
+
+timers and counters:
+timer inside atmega is within 10% of accurate value, use external timer if want.
+timer/counter register: TCNT0 : 8bit, TCNT1: 16bit
+
+using interrupts instead of control registers:
+instead of polling TCNT1, we would use OCR1A(output control register to check for event say completion of 1 sec)
+WGM12( waveform generation  mode) will use CTC(clear time on compare) to cause TCNT to become 0 again
+TIMSK mask is used to enable interrupt from OCR1A
+
+LCD: is slow and busy
+check if its busy
+enable is on: only now lcd listens for data/command
+put R/W off: for sending data/command, we don't want to listen from lcd; put it on when want to listen
+RS on/off for data/command
+send data/command
+do nop, so that slow lcd gets enough time to read from data lines
+put enable = off, so that lcd can start working
+
+voltage regulator:
+max 603, 604 for low-dropout( means output voltage is closer to input voltage)
+7805 for high dropout
+
+potentiometer or variable resistor are used to divide voltage in cirvuit.
+
+some sensors give voltage in range of voltage. ADC 8bit(  0-255 ) or 10bit( 0-1023) gives output acc to input voltage value.
+
+accelerometer: MEMS( micro electro-mechanical systems )
+
+analog wave can take any value say for voltage it can take any value between 0 and 5v; but digital signal can take only 0 or 5v.
+analog signal can be shown using sine wave or triangular wave which has continous values. digital signal can be shown using square wave, which can take 0 or 1 instaneous values.
+suppose if we switch on/off path in circuit fastly, we can generate digital signal of some frequency based on cycles per second. for each cycle how much percentage time circuit was on, can gives use mean value of DC effective in ciruit.
+
+PWM ( pulse width modulation ):
+by changing duty cycle, we can change effective voltage in circuit.
+
+phase corrected PWM: start measuring just left or right.
+
+
+batteries:
+high energy battery: store energy for longer duration
+high power: high burst of energy
+in motor vehicles, houses lead battery are used as they are cheap
+
+fuse bits are just switches inside microcontroller, which can be changed by avrdude. eg we need to set fuse bits to accept external oscillator
+
+I2C( i squeared c) or TWI( two wired interface): SCL( cloack ), SDL( data )
+
+****** starting ******
+http://stackoverflow.com/questions/78744/how-to-start-programming-a-microcontroller
+
+
+
+******* todo ******
+after chap8 https://www.youtube.com/watch?v=XdFw-5_XyOI&index=2&list=PLeEL-CP8rlErPQLIsgmvSXQBTAErdui92
+atmega after chap 55: https://www.youtube.com/watch?v=BPxgv2PXGw8&index=4&list=PLE72E4CFE73BD1DE1
+try with adruino: https://www.youtube.com/watch?v=iTTZUpzAjKc&index=2&list=PLE72E4CFE73BD1DE1
+integration of avr with eclipse: http://www.timteatro.net/2012/03/22/beginning-atmel-avr-development-in-linux-using-avr-eclipse-avr-gcc-and-avrdude/
+embedded start: http://electronics.stackexchange.com/questions/3343/how-to-become-an-embedded-software-developer
+commonly used sensors and interaction with them
+
+****** devices ******
+spi connector, programmer
+ 
+****** questions ******
+difference b/w avr and other devices
+diff b/w microprocessor and microcontroller
+various CMOS, mosfet technologies
+
+
+
+
+
+
+

@@ -60,6 +60,7 @@ read man ip, ifconfig, route, ifup, resolv.conf, nss, brctl,
 read bridging: http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
 networking: http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_LAN_Technologies
 read book: linux networking architecture and impl after page 78
+see contents of arp table
 
 __questions__
 what is diff b.w 10.140.0.0/20 and 10.140.12.0/20 <-- is it ok? what is right way of writing subnet

@@ -9,4 +9,12 @@ casting pointer to one struct to another:
 mimicking object orientation in c
 http://stackoverflow.com/questions/3766229/casting-one-struct-pointer-to-other-c
 
+we can use 
+#ifndef buttonpress
+#define buttonpress
+.... various funcitons and methods ...
+#endif
 
+compiler will not include functions twice in this case
+
+when creating different library and using them, consider wrapping in #ifndef and other libraries like stdlib might have to be included in both library and main-source files.

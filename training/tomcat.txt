@@ -5,10 +5,24 @@ Creation-Date: 2016-04-05T17:50:23+05:30
 ====== tomcat ======
 Created Tuesday 05 April 2016
 
-CATALINA_BASE: [[/usr/share/tomcat7]]
-CATALINA_HOME: 
+inside tomcat configurations: https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html
+
+bin/shell scripts call catalina.sh passing various params
+
+Catalina is Tomcat's servlet container. Catalina implements Sun Microsystems' specifications for servlet and JavaServer Pages (JSP).  Catalina is the Java Engine (JRE / JVM) that's built into Tomcat and provides an environment in which Servlets can be run.
 
 Filters  are  deployed  in  the  deployment  descriptor  file web.xml and  then  map  to  either  servlet  or  JSP names  or URL  patterns  in  your application's  deployment  descriptor.
+
+Apache Ant-style variable substitution is supported; a system property with the name propname may be used in a configuration file using the syntax ${propname}. All system properties are available including those set using the -D syntax, those automatically made available by the JVM and those configured in the $CATALINA_BASE/conf/catalina.properties file.
+
+Containers - Represent components whose function is to process incoming requests, and create the corresponding responses. An Engine handles all requests for a Service, a Host handles all requests for a particular virtual host, and a Context handles all requests for a specific web application.
+
+The web application used to process each HTTP request is selected by Catalina based on matching the longest possible prefix of the Request URI against the context path of each defined Context. Once selected, that Context will select an appropriate servlet to process the incoming request, according to the servlet mappings defined in the web application deployment descriptor file web.xml.
+
+meta-inf contains server related confs like context.xml, web-inf contains web-app related conf files like web.xml
+
+simply speaking we register servlets according to urls; tomcat forwards the request to matched servlet which serves the content from context specified in that servlet. in case of spring dispacher-servlet handles the request, which has listeners for loading context accordingly.
+using annotations or bean.xml we have told dispacher which function to call in case of url.
 
 POJO: plain old java object
 pojo should not extend class, implement interface, have annotations eg: java beans
@@ -26,9 +40,31 @@ Bean's dependencies
 
 You can mix both, Constructor-based and Setter-based DI but it is a good rule of thumb to use constructor arguments for mandatory dependencies and setters for optional dependencies.
 
+@Configuration indicates that the class can be used by the Spring IoC container as a source of bean definitions. The @Bean annotation tells Spring that a method annotated with @Bean will return an object that should be registered as a bean in the Spring application context. 
 
+Spring's event handling is single-threaded so if an event is published, until and unless all the receivers get the message, the processes are blocked and the flow will not continue. Hence, care should be taken when designing your application if event handling is to be used.
 
+Instances of the JdbcTemplate class are threadsafe once configured. So you can configure a single instance of a JdbcTemplate and then safely inject this shared reference into multiple DAOs.
 
+The Spring's transaction support aims to provide an alternative to EJB transactions by adding transaction capabilities to POJOs. ??
+
+{{./pasted_image001.png}}
+
+HandlerMapping, Controller and ViewResolver are parts of WebApplicationContext which is an extension of the plain ApplicationContext with some extra features necessary for web applications.
+
+each project needs for validation, compilation, test running, deployment. maven intelligently puts them in file structure and does these steps in build life cycle. it runs all steps till given step. all depencies are stored in local maven repository. one dependency may depend on other dependencies, mvn bring those depencies also.
+we can define version number which is used in multiple places in property and use it other places.
+
+maven has profile according to different property like os, environment, missing/available file, value of some property etc...
+in maven plugin is just mojo; groupid is package, artifactid is name of plugin, version is version, configuration contains settings for mojo variables, execution contains goal aka function-name of mojo, and phase( like compile, packaging ) when goal is to be executed.
+plugin should be contained in build
+modules contains sub-projects containing pom.xml files.
+
+mvn -X for printing debug info
+mvn effective:pom for effective pom
+mvn depency:sources for download source
+mvn help:effective-settings
+[[~/.m2/repository]] contains depencies
 
 
 
@@ -39,18 +75,51 @@ You can mix both, Constructor-based and Setter-based DI but it is a good rule of
 
 ~~spring, pojo, ejb containers~~
 
-questions:
+todo
+things under work and webapp dir
+why so many ports redirecting to same 8443 port
+tutorial on tomcat configuration, junit 
+how to see in heirarchy till object class in eclipse
+~~diff b/w plugin and dependecies in pom~~
+	http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml
+how to know what are dependencies to be used in pom
+how multiple versioning is done using maven
+how classification of module is done, what content is in each module ... is there any documentation/comments
+what is backend infra: where are mongo, redis etc hosted? are we using aws
+
+list contents of war file
+
+********* questions: ******************
+~~diff b/w jar, war,ear~~
+	http://stackoverflow.com/questions/1594667/war-vs-ear-file
+~~can we run jar file~~
+	http://stackoverflow.com/questions/1238145/how-to-run-a-jar-file
+	
 diff b/w servlet and jsp
 diff b/w making class file and interpreting and compiled java file
-where do javabeans, hibernate and struts come into play
-what is good way of writing jsp, its not good to write jsp with html itself
-does xslt processor run for resolving taglib
-what exactly is web container
+~~where do javabeans, hibernate and struts come into play~~
+~~what is good way of writing jsp, its not good to write jsp with html itself~~
+~~does xslt processor run for resolving taglib~~
+what exactly is container, app container, web container, then servlet and jsp container
 do we create config class by extending simpletagsupport class
 understanding of context: jsp context, servlet context
 scopes in expression language: pagescope, requestscope etc...
 what happens when multiple requests are coming in
 spring with tomcat
-diff b/w java se, ee, me
-do we so much extensively use beans.xml, don't we dynamically instantiate and add classes
-setting up eclipse
+~~diff b/w java se, ee, me~~
+~~do we so much extensively use beans.xml, don't we dynamically instantiate and add classes~~
+~~setting up eclipse~~
+AOP approach and transaction management
+how dependencies and plugins are created for maven
+
+
+
+
+
+
+
+
+
+
+
+

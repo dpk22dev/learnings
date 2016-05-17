@@ -5,4 +5,89 @@ Creation-Date: 2016-04-11T11:19:30+05:30
 ====== angular ======
 Created Monday 11 April 2016
 
-directives, expressions, filters, modules, and controllers.
+directives, expressions, filters, modules, and controllers. service
+
+Angular uses spinal-case for its custom attributes and camelCase for the corresponding directives which implement them
+The $ prefix is there to namespace Angular-provided services. To prevent collisions it's best to avoid naming your services and models anything that begins with a $.
+
+If you inspect a Scope, you may also notice some properties that begin with $$. These properties are considered private, and should not be accessed or modified.
+
+AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions.
+
+The ng-app directive defines an AngularJS application.
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+The ng-bind directive binds application data to the HTML view.
+The ng-init directive initializes AngularJS application variables.
+
+AngularJS expressions are written inside double braces: {{ expression }}.
+AngularJS expressions bind AngularJS data to HTML the same way as the ng-bind directive.
+expressions do not support conditionals, loops, and exceptions, while JavaScript expressions do.
+
+AngularJS modules define AngularJS applications.  module is a container for the application controllers. Controllers always belong to a module.
+
+Providers are objects that provide (create) instances of services and expose configuration APIs that can be used to control the creation and runtime behavior of a service. In case of the $route service, the $routeProvider exposes APIs that allow you to define routes for your application
+
+AngularJS controllers control AngularJS applications.
+
+we can invoke a directive by using:
+Element name
+Attribute
+Class
+Comment
+we can restrict your directives to only be invoked by some of the methods.
+
+The scope is the binding part between the HTML (view) and the JavaScript (controller). The scope is an object with the available properties and methods. The scope is available for both the view and the controller.
+
+In AngularJS, a service is a function, or object, that is available for, and limited to, your AngularJS application.
+eg: $location, $http, $timeout, $interval
+
+ when naming a directive, you must use a camel case name, myDirective, but when invoking it, you must use - separated name, my-directive
+
+**minification of angular js code:**
+Create a $inject property on the controller function which holds an array of strings. Each string in the array is the name of the service to inject for the corresponding parameter. 
+PhoneListCtrl.$inject = ['$scope', '$http'];
+
+or
+
+ provide the constructor function inline as an anonymous function when registering the controller:
+phonecatApp.controller('PhoneListCtrl', ['$scope', '$http', function($scope, $http) {...}]);
+
+Scopes can propagate events in similar fashion to DOM events. The event can be broadcasted to the scope children or emitted to scope parents.
+
+understanding working of angularjs:
+{{./pasted_image.png}}
+
+https://docs.angularjs.org/guide/scope
+You can also use $apply() to enter the Angular execution context from JavaScript.
+
+
+We can specify functions to run at configuration and run time for a module by calling the config and run methods. These functions are injectable with dependencies just like the factory functions above.
+$scope: Controllers are associated with an element in the DOM and so are provided with access to the scope. Other components (like services) only have access to the $rootScope service.
+
+The $inject property is an array of service names to inject.
+To manage the responsibility of dependency creation, each Angular application has an injector. The injector is a service locator that is responsible for construction and lookup of dependencies.
+
+Angular does not use JavaScript's eval() to evaluate expressions. Instead Angular's $parse service processes these expressions. is possible to access the context object using the identifier this and the locals object using the identifier $locals.
+
+Directives like ngClick and ngFocus expose a $event object within the scope of that expression. The object is an instance of a jQuery Event Object when jQuery is present or a similar jqLite object.
+
+An expression that starts with :: is considered a one-time expression. One-time expressions will stop recalculating once they are stable,
+
+ Angular comes with a set of these directives built-in, like ngBind, ngModel, and ngClass. When Angular bootstraps your application, the HTML compiler traverses the DOM matching directives against the DOM elements. 
+
+directive is the most important thing, we tell $compiler what has to be done when directive comes. eg ng-bind, ng-init etc... are directive that tell $compiler what has to be done.
+
+
+
+*** todo ***
+read after components, 
+
+
+
+**** questions ****
+does angular executes in same flow as js, means directive above with definitions below work? parses first ng-controller or controller.js itself
+how to get value of scope of another controller
+~~watch and digest in angular~~
+when should we use controller inside controller
+how we should create modules, 
+providers

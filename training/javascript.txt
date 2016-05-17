@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-05-06T15:02:28+05:30
+
+====== javascript ======
+Created Friday 06 May 2016
+
+commonly used jquery methods:
+https://www.smashingmagazine.com/2012/05/50-jquery-function-demos-for-aspiring-web-developers/
+
+helpful jquery methods:
+http://code.tutsplus.com/tutorials/20-helpful-jquery-methods-you-should-be-using--net-10521
+
+diff with css is that it applies to dynamically added elements through say ajax, but js events are not attached to newly added elements.
+
+http://requirejs.org/docs/whyamd.html
+
+**Modules** should be Immediately-Invoked-Function-Expressions (IIFE) to allow for private scopes – that is, a closure that protect variables and methods 
+
+for debugging javascript anywhere on page use debugger; statement to halt
+
+utility libs: lodash or underscore, lodash looks better
+
+suppose in a funciton, when passing a funciton-variable/anonymous-function to another function then that function will have access to current funciton.
+eg: 
+describe("A suite is just a function", function() {
+  var a;
+  it("and so is a spec", function() {
+	a = true;  // this anonymous function have access to a
+	expect(a).toBe(true);
+  });
+});
+
+karma vs protractor
+http://stackoverflow.com/questions/21732379/should-i-be-using-protractor-or-karma-for-my-end-to-end-testing
+
+**bind vs** **call vs apply**
+http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/
+if funciton has this keyword in statement. if we instantiate function this refers to created object. if we want to scope function, or in other words want this to point to our provided object. we can use call. but call doesn't work with variable number of arguments. we need to use apply.
+
+**** todo ****
+angular, jasmine
+
+
+read jasmine + karma https://www.youtube.com/watch?v=MVw8N3hTfCI
+read protractor
+read how lodash, promises work
+
+***** questions ******
+~~diff b/w ecma-script and  javascript~~
+~~how code is written so that it is ut-fiable~~
+how design patterns work in this case... they are different like singleton
+why commonjs, underscorejs, reactjs, promises etc..
+should we use grunt
+
+
+how jsso login works
+
+how mocking, datadependency injection is done in mocha

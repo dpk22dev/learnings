@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-04-21T11:51:39+05:30
+
+====== java ======
+Created Thursday 21 April 2016
+
+{{./pasted_image.png}}
+
+
+which collection should i use:
+http://stackoverflow.com/questions/21974361/what-java-collection-should-i-use
+
+eclipse shortcuts:
+https://dzone.com/articles/effective-eclipse-shortcut-key
+
+versioning:
+http://stackoverflow.com/questions/275555/maven-snapshot-repository-vs-release-repository
+http://stackoverflow.com/questions/2107484/what-is-the-difference-between-ga-rc-and-m2-release
+
+

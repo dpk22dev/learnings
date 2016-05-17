@@ -15,8 +15,14 @@ tech: http://www.tutorialspoint.com/
 	
 ~~natural language processing,~~
 	
-till biometric modalities
-twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it
+~~till biometric modalities~~
+hardware communication, [[IoT]]
+	watch videos
+	discuss with nikhil, nitin
+read highscalability.com, yourstory.com
+
+
+twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it : highscalability.com
 src code for html/css for various websites
 writing extension for chrome, firefox
 writing extension for nginx, apache, device drivers for linux
@@ -64,9 +70,11 @@ linux internal
 linux kernet : full version
 
 __faltu__
-update splitwise: ~~purana milk wala,~~  ~~milks + dhahi + some bread entry~~?, **ask nitin for cylinder, last time sabji entry, //// 500 udhar, check net wala, 530 saman**
+update splitwise: ~~purana milk wala,~~  ~~milks + dhahi + some bread entry~~?, ~~ask nitin for cylinder, last time sabji entry, //// 500 udhar, check net wala, 530 saman~~
 ~~see notting hills~~
-220 dhobi, 38 milk, 74milk, 2100ebill, 74milk, 74, 136 sabji, 500 tiffin, 119milk
+~~220 dhobi, 38 milk, 74milk, 2100ebill, 74milk, 74, 136 sabji, 500 tiffin, 119milk, 360sabji, 135milk+dahi, 36lassi, 110milk+lassi, pani 30, 100bai, 114milk, 99milk~~
+74, 99 milk, 390+120 ata, refined, 74milk, 50curd, 74milk, 3320 electricuity, 74milk, 74, 99, 60pani, 74milk, 200tiffin, 99milk + dahi, milk 74, 99 pril
+
 ~~~~https://www.youtube.com/watch?v=LmdMp4iLDUc what is consicouness or https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q for various things: psychology and economics, over time~~~~
 image processing basics
 cartoon drawing, music definitions
@@ -74,15 +82,21 @@ airtel refund sms on whatsapp: check if its ok
 
 ~~cloud computing: Iaas, Paas, Saas~~
 big data: artificial intelligence, data analysis, machine learning
-Internet of things
 
+call
+successpact : walmart
+raksha
+
+9148981165
 booting
 boot@127
 
 ~~remove project from google cloud account~~
 
-
-
+7:30
+dilshad garden, jhilmil
+chetak complex, above bob atm 
+hwcs 106
 
 
 
