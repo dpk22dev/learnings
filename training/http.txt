@@ -33,5 +33,31 @@ use --data-urlencode dataphp@data  ; remember not to use myfield=<myvalue>, only
 example: 
 curl -X POST -d "hostid=83" -d actionpath=/relatedvideos" --data-urlencode dataxml@xml --data-urlencode dataxslt@xslt -H "content-type: application/x-www-form-urlencoded" "http://testdev.indiatimes.com:8365/preview.cms?upcache=2&msid=52020761&newlogin=0"
 
+**MIME**
+for sending more than simple text, info and how to process data to receiver
+content-type: (type/sub-type) eg: text/plain, multipart/mixed; boundary=frontier
+common types: application, audio, example, image, message, model, multipart, text, video.
 
+// it contained data but not info, how to process that data, it is sent in content-disposition
+content-disposition: attachment; filename=genome.jpeg;
+  modification-date="Wed, 12 Feb 1997 16:29:51 -0500";
+content-transfer-encoding: base64
+
+**http live streaming**
+https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/Introduction/Introduction.html
+
+**pop3**
+very simple and good explanation
+https://www.ietf.org/rfc/rfc1939.txt
+
+**IMAP**
+https://tools.ietf.org/html/rfc3501
+
+__todo__
+streaming technology
+progressive download, http-streaming, RTSP, RTMP
+various protocols: http://www.protocols.com/pbook/
+
+
+__questions__
 

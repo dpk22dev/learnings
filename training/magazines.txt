@@ -24,7 +24,12 @@ https://www.digitalocean.com/community/tutorials
 
 security:
 http://hackingdude.com/
+https://nakedsecurity.sophos.com
+http://motherboard.vice.com/
 
 startup:
 http://yourstory.com/
 http://techcrunch.com/
+
+overall
+http://www.computerworld.com/

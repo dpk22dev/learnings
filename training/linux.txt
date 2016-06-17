@@ -70,6 +70,10 @@ https://www.cs.cmu.edu/~fp/courses/15213-s06/lectures/27-multicore.pdf
 simultaneous multithreading can happen in single core, single processor. instructions from two independent threads can execute in single core's different functional branches. cores can be SMT enabled or not.
 2,4 or 8 simultaneous threads on single core, intel calling them hyperthreads. cache is private as well as shared among cores. this can cause cache coherence problem. solution: invalidation-based protocol with snooping
 
+**perf**
+http://www.tecmint.com/perf-performance-monitoring-and-analysis-tool-for-linux/
+
+
 **debugging sound in ubuntu**
 https://help.ubuntu.com/community/SoundTroubleshooting
 
@@ -80,6 +84,7 @@ http://askubuntu.com/questions/303120/how-folders-created-in-var-run-on-each-reb
 lshw
 
 ********** todo **********
+watch linux videos: https://www.youtube.com/channel/UCkefXKtInZ9PLsoGRtml2FQ
 udev: https://www.linux.com/news/udev-introduction-device-management-modern-linux-system
 read man udev, sysctl
 read ubuntu server guide after: DM multipath

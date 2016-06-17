@@ -5,6 +5,17 @@ Creation-Date: 2016-03-16T19:45:17+05:30
 ====== scaling ======
 Created Wednesday 16 March 2016
 
+read from http://highscalability.com/
+
+var x = function(){
+
+//$('#sidebar1Wrapper').remove();
+//$('#sidebar2Wrapper').remove();
+$('verticalNavigationBarWrapper').remove();
+$('#contentWrapper').css({'width','1200px'},{'background','#ffe'}, {'font-size', '17px'});
+
+}();
+
 running different things on different machines is helpful, as somethings might be dependent on some things whcih can break other things on upgrade.
 apache security upgrade might break mysql. ...
 
@@ -15,4 +26,56 @@ getting forward on new version is easy, but rolling back is hard
 
 in container language: microservices are just process in their own clean environment
 
-read from http://highscalability.com/
+https://www.quora.com/Can-ejabberd-chat-server-be-intergrated-with-scalable-and-fast-server-technologies-like-node-js-tornado-server-to-implement-an-in-browser-chat
+
+**thrift**: we can write code in IDL, thrift parser will change that code in language service( kind of class with various funcitons); it generates code for server, client as demanded. we can include that code and few necessary files in our code to run the service on server and calling that service.
+http://thrift-tutorial.readthedocs.io/
+
+protocol buff vs json vs xml
+http://stackoverflow.com/questions/14028293/google-protocol-buffers-vs-json-vs-xml
+protocol buff is best of all serializers, json doesn't provide schema, 
+
+**nginx vs haproxy**
+HAproxy is simpler (being just a tcp proxy without an http implementation), which makes it faster and less bug prone. The downside is that you can't route based on information in the http layer, like session cookies or url paths. nginx can also cache requests, which haproxy can't do.
+Only use nginx when you actually need a web server, otherwise use haproxy.
+
+Recently, nginx 1.9 introduced support for TCP load balancing - similar to what HAProxy is capable of. The one major drawback is that it does not support advanced backend health checks. This is required when running MySQL Galera Cluster, as we’ll explain in the next section. Note that this limitation is removed in the paid-only edition called NGINX Plus. 
+
+neo4j
+transactional ACID compliant
+node/properties -relation/properties -> node/properties
+noun/adjectives-verb/adverbs->noun/adjectives
+
+every file is identifiable using magic number:
+https://en.wikipedia.org/wiki/List_of_file_signatures
+
+
+__todo__
+api how to and integration with social networking sites
+cloud services by amazon
+recommendation engine
+
+~~XAMPP~~
+~~mail protocols: SMTP, ~~ ~~imap, pop3~~
+memcached, amqp protocols
+~~http streaming~~
+hadoop + pig
+~~protocol buffer storage format~~
+~~thrift~~
+react vs angular
+~~neo4j: https://www.youtube.com/playlist?list=PL9Hl4pk2FsvWM9GWaguRhlCQ-pa-ERd4U~~
+~~ASG( auto scaling group ) + ELB~~
+~~Rsync~~,~~ HAProxy~~, ~~powerDNS~~, ~~mashery~~, phantomjs
+nagios, appdynamics, openTSBD, EOSFilers
+graphite, influxDB
+sticky sessions and its problems
+selenium, automation testing tools
+juniper SRX, fortigare firewall
+imagemagick
+~~SSH protocols~~
+
+__questions__
+which one is better having single table/ multiple partitioned tables with 0-9 indexes/ table per user — is there a problem for large number of tables
+why bson instead of json
+how to design public api, it won't change in future
+thumbnail generation for document, spam filtering tools

@@ -5,6 +5,13 @@ Creation-Date: 2016-05-06T15:02:28+05:30
 ====== javascript ======
 Created Friday 06 May 2016
 
+design patterns for javascript:
+http://www.dofactory.com/javascript/decorator-design-pattern
+
+libs and frameworks: 
+angular
+babel
+
 commonly used jquery methods:
 https://www.smashingmagazine.com/2012/05/50-jquery-function-demos-for-aspiring-web-developers/
 
@@ -38,22 +45,89 @@ http://stackoverflow.com/questions/21732379/should-i-be-using-protractor-or-karm
 http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/
 if funciton has this keyword in statement. if we instantiate function this refers to created object. if we want to scope function, or in other words want this to point to our provided object. we can use call. but call doesn't work with variable number of arguments. we need to use apply.
 
-**** todo ****
+**handling callback hell javascript**
+https://www.youtube.com/watch?v=obaSQBBWZLk
+
+**initial value check of undefined variable**
+A function fits this purpose well, since JavaScript functions are so-called reference values - they are not considered equal to anything but themselves.
+eg: function initWatchVal() { }, last: initWatchVal
+
+In JavaScript, NaN (Not-a-Number) is not equal to itself. for equality checking use:
+typeof newValue === 'number' && typeof oldValue === 'number' && isNaN(newValue) && isNaN(oldValue)
+
+**why timeout with 0**
+http://stackoverflow.com/questions/779379/why-is-settimeoutfn-0-sometimes-useful
+
+**scopes in javascript**
+scope means life of variable.
+getaway is javascript has function scopes only. free variable is resolved using lexical scoping.there is no dynamic scoping. it is due to this lexical scoping javascript has closures. 
+http://stackoverflow.com/questions/17519319/javascript-function-internal-scope
+
+that why this refers to scope in which funciton was defined, we have to use bind, call, apply to bind this to required object.	
+
+var ob = { a : 1, b : 2, c : this.a + this.b, f : function( ){ console.log(__this.a + this.b__ ) }  }
+
+here c is NaN as a and b were not defined yet when object was created. but ob.f() works as a and b were created by then.
+if we used console.log( a + b ); it wouldn't work as it would look into scope, where a and b are not defined. using this we are explicitely binding to ob object.
+http://alistapart.com/article/getoutbindingsituations
+
+http://stackoverflow.com/questions/958983/are-variables-statically-or-dynamically-scoped-in-javascript __suggests that variables are lexically scoped except this keyword which is dynamically scoped.__
+
+don't use self = this, as browsers provide self nowsddays. use _this= this instead.
+i think when we assign or pass reference to a function, binding of this is lost. generally we pass this reference to functoin to another function like foreach. using that = this causes closure and that value is retained when function like foreach calls our function.
+
+**how variable assignment and stack works in js**
+http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/
+
+**is js pass by value or by reference**:
+ none, it is call-by-sharing.
+In practical terms, this means that if you change the parameter itself (as with num and obj2), that won't affect the item that was fed into the parameter. But if you change the INTERNALS of the parameter, that will propagate back up (as with obj1).
+http://stackoverflow.com/questions/518000/is-javascript-a-pass-by-reference-or-pass-by-value-language
+
+in addition to array, things that inherit Array prototype are array like objects. eg: argument local variable in function, DOM Nodelist object
+
+interesting bug that can happen; eg in event listener, when event is fired in event listener we remove this event listener. now in function checking and calling event listeners next element is missed.
+
+**null vs undefined in js**
+http://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-and-undefined-in-javascript
+
+**grunt**
+gruntfile has tasks which can contain targets. options can be task level or target level
+grunt.loadNpmTasks('grunt-contrib-uglify'); // adds plugin to grunt
+grunt.registerTask('test', ['jshint', 'qunit']); // register test task to run jshint, qunit subtasks
+
+is setting cookie local storage is synchronous?
+setting cookie, local storage is synchronous.
+http://stackoverflow.com/questions/20231163/is-html5-localstorage-asynchronous
+http://stackoverflow.com/questions/21007057/when-writing-a-cookie-using-javascript-is-it-stored-synchronously-or-asynchronou
+
+**jsx**
+proviedes look and feel of object oriented statically typed language
+https://jsx.github.io/doc/tutorial.html
+
+__** todo **__
 angular, jasmine
 
 
 read jasmine + karma https://www.youtube.com/watch?v=MVw8N3hTfCI
 read protractor
 read how lodash, promises work
+google polymer project
 
-***** questions ******
+try writing recursive, functional prog
+
+read links on https://www.quora.com/What-are-the-most-important-JavaScript-concepts-to-know-for-a-job-interview
+
+__*** questions ****__
 ~~diff b/w ecma-script and  javascript~~
 ~~how code is written so that it is ut-fiable~~
 how design patterns work in this case... they are different like singleton
 why commonjs, underscorejs, reactjs, promises etc..
 should we use grunt
-
-
+where and how can we use currying
+self vs this in javascript, when should we use self
 how jsso login works
 
 how mocking, datadependency injection is done in mocha
+javascript memory management layout
+how javascript uses stack

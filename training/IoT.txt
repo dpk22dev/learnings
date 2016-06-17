@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-05-21T15:50:52+05:30
+
+====== IoT ======
+Created Saturday 21 May 2016
+
+nodered can be used
+http://nodered.org/
+
+
+https://www.youtube.com/watch?v=Xb1dRpBlERw
+
+beaglebone, ninjablocks

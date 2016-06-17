@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-05-23T22:34:21+05:30
+
+====== compilers ======
+Created Monday 23 May 2016
+
+first parse tree is created using grammer
+then abstract syntax tree is created 
+
+It includes lexical, syntax, and semantic analysis as front end, and code generation and optimization as back-end.
+
+A compiler can broadly be divided into two phases based on the way they compile
+analysis phase( FE ): checks for lexical, grammar and syntax errors. The analysis phase generates an intermediate representation of the source program and symbol table, which should be fed to the Synthesis phase as input.
+synthesis phase( BE ): the synthesis phase generates the target program with the help of intermediate source code representation and symbol table.
+
+The compilation process is a sequence of various phases. Each phase takes input from its previous stage, has its own representation of source program, and feeds its output to the next phase of the compiler. 
+
+{{./pasted_image.png}}
+Top down parsing:
+
+{{./pasted_image001.png}}
+
+bottom up parser:
+
+{{./pasted_image002.png}}
+
+
+errors in compiler:
+Lexical : name of some identifier typed incorrectly
+Syntactical : missing semicolon or unbalanced parenthesis
+Semantical : incompatible value assignment
+Logical : code not reachable, infinite loop
+
+A compiler maintains two types of symbol tables: a global symbol table which can be accessed by all the procedures and scope symbol tables that are created for each scope in the program.

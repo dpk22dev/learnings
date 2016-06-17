@@ -18,3 +18,18 @@ today we learn technology but we lack the experience of creating that technology
 understanding new technologies should be fast. generally we understand basic part but difficult parts make us to lack concept clearing. google search for tutorials and blogs is good for basic understanding, stack-overflow is good for clearing doubts. but diagrams, cartoon, video on youtube help us to better understand concepts. problem with most videos is that they don't take history as part; history teaches us the problem, various solutions, best chosen solution, improvements in those solutions. this timelines can help us to understand concepts rather than just technology.
 
 **Me time** is important. sometimes we don't know that we know the answers. we just need to connect the dots of experience knowledge. 
+
+
+start building prototype with tools and frameworks you know best, then you know your needs, then after research we can pick tools better.
+
+steps to understand new code:
+1) get mentor
+2) get high level overview
+	 - make list of tools, framework, library
+3) do quest
+4) don't get stuck - 15min, may be timer
+5) code review - important
+
+
+**quotes**
+when people are scared be greedy, when people are greedy be scared.

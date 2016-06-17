@@ -77,10 +77,20 @@ An expression that starts with :: is considered a one-time expression. One-time 
 
 directive is the most important thing, we tell $compiler what has to be done when directive comes. eg ng-bind, ng-init etc... are directive that tell $compiler what has to be done.
 
+**diff b/w factory, service, provider**
+http://stackoverflow.com/questions/13762228/confused-about-service-vs-factory/13763886#13763886
 
+**$timeout vs $evalAsync**
+The reason why $evalAsync is often preferrable to a $timeout with zero delay has to do
+with the browser event loop. When you use $timeout to schedule some work, you relinquish
+control to the browser, and let it decide when to run the scheduled work. The browser
+may then choose to execute other work before it gets to your timeout.
 
 *** todo ***
-read after components, 
+read build_your_ownangular js pg58
+	- grunt
+	- jasmine spy, phantomjs
+	http://localhost:7357/?#
 
 
 
@@ -91,3 +101,8 @@ how to get value of scope of another controller
 when should we use controller inside controller
 how we should create modules, 
 providers
+how to handle caching problems
+how does angular gets info about {{expresssion}}, ng-directives
+routing, cookie, cache servies
+
+am i right about diff b/w returning object vs returning fucntion : this.z = this.a + 1 can work in this case.

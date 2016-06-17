@@ -8,3 +8,6 @@ Created Wednesday 23 March 2016
 for decreasing and increasing backlight
 xbacklight -inc 10
 xbacklight -dec 10
+
+many libs and specifications use BNF for reading:
+http://cui.unige.ch/db-research/Enseignement/analyseinfo/AboutBNF.html

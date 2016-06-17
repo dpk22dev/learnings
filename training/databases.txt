@@ -1,9 +1,24 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
-Creation-Date: 2014-05-29T13:11:10+05:30
+Creation-Date: 2016-06-16T07:56:59+05:30
 
-====== mysql ======
-Created Thursday 29 May 2014
+====== databases ======
+Created Thursday 16 June 2016
+
+**types of databases**:
+https://www.digitalocean.com/community/tutorials/understanding-sql-and-nosql-databases-and-different-database-models
+databases use model whcih are basically schema or schemaless.
+most popular in schema modeled databases is relational database which uses table for logically store info. eg: mysql, mssql, oracle. but they follow SQL standards. so they are SQL databases. it is due to this underlying schema they have additional checks and keep dataa in good shape.
+in memory 
+
+databases whcih don;t need schema like redis, mongodb, cassandra, neo4j are nosql( as they don't follow any SQL standard). they don't need schema to be predefined. various checks are omitted. 
+
+any of modeled database can
+https://www.thoughtworks.com/insights/blog/nosql-databases-overview
+
+****************************  ****************************************
+************************************ mysql ******************************************
+****************************  ****************************************
 
 **Database design:**
 while designinig database, for uniqueness of two or more coloumns we can use md5 of them as store 
@@ -164,6 +179,10 @@ The problem is that asynchronous replication will incur collisions and conflicts
 looks like multi master has its problems also.
 
 __quest:__
+diff b/w relational / non-relational
+diff b/w sql / nosql 
+diff b/w above two
+
 does innodb provide transaction, concurrency -> by locking or not
 	-in single node, m-s arch
 does ndb provide transaction, concurrency -> by locking or not
@@ -176,4 +195,29 @@ what things are storage engine dependent
 transaction, concurrency
 
 
+
+
+******************************  **************************************
+************************************ mongodb ******************************************
+****************************  *****************************************
+
+
+capped collection : good for logs, caching
+You cannot delete documents from a capped collection. To remove all documents from a collection, use the drop() method to drop the collection and recreate the capped collection. No sharding. 
+
+ maximum BSON document size is 16 megabytes.
+
+For the MMAPv1 storage engine, intervening write operations on a document may result in a cursor that returns a document more than once if that document has changed.
+
+query steps:
+collection, query-criteria, projection, cursor-modifier
+
+aggregation steps: 
+match stage, group stage
+
+ A collection can only have one text search index, but that index can cover multiple fields.
+
+******** questions *****
+diff b/w json and bson, why not store simply as json string
+why different data-types
 

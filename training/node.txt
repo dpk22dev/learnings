@@ -57,6 +57,10 @@ http://stackoverflow.com/questions/24391462/what-are-the-differences-between-moc
 
 eg: mocha can be used with chai, should js alongwith karma for testing client side code for all browsers
 
+is same module passed in required modules
+is same depenedency in included module loaded again
+due to closure does only module.exports methods have access to variables in module
+
 **diff b/w export and module.exports**
 https://blog.tableflip.io/the-difference-between-module-exports-and-exports/
 
@@ -132,7 +136,7 @@ why two exports.function = function(){ } and simple function(){ ... } in util.js
 how process object is used without inclusion in util.js
 isn't node good for multicore processors
 
-
+why buffer, typedarray etc??
 
 ***** links *****
 http://codecondo.com/10-web-application-frameworks-for-node-js/

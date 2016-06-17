@@ -5,8 +5,8 @@ Creation-Date: 2014-05-23T16:32:47+05:30
 ====== html-css ======
 Created Friday 23 May 2014
 
-
-~~why different versions of html? why we are using xhtml?~~
+html dom specification
+https://www.w3.org/TR/DOM-Level-1/expanded-toc.html
 
 In <title> we are using & and when i remove it it gives error
 use &amp; instead
@@ -109,7 +109,7 @@ position absolute: eleement with given class will be placed on particular positi
 
 **display:**
 display: inline      => shows inline elements
-	     : block	=> shows block elements
+		 : block	=> shows block elements
 		: none => element is not displayed
 	: inline-block => displays elements inline but top and down margin changes are allowed
 
@@ -142,5 +142,8 @@ http://www.w3.org/TR/selectors/ defines the selectors for css
 
 inline vs inline-block: http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
 
-**todo**
+__todo__
 read concepts of display, position, float with examples, forms and inputs, media
+
+
+__questions__

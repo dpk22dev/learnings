@@ -43,8 +43,31 @@ PDP
 
 XACML: 
 
+**challenge response authentication CRAM-MD5**
+instead of sending username/password to server. client sends username, server as it knows password( or hash of password ) it creates say number and asks client to increment it. only client using password( or hash of password ) decrypts number, increaments number and sends response.
+password doesn't needs to be sent over network. for non-repudiation, avoid maninmiddle attack server may send nonce.
+
 understanding gpg:
 https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages-on-an-ubuntu-12-04-vps
 
+SASL( simple authentication and security layer):  is a framework for authentication and data security in Internet protocols. It decouples authentication mechanisms from application protocols. it allows protocols to choose from various mechanisms wchich implement a series of challenges and responses.
+https://www.ietf.org/mail-archive/web/isms/current/msg00063.html
+there are various protocols which use SASL: eg: POP, IMAP, XMPP, LDAP etc...
+kerberos:
+https://www.youtube.com/watch?v=B-gwRDvALrs
+
+LDAP:
+data is stored in directory using X.500 format( key value pair ). this data can be accessed using LDAP.
+LDAP uses SAML which might use kerberos mechanism for authentication. 
+https://www.youtube.com/watch?v=F2nFtlS8uEo
+
+SSH protocol:
+https://www.ietf.org/rfc/rfc4254.txt
 
 
+**todo:**
+Oauth vs kerberos
+SAML
+
+**questions:**
+why so many authentication protocols, what is use of each

@@ -17,3 +17,14 @@ Ctrl+U for select backwards
 alt + f3 for all selections on current word
 
 ctrl + M jump to closing brace
+
+jsFormt for formating: alt + ctrl + f
+ctrl + ` to open console
+ctrl + shift + p => write install packages => search for packages to install
+
+f12 : jump to definition
+alt + - to jump back
+
+**idea:**
+ctrl + ` : for switching
+Add/remove a selection: Alt + Shift + Mouse Click
