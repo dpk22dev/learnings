@@ -64,8 +64,15 @@ https://www.youtube.com/watch?v=F2nFtlS8uEo
 SSH protocol:
 https://www.ietf.org/rfc/rfc4254.txt
 
+certificate used in ssl comm:
+X.509 certificate is written using ASN.1 notations
+https://en.wikipedia.org/wiki/X.509
+
+hash vs hmac:
+http://crypto.stackexchange.com/questions/6493/what-is-the-difference-between-a-hmac-and-a-hash-of-data
 
 **todo:**
+read https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 Oauth vs kerberos
 SAML
 

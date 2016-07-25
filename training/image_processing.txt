@@ -76,8 +76,8 @@ error in predictions in static scenes is zero
 
 
 
-
-
+__todo__
+https://en.wikipedia.org/wiki/HSL_and_HSV 
 
 
 

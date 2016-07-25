@@ -28,3 +28,4 @@ alt + - to jump back
 **idea:**
 ctrl + ` : for switching
 Add/remove a selection: Alt + Shift + Mouse Click
+ctrl + ] or [ to jump to opening closing braces

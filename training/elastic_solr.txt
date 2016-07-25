@@ -9,9 +9,12 @@ IR system
 
 listening: localhost:9200
 
+http://ecmarchitect.com/archives/2015/07/27/4031
+
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
 
+/index/type/id
 PUT [[/college/student/1?version=3]] -d{  ... } if we change older version it will returen 409 conflict
 
 POST [[/college/student/1/_update]] -d { ... } , 
@@ -135,7 +138,99 @@ A filtered query is a query that has two properties, query and filter. When exec
 	}
 }
 
+match is used for matching words in document; eg "rock climbing" will search docs with rock and climbing individually according to relevance order sorting.
+use match_phrase for exact word searching
+
+Duplicating each shard to provide redundant copies of your data, to prevent data loss in case of hardware failure
+Routing requests from any node in the cluster to the nodes that hold the data you’re interested in
+
+One node in the cluster is elected to be the master node, which is in charge of managing cluster-wide changes like creating or deleting an index, or adding or removing a node from the cluster. The master node does not need to be involved in document-level changes or searches, which means that having just one master node will not become a bottleneck as traffic grows. 
+Every node knows where each document lives and can forward our request directly to the nodes that hold the data we are interested in. Whichever node we talk to manages the process of gathering the response from the node or nodes holding the data and returning the final response to the client.
+
+In reality, an index is just a logical namespace that points to one or more physical shards.
+
+optimistic concurrency control says that you get document and send ?version={ retreived from doc} during updation. elastic won't allow if other transaction has changed version#, it will ask you to reget data
+
+This explains why the number of primary shards can be set only when an index is created and never changed
+shard = hash(routing) % number_of_primary_shards
+
+Mapping
+	How the data in each field is interpreted
+Analysis
+	How full text is processed to make it searchable
+Query DSL
+	The flexible, powerful query language used by Elasticsearch
+
 The mapping defines how each field in the document is analyzed.
+ Elasticsearch first analyzes the text, and then uses the results to build an inverted index. which is designed to allow very fast full-text searches
+
+You can find only terms that exist in your index, so both the indexed text and the query string must be normalized into the same form.
+
+we can use _analyze to try out various analyzers.
+we we insert data elastic uses standard analyzer for full text serch, we can use mapping to change analysis.
+each document in an index has a type. Every type has its own mapping, or schema definition. A mapping defines the fields within a type, the datatype for each field, and how the field should be handled by Elasticsearch. A mapping is also used to configure metadata associated with the type.
+
+Query clauses are simple building blocks that can be combined with each other to create complex queries.
+Leaf clause: match
+Compound clause: bool, must, nust_not, should
+
+When used in filtering context, the query is said to be a "non-scoring" or "filtering" query. When used in a querying context, the query becomes a "scoring" query.  it also determines how well does the document matches.
+
+/_validate/query can be used to check if query is valid, ?explain gives reason for invalidation
+
+if we have text field that we want to analyze for searching but keep it same for sorting. we can either use two fileds or use
+	"fields": {
+		"raw": { 
+			"type":  "string",
+			"index": "not_analyzed"
+		}
+	}
+
+Character filters are used to “tidy up” a string before it is tokenized. eg: we want to strip html tags before analysing text
+
+there is functionality of aliase, we can alias index to index_v1, then creating index_v2 after making changes, we can alias index to index_v2.
+
+ a Lucene index is what we call a shard in Elasticsearch, while an index in Elasticsearch is a collection of shards.
+
+field names can be used as regular expression; like *_title
+
+Full-text search is a battle between recall—returning all the documents that are relevant—and precision—not returning irrelevant documents. 
+
+default **similarity algorithm** used to calculate the relevance score for each term is TF/IDF
+
+for fields first_name, last_name; eg: peter smith, smith williams puts smith williams higher in score due to low IDF of smith as first_name. we can use full_name for better results
+
+ The cross_fields type takes a term-centric approach, quite different from the field-centric approach taken by best_fields and most_fields.
+
+ a simple term query is about 10 times as fast as a phrase query, and about 20 times as fast as a proximity query (a phrase query with slop). And of course, this cost is paid at search time instead of at index time.
+
+Sue ate the alligator: unigram indexing ["sue", "ate", "the", "alligator"]
+bigram **shingles** ["sue ate", "ate the", "the alligator"] 
+
+if some field is not analysed like post-code; prefix, wildcard, regexp queries can be used
+
+
+term frequency: tf(t in d) = √frequency 
+inverse document frequency: idf(t) = 1 + log ( numDocs / (docFreq + 1)) 
+field length norm: norm(d) = 1 / √numTerms 
+
+sometimes we don't care how many times say pool comes in description; we want it should just be present; we can use constant_score query for that
+
+
+**Buckets**
+Collections of documents that meet a criterion
+**Metrics**
+Statistics calculated on the documents in a bucket
+
+SELECT COUNT(color)  FROM table GROUP BY color 
+here group by color is bucket, count(color) is metric
+Buckets are conceptually similar to grouping in SQL, while metrics are similar to COUNT(), SUM(), MAX(), and so forth.
+
+While fields of type object (see Multilevel Objects) are useful for storing a single object, they are useless, from a search point of view, for storing an array of objects.
+
+
+
+
 https://www.elastic.co/guide/en/elasticsearch/reference/1.4/glossary.html
 
 query context generates score, how well this document matches query
@@ -147,21 +242,40 @@ extra ' caused js in kopf to crash, see entries in browser and delete entry from
 
 Use Elastica.io
 
+ Java clients talk to the cluster over port 9300, using the native Elasticsearch transport protocol. The nodes in the cluster also communicate with each other over port 9300.
+
 
 
 __quest__
 ~~bool, term, filter~~
-aggregation, shards vs nodes, opetators: bool not etc, should have 
+~~aggregation, shards vs nodes, opetators: bool not etc, should have ~~
 ~~score in elastic search~~
 ~~how mapping and routign works~~ 
 ~~field, mapping, routing, term, text~~
 facets, boost
-rewrite, boost, fuzziness
+~~rewrite, boost, fuzziness~~
+
+segments
 
 how to remember and which query should be used
 how is json key value pair stored; what happens to key
 
-till multi-match-query
+internals of index sharded, how lucene indexing happens for inverted index
+how to decide index, types: what should be inside what
+	it looks like based on hash of _id of doc we can find shardId; but how is inverted indexes stored then
+how elastic match_phrase will happen if document is inverted indexed word wises
+how to abort long runing queries
+if we update/delete a document, is it still indexed and searchable
+we can't change #primary shards; how to determine their numbers beforehand
+when should we create type in same index and in different index
+	https://www.elastic.co/guide/en/elasticsearch/guide/current/mapping.html#_avoiding_type_gotchas
+wouldn't we require to reindex even if we want to change stem_exclusion, stop-words; how is it handled dynamically changing requirements
+when we should use nested objects or parent-child relationships
+
+__todo__
+after normalizing tokens
+read about how lucene stores data
+
 
 ********************************* solr *************************************
  adding documents to Solr, you need to specify the schema, represented in a file called schema.xml.

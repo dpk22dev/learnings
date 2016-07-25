@@ -49,6 +49,16 @@ noun/adjectives-verb/adverbs->noun/adjectives
 every file is identifiable using magic number:
 https://en.wikipedia.org/wiki/List_of_file_signatures
 
+for testing on multiple devices: provide stand and s/w to test
+https://www.vanamco.com/ghostlab/
+
+bugsnag: for tracking bugs/crashes in application server or client( mobile/web ) side
+
+**google products over time:**
+GFS (2002), MapReduce (2004), BigTable (2006), Borg (2006), Pregel (2008), Colossus (2010), FlumeJava (2012), Dremel, Spanner.
+
+
+
 
 __todo__
 api how to and integration with social networking sites
@@ -71,11 +81,31 @@ graphite, influxDB
 sticky sessions and its problems
 selenium, automation testing tools
 juniper SRX, fortigare firewall
-imagemagick
+~~imagemagick, ffmpeg~~
 ~~SSH protocols~~
+~~using nodejs streams~~
+~~webRTC~~, ~~bugsnag~~
+svg, animation in browsers
+~~html5 apis, post messages b/w windows~~
+various methods of authentications
+~~media codecs, player~~
+explore facebook products, google products
+explore amazon cloud services
+accurate timing methods and usage in computers
+bird internet routig
+toxiproxy, semian
 
 __questions__
 which one is better having single table/ multiple partitioned tables with 0-9 indexes/ table per user — is there a problem for large number of tables
 why bson instead of json
 how to design public api, it won't change in future
 thumbnail generation for document, spam filtering tools
+how flow works if user is already logged into google account, user has to be shown loggedinto youtube or other app
+comm b/w parent window and child and sibling windows; restrictions
+comm b/w iframes
+~~how to check if user is online; before sending message to recipient~~
+~~does hangout considers non google accounts; how to handle if user@other-domain user actually exists~~
+is there some standard protocol for google drive/ docs
+how netflix openconnect cdn connects with large isp
+
+

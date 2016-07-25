@@ -7,6 +7,9 @@ Created Friday 22 May 2015
 
 localhost:5601
 
+use proper version# for references:
+https://www.elastic.co/guide/en/kibana/current/index.html
+
 we can add search query eg: COUNTRY:"IN"
 
 we can point to only one elasticsearch_url in its config , beacuse it can get info about cluser nodes

@@ -83,23 +83,34 @@ usage of eigen values and vectors:
 Eigenvectors make understanding linear transformations easy. They are the "axes" (directions) along which a linear transformation acts simply by "stretching/compressing" and/or "flipping"; eigenvalues give you the factors by which this compression occurs. 
 http://math.stackexchange.com/questions/23312/what-is-the-importance-of-eigenvalues-eigenvectors
 
+wit.ai
+intent: action that we want to do
+requires 100 expressions per intent; 10 entities per expression
 
+**for matrices and vectors:**
+http://algebra.nipissingu.ca/tutorials/matrices.html
 
+**machine learning**
+https://www.youtube.com/watch?v=ICKBWIkfeJ8&list=PLAwxTw4SYaPkQXg8TkVdIvYv4HfLG7SiH
+http://scikit-learn.org/stable/documentation.html
 
+Naive bayes is called naive because it doesn't considers order of words. it considers count of prob of words but not order.
 
-
-
-
-
-
-
-
+SVM kernel is function which maps from low dimension to higher dimension data.
+C parameter: tradeoff b/w smooth decision boundry and classifying training points correctly
+	large value of C, more complex decision boundry and correctly classifies training set
+G( gamma ): how far effect of single training example reaches; high value of gamma during traning only points near to decision boundry are used, so nearby points influence more and curve the decision boundry
+while low value of gamma means far away points are also consdered
 
 __todo__
 read vector, prob, chp1
 till chap 2
 subspace and span usage and how to calculate
 how to calculate rank of matrix
+learn from udemy after that from stanford
+clone sklearn code, go through source code
+https://www.youtube.com/watch?v=ICKBWIkfeJ8&list=PLAwxTw4SYaPkQXg8TkVdIvYv4HfLG7SiH
+**till** 166
 
 __questions__
 why use mean square root error instead of modulus of error

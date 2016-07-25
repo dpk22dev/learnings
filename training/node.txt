@@ -5,6 +5,9 @@ Creation-Date: 2014-09-13T16:01:52+05:30
 ====== node ======
 Created Saturday 13 September 2014
 
+awesome node libs:
+https://github.com/sindresorhus/awesome-nodejs
+
 how to delve in core code:
 take the file in reverse order of dependency:
 study example from documentation, study the code in source file and compare

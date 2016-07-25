@@ -5,6 +5,10 @@ Creation-Date: 2016-06-16T07:56:59+05:30
 ====== databases ======
 Created Thursday 16 June 2016
 
+**fiddling**
+http://sqlfiddle.com/#!2/359ac
+
+
 **types of databases**:
 https://www.digitalocean.com/community/tutorials/understanding-sql-and-nosql-databases-and-different-database-models
 databases use model whcih are basically schema or schemaless.
@@ -16,9 +20,9 @@ databases whcih don;t need schema like redis, mongodb, cassandra, neo4j are nosq
 any of modeled database can
 https://www.thoughtworks.com/insights/blog/nosql-databases-overview
 
-****************************  ****************************************
+********************  ********************************
 ************************************ mysql ******************************************
-****************************  ****************************************
+********************  ********************************
 
 **Database design:**
 while designinig database, for uniqueness of two or more coloumns we can use md5 of them as store 
@@ -45,6 +49,9 @@ although join look similar to subquery, but they can be faster if on coloumn is 
 why we need primary key when unique key is there:
 because unique key can be null
 its good to able to uniquely identify rows in table, when designing  a table find out group of key which uniquely identify table => these are superkeys; we select minimal group of coloumns => candidate key; chosen candidate key as primary key and remaining set of candidate key aer alternate keys
+
+if coloumn A has null values, adding unique constraint doesn't complain as mysql thinks null can be anything, null is not equal to null, this query will pass
+but if coloumn has equal data this query will fail
 
 **datatypes in mysql:**
 https://dev.mysql.com/doc/refman/5.1/en/storage-requirements.html
@@ -178,6 +185,11 @@ The problem is that asynchronous replication will incur collisions and conflicts
 
 looks like multi master has its problems also.
 
+**locks vs transactions**
+http://stackoverflow.com/questions/4226766/mysql-transactions-vs-locking-tables
+
+https://mathiasbynens.be/notes/mysql-utf8mb4
+
 __quest:__
 diff b/w relational / non-relational
 diff b/w sql / nosql 
@@ -194,12 +206,13 @@ locking in mysql; is it storage engine dependent?
 what things are storage engine dependent
 transaction, concurrency
 
+~~can we index normal coloumn~~
+what does indexing multiple coloumns mean
+how does locking coloumns work
 
-
-
-******************************  **************************************
+**********************  ******************************
 ************************************ mongodb ******************************************
-****************************  *****************************************
+********************  *********************************
 
 
 capped collection : good for logs, caching

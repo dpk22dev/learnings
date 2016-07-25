@@ -11,3 +11,5 @@ xbacklight -dec 10
 
 many libs and specifications use BNF for reading:
 http://cui.unige.ch/db-research/Enseignement/analyseinfo/AboutBNF.html
+
+for calling methods in other languages use gearman

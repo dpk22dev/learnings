@@ -13,53 +13,58 @@ __p1__
 ~~tech: http://www.tutorialspoint.com/~~
 	~~xml technologies, academic, software quality, ~~
 	
-plugin whcih parses @TODO and pushes it on trello/jira private repo	
+~~plugin whcih parses @TODO and pushes it on trello/jira private repo	~~
 ~~natural language processing,~~
 
-recommendattion engine
+
 ~~till biometric modalities~~
-hardware communication, [[IoT]]
-	watch videos
-	discuss with nikhil, nitin
+
 read highscalability.com, yourstory.com
-
-https://en.wikipedia.org/wiki/Telecommunication
 payment gateway integration
+recommendattion engine
 
-twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it : highscalability.com
+setting and using elastic search: queries
+lecture machine learning,  artificial intelligence
+
+create resume for freelancing websites and complete profile making
+~~twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it : highscalability.com~~
 ~~src code for html/css for various websites~~
-writing extension for chrome, firefox
-writing extension for nginx, apache, device drivers for linux
-various new technologies and apps for them
-check mails, facebook, linkedin, 
-https://www.youtube.com/watch?v=CT43HGeYz_s&list=PLqaJe1KXgdP3fscaTH0LiFc3AiSQb7n4e&index=4 till 2
 
-https://www.youtube.com/watch?v=oy3CJzyoaAc&index=2&list=PL2Qq6_3SVp4PQFoSaB-epDo8HWlmtL0Jx
+~~check mails, facebook, linkedin, ~~
+~~https://www.youtube.com/watch?v=CT43HGeYz_s&list=PLqaJe1KXgdP3fscaTH0LiFc3AiSQb7n4e&index=4 till 2~~
+~~https://www.youtube.com/watch?v=oy3CJzyoaAc&index=2&list=PL2Qq6_3SVp4PQFoSaB-epDo8HWlmtL0Jx~~
 
 ~~configuring tomcat, integration with xalan, solr~~
-~~http://www.ramkitech.com/2012/02/understanding-virtual-host-concept-in.html~~
+~~http://www.ramkitech.coma/2012/02/understanding-virtual-host-concept-in.html~~
 
 
 __p2__
 
-setting and using elastic search: queries
-lecture machine learning,  artificial intelligence
-read rfc for tcp, http, http2
+read ffmpeg, imagemagick tutorials or from books/imageprocessing dir
+read various new technologies and apps for them
+writing extension for chrome, firefox
+google api after maps
+facebook api after build
+~~read rfc for tcp, http, http2~~
 various diagrams and their usage: data flw diagram, uml diagram
 machine learning, data-analytics, image processing
-magento, angularjs
-read from http://highscalability.com/
-communication between machines : specially authenticated
+magento, ~~angularjs~~
+~~read from http://highscalability.com/~~
+~~communication between machines : specially authenticated~~
 https://www.youtube.com/watch?v=wsixsRI-Sz4
 
 __p3__
-
+writing extension for nginx, apache, device drivers for linux
+hardware communication, [[IoT]]
+	watch videos	
+about working of telecommunication and protocols involved
+	https://en.wikipedia.org/wiki/Telecommunication
 read from tutorials point software related things and get basic idea
 compiler how do they work
 read from linux journal, magazines
 write blogs for everyday experiences
-read rfc for SMTP, XAMPP, DNS
-learn html, css, js, jquery, bootstrap, angularjs
+~~read rfc for SMTP, XAMPP, DNS~~
+~~learn html, css, js, jquery, bootstrap, angularjs~~
 learn laravel, magento: for db
 try to read source code for apache, nginx, xdebug, mysql
 read man for curl
@@ -84,6 +89,21 @@ update splitwise: ~~purana milk wala,~~  ~~milks + dhahi + some bread entry~~?, 
 ~~74 mik, 74, 74, 83milk+dahi, 83, 83,~~ ~~145 sabjipni, 30pani~~, ~~139paneer+extra, 38~~, ~~83~~, ~~300saman~~, ~~120 sabji~~
 ~~4000 elec, 2130 elec, 1700 bai( 61 remaining )~~
 
+~~83, 83, 128+50 panibreadmilkdahi2, 83+20 milkbread, 83+30+55 dal, 119 milklassi, 610sabji~~
+~~118wrap+namak, 128dahi+milk, 30pani, 118 mikl, 110muterpaneer~~
+~~128, 83, 128 milk, 30 pani, vim58~~
+~~450 sabji~~
+~~128milk~~
+~~1258 hathwayrech~~
+~~128milk, 450 ghee~~
+rent 8000
+~~139surf, 83milk~~
+~~130milk~~
+~~400ata+, 130milk~~
+290 glucond+dal
+130 mikl
+85milk, 60 pani
+
 ~~~~https://www.youtube.com/watch?v=LmdMp4iLDUc what is consicouness or https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q for various things: psychology and economics, over time~~~~
 image processing basics
 cartoon drawing, music definitions
@@ -106,10 +126,6 @@ boot@127
 dilshad garden, jhilmil
 chetak complex, above bob atm 
 hwcs 106
-
-
-
-
 
 
 

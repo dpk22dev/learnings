@@ -221,11 +221,11 @@ in build.xml we include app/phpunit.xml which contains config gor phpunit
 we can use reflection class to ut private methods:
 public function invokeMethod(&$object, $methodName, array $parameters = array())
 {
-    $reflection = new \ReflectionClass(get_class($object));
-    $method = $reflection->getMethod($methodName);
-    $method->setAccessible(true);
+	$reflection = new \ReflectionClass(get_class($object));
+	$method = $reflection->getMethod($methodName);
+	$method->setAccessible(true);
 
-    return $method->invokeArgs($object, $parameters);
+	return $method->invokeArgs($object, $parameters);
 }
 
 use phpunit --coverage-html coverage 
@@ -234,6 +234,11 @@ http://www.phpclasses.org/blog/post/117-PHP-compiler-performance.html
 http://www.scribd.com/doc/18171982/PHP-Compiler-Internals
 http://stackoverflow.com/questions/2772400/how-does-php-interface-with-apache
 
+**precedence order in php**
+$person->$property['first'] will be evaluated differently on php 5 and 7.
+use {} for explicit precedence; eg: $person->{$property['first']}
+
+
 **debugging**
 ini_set("display_errors", "On");
 error_reporting(E_ALL);
@@ -241,12 +246,13 @@ error_reporting(E_ALL);
 register _shutdown_function can be helpful:
 function shutdown()
 {
-    echo 'Script executed with success', PHP_EOL;
+	echo 'Script executed with success', PHP_EOL;
 }
 register_shutdown_function('shutdown');
 
-**questiosns**
+__questiosns__
 why use private static variables 
 
 
 
+__todo__

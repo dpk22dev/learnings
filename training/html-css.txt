@@ -5,8 +5,27 @@ Creation-Date: 2014-05-23T16:32:47+05:30
 ====== html-css ======
 Created Friday 23 May 2014
 
-html dom specification
+**html dom specification**
 https://www.w3.org/TR/DOM-Level-1/expanded-toc.html
+
+**html5 apis**
+http://html5index.org/
+
+**svg**
+http://tutorials.jenkov.com/svg/index.html
+
+**considerations during site design**
+https://developers.google.com/web/fundamentals/design-and-ui/?hl=en
+
+**why content script and web page script don't interact**
+page dom is shared between them, but they can't call each others functions. first web-page might be using jquery1.2 while extension might be using v1.6 so to avoid conflicts. second extensions use previleged apis accessing user browsing history and data like runtime, chrome etc... while web-page js is sandboxed and has access to html api only. so both can manipulte dom but can't share js objects.
+they have further differentiated b/w elevated( background or event page ) and content script ( non-elevated like web-page ).  these two components interact with message passing.
+
+
+**how cross domain cookies are set. how ga works**
+http://stackoverflow.com/questions/4701922/how-does-facebook-set-cross-domain-cookies-for-iframes-on-canvas-pages
+https://subinsb.com/set-same-cookie-on-different-domains
+
 
 In <title> we are using & and when i remove it it gives error
 use &amp; instead

@@ -5,7 +5,10 @@ Creation-Date: 2016-05-06T15:02:28+05:30
 ====== javascript ======
 Created Friday 06 May 2016
 
-design patterns for javascript:
+**books: **
+object oriented javascript stoyan stefanov 
+
+**design patterns for javascript:**
 http://www.dofactory.com/javascript/decorator-design-pattern
 
 libs and frameworks: 
@@ -104,6 +107,15 @@ http://stackoverflow.com/questions/21007057/when-writing-a-cookie-using-javascri
 **jsx**
 proviedes look and feel of object oriented statically typed language
 https://jsx.github.io/doc/tutorial.html
+
+http2 provides multiplexing and intellingent server push of contained resources in page. i can't think of http2 doing job of websockets.
+http requests are heavy, for any change we need to poll server using ajax. http parsing and keeping connection open is intensive. 
+while websocket uses totally another protocol for fetching data, its more like remote rpc, its stateful. you can send events, data. its server push. it allows all cross-domain communication.
+socket.io uses websocket and long-polling as fallback to provide server push.
+webrtc is similar to websockets( uses underlying tcp ); but underlying protocols are different. it uses SRTP on UDP, ICE etc... sometimes it may require websockets for signalling protocol. it is good for streaming real time media like audio, video chat. for reliability we should use websockets. it is peer to peer communication.
+
+webrtc vs websockets
+http://stackoverflow.com/questions/12324730/what-is-the-difference-between-webrtc-and-websockets-for-low-level-data-communic
 
 __** todo **__
 angular, jasmine

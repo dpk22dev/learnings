@@ -83,6 +83,44 @@ http://askubuntu.com/questions/303120/how-folders-created-in-var-run-on-each-reb
 
 lshw
 
+**how to mount device disk and debugging**
+http://unix.stackexchange.com/questions/18925/how-to-mount-a-device-in-linux
+http://unix.stackexchange.com/questions/178638/eject-safely-remove-vs-umount
+
+fdisk -l  // find out device name
+mount /dev/disk1 /mnt
+umount /dev/disk1
+
+we can mount using device id or path using 
+mount /dev/disk/by-id{by-path etc...} /mnt
+
+lsblk, lsusb
+dmesg | grep -i usb should help
+
+partition changes on disk
+fdisk
+
+creating filesystem on **disk partition**
+mkfs.ext4 /dev/sdb1
+
+zero out disk
+sudo dd if=/dev/zero of=/dev/sdb bs=4M
+
+eject /dev/sdb //to eject drive
+
+we can also use following to mount/unmount or power-off device
+udisksctl unmount -b /dev/sdb1
+udisksctl power-off -b /dev/sdb
+udisksctl info -b /dev/sdb // gives info about device
+
+196701502721
+
+
+
+
+
+
+
 ********** todo **********
 watch linux videos: https://www.youtube.com/channel/UCkefXKtInZ9PLsoGRtml2FQ
 udev: https://www.linux.com/news/udev-introduction-device-management-modern-linux-system
