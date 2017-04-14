@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-24T18:36:12+05:30
+
+====== browser ======
+Created Friday 24 March 2017
+
+browser action, page action, 
+content script: interacts with web page content, can message passing with extension
+
+background page
+	persistent background page: always open
+	event pages: opened and closed as needed, use this instead
+		dom based timeout won't be honoured, use alarm api instead
+UI paage

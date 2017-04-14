@@ -5,6 +5,10 @@ Creation-Date: 2015-02-17T10:55:34+05:30
 ====== networking ======
 Created Tuesday 17 February 2015
 
+for chrome internals
+chrome://net-internals/#dns
+
+
 read network conf: http://www.yolinux.com/TUTORIALS/LinuxTutorialNetworking.html
 kernel imp: Linux Kernel Networking by Rami Rosen
 http://link.springer.com/book/10.1007%2F978-1-4302-6197-1
@@ -52,7 +56,20 @@ PPP consists of following protocols:
 LCP link control protocol: for authentication uses PAP, CHAP, mix of pap/chap
 NCP network control protocol: eg if we use IP it uses IPCP, if IPX it uses IPXCP to send data
 
+diff b/w lan and wan
+http://superuser.com/questions/326939/what-is-the-real-difference-between-lan-and-wan/326946
 
+terminologies in wan:
+https://www.youtube.com/watch?v=AoGqbQXRBAo
+
+meaning of t1, t3, E lines:
+https://www.lifewire.com/t1-lines-and-t3-lines-817869
+
+connection orientation at layer 3, 4
+http://stackoverflow.com/questions/30059018/connection-oriented-vs-circuit-switching-connectionless-vs-packet-switching
+
+atm vs ethernet : two wan vs lan technologies
+http://www.tml.tkk.fi/Opinnot/Tik-110.551/1999/papers/07ATMvsEthernet/iworkpaper.html
 
 __todo__
 ipv6 : https://www.youtube.com/watch?v=mvlBMogudkQ
@@ -61,6 +78,10 @@ read bridging: http://www.linuxfoundation.org/collaborate/workgroups/networking/
 networking: http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_LAN_Technologies
 read book: linux networking architecture and impl after page 78
 see contents of arp table
+
+router settigns
+	router keywords
+
 
 __questions__
 what is diff b.w 10.140.0.0/20 and 10.140.12.0/20 <-- is it ok? what is right way of writing subnet

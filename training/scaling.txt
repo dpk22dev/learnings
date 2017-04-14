@@ -5,7 +5,9 @@ Creation-Date: 2016-03-16T19:45:17+05:30
 ====== scaling ======
 Created Wednesday 16 March 2016
 
+http://www.manageability.org/
 read from http://highscalability.com/
+	real life architecture, strategies, all time favourites
 
 var x = function(){
 

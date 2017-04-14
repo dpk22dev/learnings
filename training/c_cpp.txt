@@ -18,3 +18,31 @@ we can use
 compiler will not include functions twice in this case
 
 when creating different library and using them, consider wrapping in #ifndef and other libraries like stdlib might have to be included in both library and main-source files.
+
+typedef functions on c
+http://stackoverflow.com/questions/1591361/understanding-typedefs-for-function-pointers-in-c
+http://stackoverflow.com/questions/3674200/what-does-a-typedef-with-parenthesis-like-typedef-int-fvoid-mean-is-it-a
+
+why typedef used so often in c
+http://stackoverflow.com/questions/252780/why-should-we-typedef-a-struct-so-often-in-c
+
+extern "C" menaing
+http://stackoverflow.com/questions/1041866/in-c-source-what-is-the-effect-of-extern-c
+
+empty macros in c 
+http://stackoverflow.com/questions/9187628/c-empty-function-macros
+
+
+http://stackoverflow.com/questions/29197964/when-should-i-just-use-int-versus-more-sign-specific-or-size-specific-types
+
+why use __builtin_expect
+http://stackoverflow.com/questions/7346929/why-do-we-use-builtin-expect-when-a-straightforward-way-is-to-use-if-else
+
+why header files
+http://stackoverflow.com/questions/1167875/header-per-source-file
+
+multiple header files inclusion, guard
+http://stackoverflow.com/questions/705676/how-does-inclusion-of-header-file-happen
+
+
+

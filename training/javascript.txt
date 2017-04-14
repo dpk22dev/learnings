@@ -117,6 +117,11 @@ webrtc is similar to websockets( uses underlying tcp ); but underlying protocols
 webrtc vs websockets
 http://stackoverflow.com/questions/12324730/what-is-the-difference-between-webrtc-and-websockets-for-low-level-data-communic
 
+**methods of cross origin resource sharing( CORS )**
+http://stackoverflow.com/questions/3076414/ways-to-circumvent-the-same-origin-policy
+it looks like SOP is to block reading doc/ executing script from diff domain, but CORS are the methods to do that
+
+
 __** todo **__
 angular, jasmine
 

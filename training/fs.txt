@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-28T17:39:25+05:30
+
+====== fs ======
+Created Sunday 28 August 2016
+
+~~keep content separate for theme directory~~
+~~create migraation notes~~
+~~js, plugins move to bower components and add them~~
+~~copy images to images directory:~~
+	~~grep for images and change path in each view file~~
+~~copy fonts and based on ~~
+
+~~correct params are not get form html form...~~
+~~add sc-date-time to add meal~~
+
+integrate with momentjs for changing data formats
+search for elements from seeing form and integrate like
+https://github.com/fragaria/angular-daterangepicker
+
+
+integrate with fb account kit and try,
+then integrate with fb login and try
+put facebook share, like and try
+
+explore add platform under facebook app settings

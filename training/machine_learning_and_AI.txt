@@ -5,6 +5,19 @@ Creation-Date: 2016-03-09T14:29:45+05:30
 ====== machine learning and AI ======
 Created Wednesday 09 March 2016
 
+machine learning: can follow links to various applications
+https://en.wikipedia.org/wiki/Machine_learning
+
+http://machinelearningmastery.com/4-steps-to-get-started-in-machine-learning/
+
+http://www.iamwire.com/2016/10/10-machine-learning-online-courses-for-beginners-2/142589
+
+http://datascience.ibm.com/blog/the-mathematics-of-machine-learning/
+https://ocw.mit.edu/courses/mathematics/18-657-mathematics-of-machine-learning-fall-2015/lecture-notes/
+
+
+http://scikit-learn.org/stable/documentation.html
+
 The systems which exhibit intelligent behavior, learn, demonstrate, explain, and advice its users.
 perception, reasoning, problem solving, learning, linguistic intelligence
 
@@ -102,6 +115,32 @@ C parameter: tradeoff b/w smooth decision boundry and classifying training point
 G( gamma ): how far effect of single training example reaches; high value of gamma during traning only points near to decision boundry are used, so nearby points influence more and curve the decision boundry
 while low value of gamma means far away points are also consdered
 
+octave commands:
+eg: y1 = sin( 2*pi*v1 );
+ y2 = cos( 2*pi*v1 );
+**hold on** % same plot for both graphs
+plot( v1, y1 ) % plot v1 as x and y1 as y axis
+figure( 1 ) % use different numbers for different plots
+subplot( 1,2,1 ) % divide plot in 1x2 grid and access 1st grid
+subplot( 1,2,2 ) % access second grid
+clf % clear figure
+xlabel, ylabel, legend
+imagesc(A), colorbar, colormap gray; %same color based on same value in matrix
+addpath('path to functions dir') %function should be in same named file, it searches in pwd by default
+
+zeros
+ones
+eye
+magic
+
+***** scikit *****
+Ridge regression: the larger the ridge alpha parameter, the higher the bias and the lower the variance.
+The C parameter controls the amount of regularization in the LogisticRegression object: a large value for C results in less regularization. 
+
+* modern probability theory******
+https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4
+
+
 __todo__
 read vector, prob, chp1
 till chap 2
@@ -109,15 +148,32 @@ subspace and span usage and how to calculate
 how to calculate rank of matrix
 learn from udemy after that from stanford
 clone sklearn code, go through source code
+understanding datatypes in octave
+stem and leaf plot, peak, squeeze, meshgrid, quiver
 https://www.youtube.com/watch?v=ICKBWIkfeJ8&list=PLAwxTw4SYaPkQXg8TkVdIvYv4HfLG7SiH
 **till** 166
 
+~~start from:~~
+~~https://www.coursera.org/learn/machine-learning/lecture/fKi0M/stochastic-gradient-descent-convergence~~
+
+form model selection
+http://scikit-learn.org/stable/tutorial/statistical_inference/index.html
+https://www.youtube.com/watch?v=JcI5Vnw0b2c&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=2
+
+scikit installations
+pip install quandl, pandas
+
+**AI**
+https://classroom.udacity.com/courses/cs271/lessons/48635748/concepts/486525800923
+problem set4
+classical planning
+
 __questions__
+why summation of theta term is added in logistic regression regularization
+can we use neural network classification for regression or prediciton too?
 why use mean square root error instead of modulus of error
 why we use eigen space, echelon matrix ? what is their meaning
 
-
-
-
-
+~~google: octave plot crashes on zoom, touch events~~
+flowchart, quick start, user guide
 

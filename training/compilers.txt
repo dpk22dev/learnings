@@ -33,3 +33,25 @@ Semantical : incompatible value assignment
 Logical : code not reachable, infinite loop
 
 A compiler maintains two types of symbol tables: a global symbol table which can be accessed by all the procedures and scope symbol tables that are created for each scope in the program.
+
+semantic understanding is difficult. ambiguity can be problem. 
+eg: jack said jerry left his assignment at home. what does his refer to?
+similarly in program same variable name, what does it refer to? 	
+
+** autotools: ********
+https://devmanual.gentoo.org/general-concepts/autotools/
+build system basics: https://www.youtube.com/watch?v=_zX8LJ9Xjyk
+till 1:18
+
+consider a host system where we have build environment means various compilers, various shells, images/other-req-files for s/w. Now we want to build to generate binary for some other system.
+configure.ac --- read by autoconf ---> configure
+configure.ac is shell script, shell script used by us in this file will be automaticlally passed to configure. but for portablity reasons M4 macros should be used.
+
+makefile.am are written in make language which are processsed by automake to generate makefile.in which gets processed by configure to generate in makefile.
+
+__todo__
+https://www.youtube.com/watch?v=OcDAv-N9Zjs&index=3&list=PLFB9EC7B8FE963EB8
+terrence pg 273
+
+__questions__
+

@@ -20,9 +20,9 @@ databases whcih don;t need schema like redis, mongodb, cassandra, neo4j are nosq
 any of modeled database can
 https://www.thoughtworks.com/insights/blog/nosql-databases-overview
 
-********************  ********************************
+******************  ******************************
 ************************************ mysql ******************************************
-********************  ********************************
+******************  ******************************
 
 **Database design:**
 while designinig database, for uniqueness of two or more coloumns we can use md5 of them as store 
@@ -210,9 +210,14 @@ transaction, concurrency
 what does indexing multiple coloumns mean
 how does locking coloumns work
 
-**********************  ******************************
+********** connecting mssql on linux *************
+http://stackoverflow.com/questions/33341510/how-to-install-freetds-in-linux
+
+tsql -H 192.168.33.204 -U nbtdev -P DevNBT@2016! -p 1433 > out.csv <<EOS SELECT * FROM some_table; go EOS
+
+********************  ****************************
 ************************************ mongodb ******************************************
-********************  *********************************
+******************  *******************************
 
 
 capped collection : good for logs, caching

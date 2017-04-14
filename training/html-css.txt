@@ -26,6 +26,9 @@ they have further differentiated b/w elevated( background or event page ) and co
 http://stackoverflow.com/questions/4701922/how-does-facebook-set-cross-domain-cookies-for-iframes-on-canvas-pages
 https://subinsb.com/set-same-cookie-on-different-domains
 
+**web notification tutorials**
+https://developers.google.com/web/fundamentals/getting-started/codelabs/push-notifications/
+
 
 In <title> we are using & and when i remove it it gives error
 use &amp; instead
@@ -162,7 +165,7 @@ http://www.w3.org/TR/selectors/ defines the selectors for css
 inline vs inline-block: http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
 
 __todo__
-read concepts of display, position, float with examples, forms and inputs, media
+read concepts of display, ~~position, float with examples~~, forms and inputs, media, flex
 
 
 __questions__

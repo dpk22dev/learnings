@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-22T23:11:31+05:30
+
+====== apple ======
+Created Wednesday 22 March 2017
+
+
+
+https://developer.apple.com/library/content/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/Introduction/Introduction.html
+
+__Questions__
+does apple uses same swift based app for ios, ipad, mac like android for all devices
+apple os architecture
+what are protocols,
+why enumeration, structure, class all look same

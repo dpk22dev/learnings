@@ -5,6 +5,16 @@ Creation-Date: 2015-06-01T11:59:56+05:30
 ====== linux ======
 Created Monday 01 June 2015
 
+hacking kernel:
+http://www.linuxfromscratch.org/
+https://github.com/petersenna/Kernel/wiki/How-to-start-Linux-Kernel-development
+
+read:
+linux kernel development : robert love
+understanding linux kernel
+linux device drivers
+
+
 upstart is for linux
 
 lvs: linux virtual server is used for load balancing among services
@@ -12,6 +22,35 @@ lvs: linux virtual server is used for load balancing among services
 notes: unix network programming volume 2, w. richard stevens
 IPC:
 pipe, fifo, system V message queue, posix message queue
+
+book on linux internals:
+http://www.makelinux.net/ldd3/?u=chp-5-sect-3
+
+interactive links to different sub systems of linux
+http://www.makelinux.net/kernel_map/
+
+**policy vs mechanism**
+Most programming problems can indeed be split into two parts: 
+“what capabilities are to be provided” (the mechanism) and
+“how those capabilities can be used” (the policy).
+
+**synchronizations**
+http://stackoverflow.com/questions/2332765/lock-mutex-semaphore-whats-the-difference
+
+spinlocks:
+http://stackoverflow.com/questions/1957398/what-exactly-are-spin-locks
+http://www.linuxinternals.org/blog/2014/05/07/spinlock-implementation-in-linux-kernel/s
+eg: t1 acquires spin lock on core1, t2 will keep on looping on core2 untill t1 doesn't release lock. in single core machine spin-lock is simply disabling interrupts to avoid reschedule by kernel.
+
+mutex:
+if t1 has acquired mutex on resource, t2 will go to sleep if it asks for. when t1 has released mutex and t2 gets rescheduled by OS, it can acquire mutex.
+
+semaphore:
+allows access to group of threads to shared resource.
+
+mutex vs semaphore:
+mutex is object owned by thread, allow only one resource to access resource.
+semaphore is signalling mechanism. it allows a number of threads to access shared resource.
 
 synchronisation:
 system V semaphores were added for synchronization of system V shared memory
@@ -28,6 +67,8 @@ Processes operate exclusively in the user address space (i.e., in unprotected mo
 When a process wants to access devices or use a functionality of the operating-system kernel, it has to use a system call to do this. A system call causes the processor to change to the protected mode, and access to the kernel address space is a function of the system call. All devices and memory sections can be accessed in protected mode, but only with methods of the kernel.
 
 linux doesn't take microkernel approach, it uses monolithic. modules are added/removed at runtime. this is similar to micro-kernel approach except, modules run in kernel mode in this case.
+
+SoC ( system on chip) cpu with mmu, mm controller, tlb. ALU consults mmu which consults tlb and mmc. mmc gets from memory.
 
 An **ISO image** file is a snapshot of the data and layout of a CD or DVD, saved in ISO-9660 format.
 
@@ -73,6 +114,11 @@ simultaneous multithreading can happen in single core, single processor. instruc
 **perf**
 http://www.tecmint.com/perf-performance-monitoring-and-analysis-tool-for-linux/
 
+**memory management**
+https://www.youtube.com/watch?v=EWwfMM2AW9g
+
+**debugger**
+https://www.youtube.com/watch?v=N1QSEY1El9o
 
 **debugging sound in ubuntu**
 https://help.ubuntu.com/community/SoundTroubleshooting
@@ -113,10 +159,70 @@ udisksctl unmount -b /dev/sdb1
 udisksctl power-off -b /dev/sdb
 udisksctl info -b /dev/sdb // gives info about device
 
-196701502721
+* linux kernel development ******
+don't use c standard libs function. most of function exported by kernel are in include/linux, include/asm directories can be used
 
+asm/current.h : current process
+linux/sched.h : schedular option
 
+kernel stack is small in size, don't use auto variables, instead use heap
 
+The __init token is a hint to the kernel that the given function is used only at initialization time. The module loader drops the initialization function after the module is loaded, making its memory available for other uses.
+
+driver numbers:
+Modern Linux kernels allow multiple drivers to share major numbers, but most devices that you will see are still organized on the one-major-one-driver principle. The minor number is used by the kernel to determine exactly which device is being referred to.
+
+maximum number of ports:
+http://stackoverflow.com/questions/410616/increasing-the-maximum-number-of-tcp-ip-connections-in-linux
+
+Not all critical sections are the same, so the kernel provides different primitives for different needs. 
+latency requirements
+interrupts
+is it possible to sleep
+are other resources hold by process
+
+binary semaphores are mutexes
+asm/sem: semaphore used for mutexes
+linux/rwsem: enabling parallel reading in sem; priority is given to writers causing reader starvation, used where writes are rare
+
+for waiting on completion of other task, using semaphore is not good
+
+Sleeps should not happen in spin locks; writing code that will execute under a spinlock requires paying attention to every function that you call.
+
+**advantages of read write spin locks:**
+http://stackoverflow.com/questions/32096928/the-advantages-of-read-lock-and-write-lock
+
+**order of acquiring locks**
+when multiple locks must be acquired, they should always be acquired in the same order. If you must obtain a lock that is local to your code (a device lock, say) along with a lock belonging to a more central part of the kernel, take your lock first. If you have a combination of semaphores and spinlocks, you must, of course, obtain the semaphore(s) first; calling down (which can sleep) while holding a spinlock is a serious error.
+
+**major and minor numbers for devices**
+http://unix.stackexchange.com/questions/315186/how-does-the-linux-kernel-know-device-major-and-minor-numbers
+http://unix.stackexchange.com/questions/197688/are-driver-modules-loaded-and-unloaded-automatically/197786#197786
+http://stackoverflow.com/questions/14583183/the-role-of-major-and-minor-numbers-in-device-driver?rq=1
+http://stackoverflow.com/questions/12564824/use-of-major-and-minor-device-numbers
+
+**about PCI bus**
+Each PCI peripheral is identified by a bus number, a device number, and a function
+number. The PCI specification permits a single system to host up to 256 buses, but
+because 256 buses are not sufficient for many large systems, Linux now supports PCI
+domains. Each PCI domain can host up to 256 buses. Each bus hosts up to 32
+devices, and each device can be a multifunction board (such as an audio device with
+an accompanying CD-ROM drive) with a maximum of eight functions. Therefore,
+each function can be identified at hardware level by a 16-bit address, or key
+
+There are three different types of tty drivers: console, serial port, and pty.
+
+**terminologies:**
+http://superuser.com/questions/149100/relation-between-controllers-interfaces-adapt-cards-chipsets-buses
+
+**what language bios is written**
+http://softwareengineering.stackexchange.com/questions/298628/which-language-is-a-bios-written-in
+
+**is bios run on cpu**
+http://cs.stackexchange.com/questions/29117/does-the-bios-run-on-the-cpu
+
+**practical booting of linux**
+https://0xax.gitbooks.io/linux-insides/content/Booting/
 
 
 
@@ -126,6 +232,12 @@ watch linux videos: https://www.youtube.com/channel/UCkefXKtInZ9PLsoGRtml2FQ
 udev: https://www.linux.com/news/udev-introduction-device-management-modern-linux-system
 read man udev, sysctl
 read ubuntu server guide after: DM multipath
+https://www.youtube.com/watch?v=EWwfMM2AW9g
+http://www.ru.j-npcs.org/usoft/WWW/HOWTO/mini/IO-Port-Programming : linux ioport programming 
+iit bus structure: https://www.youtube.com/watch?v=46ijB39f3Hk
+https://www.youtube.com/channel/UCkefXKtInZ9PLsoGRtml2FQ
+list of linux kernel system calls
+
 
 *********** questions  *****
 in case of io does all threads on all processors are waiting for bus? 
@@ -136,11 +248,22 @@ meaning of each parameter:
 after running lshw
  resources: irq:126 memory:c0000000-c0ffffff memory:b0000000-bfffffff ioport:4000(size=64)
 
+read
+documentation/kbuild
+linux/module, moduleparam, errno.h
 
 
+why complete was introduced instead of semaphore
+ioctl system call
 
-
-
-
-
-
+jiffies vs ticks
+how kernel maintains cpu affinity
+why export_symbol is used after funciton name
+download ldd source code examples
+schedule vs yield
+how os comes to know about devices
+why sysfs is favoured instead of proc
+writing firmware,
+firmware vs device driver
+how firmware tells os about devices
+what is scatter/gather io

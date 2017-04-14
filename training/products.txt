@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-23T10:56:44+05:30
+
+====== products ======
+Created Wednesday 23 November 2016
+
+
+http://www.iamwire.com/2015/10/video-you-dont-need-expertise-in-startups-to-succeed-paul-graham/124656
+build product aiming small set of people love, those will make others love it. don't just make product that a lot of people like. 
+
+
+marketing strategies:
+http://www.iamwire.com/how-to-acquire-users-cost
+after module 5
+
+growth hacking:
+https://www.quicksprout.com/the-definitive-guide-to-growth-hacking/
+
+https://www.quicksprout.com/the-definitive-guide-to-growth-hacking-chapter-2/
+
+registering a startup
+https://www.quora.com/What-is-the-procedure-to-register-a-startup-company-in-India-and-how-much-will-it-cost
+
+
+
+__todo__
+~~https://en.wikipedia.org/wiki/Online_advertising~~
+explore iamwire technology section

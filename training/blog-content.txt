@@ -5,6 +5,10 @@ Creation-Date: 2016-03-23T11:45:51+05:30
 ====== blog-content ======
 Created Wednesday 23 March 2016
 
+write blogs for training materials
+insert entries here for content
+read man screen and few commands
+
 how does it works
 xbacklight -inc 10
 xbacklight -dec 10
@@ -20,3 +24,18 @@ http://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a
 
 control-center not working properly
 http://askubuntu.com/questions/483397/missing-sound-volume-icon-on-screen-top-14-04
+
+frustration about cache 
+http://some-domain to https version
+chrome://net-internals/#hsts
+
+
+
+
+
+
+
+
+
+
+

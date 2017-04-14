@@ -31,6 +31,9 @@ run commands using php app/console  commandName --args
 
 we can avoid writing factory by using tagged services. it uses compiler pass which needs to be regiestered in bundle
 
+**bundle vs components**
+A Component is a part of the Symfony core. Symfony is a group of Components tied together. Example are Forms, Console, HttpKernel, and so on. They share some similarities with Bundles. However, you can use Components outside of Symfony, as standalone packages in your php non-symfony projects. Bundles depend on symfony 
+
 ***** use and include *****
 we need to include necessary php files. 
 we can define namespace and then use classes/functions from that namespace in other functions etc...
@@ -198,9 +201,9 @@ why we have put menu differently
 ~~in sm code how is elastic search, database connection, memcache, rabbitmq, logger etc happening~~
 ~~how sessions and cookies, OAuth are managed~~
 we can use security.context inbuilt in php to set/unset token, sesssion for clearing and invalidating session
-        $this->get('security.context')->setToken(null);
+		$this->get('security.context')->setToken(null);
 	$this->getRequest()->getSession()->clear();
-        $this->getRequest()->getSession()->invalidate();
+		$this->getRequest()->getSession()->invalidate();
 
 	$response->headers->clearCookie("sm_session");
 	
@@ -235,3 +238,24 @@ forms storage
 php thumb and thrift service client are remaing
 
 how symfony knows about command name
+
+
+__todo__
+~~run on apache~~
+~~put breakpoint and see how flow goes~~
+	~~kernel flow~~
+~~how bundles/components are created ~~
+using services, event listeners
+read about components in symfony core
+UT
+
+
+
+
+
+
+
+
+
+
+

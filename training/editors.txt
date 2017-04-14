@@ -25,7 +25,24 @@ ctrl + shift + p => write install packages => search for packages to install
 f12 : jump to definition
 alt + - to jump back
 
+ctrl +P file name search
+
 **idea:**
 ctrl + ` : for switching
 Add/remove a selection: Alt + Shift + Mouse Click
 ctrl + ] or [ to jump to opening closing braces
+ctrl + shift + R : filename search
+shift+shift search everywhere
+
+**clion:**
+put caret on variable and press alt+f7 to find all usage 
+use f3, shift+f3 to navigate through usage
+ctrl+b to navigate to definition of class,funciton
+parent-child relationship heirarchy: ctrl+H
+quick definition: ctrl+shift+I
+
+
+**screen:**
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server
+ctrl + a, ? help
+

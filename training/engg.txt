@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-26T22:11:53+05:30
+
+====== engg ======
+Created Sunday 26 March 2017
+
+mechanical engineering refernece:
+http://www.aboutmech.com/p/basics-of-mechanical-engineering.html
+
+about cars after:
+https://www.youtube.com/watch?v=yRFFTzSKdNs&index=8&list=PLLilrKdbjXDH-ztjsBHZLEpRvKHHP6bgO

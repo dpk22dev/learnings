@@ -28,6 +28,9 @@ do we use hateos? like sending api links in api results?
 
 if user logs out of fb/ changes password, then token previously generated becomes invalid; all apps using token on behalf of users need to make user login again.
 
+for integrated api documentation and examples
+https://apigee.com/resources/instagram
+
 __todo__
 
 __questions__

@@ -9,6 +9,32 @@ __for now focus on knowledge gaining rather than problem solving__
 
 __p1__
 
+15 days
+
+@office
+html, css, js
+
+@home
+concepts and libs for
+image processing
+video processing 
+	read and explore terms in http://keycorner.org/pub/text/doc/ffmpeg-tutorial.htm
+high scalability
+
+android
+linux book
+
+for new fields checkout under electives section: https://www.amrita.edu/program/btech-computer-science-and-engineering
+machine learning  from coursera see what and how to read
+AI
+
+~~processing ga for https://analytics.google.com/analytics/web/demoAccount~~
+~~read about google schema~~
+
+ask nikhil about various domain of electronics basic overview...
+https://serps.com/library/
+
+find courses and get certifications
 ~~create timeline~~
 ~~tech: http://www.tutorialspoint.com/~~
 	~~xml technologies, academic, software quality, ~~
@@ -19,14 +45,14 @@ __p1__
 
 ~~till biometric modalities~~
 
-read highscalability.com, yourstory.com
-payment gateway integration
-recommendattion engine
+~~read highscalability.com, yourstory.com~~
+~~payment gateway integration~~
+~~recommendattion engine~~
 
-setting and using elastic search: queries
+~~setting and using elastic search: queries~~
 lecture machine learning,  artificial intelligence
 
-create resume for freelancing websites and complete profile making
+~~create resume for freelancing websites and complete profile making~~
 ~~twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it : highscalability.com~~
 ~~src code for html/css for various websites~~
 
@@ -67,8 +93,9 @@ write blogs for everyday experiences
 ~~learn html, css, js, jquery, bootstrap, angularjs~~
 learn laravel, magento: for db
 try to read source code for apache, nginx, xdebug, mysql
-read man for curl
-
+LTP
+signal processing get a book and read
+audio processing depends on signal processing
 
 __don't do right now__
 quantum computer and physics
@@ -96,24 +123,125 @@ update splitwise: ~~purana milk wala,~~  ~~milks + dhahi + some bread entry~~?, 
 ~~128milk~~
 ~~1258 hathwayrech~~
 ~~128milk, 450 ghee~~
-rent 8000
+~~rent 8000~~
 ~~139surf, 83milk~~
 ~~130milk~~
 ~~400ata+, 130milk~~
-290 glucond+dal
-130 mikl
-85milk, 60 pani
+
+
+~~290 glucond+dal~~
+~~130 mikl~~
+~~85milk, 60 pani~~
+~~85milk~~
+
+~~60pani, 700+65( -chana, -moong) saman~~
+~~85, 85milk~~
+
+~~22bread+85milk~~
+~~615sabji~~
+
+~~85 milk, 140 pani+allout, 4200 bai~~
+~~85milk~~
+~~85milk~~
+~~60sabji+480gheerefined, 85milk~~
+~~28+30breadpani+85milk~~
+~~30dalia+85milk~~
+~~6000  elec bill~~
+~~85 milk~~
+~~85 milk~~
+~~50cheeni~~
+
+~~410 sabji~~
+~~990 saman-2xamla candy~~
+~~300 elect~~
+~~138allout, 90pani+bread~~
+~~85milk~~
+~~85milk~~
+~~85~~
+~~85~~
+~~385saman~~
+~~85~~
+~~90~~
+~~150 remaining~~
+~~499 -namkeen~~
+~~460 sabji~~
+~~85~~
+~~85~~
+~~85~~
+~~1258 hathwat~~
+~~85, 30~~
+~~85, 490 ghee~~
+~~100 udhar~~
+~~710 sabji+bartan~~
+~~85,~~
+~~10000 udhar~~
+~~85~~
+~~215 saman~~
+~~85 milk~~
+~~85+60~~
+~~85~~
+~~243~~
+~~1800 bai~~
+~~50 bread~~
+~~160 ~~
+~~190 sabji~~
+~~60 pani~~
+~~2000 bai~~
+~~hathway~~
+~~1075+30 sman pani~~
+~~2coil+garam masala + ~~
+~~45 dahi~~
+~~30 pani~~
+~~340 sabji~~
+~~4200+180 bai~~
+~~50cheeni~~
+~~-500 udhar~~
+~~430 sabji~~
+~~750 dalein+harpic..~~
+~~2500 airtelnet~~
+~~208 saman~~
+~~170 glucond+handwash~~
+~~30 pani~~
+~~660 ata+dalein~~
+~~160 matar pnaeer~~
+~~50 sabji~~
+~~420 ghee~~
+
+~~58 vim~~
+~~30 pani~~
+~~210+30 ghee pani~~
+~~-13812.5 paid by nintin~~
+~~450 ghee jira~~
+~~30 pani~~
+~~520 ata+daliya+cheeni~~
+~~650 ghee, daliya~~
+~~65+30 sabji+milk pani~~
+~~4200 bai~~
+~~25 milk~~
+~~pani 60~~
+~~2200 bai~~
+~~25 milk~~
+~~210 ata+pani~~
+~~25 milk~~
+~~3000 vikram~~
+~~17500 vikram2~~
+~~4000 bed adv~~
+~~6999 lease~~
+~~2400 bai~~
+~~2000 aunty saman~~
+~~500 tempo~~
+
 
 ~~~~https://www.youtube.com/watch?v=LmdMp4iLDUc what is consicouness or https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q for various things: psychology and economics, over time~~~~
-image processing basics
-cartoon drawing, music definitions
-airtel refund sms on whatsapp: check if its ok
+~~image processing basics~~
+~~cartoon drawing, music definitions~~
+~~airtel refund sms on whatsapp: check if its ok~~
 
 ~~cloud computing: Iaas, Paas, Saas~~
-big data: artificial intelligence, data analysis, machine learning
+~~big data: artificial intelligence, data analysis, machine learning~~
 
-call
-successpact : walmart
+~~call~~
+~~successpact : walmart~~
 raksha
 
 9148981165
@@ -126,6 +254,42 @@ boot@127
 dilshad garden, jhilmil
 chetak complex, above bob atm 
 hwcs 106
+
+
+long run: learn c by examples while learning kernel and from doubt question on so
+learn how designs are implemented in symfony php
+learn designs from high scalability
+don't learn c++
+learn java 3 months after
+
+
+
+
+image processing
+headless browser
+sample naukri app designing
+
+diff b/w MVC vs MVVC vs MVP
+javascript detect network bandwidth
+
+
+language
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

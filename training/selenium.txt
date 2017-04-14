@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-14T16:54:12+05:30
+
+====== selenium ======
+Created Tuesday 14 March 2017
+
+http://www.guru99.com/selenium-tutorial.html
+
+
+
+
+
+read after
+http://www.guru99.com/parameterization-using-xml-and-dataproviders-selenium.html

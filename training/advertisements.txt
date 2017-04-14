@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-06T22:58:38+05:30
+
+====== advertisements and analytics ======
+Created Tuesday 06 September 2016
+
+search-network vs display-network
+https://www.youtube.com/watch?v=g7TLTrDzW1g
+
+**GA**
+only one trackerName can be empty. ga has q which store the functions to execute
+ga('[trackerName.]send', [hitType], [...fields], [fieldsObject]);
+hit types include screenview, event, transaction, item, social, exception, and timing, pageview
+
+logged into adwords
+have to provide billing details for few words 
+
+dfa: dpk22dev doesn't have access to campaign
+dfp: can't find login
+
+create blog/site -> create adsense account -> 
+create dfp account( https://www.youtube.com/watch?v=hQ2Lnj46UTE )
+
+https://developers.google.com/doubleclick-gpt/reference
+
+__todo__
+read from youtube https://developers.google.com/ads/#web
+how google ads sizing works
+setTarget meaning in ad codes

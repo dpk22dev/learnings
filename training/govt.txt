@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-09T16:54:01+05:30
+
+====== govt ======
+Created Sunday 09 October 2016
+
+all dept websites:
+http://rti.gov.in/rti/alldept.asp
+
+indian-armed-forces
+https://en.wikipedia.org/wiki/Indian_Armed_Forces
+
+read ebook on E&IT
+http://meity.gov.in/DeitY_e-book/index.html#page/1
+
+open data about india
+https://www.quora.com/Which-is-the-best-place-to-get-Open-data-sets-for-India

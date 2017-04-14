@@ -5,6 +5,22 @@ Creation-Date: 2016-04-11T11:19:30+05:30
 ====== angular ======
 Created Monday 11 April 2016
 
+read: http://blog.angular-university.io/angular-2-universal-meet-the-internet-of-the-future-seo-friendly-single-page-web-apps/
+
+angular themes
+http://www.cssauthor.com/responsive-free-angularjs-admin-themes/
+
+looks good
+http://dashboard.ranjithprabhu.in/#/app/about-me
+https://github.com/beeman/loopback-angular-admin
+
+theme src
+https://www.template.net/web-templates/website-templates/angularjs-template/
+
+looks good
+http://wrapbootstrap.com/preview/WB0M35410
+good form input: http://gridgum.com/templates/wrapkit/form-elements.html
+
 directives, expressions, filters, modules, and controllers. service
 
 Angular uses spinal-case for its custom attributes and camelCase for the corresponding directives which implement them
@@ -85,6 +101,9 @@ The reason why $evalAsync is often preferrable to a $timeout with zero delay has
 with the browser event loop. When you use $timeout to schedule some work, you relinquish
 control to the browser, and let it decide when to run the scheduled work. The browser
 may then choose to execute other work before it gets to your timeout.
+
+**how to use js module directly**
+http://stackoverflow.com/questions/23727411/how-to-get-full-momentjs-api-inside-angular-view
 
 *** todo ***
 read build_your_ownangular js pg58

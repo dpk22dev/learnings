@@ -5,6 +5,35 @@ Creation-Date: 2016-03-07T12:17:56+05:30
 ====== economics ======
 Created Monday 07 March 2016
 
+leadbolt
+
+**online trading**
+kite.zerodha.com
+
+for investment plan check CRIS
+
+saving accnt: 4%
+liquid investmens: short term investment : 8% use it rather than saving account
+RD: 8%, call bank for it
+instead of long term investment in FD, insurance giving 8%, use good insurance with low input and hight output, and invest rest monthly amount in SIP, MF
+
+tax is deducted from amount you receive back after investment in MF as it is your income
+senior citizen have greater tax slab, return %age on investment.... gift tax is not there for parents, so invest through them... return would be their income so not taxable on you
+
+should use ppf instead of epf, as in case of epf you need signature of your employer
+
+NPS: 50000, more in tax saving except 1,50,000
+
+don't use post office scheme: bad infrastructure, hectic
+investment schemes for girl child to save tax
+
+check on moneycontrol, et for sip funds and their returns over last 1,2 years and invest
+sip is lock-in, there is some tax saving SIP also with low return rates
+
+greate noida flats are good, mahagun and prateek builders have better services
+supertech and amrapali are bad
+2bhk ~ 60-70, in GN ~30-40
+
 economics: making decisions based on limited resources to use them in best ways
  macroeconomics vs microeconomics ask different questions and work at different scales like ecology vs cellular biology
 overall country economy vs how much employee should be hired for releasing product this year
@@ -295,16 +324,13 @@ http://indiainbusiness.nic.in/
 
 https://www.bankbazaar.com/tax/all-about-tds.html
 
+**various rates data**
+http://www.tradingeconomics.com/
+http://www.tradingeconomics.com/indicators
 
 
-
-
-
-
-
-
-
-
+__todo__
+chapter 1 46
 
 
 
@@ -312,3 +338,28 @@ till lecture 27
 __questions__
 read later accounting and finanace
 diff b/w finance and economics vs accounts
+why two depositories NSDL and CDSL
+
+
+
+
+
+conveyance, reimbursment and insurance are different things
+
+how lic agents earn
+	- they get commision 25%, 7.5%, 5% rest of years
+various rates of 
+	inflation: http://www.tradingeconomics.com/india/inflation-cpi
+	
+~~inflation expected reates and privious~~
+are reimbursments exempted from tax, verify offer letter with deductions
+	- looks so
+	
+~~schemes and reates fro various investments~~
+~~check uan status for amdocs, naukri:~~ 
+check sip status
+~~link aadhar to hdfc~~
+
+
+
+

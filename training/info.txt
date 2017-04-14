@@ -13,3 +13,6 @@ many libs and specifications use BNF for reading:
 http://cui.unige.ch/db-research/Enseignement/analyseinfo/AboutBNF.html
 
 for calling methods in other languages use gearman
+
+disable dash unity using superkey
+dconf write /org/compiz/profiles/unity/plugins/unityshell/show-launcher '""' on user terminal

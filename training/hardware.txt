@@ -7,6 +7,7 @@ Created Sunday 17 April 2016
 
 adruino: code is written in C, compiled and run
 raspberry pi: SingleBoardComputer : os can be installed and applicatinos can be run
+omega2
 
 pen tablet, one by wacom
 
@@ -24,3 +25,4 @@ pen tablet, one by wacom
 
 ******** todo **************
 raspberry pi: http://www.instructables.com/
+usb https://en.wikipedia.org/wiki/USB

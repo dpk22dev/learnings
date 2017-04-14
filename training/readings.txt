@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-15T14:26:47+05:30
+
+====== readings ======
+Created Wednesday 15 March 2017
+
+to read:
+Zero to One: Notes on Startups, or How to Build the Future by Peter Thiel
+The Foundation trilogy by Isaac Asimov

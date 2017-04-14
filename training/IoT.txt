@@ -12,3 +12,9 @@ http://nodered.org/
 https://www.youtube.com/watch?v=Xb1dRpBlERw
 
 beaglebone, ninjablocks
+
+playlist on IoT
+https://www.youtube.com/watch?v=GUvKv7D4iZY&list=PLSVzLvRoaSwReW4nr7XbrpeD7VWH5JBF4
+
+
+https://www.youtube.com/watch?v=7jSGJY1rj2o&index=7&list=PLw5h0DiJ-9PCxDZkP8pbgpyiDweF3DJ8c

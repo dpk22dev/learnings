@@ -244,7 +244,47 @@ Use Elastica.io
 
  Java clients talk to the cluster over port 9300, using the native Elasticsearch transport protocol. The nodes in the cluster also communicate with each other over port 9300.
 
+**how to decide index, types**
+	https://www.elastic.co/blog/index-vs-type
+		basically index is main thing for storing data; type is just a field used for filtering automatically. also if different types have same name they should have same data-types as mapping is done for index, not for each types' fields.
 
+**updating a document**
+https://www.elastic.co/guide/en/elasticsearch/guide/current/update-doc.html
+https://www.elastic.co/guide/en/elasticsearch/guide/current/partial-updates.html
+
+for geo maps:
+string: lat, lon same goes for google maps url
+array: [ lon, lat ]
+
+relation b/w index type and name provided in mapping:
+while creating mappings for index
+ "mappings": {
+	  "organization-mapping" : {
+	}
+}
+
+here organization-mapping should be same as type name used while inserting document.
+
+put /index-name/organization-mapping/id
+otherwise mapping rules won't apply
+
+when should we create type in same index and in different index
+	https://www.elastic.co/guide/en/elasticsearch/guide/current/mapping.html#_avoiding_type_gotchas
+
+what happens if we run term query on analyzed field
+	ES doesn't complain, ~~but it won't match term with field even though it is present in that field, it gives back null~~
+	it will match in the field, eg: term was "king", and analyzed field was "the king is", then term query will match
+	so term query can be applied on analyzed field and it will calculate score
+	
+if we run match query on not_analyzed field, it works if we provide exact query string; it works with term query obviously.
+
+term query uses score, We use a constant_score to convert the term query into a filter.
+
+It is important to understand that term and terms are contains operations, not equals. the best way to accomplish it involves indexing a secondary field. eg "tag_count" : 2 is added along with. this field can be used while searching.
+
+ the match or query_string queries are high-level queries that understand the mapping of a field. if you use it against date/integer field it will use input query string as date/integer field, if used against not_analyzed field it will use input query string as single term; if used against field having analyzed mapping, it will pass query string through appropriate analyzer and do full text search
+
+should field is used for scoring, we can apply boost to some term in query
 
 __quest__
 ~~bool, term, filter~~
@@ -252,28 +292,26 @@ __quest__
 ~~score in elastic search~~
 ~~how mapping and routign works~~ 
 ~~field, mapping, routing, term, text~~
-facets, boost
+~~facets, boost~~
 ~~rewrite, boost, fuzziness~~
-
-segments
-
-how to remember and which query should be used
-how is json key value pair stored; what happens to key
+~~how to remember and which query should be used~~
+~~how is json key value pair stored; what happens to key~~
 
 internals of index sharded, how lucene indexing happens for inverted index
-how to decide index, types: what should be inside what
-	it looks like based on hash of _id of doc we can find shardId; but how is inverted indexes stored then
-how elastic match_phrase will happen if document is inverted indexed word wises
-how to abort long runing queries
-if we update/delete a document, is it still indexed and searchable
+	
+	~~it looks like based on hash of _id of doc we can find shardId; but how is inverted indexes stored then~~
+~~how elastic match_phrase will happen if document is inverted indexed word wises~~
+
+~~if we update/delete a document, is it still indexed and searchable~~
 we can't change #primary shards; how to determine their numbers beforehand
-when should we create type in same index and in different index
-	https://www.elastic.co/guide/en/elasticsearch/guide/current/mapping.html#_avoiding_type_gotchas
+how to abort long runing queries
+what are segments
 wouldn't we require to reindex even if we want to change stem_exclusion, stop-words; how is it handled dynamically changing requirements
 when we should use nested objects or parent-child relationships
+~~elastic search why term query have relevance?~~
 
 __todo__
-after normalizing tokens
+~~after normalizing tokens~~
 read about how lucene stores data
 
 

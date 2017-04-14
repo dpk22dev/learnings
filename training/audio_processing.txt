@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-21T21:17:01+05:30
+
+====== audio processing ======
+Created Sunday 21 August 2016
+
+http://www.ece.ucsb.edu/Faculty/Rabiner/ece259/digital%20speech%20processing%20course/lectures_new/Lecture%204_winter_2012.pdf
+https://www.ee.iitb.ac.in/student/~daplab/publications/chapter9-prao.pdf
+
+https://dadorran.wordpress.com/category/audio-processing/
+
+http://keycorner.org/pub/text/doc/ffmpeg-tutorial.htm
+
+decide duration, loudness, pitch of language
+
+clear concepts:
+phonemes for english and hindi
+
+__todo__
+~~read about oscilltions and waves~~
+till 26 https://www.youtube.com/watch?v=Xjzm7S__kBU&list=PLA480D1979B10D8F5
+read from rabinar: clear basic requirements
+
+good read tylor series https://www.youtube.com/watch?v=KzrdZD4EPXY
+
+
+__Questions__
+hamming window
+sampling of signals
+
+
+

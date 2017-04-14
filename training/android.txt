@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-20T16:08:50+05:30
+
+====== android ======
+Created Monday 20 February 2017
+
+app inventor
+animation: material design standards
+opensignal.com
+
+source.android.com for security, devices nd sensors, 
+
+**design patterns used in android:**
+Broadcast receiver uses Observer pattern
+Remoter service invocation uses Proxy pattern
+View and view group uses Composite pattern
+Media framework uses Facade pattern
+
+implement parcelables
+services, Binder, Connection, AIDL mixing
+marshalling meaning
+
+framework sources code in: /home/dpk/Android/Sdk/sources/android-25/
+
+notes about xml parsing, image processing:
+https://xjaphx.wordpress.com/learning/tutorials/
+
+resources:
+https://medium.com/@dmilicic/a-detailed-guide-on-developing-android-apps-using-the-clean-architecture-pattern-d38d71e94029#.9fulh3ioh
+https://www.raywenderlich.com/109843/common-design-patterns-for-android
+
+
+__questions__
+diff b/w task and process
+what about deprecated methods in new sdk
+
+shobhit for search in all files including jr shortcut
+

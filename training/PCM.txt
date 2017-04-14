@@ -1,0 +1,107 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-12T07:13:05+05:30
+
+====== PCM ======
+Created Friday 12 August 2016
+
+hypothesis or axiom or postulate can not be proved, it can be verified by experiments
+
+good thought: sometimes macro things can't be explained using constituent micro things, like group of different colors make painting which has different meaning itself
+group of atoms make molecules, which interact and make cells which becoming living
+
+precision of an instrument, and accuracy of measurement
+
+we can not use kinematic formulas for vertical circular motion because ~~velocity~~ accelerations is continuously changing, it linear motion that was constant
+
+under conservative force work done by this force on object is independent of path taken, eg: g
+non-conservative force eg: friction force
+mechanical energy: if body can apply force to do displacement, it has mechanical energy.
+
+conservation of momentum applicable: when external force on system is zero. it is kind of newton's third law of motion
+
+system of particles form body. on motion distance between particles doesn't change, then its rigid body else flexible body.
+point mass: linear, circular, oscillatory
+system: translational, rotational( linear vel is different, but angular velocity is same ), rolling( translational+rotation)
+
+moment: effect of physical quantity, 
+eg 
+moment of mass: m x r
+moment of force: product of force and distance => torque
+
+for system of particles, center of mass is point, when force is applied on each particle of body is same as applied on center of mass.
+
+inertia is charactristic of object, due to which it opposes its change its velocity. for linear motion its mass, for rotational motion its moment of inertia 
+
+if there is no forced pivot, system of particles will rotate around center of mass, else it will rotate around pivot
+
+single force doesn't rotate body. couple( more than 2 force in opposite direction ) causes rotation => torque
+T = r1xF1 + r2xF2
+direction of r is from centre of rotation to force
+
+The angular momentum of the particle is conserved, if the torque τ = r × F due to the
+force F on it vanishes. thus the motion under a central force the angular momentum is always conserved.
+
+gravitational force between two particles: GMm/r^2
+gravitational intensity( acc due to gravity ), independent of other mass: GM/r^2
+
+gravitational potential energy between two particles: -GMm/r
+gravitational potential, independent of other particle: -GM/r
+
+field is space around object where its influence can be experienced( eg in this case gravitational ), intensity of that field is experienced force by unit mass
+potential is associated with location, it is amount of energy that can be provided by object at that location
+
+
+
+The gravitational force on a particle inside a spherical shell is zero. However, (unlike a
+metallic shell which shields electrical forces) the shell does not shield other bodies outside
+it from exerting gravitational forces on a particle inside. Gravitational shielding is not
+possible.
+
+The property of a body, by virtue of which it tends to regain its original size and shape when the applied force is removed, is known as elasticity. 
+
+pressure or stress both are F/A
+relation between stress and strain for a given material can be found experimentally,
+gnerally stress = k x strain
+
+__questions__
+why do protons have positive charge and e have negative charges
+	or why similar looking protons repel each other and dissimilar proton and e attract 
+
+e, p are form of energy, why did they combine to form atom, why not limited to one element atom, why so many different element atoms, is there some conscious biology( physics ) going on among subparticles( quarks.... )
+
+if e are like earth around sun, who gave it circular motion... if e has wave behaviour, why doesn't it fall in nucleaus
+
+where does gravity comes from,if sun is just made up of atoms/ions. is it like sum of mass of these these atoms bend the spacetime fabric to feel like gravity. does this mean gravity is not **fundamental force**
+
+what is spacetime fabric made of
+
+example of energy converting into mass, except blackhole
+
+from dense blackhole with wave particle duality size, to big-bang how did wave energy converted into particles, which combined to form quarks, gluons and hence e, p, n to form atoms
+
+yes number of elements in periodic table is constant because last element will have so much p,n that first shell e will have to run speed > c for being stable. Why did nature impose that speed limit. is it like we are trapped in some experiment boundry.
+
+how does spring gets its pottential energy, how rearrangement of atoms gives rise to potential energy
+
+electro-weak forces: unification of electro-magntetci and weak forces
+
+how fast is bond making and breaking happens b/w p/e for two bodies sliding against each other. eg: ball falling in air, surface p/e create bond and break from p/e present in air and thus feel resistance. what will happen at speed ~ c
+
+
+concept of centripetal force
+
+hydraulic lift looks like against law of conservtion of energy
+
+
+
+todo:
+physics:
+elasticity and thermodynamics - https://www.youtube.com/watch?v=In8Qcr5PcmY&index=64&list=PLIQkEkEOvayJ-duAs-kroL4gMr7TyZOgt
+
+
+
+
+
+
+

@@ -98,6 +98,10 @@ shows head of each local branch
 git remote -v
 show fetch and push origins
 
+git fetch remote branch
+git fetch <remote> <rbranch>:<lbranch> 
+git checkout <lbranch>
+
 adding upstream to branch
 git branch --set-upstream-to=origin
 
@@ -151,6 +155,11 @@ showing removing untracked files with -n switch
 git clean -fdn
 remove them using git clean -fd
 
+renaming a branch:
+git branch -m old_branch_name new_branch_name
+
+get history of file:
+ git log  -p path/to/file
 
 *** imp links ***
 http://stackoverflow.com/questions/4114095/revert-to-a-previous-git-commit
