@@ -5,8 +5,17 @@ Creation-Date: 2016-03-09T14:29:45+05:30
 ====== machine learning and AI ======
 Created Wednesday 09 March 2016
 
+games
+https://how-to-solve-a-rubix-cube.com/
+
 machine learning: can follow links to various applications
 https://en.wikipedia.org/wiki/Machine_learning
+
+https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/
+
+what is eigen vectors and values
+https://math.stackexchange.com/questions/23312/what-is-the-importance-of-eigenvalues-eigenvectors
+https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors
 
 http://machinelearningmastery.com/4-steps-to-get-started-in-machine-learning/
 
@@ -17,6 +26,25 @@ https://ocw.mit.edu/courses/mathematics/18-657-mathematics-of-machine-learning-f
 
 
 http://scikit-learn.org/stable/documentation.html
+
+python ML
+https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-data-science-python/
+https://www.analyticsvidhya.com/blog/2017/05/pydata-amsterdam-2017-machine-learning-deep-learning-data-science/
+
+research @google
+https://research.google.com/research-outreach.html#/research-outreach/research-datasets
+archive for blogs at
+https://research.googleblog.com/2009/06
+
+data mining vs machine learning vs AI
+https://stats.stackexchange.com/questions/5026/what-is-the-difference-between-data-mining-statistics-machine-learning-and-ai
+
+**tensor flow **
+source: https://github.com/tensorflow/tensorflow/tree/r1.1 at /apps/my-builds/tensorflow
+https://www.tensorflow.org/get_started/get_started
+docker: https://hub.docker.com/r/tensorflow/tensorflow/
+
+
 
 The systems which exhibit intelligent behavior, learn, demonstrate, explain, and advice its users.
 perception, reasoning, problem solving, learning, linguistic intelligence
@@ -142,16 +170,15 @@ https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4
 
 
 __todo__
-read vector, prob, chp1
-till chap 2
-subspace and span usage and how to calculate
-how to calculate rank of matrix
-learn from udemy after that from stanford
+**siraj after estimator**
+http://scikit-learn.org/stable/tutorial/statistical_inference/index.html
+http://www.scipy-lectures.org/intro/matplotlib/matplotlib.html
+https://www.datacamp.com/community/tutorials/matplotlib-tutorial-python#gs.BqJTBcU
+shrinkage and curse of dimensionality google/youtube
+what do various parameters suggest in classifier defintino
+what is ridge, lasso
 clone sklearn code, go through source code
-understanding datatypes in octave
-stem and leaf plot, peak, squeeze, meshgrid, quiver
-https://www.youtube.com/watch?v=ICKBWIkfeJ8&list=PLAwxTw4SYaPkQXg8TkVdIvYv4HfLG7SiH
-**till** 166
+
 
 ~~start from:~~
 ~~https://www.coursera.org/learn/machine-learning/lecture/fKi0M/stochastic-gradient-descent-convergence~~
@@ -163,6 +190,7 @@ https://www.youtube.com/watch?v=JcI5Vnw0b2c&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YR
 scikit installations
 pip install quandl, pandas
 
+*************************************************************************************
 **AI**
 https://classroom.udacity.com/courses/cs271/lessons/48635748/concepts/486525800923
 problem set4

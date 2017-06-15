@@ -8,13 +8,18 @@ Created Wednesday 02 March 2016
 __for now focus on knowledge gaining rather than problem solving__
 
 __p1__
-
-15 days
+setup python environment and debugging with editor shortcuts
+discuss python quest with lala
+https://www.tensorflow.org/programmers_guide/
+https://www.tensorflow.org/tutorials/
+google 2017 io
+tensorflow arch video
 
 @office
 html, css, js
 
 @home
+maths for ML: eigen, correlation vs convolution, transformations
 concepts and libs for
 image processing
 video processing 

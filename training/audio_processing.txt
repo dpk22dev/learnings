@@ -12,6 +12,8 @@ https://dadorran.wordpress.com/category/audio-processing/
 
 http://keycorner.org/pub/text/doc/ffmpeg-tutorial.htm
 
+http://www.esprockets.com/papers/Baluja_Covell_ICASSP2007_1888.pdf
+
 decide duration, loudness, pitch of language
 
 clear concepts:

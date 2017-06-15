@@ -4,12 +4,16 @@ Creation-Date: 2015-05-22T18:27:27+05:30
 
 ====== elastic solr ======
 Created Friday 22 May 2015
-
-IR system
-
-listening: localhost:9200
-
 http://ecmarchitect.com/archives/2015/07/27/4031
+
+running in docker:
+http://elk-docker.readthedocs.io/
+increase vm as es needs it:
+sysctl -w vm.max_map_count=262144
+
+docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 9300:9300 -v /data/es-docker-data/:/var/lib/elasticsearch -it --name elk sebp/elk
+
+docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 9300:9300 -v /data/es_docker_data/:/var/lib/elasticsearch -it --name elk my_elk
 
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
@@ -40,7 +44,7 @@ term normalization is done at query time too
 
 this process of tokenization and normalization is called **analysis**
 
-so analyzer consist of tokenizer + token filters
+so analyzer consist of character filter, tokenizer ,token filters
 
 fields can be:
 boolean, byte, short, integer, long, float, double, string, date, object and multi_field, ip, geo_point, geo_shape
@@ -321,3 +325,11 @@ read about how lucene stores data
  the stored attribute: to tell Solr to store the original text in the index somewhere. there are fields which aren't searched, but need to be displayed in the search results. You accomplish that by setting the field attributes to stored=true and indexed=false.
 
 https://cwiki.apache.org/confluence/display/solr/Getting+Started
+
+
+bucket aggs, filter, analysis
+
+
+
+
+

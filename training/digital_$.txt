@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-06-14T21:42:56+05:30
+
+====== digital $ ======
+Created Wednesday 14 June 2017
+
+coinbase: buy not allowed as per rbi
+zebpay : app only, exchange
+unocoin
+bittrex
+

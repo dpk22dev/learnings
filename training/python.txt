@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-06-02T08:03:07+05:30
+
+====== python ======
+Created Friday 02 June 2017
+
+https://benzidwael.wordpress.com/2015/04/17/installing-different-python-versions-in-ubuntu/
+
+create virtual env
+virtualenv -p /usr/bin/python3.3 ~/.envs/project_x_py3.3
+
+run virtual env
+source ~/.envs/project_x_py3.3/bin/activate
+
+**todo**
+setup python framework and start working and debugging
+
+**quest**
+__why debugger is not working__
+what should be placed in _init.py
+how to use pdb
+~~how to use tfdebug ~~
+running different versions of python on same system
+reshape

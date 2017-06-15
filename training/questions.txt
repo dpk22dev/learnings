@@ -71,7 +71,7 @@ WebService type of service working vi web like XML-RPC, SOAP, REST
 
 questions:
 websockets vs ajax
-single page application, angular js
+~~single page application, angular js~~
 css framework like LESS or SASS, 
 a build tool like Grunt.js, 
 a generator like Yeoman, 
@@ -91,4 +91,27 @@ server side events SSE
 ***** imp links *****
 http://stackoverflow.com/questions/10377384/why-use-ajax-when-websockets-is-available
 http://stackoverflow.com/questions/11077857/what-are-long-polling-websockets-server-sent-events-sse-and-comet
+
+__discuss__
+seo: how google knows of duplicate content, aren't header and footers considered duplicate
+	how google sees our website
+	what about spa, ajax
+	how google knows that we are showing different content to user and crawler
+arch: what should not be cached in redis/memcache
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

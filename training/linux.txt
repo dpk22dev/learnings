@@ -224,8 +224,9 @@ http://cs.stackexchange.com/questions/29117/does-the-bios-run-on-the-cpu
 **practical booting of linux**
 https://0xax.gitbooks.io/linux-insides/content/Booting/
 
-
-
+**udev**
+https://wiki.debian.org/udev
+http://www.reactivated.net/writing_udev_rules.html
 
 ********** todo **********
 watch linux videos: https://www.youtube.com/channel/UCkefXKtInZ9PLsoGRtml2FQ

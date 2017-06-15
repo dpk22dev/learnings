@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-23T18:21:32+05:30
+
+====== startup ======
+Created Sunday 23 April 2017
+
+org fundings
+https://www.crunchbase.com/organization/flipkart#/entity

@@ -5,18 +5,10 @@ Creation-Date: 2016-03-16T19:45:17+05:30
 ====== scaling ======
 Created Wednesday 16 March 2016
 
+http://aosabook.org/en/index.html
 http://www.manageability.org/
 read from http://highscalability.com/
 	real life architecture, strategies, all time favourites
-
-var x = function(){
-
-//$('#sidebar1Wrapper').remove();
-//$('#sidebar2Wrapper').remove();
-$('verticalNavigationBarWrapper').remove();
-$('#contentWrapper').css({'width','1200px'},{'background','#ffe'}, {'font-size', '17px'});
-
-}();
 
 running different things on different machines is helpful, as somethings might be dependent on some things whcih can break other things on upgrade.
 apache security upgrade might break mysql. ...

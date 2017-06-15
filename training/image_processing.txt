@@ -84,6 +84,9 @@ he human visual system is more sensitive to contrast than absolute luminance, we
 The high-frequency cut-off represents the optical limitations of the visual system's ability to resolve detail and is typically about 60 cycles per degree. The high-frequency cut-off is related to the packing density of the retinal photoreceptor cells: a finer matrix can resolve finer gratings.
 The low frequency drop-off is due to lateral inhibition within the retinal ganglion cells.
 
+**frame rate vs refresh rate**
+http://www.avadirect.com/blog/frame-rate-fps-vs-hz-refresh-rate/
+
 illusions
 https://en.wikipedia.org/wiki/Optical_illusion
 

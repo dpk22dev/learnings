@@ -8,6 +8,10 @@ Created Tuesday 06 September 2016
 search-network vs display-network
 https://www.youtube.com/watch?v=g7TLTrDzW1g
 
+esi
+https://www.akamai.com/uk/en/multimedia/documents/technical-publication/akamai-esi-developers-guide-technical-publication.pdf
+
+
 **GA**
 only one trackerName can be empty. ga has q which store the functions to execute
 ga('[trackerName.]send', [hitType], [...fields], [fieldsObject]);

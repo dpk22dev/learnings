@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-05-29T08:57:33+05:30
+
+====== tf ======
+Created Monday 29 May 2017
+
+**tensor flow **
+source: https://github.com/tensorflow/tensorflow/tree/r1.1 at /apps/my-builds/tensorflow
+https://www.tensorflow.org/get_started/get_started
+docker: https://hub.docker.com/r/tensorflow/tensorflow/
+
+#docker run -d my_tensorflow_v1
+docker run -it -p 8888:8888 -p 6006:6006 -v /apps/ML/tf:/notebooks tensorflow/tensorflow
+docker exec -it serene_lumiere bash
+
+pkill -f "tensorboard"
+
+placeholder vs variable
+https://stackoverflow.com/questions/36693740/whats-the-difference-between-tf-placeholder-and-tf-variable
+
+**todo**
+diff b/w tensor, sparse-tensor
+convolution vs correlation
