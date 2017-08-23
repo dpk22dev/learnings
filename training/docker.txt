@@ -11,7 +11,10 @@ follow https://blog.docker.com/2015/07/new-apt-and-yum-repos/
 if docker-compose gives problem use latest compose 
 curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > [[/usr/local/bin/docker-compose]]
 
+https://medium.com/@nagarwal/lifecycle-of-docker-container-d2da9f85959
 
+docker remove stopped containers
+docker rm $(docker ps -q -f status=exited)
 
 
 running docker on ubuntu 15
@@ -21,25 +24,7 @@ systemctl daemon-reload
 service docker restart
 
 docker pull docker.infoedge.com:5000/naukri/csm
-docker pull docker.infoedge.com:5000/naukri/csmut
-docker pull docker.infoedge.com:5000/naukri/memcached
-docker pull docker.infoedge.com:5000/naukri/mariadb
-
 docker tag docker.infoedge.com:5000/naukri/mariadb naukri/mariadb
-docker tag docker.infoedge.com:5000/naukri/memcached naukri/memcached
-docker tag docker.infoedge.com:5000/naukri/csm naukri/csm
-docker tag docker.infoedge.com:5000/naukri/csmut naukri/csmut
-
-
-
-docker pull docker.infoedge.com:5000/naukri/php_nginx_build
-docker tag docker.infoedge.com:5000/naukri/php_nginx_build naukri/php_nginx_build
-
-docker run -d -P --name consul -v /opt/consulBinary:/opt/consulBinary depk/ubuntu:v1
-docker ps -a | grep consul
- docker exec -it consul bash
-docker rm consul
-
 passing environment variables 
 docker  run -e FOO=BAR busybox env
 
@@ -48,38 +33,3 @@ remember we have to make changes in docker.infoedge.com:5000/naukri/careersite a
 netstat -nltp
 
 [[/data/db]] no file changes
-do i need to change db config acc to ymls
-nginx log file do they need to be created	
-
-~~nginx is not running~~
-~~nginx conf file problem~~
-
-~~problem with estb db connection~~
-what would jappen to db if container is removed
-
-~~[root@e1ad9a963c13 www]# grep -r "Error establishing a database connection" *~~
-~~wp-includes/ms-load.php:	$title = __( 'Error establishing a database connection' );~~
-~~Binary file wp-includes/.functions.php.swp matches~~
-~~wp-includes/wp-db.php:<h1>Error establishing a database connection</h1>~~
-~~wp-includes/functions.php:	<h1><?php _e( 'Error establishing a database connection' ); ?></h1>~~
-
-~~nginx rules~~ 
-create build file for docker
-
-**Migration on dev server:**
-remember to add port( 8886 ) in wp-config.php file
-for each site: site, url in its wp_BLOGID_options table should be updated acc to new domain with port
- for careersites: domain_mapping table should be updated with port in its entry
-site_mapping should be updated as well for careersites — i think
-big response from server causing problem because of buffer size: http://stackoverflow.com/questions/23844761/upstream-sent-too-big-header-while-reading-response-header-from-upstream
-
-
-
-
-
-
-
-
-
-
-

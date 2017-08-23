@@ -46,3 +46,8 @@ quick definition: ctrl+shift+I
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server
 ctrl + a, ? help
 
+chrome:
+ctrl+shift+P : open panel and search through different command
+
+**neo4jbrowser**
+shift+enter for multiline

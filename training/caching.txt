@@ -5,6 +5,17 @@ Creation-Date: 2015-07-27T18:24:08+05:30
 ====== caching ======
 Created Monday 27 July 2015
 
+**clustering in redis**
+https://redis.io/topics/cluster-tutorial
+https://redis.io/topics/cluster-spec
+	after ask redirection
+https://www.packtpub.com/books/content/scaling-redis-cluster-and-sentinel
+
+**redis core **
+http://key-value-stories.blogspot.in/2015/01/redis-core-implementation.html
+
+redis each entry takes ~ 100bytes
+
 memcache:
 diff b/w memcache and memcached php libraries
 issue with storing false is interesting:
@@ -13,3 +24,7 @@ http://stackoverflow.com/questions/1825256/memcache-vs-memcached
 run memcache deamon: 
 memcached -d -m 256 -u nobody -p 11211 -l 127.0.0.1
 
+**redis:**
+if writes are less, use master : multiple-slave, for failover handling use sentinal whcih will make some slave master
+if write-reads are even and frequent use cluster
+Redis Cluster introduces some penalties (No multi-key operations. no pipelining...) that have a big impact in the typical Redis use case, so you should evaluate it carefully before implementing it.

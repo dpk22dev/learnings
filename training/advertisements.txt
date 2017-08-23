@@ -11,6 +11,8 @@ https://www.youtube.com/watch?v=g7TLTrDzW1g
 esi
 https://www.akamai.com/uk/en/multimedia/documents/technical-publication/akamai-esi-developers-guide-technical-publication.pdf
 
+how free apps make money
+https://thinkmobiles.com/blog/how-do-free-apps-make-money/
 
 **GA**
 only one trackerName can be empty. ga has q which store the functions to execute

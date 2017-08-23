@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-06-26T22:12:59+05:30
+
+====== mongo ======
+Created Monday 26 June 2017
+
+docker run --name mongo-dev -d -v /data/mongo_docker_data:/data -p 27017:27017 my_mongo
+mongo [[localhost:27017]]
+
+ pecl install mongodb
+
+mongo has dropped support for master slave config, in place use sharded arch

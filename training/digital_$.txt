@@ -5,8 +5,27 @@ Creation-Date: 2017-06-14T21:42:56+05:30
 ====== digital $ ======
 Created Wednesday 14 June 2017
 
+kye bckup: 22ce1f950931d644839daaed76437b9adf 
+
 coinbase: buy not allowed as per rbi
 zebpay : app only, exchange
 unocoin
-bittrex
+
+create account on bittrex, secure it using google authenticator 2way auth
+	get wallet id
+create account on localbitcoins.com, send money to someone trusted and get bitcoins in wallet id
+generate api key on bittrex
+create account on altpocket and create dashboard with api from bitrex
+	check how others are investing in altpocket
+
+coinmarketcap.com
+http://coincap.io/
+
+__todo__
+how block chain works
+different coins and their info
+trading tips of bitcoins, altcoins
+why bumping happens? should i use it
+
+
 

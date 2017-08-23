@@ -449,6 +449,9 @@ Please connect with me or Jayant in case of any doubts.
 
 Ref.: http://semver.org/
 
+**git fetch prune tags**
+git fetch --prune --tags origin 
+
 **Git aliases** 
 1)
 	i)  git config --global alias.lg "log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative --all"

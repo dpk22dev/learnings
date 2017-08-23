@@ -91,6 +91,7 @@ illusions
 https://en.wikipedia.org/wiki/Optical_illusion
 
 
+http://pythonforengineers.com/image-and-video-processing-in-python/
 
 
 

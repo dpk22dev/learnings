@@ -5,6 +5,8 @@ Creation-Date: 2016-08-28T17:39:25+05:30
 ====== fs ======
 Created Sunday 28 August 2016
 
+https://www.digitalocean.com/community/tutorials/how-to-partition-and-format-storage-devices-in-linux
+
 ~~keep content separate for theme directory~~
 ~~create migraation notes~~
 ~~js, plugins move to bower components and add them~~

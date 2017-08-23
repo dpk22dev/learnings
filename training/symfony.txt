@@ -31,6 +31,9 @@ run commands using php app/console  commandName --args
 
 we can avoid writing factory by using tagged services. it uses compiler pass which needs to be regiestered in bundle
 
+twig:
+http://symfony.com/doc/2.8/templating.html
+
 **bundle vs components**
 A Component is a part of the Symfony core. Symfony is a group of Components tied together. Example are Forms, Console, HttpKernel, and so on. They share some similarities with Bundles. However, you can use Components outside of Symfony, as standalone packages in your php non-symfony projects. Bundles depend on symfony 
 

@@ -33,3 +33,6 @@ http://techcrunch.com/
 
 overall
 http://www.computerworld.com/
+
+blogs follow:
+http://www.markhneedham.com

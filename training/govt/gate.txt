@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-08-20T11:20:00+05:30
+
+====== gate ======
+Created Sunday 20 August 2017
+
+**gate**
+gate syllabus: http://www.geeksforgeeks.org/gate-cs-2017-syllabus/
+http://gateoverflow.in/
+
+topics
+automata & compilers
+database normalization in math forms
+math logic
+logic gates and numbers representations
+c prog output

@@ -38,7 +38,8 @@ More practically, the expected value of a discrete random variable is the probab
 The **Poisson distribution** is popular for modeling the number of times an event occurs in an interval of time or space.
 An event can occur 0, 1, 2, … times in an interval. The average number of events in an interval is designated \lambda (lambda). Lambda is the event rate, also called the rate parameter. The probability of observing k events in an interval is given by poisson equation.
 
-
+https://en.wikipedia.org/wiki/Chain_rule_(probability)
+https://en.wikipedia.org/wiki/Joint_probability_distribution
 
 till https://www.youtube.com/watch?v=SqcxYnNlI3Y&index=34&list=PL06A16C388F14E6FE
 

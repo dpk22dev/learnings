@@ -9,6 +9,11 @@ http://sandbox.onlinephpfunctions.com/
 
 for regular expression checking: http://www.regexpal.com/
 
+autoloading in php
+http://phpenthusiast.com/blog/how-to-autoload-with-composer
+http://www.shayanderson.com/php/simple-php-class-autoloading-function-and-tutorial.htm
+
+
 navigating through php source code
 http://lxr.php.net/xref/PHP_5_4/ext/standard/string.c#php_needle_char
 

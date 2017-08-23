@@ -20,6 +20,9 @@ These design patterns are specifically concerned with communication between obje
 diff b/w singleton and static methods
 http://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern
 
+proxy design pattern in php
+https://ocramius.github.io/presentations/proxy-pattern-in-php/#/
+
 **Design discussion checklist** 
 
 # Design discussion checklist

@@ -11,6 +11,9 @@ object oriented javascript stoyan stefanov
 **design patterns for javascript:**
 http://www.dofactory.com/javascript/decorator-design-pattern
 
+**oops in javascript**
+http://phrogz.net/JS/Classes/OOPinJS.html
+
 libs and frameworks: 
 angular
 babel
@@ -121,6 +124,7 @@ http://stackoverflow.com/questions/12324730/what-is-the-difference-between-webrt
 http://stackoverflow.com/questions/3076414/ways-to-circumvent-the-same-origin-policy
 it looks like SOP is to block reading doc/ executing script from diff domain, but CORS are the methods to do that
 
+https://stackoverflow.com/questions/9185630/find-out-the-line-row-number-of-the-cursor-in-a-textarea
 
 __** todo **__
 angular, jasmine

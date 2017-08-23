@@ -8,10 +8,14 @@ Created Wednesday 09 March 2016
 games
 https://how-to-solve-a-rubix-cube.com/
 
+~~to get terms for linear regression~~
+~~https://www.youtube.com/watch?v=GLntx6jKQMY&list=PLr5irXMlOSzjtjyXxrE9aqx9pj-SJ7IWi&index=1~~
+
 machine learning: can follow links to various applications
 https://en.wikipedia.org/wiki/Machine_learning
 
-https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/
+starting with ML
+https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-data-science-python/
 
 what is eigen vectors and values
 https://math.stackexchange.com/questions/23312/what-is-the-importance-of-eigenvalues-eigenvectors
@@ -44,6 +48,16 @@ source: https://github.com/tensorflow/tensorflow/tree/r1.1 at /apps/my-builds/te
 https://www.tensorflow.org/get_started/get_started
 docker: https://hub.docker.com/r/tensorflow/tensorflow/
 
+**math **
+http://www.souravsengupta.com/cds2016/lectures/Savov_Notes.pdf
+http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_All.pdf
+http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf
+http://www.deeplearningbook.org/
+
+**kaggle**
+read blogs: winner interview, fork others notebook to understand
+https://www.kaggle.com/kaggle/competitions
+https://www.kaggle.com/kernels
 
 
 The systems which exhibit intelligent behavior, learn, demonstrate, explain, and advice its users.
@@ -139,7 +153,7 @@ Naive bayes is called naive because it doesn't considers order of words. it cons
 
 SVM kernel is function which maps from low dimension to higher dimension data.
 C parameter: tradeoff b/w smooth decision boundry and classifying training points correctly
-	large value of C, more complex decision boundry and correctly classifies training set
+	large value of C, more complex decision boundry and correctly classifies training set																																														
 G( gamma ): how far effect of single training example reaches; high value of gamma during traning only points near to decision boundry are used, so nearby points influence more and curve the decision boundry
 while low value of gamma means far away points are also consdered
 
@@ -168,15 +182,40 @@ The C parameter controls the amount of regularization in the LogisticRegression 
 * modern probability theory******
 https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4
 
+elastic net and lasso are bias estimation to find low variances
+l1 norm: manhattan distance : | b1 + b2 |
+l2 norm: euclidean distance : sqrt( b1^2 + b2^2 )
+
+biased method to estimate fit for regression: we constrain the values of betas using l1 norm, l2 norm
+
+
 
 __todo__
 **siraj after estimator**
+to get terms for linear regression
+https://www.youtube.com/watch?v=GLntx6jKQMY&list=PLr5irXMlOSzjtjyXxrE9aqx9pj-SJ7IWi&index=1
+
+matplotlib after basic
+http://matplotlib.org/users/tutorials.html
+
+read math below
+http://www.souravsengupta.com/cds2016/lectures/Savov_Notes.pdf
+http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_All.pdf
+http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf
+
+numpy, pandas, scipy, matpyplot lib explorations
+kaggle
+blogs on analytics vidhya
+
+after 
+https://www.youtube.com/watch?v=p69khggr1Jo&index=3&list=PL2-dafEMk2A7YdKv4XfKpfbTH5z6rEEj3
+
 http://scikit-learn.org/stable/tutorial/statistical_inference/index.html
 http://www.scipy-lectures.org/intro/matplotlib/matplotlib.html
 https://www.datacamp.com/community/tutorials/matplotlib-tutorial-python#gs.BqJTBcU
 shrinkage and curse of dimensionality google/youtube
 what do various parameters suggest in classifier defintino
-what is ridge, lasso
+~~what is ridge, lasso~~
 clone sklearn code, go through source code
 
 
@@ -184,8 +223,7 @@ clone sklearn code, go through source code
 ~~https://www.coursera.org/learn/machine-learning/lecture/fKi0M/stochastic-gradient-descent-convergence~~
 
 form model selection
-http://scikit-learn.org/stable/tutorial/statistical_inference/index.html
-https://www.youtube.com/watch?v=JcI5Vnw0b2c&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v&index=2
+http://scikit-learn.org/stable/tutorial/statistical_inference/index.htm[[http://scikit-learn.org/stable/tutorial/statistical_inference/index.html|l]]
 
 scikit installations
 pip install quandl, pandas

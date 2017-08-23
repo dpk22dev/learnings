@@ -5,6 +5,11 @@ Creation-Date: 2015-11-24T14:45:27+05:30
 ====== sysad ======
 Created Tuesday 24 November 2015
 
+chef: provisioning, run recipies on vms created, configuration management tool
+	setting src list on vm, create users, disk mounting etc
+nagios: monitoring tool
+jenkins: CI/CD
+
 **debugging sysad**
 see queries using **show processlist **if any query is taking too long
 

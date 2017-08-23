@@ -10,6 +10,13 @@ http://theme.fm/wordpress-internals-how-wordpress-boots-up/
 
 load any php file and override it via a child theme exists, via the locate_template function
 
+custom admin pages
+https://code.tutsplus.com/series/creating-custom-wordpress-administration-pages--cms-1062
+
+**profiling wordpress:**
+https://wordpress.stackexchange.com/questions/176041/how-can-i-diagnose-a-slow-wordpress-admin
+http://blog.ulf-wendel.de/2007/php-59-tuning-screws-for-mysqlnd/
+
 **wordpress database **
 https://codex.wordpress.org/Database_Description
 

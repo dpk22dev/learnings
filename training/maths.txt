@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-06-26T11:07:23+05:30
+
+====== maths ======
+Created Monday 26 June 2017
+
+vector cross product
+https://math.stackexchange.com/questions/185991/is-the-vector-cross-product-only-defined-for-3d
+https://www.quora.com/Why-does-the-cross-product-exist-only-in-three-and-seven-dimensions

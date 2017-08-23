@@ -1,0 +1,62 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-07-10T14:33:33+05:30
+
+====== neo4j ======
+Created Monday 10 July 2017
+
+~~docker run -d -p 7474:7474 -p 7473:7473 -p 7687:7687 -v /data/neo_docker_import:/var/lib/neo4j/import -v /data/neo_docker_data:/data --name neo my_neo4j~~
+
+~~ docker run -d -p 7474:7474 -p 7473:7473 -p 7687:7687 -v /data/docker_neo/neo_docker_import:/var/lib/neo4j/import -v /data/docker_neo/neo_docker_data:/data -v /data/docker_neo/neo_plugins:/var/lib/neo4j/plugins --name neo my_neo4j~~
+
+**overriding security of apoc**
+ docker run -d -p 7474:7474 -p 7473:7473 -p 7687:7687 -e NEO4J_dbms_security_procedures_unrestricted=apoc.\\\* -v /data/docker_neo/neo_docker_import:/var/lib/neo4j/import -v /data/docker_neo/neo_docker_data:/data -v /data/docker_neo/neo_plugins:/var/lib/neo4j/plugins --name neo my_neo4j
+
+
+**creating grpah using ui tool**
+http://www.apcjones.com/arrows/
+
+dumping data from neo4j container
+https://serverfault.com/questions/835092/how-do-you-perform-a-dump-of-a-neo4j-database-within-a-docker-container
+
+http://localhost:7474/browser/
+u: neo4j
+pass: times11!
+
+cypher documentation
+https://neo4j.com/docs/cypher-refcard/current/
+
+perf setting hardening
+https://neo4j.com/docs/operations-manual/current/performance/
+
+neo4j doesn't heirarchical object in properties
+https://stackoverflow.com/questions/40237021/insert-array-of-objects-as-property-into-neo4j
+
+graph storage
+graph compute
+
+match mulltiple destination nodes
+https://stackoverflow.com/questions/25939493/neo4j-match-multiple-destination-nodes
+
+**framework for recommendations**
+multiple recommendation engines
+score and score transformers
+blacklists
+filters
+post processors
+loggers
+testing
+
+__quest__
+what should be made node, relationship, label
+can we just store data in neo4j or it should be backed by other db
+how it stores data internally
+
+**todo**
+read book
+	84
+data modeling 
+markov chain 
+https://neo4j.com/developer/data-modeling/
+backup
+php lib for neo

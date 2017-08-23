@@ -18,6 +18,9 @@ docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 9300:9300 -v /data/es_docke
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
 
+**es cluster**
+es master slave arch is not there. master only node contains meta data for shards, data nodes contains actual data.
+
 /index/type/id
 PUT [[/college/student/1?version=3]] -d{  ... } if we change older version it will returen 409 conflict
 

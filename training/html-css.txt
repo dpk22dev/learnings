@@ -17,6 +17,12 @@ http://tutorials.jenkov.com/svg/index.html
 **considerations during site design**
 https://developers.google.com/web/fundamentals/design-and-ui/?hl=en
 
+**learning front end concepts**
+https://www.frontendhandbook.com/
+
+**complete css**
+https://webdesign.tutsplus.com/series/learn-css-the-complete-guide--cms-1065
+
 **why content script and web page script don't interact**
 page dom is shared between them, but they can't call each others functions. first web-page might be using jquery1.2 while extension might be using v1.6 so to avoid conflicts. second extensions use previleged apis accessing user browsing history and data like runtime, chrome etc... while web-page js is sandboxed and has access to html api only. so both can manipulte dom but can't share js objects.
 they have further differentiated b/w elevated( background or event page ) and content script ( non-elevated like web-page ).  these two components interact with message passing.
