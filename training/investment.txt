@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-18T12:07:43+05:30
+
+====== investment ======
+Created Monday 18 September 2017
+
+**buffet rule:**
+**wait for right pitch**: you don't have to know every field, and invest in it. pick the company in field you understand most, deeply. say pick 20 companies, keep 4/5 and invest. don't just evaluate numbers, evaluate people, environment utill satisfaction; if you had to buy this company, for how much would you buy.
+
+
+
+
+
+
+__todo__
+module5 : 45
+watch videos: peter lynch
+
+
+__questions__
+what is liquidity, volatility
+what is 91 days rbi treasury bill

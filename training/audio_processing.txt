@@ -5,6 +5,9 @@ Creation-Date: 2016-08-21T21:17:01+05:30
 ====== audio processing ======
 Created Sunday 21 August 2016
 
+
+http://www.mega-nerd.com/Res/IADSPL/page03.html
+
 http://www.ece.ucsb.edu/Faculty/Rabiner/ece259/digital%20speech%20processing%20course/lectures_new/Lecture%204_winter_2012.pdf
 https://www.ee.iitb.ac.in/student/~daplab/publications/chapter9-prao.pdf
 
@@ -14,7 +17,12 @@ http://keycorner.org/pub/text/doc/ffmpeg-tutorial.htm
 
 http://www.esprockets.com/papers/Baluja_Covell_ICASSP2007_1888.pdf
 
+https://en.wikipedia.org/wiki/Audio_file_format
 decide duration, loudness, pitch of language
+
+
+simple starting book for DAP
+http://www.mega-nerd.com/Res/IADSPL/page05.html
 
 clear concepts:
 phonemes for english and hindi

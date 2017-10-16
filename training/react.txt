@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-10-02T17:39:48+05:30
+
+====== react ======
+Created Monday 02 October 2017
+
+after redux on tutorialspoint
+http://localhost:8081/
+
+
+__todo__
+react source code exploration
+how react works, its architecture
+
+
+__questions__

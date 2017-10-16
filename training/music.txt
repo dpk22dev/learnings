@@ -1,0 +1,60 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-10T23:16:20+05:30
+
+====== music ======
+Created Sunday 10 September 2017
+
+In music, tones which have frequencies which are a power of two apart are considered to be the same note in different octaves.
+
+Each octave is split into 12 notes which are geometrically spaced within the octave. Given a musical note of frequency f, the frequency of the nth note above f is given by:
+f * 2 ^ ( n/12)
+
+
+
+composition
+https://en.wikipedia.org/wiki/Glossary_of_musical_terminology
+
+https://www.khanacademy.org/humanities/music/music-basics2/notes-rhythm/v/lesson-1-note-values-duration-and-time-signatures
+
+terminilogies used in composition
+https://www.khanacademy.org/humanities/music
+
+reading staff notes
+https://www.youtube.com/watch?v=RZRIQFpmejg
+
+string instrument:
+harp: can create glissando noise which is different from plucking sound
+		need to manually stop the sound with hand
+		start with piano, then move to it; same as inside piano
+		gut string in harp produce natural sound, but metal strings in piano create brassy sound
+		
+violin: various positions
+viola: rebecca young
+	comes in various sizes
+	alto voices
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+__todo__
+after https://www.khanacademy.org/humanities/music/music-basics2/reading-music2/a/glossary-of-musical-terms
+instruments used: https://www.khanacademy.org/humanities/music/music-instruments-orchestra
+
+
+questions:
+why only seven notes
+why so many variations of string instruments
+

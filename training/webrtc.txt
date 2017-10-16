@@ -1,0 +1,60 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-10-15T10:17:31+05:30
+
+====== webrtc ======
+Created Sunday 15 October 2017
+
+https://shanetully.com/2014/09/a-dead-simple-webrtc-example/
+
+how other companies are doing it
+https://github.com/andyet/SimpleWebRTC/issues/346
+
+official webrtc: https://www.w3.org/TR/webrtc/
+simple chat application: https://github.com/andyet/SimpleWebRTC
+why not to use: https://simplewebrtc.com/notsosimple.html
+
+video conferencing:
+https://github.com/muaz-khan/WebRTC-Experiment/tree/master/video-conferencing
+
+samples: https://webrtc.github.io/samples/
+
+problems with webrtc:
+https://www.youtube.com/watch?v=r-qIkkdGVLM
+https://www.youtube.com/watch?v=3TbVi9aB09k
+
+asterisk as contact center
+http://www.asterisk.org/
+
+webrtc arch in depth: https://hpbn.co/webrtc/
+
+standards: www.webrtcstandards.info
+ adapter.js, a JavaScript shim
+mediatrack w3c official documentation: https://www.w3.org/TR/mediacapture-streams/
+
+
+stun and turn servers
+https://hpbn.co/building-blocks-of-udp/#udp-and-network-address-translators
+
+webrtc video conferencing code: https://www.webrtc-experiment.com/video-conferencing/#29729405610421257
+
+why sctp was used for data channel
+https://bloggeek.me/sctp-data-channel/
+
+what service providers provide
+stun, turn services; sdp communication; 
+
+**testing on multiple devicces is highly recommended**
+
+webrtc recording demo and source:
+https://www.webrtc-experiment.com/msr/	
+
+good blogs on comm
+https://andrewjprokop.wordpress.com/author/ajprokop/
+
+Create a RTCPeerConnection for each end of the call and, at each end, add the local stream from getUserMedia().
+Get and share network information: potential connection endpoints are known as ICE candidates.
+Get and share local and remote descriptions: metadata about local media in SDP format.
+
+
+WebRTC peers also need to find out and exchange local and remote audio and video media information, such as resolution and codec capabilities. Signaling to exchange media configuration information proceeds by exchanging blobs of metadata, known as an offer and an answer, using the Session Description Protocol format, known as SDP:

@@ -8,6 +8,7 @@ Created Tuesday 17 February 2015
 for chrome internals
 chrome://net-internals/#dns
 
+good networking book includes reference to official docs too: https://hpbn.co/#toc
 
 read network conf: http://www.yolinux.com/TUTORIALS/LinuxTutorialNetworking.html
 kernel imp: Linux Kernel Networking by Rami Rosen

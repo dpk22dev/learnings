@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-17T15:01:19+05:30
+
+====== mechanical ======
+Created Sunday 17 September 2017
+
+http://homepages.cae.wisc.edu/~me231/info/Engineering_Glossary.pdf
+http://basic-mechanical.blogspot.in/

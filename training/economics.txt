@@ -317,6 +317,11 @@ risk : loss are more painful than winning is rewarding.
 loss aversion: pain of loosing 5cents on plastic bag vs getting 5 cents.
 we hate lossing: bonus given initially and returning on failure > bonus given at end
 
+**economic terms**
+http://layman-blog.blogspot.in/2010/05/basic-economic-terms-list-with.html
+
+**how to read economics times**
+https://www.quora.com/How-do-I-start-reading-The-Economic-Times-newspaper
 
 **indian taxation system**
 for business investments:
@@ -328,6 +333,15 @@ https://www.bankbazaar.com/tax/all-about-tds.html
 http://www.tradingeconomics.com/
 http://www.tradingeconomics.com/indicators
 
+**finance**
+https://en.wikipedia.org/wiki/Finance
+
+**marketing**
+
+**trade or commerce**
+https://en.wikipedia.org/wiki/Trade
+
+rbi has created RTGS, NEFt transactions through IFSC for each bank account. NEFT, RTGS play on amount of transactions. settlemnet happens at RBI as sbi and icici both banks have accounts with RBI. UPI by NCPI has used IMPS which uses MMID for transactions. UPI plays on volume on transactions, charging very less on each transactions. 
 
 __todo__
 chapter 1 46

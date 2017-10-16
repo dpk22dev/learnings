@@ -40,6 +40,12 @@ transactional ACID compliant
 node/properties -relation/properties -> node/properties
 noun/adjectives-verb/adverbs->noun/adjectives
 
+facebook live
+http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html
+
+facebook networking
+http://cs.unc.edu/xcms/wpfiles/50th-symp/Moorthy.pdf
+
 every file is identifiable using magic number:
 https://en.wikipedia.org/wiki/List_of_file_signatures
 

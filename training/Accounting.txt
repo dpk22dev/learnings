@@ -1,0 +1,69 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-15T16:56:18+05:30
+
+====== Accounting ======
+Created Friday 15 September 2017
+
+Business Entity concept: person and company are differetn entitities
+money measurement concepts: quantities should be measurable
+going concern concept: book only depreciation of the assets in our profit & loss account; not the difference of acquisition cost of assets less net realizable value of the assets.
+cost concept: book the value of assets on the cost basis, not on the net realizable value or market value of the assets based on the assumption that a business unit is a going concern.
+dual aspect concept: must be a double entry to complete any financial transaction, means debit should be always equal to credit.
+accounting period concept: life of a business unit is indefinite as per the going concern concept
+matchig concpet: The expenditures of a firm for a particular accounting period are to be matched with the revenue of the same accounting period to ascertain accurate profit or loss of the firm for the same period. collection of cash and payment in cash is ignored while calculating the profit or loss of the year.
+accrual concept:  All the expenses paid in cash or payable are considered and the advance payment of expenses, if any, is deducted.
+objective evidence concept: every financial entry should be supported by some objective evidence. Purchase should be supported by purchase bills, sale with sale bills, cash payment of expenditure with cash memos, and payment to creditors with cash receipts and bank statements. Similarly, stock should be checked by physical verification and the value of it should be verified with purchase bills.
+
+convention of consistency, disclosure, materiality, conservation or prudence
+
+types of accounts:
+personal
+	natural personal
+	aartificial persoal
+	respresentaative personal
+real 
+	tangible
+	intangible
+nominal account
+
+single entry vs double entry system
+journal entries are passed according to rules of debit and credit double netry system.
+journal entries are grouped into ledger book of particular account
+cash book is used to deal with cash entries: single/double/triple coloumn book is used
+	similarly petty cash book, sales book, purchase book, purchase return book, sales return book, bills receivables, bills payable is used 
+bank reconciliation
+trial balance: Trial balance is a summary of all the debit and credit balances of ledger accounts
+financial statement: Financial statements are prepared to ascertain the profit or loss of the business, and to know the financial position of the company.
+
+owner's equity = assets - liablities
+= investment(capital) +/- profit or loss - drawings
+
+curretn assets and current liabilities
+
+cost accounting:
+cost, expenses, loss, 
+cost center
+	personal or impersonal cost center
+	operational or process 
+	product or service cost center
+profit center, cost drivers, conversion cost, carrying cost, out of stock cost, contribution margin, ordering cost, development cost, policy cost, idle facility cost, expired cost
+incremental revenue, added value, urgent cost, preproduction cost, research cost, training cost
+
+depriciation number from P&L is carried in balance sheet. from cash flow statement gives cash and cash equivalent funds in balance sheet.
+
+
+__todo__
+cost accounting
+how tenure for asset is calculated, it can effect various ratios
+how depreciatoin of assets/liabilities in balance sheet is related to P&L sheet
+how company works
+why DC ADE LER rule, why these things are under debit and credit section
+
+
+
+
+
+
+
+

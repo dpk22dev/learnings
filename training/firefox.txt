@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-10-16T11:33:12+05:30
+
+====== firefox ======
+Created Monday 16 October 2017
+
+https://www.joshmatthews.net/fosdem/#slide-10
+
+https://www-archive.mozilla.org/hacking/coding-introduction.html
+from interfaces
+
+how browsers work:
+http://ehsan.github.io/how-browsers-work/#4
+
+firefox dir structure
+https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Directory_structure
+
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Tech
+
+
+__todo__
+proceed after https://developer.mozilla.org/en-US/docs/Web/API
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model

@@ -5,6 +5,9 @@ Creation-Date: 2016-03-09T16:48:47+05:30
 ====== NLP ======
 Created Wednesday 09 March 2016
 
+**formal vs natural languages**
+http://criticalthinkeracademy.com/courses/propositional-logic/lectures/761246
+
 **applications and techniques on NLP**
 https://hpi.de/fileadmin/user_upload/fachgebiete/plattner/teaching/NaturalLanguageProcessing/NLP2016/NLP01_IntroNLP.pdf
 

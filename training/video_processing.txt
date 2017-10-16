@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-27T18:26:54+05:30
+
+====== video processing ======
+Created Wednesday 27 September 2017
+
+https://en.wikipedia.org/wiki/Comparison_of_video_codecs
+https://en.wikipedia.org/wiki/Comparison_of_video_container_formats

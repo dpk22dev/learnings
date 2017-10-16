@@ -31,3 +31,14 @@ avoid artificially promoted to the top of these services; like stop-words: WINNE
 
 meta tag with noindex tells robot not to index page 
 nofollow tells bot not to follow the links on page .... these two tags can be useful when creating new site. but when launching site remember to remove it. 
+
+
+**questions**
+what is duplicate content, how google identifies duplicate content
+seo and copyright, ownership of content
+sitemap of images and videos
+semantic web
+crawling in mobile apps
+domain and subdomains
+
+cache:domain

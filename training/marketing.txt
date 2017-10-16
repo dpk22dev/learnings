@@ -1,0 +1,63 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-09T12:21:25+05:30
+
+====== marketing ======
+Created Saturday 09 September 2017
+
+https://en.wikipedia.org/wiki/Marketing_strategy
+goal: acheivable, mission: how goal will be acheived using ethics etc
+marketing strategy: ensure path to goal is according to mission
+
+SWOT analysis of PEST or STEEPLE
+
+growth strategies:
+horizontal integration
+vertical integration
+diversification
+	horizontal
+	vertical
+	
+https://en.wikipedia.org/wiki/Marketing_plan
+marketing business use strategic models and tools to analyze marketing desisions.
+3 C's
+Asnoff matrix
+matrix mix: 4P
+real time: intuition and experience
+
+marketing objective, marketing plan
+business objective should have:  "customer groups" to be served, "customer needs" to be served, and "technologies" to be used
+
+7P: Product, Place, Price and Promotion, Physical Environment, People, Process for action plan
+
+https://en.wikipedia.org/wiki/Market_segmentation
+segmentation -> targeting -> positioning
+based on historical data or analogy, wihcih may not be present
+empirically bass model can be used
+
+https://en.wikipedia.org/wiki/Business_model
+
+https://en.wikipedia.org/wiki/Customer_engagement
+https://en.wikipedia.org/wiki/Pricing_strategies
+
+http://blog.close.io/sales-strategies
+oridinary people not good at remembering numbers/stats. emotionally get motivated by stories. feed them one. emotionally intelligent people work on facts and numbers, feed them same; truth even if its harsh but good for the client in long run.
+build trust. listen to client, try to calm him down. find a way to tell him how this product can solve his problem.
+don't loose client. don't use no, can't. given him assurance for alternatives from tech team. ask decision maker, always get in touch with decision maker. reply back.
+
+https://digitalintelligencetoday.com/the-10-advertising-strategies-that-work-the-advertising-effect-speed-summary/
+
+diff b/w marketing , branding, sales, advertisment, policies
+https://www.slideshare.net/rneubert/marketing-vs-branding-vs-sales-vs-advertising
+Policies are rules or guidelines that express the 'limits' within which action should occur.
+
+__questions:__
+diff b/w parallel terms like marketing goal vs business goals, marketing plan va business plan, strategy etc
+are the strategies, plans discussed with PM, are numbers quantified
+how pricing strategy and buget planning is done
+who creates marketing plan
+
+
+
+
+

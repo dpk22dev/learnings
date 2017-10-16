@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-08-26T15:20:35+05:30
+
+====== philosophy ======
+Created Saturday 26 August 2017
+
+socrates: The unexamined life is not worth living.
+plato(aristocles): student of socrates, worte the republic
+aristotle: student of plato, guru of alexander the great, introduction of variables in logical inference
+ammonius: follower of aristotle
+
+premise + premise + premise => conclusion
+
+validity != truth
+
+tools used for logic:
+deduction: all true premises lead to true conclusion
+induction: future is predicted based on past experiences, conclusion might not be true( outliers )
+abduction: eliminate the impossible, whatever remains, however improbable must be true. info in hand is used to predict future.
+
+plato: nature of reality: we are prisoners of cave who see merely shadow of higher dimensional reality
+
+rene: decartesian skepticism
+disbelief everything and then keep only true beliefs. but our senses fail us everytime
+local doubt: step out and see if its true eg dream
+global doubt: can't step out of it. eg: if world was created just 5 min ago with god putting everything in it. can't disapprove it.
+foundational belief: i think, therefore i am.
+
+
+
+
+
+
+
+
+
+
+**todo**
+after 5

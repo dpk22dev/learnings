@@ -86,7 +86,8 @@ Node.js includes a number of other statically linked libraries including OpenSSL
 http_parser:
 macros with generation of ascii, error codes and method
 
-
+https://stackoverflow.com/questions/36789889/syntaxerror-use-of-const-in-strict-mode
+nvm install stable
 
 
 

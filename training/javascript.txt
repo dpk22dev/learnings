@@ -14,6 +14,9 @@ http://www.dofactory.com/javascript/decorator-design-pattern
 **oops in javascript**
 http://phrogz.net/JS/Classes/OOPinJS.html
 
+**module in js**
+https://medium.freecodecamp.org/javascript-modules-a-beginner-s-guide-783f7d7a5fcc
+
 libs and frameworks: 
 angular
 babel
