@@ -8,6 +8,22 @@ Created Monday 02 October 2017
 after redux on tutorialspoint
 http://localhost:8081/
 
+react: props, state and JSX
+gulp: build to convert jsx into javascript
+browserify: bundling
+flux: to structure app
+react-router: routing
+
+component as a collection of HTML, CSS, JS, and some internal data specific to that component
+parent component provides data to child component
+
+https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/
+https://github.com/atishaybaid/react-redux-links
+
+react v4 routing
+https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
+
+
 
 __todo__
 react source code exploration
@@ -15,3 +31,10 @@ how react works, its architecture
 
 
 __questions__
+how to break into components
+redux: how are reducers which dpend on ajax, or db call used in reducers
+if parent component changes props of child component using state change, will callbacks be fired in children or changed props be available in child-
+why reducers should be immutable
+why connect
+
+

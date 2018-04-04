@@ -5,10 +5,20 @@ Creation-Date: 2016-04-21T11:51:39+05:30
 ====== java ======
 Created Thursday 21 April 2016
 
+cheatsheet
+https://introcs.cs.princeton.edu/java/11cheatsheet/
+
 {{./pasted_image.png}}
 
+— 
 
-which collection should i use:
+{{./pasted_image001.png}}
+
+
+**package tree**
+https://docs.oracle.com/javase/7/docs/api/java/util/package-tree.html
+
+**which collection should i use:**
 http://stackoverflow.com/questions/21974361/what-java-collection-should-i-use
 
 eclipse shortcuts:
@@ -18,4 +28,100 @@ versioning:
 http://stackoverflow.com/questions/275555/maven-snapshot-repository-vs-release-repository
 http://stackoverflow.com/questions/2107484/what-is-the-difference-between-ga-rc-and-m2-release
 
+**jar vs war vs ear**
+https://stackoverflow.com/questions/1594667/war-vs-ear-file
 
+**java specs**
+https://docs.oracle.com/javase/specs/index.html
+java7 specs: https://docs.oracle.com/javase/specs/jls/se7/jls7.pdf
+
+**setup spring**
+install gradle using sdkman
+source "/home/dpk/.sdkman/bin/sdkman-init.sh"
+sdk  install gradle
+sdk install springboot
+
+**spring docs**
+https://docs.spring.io/spring/docs/5.0.5.BUILD-SNAPSHOT/spring-framework-reference/index.html
+
+**diff b/w enumerator and iterator**
+Using Enumeration, you can only traverse the Collection object. But using Iterator, you can also remove an element while traversing the Collection. 
+
+**fail fast  vs fail safe**
+http://javaconceptoftheday.com/fail-fast-and-fail-safe-iterators-in-java-with-examples/
+
+**maven repo**
+http://search.maven.org/
+
+**comparable in java generics**
+https://stackoverflow.com/questions/5013947/create-a-compareto-to-a-generic-class-that-implements-comparable
+
+https://stackoverflow.com/questions/21974361/what-java-collection-should-i-use
+arraylist: dynamic array, indexed so insertion/updation O(n), search O(1); not thread safe
+vector: dynamic array,  use it instead of arraylist when thread safety is concern
+linkedlist: doubly linked list insertion/updation O(1), search O(n)
+hashmap: unordered key-value pair
+treemap: RB tree; sorted key-value pair
+LinkedHashMap: hashtable with linked list implementation; insertion order is maintained
+Hashset: set backed by hashmap: insertion, contains, updation O(1); unordered
+Treeset: set backed by treemap; insertion, contains, updation O(logn); ordered
+LinkedHashSet: set backed by LinkedHashMap; order of insertion is maintained
+LinkedList: FIFO
+ArrayDeque: arraylist based deque
+
+
+
+
+
+specifications
+https://jcp.org/en/jsr/detail?id=340
+
+**questions**
+why jsp is better than servlet
+in hibernate what if we want to change things lijke
+	way of id generation
+	discriminator fields/
+	what will happen in case of multiple keys as primarykey
+	in case of sharded tables
+	difference b/w bag and set in hbm
+	if we have to create indexes on few coloumns lateron
+	how will it effect refactoring and vice versa
+	how are joins handled?
+Runner.java is not running
+new Thread() { public void run() {} } , instantiating interface like new Runnable(){} and passing it to new Thread ?
+~~why classType are used. eg myClass.class~~
+~~java perf diff b/w primitive and non-primitive tyeps: int vs Integer	~~
+public static <T> T addAndReturn(T element,
+? in genereics
+containsvalue is not returning correct result
+	complex ds treemap of treemap etc comparison, even looping is hard : how to handle them
+	
+how gradle works, what changes to make if something changes
+what are different containers app servers: tomcat etc
+
+**todo**
+after https://www.javatpoint.com/ioc-container
+hibernate
+
+
+java lang
+design patterns
+guides
+spring pdf
+
+
+specs 10:
+	chap5 conversions
+	annotaiotn 285/311
+	arrays
+	exception
+	execution
+	threads and lock 563
+
+**code try**
+bitwise ops
+floats, chars in depth
+experiments with collections array, complex data structure insert/update/delete/search/ equality and comparison, enums: enumsets etc
+writing native methods
+annotation
+floating point calcs

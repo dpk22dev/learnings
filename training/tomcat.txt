@@ -7,6 +7,13 @@ Created Tuesday 05 April 2016
 
 inside tomcat configurations: https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html
 
+installed at /opt/installs/tomcat/
+conf and startup scripts at above location
+running at http://localhost:8088/
+
+server configuration tutorials:
+https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html
+
 bin/shell scripts call catalina.sh passing various params
 
 Catalina is Tomcat's servlet container. Catalina implements Sun Microsystems' specifications for servlet and JavaServer Pages (JSP).  Catalina is the Java Engine (JRE / JVM) that's built into Tomcat and provides an environment in which Servlets can be run.
@@ -112,6 +119,10 @@ spring with tomcat
 AOP approach and transaction management
 how dependencies and plugins are created for maven
 
+**questions**
+how things are done in real scenarios
+
+**todo**
 
 
 

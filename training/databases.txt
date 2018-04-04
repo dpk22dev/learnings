@@ -22,9 +22,9 @@ databases whcih don;t need schema like redis, mongodb, cassandra, neo4j are nosq
 any of modeled database can
 https://www.thoughtworks.com/insights/blog/nosql-databases-overview
 
-**************  **************************
+**********  **********************
 ************************************ mysql ******************************************
-**************  **************************
+**********  **********************
 mysql internals:
 https://dev.mysql.com/doc/internals/en/
 
@@ -69,6 +69,11 @@ based on mysql environment variables #connections can be increased: default is 1
 http://stackoverflow.com/questions/4566714/how-many-mysql-queries-second-can-be-handled-by-a-server
 http://serverfault.com/questions/164980/how-many-selects-per-second-can-a-mysql-server-run
 
+**mysql docs**
+https://dev.mysql.com/doc/internals/en/
+
+**mysql utilities**
+https://dev.mysql.com/doc/mysql-utilities/1.6/en/utils-ha.html
 
 local db connection:
 mysql -h 127.0.0.1 --port=3307 -u root -p
@@ -219,9 +224,9 @@ http://stackoverflow.com/questions/33341510/how-to-install-freetds-in-linux
 
 tsql -H 192.168.33.204 -U nbtdev -P DevNBT@2016! -p 1433 > out.csv <<EOS SELECT * FROM some_table; go EOS
 
-****************  ************************
+************  ********************
 ************************************ mongodb ******************************************
-**************  ***************************
+**********  ***********************
 
 
 capped collection : good for logs, caching

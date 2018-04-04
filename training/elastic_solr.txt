@@ -15,6 +15,30 @@ docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 9300:9300 -v /data/es-docke
 
 docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 9300:9300 -v /data/es_docker_data/:/var/lib/elasticsearch -it --name elk my_elk
 
+running on local:
+local.elk.com
+u: kibanaadmin
+p: kibanaadmin
+
+installation of elk on ubutnu
+https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
+systemctl issue with elastic search
+https://discuss.elastic.co/t/cant-start-elasticsearch-with-ubuntu-16-04/48730/9
+
+comman commands
+http://elasticsearch-cheatsheet.jolicode.com/
+
+monitoring
+https://www.datadoghq.com/blog/monitor-elasticsearch-performance-metrics/
+
+arch:
+https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up
+
+series of anatomy of es( google search for rest ):
+https://blog.insightdatascience.com/anatomy-of-an-elasticsearch-cluster-part-i-7ac9a13b05db
+https://blog.insightdatascience.com/anatomy-of-an-elasticsearch-cluster-part-ii-6db4e821b571
+
+
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
 
@@ -321,6 +345,8 @@ __todo__
 ~~after normalizing tokens~~
 read about how lucene stores data
 
+__questions__
+es disk usage issues handling
 
 ********************************* solr *************************************
  adding documents to Solr, you need to specify the schema, represented in a file called schema.xml.

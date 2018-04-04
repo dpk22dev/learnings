@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-13T17:29:41+05:30
+
+====== jira ======
+Created Tuesday 13 February 2018
+
+jira add-on
+https://developer.atlassian.com/cloud/jira/platform/getting-started/
+https://developer.atlassian.com/cloud/jira/platform/build-a-jira-app-using-a-framework/
+
+server plugin
+https://developer.atlassian.com/server/framework/atlassian-sdk/create-a-helloworld-plugin-project/
+
+
+https://developer.atlassian.com/server/framework/gadgets/creating-a-gadget-javascript-object/

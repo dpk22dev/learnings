@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-28T14:35:13+05:30
+
+====== spring ======
+Created Wednesday 28 February 2018
+
+for packages, class heirarchies:
+https://docs.spring.io/spring-framework/docs/5.0.5.BUILD-SNAPSHOT/javadoc-api/overview-summary.html
+
+maven wrapper
+mvn -N io.takari:maven:wrapper
+
+spring framework docs:
+spring creates application context by reading xml, annotations; creates context based on various contexts provided : creating beans with scopes specified in config. -> singleton/session/request type of objects, classpath scanning dependent beans based on autowiring
+we can extend to create own scope
+management of beans lifecycle: can be extended, phases and order of loading
+using @autowired based on type, qualifier spring creates bean. using @resource named bean is created 
+we can use @postconstruct, @predestroy for caching data, logging etc
+@respository: stereotype of a repository (also known as Data Access Object or DAO).
+stereotype annotations: @Component, @Service, and @Controller
+Meta-annotations can also be combined to create composed annotations. eg: @RestController composed of @Controller and @ResponseBody.
+The Environment is an abstraction integrated in the container that models two key aspects of the application environment: profiles and properties.
+
+**diff b/w spring spring boot and spring components**
+https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare
+
+for reference and api of projects, code:
+https://projects.spring.io/spring-data-redis/
+https://docs.spring.io/spring-data/redis/docs/2.1.0.M1/api/
+https://github.com/spring-projects/spring-data-redis

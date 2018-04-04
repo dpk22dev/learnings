@@ -5,14 +5,22 @@ Creation-Date: 2014-05-23T16:32:47+05:30
 ====== html-css ======
 Created Friday 23 May 2014
 
+**html 4 specs**
+https://www.w3.org/TR/REC-html40/cover.html#minitoc
+
 **html dom specification**
+https://www.w3.org/DOM/DOMTR
 https://www.w3.org/TR/DOM-Level-1/expanded-toc.html
+
 
 **html5 apis**
 http://html5index.org/
 
 **svg**
 http://tutorials.jenkov.com/svg/index.html
+
+**vertical alignment of inline elements**
+https://css-tricks.com/what-is-vertical-align/
 
 **considerations during site design**
 https://developers.google.com/web/fundamentals/design-and-ui/?hl=en
@@ -35,6 +43,11 @@ https://subinsb.com/set-same-cookie-on-different-domains
 **web notification tutorials**
 https://developers.google.com/web/fundamentals/getting-started/codelabs/push-notifications/
 
+**html display elements and why floats are used**
+https://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
+
+**css units**
+https://webplatform.github.io/docs/tutorials/understanding-css-units/
 
 In <title> we are using & and when i remove it it gives error
 use &amp; instead
@@ -166,6 +179,9 @@ height is hieght of container while line-height is height b/w top of first line 
 
 margin vs padding: http://stackoverflow.com/questions/5958699/difference-between-margin-and-padding
 
+a[class="x"] vs a.x
+https://stackoverflow.com/questions/15604182/why-use-an-attribute-selector-to-match-classes
+
 http://www.w3.org/TR/selectors/ defines the selectors for css
 
 inline vs inline-block: http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
@@ -175,3 +191,7 @@ read concepts of display, ~~position, float with examples~~, forms and inputs, m
 
 
 __questions__
+diff b/w line height vs font size
+https://stackoverflow.com/questions/41336177/font-size-vs-line-height-vs-actual-height
+meaning of display table, table-cell
+

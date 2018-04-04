@@ -21,11 +21,22 @@ create account on altpocket and create dashboard with api from bitrex
 coinmarketcap.com
 http://coincap.io/
 
+https://cointelegraph.com/
+https://www.coindesk.com
+https://koinex.in/
+zebpay
+
+charts: https://coinmarketcap.com/currencies/ethereum/
+
+21m till 2040, and miners have to verify transactional block to get $12.5; what if nobody wants to validate transaction when no more bitcoins in system?
+- block is added to every 10 min, takes upto 30min to validate
+block chain is publically hold transactional database
+
 __todo__
 how block chain works
 different coins and their info
 trading tips of bitcoins, altcoins
 why bumping happens? should i use it
-
-
+is there bug in majority algo, what if majority of miners are not online. or can hacker somehow (by propagating more) attain majority and fake transactions
+what are blockchains except bitcoin, etherium
 

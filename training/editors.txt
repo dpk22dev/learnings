@@ -9,6 +9,10 @@ Created Thursday 28 April 2016
 
 **eclipse**
 ctrl + k, ctrl + shift +k for next/previous searched elements
+ctrl+shift+R : search resource: files etcc
+ctrl+shift+T : search type: class function etc
+ctrl+shift+L : text search
+ctrl+H: all search
 
 **sublime**
 ctrl + shift + L: select block  of lines
@@ -33,6 +37,8 @@ Add/remove a selection: Alt + Shift + Mouse Click
 ctrl + ] or [ to jump to opening closing braces
 ctrl + shift + R : filename search
 shift+shift search everywhere
+ctrl + shift +a : do an action
+jump to line: ctrl + L or navigate > gotoline
 
 **clion:**
 put caret on variable and press alt+f7 to find all usage 

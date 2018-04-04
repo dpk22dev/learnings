@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-21T08:16:39+05:30
+
+====== summary ======
+Created Wednesday 21 March 2018
+
+quants
+learnt in college:
+	physics, discrete maths, electrical + electronics equipments, 8086 processor, c/c++, java
+	OS, Networking, DBMS, DS & Algo, design patterns
+	socket programming, kernel, ML and AI, Software engineering
+	
+learnt as SE:
+Amdocs: 
+cobol, c/c++ systems, oracle + PL/SQL
+MAF -> MPS -> Billing <- A/R <- CSM
+enabler: prepaid, ensembler: postpaid
+
+Naukri:
+php, javascript, docker
+written in copy
+
+Times:
+
+Self Projects:
+
+
+todo:
+what you have learnt: copy, training files
+what projects have you done
+what technologies have you hands on
+

@@ -6,8 +6,14 @@ Creation-Date: 2017-06-26T22:12:59+05:30
 Created Monday 26 June 2017
 
 docker run --name mongo-dev -d -v /data/mongo_docker_data:/data -p 27017:27017 my_mongo
-mongo [[localhost:27017]]
+mongo localhost:27017
 
  pecl install mongodb
 
 mongo has dropped support for master slave config, in place use sharded arch
+
+mongo in cluster
+https://www.linode.com/docs/databases/mongodb/build-database-clusters-with-mongodb
+
+**node mongoose concepts**
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose

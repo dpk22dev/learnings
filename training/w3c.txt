@@ -5,6 +5,9 @@ Creation-Date: 2016-06-09T18:33:21+05:30
 ====== w3c ======
 Created Thursday 09 June 2016
 
+**all standards and drafts of w3c technologies**:
+https://www.w3.org/TR/
+
 **maturity steps:**
 Working draft (WD)
 Candidate recommendation (CR)[edit]

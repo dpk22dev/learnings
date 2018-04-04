@@ -17,12 +17,21 @@ http://phrogz.net/JS/Classes/OOPinJS.html
 **module in js**
 https://medium.freecodecamp.org/javascript-modules-a-beginner-s-guide-783f7d7a5fcc
 
+writing jquery plugins
+https://learn.jquery.com/plugins/advanced-plugin-concepts/
+
+ecma script 5 specs
+http://www.ecma-international.org/ecma-262/5.1/
+
 libs and frameworks: 
 angular
 babel
 
 commonly used jquery methods:
 https://www.smashingmagazine.com/2012/05/50-jquery-function-demos-for-aspiring-web-developers/
+
+**get events on element**
+$._data(document,"events")
 
 helpful jquery methods:
 http://code.tutsplus.com/tutorials/20-helpful-jquery-methods-you-should-be-using--net-10521

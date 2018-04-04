@@ -5,7 +5,13 @@ Creation-Date: 2016-08-21T21:17:01+05:30
 ====== audio processing ======
 Created Sunday 21 August 2016
 
+starting for digital audio
+http://www.indiana.edu/~emusic/etext/digital_audio/chapter5_dac.shtml
 
+digital audio basics book
+http://www.indiana.edu/~emusic/etext/toc.shtml
+
+http://www.earlevel.com/main/1996/10/20/what-is-dither/
 http://www.mega-nerd.com/Res/IADSPL/page03.html
 
 http://www.ece.ucsb.edu/Faculty/Rabiner/ece259/digital%20speech%20processing%20course/lectures_new/Lecture%204_winter_2012.pdf
@@ -20,12 +26,18 @@ http://www.esprockets.com/papers/Baluja_Covell_ICASSP2007_1888.pdf
 https://en.wikipedia.org/wiki/Audio_file_format
 decide duration, loudness, pitch of language
 
+audio processing in browser
+https://www.html5rocks.com/en/tutorials/webaudio/intro/
+
+
 
 simple starting book for DAP
 http://www.mega-nerd.com/Res/IADSPL/page05.html
 
 clear concepts:
 phonemes for english and hindi
+
+quantization: bit-depth/bit-resolution
 
 __todo__
 ~~read about oscilltions and waves~~

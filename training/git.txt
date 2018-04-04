@@ -166,6 +166,9 @@ git branch -m old_branch_name new_branch_name
 get history of file:
  git log  -p path/to/file
 
+diff of particular file betwwen particular commits
+ git diff 8dd6fdc 7fb5ca9 -- lib/timelineService.js
+
 *** imp links ***
 http://stackoverflow.com/questions/4114095/revert-to-a-previous-git-commit
 fundamentals of git: http://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences/9204499#9204499
