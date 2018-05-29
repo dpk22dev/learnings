@@ -43,6 +43,9 @@ use AND to unset a pin
 use OR to set a pin
 use XOR to toggle pin
 
+**demorgan theorem and bubble game for boolean gates logic**
+https://electronics.stackexchange.com/questions/21628/a-quick-way-to-remember-nand-nor-logic
+
 timers and counters:
 timer inside atmega is within 10% of accurate value, use external timer if want.
 timer/counter register: TCNT0 : 8bit, TCNT1: 16bit

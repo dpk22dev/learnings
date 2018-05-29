@@ -15,6 +15,8 @@ understanding linux kernel
 linux device drivers
 
 
+https://unix.stackexchange.com/questions/84069/what-is-a-device-controller-and-where-does-it-fit-in-between-the-kernel-and-the
+
 upstart is for linux
 
 lvs: linux virtual server is used for load balancing among services
@@ -28,6 +30,11 @@ http://www.makelinux.net/ldd3/?u=chp-5-sect-3
 
 interactive links to different sub systems of linux
 http://www.makelinux.net/kernel_map/
+
+**directory wise disk usage**
+du -sh * // directory wise space
+df -h . // free space availabe
+du -h | less // directory wise space for readablitiy
 
 **policy vs mechanism**
 Most programming problems can indeed be split into two parts: 

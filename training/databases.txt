@@ -22,9 +22,9 @@ databases whcih don;t need schema like redis, mongodb, cassandra, neo4j are nosq
 any of modeled database can
 https://www.thoughtworks.com/insights/blog/nosql-databases-overview
 
-**********  **********************
+****  ****************
 ************************************ mysql ******************************************
-**********  **********************
+****  ****************
 mysql internals:
 https://dev.mysql.com/doc/internals/en/
 
@@ -57,176 +57,14 @@ its good to able to uniquely identify rows in table, when designing  a table fin
 if coloumn A has null values, adding unique constraint doesn't complain as mysql thinks null can be anything, null is not equal to null, this query will pass
 but if coloumn has equal data this query will fail
 
-**datatypes in mysql:**
-https://dev.mysql.com/doc/refman/5.1/en/storage-requirements.html
-
-**maximum concurrent connetions in mysql**
-http://stackoverflow.com/questions/14901508/maximum-concurrent-connections-to-mysql
-
-based on mysql environment variables #connections can be increased: default is 150
-
-**queries per second handled by mysql**
-http://stackoverflow.com/questions/4566714/how-many-mysql-queries-second-can-be-handled-by-a-server
-http://serverfault.com/questions/164980/how-many-selects-per-second-can-a-mysql-server-run
-
-**mysql docs**
-https://dev.mysql.com/doc/internals/en/
-
-**mysql utilities**
-https://dev.mysql.com/doc/mysql-utilities/1.6/en/utils-ha.html
-
-local db connection:
-mysql -h 127.0.0.1 --port=3307 -u root -p
-
-mysql -h localhost -u root -p
-
-/usr/local/mysql/bin/mysql -uroot -pKm7Iv80l --port=3308 -h192.168.2.61
-
-connect to db:
-/usr/local/mysql-5.5.25/bin/mysql -uroot -pKm7Iv80l --socket=/tmp/mysql_ankit.sock
-
-show databases;
-create database training
-use training
-
-
-create table info_one(
-Name varchar(90),
-Email varchar(50),
-DOB date,
-Gender char(1),
-Mobile varchar(20),
-landline varchar(20),
-city varchar(50),
-education_level char(1)
-);
-
-insert into info_one
-values( 
-"abcdef", "abc@abc.abc", '2014-01-01',
-'M', "98989898", "12198989898", "rohtak", 'U'
- )
-
- DATETIMESTAMP: YYYY-MM-DD HH:MM:SS format
-TIMESTAMP: A timestamp between midnight, January 1, 1970 and sometime in 2037.  same as DATETIMESTAMP without hyphens
-
-
-***** diff b/w char and varchar *****
-VARCHAR stores a variable number of bytes for only the space required by the content.
-CHAR stores a fixed size of however many bytes you specify for your table, no matter how many characters occupy a field of this type per row.
-
-BLOB: char max length upto 65535, used to store binary data such as images; sorts and comparisons are case sensitive
-TEXT: char max length upto 65535
-
-TINYBLOB: max length 255 char
-TINYTEXT: max length 255 char
-
-MEDIUMBLOB: maximum length of 16777215 characters
-MEDIUMTEXT: maximum length of 16777215 characters
-
-LONGBLOB: maximum length of 4294967295 characters.  
-LONGTEXT:  maximum length of 4294967295 characters. 
-
-use mysql_free_result() to free cursor memory space after work done.
-
-***** REGEXP in mysql *****
-SELECT name FROM person_tbl WHERE name REGEXP '^st';
-
-AUTOCOMMIT = 1:  each SQL statement (within a transaction or not) is considered a complete transaction.
-else transaction completes when COMMIT is written explicitely.
-
-***** innoDB for transactions *****
-If you plan to use transactions in your MySQL programming, then you need to create your tables in a special way. Support for InnoDB tables requires a specific compilation parameter when compiling MySQL from source.
-
-***** running mysql on multiple instances *****
-very good blog
-http://naveensnayak.wordpress.com/2013/11/10/mysql-multiple-instances-on-ubuntu/
-
-use \c  on screen to abort current query. don't use ctrl + C.
-use \G for proper coloumn wise result of query
-
-**schemas in mysql**
-http://mysqlintheenterprise.com/2013/03/21/a-visual-guide-to-the-mysql-performance-schema/
-performance_schema, which records runtime statistics from the MySQL database. 
-
-**getting query for create table: **
-show create table site_mapping;
-
-**on duplicate key:**
-site_mapping: ( ID, flag -> primary key ),  site -> unique key
-insert into site_mapping values( 1, 'a', 'n' ) on duplicate key id=id, flag=flag;
-if multiple keys are used in duplicate key, it is OR of key that is used; eg if primary key coloums are duplicate or unique key coloumn is duplicate then only id, flag are updated....
-it's important which keys are we updating, here we are updating id, flag not site.... 
-
-**order of execution**
-FROM
-ON
-JOIN
-WHERE
-GROUP BY
-WITH CUBE or WITH ROLLUP
-HAVING
-SELECT
-DISTINCT
-ORDER BY
-TOP
-
-
-select City, CNT=Count(1)
-From Address
-Where State = 'MA'
-Group By City
-Having Count(1)>5
-
-***** multi master *****
-m-m is m-s on both ends, so it has inherent problems of m-s but these problems can be solved using mysql clustter but it also has its own problems
-m-s uses innoDB, while cluster uses NDB
-
-m-s is good for replication
-
-write on one master is reflected on other after some time. read/write can happen on anyone.
-in master slave, writes done on slave arenot reflcected on master.
-making them master slave and vice-versa is not enough; to avoid collisions on write, we need to make setting.
-
-
-
-The problem is that asynchronous replication will incur collisions and conflicts which needs to be resolved smartly by smartly-written and flawlessly implemented algorithms. You won't have that. Use MySQL cluster setup instead, if you need multi-master operations and can handle the limitations it brings.
-
-looks like multi master has its problems also.
-
-**locks vs transactions**
-http://stackoverflow.com/questions/4226766/mysql-transactions-vs-locking-tables
-
-https://mathiasbynens.be/notes/mysql-utf8mb4
-
-__quest:__
-diff b/w relational / non-relational
-diff b/w sql / nosql 
-diff b/w above two
-
-does innodb provide transaction, concurrency -> by locking or not
-	-in single node, m-s arch
-does ndb provide transaction, concurrency -> by locking or not
-	-in single node, m-s arch
-
-possible problems with m-s and clustered env
-
-locking in mysql; is it storage engine dependent?
-what things are storage engine dependent
-transaction, concurrency
-
-~~can we index normal coloumn~~
-what does indexing multiple coloumns mean
-how does locking coloumns work
-
 ********** connecting mssql on linux *************
 http://stackoverflow.com/questions/33341510/how-to-install-freetds-in-linux
 
 tsql -H 192.168.33.204 -U nbtdev -P DevNBT@2016! -p 1433 > out.csv <<EOS SELECT * FROM some_table; go EOS
 
-************  ********************
+******  **************
 ************************************ mongodb ******************************************
-**********  ***********************
+****  *****************
 
 
 capped collection : good for logs, caching
@@ -247,4 +85,5 @@ match stage, group stage
 ******** questions *****
 diff b/w json and bson, why not store simply as json string
 why different data-types
-
+in 2PC/3phase commit what happens if replicas commit and ack returned is lost
+how does transations happens on replicas, does locking happens over there

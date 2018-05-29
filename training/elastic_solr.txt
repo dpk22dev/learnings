@@ -25,7 +25,17 @@ https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-lo
 systemctl issue with elastic search
 https://discuss.elastic.co/t/cant-start-elasticsearch-with-ubuntu-16-04/48730/9
 
-comman commands
+ES file structure
+https://www.elastic.co/blog/found-dive-into-elasticsearch-storage
+
+ES from bottom up internals
+https://www.elastic.co/blog/found-elasticsearch-top-down
+https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up
+
+lucene file structure
+https://lucene.apache.org/core/5_1_0/core/org/apache/lucene/codecs/lucene50/package-summary.html#package_description
+
+common commands
 http://elasticsearch-cheatsheet.jolicode.com/
 
 monitoring
@@ -38,6 +48,8 @@ series of anatomy of es( google search for rest ):
 https://blog.insightdatascience.com/anatomy-of-an-elasticsearch-cluster-part-i-7ac9a13b05db
 https://blog.insightdatascience.com/anatomy-of-an-elasticsearch-cluster-part-ii-6db4e821b571
 
+crashing es
+https://www.elastic.co/blog/found-crash-elasticsearch#mapping-explosion
 
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
@@ -327,7 +339,7 @@ __quest__
 ~~rewrite, boost, fuzziness~~
 ~~how to remember and which query should be used~~
 ~~how is json key value pair stored; what happens to key~~
-
+TF vs IDF
 internals of index sharded, how lucene indexing happens for inverted index
 	
 	~~it looks like based on hash of _id of doc we can find shardId; but how is inverted indexes stored then~~

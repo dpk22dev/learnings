@@ -23,115 +23,16 @@ http://stackoverflow.com/questions/519520/difference-between-static-class-and-si
 proxy design pattern in php
 https://ocramius.github.io/presentations/proxy-pattern-in-php/#/
 
-**Design discussion checklist** 
+**java design patterns**
+https://github.com/iluwatar/java-design-patterns
 
-# Design discussion checklist
-1. Impact Analysis 
-2. Database/tables design
-3. Class design
-4. Use of factories
-5. Decoupling of code
-6. Use of DI
-7. Code should be UT compatible
-8. Performance
-9. Caching layer design
-10. Memory utilization / optimization
-11. Bandwidth usage
-12. Queries / service calls
-13. Capacity planning
-14. Use of proper technologies
-15. Services needed / to be built
-16. 3rd party / generic libraries that could be built
-17. existing 3rd party / generic / already built libraries / classes / functions that could be re-used
-18. Impact analysis for deployment
+**eip in java**
+https://examples.javacodegeeks.com/enterprise-java/apache-camel/apache-camel-routing-tutorial/
 
-**Code Review Checklist** 
+**didn't understand**
+double dispatch
 
-### Code review can be done when code is = 100% complete
-### Code reviews can also happen when code structure is ready for checking adherence to design
 
-# Code review checklist 
-1. Adherence to design against a design document(if available)
-2. Is the code testable ?
-3. UT coverage / availability
-4. Readability / understandability / flow of code
-5. Configuration management in code
-6. Reusability and extensibility of code
-7. Graceful degradation
-8. Performance of code
-9. Number of service / db calls ?
-10. how well do recursive functions run?
-11. Are objects duplicated when only references are needed and vice versa?
-12. Does the code have impact on size, speed or memory usage
-13. Are there blocking system/service/db calls?
-14. Are required columns indexed in db?
-15. What is the memory footprint of code ?
-16. Should the operations be synchronous / asynchronous ?
-17. API/service timeouts handled in code ?
-18. Error handling, logging and alerts/notification
-19. Logging of stats if required
-20. Security
-21. Output escaping is on
-22. PDO - Reviewer should verify that PDO (with prepared statements) is being used properly to prevent SQL injection
-23. Exec, eval and passthru should be avoided unless absolutely necessary
-24. Check for command injection - If you are calling external programs (i.e. exec(), passthru()), then make sure that you escape the arguments.
-25. Sanitization of variables
-26. CSP headers are in place ?
-27. Don’t move uploaded files to web-accessible directories, as your web server may parse some files as executable code (i.e. an uploaded .php file). It also hampers your ability to restrict access to the files (as noted before about hiding files). After the usage, make sure that the file is deleted from the disk.
-28. In DbFramework, ncMysqlDatabase should not be used. Use ncPdoDatabase instead.
-29. Reviewer should verify that ncUploader is being used for file uploads and file_uploads is off in php.ini
-30. Never use user input directly in a pathname, so that problems like directory traversal etc. can be avoided.
-31. Authentication should be cookie based; and the auth-id should not be present in the URL.
-32. All cookies should be http-only & secured-only.
-33. Check to make sure that attackers can’t include a remote file containing PHP code.
-34. Reviewer should verify that ncEncryptionLib is being used for encryptions.
-35. Reviewer should verify that CSRF library is being used.
-36. Pages that conduct long or resource intensive operations should be throttled, so that performing a denial-of-service attack against you isn’t as simple as leaving 10 browser windows on auto-refresh.
-37. If you using a page to redirect to other pages (or other sites), make sure that this cannot be abused. i.e. the user is not redirected any non-infoedge website.
-38. Don’t put configuration files or any critical files in a web accessible directory, especially if their content can be read via the browser.
-39. Make sure that the encryption keys are being changed periodically.
-40. Make sure that a user cannot view other users' data. i.e. SQL queries should have USER_ID=? clause wherever possible.
-41. Check whether any sensitive information is not being used in hidden values, cookies, local storage, query string, html comments etc.
-42. All new services like SP service, memcache, redis etc  listen on back-link only.
+__questions__
 
-# FEP code review points
-
-## HTML
-1. Write standards compliant markup
-2. SublimeLinter is great for catching errors (HTML, CSS, javascript and a lot of other languages).
-3. Make use of semantic elements
-4. Use lowercase letters within element names, attributes, and values.
-5. Strictly use double quotes, not single or completely omitted quotes.
-6. Check to make sure elements used are the right ones, for example don't use two <br/> tags when you should have a <p> tag in there.
-7. Separate content from style
-8. Inline styles are really for HTML emails and WYSIWYG editors only, and both of those are out of necessity. 
-9. Avoid a case of div-itis
-10. Look for areas where less code can be used. This is especially a challenge when working with CMS's, but there are always options to cut down on superfluous markup. 
-
-## CSS
-1. Organize code with comments
-2. This will help the next person who looks at your CSS and for your future self-down the line.
-3. Indent selectors
-4. Better readability when editing your code. 
-5. Write CSS with multi-line spacing
-6. Really a preference here, just make sure a consistent pattern is used.
-7. Modularize styles for reuse
-8. Alphabetize your CSS property for better performance.
-9. Use ID and class names that are as short as possible.
-10. Use shorthand properties when available
-11. TRBL (Top, right, bottom, left). Cuts down on style properties, easier to maintain.
-
-## Images
-1. Make use of sprites
-
-## Javascript:
-1. Avoid inline and embedded JavaScript.
-2. Keep the global scope clean. Put code into Namespaces Page, Util, and Controls.
-3. Feature Detect – i.e. before using any advanced feature on an old browser assuming that it may support, let’s first check to see if the function exists, and then use it.
-4. Test performance in all browsers mentioned above – use console.time to track down performance bottlenecks.
-5. In order to minimize number of event listeners on a page, use event delegation.
-6. Keep components as independent as possible.
-7. Avoid using global variables. All variables used in a function should be declared as local variables
-8. For Code Validation use JSLint . It has tons of features and settings that can be used to customize verification algorithms in to suit our needs.
-
-Note : Code review does not guarantee 100% bug free code.
+__todo__

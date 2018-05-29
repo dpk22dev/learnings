@@ -17,3 +17,9 @@ https://www.linode.com/docs/databases/mongodb/build-database-clusters-with-mongo
 
 **node mongoose concepts**
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose
+
+mongodb uses memory mapped file:
+https://ayende.com/blog/162791/on-memory-mapped-files
+
+**questions**
+~~diff b/w mongo and other binaries~~

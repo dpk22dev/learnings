@@ -8,11 +8,27 @@ Created Thursday 28 April 2016
 **vi**
 
 **eclipse**
+https://blog.codecentric.de/en/2013/04/again-10-tips-on-java-debugging-with-eclipse/
 ctrl + k, ctrl + shift +k for next/previous searched elements
 ctrl+shift+R : search resource: files etcc
 ctrl+shift+T : search type: class function etc
 ctrl+shift+L : text search
+ctrl+J: incremental search, typed is searched, press ctrl+J for next finding
 ctrl+H: all search
+ctrl+shift+: jump to matching brace
+ctrl+shift+P: jump to matching any bracket
+ctrl+shift+O: bring all imports
+ctrl+1: quick fix window
+ctrl+E: list of all open editors
+ctrl+F6, ctrl+F7, ctrl+f8
+ctrl+shift+F: beautify code
+ctrl+T: shows implementation heirarchy
+ctrl+3: search through actions/commands provided
+place caret on variable, hover shows javadoc, shift+hover shows source code
+ctrl+Q: jump to last edit location
+
+refactoring:
+alt+shift+R : select and change variable at mltiple locations
 
 **sublime**
 ctrl + shift + L: select block  of lines
