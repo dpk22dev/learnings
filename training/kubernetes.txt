@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-31T15:02:09+05:30
+
+====== kubernetes ======
+Created Thursday 31 May 2018
+
+tagged articles in this site
+http://www.tothenew.com/blog/getting-started-with-kubernetes/
+http://www.tothenew.com/blog/how-to-install-kubernetes-on-centos/
+http://www.tothenew.com/blog/understanding-kubernetes-architecture-and-setting-up-a-cluster-on-ubuntu/
+
+questions:
+how autoscaling happens, do vm's need to be cut explicitely
+adding of extra node in say ES needs config change, re indexing : how is it done for example done by aws cluster of ES
+how does configuration file shared among pods: changes in cluster state intimated to members -> etcd
+how data files are provided to say mysql pod: shared disk or what?

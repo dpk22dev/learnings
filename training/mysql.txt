@@ -5,6 +5,7 @@ Creation-Date: 2018-04-09T22:32:03+05:30
 ====== mysql ======
 Created Monday 09 April 2018
 
+docker run --name mariadbtest -e MYSQL_ROOT_PASSWORD=mypass -d mariadb
 
 **datatypes in mysql:**
 https://dev.mysql.com/doc/refman/5.1/en/storage-requirements.html
@@ -16,6 +17,13 @@ https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html
 http://stackoverflow.com/questions/14901508/maximum-concurrent-connections-to-mysql
 
 based on mysql environment variables #connections can be increased: default is 150
+
+**mysql funcitons**
+powerful functions that can group concat, select different coloumns based on if/case conditions
+https://mariadb.com/kb/en/library/built-in-functions/
+
+SELECT SQL_CALC_FOUND_ROWS * FROM tbl_name WHERE id > 100 LIMIT 10;
+SELECT FOUND_ROWS();
 
 **queries per second handled by mysql**
 http://stackoverflow.com/questions/4566714/how-many-mysql-queries-second-can-be-handled-by-a-server
@@ -201,3 +209,7 @@ how mysql stores data
 how replication works
 mysql in cluster
 geo distance sample data and methods
+
+
+
+

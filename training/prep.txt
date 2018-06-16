@@ -5,3 +5,28 @@ Creation-Date: 2018-04-07T16:36:03+05:30
 ====== prep ======
 Created Saturday 07 April 2018
 
+
+
+20h: 24 min/q
+
+
+stk: 
+
+
+
+
+
+**questions**
+exact flow of packets in network
+locks and mutual exclusion
+IPC
+
+
+https://spring.io/guides/gs/messaging-redis/
+https://spring.io/guides/tutorials/bookmarks/
+https://spring.io/guides/gs/relational-data-access/
+https://spring.io/guides/gs/accessing-data-mysql/
+https://spring.io/guides/gs/accessing-data-jpa/
+https://spring.io/guides/gs/accessing-mongodb-data-rest/
+
+

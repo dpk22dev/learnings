@@ -1,0 +1,84 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-31T09:24:59+05:30
+
+====== DAA ======
+Created Thursday 31 May 2018
+
+**insights**
+updation vs read O(N) vs O(1)
+store numbers vs differences in array
+
+segment tree: with extra storage, kind of working like heap: O(logN)
+using double pointers while traversing linked list
+whenever you have to do things backward
+merge-sort of llist, instead of sending count of sublist1, sublist2; set last pointer of sublists as null, and send for merging
+
+when asked for avoiding loop: try recursion
+
+binary numbers are basically unique combinations of powers of 2. if we consider base x( say 5 ) they can be used as sum of unique powers of x.
+when want to find diff at bit level, we can store kind of inverted index of each bit; even storing is not required, x = numbers with bit set at pos, then n-x = numbers with bit empty at pos
+
+depth vs height of tree
+https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height
+
+BITree
+https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a
+
+
+__tricky:__
+https://www.geeksforgeeks.org/sorted-linked-list-to-balanced-bst/ doing this in O(n)
+
+
+__quesitons and doubts:__
+logic behind storing numbers in BITree parent_index = index + inx & -inx
+https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/
+O(n) approach for below
+https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/
+
+
+__status__
+ll : start with cirq
+arrays: Search an element in a sorted and rotated array
+stack: Design a stack with operations on middle element
+queue: LRU Cache Implementation
+bt: avl with duplicate key
+bst: Sorted Array to Balanced BST
+heap: heap sort
+hash: Print a Binary Tree in Vertical Order | Set 2 (Hashmap based Method)
+
+__important__
+https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+ number
+https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
+https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
+
+
+__questions left out__
+ll:
+arrays:
+stack:
+queue:
+bt:
+bst:
+heap:
+	https://www.geeksforgeeks.org/binomial-heap-2/
+	https://www.geeksforgeeks.org/leftist-tree-leftist-heap/
+	
+
+
+
+__visible questions on gfg__
+ll 100
+stk 80
+q 45
+bt 60
+bst 85
+heap 50
+hash 40
+graph 220
+matrix 40
+misc 230
+adt 200
+
+

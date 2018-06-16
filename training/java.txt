@@ -19,14 +19,20 @@ https://introcs.cs.princeton.edu/java/11cheatsheet/
 https://docs.oracle.com/javase/7/docs/api/java/util/package-tree.html
 
 **which collection should i use:**
-http://stackoverflow.com/questions/21974361/what-java-collection-should-i-use
+http://stackoverflow.com/questions/21974361/what-java-collection-should-i-us
 
 eclipse shortcuts:
 https://dzone.com/articles/effective-eclipse-shortcut-key
 
-versioning:
+**versioning:**
 http://stackoverflow.com/questions/275555/maven-snapshot-repository-vs-release-repository
 http://stackoverflow.com/questions/2107484/what-is-the-difference-between-ga-rc-and-m2-release
+
+mvn -Declipse.workspace="/home/dpk/eclipse-workspace" [[eclipse:configure-workspace]]
+
+**running java app in debug mode**
+java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n \
+	   -jar target/myapplication-0.0.1-SNAPSHOT.jar
 
 **DCL is broken**
 https://www.javaworld.com/article/2074979/java-concurrency/double-checked-locking--clever--but-broken.html
@@ -47,6 +53,16 @@ sdk install springboot
 
 **spring docs**
 https://docs.spring.io/spring/docs/5.0.5.BUILD-SNAPSHOT/spring-framework-reference/index.html
+
+**short mvn tutorial**
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+mvn compile
+mvn package
+mvn clean
+mvn install
+
+**gradle **
+http://www.vogella.com/tutorials/EclipseGradle/article.html
 
 **diff b/w enumerator and iterator**
 Using Enumeration, you can only traverse the Collection object. But using Iterator, you can also remove an element while traversing the Collection. 
@@ -76,8 +92,19 @@ https://stackoverflow.com/questions/5013947/create-a-compareto-to-a-generic-clas
 **dumping whole array**
  Arrays.toString(arr) or Arrays.deepToString(arr)	
 
+while cloning, single dimensional array is deep copied,  but mutliple dimensional array is shallow copies: means under-lying low dimensional arrays are refrences to original sub arrays
+
 **non blocking in java**
 https://stackoverflow.com/questions/2824225/what-is-non-blocking-concurrency-and-how-is-it-different-than-normal-concurren
+
+**using pair in java**
+https://www.geeksforgeeks.org/pair-class-in-java/
+AbstractMap.SimpleEntry<Integer, String> entry = new AbstractMap.SimpleEntry<>(1, "one");
+Integer key = entry.getKey();
+String value = entry.getValue();
+
+AbstractMap.SimpleImmutableEntry<Integer, String> entry = new AbstractMap.SimpleImmutableEntry<>(1, "one");
+
 
 **inner vs static inner class java**
 https://www.geeksforgeeks.org/static-class-in-java/
@@ -91,8 +118,8 @@ hashmap: unordered key-value pair
 treemap: RB tree; sorted key-value pair
 LinkedHashMap: hashtable with linked list implementation; insertion order is maintained
 Hashset: set backed by hashmap: insertion, contains, updation O(1); unordered
-Treeset: set backed by treemap; insertion, contains, updation O(logn); ordered
 LinkedHashSet: set backed by LinkedHashMap; order of insertion is maintained
+Treeset: set backed by treemap; insertion, contains, updation O(logn); ordered
 LinkedList: FIFO
 ArrayDeque: arraylist based deque
 
@@ -108,17 +135,17 @@ https://jcp.org/en/jsr/detail?id=340
 **questions**
 https://stackoverflow.com/search?q=core+java
 why jsp is better than servlet
-in hibernate what if we want to change things lijke
-	way of id generation
+~~in hibernate what if we want to change things lijke~~
+	~~way of id generation~~
 	discriminator fields/
 	what will happen in case of multiple keys as primarykey
 	in case of sharded tables
 	difference b/w bag and set in hbm
 	if we have to create indexes on few coloumns lateron
 	how will it effect refactoring and vice versa
-	how are joins handled?
-Runner.java is not running
-new Thread() { public void run() {} } , instantiating interface like new Runnable(){} and passing it to new Thread ?
+	~~how are joins handled?~~
+~~Runner.java is not running~~
+~~new Thread() { public void run() {} } , instantiating interface like new Runnable(){} and passing it to new Thread ?~~
 ~~why classType are used. eg myClass.class~~
 ~~java perf diff b/w primitive and non-primitive tyeps: int vs Integer	~~
 public static <T> T addAndReturn(T element,
@@ -133,16 +160,18 @@ public static <T> T addAndReturn(T element,
 containsvalue is not returning correct result
 	complex ds treemap of treemap etc comparison, even looping is hard : how to handle them
 
-is static inner class object created with each instance of outer class	
+~~is static inner class object created with each instance of outer class	~~
+no they have to be instantiated expliciterly, they are just way of encapsulating related class
+
 how gradle works, what changes to make if something changes
 what are different containers app servers: tomcat etc
 ~~diff b/w blocking and non-blocking code~~
 ~~default java thread pool~~
-use of synchronised vs use of lock
+~~use of synchronised vs use of lock~~
 why fork-join is there
 ~~java what happens when thread is blocked~~
-do java level threads correspond to processor level threads .. how is it implemented
-diff b/s sleep vs block
+~~do java level threads correspond to processor level threads .. how is it implemented~~
+~~diff b/s sleep vs block~~
 how much of synchronization and threads used in real applications
 java se/me specification vs JIT vs JVM specificaiton 
 how stack map frame and code linking happens in jvm .class

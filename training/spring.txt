@@ -21,6 +21,7 @@ we can use @postconstruct, @predestroy for caching data, logging etc
 stereotype annotations: @Component, @Service, and @Controller
 Meta-annotations can also be combined to create composed annotations. eg: @RestController composed of @Controller and @ResponseBody.
 The Environment is an abstraction integrated in the container that models two key aspects of the application environment: profiles and properties.
+http://www.techferry.com/articles/spring-annotations.html
 
 **diff b/w spring spring boot and spring components**
 https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare
@@ -29,3 +30,19 @@ for reference and api of projects, code:
 https://projects.spring.io/spring-data-redis/
 https://docs.spring.io/spring-data/redis/docs/2.1.0.M1/api/
 https://github.com/spring-projects/spring-data-redis
+
+**DTO vs entity**
+https://stackoverflow.com/questions/39397147/java-difference-between-entity-and-dto
+
+**questions**
+role of @configuration
+entity confusion in onetomany and manytoone mapping
+why  few exteded functions/overriding in repositoryy
+what is spring boot wrapping
+how binding among multiple projects/modules done as in sagan
+
+
+
+
+
+

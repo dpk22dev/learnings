@@ -33,3 +33,21 @@ remember we have to make changes in docker.infoedge.com:5000/naukri/careersite a
 netstat -nltp
 
 [[/data/db]] no file changes
+
+is different os run in userspace in conatiner: No it uses host kernel
+https://superuser.com/questions/889472/docker-containers-have-their-own-kernel-or-not
+
+is ufs used in image or containers
+https://washraf.gitbooks.io/the-docker-ecosystem/content/Chapter%201/Section%203/union_file_system.html
+
+storage in docker
+https://docs.docker.com/storage/storagedriver/#related-information
+
+using distributed key-value store
+https://github.com/coreos/etcd/blob/master/Documentation/learning/why.md
+
+__questions__
+
+how ufs works
+how data volume are transferred along with containers
+portworx

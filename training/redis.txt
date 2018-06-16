@@ -12,6 +12,7 @@ running servers:
 
 https://stackoverflow.com/questions/37953019/wrongtype-operation-against-a-key-holding-the-wrong-kind-of-value-php
 
+cat redirectlogs | awk -F',' '{print " SET \""$1"\" \""$1"\" \n"}' | redis-cli -p 6381 --pipe
 
 http://oldblog.antirez.com/post/redis-persistence-demystified.html
 

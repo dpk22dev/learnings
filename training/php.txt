@@ -30,6 +30,9 @@ http://php.net/manual/en/internals2.ze1.zendapi.php
 https://stackoverflow.com/questions/10333016/how-to-access-object-properties-with-names-like-integers
 https://stackoverflow.com/questions/30680938/how-can-i-access-an-array-object
 
+::class in php
+https://stackoverflow.com/questions/30770148/what-is-class-in-php
+
 *** HOW php works ***
 php source and its extensions itself are written in C, which are compiled to generate .so files which gets loaded by apache
 php written by us are interpreted and converted to OPCODE which gets executed, this OPCODE is run by php kind of VM ← limitation of interpreted languages, each time opcode has to be generated but compiled languages do it once
