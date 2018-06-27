@@ -6,3 +6,26 @@ Creation-Date: 2015-11-27T12:10:24+05:30
 Created Friday 27 November 2015
 
 http://localhost:8181/view/All/newJob
+
+[[http://localhost:8181/view/All/newJob|http://localhost:8089]]
+dpk
+times11!
+
+user and role management via plugin
+api token can be taken from configure 
+system configuration can be done to inject environment variables, scoring of node etc
+project can be setup to run shell script, poll SCM, chain multiple projects
+
+
+based on project, roles can be created and users can be given those roles
+
+apis: http://localhost:15672/api/
+
+resources:
+https://www.youtube.com/watch?v=63HEKFh8T2c
+
+**todo**
+running multiple jenkins on  single machine
+
+**questions**
+how input field / dropdown is shown in build step

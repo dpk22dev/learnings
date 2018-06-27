@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-21T09:03:51+05:30
+
+====== rundeck ======
+Created Thursday 21 June 2018
+
+http://localhost:4440
+integration with ansibe possible too
+
+don't think, it can find machine with low resource and run jobs there
+
+alternatives:
+https://wiki.jenkins.io/display/JENKINS/Scoring+Load+Balancer+plugin
+https://stackoverflow.com/questions/38616906/jenkins-trigger-on-demand-slaves-in-dockers
+ wiki.jenkins-ci.org/display/JENKINS/Docker+Plugin
+
+**quesitons**
+can we run jobs in parallel
+running jobs using api calls
+can it run job on x nodes with some logic

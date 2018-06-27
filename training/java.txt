@@ -34,6 +34,9 @@ mvn -Declipse.workspace="/home/dpk/eclipse-workspace" [[eclipse:configure-worksp
 java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n \
 	   -jar target/myapplication-0.0.1-SNAPSHOT.jar
 
+**java hotspot client vs server compiler**
+https://stackoverflow.com/questions/29342861/java-difference-between-java-hotspot-server-compiler-and-client-compiler
+
 **DCL is broken**
 https://www.javaworld.com/article/2074979/java-concurrency/double-checked-locking--clever--but-broken.html
 
@@ -56,10 +59,13 @@ https://docs.spring.io/spring/docs/5.0.5.BUILD-SNAPSHOT/spring-framework-referen
 
 **short mvn tutorial**
 https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
-mvn compile
-mvn package
-mvn clean
-mvn install
+https://www.youtube.com/watch?v=0CFWeVgzsqY
+mvn -X clean install
+mvn effective:pom
+mvn tomcat:run
+ mvn help:effective-settings
+mvn [[archetype:help]]
+mvn [[archetype:help|archetype:generate]]
 
 **gradle **
 http://www.vogella.com/tutorials/EclipseGradle/article.html
@@ -70,6 +76,13 @@ Using Enumeration, you can only traverse the Collection object. But using Iterat
 **understanding concurrency and locks**
 https://dzone.com/articles/java-concurrency-in-depth-part-1
 https://dzone.com/articles/intricacies-of-multi-threading-in-java?fromrel=true
+
+**Why Functional Interfaces in Java 8 have one Abstract Method?**
+Functional Interface lets us call an object as if it were a function, which lets us pass verbs(functions) around our program rather than nouns(objects). Implementations of Functional Interface perform a single well-defined action, as any method should, with a name like run, execute, perform, apply, or some other generic verb
+
+**streams **
+http://winterbe.com/posts/2014/03/16/java-8-tutorial/
+http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
 
 **blocking vs nonblocking vs async**
 https://stackoverflow.com/questions/2625493/asynchronous-vs-non-blocking
@@ -92,7 +105,21 @@ https://stackoverflow.com/questions/5013947/create-a-compareto-to-a-generic-clas
 **dumping whole array**
  Arrays.toString(arr) or Arrays.deepToString(arr)	
 
+Integer arr = new Integer[10]; // is initialised with null instead of 0
+
 while cloning, single dimensional array is deep copied,  but mutliple dimensional array is shallow copies: means under-lying low dimensional arrays are refrences to original sub arrays
+
+private / protected cant be used in top level class: internally allowed, internally they can be extended too
+public class needs to be put in same filename
+multiple default classes can be put in single, they sould have main methods and will be compiled to multiple class files
+https://stackoverflow.com/questions/3491131/multiple-classes-in-a-single-file-modifier-private-not-allowed-here
+
+for static, final, private java uses static binding; overridden methods will not be given priority
+https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/
+dynamic binding method will be called based on type on object not based on reference
+https://www.quora.com/How-does-JVM-handle-the-method-overriding-internally-during-the-runtime-Are-there-any-performance-implications-of-the-same
+
+
 
 **non blocking in java**
 https://stackoverflow.com/questions/2824225/what-is-non-blocking-concurrency-and-how-is-it-different-than-normal-concurren
@@ -129,8 +156,17 @@ https://stackoverflow.com/questions/34890981/what-role-each-jar-in-jre-system-li
 **hashcode vs equals for equality of objects in java**
 https://dzone.com/articles/working-with-hashcode-and-equals-in-java
 
-specifications
+**default access specifier**
+https://stackoverflow.com/questions/3530065/which-is-the-default-access-specifier-in-java
+
+**specifications**
 https://jcp.org/en/jsr/detail?id=340
+
+**good interview questions**
+https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view
+
+**reads**
+https://javarevisited.blogspot.com/?merchantID=53701
 
 **questions**
 https://stackoverflow.com/search?q=core+java
@@ -175,14 +211,27 @@ why fork-join is there
 how much of synchronization and threads used in real applications
 java se/me specification vs JIT vs JVM specificaiton 
 how stack map frame and code linking happens in jvm .class
+filename, classname working in java
+default modifier in java: package private
+is class private because of private constructor
+analysing javap output
+what are different java binaries are useful for
+does jvm uses JNI to language's file i/o; interact with syscalls
+Predicate<String> isEmptyP = String::isEmpty; ← how is it possible, isEmpty works on string object; is object really created
+how streams are internally implemented, benefit of using functional prog/streams
+	splititerator, divide and conquer
+diff b/w error, exception; checked vs unchecked exception
 
 **todo**
 after https://www.javatpoint.com/ioc-container
-hibernate
+https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view
+https://github.com/in28minutes/interview-guide
+https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view 144
+~~hibernate~~
+~~about concurrent classes~~
 
-
-java lang
-design patterns
+~~java lang~~
+~~design patterns~~
 guides
 spring pdf
 

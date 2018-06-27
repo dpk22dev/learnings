@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-23T11:16:45+05:30
+
+====== notes ======
+Created Saturday 23 June 2018
+
+Arrays.toString( oneDArr )
+Arrays.deepToString( twoDArr )
+arrays.equals( nA1, nA2 )
+arrays.sort( a1 )

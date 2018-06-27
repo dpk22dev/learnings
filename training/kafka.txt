@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-18T17:24:38+05:30
+
+====== kafka ======
+Created Monday 18 June 2018
+
+https://www.cloudkarafka.com/blog/2016-11-30-part1-kafka-for-beginners-what-is-apache-kafka.html
+
+https://content.pivotal.io/blog/understanding-when-to-use-rabbitmq-or-apache-kafka
+
+user: kafka
+pass: times41!
+
+installed on /opt/kafka/kafka_2.11-1.1.0/bin
+run zookeper: ./bin/zookeeper-server-start.sh config/zookeeper.properties
+./bin/kafka-server-start.sh config/server.properties
+
+./bin/kafka-topics.sh --create   --zookeeper localhost:2181  --replication-factor 1 --partitions 13 --topic my-topic
+./bin/kafka-topics.sh --list --zookeeper [[localhost:2181]]
+
+./bin/kafka-console-producer.sh --broker-list localhost:9092   --topic my-topic
+
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning
+
+
+
+use kafka manager
+
+running kafka using command line
+http://cloudurable.com/blog/kafka-tutorial-kafka-from-command-line/index.html
+
+kafka doesn't allow more than 1 consumer to read from same partition simultaneously
+messages in topic are distributed among partitions
+maintaining membership in the group is handled by the Kafka protocol dynamically. 
+there is auto distribution of partition ownership among consumers 
+zookeeper: required for comm among brokers
+Kafka REST Proxy provides a RESTful interface to a Kafka cluster as kafka doesn't provide rest api on its own
+
+quesitons:
+how number of partitions are decided, can they be cahnged later on
+how many consumers should be run in cg
+
+todo
+check some php lib
+
+https://www.youtube.com/watch?v=CZ3wIuvmHeM
