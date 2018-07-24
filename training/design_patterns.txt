@@ -29,8 +29,27 @@ https://github.com/iluwatar/java-design-patterns
 **eip in java**
 https://examples.javacodegeeks.com/enterprise-java/apache-camel/apache-camel-routing-tutorial/
 
+**mostly used design patterns**
+https://sourcemaking.com/design_patterns/decorator
+
 **didn't understand**
 double dispatch
+
+http://www.sparknotes.com/film/lordoftherings/summary/
+elves( immortal ): , erwen, elrod
+men:  strider/aragorn, boromir
+dwarves: gimli 
+wizard: gandalf, saruman, sauron
+hobbits: bilbo baggins, frodo, sam 
+ring-wraths: 9 dead human kings who want to become human again
+gollum
+woods: galadriel( lady of woods )
+army of uruk-hai created by sarauman
+
+locations: shire( home of hobbits ), mount doom, mordor( home of soron), rivendell( home of elves), gondor( human home), moria( home of dwarves )
+
+http://www.latteartguide.com/2016/01/different-types-of-coffee.html
+coffee: esspresso, milk, foam, water, choco or other toppings
 
 
 __questions__

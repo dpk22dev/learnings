@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-16T08:29:53+05:30
+
+====== game development ======
+Created Monday 16 July 2018
+
+crushing hyper casual games
+https://www.appodeal.com/home/static/Monetizing_Casual_Games_The_Right_Way_[ebook_by_Appodeal].pdf
+
+

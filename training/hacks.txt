@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-07T09:20:19+05:30
+
+====== hacks ======
+Created Saturday 07 July 2018
+
+inspect element and
+
+arr = [3,5,8,11, 12, 26, 27];
+arr.forEach( function( val, i ){ 
+	val = val-1;
+	$('input[name="particulars'+val+'"]').value = 'gurgaon noida cab';  
+	$('input[name="placeVisited'+val+'"]').value = 'gurgaon/noida';  
+	$('input[name="travelMode'+val+'"]').value = 'cab';  
+	$('input[name="amount'+val+'"]').value = 2000;  
+} );
+
+**kibana elastic search backspace fix:**
+.typeahead .typeahead-items { 
+  top: 32px; 
+} 
+
+intellijIdea liscenece server
+ http://intellij.mandroid.cn/
+
+node
+--expose_debug_as=v8debug
+
+for elastic
+sysctl -w vm.max_map_count=262144
+vm.max_map_count = 65530
+
+
+['1', '2'].forEach( function( s ){ console.log( 'this.'+s+' = '+'this.'+s+'.bind(this);' )} )
+
+**google mail search shortcuts**
+https://support.google.com/mail/answer/7190?hl=en
+
+**sites and competetiors**
+https://www.similarweb.com/website/facebook.com#overview
+
+**fundings and startups**
+https://www.crunchbase.com/
+
+**salary negotiations**
+http://www.negotiatingsalary.com
+
+lsof
+used for open files of particular user, process, port

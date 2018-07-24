@@ -79,6 +79,7 @@ DES, extDES, MD5 should not be used as they are vulnerble
 Blowfist, sha256, sha512 can be used
 
 ***** PHPUnit *****
+https://jtreminio.com/2013/03/unit-testing-tutorial-introduction-to-phpunit/
 setup and teardown funcitons in phpunit help in fixtures
 we can define testsuitenames and order in which files will be exectuted in phpUnits' XML file
 we can define execution timeout in xml file
@@ -100,6 +101,8 @@ use phpunit --coverage-html coverage
 http://www.phpclasses.org/blog/post/117-PHP-compiler-performance.html
 http://www.scribd.com/doc/18171982/PHP-Compiler-Internals
 http://stackoverflow.com/questions/2772400/how-does-php-interface-with-apache
+
+We create providers which provide mock object( using mock builder ), this mock object methods are overrriden using stubs. Then our tests can use these providers.
 
 **precedence order in php**
 $person->$property['first'] will be evaluated differently on php 5 and 7.

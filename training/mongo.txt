@@ -21,5 +21,15 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoo
 mongodb uses memory mapped file:
 https://ayende.com/blog/162791/on-memory-mapped-files
 
+mongo cluster
+https://www.alibabacloud.com/blog/high-availability-mongodb-cluster-configuration-solutions_490866
+
+mongo storage internals
+https://stackoverflow.com/questions/9948483/mongodb-database-architecture
+https://2013.nosql-matters.org/bcn/wp-content/uploads/2013/12/storage-talk-mongodb.pdf
+
+new in mongo3.2
+https://www.mongodb.com/blog/post/what-s-new-in-mongodb-3-2-part-1-extending-use-cases-with-new-pluggable-storage-engines
+
 **questions**
 ~~diff b/w mongo and other binaries~~

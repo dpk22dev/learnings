@@ -34,8 +34,26 @@ we can avoid writing factory by using tagged services. it uses compiler pass whi
 twig:
 http://symfony.com/doc/2.8/templating.html
 
+**compiler passes & tagged services**:
+https://symfony.com/doc/current/service_container/compiler_passes.html
+https://symfony.com/doc/current/components/dependency_injection/compilation.html
+Compiler passes give you an opportunity to manipulate other service definitions. 
+tag services and compiler pass are interrelated as below:
+https://symfony.com/doc/current/service_container/tags.html
+looks like instead of injecting x services into some service, if we want to inject services conditionally we can tag those service; register compiler pass to kernel; add those tagged services to destined service in compiler pass implementation
+
+extension: 
+https://symfony.com/doc/2.3/cookbook/bundles/extension.html
+for writing configs of service in decoupled bundles
+
+php app/console [[debug:xyz]] shows info about routes, services, dependencies etc..
+kernel creates container, and prepares services; we can modify those services using compiler pass.
+these services can be injected into other services/controller for usage
+commands, listeners & subscribers can be created for batch jobs, async processing
+
+
 **bundle vs components**
-A Component is a part of the Symfony core. Symfony is a group of Components tied together. Example are Forms, Console, HttpKernel, and so on. They share some similarities with Bundles. However, you can use Components outside of Symfony, as standalone packages in your php non-symfony projects. Bundles depend on symfony 
+A Component is a part of the Symfony core. Symfony is a group of Components tied together. Example are Forms, Console, HttpKernel, and so on. They share some similarities with Bundles. However, you can use Components outside of Symfony, as standalone packages in your php non-symfony projects. Bundles depend on symfony
 
 ***** use and include *****
 we need to include necessary php files. 

@@ -5,3 +5,89 @@ Creation-Date: 2017-07-20T11:33:08+05:30
 ====== cassandra ======
 Created Thursday 20 July 2017
 
+/opt/installs/apache-cassandra-3.11.2
+
+
+peer 2 peer arch: improve availablity, always online
+
+Keyspace is the outermost container for data in Cassandra( like dataabase in rdbms ). keyspace attributes:
+Replication factor, Replica placement strategy, Column families 
+
+A column family is a container for an ordered collection of rows( like tables in rdbms ). coloumn family attributes:
+keys_cached, rows_cached, preload_row_cache
+Generally column families are stored on disk in individual files. 
+
+A column is the basic data structure of Cassandra with three values, namely key or column name, value, and a time stamp. 
+A WHERE clause can be used only on the columns that are a part of primary key or have a secondary index on them.
+
+in a cluster if node2 goes down, other nodes will start storing keys corresponding ot node2 with hint that if node2 comes alive again; it will be transfered there.
+
+system.keyspace stores metadata for cluster funcitoning. when new node comes online, its dumb; it gets aquinted to cluster. bootstraping: start copying data from seed nodes. it has two coloumn families: schema coloumn family, migration coloumn family
+
+seed nodes: they are not master node. they have responsibility to provide data to other nodes.
+
+after writing to commit log, data is written into memtable( data structure not file ); once data reaches threshold level, data is written to sstable( file on disk ). if we run compaction, multiple sstables are merged into single sstable, older ones are deleted. read op will read from memtable, then to sstables. timestamp associated with coloumn decides which sstable is latest.
+tombstone: soft deleted data. deletion is expensive for cassandra, so deletion of records happens after some time. tomb stones are garbage collected after this time or during compaction
+
+read only compaction happens while reading merging of keys happen.major compaction is in-memory process, sstables are loaded into memory: resource intensive process, should be kept low priority. increase read performance.
+
+bloom filter can give false positive, but no false negatives; cache stores which sstable shold be read/ write to. each sstable has associated bloom filter, which can be queried to get row.
+
+load balancing handled by partitioner. 
+snitch: which nodes are nearer to me. types: simple, dynamic, rack inferring snitch
+
+anti entropy: singleton service; replica synch mechanism, ensuring data is correctly replicated to other nodes. nodes exchange merkel trees during compaction to neighbours. only differece is detected and applied.
+
+read repair: when read consistency is kept high, data will be fetched from all replicas, compared and with latest timestamp will be returned. meanwhile anti entropy service will be called to sync data. 
+
+follow SEDA( stage event driven arch )
+each stage has associated queue and thread pool to handle tasks.
+
+services:
+cassandra daemon, storage service, messaging service, hinted handoff manager
+
+cassandra doeson't support: group by,order by,count,sum,ifnull,concat ,joins and some times nested querys"
+cassandra moved from thirft RPC to CQL based protocol
+in coloumn we can use set, list, map
+
+compound primary key: partition key + cluster keys
+eg: ((C1, C2,…), (C3,C4,…))
+partitioner computes hash value of partition key, which determines partition containing row.
+cluster key: store row data in a sorted order.
+Cassandra stores only one row for each partition key. All the data associated with that partition key is stored as columns in the datastore. All the data that is inserted against same clustering key is grouped together.
+
+**resources**
+https://academy.datastax.com/planet-cassandra/making-the-change-from-thrift-to-cql
+primary key ( or row key ) vs partition key
+https://dzone.com/articles/cassandra-data-modeling-primary-clustering-partiti
+
+**questions**
+~~diff b/w table and coloumn famly~~
+	both are same
+~~how to use regex in where ~~
+	no
+how to use coloumns in where when its not indexed
+
+dynamic coloumns how to?
+	cql doesn't allow this, but we can lists, set, map etc.
+	
+does data gets sharded and replicated to each node? how diff from master slave
+how to use bloom filter 
+ui inteface, is there http api
+when compaction happens, merged sstables are sent to neighbours or compaction is triggered there too.
+
+why cassandra is always on arch
+	not because every node contains replicated data. each node can act as coordinator, coordinator acts as proxy between client and owner node. if owner node is down, keys are stored in other nodes with hint.
+	
+can peer 2 peer can become bottleneck in cassandra
+how transactions are handled by cassandra		
+
+what info is stored in commit log
+is response  returned only after wrinting to memtable, replicating to quorum nodes
+
+SSTable internals:
+http://distributeddatastore.blogspot.com/2013/08/cassandra-sstable-storage-format.html
+
+
+
+**todo**

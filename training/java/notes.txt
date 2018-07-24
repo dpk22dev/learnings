@@ -9,3 +9,27 @@ Arrays.toString( oneDArr )
 Arrays.deepToString( twoDArr )
 arrays.equals( nA1, nA2 )
 arrays.sort( a1 )
+
+use "abc".equals( str ) // wont throw null pointer exc
+str.equals("abc") // can throw null pointer exception when str can be null
+
+overriding equals helps in equality checking in arraylist  contains func, but it can still fail in hashset; it will store multiple objects -> need to override hashcode too
+if bussiness wise two objects are same using equals they should be using hashcode too
+
+== checks reference are equals for objects ==
+equals call overridden method, checks acc to your logic
+
+immutable object return clone of private variable/instance instead of reference
+
+Byte b = Byte.valueOf( (byte) 65); uses static factory pattern. it creates 256 different byte objects and caches them; it returns same byte object
+
+List<?> list of unknown type; List<Object> list of any object type
+
+CyclicBarrier, fork-join can be used as map reduce kind of task
+
+because static methods are bound to class during compile time binding, it can not be overridden; it is hidden; 
+https://javarevisited.blogspot.com/2013/03/can-we-overload-and-override-static-method-java.html
+
+volatile provides atomicity for long, double; read consistency among threads
+
+

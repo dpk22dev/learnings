@@ -22,6 +22,8 @@ when want to find diff at bit level, we can store kind of inverted index of each
 depth vs height of tree
 https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height
 
+when need to update value in tree, get diff keep on applying downwards. eg: segment tree
+
 BITree
 https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a
 

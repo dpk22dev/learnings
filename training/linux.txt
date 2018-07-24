@@ -17,6 +17,9 @@ linux device drivers
 
 https://unix.stackexchange.com/questions/84069/what-is-a-device-controller-and-where-does-it-fit-in-between-the-kernel-and-the
 
+**compilation, loading + linking and good stuff**
+http://www.tenouk.com/cncplusplusbufferoverflow.html
+
 upstart is for linux
 
 lvs: linux virtual server is used for load balancing among services
@@ -275,3 +278,4 @@ writing firmware,
 firmware vs device driver
 how firmware tells os about devices
 what is scatter/gather io
+

@@ -136,6 +136,7 @@ AbstractMap.SimpleImmutableEntry<Integer, String> entry = new AbstractMap.Simple
 **inner vs static inner class java**
 https://www.geeksforgeeks.org/static-class-in-java/
 https://stackoverflow.com/questions/253492/static-nested-class-in-java-why
+https://javarevisited.blogspot.com/2012/12/inner-class-and-nested-static-class-in-java-difference.html
 
 https://stackoverflow.com/questions/21974361/what-java-collection-should-i-use
 arraylist: dynamic array, indexed so insertion/updation O(n), search O(1); not thread safe
@@ -167,6 +168,27 @@ https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view
 
 **reads**
 https://javarevisited.blogspot.com/?merchantID=53701
+
+**references**
+https://www.youtube.com/user/javaboynavin/playlists
+
+**interview questions links**
+https://javarevisited.blogspot.com/2015/10/133-java-interview-questions-answers-from-last-5-years.html
+https://javarevisited.blogspot.com/2018/07/top-30-java-phone-interview-questions.html#more
+https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-questions-answers.html
+
+synchronized in detail
+https://stackoverflow.com/questions/2779484/why-must-wait-always-be-in-synchronized-block
+Today, your first choice should be atomic variable, followed by volatile variable if your synchronization requirement is satisfied by using them. Only if you need mutual exclusion you can consider using ReentrantLock followed by plain old synchronized keyword.
+
+java multithreading
+https://www.ibm.com/developerworks/java/tutorials/j-threads/j-threads.html
+https://howtodoinjava.com/java-concurrency-tutorial/
+
+concurrency vs parallelism
+Concurrency means multiple tasks which start, run, and complete in overlapping time periods, in no specific order. Parallelism is when multiple tasks OR several part of a unique task literally run at the same time, e.g. on a multi-core processor. 
+https://howtodoinjava.com/core-java/multi-threading/concurrency-vs-parallelism/
+http://www.vogella.com/tutorials/JavaConcurrency/article.html
 
 **questions**
 https://stackoverflow.com/search?q=core+java
@@ -221,9 +243,17 @@ Predicate<String> isEmptyP = String::isEmpty; ← how is it possible, isEmpty wo
 how streams are internally implemented, benefit of using functional prog/streams
 	splititerator, divide and conquer
 diff b/w error, exception; checked vs unchecked exception
+how biginteger and bigdecimal are really stored
+
+CustomBlockQ  can we synchronize on this, q.wait
+threadlocalex why static method is giving correct output
+castingex casting concepts are not clear
+
+https://howtodoinjava.com/java-concurrency-tutorial/
+after wait-notify
 
 **todo**
-after https://www.javatpoint.com/ioc-container
+~~after https://www.javatpoint.com/ioc-container~~
 https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view
 https://github.com/in28minutes/interview-guide
 https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view 144
@@ -232,9 +262,18 @@ https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view 144
 
 ~~java lang~~
 ~~design patterns~~
-guides
-spring pdf
+~~guides~~
+~~spring pdf~~
+java nio
+pattern matching
 
+**books to read**
+https://javarevisited.blogspot.com/2015/10/133-java-interview-questions-answers-from-last-5-years.html
+till 82 -  101
+https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-questions-answers.html
+12
+
+https://www.hackerrank.com/interview/interview-preparation-kit
 
 specs 10:
 	chap5 conversions
@@ -245,11 +284,13 @@ specs 10:
 	threads and lock 563
 jvm specs:
 	go through after 32
+java concurrency in practice - brian goetz
+
 
 **code try**
 bitwise ops
-floats, chars in depth
-experiments with collections array, complex data structure insert/update/delete/search/ equality and comparison, enums: enumsets etc, simple dp questions
+~~floats, chars in depth~~
+~~experiments with collections array, complex data structure insert/update/delete/search/ equality and comparison, enums: enumsets etc, simple dp questions~~
 custom bst: recursive pointers
 writing native methods
 annotation

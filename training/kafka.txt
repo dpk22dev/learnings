@@ -12,7 +12,8 @@ https://content.pivotal.io/blog/understanding-when-to-use-rabbitmq-or-apache-kaf
 user: kafka
 pass: times41!
 
-installed on /opt/kafka/kafka_2.11-1.1.0/bin
+installed on /opt/kafka
+cd /opt/kafka/kafka_2.11-1.1.0/
 run zookeper: ./bin/zookeeper-server-start.sh config/zookeeper.properties
 ./bin/kafka-server-start.sh config/server.properties
 
@@ -26,6 +27,9 @@ run zookeper: ./bin/zookeeper-server-start.sh config/zookeeper.properties
 
 
 use kafka manager
+cd /opt/kafka-manager/target/universal/kafka-manager-1.3.3.17
+./bin/kafka-manager -Dkafka-manager.zkhosts="localhost:2181"
+
 
 running kafka using command line
 http://cloudurable.com/blog/kafka-tutorial-kafka-from-command-line/index.html
@@ -36,6 +40,9 @@ maintaining membership in the group is handled by the Kafka protocol dynamically
 there is auto distribution of partition ownership among consumers 
 zookeeper: required for comm among brokers
 Kafka REST Proxy provides a RESTful interface to a Kafka cluster as kafka doesn't provide rest api on its own
+
+kafka arch
+https://thehoard.blog/how-kafkas-storage-internals-work-3a29b02e026
 
 quesitons:
 how number of partitions are decided, can they be cahnged later on

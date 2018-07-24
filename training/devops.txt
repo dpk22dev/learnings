@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-09T12:14:47+05:30
+
+====== devops ======
+Created Monday 09 July 2018
+
+https://www.edureka.co/blog/chef-vs-puppet-vs-ansible-vs-saltstack/

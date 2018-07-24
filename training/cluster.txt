@@ -1,0 +1,69 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-02T17:52:44+05:30
+
+====== cluster ======
+Created Monday 02 July 2018
+
+http://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/
+https://en.wikipedia.org/wiki/Consensus_(computer_science)
+
+distributed computing
+https://www.youtube.com/watch?v=yjPBkvYh-ss
+
+Examples of applications of consensus include whether to commit a transaction to a database, agreeing on the identity of a leader, state machine replication, and atomic broadcasts.
+
+2 or 3PC used in distributed database systems for commit/abort transactions
+2PC is blocking while 3PC puts timeout, frees locks/resources on timeout at least 
+The Three-Phase Commit protocol as a fail-stop model that is able to prevent blocking problem or processes crashing and recover data and dependencies back to original state. Crashes can be detected accurately. If only coordinator fails, cohorts can communicate and know that transaction replied ok to be commited on each cohorts and everyone commits or aborts otherwise. However, the 3PC protocol will not work with network partitions or asynchronous communication. 
+
+for network failure recovery enhanced three-phase commit (E3PC) protocol is used to eliminate.
+
+split brain
+http://techthoughts.typepad.com/managing_computers/2007/10/split-brain-quo.html
+
+resouce fencing/ node fencing: STONITH - shutdown or kill
+quorum
+
+as per discussion, sync or async replication can be done on both acid/base databases; for fully ACID in cluster we need to write sync to every machine. base databases don't provide atomicity even on single machine but ACID databases do. 
+in cluster we don't create multiple masters who can write to data consistently, there is one master for shard who writes and replicates to other machine. another master writes to its shard and replicates to other machines. it depend on settings whether to write to all/quorum number of machines for read/write consistency.
+generally people use sharding of data,write is sync to master and its 2 replicas — used for transaction, master writes async to replication — used for reporting/analytics; for transactions amount is first debited and then credited; if at some step failure occurs application logs it and retries.
+
+
+
+**questions**
+can split brain happen in any cluster, be it acid / base
+how is network failure different from system failure
+	network failure cause partitioning, different subclusters can still operate with quorum; but system failed doesn't participate in quorum. 
+
+if we use 2PC in master-master and what happens if final messsage to commit/rollback is lost? is data corrupt?
+or machine down: things are not even logged.
+what if coordinator fails? 
+
+what makes 3PC better than 2PC
+https://stackoverflow.com/questions/21424962/how-does-three-phase-commit-avoid-blocking
+
+are two logs written undo, redo logs due to 3PC
+after 3PC: for read/write is it like coordinator knows which cohorts have commited and requests are transfereed to them by coordinator
+
+is master slave replication 
+is multi master repl
+why consensus quorum is used
+why split brain happens
+is 3pc enough for base 
+is it like master is for writing and slave is for replication only
+in true cluster, is quorum just used for finding coordinator
+why split brain happens, is it just name for network partitioning
+does taking write concern of n/2+1 makes cluster consistent, 
+can it happen in m_m if network partitioning happen; data corruption scenario
+is paxos, raft used just for quorum
+
+in GFS, is file written to multiple chunk servers
+	i think yes
+
+what is load hotspot
+are how tablets are stored, are they stored as gfs file/chunks
+	not able to understand correspondence b/w gfs and tablets
+what if row size is greater than tablet size
+how/why rpc is used between nodes
+

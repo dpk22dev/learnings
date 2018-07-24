@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-07T08:55:22+05:30
+
+====== software architecture ======
+Created Saturday 07 July 2018
+
+**process:**
+1) **constraints and use cases**
+how much users, custom user input, automation of system, uptime / high availability, analytics required, UI vs api, SEO, 
+traffic: how hits are distributed, flash/consistent loads
+=> reach per sec values
+computation: amount of data system should work with, increase over time
+=> find write/sec, read/sec
+consider avg, worst cases 
+
+for numbers get ref from biggies like users on fb/twitter/google, requests per sec, etc
+
+2) **abstract design**
+create components and connections, don't get into low level or tools required to do it: just overview	
+
+3) **understanding bottlenecks**
+are requests per sec is huge, computation/momory requirements for generating result, io required b/w app and database, 
+
+4) **scaling:**
+high availability using redundancy/ resilience to failure, spiky traffic: load balancer after some load tests
+apply tools and technologies
+
+
+__questions__
+big table vs micro services

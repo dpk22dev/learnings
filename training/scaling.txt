@@ -57,8 +57,14 @@ bugsnag: for tracking bugs/crashes in application server or client( mobile/web )
 **google products over time:**
 GFS (2002), MapReduce (2004), BigTable (2006), Borg (2006), Pregel (2008), Colossus (2010), FlumeJava (2012), Dremel, Spanner.
 
+GFS: read only, append only file system, systems can fail: relaxed consistency
+https://storage.googleapis.com/pub-tools-public-publication-data/pdf/035fc972c796d33122033a0614bc94cff1527999.pdf
 
 
+SSTable stands for Sorted Strings Table a concept borrowed from Google BigTable which stores a set of immutable row fragments in sorted order based on row keys.	
+
+scaling different services:
+https://www.hiredintech.com/classrooms/system-design/lesson/61
 
 __todo__
 api how to and integration with social networking sites
@@ -94,6 +100,10 @@ explore amazon cloud services
 accurate timing methods and usage in computers
 bird internet routig
 toxiproxy, semian
+https://www.youtube.com/watch?v=CZ3wIuvmHeM
+http://highscalability.com/google-architecture
+
+netflix zuul, hystrix
 
 __questions__
 which one is better having single table/ multiple partitioned tables with 0-9 indexes/ table per user — is there a problem for large number of tables

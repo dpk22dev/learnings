@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-17T22:25:29+05:30
+
+====== microservices ======
+Created Tuesday 17 July 2018
+
+https://dzone.com/articles/microservices-with-spring-boot-part-1-getting-star
+
+boundries of services is not well defined; logs are distributed across multiple machines; difficult to debug an find problem -> requires whole system understanding sometimes
+i guess resource requirement is higher
+
+distributed keystores used in microservices
+https://stackoverflow.com/questions/48635782/zookeeper-vs-eureka-for-microservices
+
+todo
+
+questions
+how does system testing happen across services
+how does session like storages shared among services
+how dependent changes are deployed across microservices: CD/CI

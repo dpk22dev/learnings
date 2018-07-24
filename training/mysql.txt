@@ -178,6 +178,21 @@ in memory cluster are not good, as whole DB should be in RAM
 
 **why scaling using shrding is bad**
 https://www.stratoscale.com/blog/dbaas/scaling-mysql-sharding-bad-idea/
+http://www.25hoursaday.com/weblog/2009/01/16/BuildingScalableDatabasesProsAndConsOfVariousDatabaseShardingSchemes.aspx
+http://www.addsimplicity.com/adding_simplicity_an_engi/2008/08/shard-lessons.html
+
+mysql vs postgressql
+https://wiki.postgresql.org/wiki/Why_PostgreSQL_Instead_of_MySQL:_Comparing_Reliability_and_Speed_in_2007
+
+querying one column when multiple columns are indexed
+https://stackoverflow.com/questions/1865423/index-with-multiple-columns-ok-when-doing-query-on-only-one-column
+
+**info about mysql**
+lsof -nc mysqld | grep -vE '(.so(..*)?$|.frm|.MY?|.ibd|ib_logfile|ibdata|TCP)'
+
+how data is stored on disk
+https://stackoverflow.com/questions/864899/how-is-data-stored-in-sql-server
+https://stackoverflow.com/questions/2023481/mysql-large-varchar-vs-text
 
 __todo__
 docs read after: https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html
@@ -210,6 +225,5 @@ how replication works
 mysql in cluster
 geo distance sample data and methods
 
-
-
+what will happen if want to increase number of masters in cluster
 

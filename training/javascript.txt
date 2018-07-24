@@ -138,6 +138,9 @@ it looks like SOP is to block reading doc/ executing script from diff domain, bu
 
 https://stackoverflow.com/questions/9185630/find-out-the-line-row-number-of-the-cursor-in-a-textarea
 
+**interview js questions**
+https://www.codementor.io/nihantanu/21-essential-javascript-tech-interview-practice-questions-answers-du107p62z
+
 __** todo **__
 angular, jasmine
 
@@ -159,7 +162,7 @@ why commonjs, underscorejs, reactjs, promises etc..
 should we use grunt
 where and how can we use currying
 self vs this in javascript, when should we use self
-how jsso login works
+~~how jsso login works~~
 
 how mocking, datadependency injection is done in mocha
 javascript memory management layout

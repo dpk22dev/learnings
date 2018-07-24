@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-09T12:13:08+05:30
+
+====== tools ======
+Created Monday 09 July 2018
+
+configuration management
+orchestration
+monitoring
+deploying
+different languages
+app servers
+database servers
+cache servers
+data science, big data
+hardware

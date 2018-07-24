@@ -20,6 +20,11 @@ local.elk.com
 u: kibanaadmin
 p: kibanaadmin
 
+on local:
+/usr/share/elasticsearch/
+/var/lib/elasticsearch/
+http://localhost:5601
+
 installation of elk on ubutnu
 https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
 systemctl issue with elastic search
@@ -51,11 +56,22 @@ https://blog.insightdatascience.com/anatomy-of-an-elasticsearch-cluster-part-ii-
 crashing es
 https://www.elastic.co/blog/found-crash-elasticsearch#mapping-explosion
 
+source code:
+https://www.elastic.co/blog/found-elasticsearch-internals
+https://medium.com/@passpied/a-reading-of-elasticsearch-source-code-56d172972783
+
+
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
 
+a shard is a single instance of Lucene, and is a complete search engine in its own
+right. Our documents are stored and indexed in shards, but our applications don’t
+talk to them directly. Instead, they talk to an index.
+
 **es cluster**
-es master slave arch is not there. master only node contains meta data for shards, data nodes contains actual data.
+es master slave arch is not there. master only node contains meta data for shards, data nodes contains actual data. master is incharge of cluster wide changes, adding/removing index etc. document level changes are handled by individual nodes.
+
+es uses optimistic concurrency control, user has to decide based on old _version, new _version of document. if we pass _version with query, es will tell us if document has already been updated by other or not.
 
 /index/type/id
 PUT [[/college/student/1?version=3]] -d{  ... } if we change older version it will returen 409 conflict
@@ -73,6 +89,8 @@ sem must be present, need % encoding also
 
 [[/college/student/_mapping]] gives info of schema; datatype for each field
 we can update mapping by just PUT new json object for mapping, but we can't change existing fields
+
+full text search searches individual words, phrase search searches group of words or phrase
 
 process:
 tokenization: for full text search, it gets separated words/terms from document, sorts them, create DS like how many times term appears in that document
@@ -213,11 +231,24 @@ we can use _analyze to try out various analyzers.
 we we insert data elastic uses standard analyzer for full text serch, we can use mapping to change analysis.
 each document in an index has a type. Every type has its own mapping, or schema definition. A mapping defines the fields within a type, the datatype for each field, and how the field should be handled by Elasticsearch. A mapping is also used to configure metadata associated with the type.
 
+query can be run in contexts: filter context, query context
 Query clauses are simple building blocks that can be combined with each other to create complex queries.
 Leaf clause: match
 Compound clause: bool, must, nust_not, should
+each context can have compound/leaf clauses
 
 When used in filtering context, the query is said to be a "non-scoring" or "filtering" query. When used in a querying context, the query becomes a "scoring" query.  it also determines how well does the document matches.
+
+since search API accepts only a single query parameter, so we need to wrap the query and the filter in another query, called the filtered query.
+GET /_search
+{
+	"query": {
+		"filtered": {
+			"query": { "match": { "email": "business opportunity" }},
+			"filter": { "term": { "folder": "inbox" }}
+		}
+	}
+}
 
 /_validate/query can be used to check if query is valid, ?explain gives reason for invalidation
 
@@ -328,6 +359,18 @@ It is important to understand that term and terms are contains operations, not e
  the match or query_string queries are high-level queries that understand the mapping of a field. if you use it against date/integer field it will use input query string as date/integer field, if used against not_analyzed field it will use input query string as single term; if used against field having analyzed mapping, it will pass query string through appropriate analyzer and do full text search
 
 should field is used for scoring, we can apply boost to some term in query
+analyzer contains: character filter, tokenizer, token filter
+
+for array of objects, correlation between objects is lost; beacuase array is considered just bag of values
+
+preload fielddata: es uninverts the inverted index into memory for all documents for easy sorting, agg, geolocaiton filters, scripts
+
+for lucene inverted index is of opaque bytes, it doesn't see string, numbers etc. type name is stored in _type metadata field. Lucene also has no concept of mappings. Mappings are the layer that Elasticsearch uses to map complex JSON documents into the simple flat documents that Lucene expects to receive.	 
+
+you don’t run into these conflicts, it is advisable to ensure that fields with the same name are mapped in the same way in every type in an index
+
+**new in es6:**
+multiple types in index not allowed
 
 __quest__
 ~~bool, term, filter~~
@@ -340,6 +383,8 @@ __quest__
 ~~how to remember and which query should be used~~
 ~~how is json key value pair stored; what happens to key~~
 TF vs IDF
+is term count done in queried field or all fields
+
 internals of index sharded, how lucene indexing happens for inverted index
 	
 	~~it looks like based on hash of _id of doc we can find shardId; but how is inverted indexes stored then~~
@@ -356,9 +401,15 @@ when we should use nested objects or parent-child relationships
 __todo__
 ~~after normalizing tokens~~
 read about how lucene stores data
+es definitive guide: book after 149
 
 __questions__
 es disk usage issues handling
+why during partial updates, sending just partial docs to replicas can caus data corruption, but full document doesn't
+new in es6
+how inverted index is stored in lucene internally
+does updating document causes reindexing of document sync
+
 
 ********************************* solr *************************************
  adding documents to Solr, you need to specify the schema, represented in a file called schema.xml.

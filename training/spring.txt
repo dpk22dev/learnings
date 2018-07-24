@@ -8,6 +8,9 @@ Created Wednesday 28 February 2018
 for packages, class heirarchies:
 https://docs.spring.io/spring-framework/docs/5.0.5.BUILD-SNAPSHOT/javadoc-api/overview-summary.html
 
+full spring doc
+https://docs.spring.io/spring-boot/docs/current/reference/html/index.html
+
 maven wrapper
 mvn -N io.takari:maven:wrapper
 
@@ -23,6 +26,33 @@ Meta-annotations can also be combined to create composed annotations. eg: @RestC
 The Environment is an abstraction integrated in the container that models two key aspects of the application environment: profiles and properties.
 http://www.techferry.com/articles/spring-annotations.html
 
+@componentscan 
+com.ex.hello will scan for components, beans in current package/sub-package eg com.ex.hello.p1, com.ex.hello.p2 but not com.ex.meow
+
+https://www.youtube.com/watch?v=jDchAEHIht0 explains writing spring boot starter project
+getting started with spring boot: https://www.youtube.com/watch?time_continue=3&v=aA4tfBGY6jY
+
+beans are created in userconfiguration, autoconfiguration phases; autoconfiguration phase creates/overrides spring beans based on how starter project is created
+properties need to be handled by starter project developer which shall be provided by application developers; custom validation annotation can be created in starter project
+
+autoconfiguration report tells what and why different autoconfigurations were processed, shown in debug project
+custom failure analyzer can be written in starter project to hide lots of errors to developers, showing relevant errors in better way
+
+what are beans: https://stackoverflow.com/questions/17193365/what-in-the-world-are-spring-beans
+
+you can use Spring’s integration with AspectJ to configure objects that have been created outside the control of an IoC container.
+
+you can write dependencies, constructor args of beans in their config files. graph of beans is created and exception is raised in constructor injected beans; setter injected beans are ok with this.
+for setter beans
+<property name="beanOne"><ref bean="anotherExampleBean"/></property>
+
+for constructor beans
+<constructor-arg><ref bean="anothherExampleBean"/></constructor-arg>
+
+in spring boot2.0
+reactive spring stack, tries to bring node style non blocking api using flux to java, good for handling large number of requests, interaction with db async, internal server calls
+uses servlet 3.0 async api, uses netty instead of tomcat
+
 **diff b/w spring spring boot and spring components**
 https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare
 
@@ -34,13 +64,52 @@ https://github.com/spring-projects/spring-data-redis
 **DTO vs entity**
 https://stackoverflow.com/questions/39397147/java-difference-between-entity-and-dto
 
+debugging spring boot app
+https://stackoverflow.com/questions/24113939/how-to-debug-spring-boot-application-with-eclipse
+
+using rabbitmq with spring
+https://reflectoring.io/event-messaging-with-spring-boot-and-rabbitmq/
+
 **questions**
-role of @configuration
 entity confusion in onetomany and manytoone mapping
 why  few exteded functions/overriding in repositoryy
 what is spring boot wrapping
 how binding among multiple projects/modules done as in sagan
+are the guides enough
+can annotations be extended, they say @springapplication consists of @componentscan, @enableautoconfig etc, how its done
+what is opinion, aspect
+how is testing different froom phpunit, does it include funcitonal, other tests
+what does spring factory in META-INF under resources do, eg for autoconfiguration
+how annotations are processed, 
+order of exec
+	- there is order of execution, how?
+how ordering of beans creation in autoconfiguration
+what is actuator, archetype
+should we commit .mvn, mvnw files etc? what files should be left out
+workign of JPA, repository
+using DTO as bean
+debugging with browser request
+custom query of usercredentialsrepository causing cyclic dependency
+how common module is used in others
+template service: replacable kind of service, @configuration
+Not able to put @component over enum
+have you use commandrunner for different jobs
+should we use entity and repos, dtos acc to clients in different packages
+dependencymanagement vs dependencies tag in spring
 
+**todo:**
+docs: https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html
+after Dependencies and configuration in detail
+
+new in spring 2.0: https://www.youtube.com/watch?v=TasMZsZxLCA
+TDD: https://www.youtube.com/watch?time_continue=6&v=s9vt6UJiHg4
+
+spring thymeleaf, jpa methods
+using cloud starter config, 
+common 
+
+**refrences**
+https://www.youtube.com/user/javaboynavin/playlists
 
 
 
