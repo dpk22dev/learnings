@@ -83,6 +83,9 @@ Functional Interface lets us call an object as if it were a function, which lets
 **streams **
 http://winterbe.com/posts/2014/03/16/java-8-tutorial/
 http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
+https://zeroturnaround.com/rebellabs/java-8-streams-cheat-sheet/
+http://files.zeroturnaround.com/pdf/zt_java8_streams_cheat_sheet.pdf
+
 
 **blocking vs nonblocking vs async**
 https://stackoverflow.com/questions/2625493/asynchronous-vs-non-blocking
@@ -132,6 +135,8 @@ String value = entry.getValue();
 
 AbstractMap.SimpleImmutableEntry<Integer, String> entry = new AbstractMap.SimpleImmutableEntry<>(1, "one");
 
+permutaions of array 
+https://stackoverflow.com/questions/24460480/permutation-of-an-arraylist-of-numbers-using-recursion
 
 **inner vs static inner class java**
 https://www.geeksforgeeks.org/static-class-in-java/
@@ -180,15 +185,49 @@ https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-
 synchronized in detail
 https://stackoverflow.com/questions/2779484/why-must-wait-always-be-in-synchronized-block
 Today, your first choice should be atomic variable, followed by volatile variable if your synchronization requirement is satisfied by using them. Only if you need mutual exclusion you can consider using ReentrantLock followed by plain old synchronized keyword.
+synchronized block ensures that variable is read from memory instead of cache
 
-java multithreading
+using unsafe class can be used for operations on native memory
+
+writing to normal long, double is not atomic, volatile ensures this atomicity plus writes written by one thread are visible to other threads; but doesn't stop two trheads to read same value and doing i++, this operaation is not atomic, for this we need to use atomic
+https://stackoverflow.com/questions/19744508/volatile-vs-atomic
+
+java 8 collectors
+https://www.baeldung.com/java-8-collectors
+creating custom collector
+http://www.deadcoderising.com/2017-03-07-java-8-creating-a-custom-collector-for-your-stream/
+
+**java multithreading**
 https://www.ibm.com/developerworks/java/tutorials/j-threads/j-threads.html
 https://howtodoinjava.com/java-concurrency-tutorial/
+http://tutorials.jenkov.com/java-concurrency/index.html
+http://tutorials.jenkov.com/java-util-concurrent/index.html
+
+other concurrency resources:
+https://docs.oracle.com/javase/tutorial/essential/concurrency/
+https://baptiste-wicht.com/posts/2010/05/java-concurrency-part-1-threads.html
+http://www.periodicooficial.oaxaca.gob.mx/files/2011/05/EXT02-2011-05-19.pdf
 
 concurrency vs parallelism
 Concurrency means multiple tasks which start, run, and complete in overlapping time periods, in no specific order. Parallelism is when multiple tasks OR several part of a unique task literally run at the same time, e.g. on a multi-core processor. 
 https://howtodoinjava.com/core-java/multi-threading/concurrency-vs-parallelism/
 http://www.vogella.com/tutorials/JavaConcurrency/article.html
+
+cleaning thread locals
+https://stackoverflow.com/questions/3869026/how-to-clean-up-threadlocals
+
+finding currently running java threads: use jps, jstack
+https://stackoverflow.com/questions/9934517/how-to-find-a-java-thread-running-on-linux-with-ps-axl
+
+tuning java on VM
+https://www.youtube.com/watch?v=zwBLgQ1_WuE
+
+troubleshooting java application: comparison of tools jmap, jhat, jconsole, jvisual, new relic
+https://www.youtube.com/watch?v=mzT7etWjj0Q
+
+heap analylsis:
+https://www.javaworld.com/article/2072864/heap-dump-and-analysis-with-visualvm.html
+JMX server gets metrics info from mbeans, Jconsole connect to JMX server to show info/change mbeans behaviour. JvisualVM can install jconsole as extension for above functionality.
 
 **questions**
 https://stackoverflow.com/search?q=core+java
@@ -244,13 +283,33 @@ how streams are internally implemented, benefit of using functional prog/streams
 	splititerator, divide and conquer
 diff b/w error, exception; checked vs unchecked exception
 how biginteger and bigdecimal are really stored
+why long sum = 0L;
+sum += (long)(ia) * (ic);  overflows but casting to long doesn't
 
 CustomBlockQ  can we synchronize on this, q.wait
 threadlocalex why static method is giving correct output
 castingex casting concepts are not clear
 
-https://howtodoinjava.com/java-concurrency-tutorial/
-after wait-notify
+~~why :: in below~~
+~~Stream.of(arr)~~
+	~~.forEach( System.out::println );~~
+~~asList method working: why internal implem works with a~~
+~~.toArray(Integer[]::new);~~
+~~while using streams can we get stuck, where can't get out of~~
+~~diff b/w ~~
+~~.collect( Collectors.toList() );~~
+~~.collect( Collectors.toCollection(HashSet::new) )~~
+~~Stream<String> sb = Stream.<String>builder().add("5").build();~~
+~~custom collector~~
+~~https://howtodoinjava.com/java-concurrency-tutorial/~~
+~~after wait-notify~~
+
+linkedlist of hashmap
+unsafe.get unsafe meaaning in atomic classes
+why marker interfaces like cloneable, serializable are used
+how sleep, wait notify natively implemented and how their excpeitons can be thrown in c and caugth in java
+/apps/my-builds/java/code101/src$ java code101.DumpOne -Xms6M -Xmx16M -XX:MaxPermSize=1G -XX:PermSize=512M why not getting out of memory
+is is necessary to know every bin/ or some are enough, remote debugging/profiling how is it done
 
 **todo**
 ~~after https://www.javatpoint.com/ioc-container~~
@@ -266,6 +325,9 @@ https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view 144
 ~~spring pdf~~
 java nio
 pattern matching
+understand fairness lock code
+heap dump analyliss tutorial: analyse deadlock with it
+why its not 
 
 **books to read**
 https://javarevisited.blogspot.com/2015/10/133-java-interview-questions-answers-from-last-5-years.html
@@ -285,7 +347,8 @@ specs 10:
 jvm specs:
 	go through after 32
 java concurrency in practice - brian goetz
-
+read after http://tutorials.jenkov.com/java-concurrency/locks.html
+http://tutorials.jenkov.com/java-util-concurrent/index.html
 
 **code try**
 bitwise ops
@@ -295,3 +358,28 @@ custom bst: recursive pointers
 writing native methods
 annotation
 floating point calcs
+
+java verify that multiple threads increment same counter using synchronised on this, string object
+sort using  multiple threads, merge them using single thread
+try map, filter,collect on streams using different ds
+throttling threadpool exeecutor
+can we connect multiple pipedreaders to single pipedwriter
+
+
+concurrent questions:
+diff b/w join in different loop vs multiple time join
+mapping between OS model and jvm model of thread and memory
+	jvm process's stack and heap vs thread's stack and heap
+	what happens in case of OS paging, specially in case of heaps
+http://tutorials.jenkov.com/java-concurrency/volatile.html what good is happens before
+how wait/notify implemented nativally
+does jvm creates single object using new Object same as done for String str = ""; can it cause problem with notify on waiting
+how atomic in java provides safety it just uses native method to write content
+why atomicops is giving correct answer
+~~why sumthreads is able to access private members~~
+why kafka producer is not running
+
+try clone method
+https://www.cs.carleton.edu/faculty/dmusican/cs348/java_multi/#sec-1
+
+if joining on multiple threads large thread is 

@@ -33,6 +33,7 @@ generally people use sharding of data,write is sync to master and its 2 replicas
 
 **questions**
 can split brain happen in any cluster, be it acid / base
+	any cluster
 how is network failure different from system failure
 	network failure cause partitioning, different subclusters can still operate with quorum; but system failed doesn't participate in quorum. 
 
@@ -46,13 +47,13 @@ https://stackoverflow.com/questions/21424962/how-does-three-phase-commit-avoid-b
 are two logs written undo, redo logs due to 3PC
 after 3PC: for read/write is it like coordinator knows which cohorts have commited and requests are transfereed to them by coordinator
 
-is master slave replication 
-is multi master repl
-why consensus quorum is used
+~~is master slave replication ~~
+~~is multi master repl~~
+~~why consensus quorum is used~~
 why split brain happens
-is 3pc enough for base 
-is it like master is for writing and slave is for replication only
-in true cluster, is quorum just used for finding coordinator
+~~is 3pc enough for base ~~
+~~is it like master is for writing and slave is for replication only~~
+~~in true cluster, is quorum just used for finding coordinator~~
 why split brain happens, is it just name for network partitioning
 does taking write concern of n/2+1 makes cluster consistent, 
 can it happen in m_m if network partitioning happen; data corruption scenario
@@ -66,4 +67,42 @@ are how tablets are stored, are they stored as gfs file/chunks
 	not able to understand correspondence b/w gfs and tablets
 what if row size is greater than tablet size
 how/why rpc is used between nodes
+
+**************************
+what exactly happens during locking, how is it maintained — in memory or on disk
+	how is it implemented that collection level vs row level lock 
+
+what does oracle db provides that mysql doesn't in context of transactiosn
+
+while adding a  column, is table locked
+
+why mongodb/other no sql dbs doesn't provide transactions
+purpose of different config server and query router, 
+communication b/w config server and query router
+how MongoDB also uses the config servers to manage distributed locks.
+https://docs.mongodb.com/manual/core/sharded-cluster-config-servers/
+
+how rabbitmq stores data
+
+does es uses index for keys of inverted indexes
+
+does redis stores multiple sets, list different data structures: how disk backing is provided
+
+how kafka stores what consumer has read what data
+
+in what scenarios is it bad to use particular db
+
+
+grpah : neo4j internals
+redis how to use value as index
+using redis as locking of resources
+
+ehcache is java based: uses off-heap cache from OS, object is serialized from app to ehcache server; it deserializes, stores in cache. it has additional cost
+
+solr has global level cache for segments; in case of updation, cache gets invalidated
+no auto movement of shard; ranking of articles is better as compared to es, why?
+
+verify does mongodb auto rebalance shards?
+how aerospike handles secondry indexes?
+udf?
 

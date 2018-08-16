@@ -23,6 +23,7 @@ p: kibanaadmin
 on local:
 /usr/share/elasticsearch/
 /var/lib/elasticsearch/
+
 http://localhost:5601
 
 installation of elk on ubutnu
@@ -369,6 +370,9 @@ for lucene inverted index is of opaque bytes, it doesn't see string, numbers etc
 
 you don’t run into these conflicts, it is advisable to ensure that fields with the same name are mapped in the same way in every type in an index
 
+auto suggestor in es
+https://hackernoon.com/elasticsearch-building-autocomplete-functionality-494fcf81a7cf
+
 **new in es6:**
 multiple types in index not allowed
 
@@ -409,6 +413,10 @@ why during partial updates, sending just partial docs to replicas can caus data 
 new in es6
 how inverted index is stored in lucene internally
 does updating document causes reindexing of document sync
+how filter cache gets invalidated
+where mapping, analyzer info is stored
+where actual documents are stored
+how communication with repl works
 
 
 ********************************* solr *************************************

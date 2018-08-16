@@ -10,12 +10,17 @@ actors, responsibility, use case
 
 Creational Patterns
 These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new opreator. This gives program more flexibility in deciding which objects need to be created for a given use case.
+Abstract Factory, Builder, Factory Method, Object Pool, Prototype, Singleton
 
 Structural Patterns
 These design patterns concern class and object composition. Concept of inheritance is used to compose interfaces and define ways to compose objects to obtain new functionalities.
+Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Private Class Data, Proxy	
 
 Behavioral Patterns
 These design patterns are specifically concerned with communication between objects.
+Chain of responsibility, Command, Interpreter, Iterator, Mediator, Memento, Null Object, Observer,
+State, Strategy, Template, visitor
+
 
 diff b/w singleton and static methods
 http://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern
@@ -55,3 +60,4 @@ coffee: esspresso, milk, foam, water, choco or other toppings
 __questions__
 
 __todo__
+read samples on: https://codereview.stackexchange.com

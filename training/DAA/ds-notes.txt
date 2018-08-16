@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-08-06T08:27:04+05:30
+
+====== ds-notes ======
+Created Monday 06 August 2018
+
+if in intermediate step there is some arr of elements; and need for sorting to get result => consider traversing original array from right side, sometimes it saves sorting
+
+O(n2) -> O(n): keeping two arrays calculated data for left of array and right of array; then loop through each element to compute
+
+when comparing strings rabin-karp based hashcode can be useful; also for just comparing anagrams keeping charater frequency array can do comparison in O(1)
+
+in matrix chain multiplication kind of problems, we can create nxn matrix but don't use first column
+
+sometimes in DP eg: painters problem we jump to 3d array of 2ds, but 2D is enough,
+partitioning n tasks into k persons; minimizing over giving 1 to n tasks to 1 person and remaining tasks to k-1 persons
+minimizing over giving 1 to n tasks to x persons and remaining tasks to k-x persons, ultimately it boils down to same as above
+
+for representing number on two sides, we can have bit mask on left side, its negate will be on right hand side
+
+for buy/sell stock problem, keeping track of min, maxProfit while going left to right to ith element; keeping track of max, maxProfit while going right to left to ith element can be used to find 2 trades to get max profit
+
+
+**question repos**
+master repo for coding links: https://github.com/lnishan/awesome-competitive-programming
+c++ repo: https://github.com/Diusrex/UVA-Solutions 
+java repo: https://github.com/EgorKulikov/yaal/tree/master/lib/main/net/egork
+https://github.com/psjava/psjava/tree/master/src/main/java/org/psjava
+https://github.com/phishman3579/java-algorithms-implementation

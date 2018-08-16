@@ -29,4 +29,11 @@ how app will distribute writes to new master after quorum
 what problems can arise in cluster quorum: edge cases
 	writes when quorum is happening and master doesn't know about it
 	old master comes up and thinks it master
+are read-writes auto distributed
+does it use consistent hashing
+	no
+how list/set are distributed
+
+
+
 

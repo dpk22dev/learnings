@@ -167,3 +167,4 @@ self vs this in javascript, when should we use self
 how mocking, datadependency injection is done in mocha
 javascript memory management layout
 how javascript uses stack
+working of async, await

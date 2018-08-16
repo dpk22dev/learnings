@@ -7,6 +7,10 @@ Created Thursday 20 July 2017
 
 /opt/installs/apache-cassandra-3.11.2
 
+official site
+https://docs.datastax.com/en/cassandra/3.0/cassandra/initialize/initSingleDS.html
+cql
+https://docs.datastax.com/en/cql/3.3/cql/cql_using/useInsertList.html
 
 peer 2 peer arch: improve availablity, always online
 
@@ -56,6 +60,17 @@ partitioner computes hash value of partition key, which determines partition con
 cluster key: store row data in a sorted order.
 Cassandra stores only one row for each partition key. All the data associated with that partition key is stored as columns in the datastore. All the data that is inserted against same clustering key is grouped together.
 
+cqlsh
+Collection types cannot be nested, but frozen collection types can be nested inside frozen or non-frozen collections.
+
+If data already exists for the column, Cassandra indexes the data during the execution of this statement. After the index is created, Cassandra indexes new data for the column automatically when new data is inserted.
+
+composites:
+https://www.datastax.com/dev/blog/introduction-to-composite-columns-part-1
+
+
+https://www.datastax.com/dev/blog/lightweight-transactions-in-cassandra-2-0
+
 **resources**
 https://academy.datastax.com/planet-cassandra/making-the-change-from-thrift-to-cql
 primary key ( or row key ) vs partition key
@@ -88,6 +103,12 @@ is response  returned only after wrinting to memtable, replicating to quorum nod
 SSTable internals:
 http://distributeddatastore.blogspot.com/2013/08/cassandra-sstable-storage-format.html
 
-
+diff b/w various strategies
+what is snitch used for
+what is bloom filer used for
+how frozen and non-frozen coloumns are handled
+we set replication factor on tablespace; is that followed by all tables in it
+how indexes are created in it
 
 **todo**
+issues https://docs.datastax.com/en/dse-planning/doc/planning/planningAntiPatterns.html#AntiPatRack

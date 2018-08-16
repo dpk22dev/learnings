@@ -193,6 +193,15 @@ lsof -nc mysqld | grep -vE '(.so(..*)?$|.frm|.MY?|.ibd|ib_logfile|ibdata|TCP)'
 how data is stored on disk
 https://stackoverflow.com/questions/864899/how-is-data-stored-in-sql-server
 https://stackoverflow.com/questions/2023481/mysql-large-varchar-vs-text
+https://www.safaribooksonline.com/library/view/high-performance-mysql/0596003064/ch04s03.html
+
+primary index, clustering index, secondary index
+https://www.youtube.com/watch?v=54gUz7QqE4o
+https://www.xaprb.com/blog/2006/07/04/how-to-exploit-mysql-index-optimizations/
+
+vs postgress sql
+https://blog.panoply.io/postgresql-vs.-mysql
+
 
 __todo__
 docs read after: https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html
@@ -226,4 +235,6 @@ mysql in cluster
 geo distance sample data and methods
 
 what will happen if want to increase number of masters in cluster
+bdb : clustered indexes, prefix compression
 
+deletion in mysql

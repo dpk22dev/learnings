@@ -28,6 +28,9 @@ https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
 __todo__
 react source code exploration
 how react works, its architecture
+SSR workign
+react hydrate
+
 
 
 __questions__

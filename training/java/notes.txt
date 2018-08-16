@@ -32,4 +32,30 @@ https://javarevisited.blogspot.com/2013/03/can-we-overload-and-override-static-m
 
 volatile provides atomicity for long, double; read consistency among threads
 
+for doing stream ops on array:
+int a[] = Arrays.stream(arr).sorted().distinct().toArray();
 
+int [] ints = ...
+Integer[] boxedInts = IntStream.of(ints).boxed().toArray(Integer[]::new);
+equivalent to:
+Stream<int[]> streamArray = Stream.of(intArray);        
+IntStream intStream = streamArray.flatMapToInt(x -> Arrays.stream(x));
+
+Integer [] boxedInts = ...
+int [] ints = Stream.of(boxedInts).mapToInt(Integer::intValue).toArray();
+
+statements below exceptions will be executed if caught in try catch, return from caufht itself if want to return
+
+for comparing use
+Comparator<Employee> comparator = Comparator.comparing(Employee::getAge);
+emps.stream().min(comparator).get();
+Comparator.comparing(Integer::valueOf)
+
+.collect( Collectors.toList() );
+.collect( Collectors.toCollection(HashSet::new) )
+.collect(joining(",")); // for joining stream of string
+.collect( Collectors.groupingBy(Product::getPrice) )
+.collect(Collectors.partitioningBy(element -> element.getPrice() > 15));
+
+can't update arraylist got from Arrays.asList("a", "b"), use below
+List<String> list = new ArrayList<String>(Arrays.asList("a", "b"));

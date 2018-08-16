@@ -70,6 +70,12 @@ https://stackoverflow.com/questions/24113939/how-to-debug-spring-boot-applicatio
 using rabbitmq with spring
 https://reflectoring.io/event-messaging-with-spring-boot-and-rabbitmq/
 
+diff b/w jpa, hibernate, spring JPA
+https://stackoverflow.com/questions/23862994/what-is-the-difference-between-hibernate-and-spring-data-jpa
+
+config server based project
+https://howtodoinjava.com/spring-cloud/spring-cloud-config-server-git/
+
 **questions**
 entity confusion in onetomany and manytoone mapping
 why  few exteded functions/overriding in repositoryy

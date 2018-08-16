@@ -7,26 +7,23 @@ Created Saturday 07 April 2018
 
 https://www.hiredintech.com/
 
-20h: 24 min/q
+each storage/ other technology
+nauk csm
+coke
+java patterns, multithreading
+http://www.vogella.com/tutorials/JavaRegularExpressions/article.html
 
 
-stk: 
-
-
-
+~~kafka, ~~
+~~cassandra try partition key, clustering key, with range query~~
+~~how to send dependent data in single queue~~
+creating buckets
+~~es go through~~, ~~snapshots~~
+recommendation code go throuh
+paytm questions
+coding
+locking
 
 
 **questions**
 exact flow of packets in network
-locks and mutual exclusion
-IPC
-
-
-https://spring.io/guides/gs/messaging-redis/
-https://spring.io/guides/tutorials/bookmarks/
-https://spring.io/guides/gs/relational-data-access/
-https://spring.io/guides/gs/accessing-data-mysql/
-https://spring.io/guides/gs/accessing-data-jpa/
-https://spring.io/guides/gs/accessing-mongodb-data-rest/
-
-
