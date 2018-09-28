@@ -406,6 +406,8 @@ __todo__
 ~~after normalizing tokens~~
 read about how lucene stores data
 es definitive guide: book after 149
+youtube lecture on aggregations: pipeline
+
 
 __questions__
 es disk usage issues handling
@@ -417,7 +419,12 @@ how filter cache gets invalidated
 where mapping, analyzer info is stored
 where actual documents are stored
 how communication with repl works
+why only filter queries are cached, why not query context queries
 
+multiple index writers, 
+query caching in es
+dynamically chaning number of nodes/shards
+snapshoting, do we have to do it on each node
 
 ********************************* solr *************************************
  adding documents to Solr, you need to specify the schema, represented in a file called schema.xml.

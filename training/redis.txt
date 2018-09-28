@@ -22,6 +22,12 @@ https://www.compose.com/articles/a-quick-guide-to-redis-3-2s-geo-support/
 sentinel vs cluster
 https://stackoverflow.com/questions/31143072/redis-sentinel-vs-clustering
 
+good use cases of redis
+https://redis.io/documentation
+
+memory allocation/ deallocation in redis
+https://redis.io/topics/memory-optimization
+
 **questions**
 master-slave vs sentinel vs cluster
 what will happen if we have 9 sentinals and set 2 as quorum in some partitioning

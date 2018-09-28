@@ -9,6 +9,11 @@ Created Thursday 31 May 2018
 updation vs read O(N) vs O(1)
 store numbers vs differences in array
 
+how 2's complement numbers are stored
+http://www.oxfordmathcenter.com/drupal7/node/42
+how floating point numbers are stored
+http://www.oxfordmathcenter.com/drupal7/node/43
+
 segment tree: with extra storage, kind of working like heap: O(logN)
 using double pointers while traversing linked list
 whenever you have to do things backward

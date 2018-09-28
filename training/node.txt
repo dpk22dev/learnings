@@ -71,6 +71,7 @@ https://blog.tableflip.io/the-difference-between-module-exports-and-exports/
 
 nodejs arch:
 http://mcgill-csus.github.io/student_projects/Submission2.pdf
+https://www.dynatrace.com/resources/ebooks/understanding-nodejs-performance/
 
 parsing, object creation, garbage collection (except dom creation ) etc is handled by v8. v8 compiles java-script directly into assembly code rather than opcodes.( i guess it first converts into c++ code then into assembly code )
 

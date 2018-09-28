@@ -56,8 +56,10 @@ locations: shire( home of hobbits ), mount doom, mordor( home of soron), rivende
 http://www.latteartguide.com/2016/01/different-types-of-coffee.html
 coffee: esspresso, milk, foam, water, choco or other toppings
 
+https://www.hiredintech.com/
 
 __questions__
 
 __todo__
 read samples on: https://codereview.stackexchange.com
+read anti patterns, refactoring from [[https://sourcemaking.com/design_patterns/decorator|https://sourcemaking.com/]]

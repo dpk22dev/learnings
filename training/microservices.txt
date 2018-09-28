@@ -13,6 +13,9 @@ i guess resource requirement is higher
 distributed keystores used in microservices
 https://stackoverflow.com/questions/48635782/zookeeper-vs-eureka-for-microservices
 
+
+https://www.datawire.io/guide/traffic/circuit-breakers-microservices-properly-use-hystrix/
+
 todo
 
 questions

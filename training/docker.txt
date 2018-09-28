@@ -46,6 +46,9 @@ https://docs.docker.com/storage/storagedriver/#related-information
 using distributed key-value store
 https://github.com/coreos/etcd/blob/master/Documentation/learning/why.md
 
+networking in docker
+http://success.docker.com/article/networking
+
 __questions__
 
 how ufs works

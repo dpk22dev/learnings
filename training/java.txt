@@ -123,6 +123,8 @@ dynamic binding method will be called based on type on object not based on refer
 https://www.quora.com/How-does-JVM-handle-the-method-overriding-internally-during-the-runtime-Are-there-any-performance-implications-of-the-same
 
 
+java performance, internals
+https://www.dynatrace.com/resources/ebooks/javabook/
 
 **non blocking in java**
 https://stackoverflow.com/questions/2824225/what-is-non-blocking-concurrency-and-how-is-it-different-than-normal-concurren
@@ -174,6 +176,12 @@ https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view
 **reads**
 https://javarevisited.blogspot.com/?merchantID=53701
 
+jpa spring-jpa
+http://www.in28minutes.com/jpa-hibernate-tutorial-for-beginners
+https://www.objectdb.com/api/java/jpa jpa reference
+
+h2 db runs at: http://localhost:8080/h2-console
+
 **references**
 https://www.youtube.com/user/javaboynavin/playlists
 
@@ -224,6 +232,12 @@ https://www.youtube.com/watch?v=zwBLgQ1_WuE
 
 troubleshooting java application: comparison of tools jmap, jhat, jconsole, jvisual, new relic
 https://www.youtube.com/watch?v=mzT7etWjj0Q
+use [[--XX:dumpHeapOnOOM]] to generate heapdump
+jmap : prints memory map of java running process,
+jhat: reads heap dumps, needs size equivalent of your heap dump: increase mem space for running it
+JVisualVM: attaches to local/remote running process, provide heap dump, memory leaks, gc monitoring, CPU profiling
+jstack: attaches to running process, thread dump of java process
+JConsole: shows jmx metrics for local/remote process if enabled in app. timespan based, more complex
 
 heap analylsis:
 https://www.javaworld.com/article/2072864/heap-dump-and-analysis-with-visualvm.html
@@ -311,6 +325,9 @@ how sleep, wait notify natively implemented and how their excpeitons can be thro
 /apps/my-builds/java/code101/src$ java code101.DumpOne -Xms6M -Xmx16M -XX:MaxPermSize=1G -XX:PermSize=512M why not getting out of memory
 is is necessary to know every bin/ or some are enough, remote debugging/profiling how is it done
 
+fairlock code: http://tutorials.jenkov.com/java-concurrency/starvation-and-fairness.html
+why queue object is used?
+
 **todo**
 ~~after https://www.javatpoint.com/ioc-container~~
 https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view
@@ -383,3 +400,7 @@ try clone method
 https://www.cs.carleton.edu/faculty/dmusican/cs348/java_multi/#sec-1
 
 if joining on multiple threads large thread is 
+using same class as entity, Document in two different repository
+relations and joins 
+
+

@@ -5,24 +5,27 @@ Creation-Date: 2018-04-07T16:36:03+05:30
 ====== prep ======
 Created Saturday 07 April 2018
 
-https://www.hiredintech.com/
+~~https://www.hiredintech.com/~~
 
-each storage/ other technology
-nauk csm
-coke
-java patterns, multithreading
-http://www.vogella.com/tutorials/JavaRegularExpressions/article.html
+~~each storage/ other technology~~
+~~nauk csm~~
+~~coke~~
+~~java patterns, multithreading~~
+~~http://www.vogella.com/tutorials/JavaRegularExpressions/article.html~~
 
 
-~~kafka, ~~
-~~cassandra try partition key, clustering key, with range query~~
-~~how to send dependent data in single queue~~
-creating buckets
-~~es go through~~, ~~snapshots~~
-recommendation code go throuh
-paytm questions
-coding
+creating buckets/agg es tryouts
+low level design quest
+executor framework usage
+try multithreading constructs
+coding questions 
+
 locking
+
+https://www.geeksforgeeks.org/amazons-asked-interview-questions/
+
+https://www.geeksforgeeks.org/amazon-interview-preparation/
+https://www.geeksforgeeks.org/amazons-most-frequently-asked-interview-questions-set-2/
 
 
 **questions**

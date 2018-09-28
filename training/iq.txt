@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-24T10:29:45+05:30
+
+====== iq ======
+Created Monday 24 September 2018
+
+proptiger
+preorder , inorder given pprint postorder
+
+
+postorder using stack
+tree t1 exists within tree t2
+singleton imp
+other java questions
+
+
+Math.min( Double.MIN_VALUE, 0.0d)
+catching exception from children threads in parent thread; global vs local exception in child threads
+why string is immut
+what happens to key, when same key is updated in hashmap -> is it deleted
+blocking queue usage, its impl
+
+

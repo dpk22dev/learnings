@@ -21,6 +21,16 @@ for representing number on two sides, we can have bit mask on left side, its neg
 
 for buy/sell stock problem, keeping track of min, maxProfit while going left to right to ith element; keeping track of max, maxProfit while going right to left to ith element can be used to find 2 trades to get max profit
 
+https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/
+BST: only preorder/post is suffiecient, as we know position of root, elements smaller than root will form left subtree, greater than root will form rigth subtree
+Complete: level order is enough, 1,2,4,8.. nodes at each level . eg: hea**p**( com**p**lete )
+full: each node has 0/2 childeren. while storing preorder need bit indicatior for leaf / internal nodes
+BT: preoder + inorder
+
+https://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/
+we can use lmin array for storing min element on left side, rmax for max element on right side. then iterating i over lmin, j over rmax; we can find pair(i,j) when diff(i,j) is max
+
+
 
 **question repos**
 master repo for coding links: https://github.com/lnishan/awesome-competitive-programming

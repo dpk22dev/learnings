@@ -8,3 +8,8 @@ Created Monday 26 June 2017
 vector cross product
 https://math.stackexchange.com/questions/185991/is-the-vector-cross-product-only-defined-for-3d
 https://www.quora.com/Why-does-the-cross-product-exist-only-in-three-and-seven-dimensions
+
+https://mathoverflow.net/questions/309650/what-are-examples-of-books-which-teach-the-practice-of-mathematics
+
+good maths material
+http://www.oxfordmathcenter.com/drupal7/node/242

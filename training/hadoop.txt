@@ -1,0 +1,52 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-02T12:00:49+05:30
+
+====== hadoop ======
+Created Sunday 02 September 2018
+
+https://dzone.com/refcardz/getting-started-apache-hadoop
+
+hadoop docs
+http://hadoop.apache.org/docs/current/
+
+apache hadoop framework ecosystem
+https://hortonworks.com/ecosystems/
+from ui we can directly put files/data and process with different frameworks
+https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/section/1/
+
+**Hbase**
+http://hbase.apache.org/book.html
+It is a sorted map data built on Hadoop. It is column oriented, sparse, distributed, persistent, multidimensional sorted map, which is indexed by rowkey, column key,and timestamp.
+Reading a row from HBase requires first checking the MemStore, then the BlockCache, Finally, HFiles on disk are accessed.
+
+**Hive:**
+Hive is not RDBMS, not used for OLTP. HQL gets reduced to map reduce jobs in backend.
+
+**Pig:**
+high level data flow platform for execution Map Reduce programs of Hadoop. The language for Pig is pig Latin.
+
+**sqoop:**
+command-line interface application for transferring data between relational databases and Hadoop
+
+**spark:**
+Spark is not a modified version of Hadoop and is not, really, dependent on Hadoop because it has its own cluster management. Hadoop is just one of the ways to implement Spark. The main feature of Spark is its in-memory cluster computing that increases the processing speed of an application. Most of the Hadoop applications, they spend more than 90% of the time doing HDFS read-write operations. RDD: resilient distributed datasets -> in memory processing computations.
+faster iterative, interactive ops on data
+
+spark mlib is fastre than disk based apache mahout
+
+**storm**
+nimbus(master), supervisor(worker). Nimbus runs the Storm topology by distributing the task to an available supervisor. A supervisor will have one or more worker process. Supervisor will delegate the tasks to worker processes. Worker process will spawn as many executors as needed and run the task. Apache Storm uses an internal distributed messaging system for the communication between nimbus and supervisors.
+
+hadoop 
+v1 vs v2 : yarn
+v2 vs v3 : mutliple name node servers, dockerization
+
+**questions**
+diff b/w hbase vs hive vs cassandra
+using zookeeper for inter machine locking
+
+**todo**
+apache hadop + yarn
+apache spark
+https://www.youtube.com/watch?v=9mELEARcxJo

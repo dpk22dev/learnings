@@ -7,6 +7,9 @@ Created Monday 09 April 2018
 
 docker run --name mariadbtest -e MYSQL_ROOT_PASSWORD=mypass -d mariadb
 
+mysql digins
+https://dba.stackexchange.com/questions/tagged/mysql
+
 **datatypes in mysql:**
 https://dev.mysql.com/doc/refman/5.1/en/storage-requirements.html
 
@@ -15,6 +18,9 @@ https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html
 
 **maximum concurrent connetions in mysql**
 http://stackoverflow.com/questions/14901508/maximum-concurrent-connections-to-mysql
+
+groupby on multiple columns
+https://stackoverflow.com/questions/33334566/sql-multiple-table-joins-group-by-and-having
 
 based on mysql environment variables #connections can be increased: default is 150
 
@@ -34,6 +40,12 @@ https://dev.mysql.com/doc/internals/en/
 
 **mysql utilities**
 https://dev.mysql.com/doc/mysql-utilities/1.6/en/utils-ha.html
+
+**mysql practice questions:**
+http://www.geeksengine.com/database/problem-solving/northwind-queries-part-1.php
+
+**how indexes help in join queries**
+https://dba.stackexchange.com/questions/180295/applying-indexes-on-columns-used-in-join-condition
 
 local db connection:
 mysql -h 127.0.0.1 --port=3307 -u root -p
