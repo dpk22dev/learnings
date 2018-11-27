@@ -42,6 +42,7 @@ noun/adjectives-verb/adverbs->noun/adjectives
 
 facebook live
 http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html
+https://stackoverflow.com/questions/3533948/facebook-architecture
 
 facebook networking
 http://cs.unc.edu/xcms/wpfiles/50th-symp/Moorthy.pdf
@@ -117,5 +118,5 @@ comm b/w iframes
 ~~does hangout considers non google accounts; how to handle if user@other-domain user actually exists~~
 is there some standard protocol for google drive/ docs
 how netflix openconnect cdn connects with large isp
-
+how  fleet coordination and supply matching is done for delivery systems
 

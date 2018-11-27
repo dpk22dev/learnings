@@ -8,7 +8,18 @@ Created Monday 09 April 2018
 docker run --name mariadbtest -e MYSQL_ROOT_PASSWORD=mypass -d mariadb
 
 mysql digins
-https://dba.stackexchange.com/questions/tagged/mysql
+https://dba.stackexchange.com/questions/tagged/mysql?sort=votes&pageSize=50
+
+after ~100 million rows:
+keep schema fixed, don't over normalize if joins seems to be necessary
+generally don't store raw data like image, instead store processed data/metadata
+after billions rows prefer postgress
+carefully evaluate int(4B ) vs mediumInt( 3B ), double(8B) vs float(4B) : saves space,improve caching
+after 4.2B rows uses BIGINT instead of INT , which is slow
+even at 100MB/s it can take hours to read 1TB table
+rnd to decide: key_buffer_size in myisam and  innodb_buffer_pool_size in innodb
+
+consider nosql/hadoop 
 
 **datatypes in mysql:**
 https://dev.mysql.com/doc/refman/5.1/en/storage-requirements.html
@@ -43,9 +54,25 @@ https://dev.mysql.com/doc/mysql-utilities/1.6/en/utils-ha.html
 
 **mysql practice questions:**
 http://www.geeksengine.com/database/problem-solving/northwind-queries-part-1.php
+http://www.zentut.com/sql-tutorial/sql-sample-database/
+
+databases with schemas already desined
+http://www.databaseanswers.org/data_models/
 
 **how indexes help in join queries**
 https://dba.stackexchange.com/questions/180295/applying-indexes-on-columns-used-in-join-condition
+
+myisam vs innodb
+https://dba.stackexchange.com/questions/1/what-are-the-main-differences-between-innodb-and-myisam
+
+enum vs smallint
+https://dba.stackexchange.com/questions/6962/advantages-and-disadvantages-to-using-enum-vs-integer-types
+
+using all cores:
+innodb_thread_concurrency = 0,  innodb_read_io_threads and innodb_write_io_threads to 64
+
+parallel transactions isolation levels mysql
+https://stackoverflow.com/questions/33118170/parallel-transactions-in-mysql
 
 local db connection:
 mysql -h 127.0.0.1 --port=3307 -u root -p
@@ -214,6 +241,8 @@ https://www.xaprb.com/blog/2006/07/04/how-to-exploit-mysql-index-optimizations/
 vs postgress sql
 https://blog.panoply.io/postgresql-vs.-mysql
 
+mysql partitioning 
+https://www.w3resource.com/mysql/mysql-partition.php
 
 __todo__
 docs read after: https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html
@@ -249,4 +278,5 @@ geo distance sample data and methods
 what will happen if want to increase number of masters in cluster
 bdb : clustered indexes, prefix compression
 
+disadv/pitfalls of partitioning in mysql
 deletion in mysql

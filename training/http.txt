@@ -36,6 +36,9 @@ curl -X POST -d "hostid=83" -d actionpath=/relatedvideos" --data-urlencode datax
 put vs post vs patch
 https://stackoverflow.com/questions/31089221/what-is-the-difference-between-put-post-and-patch
 
+access control vs cache control headers
+https://stackoverflow.com/questions/40731465/access-control-max-age-vs-cache-control
+
 **MIME**
 for sending more than simple text, info and how to process data to receiver
 content-type: (type/sub-type) eg: text/plain, multipart/mixed; boundary=frontier

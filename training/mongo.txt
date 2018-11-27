@@ -14,6 +14,16 @@ mongo has dropped support for master slave config, in place use sharded arch
 
 mongo in cluster
 https://www.linode.com/docs/databases/mongodb/build-database-clusters-with-mongodb
+config/data server: mongod
+query server: mongos
+config server stores meta info about cluster, database, collection, chunks; gets updated on chunk movement, node failures etc. generally 1/3 config servers are used, which remain in-sync using 2PC. query server gets updated on change in config server info. queries are routed to data servers thruogh query servers, sometimes query server aggregate data too.
+
+
+sharding in mongod
+https://docs.mongodb.com/manual/sharding/#data-partitioning
+sharding can be done at database/collection level
+First sharding at database level needs to be enabled, then at collection level. Collections are not automatically distributed across shards until you enable sharding on them and then add data.
+we can dynamically add/remove shards, mongo will auto balance the chunks of data
 
 **node mongoose concepts**
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose
@@ -28,6 +38,9 @@ mongo storage internals
 https://stackoverflow.com/questions/9948483/mongodb-database-architecture
 https://2013.nosql-matters.org/bcn/wp-content/uploads/2013/12/storage-talk-mongodb.pdf
 
+why odd # of config servers
+https://dba.stackexchange.com/questions/91194/why-does-mongodb-require-three-config-servers
+
 new in mongo3.2
 https://www.mongodb.com/blog/post/what-s-new-in-mongodb-3-2-part-1-extending-use-cases-with-new-pluggable-storage-engines
 
@@ -36,6 +49,28 @@ https://stackoverflow.com/questions/17008947/whats-the-difference-between-spring
 
 add to set in aggregation in mongodb
 https://stackoverflow.com/questions/47140009/spring-data-mongodb-addtoset-with-complex-object
+
+schema design in mongodb
+https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
+Denormalizing only makes sense when there’s an high ratio of reads to updates.
+how you model your data depends – entirely – on your particular application’s data access patterns
+
+
+capped collection : good for logs, caching
+You cannot delete documents from a capped collection. To remove all documents from a collection, use the drop() method to drop the collection and recreate the capped collection. No sharding. 
+
+ maximum BSON document size is 16 megabytes.
+
+For the MMAPv1 storage engine, intervening write operations on a document may result in a cursor that returns a document more than once if that document has changed.
+
+query steps:
+collection, query-criteria, projection, cursor-modifier
+
+aggregation steps: 
+match stage, group stage
+
+ A collection can only have one text search index, but that index can cover multiple fields.
+
 
 **questions**
 ~~diff b/w mongo and other binaries~~

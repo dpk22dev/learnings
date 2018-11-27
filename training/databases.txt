@@ -22,9 +22,12 @@ databases whcih don;t need schema like redis, mongodb, cassandra, neo4j are nosq
 any of modeled database can
 https://www.thoughtworks.com/insights/blog/nosql-databases-overview
 
-****  ****************
+db schema designs
+http://www.databaseanswers.org/data_models/
+
+  ************
 ************************************ mysql ******************************************
-****  ****************
+  ************
 mysql internals:
 https://dev.mysql.com/doc/internals/en/
 
@@ -62,28 +65,37 @@ http://stackoverflow.com/questions/33341510/how-to-install-freetds-in-linux
 
 tsql -H 192.168.33.204 -U nbtdev -P DevNBT@2016! -p 1433 > out.csv <<EOS SELECT * FROM some_table; go EOS
 
-******  **************
-************************************ mongodb ******************************************
-****  *****************
+  ********
 
+most common used nosql dbs
+https://bigdata-madesimple.com/18-free-and-widely-used-open-source-nosql-databases/
 
-capped collection : good for logs, caching
-You cannot delete documents from a capped collection. To remove all documents from a collection, use the drop() method to drop the collection and recreate the capped collection. No sharding. 
-
- maximum BSON document size is 16 megabytes.
-
-For the MMAPv1 storage engine, intervening write operations on a document may result in a cursor that returns a document more than once if that document has changed.
-
-query steps:
-collection, query-criteria, projection, cursor-modifier
-
-aggregation steps: 
-match stage, group stage
-
- A collection can only have one text search index, but that index can cover multiple fields.
+comparison of various databases with specs
+https://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
 
 ******** questions *****
 diff b/w json and bson, why not store simply as json string
 why different data-types
 in 2PC/3phase commit what happens if replicas commit and ack returned is lost
 how does transations happens on replicas, does locking happens over there
+
+~~how schema should be desinged in document store~~
+diff between different document stores
+how column family store is different than document store
+	i guess document store still stores row by row; but column family stores all columns together making aggs better
+diff between different column family stores
+how graph dbs store data on disk
+give thoughts on multi dim data like adv to pub mapping
+
+
+if row is inserted on indexed column, is it more expensive
+	for large table, index needs to be calculated and b tree needs to be adjusted on disk
+how is cassandra faster and than mysql, 
+	its not faster per say, but storing columns together gives adv on operations on multiple columns; append only sequential writes makes writes faster
+in which scenarios cassandra is better
+	data needs to be stored based on query; if column related queries are heavier
+can we change partition key later on which basis should it be done
+	~~most of dbs don't provide that; but need to verify on ~~
+	
+	
+	

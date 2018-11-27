@@ -24,7 +24,7 @@ Generally column families are stored on disk in individual files.
 A column is the basic data structure of Cassandra with three values, namely key or column name, value, and a time stamp. 
 A WHERE clause can be used only on the columns that are a part of primary key or have a secondary index on them.
 
-in a cluster if node2 goes down, other nodes will start storing keys corresponding ot node2 with hint that if node2 comes alive again; it will be transfered there.
+in a cluster if node2 goes down, other nodes will start storing keys corresponding to node2 with hint that if node2 comes alive again; it will be transfered there.
 
 system.keyspace stores metadata for cluster funcitoning. when new node comes online, its dumb; it gets aquinted to cluster. bootstraping: start copying data from seed nodes. it has two coloumn families: schema coloumn family, migration coloumn family
 
@@ -100,8 +100,12 @@ how transactions are handled by cassandra
 what info is stored in commit log
 is response  returned only after wrinting to memtable, replicating to quorum nodes
 
+design schema considerations
+https://www.datastax.com/dev/blog/basic-rules-of-cassandra-data-modeling
+
 SSTable internals:
 http://distributeddatastore.blogspot.com/2013/08/cassandra-sstable-storage-format.html
+https://saumitra.me/blog/how-cassandra-stores-data-on-filesystem/
 
 diff b/w various strategies
 what is snitch used for

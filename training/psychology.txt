@@ -47,7 +47,7 @@ PNS: peripheral nervous system; scout of sensory neurons which gather informatio
 
 **OLD brain:** for reptiles
 brain stem, central core of brain
-medulla: beating of heart, breadting of lungs
+medulla: beating of heart, breathing of lungs
 pons: automatic functions of movement, sleep and in advanced brain for relaying info b/w cerebellum and cerebral cortex
 thalamus: seeing, hearing, touching, tasting
 reticular formation: arousal

@@ -21,6 +21,8 @@ These design patterns are specifically concerned with communication between obje
 Chain of responsibility, Command, Interpreter, Iterator, Mediator, Memento, Null Object, Observer,
 State, Strategy, Template, visitor
 
+bridge: is used to segregate abstraction from implementations.eg remote <- customRemote , TV<-sony, uv, different implementations of TV can work with same remote
+decorator: rather than subclassing, we can decorate recursively as many times as wish
 
 diff b/w singleton and static methods
 http://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern
@@ -57,6 +59,9 @@ http://www.latteartguide.com/2016/01/different-types-of-coffee.html
 coffee: esspresso, milk, foam, water, choco or other toppings
 
 https://www.hiredintech.com/
+system design
+https://github.com/donnemartin/system-design-primer/tree/master/solutions/system_design
+
 
 __questions__
 

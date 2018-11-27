@@ -16,17 +16,28 @@ cat redirectlogs | awk -F',' '{print " SET \""$1"\" \""$1"\" \n"}' | redis-cli -
 
 http://oldblog.antirez.com/post/redis-persistence-demystified.html
 
+redis uses database 0,1,2 etc in single server mode. cluster mode doesn't support it.
+we can dynamically add/remove nodes from cluster; 
+redis distriutes keys based on mod operation, we can send key on same shard using hashtag eg:  {user1000}.following, then only user1000 will be used for hashing
+
+does redis use consistent hashing
+https://stackoverflow.com/questions/50246763/does-redis-cluster-use-consistent-hashing
+
 redis geohash tutorial
 https://www.compose.com/articles/a-quick-guide-to-redis-3-2s-geo-support/
 
 sentinel vs cluster
 https://stackoverflow.com/questions/31143072/redis-sentinel-vs-clustering
+https://medium.com/@amila922/redis-sentinel-high-availability-everything-you-need-to-know-from-dev-to-prod-complete-guide-deb198e70ea6
+redis cluster itself provide failover for selecting master from slave in case of failure; don't need sentinel in cluster
+
 
 good use cases of redis
 https://redis.io/documentation
 
 memory allocation/ deallocation in redis
 https://redis.io/topics/memory-optimization
+
 
 **questions**
 master-slave vs sentinel vs cluster

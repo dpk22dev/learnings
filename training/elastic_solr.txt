@@ -61,6 +61,8 @@ source code:
 https://www.elastic.co/blog/found-elasticsearch-internals
 https://medium.com/@passpied/a-reading-of-elasticsearch-source-code-56d172972783
 
+basic es queries:
+https://dzone.com/articles/23-useful-elasticsearch-example-queries
 
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
@@ -372,6 +374,12 @@ you don’t run into these conflicts, it is advisable to ensure that fields with
 
 auto suggestor in es
 https://hackernoon.com/elasticsearch-building-autocomplete-functionality-494fcf81a7cf
+
+
+why es is near real time:
+https://www.elastic.co/guide/en/elasticsearch/guide/current/near-real-time.html
+refresh vs flush: translog
+https://www.elastic.co/guide/en/elasticsearch/guide/current/translog.html
 
 **new in es6:**
 multiple types in index not allowed

@@ -53,6 +53,9 @@ in spring boot2.0
 reactive spring stack, tries to bring node style non blocking api using flux to java, good for handling large number of requests, interaction with db async, internal server calls
 uses servlet 3.0 async api, uses netty instead of tomcat
 
+spring boot loading sequence
+https://stackoverflow.com/questions/39209924/spring-boot-which-piece-of-code-actually-register-dispatcher-servlet-for-sprin/39214547#39214547
+
 **diff b/w spring spring boot and spring components**
 https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare
 

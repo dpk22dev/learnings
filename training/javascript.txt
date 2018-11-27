@@ -94,6 +94,9 @@ http://stackoverflow.com/questions/958983/are-variables-statically-or-dynamicall
 don't use self = this, as browsers provide self nowsddays. use _this= this instead.
 i think when we assign or pass reference to a function, binding of this is lost. generally we pass this reference to functoin to another function like foreach. using that = this causes closure and that value is retained when function like foreach calls our function.
 
+closure variables are stored in stack or heap
+https://stackoverflow.com/questions/29225834/where-are-variables-in-a-closure-stored-stack-or-heap
+
 **how variable assignment and stack works in js**
 http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/
 

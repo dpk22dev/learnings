@@ -18,3 +18,10 @@ influence society, humans way of living
 
 build network first socially on internet, 
 online notes and backup for ideas, writings, tools etc
+
+todo when stable:
+build containers, create vm account, save data
+list down simple sites that can be created, deploy on ec2 etc cluster
+containers mapped to personal system
+
+

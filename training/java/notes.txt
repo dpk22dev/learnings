@@ -5,10 +5,40 @@ Creation-Date: 2018-06-23T11:16:45+05:30
 ====== notes ======
 Created Saturday 23 June 2018
 
+use wrapper objects, many methods support these only:
+like Arrays.deepToString();
+
+getting char array from string
+char[] chars = "0123456789".toCharArray();
+
+array init can be done for any type:
+Integer arr[] = new Integer[]{1,2,3};
+int iarr[] = new int[] {1,2,3};
+
+Array.setAll( arr, (inx) -> {} );
+no available funciton to find min/max primitive arrays
+use Arrays.sort on primitive types, but can't give comparators on them, iterate in reverse order on them for descending way handling
+Arrays.* class provides few methods to binarysearch, sort, copy etc.
+when need to find index+maxVal/itemToSearch both use custom loop with index
+
+
+collection init:
+List<Integer> li = new ArrayList<Integer>( Arrays.asList(1,2,3) );
+Set<Integer> si = new HashSet<Integer>(Arrays.asList(1,2,3));
+no direct init of map, need to put individually
+
+int to Integer, similar for other data types boxing/unboxing
+Integer ii = Integer.valueof( int ); Integer.valueof( String );
+int i = ii.intValue()
+int y = Integer.parseInt(str); // parse int returns primitive
+
 Arrays.toString( oneDArr )
 Arrays.deepToString( twoDArr )
 arrays.equals( nA1, nA2 )
 arrays.sort( a1 )
+
+For wrapped primitive types arrays,
+Arrays.asList
 
 use "abc".equals( str ) // wont throw null pointer exc
 str.equals("abc") // can throw null pointer exception when str can be null
@@ -32,8 +62,16 @@ https://javarevisited.blogspot.com/2013/03/can-we-overload-and-override-static-m
 
 volatile provides atomicity for long, double; read consistency among threads
 
-for doing stream ops on array:
-int a[] = Arrays.stream(arr).sorted().distinct().toArray();
+funciton calls in streams:
+Kind                                                                         Example
+----                                                                         -------
+Reference to a static method                                                 ContainingClass::staticMethodName
+Reference to an instance method of a particular object                       containingObject::instanceMethodName
+Reference to an instance method of an arbitrary object of a particular type  ContainingType::methodName
+Reference to a constructor                                                   ClassName::new
+
+stream can be created for any type primitive/wrapper/object of array using:
+Arrays.stream( arr )
 
 int [] ints = ...
 Integer[] boxedInts = IntStream.of(ints).boxed().toArray(Integer[]::new);
@@ -43,6 +81,7 @@ IntStream intStream = streamArray.flatMapToInt(x -> Arrays.stream(x));
 
 Integer [] boxedInts = ...
 int [] ints = Stream.of(boxedInts).mapToInt(Integer::intValue).toArray();
+we need to use mapToInt above, only map() won't work
 
 statements below exceptions will be executed if caught in try catch, return from caufht itself if want to return
 
@@ -51,6 +90,22 @@ Comparator<Employee> comparator = Comparator.comparing(Employee::getAge);
 emps.stream().min(comparator).get();
 Comparator.comparing(Integer::valueOf)
 
+when using streams: 
+String txt = null;
+we can't set txt in foreach, but it allows below in foreach
+final String arr[] = {null}
+or we should filter and get only that element and return value
+
+we can not break on some condition in streams, we can either use loop or limit 1 on collection got after stream
+
+for sorting indexes of array based on content
+IntStream.range(0, ft.length)
+.boxed()
+.sorted((li,lj) -> { return ft[li] - ft[lj]; } );
+
+
+https://www.baeldung.com/java-8-collectors
+we can collect in list, set, map
 .collect( Collectors.toList() );
 .collect( Collectors.toCollection(HashSet::new) )
 .collect(joining(",")); // for joining stream of string
@@ -59,3 +114,28 @@ Comparator.comparing(Integer::valueOf)
 
 can't update arraylist got from Arrays.asList("a", "b"), use below
 List<String> list = new ArrayList<String>(Arrays.asList("a", "b"));
+
+if store is just new arraylist below will give out of bound
+Collections.copy( store, ai );
+use store = new ArrayList<Integer>( ai ); instead
+
+convert nested list to 2d array
+https://stackoverflow.com/questions/26726366/convert-nested-list-to-2d-array
+String[][] array = list.stream()
+	.map(l -> l.stream().toArray(String[]::new))
+	.toArray(String[][]::new);
+
+convert nested array to list
+String[][] dataSet = new String[][] {{...}, {...}, ...};
+List<List<String> list = Arrays.stream(dataSet)
+							   .map(Arrays::asList)
+							   .collect(Collectors.toList());
+
+
+*** Problem ***
+get stuck with primitive and boxed type operations
+no already available good methods for primitives, have to box them to use good streams
+generally input is in prmitives, either convert to boxed first then use streams 
+or write functions acc to primitives
+sometimes when we need both index, value even stream might not help
+=> not available methods cause anxiety

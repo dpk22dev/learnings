@@ -95,6 +95,8 @@ https://stackoverflow.com/questions/1036754/difference-between-wait-and-sleep
 
 **fail fast  vs fail safe**
 http://javaconceptoftheday.com/fail-fast-and-fail-safe-iterators-in-java-with-examples/
+fail-fast: shutdown immed on error
+fail-safe: don't stop even on error occur
 
 **maven repo**
 http://search.maven.org/
@@ -112,6 +114,10 @@ Integer arr = new Integer[10]; // is initialised with null instead of 0
 
 while cloning, single dimensional array is deep copied,  but mutliple dimensional array is shallow copies: means under-lying low dimensional arrays are refrences to original sub arrays
 
+constant pool: stores int, float, string constants in class file
+string pool: stores strings in heap; strings are interned in weak hashmap with string object to string object
+
+https://stackoverflow.com/questions/215497/what-is-the-difference-between-public-protected-package-private-and-private-in
 private / protected cant be used in top level class: internally allowed, internally they can be extended too
 public class needs to be put in same filename
 multiple default classes can be put in single, they sould have main methods and will be compiled to multiple class files
@@ -122,6 +128,8 @@ https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/
 dynamic binding method will be called based on type on object not based on reference
 https://www.quora.com/How-does-JVM-handle-the-method-overriding-internally-during-the-runtime-Are-there-any-performance-implications-of-the-same
 
+curl kind of request in java
+https://stackoverflow.com/questions/2793150/how-to-use-java-net-urlconnection-to-fire-and-handle-http-requests
 
 java performance, internals
 https://www.dynatrace.com/resources/ebooks/javabook/
@@ -200,10 +208,15 @@ using unsafe class can be used for operations on native memory
 writing to normal long, double is not atomic, volatile ensures this atomicity plus writes written by one thread are visible to other threads; but doesn't stop two trheads to read same value and doing i++, this operaation is not atomic, for this we need to use atomic
 https://stackoverflow.com/questions/19744508/volatile-vs-atomic
 
+latch vs barrier: Latches are for waiting for events; barriers are for waiting for other threads
+
 java 8 collectors
 https://www.baeldung.com/java-8-collectors
 creating custom collector
 http://www.deadcoderising.com/2017-03-07-java-8-creating-a-custom-collector-for-your-stream/
+
+spurious wakeups in java
+http://opensourceforgeeks.blogspot.com/2014/08/spurious-wakeups-in-java-and-how-to.html
 
 **java multithreading**
 https://www.ibm.com/developerworks/java/tutorials/j-threads/j-threads.html
@@ -327,6 +340,7 @@ is is necessary to know every bin/ or some are enough, remote debugging/profilin
 
 fairlock code: http://tutorials.jenkov.com/java-concurrency/starvation-and-fairness.html
 why queue object is used?
+diff b/w spring boot app running as jar vs running in inbuilt tomcat
 
 **todo**
 ~~after https://www.javatpoint.com/ioc-container~~
@@ -347,12 +361,23 @@ heap dump analyliss tutorial: analyse deadlock with it
 why its not 
 
 **books to read**
+effective java: josua bloch
+	till 94
+java concurrency in practice
+	till 179
+clean code - robert c martin
+sping in action
+ after chap 2 only in free time
+
+jenkov tutorials
 https://javarevisited.blogspot.com/2015/10/133-java-interview-questions-answers-from-last-5-years.html
 till 82 -  101
 https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-questions-answers.html
 12
 
 https://www.hackerrank.com/interview/interview-preparation-kit
+
+
 
 specs 10:
 	chap5 conversions
@@ -375,6 +400,7 @@ custom bst: recursive pointers
 writing native methods
 annotation
 floating point calcs
+string comparator to incllude string lexi, length
 
 java verify that multiple threads increment same counter using synchronised on this, string object
 sort using  multiple threads, merge them using single thread
@@ -402,5 +428,29 @@ https://www.cs.carleton.edu/faculty/dmusican/cs348/java_multi/#sec-1
 if joining on multiple threads large thread is 
 using same class as entity, Document in two different repository
 relations and joins 
+
+for practice:
+browser implementation in java
+crawler
+
+
+finalizers may or may not run, exceptions not caught whcih can result in corrupt object state
+there is no way to extend instattiable class, add value component while preserving equals contract
+
+Java supports covariant return types: overriding method’s return type can be a	subclass	of the overridden method’s return type.
+
+has it happened that api was changed which broke codes
+security flaws in java
+what are wrong designs that had to be stuck with
+how casting in java works? what happens when object is cast to other
+
+
+
+
+
+
+
+
+
 
 

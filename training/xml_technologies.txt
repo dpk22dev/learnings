@@ -67,6 +67,10 @@ var value= node.nodeValue;
 If node is an Attribute then the value variable will be the value of the attribute; 
 if node is a Text node it will be the text content; if node is an Element it will be null.
 
+xml doesnt support all &nbsp; named html entities, these needs to converted to numeric entities acc to below mappnig:
+https://www.w3.org/TR/html4/sgml/entities.html
+https://stackoverflow.com/questions/11176752/converting-named-html-entities-to-numeric-html-entities
+
 **DTD: **document type declaration: checks for validation of XML
 disadv: doesn't support namespaces
 suppoert only text string, not object oriented

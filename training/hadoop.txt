@@ -19,6 +19,7 @@ https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/sectio
 http://hbase.apache.org/book.html
 It is a sorted map data built on Hadoop. It is column oriented, sparse, distributed, persistent, multidimensional sorted map, which is indexed by rowkey, column key,and timestamp.
 Reading a row from HBase requires first checking the MemStore, then the BlockCache, Finally, HFiles on disk are accessed.
+https://mapr.com/blog/guidelines-hbase-schema-design/
 
 **Hive:**
 Hive is not RDBMS, not used for OLTP. HQL gets reduced to map reduce jobs in backend.

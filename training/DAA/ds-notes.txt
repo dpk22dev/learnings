@@ -21,6 +21,10 @@ for representing number on two sides, we can have bit mask on left side, its neg
 
 for buy/sell stock problem, keeping track of min, maxProfit while going left to right to ith element; keeping track of max, maxProfit while going right to left to ith element can be used to find 2 trades to get max profit
 
+if diff of count of odd bits - count of even bits is multiple of 3 then number is multiple of 3
+
+when asked to print power, multi without using maths, bitwise operators think of using recursion
+
 https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/
 BST: only preorder/post is suffiecient, as we know position of root, elements smaller than root will form left subtree, greater than root will form rigth subtree
 Complete: level order is enough, 1,2,4,8.. nodes at each level . eg: hea**p**( com**p**lete )
@@ -30,11 +34,76 @@ BT: preoder + inorder
 https://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/
 we can use lmin array for storing min element on left side, rmax for max element on right side. then iterating i over lmin, j over rmax; we can find pair(i,j) when diff(i,j) is max
 
+when we need to find path existence from s to d in maze, queue is ok; but when finding shortes path, acc to dijkstra we need priority queue
+looping over points in maze:
+bool isValid(int row, int col) k{ 
+	return (row >= 0) && (row < ROW) && (col >= 0) && (col < COL); 
+} 
+int rowNum[] = {-1, 0, 0, 1}; 
+int colNum[] = {0, -1, 1, 0}; 
+  
+ for (int i = 0; i < 4; i++) { 
+			int row = pt.x + rowNum[i]; 
+			int col = pt.y + colNum[i]; 
+		 isValid( row, col )
+}
+
+count of digit in perfect powers of 10
+count( 10^d ) = 9 * count( 10 ^ (d-1) ) + 10^(d-1)
+for other numebers, store count of numbers in arr as 0-9, 10-99, 100-999, as all digits are distributed equally in this case
+not as 0-10, 11-100 <- 0,1 are not equal in this case
+
+in seive of erastothenes, we tend to neglect multiple of every number which works; but should be neglecting multiples of prime numbers to reduce complexity; in case of finding prime factors, we can increment factor count using above algo only if we deal with multiples of primes 
+
+while storing minEle in stack question: we can store negative value as marker, or 2*minEle - x as value, when popping check if value if less than current min value, old min value can be found as 2 * minEle - current
+
+general strategy for 2 player optimal playing game, when picking coins, get sum of odd coins, even coins: always pick odd/even coins whichever gives max value forcing only opposite choice to competetor
+
+in shapes like rectangle, sometimes its better to fix one side as max, other side as min of two sides eg as done in box stacking problem for easier comparisons
+
+modulo ops
+(a + b) % n = ( a % n + b % n  ) % n
+( a*b ) % m = ( a%m * b%m) % m
+(a-b)%n = (a + (n - (b%n)) ) %  n // if a-b is -ve and lib doesn't gives positive ouput for negative numbers
+
+in case of backtracking prune the tree with simple optimizzations which can bring running time 1000 times low; like using symmetry we can decide to move down only and multiply number of solutions by 2
+
+for finding subset whose sum is equal to k; we can create two subsets and generate corresponding subsets and store sum in Sa, Sb; then find combinaation between Sa, Sb which can give sum as k -> O( 2^n/2 )
+finding all subsets and finding k as sum -> O( 2 ^ n ) which is much higher
+
+for finding minumum queries, during preprocessing we can store logarithmic difference of indexes( nlgn ) in say hashmap, for min value we can calculate in O(nlgn) time. we store min value for 0-1,1-2, 2-3.. 0-3,1-4,2-5.. 0-7,1-8,2-9.. if span of query is not perfect multiple of 2, we find just minimum power of 2 -> k, find min as min( rmq(a,a+k-1), rmq(b-k, b) )
+
+fenwick/bitree: 
+index x contains sum of elements at [x-k+1, x], where k is max power value of 2 that divides x; 6 k is 2, 8 k is 8, 16 k is 16 not 4
+sum of elements in range (1,k) can be divided into O(lgn) ranges whose sum is in BITree precalculated
+when value at position i changes, it needs to change lgn ranges of which i is part of.
+
+for handling range update, single query, store diff of values in array; for udpating (a,b) with k, increase arr[a] by and decrease arr[b] by k.
+
+-x = ~x + 1
+set kth bit of x to 1: x | 1 << k
+set kth bit of x to 0: x & ~(1<<k)
+invert kth bit of x: x ^ (1<<k)
+set last one bit of x to zero: x & (x-1)
+set all 1 bits to zero : x & -x
+invert all set bits after last one bit : x |(x-1)
+
+all grpah algos https://codeforces.com/blog/entry/16221
+check if graph is bipartite
+do bfs: if adj nodes already have same color its not bipartite otherwise its
+
+articulation vertex: vertices removing which graph wont remain connected, tarjan algo
+bridge: edges removing which graph wont remain connected, tarjan algo
+graph is strongly connected if there is path between all pair of vertices; it is different than graph without articulation points or bridges
+strongly connected components: tarjan or kasaraju
+
+number of factors on n if we have prime factors
+84 -> 2^2 . 3 . 7
+t( 84 ) : (2+1)*(1+1)*(1+1) -> 12
+s( 84 ): (2^3-1/2-1) * (3^2-1/3-1) * ( 7^2-1/7-1)
+p( 84 ):  n ^ (t(n)/2) : 84^6
 
 
-**question repos**
-master repo for coding links: https://github.com/lnishan/awesome-competitive-programming
-c++ repo: https://github.com/Diusrex/UVA-Solutions 
-java repo: https://github.com/EgorKulikov/yaal/tree/master/lib/main/net/egork
-https://github.com/psjava/psjava/tree/master/src/main/java/org/psjava
-https://github.com/phishman3579/java-algorithms-implementation
+todo
+after trees https://codeforces.com/blog/entry/16221
+after strong connectivity http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf

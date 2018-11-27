@@ -1,0 +1,134 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-11-10T12:42:31+05:30
+
+====== college ======
+Created Saturday 10 November 2018
+
+sem 3:
+
+problem faced and solutions:
+1) was first project so didn't know how to divide it and do it among 4 people; everybody had his own opinion 
+2) divided the project tasks wrong way, everybody learnt single thing like php, one leant mysql and we didn't even discussed it; so it was problematic
+3) learnt html, php, installation of lamp on linux; we were not familiar with linux so it was bit difficult to catch up
+
+more could be done:
+1) salting of password
+2) lots of functionalities could be added like sending mail about completion of duration, fine
+3) making more secure using locks on database in case of concurrency  
+
+sem 4:
+problem faced and solutions:
+1) didn't know much of programming in java; first we spent lot of time in learing coding for GUI in swing. but later found out to use netbeans which was of great help
+2) didn't know how to connect java with oracle; one of geeky guy did it
+3) handling listeners and other stuff was difficult
+
+more could be done:
+1) rather than application we could make it  applet
+2) salting of password
+3) making more secure using locks on database in case of concurrency  
+4) lots of functionalities could be added like sending mail about purchase, offers
+5) use add to cart in a session
+6) making it more user friendly by putting images, adding info like size, color etc
+7) support for visa, paypal etc... different and more secure system was required
+
+
+sem 5: 
+emergency GPS service:
+created an app which can send user's location co-ordinates to list of known persons he wants to send.
+
+problems faced and solutions:
+1) new about android. so we had to learn how development is done for mobile OS. we had some knowledge of java. we watched many video tutorials to learn how to install sdk; learn application framework and create simple applications.
+
+2) had no idea how to get co-ordinates and display them on map. had to learn google-map api.
+
+3) for storing emergency numbers of few countries we put their numbers in database file in assets directory using another database application. we used methods for reading emergency numbers from this database file.
+
+4) till now we had not worked with callback functions. learnt about this method of programming.
+
+5) user could enter string of chars in numbers so before storing in database we had to parse and verify that entered text is valid number.
+
+6) handled problems like while selecting people from contact list we had to put check box but didn't know how to do it.
+
+7) while sending text to sql we needed to put string in sinle quotes. eg: function("japan") will not work instead we had to do function("'japan'") while sending text to database
+
+more could be done:
+1) adding a continuum mode where app will send its coordinates at regular interval of times
+
+2) addition of recording audio as proof
+
+sem 6: 
+secure sms service:
+1) had basic knowledge of android in previous sem so we tried to encrypt sms with AES in this sem.
+
+2) rather than using activity we tried to do things in background using services as we knew that AES 256 bit encryption was heavybut we were confident that it will work on mobile devices.
+
+3) Base64 encoder was used for encoding text. then builtin java classes keyfactory, keySpecification etc were used to generate public and private keys; which were transferred using SMS and then message was encrypted and sent.
+
+4) everything worked fine till we were testing on SDK but when tried it on phone; app took too long to generate key value pair and android showed dialog to wait or kill process as app was not responding and taking too much time. it worked fine on laptop as it had good processor and good memory was provided for app in SDK but in real mobiles it was not working.
+
+5) for running app we needed to reduce key generation time. for this purpose rather than generating key for each message. we put random numbers in assets and used them randomly to generate public and private keys. although this approach is not that much secure but to make app run on mobiles we had to do it.
+
+6) to make it more secure we stored user's password. for decrypting message we asked password from user and decrypted it only when password matched.
+
+more could be done:
+1) password was stored in a file; it should be stored securely
+2) man in the middle attack was possible; methods to avoid it
+3) slow; making it more robust 
+
+sem 7:
+Recognition of Exons and Introns using the Principle borrowed from DNA Walk and Queuing Simulation
+
+1) this project was done in matlab so learnt basic functions and programming in matlab. nature follows some pattern so incoming introns and exons in given rna-string were used to create vectors of their inter-arrival distance frequecy. when we draw graph b/w interarrival-distance and freq of A, G, C, T. we saw that it has classifying power. so we trained with nn-classifier.
+
+2) after training from nn-classifier we had to classify incoming string into introns and exons. it did it with 70% accuracy we had to increase accuracy by removing noise while training. For eg: if we took window size of 6 we created vector of <AGCT> of length 24; after removing noise vector became of length 21 and now accuracy was increased to 83%.
+
+more could be done:
+1) comparing/increasing accuracy by using different AI algo
+
+sem 8:
+probs and sols:
+1) for communication b/w processes running on different machines had to learn socket programming
+
+2) for creating directories, files, removing directories and files had to learn system programming, POSIX API
+
+3) for creating GUI on gnome desktop had to learn GTK+ libraries, had to figure out how to use anjuta IDE and GLADE UI desiner tool
+
+4) learnt about how build works in linux, even while using IDE i had to do some tweeks to run project; like due to some bug IDE crashed or didn't reacted when i clicked on run button; so it had to do it manually on terminal
+
+5) for needy and volunteer communication had to create protocol for communication
+
+could be done:
+1) i tried to make it multithreaded; but it crashed randomly but i couldn;t figure out why? if multithreaded approach can be done it will save lot of overhead.
+
+2) making it secure; currently it works on belief system; executes every script we send; which should be restricted
+
+3) portability; i have tested it on mint, ubuntu 32 and 64 bit. how it will behave on other env specially where gnome is not present.
+
+4) automate the job distribution process
+
+shabdarth:
+1) did it side by side of 8th sem project; created a crwaler to get data from website.
+
+2) used GTK+, Glib
+
+could be done:
+1) consumes large memory. to make autocompletion fast i don't remove the list from memory as it can be further used. some plan is needed to keep memory usage in limit 
+
+::::::::: what i tried ::::::::
+linux kernel programming for creating device driver but thought that it was too low-level close to h/w 
+tried to make changes in wget, ip-tux like s/w
+tried to learn gstreamer an open-source media library
+tried creating extension for chrome
+
+
+
+
+
+
+
+
+
+
+
+

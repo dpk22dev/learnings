@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-11-09T14:05:31+05:30
+
+====== articles ======
+Created Friday 09 November 2018
+
+explanation fro sakamoto algo
+http://marcin-chwedczuk.github.io/get-day-of-week-from-date
+
+competitive programmer book
+http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf
+
+**question repos**
+master repo for coding links: https://github.com/lnishan/awesome-competitive-programming
+c++ repo: https://github.com/Diusrex/UVA-Solutions 
+java repo: https://github.com/EgorKulikov/yaal/tree/master/lib/main/net/egork
+https://github.com/psjava/psjava/tree/master/src/main/java/org/psjava
+https://github.com/phishman3579/java-algorithms-implementation
+
+
+**topcoder**
+codeforces
+
+old editorial archive
+https://community.topcoder.com/tc?module=Static&d1=match_editorials&d2=archive
+latest srm editorials
+https://www.topcoder.com/blog/tag/srm-editorials/
+
+select questions of particular srm
+https://community.topcoder.com/stat?c=round_overview&rd=16709
+
+for selecting particular question
+https://community.topcoder.com/tc?module=ProblemArchive&sr=&er=&sc=&sd=&class=div2easy&cat=&div1l=&div2l=&mind1s=&mind2s=&maxd1s=&maxd2s=&wr=
+
+for practice: search on
+https://arena.topcoder.com/#/u/practiceProblemList
+
+https://www.careercup.com/categories

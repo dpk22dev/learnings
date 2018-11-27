@@ -13,6 +13,8 @@ autoloading in php
 http://phpenthusiast.com/blog/how-to-autoload-with-composer
 http://www.shayanderson.com/php/simple-php-class-autoloading-function-and-tutorial.htm
 
+clearing composer cache
+composer update -vvv
 
 navigating through php source code
 http://lxr.php.net/xref/PHP_5_4/ext/standard/string.c#php_needle_char

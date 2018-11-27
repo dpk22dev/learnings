@@ -19,7 +19,8 @@ whois: protocol, client to get info from whois database
 ifconfig
 dhclient
 
-
+list of network protocols
+https://en.wikipedia.org/wiki/Lists_of_network_protocols
 
 can we use anycast for websites or tcp based services, if no how cdn use it
 https://anuragbhatia.com/networking/different-cdn-technologies-dns-vs-anycast-routing/

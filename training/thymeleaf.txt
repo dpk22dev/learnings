@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-11-15T18:11:51+05:30
+
+====== thymeleaf ======
+Created Thursday 15 November 2018
+
+official docs
+https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#what-kind-of-templates-can-thymeleaf-process
