@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-19T17:38:48+05:30
+
+====== pig ======
+Created Wednesday 19 December 2018
+
+run piglatin script, 
+we can use modes like mapreduce, spark, tez
+
+
+http://pig.apache.org/docs/r0.17.0/start.html
+from downloads section looks like its dead
+
+questions
+is it so instead of learning pig latin, we should use spark using java/scala etc
+
+todo
+pig vs spark

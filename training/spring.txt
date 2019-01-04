@@ -79,6 +79,9 @@ https://stackoverflow.com/questions/23862994/what-is-the-difference-between-hibe
 config server based project
 https://howtodoinjava.com/spring-cloud/spring-cloud-config-server-git/
 
+dispatcher servlet in spring
+https://stackoverflow.com/questions/2769467/what-is-dispatcher-servlet-in-spring
+
 **questions**
 entity confusion in onetomany and manytoone mapping
 why  few exteded functions/overriding in repositoryy
@@ -105,6 +108,8 @@ Not able to put @component over enum
 have you use commandrunner for different jobs
 should we use entity and repos, dtos acc to clients in different packages
 dependencymanagement vs dependencies tag in spring
+what does register new servlet mean
+
 
 **todo:**
 docs: https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html

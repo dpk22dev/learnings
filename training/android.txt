@@ -31,9 +31,12 @@ https://medium.com/@dmilicic/a-detailed-guide-on-developing-android-apps-using-t
 https://www.raywenderlich.com/109843/common-design-patterns-for-android
 
 
+creating low quality app game quickly
+http://app.thunkable.com/
+
 __questions__
 diff b/w task and process
 what about deprecated methods in new sdk
 
 shobhit for search in all files including jr shortcut
-
+https://brilliant.org/computer-science/?subtopic=types-and-data-structures

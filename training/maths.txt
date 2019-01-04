@@ -11,5 +11,8 @@ https://www.quora.com/Why-does-the-cross-product-exist-only-in-three-and-seven-d
 
 https://mathoverflow.net/questions/309650/what-are-examples-of-books-which-teach-the-practice-of-mathematics
 
+maths programming
+https://projecteuler.net/
+
 good maths material
 http://www.oxfordmathcenter.com/drupal7/node/242

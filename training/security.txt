@@ -71,6 +71,9 @@ https://en.wikipedia.org/wiki/X.509
 hash vs hmac:
 http://crypto.stackexchange.com/questions/6493/what-is-the-difference-between-a-hmac-and-a-hash-of-data
 
+sites for attacks
+https://blogs.quickheal.com/category/security/
+
 **todo:**
 read https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 Oauth vs kerberos

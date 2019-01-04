@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-20T14:48:29+05:30
+
+====== storm ======
+Created Thursday 20 December 2018
+
+http://localhost:8080/index.html
+
+bin/storm nimbus
+bin/storm supervisor
+bin/storm ui
+
+spout abstraction makes easier to integrate with queueing and database systems
+There are just three abstractions in Storm: spouts, bolts, and topologies.
+
+storm deamons: nimbus( thrift service: can accept form multiple languages), supervisors along with zookeeper
+
+similar to hadoop map-reduce, storm runs topologies
+mapreduce jobs is finished, but topology keeps on running forever
+
+__quesitons__
+storm vs spark
+
+__todo__

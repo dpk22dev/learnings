@@ -5,6 +5,9 @@ Creation-Date: 2018-09-02T12:00:49+05:30
 ====== hadoop ======
 Created Sunday 02 September 2018
 
+installed in: /opt/installs/hadoop-2.9.2
+
+
 https://dzone.com/refcardz/getting-started-apache-hadoop
 
 hadoop docs
@@ -14,6 +17,14 @@ apache hadoop framework ecosystem
 https://hortonworks.com/ecosystems/
 from ui we can directly put files/data and process with different frameworks
 https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/section/1/
+
+which technology to use depends on 
+Variety of data: structured/semi-structured/unstructured, 
+volume of data, 
+velocity of data
+
+hadoop ecosystem:
+https://www.slideshare.net/uweseiler/introduction-to-the-hadoop-ecosystem-25557364
 
 **Hbase**
 http://hbase.apache.org/book.html
@@ -39,9 +50,23 @@ spark mlib is fastre than disk based apache mahout
 **storm**
 nimbus(master), supervisor(worker). Nimbus runs the Storm topology by distributing the task to an available supervisor. A supervisor will have one or more worker process. Supervisor will delegate the tasks to worker processes. Worker process will spawn as many executors as needed and run the task. Apache Storm uses an internal distributed messaging system for the communication between nimbus and supervisors.
 
+**Yarn**
+generic scheduler for distributed apps not just mapreduce apps, replaces job-tracker and task-tracker in hadoop
+Resource manager: per cluster
+Node manager: per machine
+	runs application manager ( per job )
+	runs application container ( per task )
+
+
+
 hadoop 
 v1 vs v2 : yarn
 v2 vs v3 : mutliple name node servers, dockerization
+
+
+
+is hadoop dead
+https://siliconangle.com/2018/07/09/hadoops-star-dims-era-cloud-object-data-storage-stream-computing/
 
 **questions**
 diff b/w hbase vs hive vs cassandra

@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-19T18:29:38+05:30
+
+====== hbase ======
+Created Wednesday 19 December 2018
+
+server: http://localhost:16010/master-status
+
+standalone mode: zookeeper is requried
+in distributed mode, each node runs hbase daemons primary and backup HMaster, HRegionServers, Zookeeper
+
+
+we can use hadoop as filesystem to store hbase's data
+
+hbase vs cassandra
+https://www.scnsoft.com/blog/cassandra-vs-hbase
+
+__questions__
+how is it diff from spark/storm real time analytics
+
+does hbase uses hadoop as storage unit or it has its own way of storage like cassandra
+ 
+__todo__

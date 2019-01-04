@@ -76,10 +76,22 @@ it has good examples to create projects
 **parallel computing**
 https://computing.llnl.gov/tutorials/parallel_comp/#Overview
 
+cost comparison
+https://www.cloudorado.com/cloud_server_comparison.jsp
+https://medium.com/@robaboukhalil/a-tale-of-two-clouds-amazon-vs-google-4f2520516a38
+https://calculator.s3.amazonaws.com/index.html
+https://cloud.google.com/products/calculator/
 
-********************** ****************** **********************
-__amazon aws account__
+
+
+
+
+
+
+
 ******************** ************** ********************
+__amazon aws account__
+****************** ********** ******************
 
 running lamp acc to: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html
 login using ssh -i "wordpress_kp.pem" ec2-user@ec2-52-66-150-192.ap-south-1.compute.amazonaws.com

@@ -72,6 +72,8 @@ https://www.datastax.com/dev/blog/introduction-to-composite-columns-part-1
 https://www.datastax.com/dev/blog/lightweight-transactions-in-cassandra-2-0
 
 **resources**
+video lectures
+https://academy.datastax.com/resources/ds201-cassandra-core-concepts
 https://academy.datastax.com/planet-cassandra/making-the-change-from-thrift-to-cql
 primary key ( or row key ) vs partition key
 https://dzone.com/articles/cassandra-data-modeling-primary-clustering-partiti

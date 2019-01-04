@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-19T16:02:44+05:30
+
+====== spark ======
+Created Wednesday 19 December 2018
+
+
+overview
+https://spark.apache.org/docs/latest/spark-standalone.html
+https://spark.apache.org/docs/latest/cluster-overview.html
+
+spark streaming
+https://spark.apache.org/docs/latest/streaming-programming-guide.html
+
+SparkContext can connect to several types of cluster managers: standalone, mesos, yarn
+
+spark vs storm
+https://www.educba.com/apache-storm-vs-apache-spark/
+
+For HA
+standby masters using zookeeper
+
+
+__questions__
+how does mapping of RDD and transformations happen with map-reduce
+
+
+__todo__

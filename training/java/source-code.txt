@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-01-04T14:35:27+05:30
+
+====== source-code ======
+Created Friday 04 January 2019
+
+collections souce code questions
+why constructur in abscollection class protected
+why **final** Node<E> l = last; is used in functions
+why arraylist stores in object[] rather than using E[]
+	https://stackoverflow.com/questions/25695011/why-does-arraylist-use-object-instead-of-e-internally
+in clone methods why super.clone()
+https://stackoverflow.com/questions/5430944/java-clone-operation-calling-super-clone
+array.copyof vs system.arraycopy
+https://stackoverflow.com/questions/2589741/what-is-more-efficient-system-arraycopy-or-arrays-copyof
+synchronised on vector.this meaning
+why clone should not be used frequenctly
+why few methods like empty() are not synch in stack class
+why datastroe in priorityqueue is transient
+logic behind copyOf() methid in arrays class

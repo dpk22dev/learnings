@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-19T18:13:20+05:30
+
+====== hive ======
+Created Wednesday 19 December 2018
+
+https://cwiki.apache.org/confluence/display/Hive/GettingStarted
+
+ HiveCLI is now deprecated in favor of Beeline, which is client
+hiveserver2 is based on hadoop, 
+Hive compiler generates map-reduce jobs for most queries.
+
+hive vs hbase
+ Ideally comparing Hive vs. HBase might not be right because HBase is a database and Hive is a SQL engine for batch processing of big data.
+https://www.dezyre.com/article/hive-vs-hbase-different-technologies-that-work-better-together/322
+
+questions
+is hive just stores tabular data on hdfs and runs queries using map-reduce famework
+like spark will hive also use cluster manager like yarn
+
+
+todo

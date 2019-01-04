@@ -80,6 +80,8 @@ when value at position i changes, it needs to change lgn ranges of which i is pa
 
 for handling range update, single query, store diff of values in array; for udpating (a,b) with k, increase arr[a] by and decrease arr[b] by k.
 
+while finding 3 numbers whose sum equals to say 0, we can sort array, iterate i over its elements, for each i, we can find elements(x,y) in (i+1, n-1) using first-last pointer technique, whose sum is -arr[i], ifso then i, x, y is one of required pair. we might be tempted that x or y can be < ith elment; had it been so it had been found earlier
+
 -x = ~x + 1
 set kth bit of x to 1: x | 1 << k
 set kth bit of x to 0: x & ~(1<<k)

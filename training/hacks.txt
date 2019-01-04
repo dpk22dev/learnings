@@ -51,4 +51,6 @@ used for open files of particular user, process, port
 
 stopping child window form closing
 https://stackoverflow.com/questions/11136010/how-do-i-prevent-chrome-developer-tools-from-closing-when-the-current-browser-wi
+window.addEventListener('unload', function() { debugger; })
+
 https://www3.fmovies.to/
