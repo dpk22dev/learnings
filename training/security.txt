@@ -6,6 +6,7 @@ Creation-Date: 2015-05-12T18:10:44+05:30
 Created Tuesday 12 May 2015
 
 security attacks: https://www.owasp.org/index.php/Main_Page
+https://hsploit.com/
 
 content security policy: headers tell browser allowed list of domains for scripts=> avoid XSS
 same origin policy: script from one domain/host/port can access DOM of same domain/host/port
@@ -74,10 +75,75 @@ http://crypto.stackexchange.com/questions/6493/what-is-the-difference-between-a-
 sites for attacks
 https://blogs.quickheal.com/category/security/
 
+deep web links
+https://darkwebnews.com/deep-web-links/
+careful access:
+https://darkwebnews.com/help-advice/access-dark-web/
+must read security guide before doing this
+https://darkwebnews.com/help-advice/dark-web-beginners-security-guide/
+
+orbot vpn like tor
+
+courses
+https://www.udemy.com/ethical-hacking-cyber-security-course/
+https://www.youtube.com/watch?v=tHd8k54kVs8&list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl
+
+latest hacks
+https://securereading.com/category/news/latest-hacks/
+
 **todo:**
 read https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 Oauth vs kerberos
 SAML
 
+list: https://www.youtube.com/watch?v=XjVYl1Ts6XI&index=53&list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl
+nmap or zenmap for port scanning
+	netdiscover does the same
+for testing sql-injection use site at: http://www.dvwa.co.uk/
+sqlmap -u "url with query param"
+proxychains for proxying connection
+disable script using extension while browsing
+for downloadin site: wget -mk https://www.url.com
+stegosuite: for embedding text in image 
+lazy script for managing cmd tools: https://github.com/arismelachroinos/lscript	
+use openvpn from eg: vpnbook
+beelogger: tool to create keylogger exe https://github.com/4w4k3/BeeLogger
+metasploitable - vulnerable os for security lab testing
+for expoloits of various servers: https://github.com/rapid7/metasploit-framework
+	check for dns leaks before this
+	https://www.offensive-security.com/metasploit-unleashed/modules-and-locations/( good )
+	use command msfconsole/ metasploit-gui / 
+	armitage ( easy to use gui ): find attacks, exploit, see what underlying is happening
+	use metasploitable2 linux in vm which contains various vulnerabilities for learning
+		on this vm for giving router-ips rather than 10. series ip, under 
+	metasploit on android: phone needs to be rooted, termux with busybox needs to be installed
+shodan: iot search engine; find possible vulnerable devices on internet
+linux explorer: linux forensics like processes, files etc
+saint: java based spyware for keylogging, webcam etc for windows, sends data to gmail account
+quasarRAT: windows based remote administration tool
+arpspoof: MITM at layer 2, dsniff/wireshark for collecting data
+ettercap: same as arpspoof but with gui
+wpscan: for wordpress hacking: enumeration and backdoor entry is possible
+weevely: php backdoor: it generates php script to be replaced on server; it provides shell on remote machine
+john-the-ripper: password cracking; wordlist can be taken from [[/usr/share/wordlist]]
+crunch: min to max lenght of specified characters list can be generated to be feed into crackers
+chkrootkit: check for rootkit installed in machine
+beef: hook client browser by embedding hook.js; hacker can select from list of vulnerabilities and exploit same as metasploit
+medusa: multithreaded password cracker
+veil-evasion: make spywares undetectable from antiviruses
+pentest-box: pentest for windows natively
+zanti : pentest for android( not much good )
+
+wiki for links to other sites: http://zqktlwi4fecvo6ri.onion/wiki/index.php/Main_Page
+
+use good dns provider who likely doesn't track by changing resolv.conf settings, run tor, disable scripts on browser on live system like parrot os
+use torbox/bitmessage or other tor service for mail
+scan for ports and services, search for eg: vsftpd 2.3.4 exploits
+
 **questions:**
 why so many authentication protocols, what is use of each
+how proxies under anonsurf/tor work; can they store my info
+diff b/w vpn and proxy chains
+
+http://amazon-biggest-offers.abkinews.in/
+

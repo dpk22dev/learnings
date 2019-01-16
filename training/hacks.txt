@@ -54,3 +54,17 @@ https://stackoverflow.com/questions/11136010/how-do-i-prevent-chrome-developer-t
 window.addEventListener('unload', function() { debugger; })
 
 https://www3.fmovies.to/
+
+few good websites
+10 Minute Mail: https://10minutemail.com
+Project Alexandria: http://projectalexandria.net/
+Fake Name Generator: http://www.fakenamegenerator.com/
+Madeon’s Adventure Machine: http://www.madeon.fr/adventuremachine/
+Camelcamelcamel: https://camelcamelcamel.com/
+Hackertyper: http://hackertyper.net/
+Mt Everest in 3D: http://www.explore-everest.com/mt-eve...
+Down for Everyone or Just Me: http://downforeveryoneorjustme.com/
+A Good Movie to Watch: https://agoodmovietowatch.com/
+Account Killer: http://www.accountkiller.com/en/#
+
+https://pixabay.com for free images

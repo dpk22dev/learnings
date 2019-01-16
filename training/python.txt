@@ -13,6 +13,9 @@ virtualenv -p /usr/bin/python3.3 ~/.envs/project_x_py3.3
 run virtual env
 source ~/.envs/project_x_py3.3/bin/activate
 
+python index
+https://pypi.org/
+
 **todo**
 setup python framework and start working and debugging
 

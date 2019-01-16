@@ -45,6 +45,10 @@ http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
 The most common settings provided by a DHCP server to DHCP clients include:
 IP address and netmask, IP address of the default-gateway to use, IP adresses of the DNS servers to use
 it can also provide:  Host Name,  Domain Name, Time Server, Print Server
+for changing dns servers:
+edit [[/etc/dhcp/dhclient.conf]] : uncomment prepend servers and add servers
+restart network-manager, [[/etc/resolv.conf]] should show above mentioned servers
+
 
 The socket buffer is the structure used to address and manage a packet over the entire time this
 packet is being processed in the kernel. During its travel across the layers packet headers of each layer are inserted in front of the payload.
@@ -72,6 +76,9 @@ http://stackoverflow.com/questions/30059018/connection-oriented-vs-circuit-switc
 
 atm vs ethernet : two wan vs lan technologies
 http://www.tml.tkk.fi/Opinnot/Tik-110.551/1999/papers/07ATMvsEthernet/iworkpaper.html
+
+vmware / virtual box networking
+https://www.slideshare.net/powerhan96/networking-between-host-and-guest-v-ms-in-virtual-box
 
 __todo__
 ipv6 : https://www.youtube.com/watch?v=mvlBMogudkQ

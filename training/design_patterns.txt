@@ -24,6 +24,9 @@ State, Strategy, Template, visitor
 bridge: is used to segregate abstraction from implementations.eg remote <- customRemote , TV<-sony, uv, different implementations of TV can work with same remote
 decorator: rather than subclassing, we can decorate recursively as many times as wish
 
+uml diagrams:
+https://tallyfy.com/uml-diagram/
+
 diff b/w singleton and static methods
 http://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern
 

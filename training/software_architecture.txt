@@ -26,6 +26,8 @@ are requests per sec is huge, computation/momory requirements for generating res
 high availability using redundancy/ resilience to failure, spiky traffic: load balancer after some load tests
 apply tools and technologies
 
+**uml diagrams**
+https://tallyfy.com/uml-diagram/
 
 __questions__
 big table vs micro services

@@ -15,7 +15,18 @@ https://stackoverflow.com/questions/5430944/java-clone-operation-calling-super-c
 array.copyof vs system.arraycopy
 https://stackoverflow.com/questions/2589741/what-is-more-efficient-system-arraycopy-or-arrays-copyof
 synchronised on vector.this meaning
+using Treemap.this in treemap.entryset
 why clone should not be used frequenctly
 why few methods like empty() are not synch in stack class
 why datastroe in priorityqueue is transient
 logic behind copyOf() methid in arrays class
+why MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8 is kept this way
+why treeify, untreeify two different constants
+why map containsKey intakes Object rather that K type
+entry interface comparingBykey method ??
+hashmap tablesizefor power of 2 algo
+	https://stackoverflow.com/questions/51118300/hashmap-tablesizefor-how-does-this-code-round-up-to-the-next-power-of-2/51118680
+for synch read and write object, what's logic behind them
+try echo 3 >>> 1 two times vs 3 >> 1 two times
+didn't understand declaration of enum class class Enum<E extends Enum<E>>
+what is role of refqueue in weak ref in weakhashmap

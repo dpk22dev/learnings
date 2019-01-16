@@ -8,6 +8,7 @@ Created Saturday 21 May 2016
 nodered can be used
 http://nodered.org/
 
+https://www.quora.com/What-is-the-best-way-to-learn-Internet-of-things-IOT
 
 https://www.youtube.com/watch?v=Xb1dRpBlERw
 

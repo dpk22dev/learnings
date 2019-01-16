@@ -72,6 +72,7 @@ http://www.vogella.com/tutorials/EclipseGradle/article.html
 
 **diff b/w enumerator and iterator**
 Using Enumeration, you can only traverse the Collection object. But using Iterator, you can also remove an element while traversing the Collection. 
+enums in depth: https://howtodoinjava.com/java/enum/guide-for-understanding-enum-in-java/
 
 **understanding concurrency and locks**
 https://dzone.com/articles/java-concurrency-in-depth-part-1
