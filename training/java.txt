@@ -67,6 +67,8 @@ mvn tomcat:run
 mvn [[archetype:help]]
 mvn [[archetype:help|archetype:generate]]
 
+https://zeroturnaround.com/rebellabs/your-maven-build-is-slow-speed-it-up/
+
 **gradle **
 http://www.vogella.com/tutorials/EclipseGradle/article.html
 
@@ -191,6 +193,11 @@ http://www.in28minutes.com/jpa-hibernate-tutorial-for-beginners
 https://www.objectdb.com/api/java/jpa jpa reference
 
 h2 db runs at: http://localhost:8080/h2-console
+
+java unit testing:
+http://www.vogella.com/tutorials/JUnit/article.html
+http://www.vogella.com/tutorials/Mockito/article.html
+https://www.baeldung.com/spring-boot-testing
 
 **references**
 https://www.youtube.com/user/javaboynavin/playlists

@@ -42,3 +42,5 @@ good articles are provided on
 https://brilliant.org/computer-science/?subtopic=algorithms
 practice maths on https://brilliant.org/algebra/?subtopic=linear-equations
 read wikis on https://brilliant.org/computer-science/
+
+https://petr-mitrichev.blogspot.com/

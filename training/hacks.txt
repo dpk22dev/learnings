@@ -19,7 +19,13 @@ arr.forEach( function( val, i ){
 **kibana elastic search backspace fix:**
 .typeahead .typeahead-items { 
   top: 32px; 
-} 
+}  
+
+conflict in workspace switcher and window snapping
+https://askubuntu.com/questions/508749/disable-keyboard-shortcuts-for-window-snapping
+
+disable palm erasing half content while typing on touchpad ubuntu
+https://askubuntu.com/questions/886092/how-do-i-disable-the-touchpad-while-typing
 
 intellijIdea liscenece server
  http://intellij.mandroid.cn/
@@ -53,7 +59,8 @@ stopping child window form closing
 https://stackoverflow.com/questions/11136010/how-do-i-prevent-chrome-developer-tools-from-closing-when-the-current-browser-wi
 window.addEventListener('unload', function() { debugger; })
 
-https://www3.fmovies.to/
+https://www3.fmovies.to
+https://www5.fmovies.to/
 
 few good websites
 10 Minute Mail: https://10minutemail.com
@@ -68,3 +75,6 @@ A Good Movie to Watch: https://agoodmovietowatch.com/
 Account Killer: http://www.accountkiller.com/en/#
 
 https://pixabay.com for free images
+
+instalinng ca certs
+https://superuser.com/questions/437330/how-do-you-add-a-certificate-authority-ca-to-ubuntu

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2016-03-22T13:00:03+05:30
-
-====== times ======
-Created Tuesday 22 March 2016
-

@@ -14,6 +14,8 @@ linux kernel development : robert love
 understanding linux kernel
 linux device drivers
 
+for checking sytem logs:
+gnome-system-log
 
 https://unix.stackexchange.com/questions/84069/what-is-a-device-controller-and-where-does-it-fit-in-between-the-kernel-and-the
 

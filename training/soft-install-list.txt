@@ -10,6 +10,7 @@ zim
 git
 virtual box
 nginx, apache, mysql, php
+redis, mongodb
 docker, docker-compose
 netbeans, sublime
 classic-menu

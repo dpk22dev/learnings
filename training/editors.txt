@@ -5,6 +5,10 @@ Creation-Date: 2016-04-28T15:47:12+05:30
 ====== editors ======
 Created Thursday 28 April 2016
 
+for switching between same type of app
+ctrl + `
+
+
 **vi**
 
 **eclipse**
@@ -73,3 +77,6 @@ ctrl+shift+P : open panel and search through different command
 
 **neo4jbrowser**
 shift+enter for multiline
+
+multiple windows in same project
+https://stackoverflow.com/questions/8774024/intellij-working-on-multiple-projects

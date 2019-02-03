@@ -5,12 +5,22 @@ Creation-Date: 2017-07-20T11:33:08+05:30
 ====== cassandra ======
 Created Thursday 20 July 2017
 
-/opt/installs/apache-cassandra-3.11.2
+cd /opt/installs/apache-cassandra-3.11.2
 
+cassandra cli doessn't accept "" quotes, use ' in string
 official site
 https://docs.datastax.com/en/cassandra/3.0/cassandra/initialize/initSingleDS.html
 cql
 https://docs.datastax.com/en/cql/3.3/cql/cql_using/useInsertList.html
+
+running cassandra on single machine
+https://docs.genesys.com/Documentation/HTCC/8.5.2/Dep/InstallCassandra2x
+
+visualising cassandra storage logically
+https://medium.com/code-zen/cassandra-schemas-for-beginners-like-me-9714cee9236a
+
+official apache cassandra docs has lots of missing info, except how to build etc.
+http://cassandra.apache.org/doc/latest/data_modeling/index.html
 
 peer 2 peer arch: improve availablity, always online
 
@@ -71,6 +81,16 @@ https://www.datastax.com/dev/blog/introduction-to-composite-columns-part-1
 
 https://www.datastax.com/dev/blog/lightweight-transactions-in-cassandra-2-0
 
+cassandra pitfalls: 
+https://blog.parse.ly/post/1928/cass/
+
+
+source code analysis:
+https://wiki.apache.org/cassandra/ArchitectureInternals
+http://prettyprint.me/prettyprint.me/2010/05/02/understanding-cassandra-code-base/index.html
+https://www.youtube.com/watch?v=W6e8_IcgJM4
+
+
 **resources**
 video lectures
 https://academy.datastax.com/resources/ds201-cassandra-core-concepts
@@ -84,6 +104,8 @@ https://dzone.com/articles/cassandra-data-modeling-primary-clustering-partiti
 ~~how to use regex in where ~~
 	no
 how to use coloumns in where when its not indexed
+
+diff b/w column  family and table
 
 dynamic coloumns how to?
 	cql doesn't allow this, but we can lists, set, map etc.
@@ -109,6 +131,9 @@ SSTable internals:
 http://distributeddatastore.blogspot.com/2013/08/cassandra-sstable-storage-format.html
 https://saumitra.me/blog/how-cassandra-stores-data-on-filesystem/
 
+cassandra vs mysql
+MySQL’s storage models are broadly reminiscent of traditional b-trees or in some cases hash-trees, while Cassandra’s storage models broadly resemble LSM’s (Log Structured Merge trees).
+
 diff b/w various strategies
 what is snitch used for
 what is bloom filer used for
@@ -116,5 +141,15 @@ how frozen and non-frozen coloumns are handled
 we set replication factor on tablespace; is that followed by all tables in it
 how indexes are created in it
 
+ udt's need to be frozen, mutable udt are still in pipeline
+collection within collection too need to be frozen
+
 **todo**
 issues https://docs.datastax.com/en/dse-planning/doc/planning/planningAntiPatterns.html#AntiPatRack
+cassandra data model best practices
+cassandra data model bad practices / pitfalls
+is cassandra good for update or inserts
+can we index some column and query based on that column
+https://stackoverflow.com/questions/6162789/mongodb-vs-cassandra-vs-mysql-for-real-time-advertising-platform
+http://hadoopmag.com/cassandra-internal-storage/
+cassandra in memory vs on disk

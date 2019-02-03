@@ -29,6 +29,9 @@ http://www.techferry.com/articles/spring-annotations.html
 @componentscan 
 com.ex.hello will scan for components, beans in current package/sub-package eg com.ex.hello.p1, com.ex.hello.p2 but not com.ex.meow
 
+beanfactory vs application context
+https://dzone.com/articles/difference-between-beanfactory-and-applicationcont
+
 https://www.youtube.com/watch?v=jDchAEHIht0 explains writing spring boot starter project
 getting started with spring boot: https://www.youtube.com/watch?time_continue=3&v=aA4tfBGY6jY
 
@@ -75,9 +78,18 @@ https://reflectoring.io/event-messaging-with-spring-boot-and-rabbitmq/
 
 diff b/w jpa, hibernate, spring JPA
 https://stackoverflow.com/questions/23862994/what-is-the-difference-between-hibernate-and-spring-data-jpa
+https://www.callicoder.com/hibernate-spring-boot-jpa-one-to-many-mapping-example/
+https://www.callicoder.com/hibernate-spring-boot-jpa-one-to-one-mapping-example/
+https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/
+https://www.baeldung.com/jpa-joincolumn-vs-mappedby mappedby vs joincolumn
+https://stackoverflow.com/questions/2749689/what-is-the-owning-side-in-an-orm-mapping owning side of tab
+le
 
 config server based project
 https://howtodoinjava.com/spring-cloud/spring-cloud-config-server-git/
+
+sample spring project lists
+https://stackoverflow.com/questions/2604655/any-open-source-spring-sample-project-thats-bigger-than-petclinic
 
 dispatcher servlet in spring
 https://stackoverflow.com/questions/2769467/what-is-dispatcher-servlet-in-spring
