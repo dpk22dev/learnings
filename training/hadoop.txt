@@ -8,15 +8,34 @@ Created Sunday 02 September 2018
 installed in: /opt/installs/hadoop-2.9.2
 
 
-https://dzone.com/refcardz/getting-started-apache-hadoop
+https://dzone.com/refcardz/getting-started-apache-hadoop	
 
 hadoop docs
 http://hadoop.apache.org/docs/current/
+
+hadoop imp config and booting up simple hadoop system:
+https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/ClusterSetup.html
+$HADOOP_PREFIX/sbin/start-dfs.sh
+$HADOOP_PREFIX/sbin/start-yarn.sh
+$HADOOP_PREFIX/sbin/mr-jobhistory-daemon.sh --config $HADOOP_CONF_DIR start historyserver
+
+$HADOOP_PREFIX/sbin/stop-dfs.sh
+$HADOOP_PREFIX/sbin/stop-yarn.sh
+$HADOOP_PREFIX/sbin/mr-jobhistory-daemon.sh --config $HADOOP_CONF_DIR stop historyserver
+
+after running use:
+localhost:50070
+localhost:8088
+localhost:19888
+http://localhost:8088/cluster
 
 apache hadoop framework ecosystem
 https://hortonworks.com/ecosystems/
 from ui we can directly put files/data and process with different frameworks
 https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/section/1/
+
+tutorial on big data hadoop:
+https://www.edureka.co/blog/what-is-big-data/
 
 which technology to use depends on 
 Variety of data: structured/semi-structured/unstructured, 
@@ -25,6 +44,10 @@ velocity of data
 
 hadoop ecosystem:
 https://www.slideshare.net/uweseiler/introduction-to-the-hadoop-ecosystem-25557364
+
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
 
 **Hbase**
 http://hbase.apache.org/book.html
@@ -57,7 +80,8 @@ Node manager: per machine
 	runs application manager ( per job )
 	runs application container ( per task )
 
-
+bigtable reference paper
+https://storage.googleapis.com/pub-tools-public-publication-data/pdf/68a74a85e1662fe02ff3967497f31fda7f32225c.pdf
 
 hadoop 
 v1 vs v2 : yarn

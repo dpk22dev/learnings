@@ -267,6 +267,9 @@ heap analylsis:
 https://www.javaworld.com/article/2072864/heap-dump-and-analysis-with-visualvm.html
 JMX server gets metrics info from mbeans, Jconsole connect to JMX server to show info/change mbeans behaviour. JvisualVM can install jconsole as extension for above functionality.
 
+dto vs pojo vs bean
+https://stackoverflow.com/questions/1612334/difference-between-dto-vo-pojo-javabeans
+
 **questions**
 https://stackoverflow.com/search?q=core+java
 why jsp is better than servlet
@@ -327,6 +330,8 @@ sum += (long)(ia) * (ic);  overflows but casting to long doesn't
 CustomBlockQ  can we synchronize on this, q.wait
 threadlocalex why static method is giving correct output
 castingex casting concepts are not clear
+jdbc vs odbc drivers
+
 
 ~~why :: in below~~
 ~~Stream.of(arr)~~

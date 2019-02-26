@@ -5,6 +5,7 @@ Creation-Date: 2018-12-19T16:02:44+05:30
 ====== spark ======
 Created Wednesday 19 December 2018
 
+http://localhost:4040/jobs/
 
 overview
 https://spark.apache.org/docs/latest/spark-standalone.html
@@ -12,18 +13,29 @@ https://spark.apache.org/docs/latest/cluster-overview.html
 
 spark streaming
 https://spark.apache.org/docs/latest/streaming-programming-guide.html
+https://medium.freecodecamp.org/apache-storm-is-awesome-this-is-why-you-should-be-using-it-d7c37519a427
 
 SparkContext can connect to several types of cluster managers: standalone, mesos, yarn
+batch as well real time processing supported
+
+we create lineage( DAG ) of transformations, action
 
 spark vs storm
 https://www.educba.com/apache-storm-vs-apache-spark/
+
+workloads: interactive, batch, 
+
 
 For HA
 standby masters using zookeeper
 
 
 __questions__
+how is it different from hive and storm
 how does mapping of RDD and transformations happen with map-reduce
+does spark uses YARN, HDFS for jobs, RDD storage and computation
+	iwhy is it faster but map reduce is not
+	why it has workers and executors instead of yarn 
 
 
 __todo__

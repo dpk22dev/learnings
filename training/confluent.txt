@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-13T17:07:14+05:30
+
+====== confluent ======
+Created Wednesday 13 February 2019
+
+bin/kafka-topics --zookeeper localhost:2181 --topic reporting --delete
+bin/kafka-topics --zookeeper localhost:2181 --list
+
+
+concepts:
+https://docs.confluent.io/current/connect/concepts.html#connect-converters
+
+https://www.confluent.io/blog/kafka-connect-deep-dive-converters-serialization-explained
+https://docs.confluent.io/2.0.0/connect/connect-hdfs/docs/index.html

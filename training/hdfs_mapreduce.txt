@@ -15,6 +15,11 @@ https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCl
 default ports for hadoop
 https://stackoverflow.com/questions/22855232/default-namenode-port-of-hdfs-is-50070-but-i-have-come-across-at-some-places-802
 
+secondary name-node is not backup node, it is helper node; it gets edit logs from name-node generates fsImage which is checkpoint and sends back to namenode
+
+
+using hadoop streaming we can use python or other scripting language as map/reduce jobs
+
 __questions__
 at what scale will it blast, what will be bottleneck
 

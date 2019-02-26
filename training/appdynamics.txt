@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-20T12:19:39+05:30
+
+====== appdynamics ======
+Created Wednesday 20 February 2019
+
+https://www.appdynamics.com/product/end-user-monitoring/
+
+https://docs.appdynamics.com/display/PRO43/Data+Collectorshttps://docs.appdynamics.com/display/PRO43/Data+Collectors
+
+node
+no interaction among nodes in single tier
+backend: commponent not instrumented by appdyn
+
+agents:
+sstandalone machine agent

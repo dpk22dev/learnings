@@ -11,6 +11,8 @@ bin/storm nimbus
 bin/storm supervisor
 bin/storm ui
 
+storm is computation system, not framework like hadoop
+
 spout abstraction makes easier to integrate with queueing and database systems
 There are just three abstractions in Storm: spouts, bolts, and topologies.
 

@@ -144,6 +144,11 @@ how indexes are created in it
  udt's need to be frozen, mutable udt are still in pipeline
 collection within collection too need to be frozen
 
+vnodes in partitioning
+https://stackoverflow.com/questions/25379457/what-is-virtual-nodes-and-how-it-is-helping-during-partitioning-in-cassandra
+
+http://thelastpickle.com/blog/2016/12/08/TWCS-part1.html
+
 **todo**
 issues https://docs.datastax.com/en/dse-planning/doc/planning/planningAntiPatterns.html#AntiPatRack
 cassandra data model best practices
@@ -153,3 +158,6 @@ can we index some column and query based on that column
 https://stackoverflow.com/questions/6162789/mongodb-vs-cassandra-vs-mysql-for-real-time-advertising-platform
 http://hadoopmag.com/cassandra-internal-storage/
 cassandra in memory vs on disk
+supercolumns vs composite columns : diff 
+are supercolumns bad why
+materialized view why 

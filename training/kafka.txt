@@ -35,6 +35,11 @@ kafka maintains order of message in same partition only, we can send message con
 kafka doesn't itself delete message, we can use retention policy/disk quota for auto removal OR
 stop cluster and delete data for required partitionn from disk
 
+As with a queue the consumer group allows you to divide up processing over a collection of processes (the members of the consumer group). As with publish-subscribe, Kafka allows you to broadcast messages to multiple consumer groups. the partition—within the topics, Kafka is able to provide both ordering guarantees and load balancing over a pool of consumer processes.
+Note the key difference between Kafka Streams end-to-end exactly-once guarantee with other stream processing frameworks' claimed guarantees is that Kafka Streams tightly integrates with the underlying Kafka storage system and ensure that commits on the input topic offsets, updates on the state stores, and writes to the output topics will be completed atomically instead of treating Kafka as an external system that may have side-effects.
+
+i guess distributed systems have atleast_once, exactly_once, atmost_once data gaurantees; timing or out of order guarantee problems.
+
 running kafka using command line
 http://cloudurable.com/blog/kafka-tutorial-kafka-from-command-line/index.html
 
@@ -55,12 +60,13 @@ we can dynamically change number of partitions, but kafka won't auto redistribut
 kafka operations: adding nodes, partitions, reassignments:
 https://svn.apache.org/repos/asf/kafka/site/082/ops.html
 
-quesitons:
+__quesitons__:
 how number of partitions are decided, can they be cahnged later on
 how many consumers should be run in cg
 write and verify consumers in cgroup, what stragey is used toi determine number of consumers/cgs 
+how is kafka stream scalable, how is transaction maintained in this system
 
-todo
+__todo__
 check some php lib
 
 https://www.youtube.com/watch?v=CZ3wIuvmHeM

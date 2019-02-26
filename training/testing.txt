@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-25T15:01:41+05:30
+
+====== testing ======
+Created Monday 25 February 2019
+
+https://medium.com/@Cyrdup/unit-testing-youre-doing-it-wrong-407a07692989
+https://www.softwaretestinghelp.com/application-testing-into-the-basics-of-software-testing/
+
+java mocking + ut
+https://www.vogella.com/tutorials/Mockito/article.html
+
+https://www.baeldung.com/mockito-series
+https://www.baeldung.com/injecting-mocks-in-spring
+
+questions:
+is bdd mockito just different way of writing mockito test cases
+	which to use when
+mock vs spy

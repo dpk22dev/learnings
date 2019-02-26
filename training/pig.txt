@@ -8,12 +8,19 @@ Created Wednesday 19 December 2018
 run piglatin script, 
 we can use modes like mapreduce, spark, tez
 
+getting started:
+https://www.youtube.com/watch?v=GG-VRm6XnNk
+
+user defined functions can be written in UDF form
 
 http://pig.apache.org/docs/r0.17.0/start.html
 from downloads section looks like its dead
 
 questions
 is it so instead of learning pig latin, we should use spark using java/scala etc
+does pig uses yarn above hadoop map reduce
+	running script in distributed enviromment
+what pig can do and hive can't
 
 todo
 pig vs spark

@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-19T00:32:49+05:30
+
+====== sqoop ======
+Created Tuesday 19 February 2019
+
+sql + hadoop
+move data from relational databases to / from hadoop system
+import/export/codegen data

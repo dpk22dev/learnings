@@ -10,9 +10,12 @@ http://nodered.org/
 
 https://www.quora.com/What-is-the-best-way-to-learn-Internet-of-things-IOT
 
-https://www.youtube.com/watch?v=Xb1dRpBlERw
+https://www.youtube.com/[[https://www.youtube.com/wattch?v=Xb1dRpBlERw|wattch]][[?v=Xb1dRpBlERw]]
 
-beaglebone, ninjablocks
+beaglebone, ninjablockstu
+
+good blog tutorials
+https://data-flair.training/blogs/iot-hardware/
 
 playlist on IoT
 https://www.youtube.com/watch?v=GUvKv7D4iZY&list=PLSVzLvRoaSwReW4nr7XbrpeD7VWH5JBF4

@@ -5,16 +5,10 @@ Creation-Date: 2018-07-07T09:20:19+05:30
 ====== hacks ======
 Created Saturday 07 July 2018
 
-inspect element and
-
-arr = [3,5,8,11, 12, 26, 27];
-arr.forEach( function( val, i ){ 
-	val = val-1;
-	$('input[name="particulars'+val+'"]').value = 'gurgaon noida cab';  
-	$('input[name="placeVisited'+val+'"]').value = 'gurgaon/noida';  
-	$('input[name="travelMode'+val+'"]').value = 'cab';  
-	$('input[name="amount'+val+'"]').value = 2000;  
-} );
+baeldung
+body .syntaxhighlighter code{
+	font-weight: 600!important;
+}
 
 **kibana elastic search backspace fix:**
 .typeahead .typeahead-items { 
@@ -37,6 +31,11 @@ for elastic
 sysctl -w vm.max_map_count=262144
 vm.max_map_count = 65530
 
+ubuntu hangs on copying data
+https://askubuntu.com/questions/397249/system-freezes-unresponsive-unusable-when-copying-large-file-to-usb
+
+ubuntu touchpad reduce sensitivity
+ syndaemon -i .5 -K -t -R -d
 
 ['1', '2'].forEach( function( s ){ console.log( 'this.'+s+' = '+'this.'+s+'.bind(this);' )} )
 

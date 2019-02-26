@@ -10,15 +10,39 @@ server: http://localhost:16010/master-status
 standalone mode: zookeeper is requried
 in distributed mode, each node runs hbase daemons primary and backup HMaster, HRegionServers, Zookeeper
 
-
+hive uses hdfs for storing data, so deletes are not possible; but hbase provides that
+should be distributed, sorted data, sparse data storage
 we can use hadoop as filesystem to store hbase's data
+
+under the hood MemStore is a sorted [[ConcurrentSkipListMap,]] which gets serialized to hbase file format which is kind of b+tree ish structure
+
+
+basic arch:
+https://www.youtube.com/watch?v=2QwAidyTdNU
+https://mapr.com/blog/in-depth-look-hbase-architecture/
+
+https://stackoverflow.com/questions/32175614/where-does-hbase-store-data
+
+new algorithm in HBase 2.0, named Accordion inspired by lsm( log strujctured merge trees)
+https://blogs.apache.org/hbase/entry/accordion-hbase-breathes-with-in
 
 hbase vs cassandra
 https://www.scnsoft.com/blog/cassandra-vs-hbase
 
+hbase  memstore and writes
+https://blog.cloudera.com/blog/2012/06/hbase-io-hfile-input-output/
+
+flow of writes in hbase
+
+ACID transactions in hbase
+http://hadoop-hbase.blogspot.com/2012/03/acid-in-hbase.html
+
 __questions__
 how is it diff from spark/storm real time analytics
+~~if hbase uses hadoop, how deletetion and real time access of data is happening~~
+	~~does hbase uses hadoop as storage unit or it has its own way of storage like cassandra~~
+ ~~how deletion happens in hbase~~	
+	using tombstones
+how bloom filters are helpful
 
-does hbase uses hadoop as storage unit or it has its own way of storage like cassandra
- 
 __todo__

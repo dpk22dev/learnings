@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-19T00:33:50+05:30
+
+====== flume ======
+Created Tuesday 19 February 2019
+
+agent consists of source, channel, sink
+client running on server can send generated data to source of agent, which will store in buffered queue( channel ) which will be sent to sink to store into hdfs or other system
+
+various preimplemented source, channel, sinks are available which run based on input configuration
