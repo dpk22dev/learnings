@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-05T20:31:33+05:30
+
+====== mobile ======
+Created Tuesday 05 March 2019
+
+how mobile works
+https://www.youtube.com/watch?v=1JZG9x_VOwA

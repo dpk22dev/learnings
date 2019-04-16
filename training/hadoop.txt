@@ -5,7 +5,7 @@ Creation-Date: 2018-09-02T12:00:49+05:30
 ====== hadoop ======
 Created Sunday 02 September 2018
 
-installed in: /opt/installs/hadoop-2.9.2
+installed in: [[/opt/installs/hadoop-2.9.2]]																																																																																												
 
 
 https://dzone.com/refcardz/getting-started-apache-hadoop	

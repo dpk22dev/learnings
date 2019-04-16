@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2018-02-13T17:29:41+05:30
 
-====== jira ======
+====== atlassian ======
 Created Tuesday 13 February 2018
 
 jira add-on
@@ -14,3 +14,11 @@ https://developer.atlassian.com/server/framework/atlassian-sdk/create-a-hellowor
 
 
 https://developer.atlassian.com/server/framework/gadgets/creating-a-gadget-javascript-object/
+
+bitbucket pipeline allows to run pipeline in docker
+
+bamboo:
+we can download and run bamboo on local system
+plan : multiple jobs : tasks( provides inbuild multiple tasks to select from ;)
+enable a plan and run
+we can specify trigger for plan

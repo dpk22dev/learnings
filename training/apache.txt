@@ -8,6 +8,9 @@ Created Thursday 17 July 2014
 installation
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
 
+apache projects 
+http://archive.cloudera.com/tarballs/
+
 reading apache2 conf says that running apache2 directly from [[/usr/bin]] apache2 will run it without configurations; so use [[/etc/init.d/apache2]] start 
 
 => diff b/w init.d and init

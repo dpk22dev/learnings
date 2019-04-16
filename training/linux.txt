@@ -54,6 +54,9 @@ http://stackoverflow.com/questions/1957398/what-exactly-are-spin-locks
 http://www.linuxinternals.org/blog/2014/05/07/spinlock-implementation-in-linux-kernel/s
 eg: t1 acquires spin lock on core1, t2 will keep on looping on core2 untill t1 doesn't release lock. in single core machine spin-lock is simply disabling interrupts to avoid reschedule by kernel.
 
+
+https://unix.stackexchange.com/questions/45913/is-there-a-way-to-redirect-nohup-output-to-a-log-file-other-than-nohup-out
+
 mutex:
 if t1 has acquired mutex on resource, t2 will go to sleep if it asks for. when t1 has released mutex and t2 gets rescheduled by OS, it can acquire mutex.
 
@@ -111,6 +114,9 @@ can multiple cores access same memory at same time
 this shows us we should be careful about architecture of cpu, bus and type of task we are planning to acheive maximum output from machine
 http://programmers.stackexchange.com/questions/183686/can-multiple-cpus-cores-access-the-same-ram-simutaneously
 
+**ssd problems**:
+https://en.wikipedia.org/wiki/Write_amplification
+
 **asynchronous vs non-blocking io**
 http://blog.omega-prime.co.uk/?p=155
 
@@ -122,6 +128,15 @@ http://stackoverflow.com/questions/807506/threads-vs-processes-in-linux
 https://www.cs.cmu.edu/~fp/courses/15213-s06/lectures/27-multicore.pdf
 simultaneous multithreading can happen in single core, single processor. instructions from two independent threads can execute in single core's different functional branches. cores can be SMT enabled or not.
 2,4 or 8 simultaneous threads on single core, intel calling them hyperthreads. cache is private as well as shared among cores. this can cause cache coherence problem. solution: invalidation-based protocol with snooping
+
+logical volume management instead of gparted
+https://wiki.ubuntu.com/Lvm
+disabling lvm cache
+https://askubuntu.com/questions/767140/lvmetad-is-not-active-yet
+
+screen : sharing screen across users:
+http://wiki.networksecuritytoolkit.org/index.php/HowTo_Share_A_Terminal_Session_Using_Screen
+http://aperiodic.net/screen/quick_reference
 
 **perf**
 http://www.tecmint.com/perf-performance-monitoring-and-analysis-tool-for-linux/

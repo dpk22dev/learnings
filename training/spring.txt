@@ -11,6 +11,14 @@ https://docs.spring.io/spring-framework/docs/5.0.5.BUILD-SNAPSHOT/javadoc-api/ov
 full spring doc
 https://docs.spring.io/spring-boot/docs/current/reference/html/index.html
 
+common spring annotations:
+https://www.baeldung.com/spring-core-annotations
+spring boot annotations:
+https://www.baeldung.com/spring-boot-annotations
+link to all type of annotatios
+https://www.baeldung.com/spring-mvc-annotations
+http://files.zeroturnaround.com/pdf/zt_spring_annotations_cheat_sheet.pdf
+
 maven wrapper
 mvn -N io.takari:maven:wrapper
 
@@ -62,6 +70,9 @@ https://stackoverflow.com/questions/39209924/spring-boot-which-piece-of-code-act
 **diff b/w spring spring boot and spring components**
 https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare
 
+spring data: 
+https://www.baeldung.com/spring-data-annotations
+
 for reference and api of projects, code:
 https://projects.spring.io/spring-data-redis/
 https://docs.spring.io/spring-data/redis/docs/2.1.0.M1/api/
@@ -94,6 +105,9 @@ https://stackoverflow.com/questions/2604655/any-open-source-spring-sample-projec
 dispatcher servlet in spring
 https://stackoverflow.com/questions/2769467/what-is-dispatcher-servlet-in-spring
 
+spirng data jpa vs jpql vs native queries
+https://www.javacodegeeks.com/2013/06/jpa-2-dynamic-queries-vs-named-queries.html
+
 **questions**
 entity confusion in onetomany and manytoone mapping
 why  few exteded functions/overriding in repositoryy
@@ -121,7 +135,7 @@ have you use commandrunner for different jobs
 should we use entity and repos, dtos acc to clients in different packages
 dependencymanagement vs dependencies tag in spring
 what does register new servlet mean
-
+are requests handled in parallel by spring where is that config
 
 **todo:**
 docs: https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html

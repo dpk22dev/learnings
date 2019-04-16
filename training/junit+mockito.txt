@@ -1,0 +1,81 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-27T00:05:04+05:30
+
+====== junit+mockito ======
+Created Wednesday 27 February 2019
+
+links to features of junit4: https://github.com/junit-team/junit4/wiki
+mockito docs: http://static.javadoc.io/org.mockito/mockito-core/2.9.0/org/mockito/Mockito.html
+
+junit intro: https://www.vogella.com/tutorials/JUnit/article.html
+mockito intro: 
+junit provides
+for testing exception
+@Rule public ExpectedException thrown = ExpectedException.none();
+
+junit toolbox: classes for automated tests with junit
+junit dataprovider: for classes using for data provider
+
+we can create rules, exception, timeout handliing, suites, disable uts based on condition
+
+naming ut methods:
+Given[ExplainYourInput]When[WhatIsDone]Then[ExpectedResult]
+
+ when(c.compareTo(isA(Todo.class))).thenReturn(0);
+doReturn(…​).when(…​).methodCall // for spy
+
+
+verify(test, times(2)).getUniqueId(); 	// was the method getUniqueId called twice?
+
+when testing persistence ut:
+when(dao.save(any(User.class))).thenAnswer(i -> {
+	User user = i.getArgument(0);
+	userMap.add(user.getId(), user);
+	return null;
+});
+we can use **thenAnswer **to do some logic 
+
+you probably don't need to mock data input, only services, repositoy, dto etc might need to be mocked
+table content can be made list of dataDto, out of that search can be done based on different column parameters and dto can be returned
+
+@RunWith(MockitoJUnitRunner.class)
+@RunWith( PowerMockRunner.class )
+@RunWith(SpringRunner.class)
+
+mock vs spy
+https://stackoverflow.com/questions/28295625/mockito-spy-vs-mock
+
+dos and don't for unit tests
+https://mestachs.wordpress.com/2012/07/09/mockito-best-practices/
+
+power mock with spring boot
+http://www.virtual7.de/blog/2018/07/solving-classloading-issues-when-using-powermockito-with-spring-boot-testing/
+using another junit runner with powermock
+https://blog.jayway.com/2014/11/29/using-another-junit-runner-with-powermock/
+
+installing powermock
+mvn install:install-file -Dfile=/home/deepak/Downloads/powermock-module-junit4-1.7.2.jar -DgroupId=org.powermock -DartifactId=powermock-module-junit4 -Dversion=1.7.2 -Dpackaging=jar
+mvn install:install-file -Dfile=/home/deepak/Downloads/powermock-api-mockito-1.7.2.jar -DgroupId=org.powermock -DartifactId=powermock-api-mockito -Dversion=1.7.2 -Dpackaging=jar
+
+__questions:__
+diff b/w junit4 and junit5
+diff b/w junit and testng
+why assume to fail test, fail(), argument-captors
+what are default useful rules by junit
+should we use csv, json source
+writing custom rules, complex mocks
+diff b/w when-thenreturn vs doreturn-when for spies
+   when(spy.get(0)).thenReturn("foo");
+   //You have to use doReturn() for stubbing
+   doReturn("foo").when(spy).get(0);
+
+source code questions
+how is binding happending in junit framework from annotaition to really running tests
+how adapters are used for backward compatibility
+
+
+
+
+
+

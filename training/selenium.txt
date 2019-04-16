@@ -8,7 +8,8 @@ Created Tuesday 14 March 2017
 http://www.guru99.com/selenium-tutorial.html
 https://gist.github.com/ziadoz/3e8ab7e944d02fe872c3454d17af31a5
 
-
+using selenium grid
+https://www.linode.com/docs/development/nodejs/install-configure-selenium-grid-ubuntu-16-04/
 
 
 read after

@@ -43,6 +43,9 @@ https://www.javaworld.com/article/2074979/java-concurrency/double-checked-lockin
 **jar vs war vs ear**
 https://stackoverflow.com/questions/1594667/war-vs-ear-file
 
+changing content of jar archive
+https://fabianlee.org/2018/10/30/linux-using-zip-unzip-to-add-update-and-remove-files-from-a-java-jar-war/
+
 **java specs**
 https://docs.oracle.com/javase/specs/index.html
 java7 specs: https://docs.oracle.com/javase/specs/jls/se7/jls7.pdf
@@ -436,7 +439,7 @@ does jvm creates single object using new Object same as done for String str = ""
 how atomic in java provides safety it just uses native method to write content
 why atomicops is giving correct answer
 ~~why sumthreads is able to access private members~~
-why kafka producer is not running
+~~why kafka producer is not running~~
 why phaser was introduced
 
 try clone method

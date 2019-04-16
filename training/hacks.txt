@@ -34,6 +34,20 @@ vm.max_map_count = 65530
 ubuntu hangs on copying data
 https://askubuntu.com/questions/397249/system-freezes-unresponsive-unusable-when-copying-large-file-to-usb
 
+setting cipher for ssh
+ssh -vvv -m umac-64@openssh.com sahil.singla@valstpdevcfs01a.asp.dhisco.com
+
+scp not sending file, git push not sending 
+earlier it was 1500
+ ip link show wlp2s0 
+ip link set wlp2s0 mtu 1400
+
+opened connections:
+netstat listening yes numeric-ports yes
+
+setting scroll for screen:
+https://unix.stackexchange.com/questions/40242/scroll-inside-screen-or-pause-output
+
 ubuntu touchpad reduce sensitivity
  syndaemon -i .5 -K -t -R -d
 
@@ -77,3 +91,6 @@ https://pixabay.com for free images
 
 instalinng ca certs
 https://superuser.com/questions/437330/how-do-you-add-a-certificate-authority-ca-to-ubuntu
+
+must installs on dev machins:
+https://dev.to/brpaz/my-linux-development-environment-of-2018-ch7

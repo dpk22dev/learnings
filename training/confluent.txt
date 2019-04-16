@@ -8,6 +8,10 @@ Created Wednesday 13 February 2019
 bin/kafka-topics --zookeeper localhost:2181 --topic reporting --delete
 bin/kafka-topics --zookeeper localhost:2181 --list
 
+set CONFLUENT_CURRENT in bashrc for data and logs
+
+sometimes flushing does not happen before criteria is met:
+https://github.com/confluentinc/kafka-connect-hdfs/issues/148
 
 concepts:
 https://docs.confluent.io/current/connect/concepts.html#connect-converters

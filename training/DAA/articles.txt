@@ -36,11 +36,22 @@ https://community.topcoder.com/tc?module=ProblemArchive&sr=&er=&sc=&sd=&class=di
 for practice: search on
 https://arena.topcoder.com/#/u/practiceProblemList
 
-https://www.careercup.com/categories
+**topic wise:**
+https://www.topcoder.com/community/competitive-programming/tutorials/
+
+https://www.careercup.com/categories 
+
+**codeforces**
+https://codeforces.com/blog/entry/57282
+**whole list of resources**
+https://codeforces.com/blog/entry/23054
+**good topic wise resources**
+https://discuss.codechef.com/t/data-structures-and-algorithms/6599
 
 good articles are provided on 
 https://brilliant.org/computer-science/?subtopic=algorithms
 practice maths on https://brilliant.org/algebra/?subtopic=linear-equations
 read wikis on https://brilliant.org/computer-science/
 
+follow blogs after 2010, each contest and its solution is provided
 https://petr-mitrichev.blogspot.com/

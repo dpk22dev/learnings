@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-04-01T20:09:46+05:30
+
+====== coding ======
+Created Monday 01 April 2019
+
+for fast output 
+instead of outputting for each testcase, store result into stringbuilder with \n and output at once

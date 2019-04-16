@@ -14,6 +14,9 @@ https://www.vogella.com/tutorials/Mockito/article.html
 https://www.baeldung.com/mockito-series
 https://www.baeldung.com/injecting-mocks-in-spring
 
+integration testing
+https://zeroturnaround.com/rebellabs/the-correct-way-to-use-integration-tests-in-your-build-process/
+
 questions:
 is bdd mockito just different way of writing mockito test cases
 	which to use when

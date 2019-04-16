@@ -46,7 +46,7 @@ extension:
 https://symfony.com/doc/2.3/cookbook/bundles/extension.html
 for writing configs of service in decoupled bundles
 
-php app/console [[debug:xyz]] shows info about routes, services, dependencies etc..
+php app/console debug:xyz shows info about routes, services, dependencies etc..
 kernel creates container, and prepares services; we can modify those services using compiler pass.
 these services can be injected into other services/controller for usage
 commands, listeners & subscribers can be created for batch jobs, async processing

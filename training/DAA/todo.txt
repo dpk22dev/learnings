@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-04-01T19:49:38+05:30
+
+====== todo ======
+Created Monday 01 April 2019
+
+write code
+test with junit
+try different solvers
+try to refactor code out to different methods
+integration idea with topcoder/codeforces
+put all i/o types into project code
+try diff projects under diff package, see if code can still be build if one package is cocuupt
+	individual file should be runnable
+create git repo and push toit git

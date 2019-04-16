@@ -38,3 +38,13 @@ N: show line number
 F: similar to tail -f, stop with ctrl+c
 S: split lines
 
+cd runs in child process
+https://stackoverflow.com/questions/255414/why-doesnt-cd-work-in-a-shell-script
+
+
+https://stackoverflow.com/questions/617182/how-to-suppress-all-output-from-a-command-using-bash
+
+
+
+
+__questions__

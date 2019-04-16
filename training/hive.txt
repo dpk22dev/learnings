@@ -12,6 +12,15 @@ quickstart to hive
 https://www.edureka.co/blog/hive-tutorial/
 you can couple Hive with other tools to use it in many other domains. For example, Tableau along with Apache Hive can be used for Data Visualization, Apache Tez integration with Hive will provide you real time processing capabilities, etc.  
 
+beeline can be run using:
+after moving to /opt/hive/apache-hive-3.1.1-bin
+beeline -u jdbc:hive2://
+https://blog.cloudera.com/blog/2014/02/migrating-from-hive-cli-to-beeline-a-primer/
+ !set outputformat table
+
+for showing columns
+set hive.cli.print.header=true;
+
 for storing meta info like partition, bucket, tables hive uses rdbms: in simple mode uses derby, in complex uses mysql
 hive service, meta store service
 

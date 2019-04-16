@@ -25,10 +25,17 @@ if diff of count of odd bits - count of even bits is multiple of 3 then number i
 
 when asked to print power, multi without using maths, bitwise operators think of using recursion
 
+while using inx after loop can cause IOOB exception, don't rely while( si <= ei ), si can jump out of ei as in quicksort
+
+height vs depth of tree
+https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height
+https://stackoverflow.com/questions/4065439/height-of-a-tree-with-only-one-node
+
 https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/
 BST: only preorder/post is suffiecient, as we know position of root, elements smaller than root will form left subtree, greater than root will form rigth subtree
-Complete: level order is enough, 1,2,4,8.. nodes at each level . eg: hea**p**( com**p**lete )
-full: each node has 0/2 childeren. while storing preorder need bit indicatior for leaf / internal nodes
+full : means totally full, each node must have 2 nodes except leaf which should have 0 nodes; while storing preorder need bit indicatior for leaf / internal nodes
+Complete: level order is enough, 1,2,4,8.. nodes at each level . eg: hea**p**( com**p**lete ), e; last level can be partially filled
+full: each node has 0/2 childeren. 
 BT: preoder + inorder
 
 https://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/
@@ -104,6 +111,48 @@ number of factors on n if we have prime factors
 t( 84 ) : (2+1)*(1+1)*(1+1) -> 12
 s( 84 ): (2^3-1/2-1) * (3^2-1/3-1) * ( 7^2-1/7-1)
 p( 84 ):  n ^ (t(n)/2) : 84^6
+
+https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
+evaluation of infix demands compiler to have multiple passes over expression because compiler has to apply operators priority wise; while prefix/postfix can be evaluated in single pass using stack
+
+for postfix: read from left to right
+infix -> postfix conversion: operators are pushed onto stack, operands are just outuputted; because we need to rearrange operators acc to precedence
+postfix evaluation: operands are pushed to stack; based on operator encountered result is pushed on to stack
+
+for prefix: read from right to left
+infix->prefix conversion: operators are pushed onto stack, operands are outputed; reverse the resulting string
+prefix evaluation: read right to left, put operands and their result onto stack while evaluating operators
+
+due to pointer limitations in java, xor llist is not possible
+
+avl tree: balance tree after insertion/deletion
+store height of node along with key, update it with operations; it makes avl perform better
+for finding LL, LR, RL, RR case we can get balance +/- and key smaller/large than node.left/node.right key we can find the case
+
+prog can survice
+1 sec: 10 ^ 8 
+O(n) n = 10^7
+O(n ln n) n = 10^6
+O( n ^ 2 ) n = 10 ^ 4
+
+in bottom up, some times we don't need to fill few fields, eg: in binomial coeff, for nCr we move j <= min( i, r) 
+
+by pigeon hole principle, for set with n elements, there exists a subset sum of whose elements is k*m when n > m 
+
+when state can't be stored directly in 2d/3d array, we can use serialized hashmap eg: stringified stateA_stateB_valC can be memoized and retreived; also for storing states its index is enough eg: jumping from 3 areas to change values can be acheived by assigning area a value
+
+**graphs**
+variations of graphs:
+directed
+	weighted/unweighted, with/without cycles, connected/disconnected
+undirected
+	weighted/unweighted, with/without cycles, connected/disconnected
+solution approches: bfs, dfs, shortest path: single source / all source, cycle detection, topological sorting, strongly connected, bipartite, flow
+
+In undirected graphs, either Breadth First Search or Depth First Search can be used to detect cycle. In directed graph, only depth first search can be used.
+
+
+
 
 
 todo

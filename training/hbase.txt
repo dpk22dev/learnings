@@ -14,7 +14,7 @@ hive uses hdfs for storing data, so deletes are not possible; but hbase provides
 should be distributed, sorted data, sparse data storage
 we can use hadoop as filesystem to store hbase's data
 
-under the hood MemStore is a sorted [[ConcurrentSkipListMap,]] which gets serialized to hbase file format which is kind of b+tree ish structure
+under the hood MemStore is a sorted ConcurrentSkipListMap, which gets serialized to hbase file format which is kind of b+tree ish structure
 
 
 basic arch:

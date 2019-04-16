@@ -27,7 +27,7 @@ check if inodes are full: df -i
 install sysstat  for vmstat, iostat
 
 list of some useful commands:
-http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
+http://www.tecmint.com/command-line-tools-to-monitor-linux-[[http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/|performance/]]
 
 monitoring metrics
 https://www.datadoghq.com/blog/monitoring-101-collecting-data/

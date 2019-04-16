@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-05T20:34:13+05:30
+
+====== X curious ======
+Created Tuesday 05 March 2019
+
+channel about how things/machines work
+https://www.youtube.com/user/LearnEngineeringTeam/playlists

@@ -70,6 +70,10 @@ quick definition: ctrl+shift+I
 
 **intellij:**
 https://www.jetbrains.com/help/idea/refactoring-source-code.html
+ctrl [[+shift]] + f: find usage 
+shift+shift: find files
+alt+ctrl+o : remove unused imports
+f2 / shift+f2 : jump next/prev error
 
 **screen:**
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server
