@@ -26,6 +26,12 @@ are requests per sec is huge, computation/momory requirements for generating res
 high availability using redundancy/ resilience to failure, spiky traffic: load balancer after some load tests
 apply tools and technologies
 
+soa vs msa
+https://www.edureka.co/blog/microservices-vs-soa/
+
+eip
+https://www.enterpriseintegrationpatterns.com/patterns/messaging/
+
 **uml diagrams**
 https://tallyfy.com/uml-diagram/
 

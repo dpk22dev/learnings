@@ -74,10 +74,12 @@ ctrl [[+shift]] + f: find usage
 shift+shift: find files
 alt+ctrl+o : remove unused imports
 f2 / shift+f2 : jump next/prev error
+use lombok plugin for reading/understanding of annotations by ide
 
 **screen:**
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server
 ctrl + a, ? help
+ctrl+a / esc to scroll mode; esc again to escape from it
 
 chrome:
 ctrl+shift+P : open panel and search through different command

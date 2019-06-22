@@ -7,6 +7,9 @@ Created Monday 06 August 2018
 
 if in intermediate step there is some arr of elements; and need for sorting to get result => consider traversing original array from right side, sometimes it saves sorting
 
+while deciding complexity for RxC matrix, take example for 3x3 say, try to find number of calls on each cell. tree will give call on each level, summing them gives the result, eg:
+1 + 2 + 4 +..  2^i + .. + 2( R +C -1  ) => O( 2^R+C-1 )
+
 O(n2) -> O(n): keeping two arrays calculated data for left of array and right of array; then loop through each element to compute
 
 when comparing strings rabin-karp based hashcode can be useful; also for just comparing anagrams keeping charater frequency array can do comparison in O(1)
@@ -89,6 +92,9 @@ for handling range update, single query, store diff of values in array; for udpa
 
 while finding 3 numbers whose sum equals to say 0, we can sort array, iterate i over its elements, for each i, we can find elements(x,y) in (i+1, n-1) using first-last pointer technique, whose sum is -arr[i], ifso then i, x, y is one of required pair. we might be tempted that x or y can be < ith elment; had it been so it had been found earlier
 
+for finding missing positive numbers, using negative numbers to indicate number has arrived can lead to complex situations. instead put element to its pos-1 the position, swap element at that position to current position; continue with current index.
+
+
 -x = ~x + 1
 set kth bit of x to 1: x | 1 << k
 set kth bit of x to 0: x & ~(1<<k)
@@ -141,6 +147,18 @@ by pigeon hole principle, for set with n elements, there exists a subset sum of 
 
 when state can't be stored directly in 2d/3d array, we can use serialized hashmap eg: stringified stateA_stateB_valC can be memoized and retreived; also for storing states its index is enough eg: jumping from 3 areas to change values can be acheived by assigning area a value
 
+distance b/w two points on graph:
+ assuming a square, and moving in destination direction gives different result: 
+int ab = Math.min( Math.abs( x1-x2), Math.abs(y1-y2) );
+x3 = x2 < x1 ? x1-ab : x1+ab; y3 = y2 < y1 ? y1-ab : y1+ab;
+rest = Math.min( Math.abs( x3-x2), Math.abs(y3-y2) );
+result = ab+rest;
+below is correct:
+ Math.max( Math.abs(x2-x1), Math.abs(y2-y1) ); 
+
+**dp**
+modify array to maximize sum of adjacent differences where each element can be 1 or x, can be converted into assemly line scheduling problelm
+
 **graphs**
 variations of graphs:
 directed
@@ -151,7 +169,8 @@ solution approches: bfs, dfs, shortest path: single source / all source, cycle d
 
 In undirected graphs, either Breadth First Search or Depth First Search can be used to detect cycle. In directed graph, only depth first search can be used.
 
-
+painters' partition problem: it can be solvevd using DP O( k*n^3 ) but using binary search can be solved using O(k*n^2); bs trick is : consider 1 painter can paint in sum and excess painters can paint in max time; we need to increase/decrease partition size and find #required painters, compare it with #availpainters to change low/high value of partition
+https://www.geeksforgeeks.org/painters-partition-problem-set-2/
 
 
 

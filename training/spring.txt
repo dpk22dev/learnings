@@ -108,6 +108,9 @@ https://stackoverflow.com/questions/2769467/what-is-dispatcher-servlet-in-spring
 spirng data jpa vs jpql vs native queries
 https://www.javacodegeeks.com/2013/06/jpa-2-dynamic-queries-vs-named-queries.html
 
+project reactor docs:
+https://projectreactor.io/docs/core/release/reference/index.html
+
 **questions**
 entity confusion in onetomany and manytoone mapping
 why  few exteded functions/overriding in repositoryy

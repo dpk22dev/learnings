@@ -11,14 +11,41 @@ Created Monday 18 September 2017
 starting with investment
 https://www.investopedia.com/financial-analysis-4427788
 
+about business kind of book
+https://study.com/academy/lesson/how-the-economic-and-legal-environment-affects-business.html
 
+https://economictimes.indiatimes.com/mf/analysis/best-equity-mutual-fund-sip-portfolios-to-invest-in-2019/articleshow/67431830.cms
 
+stock investment
+https://www.moneycontrol.com/stocks/marketinfo/invest/bse/index.html
+https://www.getmoneyrich.com/top-stocks-to-buy-in-india/
+
+reading balance sheet on money control:
+https://www.youtube.com/watch?v=TCfvqXNPZYI
+
+red herring prospectus gives company's details like capital structure, risk factors etc why company wants to raise money which can be got from sebi site
+https://www.sebi.gov.in/filings/public-issues/apr-2019/bajaj-energy-limited_42638.html
+
+strategies
+low risk high return
+
+principles by ray dalio
 
 __todo__
 module5 : 45
 watch videos: peter lynch
 
+read fundamental analysis
+read how to analyze moneycontrol
+https://www.getmoneyrich.com/top-stocks-to-buy-in-india/
+read investment book summaries
+invest
+
+
 
 __questions__
 what is liquidity, volatility
 what is 91 days rbi treasury bill
+why ipo are in lot size, not per share basis
+why face value of share is required
+why sebi stopped entry load on mutual funds

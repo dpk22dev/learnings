@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-06-18T12:12:26+05:30
+
+====== informix ======
+Created Tuesday 18 June 2019
+
+https://www.ibm.com/support/knowledgecenter/en/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/rdat_minreqinformix.html

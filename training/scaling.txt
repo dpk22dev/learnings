@@ -67,6 +67,9 @@ SSTable stands for Sorted Strings Table a concept borrowed from Google BigTable 
 scaling different services:
 https://www.hiredintech.com/classrooms/system-design/lesson/61
 
+
+https://blog.yugabyte.com/6-technical-challenges-developing-a-distributed-sql-database/
+
 __todo__
 api how to and integration with social networking sites
 cloud services by amazon

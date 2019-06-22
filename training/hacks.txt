@@ -37,6 +37,10 @@ https://askubuntu.com/questions/397249/system-freezes-unresponsive-unusable-when
 setting cipher for ssh
 ssh -vvv -m umac-64@openssh.com sahil.singla@valstpdevcfs01a.asp.dhisco.com
 
+remember ssh pass:
+sshpass -p your_password ssh user@hostname
+sshpass -f ~/sshpass_sahil ssh sahil.singla@valstpdevkaf01c.asp.dhisco.com ls -al /
+
 scp not sending file, git push not sending 
 earlier it was 1500
  ip link show wlp2s0 
@@ -47,6 +51,7 @@ netstat listening yes numeric-ports yes
 
 setting scroll for screen:
 https://unix.stackexchange.com/questions/40242/scroll-inside-screen-or-pause-output
+ctrl+a / esc to scroll mode; esc again to escape from it
 
 ubuntu touchpad reduce sensitivity
  syndaemon -i .5 -K -t -R -d
@@ -73,7 +78,7 @@ https://stackoverflow.com/questions/11136010/how-do-i-prevent-chrome-developer-t
 window.addEventListener('unload', function() { debugger; })
 
 https://www3.fmovies.to
-https://www5.fmovies.to/
+https://www7.fmovies.to/
 
 few good websites
 10 Minute Mail: https://10minutemail.com

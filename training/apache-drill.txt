@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-06-07T12:19:04+05:30
+
+====== apache-drill ======
+Created Friday 07 June 2019
+
+https://drill.apache.org/docs/installing-drill-on-the-cluster/
+https://technology.amis.nl/2019/03/11/what-is-apache-drill-and-how-to-setup-your-proof-of-concept/

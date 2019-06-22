@@ -8,6 +8,13 @@ Created Monday 29 October 2018
 beans, ejb are sepecs
 ejb is different than javabeans 
 
+Because Java programs are dynamically linked, the references from one class file to another are symbolic. In a statically-linked executable, references between classes are direct pointers or offsets. Inside a Java class file, by contrast, a reference to another class spells out the name of the other class in a text string
+
+java core api/platform + java standard extension api/platform
+jvms for card platfrom, personal plat, embedded plat, SE
+
+
+
 todo
 try running project with ejb, why ejb coding is expensive
 

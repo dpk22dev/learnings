@@ -7,3 +7,38 @@ Created Monday 01 April 2019
 
 for fast output 
 instead of outputting for each testcase, store result into stringbuilder with \n and output at once
+
+initialize arraylist of arraylist in loop before using, initialize internal array as well:
+		for( int i = 0; i < A; i++ ){
+			result.add(i, new ArrayList<Integer>() );
+			for( int j = 0; j < A; j++ ){
+				result.get(i).set(j,0);
+			}
+		}
+
+.add() method insert the element at the given position and shift the other element accordingly
+to overwrite the value at particular index you have to use the .set(position, value)
+
+you can't set an element if it hasn't been added previously in arraylist -> gives array index out of bound exception
+
+https://github.com/nagajyothi/InterviewBit
+
+**mistakes made**
+increment / dec not done in loop
+eqaulity check in condition wrong, equal/not equal
+loop till condition not accurate
+
+when using while loop check for out of bound errors:
+while( j < intCount && newInterval.end > intervals.get(j).start )
+
+always write if-elseif-else in clear manner in multiplel lines; if writting in single line be very careful:
+				if( j == 0 ){ res.get(i).set(j, res.get(i-1).get(0) ); }
+				if( j == i ){ res.get(i).set(j, res.get(i-1).get(j-1) ); }
+				else{ res.get(i).set(j, res.get(i-1).get(j-1) + res.get(i-1).get(j) ); }
+here second missing elseif above else caused IOUB exception
+
+be careful as & has lower precendece as ==
+(val & (1 << j)) == 0
+
+while storing value for sums use long[] instead of int[]; use long for storing sum of values, which can overflow
+

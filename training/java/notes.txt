@@ -131,6 +131,8 @@ List<List<String> list = Arrays.stream(dataSet)
 							   .map(Arrays::asList)
 							   .collect(Collectors.toList());
 
+functional prog patterns for java
+https://dzone.com/articles/functional-programming-patterns-with-java-8
 
 *** Problem ***
 get stuck with primitive and boxed type operations

@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-01-23T23:47:39+05:30
+
+====== todo-extra ======
+Created Wednesday 23 January 2019
+
+repositoy all entities specially used
+maven, gradle lifecycles
+download sample projects in link and go through them
+is it good practice to use entity same as model, whats diff b/w them
+consumers writing besst way
+
+javax transaction
+spring transaction
+cassandra setup and sample project to in out data 
+	codecs in cassandra cluster
+~~kafka streams,~~,~~quartz scheduler,~~imq,jms,curator, mockkito
+	what happens when jms dies
+after flow, 
+	check how data is defined, data uyou are aware of
+	how things are coded
+caffeine cache
+go through entities and see how db is designed
+important guava library methods
+	how are test cases auto generated
+https://ideas.com/tools-resources/glossary/
+
+~~read https://stackoverflow.com/questions/8599424/understanding-routing-table-entry~~
+junit,mockito source code
+read java books 
+read spring books: spring source code
+how data store drivers and libs are designed
+try fast crud projects with various data stores
+hadoop infra: for data analysis
+menu options present in intellij
+dsa
+
+
+

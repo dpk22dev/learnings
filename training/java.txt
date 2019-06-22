@@ -84,7 +84,7 @@ https://dzone.com/articles/java-concurrency-in-depth-part-1
 https://dzone.com/articles/intricacies-of-multi-threading-in-java?fromrel=true
 
 **Why Functional Interfaces in Java 8 have one Abstract Method?**
-Functional Interface lets us call an object as if it were a function, which lets us pass verbs(functions) around our program rather than nouns(objects). Implementations of Functional Interface perform a single well-defined action, as any method should, with a name like run, execute, perform, apply, or some other generic verb
+Functional ''Interface'' lets us call an object as if it were a function, which lets us pass verbs(functions) around our program rather than nouns(objects). Implementations of Functional Interface perform a single well-defined action, as any method should, with a name like run, execute, perform, apply, or some other generic verb
 
 **streams **
 http://winterbe.com/posts/2014/03/16/java-8-tutorial/
@@ -92,6 +92,11 @@ http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
 https://zeroturnaround.com/rebellabs/java-8-streams-cheat-sheet/
 http://files.zeroturnaround.com/pdf/zt_java8_streams_cheat_sheet.pdf
 
+streams by brian goetze
+https://developer.ibm.com/series/java-streams/
+
+reactive streams, rxjava, reactive-core
+https://www.infoq.com/articles/reactor-by-example/
 
 **blocking vs nonblocking vs async**
 https://stackoverflow.com/questions/2625493/asynchronous-vs-non-blocking

@@ -10,7 +10,8 @@ In music, tones which have frequencies which are a power of two apart are consid
 Each octave is split into 12 notes which are geometrically spaced within the octave. Given a musical note of frequency f, the frequency of the nth note above f is given by:
 f * 2 ^ ( n/12)
 
-
+which guitar to choose:
+https://thehub.musiciansfriend.com/guitar-buying-guides/the-best-guitars-for-beginners
 
 composition
 https://en.wikipedia.org/wiki/Glossary_of_musical_terminology

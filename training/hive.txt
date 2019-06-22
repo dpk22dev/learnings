@@ -21,6 +21,11 @@ https://blog.cloudera.com/blog/2014/02/migrating-from-hive-cli-to-beeline-a-prim
 for showing columns
 set hive.cli.print.header=true;
 
+https://stackoverflow.com/questions/49799838/hive-service-hiveserver2-metastore-service
+
+hive - hadoop integration
+https://stackoverflow.com/questions/40510851/relationship-between-hive-and-hadoop-mapreduce
+
 for storing meta info like partition, bucket, tables hive uses rdbms: in simple mode uses derby, in complex uses mysql
 hive service, meta store service
 
@@ -31,6 +36,8 @@ Hive compiler generates map-reduce jobs for most queries.
 bin/hive --service runs any of below services:
 beeline cleardanglingscratchdir cli fixacidkeyindex help hiveburninclient hiveserver2 hplsql jar lineage llapdump llap llapstatus metastore metatool orcfiledump rcfilecat schemaTool strictmanagedmigration tokentool version
 
+running derby as service:
+https://cwiki.apache.org/confluence/display/Hive/HiveDerbyServerMode
 
 hive vs hbase
  Ideally comparing Hive vs. HBase might not be right because HBase is a database and Hive is a SQL engine for batch processing of big data.

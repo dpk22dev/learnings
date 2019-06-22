@@ -8,6 +8,17 @@ Created Friday 04 December 2015
 http://www.sitepoint.com/web-services-with-php-and-soap-1/
 nusoap lib 
 
+wsdl basic structure:
+https://crunchify.com/basic-wsdl-structure-understanding-wsdl-explained/
+
+xsd structure explanation:
+https://www.codeguru.com/csharp/csharp/cs_data/xml/article.php/c19441/Understanding-XSD-Schema.htm
+
+spring integration with ws
+https://docs.spring.io/spring-ws/docs/2.3.1.RELEASE/reference/htmlsingle/
+
+there is java object xml impedence mismatch issue; as will happen with any language. regular expression in xsd with map to simple string, java treemap has not equivalent in xml which consuming language might not have same DS, cyclic references in java has no good equivalent representation in xml
+
 soap message:
 soap header
 soap header end

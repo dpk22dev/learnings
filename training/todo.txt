@@ -15,16 +15,16 @@ https://www.tensorflow.org/tutorials/
 google 2017 io
 tensorflow arch video
 
-@office
-html, css, js
+~~@office~~
+~~html, css, js~~
 
-@home
-maths for ML: eigen, correlation vs convolution, transformations
-concepts and libs for
-image processing
-video processing 
-	read and explore terms in http://keycorner.org/pub/text/doc/ffmpeg-tutorial.htm
-high scalability
+~~@home~~
+~~maths for ML: eigen, correlation vs convolution, transformations~~
+~~concepts and libs for~~
+~~image processing~~
+~~video processing ~~
+	~~read and explore terms in http://keycorner.org/pub/text/doc/ffmpeg-tutorial.htm~~
+~~high scalability~~
 
 android
 linux book
@@ -125,31 +125,6 @@ hyperbole and a half - alice bresh
 
 ces 2019 videos
 https://www.youtube.com/watch?v=ZGeek0PkjnE
-
-
-java unit  testing
-java debugging, tools, jvm internals
-maven, gradle, ant internals
-code through java collections, concurrents
-spring boot framework
-cassandra code internals
-
-put structure of reporting dto on jira
-
-form rezgain response convert into date wise updates and storein dto
-use messaage, s
-
-class  Updates
-{
-CTA
-CTD
-MinLos
-MaxLos
-}
-
-
-Date, Updates, Status, timestamp, StatusMessage
-
 
 
 
