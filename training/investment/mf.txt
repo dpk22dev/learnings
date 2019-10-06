@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-07-16T00:02:38+05:30
+
+====== mf ======
+Created Tuesday 16 July 2019
+
+taxes
+https://scripbox.com/blog/do-you-lose-money-to-taxes-when-you-withdraw-from-your-m-f-investments
+https://www.paisabazaar.com/mutual-funds/tax-benefit-of-mutual-fund/
+
+looks like losses can be exempted under itr
+
+stcg vs ltcg
+https://www.investopedia.com/terms/l/long-term_capital_gain_loss.asp
+https://m.economictimes.com/wealth/tax/how-to-calculate-long-term-capital-gains-tax-on-mutual-fund-sips/articleshow/63697072.cms
+
+strategy:
+a large cap fund, two multi cap funds and two small cap funds.
+below 30: 
+above 40: 50% equity , 50%balanced
+
+based on mf taxation for stcg and ltcg
+its good for me in equity based: 
+its good for mao in non-equity based

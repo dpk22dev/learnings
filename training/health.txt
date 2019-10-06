@@ -1,0 +1,49 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-07-21T22:21:21+05:30
+
+====== health ======
+Created Sunday 21 July 2019
+
+digestion working
+https://www.bbc.com/bitesize/guides/z9pv34j/revision/2
+
+recipe acc to macro requirements
+https://www.eatthismuch.com/
+
+insulin and sugars
+https://www.endocrineweb.com/conditions/type-1-diabetes/what-insulin
+
+
+RDA, heathy diet macro/micros
+https://health.gov/dietaryguidelines/2015/guidelines/appendix-7/
+
+nutrients value for each food item
+http://www.fitjog.com/nutrition-charts/indian-food-nutrition-charts.php
+http://www.fitjog.com/nutrition-charts/indian-nutrition-charts-food-wise.php
+
+macro/micros acc to bmi etc
+https://nutritiondata.self.com/tools/calories-burned
+https://www.healthline.com/nutrition/how-to-count-macros#step-by-step
+
+
+ Carbohydrates get a bad rap because when eaten in excess, they may add adipose tissue, aka fat. 
+https://www.bodybuilding.com/fun/calcarbs.htm
+
+https://www.bodybuilding.com/content/ketogenic-diet-your-complete-meal-plan-and-supplement-guide.html
+
+exercise for each body part
+https://www.bodybuilding.com/exercises/
+
+recipes for macros
+https://www.bodybuilding.com/recipes
+
+https://www.healthline.com/nutrition/iifym-guide#what-it-is
+Protein intake should be between 0.7–1.0 grams per pound of body weight. Fat intake should be between 0.25–0.4 grams per pound of body weight. All remaining calories are allotted for carbs.
+
+A gram of protein contains 4 calories. 
+A gram of carbohydrates contains 4 calories 
+A gram of fat contains 9 calories.
+assuming u need 2000 cal for day: pcf/40:40:20
+
+

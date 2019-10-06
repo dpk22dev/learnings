@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-08-09T12:56:04+05:30
+
+====== migration ======
+Created Friday 09 August 2019
+
+/apps
+/opt
+/data
+/home/root
+/home/dpk

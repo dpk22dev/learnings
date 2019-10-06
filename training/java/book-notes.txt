@@ -5,6 +5,8 @@ Creation-Date: 2018-10-29T00:04:44+05:30
 ====== book-notes ======
 Created Monday 29 October 2018
 
+https://github.com/ankuanand/ImportantJavaBooks
+
 beans, ejb are sepecs
 ejb is different than javabeans 
 
@@ -17,5 +19,17 @@ jvms for card platfrom, personal plat, embedded plat, SE
 
 todo
 try running project with ejb, why ejb coding is expensive
+inside jvm: 59->
+aftr 200
+~~https://dzone.com/articles/understanding-jvm-internals~~
+~~http://blog.jamesdbloom.com/JVMInternals.html~~
+
+https://github.com/strangeloop/StrangeLoop2013/blob/master/slides/sessions/BlochLee-JavaPuzzlers.pdf
+
+java puzzlers:
+http://www.javapuzzlers.com/java-puzzlers-sampler.pdf
 
 questions
+linking b/w class, object, method area, symbolic references, constant pool
+does object has members data only, statics and methods are pointed to class object or object has copy of them too — is it same as runtimeconstant pool
+

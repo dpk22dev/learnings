@@ -10,6 +10,9 @@ chrome://net-internals/#dns
 
 good networking book includes reference to official docs too: https://hpbn.co/#toc
 
+oracle networking docs: https://docs.oracle.com/cd/E37670_01/E41138/html/ol_about_netconf.html
+ubuntu networking docs: https://help.ubuntu.com/lts/serverguide/network-configuration.html
+
 read network conf: http://www.yolinux.com/TUTORIALS/LinuxTutorialNetworking.html
 kernel imp: Linux Kernel Networking by Rami Rosen
 http://link.springer.com/book/10.1007%2F978-1-4302-6197-1
@@ -79,6 +82,10 @@ http://www.tml.tkk.fi/Opinnot/Tik-110.551/1999/papers/07ATMvsEthernet/iworkpaper
 
 vmware / virtual box networking
 https://www.slideshare.net/powerhan96/networking-between-host-and-guest-v-ms-in-virtual-box
+
+open connect extension with global protect
+https://github.com/dlenski/openconnect
+https://askubuntu.com/questions/686186/how-to-connect-my-ubuntu-to-my-workplace-globalprotect-vpn-using-win-7-vm
 
 __todo__
 ipv6 : https://www.youtube.com/watch?v=mvlBMogudkQ

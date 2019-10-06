@@ -71,6 +71,8 @@ xml doesnt support all &nbsp; named html entities, these needs to converted to n
 https://www.w3.org/TR/html4/sgml/entities.html
 https://stackoverflow.com/questions/11176752/converting-named-html-entities-to-numeric-html-entities
 
+https://www.sitepoint.com/xml-namespaces-explained/
+
 **DTD: **document type declaration: checks for validation of XML
 disadv: doesn't support namespaces
 suppoert only text string, not object oriented
@@ -82,6 +84,8 @@ Public identifiers can follow any format, however, a commonly used format is cal
 **XSD: **xml schema definition, check validation of xml
 w3c recommendation and more flexible than DTD
 its like jquery is to java-script, as we can do same thing in js but its easier and better to write in jquery; similarly we can write in dtd but its better to write in XSD. XSD internally uses XSchema.dtd. XSD uses very well defined and reusable dtd. we can put restrictions of pattern, length on data.
+
+https://www.liquid-technologies.com/xml-schema-tutorial/xsd-elements-attributes
 
 why use XSD:
 It is easier to describe allowable document content

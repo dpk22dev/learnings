@@ -70,11 +70,13 @@ quick definition: ctrl+shift+I
 
 **intellij:**
 https://www.jetbrains.com/help/idea/refactoring-source-code.html
-ctrl [[+shift]] + f: find usage 
+ctrl +shift + f: find usage 
 shift+shift: find files
 alt+ctrl+o : remove unused imports
 f2 / shift+f2 : jump next/prev error
 use lombok plugin for reading/understanding of annotations by ide
+ctrl + shift + I : quick definition of class
+ctrl + f12: opening class members and methods
 
 **screen:**
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server
@@ -89,3 +91,6 @@ shift+enter for multiline
 
 multiple windows in same project
 https://stackoverflow.com/questions/8774024/intellij-working-on-multiple-projects
+
+less
+ng jump to line number

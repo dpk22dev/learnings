@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-08T21:04:48+05:30
+
+====== source ======
+Created Sunday 08 September 2019
+
+spring-boot-autoconfigure has annotation specific configurations

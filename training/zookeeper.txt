@@ -12,3 +12,8 @@ https://zookeeper.apache.org/doc/current/index.html
 
 usage of zookeeper:
 https://zookeeper.apache.org/doc/current/recipes.html
+
+zookeeper webui
+https://hub.docker.com/r/tobilg/zookeeper-webui/
+
+docker run -d -p 8222:8080 -e ZK_DEFAULT_NODE=localhost:2181/ --name zk-web -t tobilg/zookeeper-webui

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-07-27T19:44:44+05:30
+
+====== quotes ======
+Created Saturday 27 July 2019
+
+if you stop asking questions, you stop learning.
+if you stop writing down, you start forgetting.

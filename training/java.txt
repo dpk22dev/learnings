@@ -145,6 +145,7 @@ https://stackoverflow.com/questions/2793150/how-to-use-java-net-urlconnection-to
 
 java performance, internals
 https://www.dynatrace.com/resources/ebooks/javabook/
+http://blog.jamesdbloom.com/JVMInternals.html#constant_pool
 
 **non blocking in java**
 https://stackoverflow.com/questions/2824225/what-is-non-blocking-concurrency-and-how-is-it-different-than-normal-concurren
@@ -160,10 +161,15 @@ AbstractMap.SimpleImmutableEntry<Integer, String> entry = new AbstractMap.Simple
 permutaions of array 
 https://stackoverflow.com/questions/24460480/permutation-of-an-arraylist-of-numbers-using-recursion
 
+constant pool vs method area:
+https://stackoverflow.com/questions/22921010/what-is-run-time-constant-pool-and-method-area-in-java
+
+
 **inner vs static inner class java**
 https://www.geeksforgeeks.org/static-class-in-java/
 https://stackoverflow.com/questions/253492/static-nested-class-in-java-why
 https://javarevisited.blogspot.com/2012/12/inner-class-and-nested-static-class-in-java-difference.html
+https://www.geeksforgeeks.org/inner-class-java/
 
 https://stackoverflow.com/questions/21974361/what-java-collection-should-i-use
 arraylist: dynamic array, indexed so insertion/updation O(n), search O(1); not thread safe
@@ -278,9 +284,23 @@ JMX server gets metrics info from mbeans, Jconsole connect to JMX server to show
 dto vs pojo vs bean
 https://stackoverflow.com/questions/1612334/difference-between-dto-vo-pojo-javabeans
 
+dom vs sax vs stax vs jaxb
+https://www.vogella.com/tutorials/JavaXML/article.html
+
+jaxp vs jaxb
+https://stackoverflow.com/questions/2801502/what-is-the-difference-between-jaxp-and-jaxb
+
+java features version wise
+http://www.benchresources.net/java-features-version-wise/
+
+widening of byte to int and to long
+https://stackoverflow.com/questions/22642850/promotion-of-byte-to-int-or-long
+
+diff b/w arithmatic shift(>>) and logical shift(>>>)
+https://stackoverflow.com/questions/2811319/difference-between-and
+
 **questions**
 https://stackoverflow.com/search?q=core+java
-why jsp is better than servlet
 ~~in hibernate what if we want to change things lijke~~
 	~~way of id generation~~
 	discriminator fields/
@@ -290,40 +310,16 @@ why jsp is better than servlet
 	if we have to create indexes on few coloumns lateron
 	how will it effect refactoring and vice versa
 	~~how are joins handled?~~
-~~Runner.java is not running~~
-~~new Thread() { public void run() {} } , instantiating interface like new Runnable(){} and passing it to new Thread ?~~
-~~why classType are used. eg myClass.class~~
-~~java perf diff b/w primitive and non-primitive tyeps: int vs Integer	~~
-public static <T> T addAndReturn(T element,
-? in genereics
-	public static **<T> Spliterator<T> **spliterator(Iterator<? extends T> iterator,
-												 long size,
-												 int characteristics) {
-		return new IteratorSpliterator<>(Objects.requireNonNull(iterator), size,
-										 characteristics);
-	}
-
-containsvalue is not returning correct result
 	complex ds treemap of treemap etc comparison, even looping is hard : how to handle them
 
-~~is static inner class object created with each instance of outer class	~~
-no they have to be instantiated expliciterly, they are just way of encapsulating related class
 
 how gradle works, what changes to make if something changes
 what are different containers app servers: tomcat etc
-~~diff b/w blocking and non-blocking code~~
-~~default java thread pool~~
-~~use of synchronised vs use of lock~~
 why fork-join is there
-~~java what happens when thread is blocked~~
-~~do java level threads correspond to processor level threads .. how is it implemented~~
-~~diff b/s sleep vs block~~
 how much of synchronization and threads used in real applications
 java se/me specification vs JIT vs JVM specificaiton 
 how stack map frame and code linking happens in jvm .class
 filename, classname working in java
-default modifier in java: package private
-is class private because of private constructor
 analysing javap output
 what are different java binaries are useful for
 does jvm uses JNI to language's file i/o; interact with syscalls
@@ -340,31 +336,21 @@ threadlocalex why static method is giving correct output
 castingex casting concepts are not clear
 jdbc vs odbc drivers
 
+diff b/w default/static/public classes
+inner and annonymous-inner classes and interfaces accesses to outside classes, when used with static
+and behaviour when inheritance occurs
+diff b/w static and dynamic proxies
 
-~~why :: in below~~
-~~Stream.of(arr)~~
-	~~.forEach( System.out::println );~~
-~~asList method working: why internal implem works with a~~
-~~.toArray(Integer[]::new);~~
-~~while using streams can we get stuck, where can't get out of~~
-~~diff b/w ~~
-~~.collect( Collectors.toList() );~~
-~~.collect( Collectors.toCollection(HashSet::new) )~~
-~~Stream<String> sb = Stream.<String>builder().add("5").build();~~
-~~custom collector~~
-~~https://howtodoinjava.com/java-concurrency-tutorial/~~
-~~after wait-notify~~
+local vs global constant pool
+why init of interface doesn't require init of its super-interface but class init requires init of super-class
 
-linkedlist of hashmap
-unsafe.get unsafe meaaning in atomic classes
-why marker interfaces like cloneable, serializable are used
 how sleep, wait notify natively implemented and how their excpeitons can be thrown in c and caugth in java
 /apps/my-builds/java/code101/src$ java code101.DumpOne -Xms6M -Xmx16M -XX:MaxPermSize=1G -XX:PermSize=512M why not getting out of memory
-is is necessary to know every bin/ or some are enough, remote debugging/profiling how is it done
 
 fairlock code: http://tutorials.jenkov.com/java-concurrency/starvation-and-fairness.html
 why queue object is used?
 diff b/w spring boot app running as jar vs running in inbuilt tomcat
+definition of componse funciton of Function functional interface, generics why is it like this
 
 **todo**
 ~~after https://www.javatpoint.com/ioc-container~~

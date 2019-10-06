@@ -72,6 +72,9 @@ https://svn.apache.org/repos/asf/kafka/site/082/ops.html
 limiting kafka memory 
 https://stackoverflow.com/questions/27681511/how-do-i-set-the-java-options-for-kafka
 
+below fields are stored by kafka into zookeeper
+https://cwiki.apache.org/confluence/display/KAFKA/Kafka+data+structures+in+Zookeeper
+
 __quesitons__:
 how number of partitions are decided, can they be cahnged later on
 how many consumers should be run in cg
@@ -82,3 +85,21 @@ __todo__
 check some php lib
 
 https://www.youtube.com/watch?v=CZ3wIuvmHeM
+
+
+
+
+deleting topic directly from fs doesn't delete it
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-03T23:16:56+05:30
+
+====== bootstrap ======
+Created Thursday 03 October 2019
+
+getting started java project with maven
+https://www.mkyong.com/maven/how-to-create-a-java-project-with-maven/
+
+maven with jetty
+https://www.eclipse.org/jetty/documentation/9.4.x/maven-and-jetty.html
+
+jetty-mvn-plugin config
+https://www.eclipse.org/jetty/documentation/9.4.x/jetty-maven-plugin.html
+
+multi module project with maven
+https://www.mkyong.com/maven/maven-how-to-create-a-multi-module-project/?utm_source=mkyong.com&utm_medium=Referral&utm_campaign=sidebar-related&utm_content=link0

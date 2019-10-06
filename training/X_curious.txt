@@ -7,3 +7,6 @@ Created Tuesday 05 March 2019
 
 channel about how things/machines work
 https://www.youtube.com/user/LearnEngineeringTeam/playlists
+
+various laws
+https://github.com/dwmkerr/hacker-laws

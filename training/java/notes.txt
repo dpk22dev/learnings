@@ -134,6 +134,11 @@ List<List<String> list = Arrays.stream(dataSet)
 functional prog patterns for java
 https://dzone.com/articles/functional-programming-patterns-with-java-8
 
+is static inner class object created with each instance of outer class?
+no they have to be instantiated expliciterly, they are just way of encapsulating related class
+
+>>> logical shift just insert 0's in front, it might not necessarily mean divide by power of 2 if number is already in 2's complement negative form. >> arithmatic shift takes care of 2's complement nature and keeps 1 at first position
+
 *** Problem ***
 get stuck with primitive and boxed type operations
 no already available good methods for primitives, have to box them to use good streams

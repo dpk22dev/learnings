@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-05T14:19:38+05:30
+
+====== steps ======
+Created Saturday 05 October 2019
+
+while designing although singularly hld, lld, db design can be done independently
+but if all things need to be done, start with db design -> lld -> hld. we can change things in bottom up but difficult to do it in opposite direction
+GOAL and action required for that goal are most important; think keeping required actions fulfilment only
+
+
+class diagram in lld can include unnecessary inheritance and classes; which if done practically are not required.
+
+if question is of lld only( follow below steps and ask questions):
+get exact statement in requirement; find actors and their actions in the statements
+find actor: attributes and types
+relationships among actors
+ask questions for historical/transactional info required, ask if further actors/actions required
+define interaces rules required for different actions
+implement method for them, for actions create services
+mapping of objects to entities can be done using following strategies:
+https://thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/
+
+if free to design from bottom up: design should store both actors, actions, history info
+find actors, its attributes, type(( it can lead to inheritance/composition in lld)
+store relations to accomodate actions( it can require services to set values in actors and store relations in lld)
+then use entities, their relationships, repositories
+make models to satisfy inheritance among entities, services for actions, controller for driving actions
+for some role/type of action: rules can be coded in app, way to store info about rule in db needs to be thought about
+
+
+
+
+
+
+
+
+
+

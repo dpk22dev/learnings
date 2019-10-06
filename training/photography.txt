@@ -1,0 +1,78 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-08-22T22:40:02+05:30
+
+====== photography ======
+Created Thursday 22 August 2019
+
+https://www.youtube.com/watch?v=WXdAX0No2hM
+https://www.sudhirshivaramphotography.com/basics-of-photography/
+https://www.sudhirshivaramphotography.com/beginners-guide-camera-lens-buying/
+
+whitebalance: should not use auto white balance
+< 4000k bluish light
+> 7000k yellowish light
+
+**exposure triangle parameters:**
+1) shutter speed: duration of time shutter is open
+low shutter speed: motion/hand blur -> silky flow of water
+highter shuter speed: freezes action -> granular image of water
+no effect on landscape/standing image
+
+2) aperture: how large opening of lens is -> controls amount of light comming into camera
+f20: large aperture -> very small opening -> large area of image is in sharp focus/depth of image is large
+f4: small aperture -> very large opening
+it controls depth of field: area of photograph that is in sharp focus
+tip: single subject low f value with work, but more subjects and want all of them to be in sharp focus -> use high f value
+
+3) ISO: how fast sensor can react to light
+earlier analog cameras film had chemicals to react to light
+high ISO -> high noise -> grains in image
+as ISO gets lower, camera gets less sensitive
+keep a tap on ISO, very high iso will make noisy image
+
+**modes:**
+1) TV/Yes mode/shutter priority mode
+set shutter priority, camera will blink aperture and set suitable value
+2) AV/aperture priority mode
+for given aperture value, camera decides shutter speed
+recommended when not much movement happening in scene eg landscape mode
+3) Manual mode
+4) portrait mode: more emphasis on shallow depth of field
+5) close-up mode: more emphasis on shallow depth of field
+6) landscape mode: camera gives emphasis on larges depth of field to give everything in focus
+7) sports/action: camera gives faster shutter speed
+8) night mode: long exposure
+
+**focusing modes and focusing points:**
+one shot focus/auto focus single: lock focus on static subject
+AI servo/auto focus continous: camera continously focus even when subject is moving
+AI focus/ auto focus auto: mixture of above two, car race, wildlife photogrpahy
+
+avoid enable all focus points, use one of focus points. camera autofocus
+
+**metering**
+based on amount on light reflecting from subject, camera will decide shutter speed. this is metering.
+**spot metering**: based on focus point, camera will give decent shutter speed. exposure compensation can be changed to go into darker/brigther value
+AEB: auto exposure bracketing
+**evaluative metering/matrix/multi segment metering: **average of whole scene 
+partial metering: central point takes 12-30% around center, while spot takes 2-3%
+center-weighted-average metering: 
+
+if you want to keep dark tonality, under expose image; if want bright tonality over expose image
+
+**post processing:**
+tools: adobe bridge, 
+different tools can show same raw file in different way
+
+
+todo:
+after 34
+
+questions:
+how shutter works, how shutter speed effects it
+
+
+
+
+

@@ -19,6 +19,12 @@ link to all type of annotatios
 https://www.baeldung.com/spring-mvc-annotations
 http://files.zeroturnaround.com/pdf/zt_spring_annotations_cheat_sheet.pdf
 
+validation:
+https://www.baeldung.com/bean-validation-container-elements
+
+running spring as init.d script
+https://stackoverflow.com/questions/35835146/spring-boot-init-d-not-not-running-process-not-found
+
 maven wrapper
 mvn -N io.takari:maven:wrapper
 
@@ -94,7 +100,12 @@ https://www.callicoder.com/hibernate-spring-boot-jpa-one-to-one-mapping-example/
 https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/
 https://www.baeldung.com/jpa-joincolumn-vs-mappedby mappedby vs joincolumn
 https://stackoverflow.com/questions/2749689/what-is-the-owning-side-in-an-orm-mapping owning side of tab
-le
+
+storing inheritance and composition in java spring jpa database
+https://thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/
+https://thoughts-on-java.org/ultimate-guide-association-mappings-jpa-hibernate/
+fetch strategy
+https://thoughts-on-java.org/entity-mappings-introduction-jpa-fetchtypes/
 
 config server based project
 https://howtodoinjava.com/spring-cloud/spring-cloud-config-server-git/

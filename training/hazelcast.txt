@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-12T08:44:57+05:30
+
+====== hazelcast ======
+Created Thursday 12 September 2019
+
+https://docs.hazelcast.org/docs/latest-dev/manual/html-single/#getting-started
+https://docs.hazelcast.org/docs/latest/manual/html-single/

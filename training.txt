@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-07-26T15:37:20+05:30
+
+====== training ======
+Created Friday 26 July 2019
+

@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-07T15:47:14+05:30
+
+====== courses ======
+Created Saturday 07 September 2019
+
+
+CA: ICAI conducts CPT + IPCC for foundation, intermediate, finals
+https://robomateplus.com/all-courses/ca/ca-ipcc-exam-pattern-timetable-eligibility-criteria-articleship-study-plan/

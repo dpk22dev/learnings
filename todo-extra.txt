@@ -36,5 +36,11 @@ hadoop infra: for data analysis
 menu options present in intellij
 dsa
 
+registries in spring eg: resourcehandlerregistry, schemes , configuration, and contexts in spring
+webmvc configurer adapter 
+
+https://spring.io/blog/2018/03/16/micrometer-spring-boot-2-s-new-application-metrics-collector
+https://www.baeldung.com/spring-cloud-bootstrapping
+
 
 
