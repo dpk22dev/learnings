@@ -35,6 +35,7 @@ try fast crud projects with various data stores
 hadoop infra: for data analysis
 menu options present in intellij
 dsa
+spring boot actuator, swagger
 
 registries in spring eg: resourcehandlerregistry, schemes , configuration, and contexts in spring
 webmvc configurer adapter 

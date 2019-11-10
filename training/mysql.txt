@@ -244,6 +244,17 @@ https://blog.panoply.io/postgresql-vs.-mysql
 mysql partitioning 
 https://www.w3resource.com/mysql/mysql-partition.php
 
+correlated subqueries:
+https://www.essentialsql.com/get-ready-to-learn-sql-server-20-using-subqueries-in-the-select-statement/
+
+mysql tuning:
+https://www.percona.com/blog/2016/10/12/mysql-5-7-performance-tuning-immediately-after-installation/
+
+mysql features list:
+http://www.thecompletelistoffeatures.com/
+mysql glossary:( keywords used in docs )
+https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_dirty_page
+
 __todo__
 docs read after: https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html
 

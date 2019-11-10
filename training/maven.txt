@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-11-06T20:18:58+05:30
+
+====== maven ======
+Created Wednesday 06 November 2019
+
+https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html

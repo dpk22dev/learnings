@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-11-07T23:47:16+05:30
+
+====== libs ======
+Created Thursday 07 November 2019
+
+apache camel
+https://dzone.com/articles/open-source-integration-apache

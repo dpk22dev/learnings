@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2019-04-20T21:57:33+05:30
 
-====== exercise ======
+====== xercise ======
 Created Saturday 20 April 2019
 
 flips 

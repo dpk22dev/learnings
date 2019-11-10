@@ -12,6 +12,8 @@ http://127.0.0.1:50070/dfshealth.html#tab-overview
 running in single cluster mode
 https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
 
+https://medium.com/@aditya.pal/setup-a-3-node-hadoop-spark-hive-cluster-from-scratch-using-docker-332dae6b98d0
+
 default ports for hadoop
 https://stackoverflow.com/questions/22855232/default-namenode-port-of-hdfs-is-50070-but-i-have-come-across-at-some-places-802
 
