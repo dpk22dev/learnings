@@ -7,3 +7,5 @@ Created Thursday 07 November 2019
 
 apache camel
 https://dzone.com/articles/open-source-integration-apache
+
+https://dhscalqalglf02a:5848/common/index.jsf

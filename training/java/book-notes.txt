@@ -15,12 +15,18 @@ Because Java programs are dynamically linked, the references from one class file
 java core api/platform + java standard extension api/platform
 jvms for card platfrom, personal plat, embedded plat, SE
 
+print what methods are compiled
+jstat -compiler 32084
 
 
 todo
 try running project with ejb, why ejb coding is expensive
 inside jvm: 59->
 aftr 200
+java performance: 98
+spring in action: except remoting, working with other web frameworks
+	373
+
 ~~https://dzone.com/articles/understanding-jvm-internals~~
 ~~http://blog.jamesdbloom.com/JVMInternals.html~~
 

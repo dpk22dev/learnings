@@ -11,6 +11,9 @@ http://sqlfiddle.com/#!2/359ac
 The relational algebra is pro-cedural, whereas the tuple relational calculus and domain relational calculus are
 nonprocedural.
 
+distributed database design
+https://medium.com/databasss/on-disk-io-part-3-lsm-trees-8b2da218496f
+
 **types of databases**:
 https://www.digitalocean.com/community/tutorials/understanding-sql-and-nosql-databases-and-different-database-models
 databases use model whcih are basically schema or schemaless.
@@ -59,6 +62,7 @@ its good to able to uniquely identify rows in table, when designing  a table fin
 
 if coloumn A has null values, adding unique constraint doesn't complain as mysql thinks null can be anything, null is not equal to null, this query will pass
 but if coloumn has equal data this query will fail
+
 
 ********** connecting mssql on linux *************
 http://stackoverflow.com/questions/33341510/how-to-install-freetds-in-linux

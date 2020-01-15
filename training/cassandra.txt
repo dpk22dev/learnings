@@ -22,6 +22,9 @@ https://medium.com/code-zen/cassandra-schemas-for-beginners-like-me-9714cee9236a
 official apache cassandra docs has lots of missing info, except how to build etc.
 http://cassandra.apache.org/doc/latest/data_modeling/index.html
 
+simple book for revision
+https://teddyma.gitbooks.io/learncassandra/content/index.html
+
 peer 2 peer arch: improve availablity, always online
 
 Keyspace is the outermost container for data in Cassandra( like dataabase in rdbms ). keyspace attributes:
@@ -69,11 +72,23 @@ eg: ((C1, C2,…), (C3,C4,…))
 partitioner computes hash value of partition key, which determines partition containing row.
 cluster key: store row data in a sorted order.
 Cassandra stores only one row for each partition key. All the data associated with that partition key is stored as columns in the datastore. All the data that is inserted against same clustering key is grouped together.
+yes cassandra stores data ordered acc to clusterging key. Cassandra achieves performance by using the clustering keys to sort your data on-disk, thereby only returning ordered rows in a single read (no random reads).
+https://stackoverflow.com/questions/35708118/where-and-order-by-clauses-in-cassandra-cql
+https://shermandigital.com/blog/designing-a-cassandra-data-model/
+
+why cassandra scales
+https://medium.com/techlogs/apache-cassandra-the-minimum-internals-you-need-to-know-89724603abb2
 
 cqlsh
 Collection types cannot be nested, but frozen collection types can be nested inside frozen or non-frozen collections.
 
 If data already exists for the column, Cassandra indexes the data during the execution of this statement. After the index is created, Cassandra indexes new data for the column automatically when new data is inserted.
+
+
+https://stackoverflow.com/questions/13010225/why-many-refer-to-cassandra-as-a-column-oriented-database
+
+designing cassandra data model
+https://shermandigital.com/blog/designing-a-cassandra-data-model/
 
 composites:
 https://www.datastax.com/dev/blog/introduction-to-composite-columns-part-1

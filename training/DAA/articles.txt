@@ -11,6 +11,8 @@ http://marcin-chwedczuk.github.io/get-day-of-week-from-date
 competitive programmer book
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf
 
+https://www.youtube.com/watch?v=RBSGKlAvoiM
+
 **question repos**
 master repo for coding links: https://github.com/lnishan/awesome-competitive-programming
 c++ repo: https://github.com/Diusrex/UVA-Solutions 

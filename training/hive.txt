@@ -12,6 +12,9 @@ quickstart to hive
 https://www.edureka.co/blog/hive-tutorial/
 you can couple Hive with other tools to use it in many other domains. For example, Tableau along with Apache Hive can be used for Data Visualization, Apache Tez integration with Hive will provide you real time processing capabilities, etc.  
 
+setup hive on yarn
+https://dzone.com/articles/apache-hive-on-yarn
+
 beeline can be run using:
 after moving to /opt/hive/apache-hive-3.1.1-bin
 beeline -u jdbc:hive2://

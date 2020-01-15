@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-11-18T16:14:00+05:30
+
+====== profilers ======
+Created Monday 18 November 2019
+
+
+https://medium.com/software-under-the-hood/under-the-hood-java-peak-safepoints-dd45af07d766
+
+yourkit
+- the profiler agent log file ~/.yjp/log/<session name>-<pid>.log
+- the profiler UI log files from <user home>/.yjp/log
+- a screenshot of the profiler UI window after it connects to the remote application.

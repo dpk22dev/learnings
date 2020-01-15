@@ -27,6 +27,10 @@ intellijIdea liscenece server
 node
 --expose_debug_as=v8debug
 
+terminal mouse settings
+tput civis      -- invisible
+tput cnorm   -- normal
+
 for elastic
 sysctl -w vm.max_map_count=262144
 vm.max_map_count = 65530

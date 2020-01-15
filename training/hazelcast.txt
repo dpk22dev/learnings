@@ -7,3 +7,10 @@ Created Thursday 12 September 2019
 
 https://docs.hazelcast.org/docs/latest-dev/manual/html-single/#getting-started
 https://docs.hazelcast.org/docs/latest/manual/html-single/
+
+hz-mc cred
+hz
+bling41!
+
+
+curl 'http://localhost:8080/hazelcast-mancenter/security/saveConfig' -H 'Origin: http://localhost:8080' -H 'Acceptent-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: http://localhost:8080/hazelcast-mancenter/login.html' -H 'X-Requested-With: XMLHttpRequest'  --data 'providerHiddenInput=Default&usernameInput=emre&passwordInput=pass1357&confirmPasswordInput=pass1357'

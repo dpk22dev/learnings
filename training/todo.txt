@@ -5,7 +5,7 @@ Creation-Date: 2016-03-02T09:21:11+05:30
 ====== todo ======
 Created Wednesday 02 March 2016
 
-__for now focus on knowledge gaining rather than problem solving__
+~~for now focus on knowledge gaining rather than problem solving~~
 
 __p1__
 setup python environment and debugging with editor shortcuts
@@ -55,7 +55,7 @@ find courses and get certifications
 ~~recommendattion engine~~
 
 ~~setting and using elastic search: queries~~
-lecture machine learning,  artificial intelligence
+~~lecture machine learning,  artificial intelligence~~
 
 ~~create resume for freelancing websites and complete profile making~~
 ~~twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it : highscalability.com~~

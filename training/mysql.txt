@@ -74,6 +74,9 @@ innodb_thread_concurrency = 0,  innodb_read_io_threads and innodb_write_io_threa
 parallel transactions isolation levels mysql
 https://stackoverflow.com/questions/33118170/parallel-transactions-in-mysql
 
+generating dummy data
+http://filldb.info/dummy/step1
+
 local db connection:
 mysql -h 127.0.0.1 --port=3307 -u root -p
 

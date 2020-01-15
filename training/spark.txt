@@ -11,9 +11,15 @@ overview
 https://spark.apache.org/docs/latest/spark-standalone.html
 https://spark.apache.org/docs/latest/cluster-overview.html
 
+internals of spark
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/yarn/
+
 spark streaming
 https://spark.apache.org/docs/latest/streaming-programming-guide.html
 https://medium.freecodecamp.org/apache-storm-is-awesome-this-is-why-you-should-be-using-it-d7c37519a427
+
+
+https://www.linode.com/docs/databases/hadoop/install-configure-run-spark-on-top-of-hadoop-yarn-cluster/
 
 SparkContext can connect to several types of cluster managers: standalone, mesos, yarn
 batch as well real time processing supported

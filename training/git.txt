@@ -144,6 +144,11 @@ delete branch on origin
 adding remote 
 git remote add origin https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
 
+git merge direction
+https://stackoverflow.com/questions/2351108/git-merge-two-branches-what-direction
+
+https://stackoverflow.com/questions/1241720/git-cherry-pick-vs-merge-workflow
+
 merge rules:
 fast forward merge: move back branch to top branch
 2 way: if on b1, git merge b2: creates new commit, moves b1 to it
@@ -173,6 +178,8 @@ diff of particular file betwwen particular commits
 http://stackoverflow.com/questions/4114095/revert-to-a-previous-git-commit
 fundamentals of git: http://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences/9204499#9204499
 
+git branching model
+https://nvie.com/posts/a-successful-git-branching-model/#release-branches
 
 **pre-commit hook to give warning for debug calls in code** 
 

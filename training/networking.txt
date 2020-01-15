@@ -87,6 +87,10 @@ open connect extension with global protect
 https://github.com/dlenski/openconnect
 https://askubuntu.com/questions/686186/how-to-connect-my-ubuntu-to-my-workplace-globalprotect-vpn-using-win-7-vm
 
+checking network speed cli
+https://askubuntu.com/questions/104755/how-to-check-internet-speed-via-terminal
+> curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+
 __todo__
 ipv6 : https://www.youtube.com/watch?v=mvlBMogudkQ
 read man ip, ifconfig, route, ifup, resolv.conf, nss, brctl, 

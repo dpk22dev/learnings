@@ -5,6 +5,8 @@ Creation-Date: 2018-12-20T16:47:30+05:30
 ====== hdfs mapreduce ======
 Created Thursday 20 December 2018
 
+ports usage:
+https://docs.cloudera.com/documentation/enterprise/5-2-x/topics/cdh_ig_ports_cdh5.html
 
 ui:
 http://127.0.0.1:50070/dfshealth.html#tab-overview

@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-11-20T19:28:36+05:30
+
+====== bash ======
+Created Wednesday 20 November 2019
+
+https://askubuntu.com/questions/257263/how-to-display-network-traffic-in-the-terminal
+
+ cat /tmp/seam.8089.log | grep "Authentication - " | awk '{print $3}' | tail -1f
+
+ls -l | awk '{ total += $5 }; END { print "total size: ",total }'
+
+statistics of log file
+cat nohup.out | grep "STRING_TO_SEACH " | awk 'NR == 1 { val = $15; max=val; min=val; sum=0 }
+   { val = $15; if (val>max) max=val; if (val<min) min=val; sum+=val; NR++;}
+   END {printf "Count:%d\tMin: %d\tMax: %d\tAverage: %f\n", NR, min, max, sum/NR}'
+
+where $15 is column number
+
+for reading binary file
+less -f -r myfile | grep -a binaryfile
+
+
+https://stackoverflow.com/questions/4749226/whats-the-difference-of-redirect-an-output-using-and-2

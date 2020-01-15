@@ -7,6 +7,23 @@ Created Sunday 02 September 2018
 
 installed in: [[/opt/installs/hadoop-2.9.2]]																																																																																												
 
+ports: https://docs.cloudera.com/documentation/enterprise/5-2-x/topics/cdh_ig_ports_cdh5.html
+hdfs 50010, 1004, 50075, 1006, 50020, 50070
+50470, 50090, 50495, 8485, 8480, 2049, 4242, 111, 14000, 14001
+mr 8021, 50030, 9290, 50060, 
+yarn 8032, 8030, 8031, 8033, 8088, 8040, 8042, 8041, 10020, 13562, 19888
+hbase 60000, 60020, 60030, 2888, 3888, 8080,9090, 9095, 9090, 11060
+hive 9083, 10000
+scoop 16000
+scoop2 12000, 12001
+zk 2181
+zkfc 8019
+hue 8888
+oozie 11000, 11001
+spark 7077, 7078, 18080, 18081
+
+checking all ports:
+echo "3306,50010, 1004, 50075, 1006, 50020, 50070, 50470, 50090, 50495, 8485, 8480, 2049, 4242, 111, 14000, 14001, 8021, 50030, 9290, 50060, 8032, 8030, 8031, 8033, 8088, 8040, 8042, 8041, 10020, 13562, 19888, 60000, 60020, 60030, 2888, 3888, 8080,9090, 9095, 9090, 11060, 9083, 10000, 16000, 12000, 12001, 2181 ,8019, 8888,11000, 11001, 7077, 7078, 18080, 18081" | sed -n 1'p' | tr ',' '\n' | while read word; do echo "checking: $word"; netstat -ntl | grep $word; done;
 
 https://dzone.com/refcardz/getting-started-apache-hadoop	
 
@@ -74,6 +91,7 @@ spark mlib is fastre than disk based apache mahout
 nimbus(master), supervisor(worker). Nimbus runs the Storm topology by distributing the task to an available supervisor. A supervisor will have one or more worker process. Supervisor will delegate the tasks to worker processes. Worker process will spawn as many executors as needed and run the task. Apache Storm uses an internal distributed messaging system for the communication between nimbus and supervisors.
 
 **Yarn**
+https://www.edureka.co/blog/hadoop-yarn-tutorial/
 generic scheduler for distributed apps not just mapreduce apps, replaces job-tracker and task-tracker in hadoop
 Resource manager: per cluster
 Node manager: per machine

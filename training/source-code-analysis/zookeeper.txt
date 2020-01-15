@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-11-11T00:00:04+05:30
+
+====== zookeeper ======
+Created Monday 11 November 2019
+
+zk server main method
+	instantiates new zookeeper server which loads data from filesystem into dataTree
+	runs sessionTracker daemon to handle sessions
+	request processors are chained acc to different standalone, master, follower server types
+	
+
+learnings:
+-generally there are two things, one is class which can be instantiated and give back output for some input; other is daemon continous running entity which takes input from some queue/blocking queue/socket; both of them can spawn multiple threads to do some work
+- these threads can be closed usinng requestOfDeath request or poison pill as data to them
+- ACL, states, protocol codes can be enums which are shared among server and client; 
+- Different types of Request object are created and server responds differently for different types of requests;
+- In memory data structure is changed acc to requests and its serialized acc to BufferedInput/output streams to files - which can be write ahead logs/ snapshots
+- archival to files can be done by setting some format for file on disk; we need reader for this file
+-we can run proccessor thread as deamon, and call another thread which is daemon, class members can be shared among them; use proper synchronization around methods while using
+- Sessions can be stored in linkedlist/hashset/maps of requests with ids
+- watchers can be implemented using sending reposnse packet "notifications" to client
+ 
+questions:
+while importing how to access other package classes
+how build system works for old ant based projects
+how movement of leader to follower happens among zookeeper servers
+logic for leader election
+
+
