@@ -16,6 +16,9 @@ source ~/.envs/project_x_py3.3/bin/activate
 python index
 https://pypi.org/
 
+python installation on rhel
+https://developers.redhat.com/blog/2018/08/13/install-python3-rhel/
+
 **todo**
 setup python framework and start working and debugging
 

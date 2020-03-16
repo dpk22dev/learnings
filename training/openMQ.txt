@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-27T19:10:24+05:30
+
+====== openMQ ======
+Created Thursday 27 February 2020
+
+https://github.com/alvinkwekel/jms-cli-tool
+
+https://javaee.github.io/openmq/Overview.html
+
+https://jmeter.apache.org/usermanual/build-jms-point-to-point-test-plan.html
+
+https://www.blazemeter.com/blog/building-jms-testing-plan-apache-jmeter/
+
+http://kalali.me/openmq-the-open-source-message-queuing-for-beginners-and-professionals-openmq-from-a-to-z/
+
+https://hub.packtpub.com/configuring-jms-resources-glassfish-part-1/

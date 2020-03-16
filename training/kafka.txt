@@ -78,6 +78,12 @@ https://stackoverflow.com/questions/27681511/how-do-i-set-the-java-options-for-k
 below fields are stored by kafka into zookeeper
 https://cwiki.apache.org/confluence/display/KAFKA/Kafka+data+structures+in+Zookeeper
 
+kafka streams
+https://medium.com/@andy.bryant/kafka-streams-work-allocation-4f31c24753cc
+
+kafka compaction internals
+https://towardsdatascience.com/log-compacted-topics-in-apache-kafka-b1aa1e4665a7
+
 __quesitons__:
 how number of partitions are decided, can they be cahnged later on
 how many consumers should be run in cg

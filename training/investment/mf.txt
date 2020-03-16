@@ -5,6 +5,8 @@ Creation-Date: 2019-07-16T00:02:38+05:30
 ====== mf ======
 Created Tuesday 16 July 2019
 
+lectures from learn app.co
+
 taxes
 https://scripbox.com/blog/do-you-lose-money-to-taxes-when-you-withdraw-from-your-m-f-investments
 https://www.paisabazaar.com/mutual-funds/tax-benefit-of-mutual-fund/
@@ -16,6 +18,8 @@ https://www.investopedia.com/terms/l/long-term_capital_gain_loss.asp
 https://m.economictimes.com/wealth/tax/how-to-calculate-long-term-capital-gains-tax-on-mutual-fund-sips/articleshow/63697072.cms
 
 strategy:
+set financial goals
+
 a large cap fund, two multi cap funds and two small cap funds.
 below 30: 
 above 40: 50% equity , 50%balanced
@@ -23,3 +27,20 @@ above 40: 50% equity , 50%balanced
 based on mf taxation for stcg and ltcg
 its good for me in equity based: 
 its good for mao in non-equity based
+
+for long term invest in growth schemes not in divident ones
+
+goto https://www.moneycontrol.com/mutualfundindia/ and do analysis of each fund
+search for performance of specific fund 
+https://www.moneycontrol.com/mutual-funds/performance-tracker/returns/elss.html
+
+mistake while investing in mf
+https://www.moneycontrol.com/news/business/mutual-funds/do-not-make-these-7-mistakes-while-investing-in-mutual-funds-2695221.html
+
+which goals can be fulfilled through mf
+https://www.mutualfundssahihai.com/en/What-are-the-kinds-of-financial-goals-I-can-fulfill-with-Mutual-Funds
+
+questions:
+why few funds are under elss other are not?
+what are stp?
+funds with low risk, short term equivalent to fd

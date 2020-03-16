@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-25T17:15:49+05:30
+
+====== stats ======
+Created Saturday 25 January 2020
+
+ 400m tweets per day; 5K/sec daily average; 7K/sec daily peak; >12K/sec during large events

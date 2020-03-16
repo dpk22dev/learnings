@@ -45,6 +45,9 @@ by the Name Service Switch (NSS) configuration file /etc/nsswitch.conf.
 bridge: It makes forwarding decisions based on tables of MAC addresses which it builds by learning what hosts are connected to each network. A software bridge can be used within a Linux host in order to emulate a hardware bridge, for example in virtualization applications for sharing a NIC with one or more virtual NICs. 
 http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
 
+
+https://home.mpcdf.mpg.de/~jkennedy/2017/09/01/tools-for-testing-https-connections.html
+
 The most common settings provided by a DHCP server to DHCP clients include:
 IP address and netmask, IP address of the default-gateway to use, IP adresses of the DNS servers to use
 it can also provide:  Host Name,  Domain Name, Time Server, Print Server
@@ -102,6 +105,8 @@ see contents of arp table
 router settigns
 	router keywords
 
+ /etc/resolv.conf -> ../run/resolvconf/resolv.conf
+ ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 
 __questions__
 what is diff b.w 10.140.0.0/20 and 10.140.12.0/20 <-- is it ok? what is right way of writing subnet

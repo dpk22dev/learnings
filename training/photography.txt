@@ -18,14 +18,16 @@ whitebalance: should not use auto white balance
 low shutter speed: motion/hand blur -> silky flow of water
 highter shuter speed: freezes action -> granular image of water
 no effect on landscape/standing image
+camera will open for this much amount of time; high value means more duration for which light is coming => bright picture
 
 2) aperture: how large opening of lens is -> controls amount of light comming into camera
-f20: large aperture -> very small opening -> large area of image is in sharp focus/depth of image is large
+f20: large aperture -> very small opening -> large area of image is in sharp focus/depth of image is large	
 f4: small aperture -> very large opening
 it controls depth of field: area of photograph that is in sharp focus
 tip: single subject low f value with work, but more subjects and want all of them to be in sharp focus -> use high f value
 
 3) ISO: how fast sensor can react to light
+low iso means low light use in day time, high iso is overkill, bright picture: use in dark env
 earlier analog cameras film had chemicals to react to light
 high ISO -> high noise -> grains in image
 as ISO gets lower, camera gets less sensitive
@@ -60,6 +62,15 @@ partial metering: central point takes 12-30% around center, while spot takes 2-3
 center-weighted-average metering: 
 
 if you want to keep dark tonality, under expose image; if want bright tonality over expose image
+
+**Composition**
+rule of thirds: put object in intersection of 3x3 grid
+centered: blance left/right or up/down part of image
+leading lines: straight/ curved lines
+add foreground -> mid ground -> end ground
+use focal length wisely
+aperture: background is not interesting(separate background from subject) use high aperture eg: f2.8
+to include background use smaller aperture f8-f14
 
 **post processing:**
 tools: adobe bridge, 

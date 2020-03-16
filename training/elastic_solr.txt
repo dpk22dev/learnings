@@ -64,6 +64,9 @@ https://medium.com/@passpied/a-reading-of-elasticsearch-source-code-56d172972783
 basic es queries:
 https://dzone.com/articles/23-useful-elasticsearch-example-queries
 
+elastic plugin xpach alternatives
+https://sematext.com/blog/x-pack-alternatives/
+
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
 
