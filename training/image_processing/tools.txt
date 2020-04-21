@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-20T23:20:42+05:30
+
+====== tools ======
+Created Monday 20 April 2020
+
+https://resizeimage.net/
+
+pixlr
+https://pixlr.com/x/

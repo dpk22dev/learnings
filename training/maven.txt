@@ -6,3 +6,22 @@ Creation-Date: 2019-11-06T20:18:58+05:30
 Created Wednesday 06 November 2019
 
 https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+
+**short mvn tutorial**
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+https://www.youtube.com/watch?v=0CFWeVgzsqY
+mvn -X clean install
+mvn effective:pom
+mvn tomcat:run
+ mvn help:effective-settings
+mvn [[archetype:help]]
+mvn [[archetype:help|archetype:generate]]
+
+
+https://zeroturnaround.com/rebellabs/your-maven-build-is-slow-speed-it-up/
+
+**gradle **
+http://www.vogella.com/tutorials/EclipseGradle/article.html
+why gradle is better
+https://gradle.org/maven-vs-gradle/

@@ -83,6 +83,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-o
 ctrl + a, ? help
 ctrl+a / esc to scroll mode; esc again to escape from it
 
+kill a screen session
+screen -X -S 20503.pts-0.dhscaluathyx01a quit
+
 chrome:
 ctrl+shift+P : open panel and search through different command
 

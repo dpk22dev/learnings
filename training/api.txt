@@ -31,6 +31,11 @@ if user logs out of fb/ changes password, then token previously generated become
 for integrated api documentation and examples
 https://apigee.com/resources/instagram
 
+for rest apis
+https://jsonplaceholder.typicode.com/
+https://my-json-server.typicode.com/
+
+
 __todo__
 
 __questions__

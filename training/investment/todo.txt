@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-20T12:04:41+05:30
+
+====== todo ======
+Created Monday 20 April 2020
+
+watch info video for zerodha features
+https://www.youtube.com/playlist?list=PLkxTRam6E2V-okv6gwQlt6dLTsn0v6CD1

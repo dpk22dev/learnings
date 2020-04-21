@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-19T22:13:55+05:30
+
+====== expo ======
+Created Sunday 19 April 2020
+
+https://www.youtube.com/watch?v=6XJhgeuUszQ
+
+u: dpk22dev@gmail.com
+
+expo app.json

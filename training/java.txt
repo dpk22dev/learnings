@@ -57,26 +57,10 @@ source "/home/dpk/.sdkman/bin/sdkman-init.sh"
 sdk  install gradle
 sdk install springboot
 
-**spring docs**
-https://docs.spring.io/spring/docs/5.0.5.BUILD-SNAPSHOT/spring-framework-reference/index.html
-
-**short mvn tutorial**
-https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
-https://www.youtube.com/watch?v=0CFWeVgzsqY
-mvn -X clean install
-mvn effective:pom
-mvn tomcat:run
- mvn help:effective-settings
-mvn [[archetype:help]]
-mvn [[archetype:help|archetype:generate]]
-
-https://zeroturnaround.com/rebellabs/your-maven-build-is-slow-speed-it-up/
-
-**gradle **
-http://www.vogella.com/tutorials/EclipseGradle/article.html
 
 **diff b/w enumerator and iterator**
 Using Enumeration, you can only traverse the Collection object. But using Iterator, you can also remove an element while traversing the Collection. 
+
 enums in depth: https://howtodoinjava.com/java/enum/guide-for-understanding-enum-in-java/
 
 **understanding concurrency and locks**
@@ -299,6 +283,9 @@ https://stackoverflow.com/questions/22642850/promotion-of-byte-to-int-or-long
 diff b/w arithmatic shift(>>) and logical shift(>>>)
 https://stackoverflow.com/questions/2811319/difference-between-and
 
+jndi tutorial
+https://docs.oracle.com/javase/jndi/tutorial/TOC.html
+
 **questions**
 https://stackoverflow.com/search?q=core+java
 ~~in hibernate what if we want to change things lijke~~
@@ -367,8 +354,8 @@ https://drive.google.com/file/d/0B8KENIDghuHAR05fTGk4YUg0RUk/view 144
 java nio
 pattern matching
 understand fairness lock code
-heap dump analyliss tutorial: analyse deadlock with it
-why its not 
+~~heap dump analyliss tutorial: analyse deadlock with it~~
+~~why its not~~ 
 
 **books to read**
 effective java: josua bloch

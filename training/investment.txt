@@ -33,6 +33,18 @@ low risk high return
 
 principles by ray dalio
 
+tools for investment
+https://www.moneycontrol.com/personal-finance/tools/emi-calculator.html
+
+fundamental analysis books:
+the little book that beats the market - joel greenblant
+fundamental analysis for dummies - mathew krantz
+the intelligent investor - benjamin graham
+standard and poor's - fundamental of corporate credit analysis
+warrent buffet accounting book - reading financial statement for value investing
+security analysis
+
+
 __todo__
 module5 : 45
 watch videos: peter lynch
@@ -42,7 +54,9 @@ read how to analyze moneycontrol
 https://www.getmoneyrich.com/top-stocks-to-buy-in-india/
 read investment book summaries
 invest
-
+read after 
+https://www.youtube.com/watch?v=1ufiLv8Dvps&t=182s
+https://www.youtube.com/watch?v=YDeDMJslhL8
 
 
 __questions__

@@ -17,13 +17,30 @@ react-router: routing
 component as a collection of HTML, CSS, JS, and some internal data specific to that component
 parent component provides data to child component
 
+react docs
+https://reactjs.org/docs/
+
 https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/
 https://github.com/atishaybaid/react-redux-links
 
 react v4 routing
 https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
 
+react native 
+running on device:
+https://reactnative.dev/docs/running-on-device
+layout
+https://reactnative.dev/docs/flexbox
 
+
+
+--------------------
+doesn't work for windo/ubuntu
+https://github.com/jhen0409/react-native-debugger
+redux deb
+https://github.com/zalmoxisus/redux-devtools-extension
+remote debug
+http://reactnative.dev/docs/debugging.html#chrome-developer-tools
 
 __todo__
 react source code exploration

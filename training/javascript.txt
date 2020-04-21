@@ -27,6 +27,9 @@ libs and frameworks:
 angular
 babel
 
+we can use for fake rest api
+https://jsonplaceholder.typicode.com/
+
 commonly used jquery methods:
 https://www.smashingmagazine.com/2012/05/50-jquery-function-demos-for-aspiring-web-developers/
 

@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-03-16T14:24:01+05:30
+
+====== terms ======
+Created Monday 16 March 2020
+
+risk capacity vs risk tolerance
+https://economictimes.indiatimes.com/wealth/plan/what-is-the-difference-between-risk-capacity-and-risk-tolerance/articleshow/56967886.cms
+
+capital gain tax calculator
+https://www.moneycontrol.com/personal-finance/tools/capital-gain-tax-calculator.html
+
+indexation 
+https://cleartax.in/s/indexation-helps-reduce-tax-debt-fund-gains
+
+FII vs DII 
+https://www.quora.com/What-are-FII-and-DII-in-stocks
+https://www.youtube.com/watch?v=Z7A1lZJlu_M&feature=emb_rel_end
+
+options vs futures
+https://www.youtube.com/watch?v=FhLxEZ5lxBs
+not good type of investment; pick good stocks
+
+agm/egm
+https://www.quora.com/What-is-an-AGM-EGM-meeting-How-does-it-affect-stock-prices-Is-it-important-to-keep-track-of-as-a-trader
+
+right issue
+https://www.investopedia.com/investing/understanding-rights-issues/
+
+overwriting
+https://www.investopedia.com/terms/o/overwriting.asp
+
+investment terms
+https://zerodha.com/z-connect/tradezerodha/zerodha-trader-software-version/orders-place-modify-cancel-view
+
+todo
+FDI vs FII

@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-09T10:30:19+05:30
+
+====== heroku ======
+Created Thursday 09 April 2020
+
+https://devcenter.heroku.com/categories/heroku-architecture
+
+dpk22dev@gmail.com
+1@Ved22kpd
+
+
+https://ancient-dawn-45667.herokuapp.com/ | https://git.heroku.com/ancient-dawn-45667.git
+
+MONGODB_URI: mongodb://heroku_rtvhx0kk:iqom5aeh30q2lieo5tlq7con4a@ds133557.mlab.com:33557/heroku_rtvhx0kk
+
+https://medium.com/@metamje/setting-up-remote-debugging-for-a-java-application-in-eclipse-with-heroku-exec-22d0722371c2
+
+add files 
+git push heroku master
+heroku open #open in browser
+heroku logs --tail

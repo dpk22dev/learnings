@@ -11,6 +11,10 @@ opensignal.com
 
 source.android.com for security, devices nd sensors, 
 
+logo for app:
+https://romannurik.github.io/AndroidAssetStudio/
+https://resizeappicon.com/
+
 **design patterns used in android:**
 Broadcast receiver uses Observer pattern
 Remoter service invocation uses Proxy pattern

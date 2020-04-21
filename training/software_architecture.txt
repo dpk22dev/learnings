@@ -35,5 +35,8 @@ https://www.enterpriseintegrationpatterns.com/patterns/messaging/
 **uml diagrams**
 https://tallyfy.com/uml-diagram/
 
+class diagrams
+https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/
+
 __questions__
 big table vs micro services

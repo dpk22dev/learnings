@@ -96,6 +96,9 @@ https://medium.com/@darutk/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c
 https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
 https://auth0.com/docs/api-auth/which-oauth-flow-to-use
 
+spring security architecture
+https://spring.io/guides/topicals/spring-security-architecture/
+
 **todo:**
 read https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 Oauth vs kerberos
