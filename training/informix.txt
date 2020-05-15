@@ -6,3 +6,11 @@ Creation-Date: 2019-06-18T12:12:26+05:30
 Created Tuesday 18 June 2019
 
 https://www.ibm.com/support/knowledgecenter/en/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/rdat_minreqinformix.html
+
+
+https://krustev.net/w/articles/Connecting_to_IBM_Informix_database_from_Linux/
+
+jdbc connection clients
+https://stackoverflow.com/questions/11138175/are-there-any-mature-command-line-jdbc-clients
+
+

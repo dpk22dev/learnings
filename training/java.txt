@@ -442,7 +442,7 @@ security flaws in java
 what are wrong designs that had to be stuck with
 how casting in java works? what happens when object is cast to other
 
-
+can we throw higher class of exception in case of checked exception thrown in class's some methods
 
 
 

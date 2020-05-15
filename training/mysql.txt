@@ -42,6 +42,14 @@ https://mariadb.com/kb/en/library/built-in-functions/
 SELECT SQL_CALC_FOUND_ROWS * FROM tbl_name WHERE id > 100 LIMIT 10;
 SELECT FOUND_ROWS();
 
+with clause, cte in mysql
+https://www.mysqltutorial.org/mysql-cte/
+ 
+heirarchical data in mysql
+http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
+
+
+
 **queries per second handled by mysql**
 http://stackoverflow.com/questions/4566714/how-many-mysql-queries-second-can-be-handled-by-a-server
 http://serverfault.com/questions/164980/how-many-selects-per-second-can-a-mysql-server-run

@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-01-25T17:15:42+05:30
-
-====== high level design ======
-Created Saturday 25 January 2020
-
-separate write, read paths

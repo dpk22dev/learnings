@@ -26,6 +26,8 @@ http://www.trademarkandcopyrightlawblog.com/2015/09/copyright-strategies-for-sta
 how to become software consultant
 https://daedtech.com/key-becoming-software-consultant/
 
+https://www.producthunt.com/
+
 https://techcircle.vccircle.com/
 angel.co
 
@@ -34,8 +36,24 @@ https://www.youtube.com/watch?v=l-rdeuAzJgs
 https://bubble.io/
 https://www.appsheet.com/samples/
 carrd, webflow, bubble, 
+limitations of bubble
+https://manual.bubble.io/using-the-bubble-api
+https://medium.com/@rrhoover/the-rise-of-no-code-e733d7c0944d
+
+use  bubble for webapps, backend... while thunkableX for mobile apps
+for custom logic use blockspring
+
+ideas can be taken from grouping of 67 universals of humans
+https://www.designanthropology.nl/human-universals/
+
+firebase
+https://medium.com/better-programming/building-an-api-with-firebase-109041721f77
 
 __questions__
 
 __todo__
 finance, legal, IP and patents and copyrights in startup
+minimalistic setup for rest api with backing store as firebase
+think and design app with user specific functionalities in web/wap/mobile
+
+

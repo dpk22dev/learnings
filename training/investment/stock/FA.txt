@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-02T11:54:30+05:30
+
+====== FA ======
+Created Saturday 02 May 2020
+
+basics
+https://zerodha.com/varsity/module/fundamental-analysis/
+analyze qualitative and quantitative aspects of company
+
+https://zerodha.com/varsity/chapter/financial-ratio-analysis/
+
+CAGR = (EndBalance/BeginBalance)^(1/n) - 1
+n = #periods
+
+It always makes sense to compare the EBITDA margin of the company versus its competitor to get a sense of the management’s efficiency in terms of managing their expense.
+
+A low Net profit margin would indicate higher costs and increased competition.
+
+Asset turnover ratio is an efficiency ratio that indicates how efficiently the company is using its assets to generate revenue.
+Leverage ratios mainly deal with the overall extent of the company’s debt.
+The interest coverage ratio is also referred to as debt service ratio or the debt service coverage ratio. how much the company is earning relative to the interest burden of the company. .
+
+Working capital refers to the capital required by the firm to run its day to day operations. To run the day to day operations, the company needs certain type of assets. Typically such assets are – inventories, receivables, cash
+Working Capital = Current Assets – Current Liabilities
+ The company’s CFO (Chief Financial Officer) strives to manage the company’s working capital efficiently
+
+todo
+balance sheet, p&l, cash flow, ratios of different sectors
+	check and write terms common/specific for these sectors
+industry wise quantitative aspects
+
+questions
+how to 
+what factors of govt policy, public sentiment effect particular sector
+	analyze that for specific company you have invested into

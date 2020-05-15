@@ -6,4 +6,8 @@ Creation-Date: 2020-04-20T12:04:41+05:30
 Created Monday 20 April 2020
 
 watch info video for zerodha features
-https://www.youtube.com/playlist?list=PLkxTRam6E2V-okv6gwQlt6dLTsn0v6CD1
+~~https://www.youtube.com/playlist?list=PLkxTRam6E2V-okv6gwQlt6dLTsn0v6CD1~~
+make sector wise watch list, collect sector wise docs
+ticker analysis of stocks
+add nominee in zerodha
+mutual funds videos

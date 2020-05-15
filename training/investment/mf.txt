@@ -20,6 +20,16 @@ https://m.economictimes.com/wealth/tax/how-to-calculate-long-term-capital-gains-
 strategy:
 set financial goals
 
+acc to pranjal:
+debt instruments/funds are bad for investments giving 8% return; in bad days companies can default. instead put money in big banks, govt can help in case of failures
+mid cap funds are 150 companies; FM is restricted to buy among those only
+small cap: 20%  in small cap if money is surplus and risk appetite is good
+sector fund: stay away from sectorial funds, eg pharma is hyped, as people are not consuming in corona period
+index fund, balanced fund: stay away
+good fund: any rolling 5yrs period return should be good, expense ratio should be good
+
+check funds : if they have too much investment in banking funds; in crisis time they can fall, they have become semi secotrial fund
+
 a large cap fund, two multi cap funds and two small cap funds.
 below 30: 
 above 40: 50% equity , 50%balanced
@@ -72,6 +82,10 @@ https://m.economictimes.com/mf/analysis/best-small-cap-mutual-funds-to-invest-in
 
 todo:
 read mf articles on moneycontrol
+https://www.youtube.com/watch?v=q3LJXyC5mtA
+
+
+
 
 questions:
 why few funds are under elss other are not?

@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-25T17:15:42+05:30
+
+====== high level design ======
+Created Saturday 25 January 2020
+
+separate write, read paths
+
+questions
+design outlook calendar
+design bubble
+
+list of hll design questions
+https://www.youtube.com/watch?v=0163cssUxLA&list=PLA8lYuzFlBqAy6dkZHj5VxUAaqr4vwrka
+
+https://www.youtube.com/watch?v=lBAwJgoO3Ek
+https://www.youtube.com/watch?v=kx-XDoPjoHw
+
+https://www.youtube.com/watch?v=q0KGYwNbf-0

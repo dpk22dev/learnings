@@ -1,0 +1,124 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-03T13:55:25+05:30
+
+====== old-dump ======
+Created Sunday 03 May 2020
+
+
+~~for now focus on knowledge gaining rather than problem solving~~
+
+__p1__
+~~setup python environment and debugging with editor shortcuts~~
+~~discuss python quest with lala~~
+~~https://www.tensorflow.org/programmers_guide/~~
+~~https://www.tensorflow.org/tutorials/~~
+~~google 2017 io~~
+~~tensorflow arch video~~
+
+~~@office~~
+~~html, css, js~~
+
+~~@home~~
+~~maths for ML: eigen, correlation vs convolution, transformations~~
+~~concepts and libs for~~
+~~image processing~~
+~~video processing ~~
+	~~read and explore terms in http://keycorner.org/pub/text/doc/ffmpeg-tutorial.htm~~
+~~high scalability~~
+
+~~android~~
+~~linux book~~
+
+~~for new fields checkout under electives section: https://www.amrita.edu/program/btech-computer-science-and-engineering~~
+~~machine learning  from coursera see what and how to read~~
+~~AI~~
+
+~~processing ga for https://analytics.google.com/analytics/web/demoAccount~~
+~~read about google schema~~
+
+~~ask nikhil about various domain of electronics basic overview...~~
+~~https://serps.com/library/~~
+
+~~find courses and get certifications~~
+~~create timeline~~
+~~tech: http://www.tutorialspoint.com/~~
+	~~xml technologies, academic, software quality, ~~
+	
+~~plugin whcih parses @TODO and pushes it on trello/jira private repo	~~
+~~natural language processing,~~
+
+
+~~till biometric modalities~~
+
+~~read highscalability.com, yourstory.com~~
+~~payment gateway integration~~
+~~recommendattion engine~~
+
+~~setting and using elastic search: queries~~
+~~lecture machine learning,  artificial intelligence~~
+
+~~create resume for freelancing websites and complete profile making~~
+~~twitter, facebook,  amazon, google, architecture and scaling: think how they are doing it : highscalability.com~~
+~~src code for html/css for various websites~~
+
+~~check mails, facebook, linkedin, ~~
+~~https://www.youtube.com/watch?v=CT43HGeYz_s&list=PLqaJe1KXgdP3fscaTH0LiFc3AiSQb7n4e&index=4 till 2~~
+~~https://www.youtube.com/watch?v=oy3CJzyoaAc&index=2&list=PL2Qq6_3SVp4PQFoSaB-epDo8HWlmtL0Jx~~
+
+~~configuring tomcat, integration with xalan, solr~~
+~~http://www.ramkitech.coma/2012/02/understanding-virtual-host-concept-in.html~~
+
+
+__p2__
+
+read ffmpeg, imagemagick tutorials or from books/imageprocessing dir
+read various new technologies and apps for them
+writing extension for chrome, firefox
+google api after maps
+facebook api after build
+~~read rfc for tcp, http, http2~~
+~~various diagrams and their usage: data flw diagram, uml diagram~~
+machine learning, data-analytics, image processing
+magento, ~~angularjs~~
+~~read from http://highscalability.com/~~
+~~communication between machines : specially authenticated~~
+https://www.youtube.com/watch?v=wsixsRI-Sz4
+
+__p3__
+writing extension for nginx, apache, device drivers for linux
+hardware communication, [[IoT]]
+	watch videos	
+about working of telecommunication and protocols involved
+	https://en.wikipedia.org/wiki/Telecommunication
+read from tutorials point software related things and get basic idea
+compiler how do they work
+read from linux journal, magazines
+write blogs for everyday experiences
+~~read rfc for SMTP, XAMPP, DNS~~
+~~learn html, css, js, jquery, bootstrap, angularjs~~
+learn laravel, magento: for db
+try to read source code for apache, nginx, xdebug, mysql
+LTP
+signal processing get a book and read
+audio processing depends on signal processing
+
+__don't do right now__
+quantum computer and physics
+reading OS, diving into linux kernel and device drivers
+learn go, haskell
+read korth for dbms
+linux networking essentials
+linux filesystem hierarchy
+linux internal
+linux kernet : full version
+
+game of thrones story
+https://www.youtube.com/watch?v=DytL8fXMEaA&list=PLTISJg4J79gv4MKKyRwnc5DeDDuEEo6rF
+
+books by bill gates:
+~~magic of reality- richard dawkins~~	
+
+
+ces 2019 videos
+https://www.youtube.com/watch?v=ZGeek0PkjnE

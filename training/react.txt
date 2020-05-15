@@ -32,7 +32,10 @@ https://reactnative.dev/docs/running-on-device
 layout
 https://reactnative.dev/docs/flexbox
 
+sample projects
+https://github.com/adrianhajdin/project_corona_tracker
 
+https://www.youtube.com/watch?v=khJlrj3Y6Ls&list=PL6QREj8te1P6wX9m5KnicnDVEucbOPsqR
 
 --------------------
 doesn't work for windo/ubuntu
@@ -42,13 +45,24 @@ https://github.com/zalmoxisus/redux-devtools-extension
 remote debug
 http://reactnative.dev/docs/debugging.html#chrome-developer-tools
 
+react redux tutorials basics
+https://www.youtube.com/watch?v=93p3LxR9xfM
+
+development:
+install react extension, redux extension
+
 __todo__
 react source code exploration
 how react works, its architecture
 SSR workign
 react hydrate
 
-
+~~async await tut~~
+hooks in react
+react redux tut
+react native tut
+debugging app
+flex ui 
 
 __questions__
 how to break into components

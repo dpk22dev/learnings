@@ -12,12 +12,36 @@ sector wise analysis
 https://www.moneycontrol.com/stocks/marketstats/sector-scan/nse/today.html
 sector wiser performannces
 https://www.moneycontrol.com/stocks/marketstats/sec_performance/bse/abrasives.html
+all industies list
+https://economictimes.indiatimes.com/marketstats/exchange-NSE,pageno-1,pid-256,sortby-marketcappercentchange,sortorder-desc.cms
 
 getting started for stocks
 https://www.moneycontrol.com/news/business/markets/classroom-starting-your-stock-market-journey-equity-part-2-4475001.html
 
+for fundamental analysis
+https://tradebrains.in/how-to-do-fundamental-analysis-on-stocks-in-india/
+1) Use the financial ratios for initial screening, 2)Understand the company, 3) Study the financial reports of the company, 4) Check the debt, 5) Find the company’s competitors 6) Analyse the future prospects.
+
+screens
+https://www.screener.in/screens/
+
+eg:
+https://www.screener.in/company/MARICO/consolidated/
+
+financials -> ratios gives all ratios of company
+https://www.moneycontrol.com/financials/relianceindustries/ratiosVI/RI
 
 https://www.moneycontrol.com/news/business/markets/planning-to-invest-in-markets-here-are-3-steps-to-do-your-own-fundamental-analysis-4072741.html
+
+use screener/investing.com->screener to find relevant companies
+in depth ratios can be viewed on moneycontrol
+
+management analysis:
+red herring prospectus of company before IPO contains main vission and info about management
+which can be downloaded from internet
+earning calls: after each quarter, management explains growth of company and Q/A
+stockadda: https://www.youtube.com/channel/UCptHdLy6B3hOngFxBCysAqA
+search for terms like fraud with management name
 
 
 ujjivan
@@ -40,7 +64,19 @@ bajaj finserv, hdfc
 tcs looks safe option
 
 **todo**
-try setting money in index stock
-which index stock to purchase
+~~try setting money in index stock~~
+~~which index stock to purchase~~
 need to find monopolies in each sector; 
+find meaning of ratios in ratios section of moneycontrol
+query using screener to find relevant investment companies
+verify already existing investment is ok
+for finding smallcap search through screener search criterias on net
+
+
+
+
+
+
+
+
 

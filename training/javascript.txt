@@ -147,6 +147,9 @@ https://stackoverflow.com/questions/9185630/find-out-the-line-row-number-of-the-
 **interview js questions**
 https://www.codementor.io/nihantanu/21-essential-javascript-tech-interview-practice-questions-answers-du107p62z
 
+async await in js
+https://www.youtube.com/watch?v=vn3tm0quoqE
+
 __** todo **__
 angular, jasmine
 

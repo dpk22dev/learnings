@@ -35,6 +35,8 @@ for rest apis
 https://jsonplaceholder.typicode.com/
 https://my-json-server.typicode.com/
 
+rest endpoiint namings
+https://restfulapi.net/resource-naming/
 
 __todo__
 
