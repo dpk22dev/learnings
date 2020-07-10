@@ -11,6 +11,9 @@ http://marcin-chwedczuk.github.io/get-day-of-week-from-date
 competitive programmer book
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf
 
+dsa revision
+https://cses.fi/book/book.pdf
+
 https://www.youtube.com/watch?v=RBSGKlAvoiM
 
 **question repos**

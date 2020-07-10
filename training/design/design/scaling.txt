@@ -70,6 +70,9 @@ https://www.hiredintech.com/classrooms/system-design/lesson/61
 
 https://blog.yugabyte.com/6-technical-challenges-developing-a-distributed-sql-database/
 
+timescale db using sql
+https://blog.timescale.com/blog/time-series-data-why-and-how-to-use-a-relational-database-instead-of-nosql-d0cd6975e87c/
+
 __todo__
 api how to and integration with social networking sites
 cloud services by amazon

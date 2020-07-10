@@ -5,28 +5,33 @@ Creation-Date: 2018-04-07T16:36:03+05:30
 ====== prep ======
 Created Saturday 07 April 2018
 
-~~https://www.hiredintech.com/~~
+https://leetcode.com/discuss/career/216554/from-0-to-clearing-uberappleamazonlinkedingoogle
 
-~~each storage/ other technology~~
-~~nauk csm~~
-~~coke~~
-~~java patterns, multithreading~~
-~~http://www.vogella.com/tutorials/JavaRegularExpressions/article.html~~
+https://leetcode.com/discuss/interview-question/612296/Compiled-Lists-of-Interview-Questions-by-Companies/529431
 
+https://leetcode.com/problemset/all/
 
-creating buckets/agg es tryouts
-low level design quest
-executor framework usage
-try multithreading constructs
-coding questions 
-
-locking
 
 https://www.geeksforgeeks.org/amazons-asked-interview-questions/
 
 https://www.geeksforgeeks.org/amazon-interview-preparation/
 https://www.geeksforgeeks.org/amazons-most-frequently-asked-interview-questions-set-2/
 
+currently
+https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+279. after Perfect Squares Medium
+280. after Target Sum Medium
 
 **questions**
-exact flow of packets in network
+
+regularly
+java revisited questions
+dp questions 
+read book
+
+
+
+
+
+
+

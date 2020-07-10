@@ -26,10 +26,25 @@ Working capital refers to the capital required by the firm to run its day to day
 Working Capital = Current Assets – Current Liabilities
  The company’s CFO (Chief Financial Officer) strives to manage the company’s working capital efficiently
 
+tools for investment
+https://www.moneycontrol.com/personal-finance/tools/emi-calculator.html
+
+fundamental analysis books:
+the little book that beats the market - joel greenblant
+fundamental analysis for dummies - mathew krantz
+the intelligent investor - benjamin graham
+standard and poor's - fundamental of corporate credit analysis
+warrent buffet accounting book - reading financial statement for value investing
+security analysis
+https://tradebrains.in/how-to-do-fundamental-analysis-on-stocks-in-india/
+
+
 todo
 balance sheet, p&l, cash flow, ratios of different sectors
 	check and write terms common/specific for these sectors
 industry wise quantitative aspects
+understand piggybacking on best investors strategy for stock investment
+
 
 questions
 how to 

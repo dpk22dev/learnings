@@ -10,6 +10,11 @@ separate write, read paths
 questions
 design outlook calendar
 design bubble
+design mmt : airline reservation system
+train reservation system like irctc
+
+overview:
+https://www.freecodecamp.org/news/systems-design-for-interviews/
 
 list of hll design questions
 https://www.youtube.com/watch?v=0163cssUxLA&list=PLA8lYuzFlBqAy6dkZHj5VxUAaqr4vwrka
@@ -18,3 +23,17 @@ https://www.youtube.com/watch?v=lBAwJgoO3Ek
 https://www.youtube.com/watch?v=kx-XDoPjoHw
 
 https://www.youtube.com/watch?v=q0KGYwNbf-0
+
+https://leetcode.com/discuss/interview-question/system-design
+
+rate limiter
+https://www.youtube.com/watch?v=FU4WlwfS3G0
+whatspp design
+https://youtu.be/zKPNUMkwOJE
+twitterr
+https://www.youtube.com/watch?v=wYk0xPP_P_8
+
+
+
+
+

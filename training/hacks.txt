@@ -5,6 +5,7 @@ Creation-Date: 2018-07-07T09:20:19+05:30
 ====== hacks ======
 Created Saturday 07 July 2018
 
+imp tools: [[../tools.txt]]
 update-alternatives --config java
 
 baeldung
@@ -107,6 +108,9 @@ must installs on dev machins:
 https://dev.to/brpaz/my-linux-development-environment-of-2018-ch7
 
 
-ubintu sound driver issue:
+ubuntu sound driver issue:( dummy output )
 https://itsfoss.com/fix-sound-ubuntu-1304-quick-tip/
 https://www.linuxuprising.com/2018/06/fix-no-sound-dummy-output-issue-in.html
+
+ killall pulseaudio; rm -r ~/.config/pulse/* ; rm -r ~/.pulse*
+https://askubuntu.com/questions/464388/no-sound-from-laptop-speakers-in-ubuntu-14-04-after-booting-into-windows-8-1/464444#464444

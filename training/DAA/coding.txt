@@ -42,3 +42,15 @@ be careful as & has lower precendece as ==
 
 while storing value for sums use long[] instead of int[]; use long for storing sum of values, which can overflow
 
+its not necessary using bitset will consume less memory; it can give MLE while map<Integer, Integer> can pass
+
+while reversing an integer; if we want to check if it will overflow or not, creating a string using stringBuilder and Integere.parseInt can be helpful otherwise
+remove last character and add to new number while checking if new number is not overflowing before operation is useful
+
+better way to get top element from stack
+char topElement = stack.empty() ? '#' : stack.pop();
+when we have correspondence; store mapping in hashmap or array to better code
+
+when using hashmap for be careful if input contains duplicate elements, it can lead to problems later
+set<list> will not remove duplicate elements from list
+

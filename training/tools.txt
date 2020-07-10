@@ -5,6 +5,11 @@ Creation-Date: 2018-07-09T12:13:08+05:30
 ====== tools ======
 Created Monday 09 July 2018
 
+whiteboard
+ziteboard
+diagrams
+app.diagram.net
+
 configuration management
 orchestration
 monitoring

@@ -28,6 +28,9 @@ https://en.wikipedia.org/wiki/Lists_of_network_protocols
 can we use anycast for websites or tcp based services, if no how cdn use it
 https://anuragbhatia.com/networking/different-cdn-technologies-dns-vs-anycast-routing/
 
+to get free dns for ip:
+http://freedns.afraid.org/
+
 the netmask on a host with an IP address defines what is internal and what is external. Hosts located internally (professionals say, “in the same subnetwork”) respond directly. Hosts located externally (“not in the same subnetwork”) only respond via a gateway or router
 
  To connect 128 hosts to the Internet, for instance, you need a subnetwork with 256 IP addresses, from which only 254 are usable, because two IP addresses are needed for the structure of the subnetwork itself: the broadcast and the base network address.
@@ -93,6 +96,9 @@ https://askubuntu.com/questions/686186/how-to-connect-my-ubuntu-to-my-workplace-
 checking network speed cli
 https://askubuntu.com/questions/104755/how-to-check-internet-speed-via-terminal
 > curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+
+someday channel:
+https://www.youtube.com/user/gigafide/playlists
 
 __todo__
 ipv6 : https://www.youtube.com/watch?v=mvlBMogudkQ

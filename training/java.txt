@@ -168,6 +168,9 @@ Treeset: set backed by treemap; insertion, contains, updation O(logn); ordered
 LinkedList: FIFO
 ArrayDeque: arraylist based deque
 
+reflection architecture java
+
+
 **role of each jar in jre system library**
 https://stackoverflow.com/questions/34890981/what-role-each-jar-in-jre-system-library?rq=1
 

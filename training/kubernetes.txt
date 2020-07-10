@@ -10,6 +10,39 @@ http://www.tothenew.com/blog/getting-started-with-kubernetes/
 http://www.tothenew.com/blog/how-to-install-kubernetes-on-centos/
 http://www.tothenew.com/blog/understanding-kubernetes-architecture-and-setting-up-a-cluster-on-ubuntu/
 
+playlist for kubernetes basics
+https://www.youtube.com/watch?v=0rZcYXtbGpc&list=PLot-YkcC7wZ9xwMzkzR_EkOrPahSofe5Q&index=4
+
+command cheat sheet
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+minikube provides local kubernetes cluster to play with
+minikube start
+kubectl apply -f ./deployment.yaml
+kubectl expose deployment tomcat-deployment --type=NodePort
+minikube service tomcat-deployment --url
+kubectl get pods
+kubectl describe pod
+kubectl attach container-id
+kubectl exec -it container-id bash
+kubectl label pods  pod-id key=value
+#run a particular image
+kubectl run hazelcast --image=hazelcast:1.1 --port=5701
+kubectl scale --replicas=3 deployment-name
+kubectl describe  services service-name
+kubectl delete
+minikube stop
+
+we can use --type=LoadBalancer
+
+earlier we had to handle images, containers and pods; now deployments can handle start/stop/resume/rolling/rollback
+labels and selectors can beused to add meta info to cluster nodes
+
+todo
+types of services in kubectl
+after
+https://www.youtube.com/watch?v=SOGyvkZKVw0&list=PLot-YkcC7wZ9xwMzkzR_EkOrPahSofe5Q&index=8
+
 questions:
 how autoscaling happens, do vm's need to be cut explicitely
 adding of extra node in say ES needs config change, re indexing : how is it done for example done by aws cluster of ES

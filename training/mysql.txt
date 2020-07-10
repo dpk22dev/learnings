@@ -217,7 +217,7 @@ The problem is that asynchronous replication will incur collisions and conflicts
 looks like multi master has its problems also.
 
 **locks vs transactions**
-http://stackoverflow.com/questions/4226766/mysql-transactions-vs-[[http://stackoverflow.com/questions/4226766/mysql-transactions-vs-locking-tables|locking]][[-tables]]
+https://stackoverflow.com/questions/4226766/mysql-transactions-vs-locking-tables
 
 https://mathiasbynens.be/notes/mysql-utf8mb4
 

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-06-19T18:57:39+05:30
+
+====== diagrams ======
+Created Friday 19 June 2020
+
+app.diagram.net

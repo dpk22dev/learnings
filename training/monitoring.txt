@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-28T13:14:17+05:30
+
+====== monitoring ======
+Created Thursday 28 May 2020
+
+https://blog.christophersmart.com/2019/09/08/setting-up-a-monitoring-host-with-prometheus-influxdb-and-grafana/
+

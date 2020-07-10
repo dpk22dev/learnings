@@ -80,12 +80,45 @@ https://www.moneycontrol.com/mutual-funds/best-funds/equity/returns/1
 should we invest in small cap funds:
 https://m.economictimes.com/mf/analysis/best-small-cap-mutual-funds-to-invest-in-2019/articleshow/67552485.cms
 
+
+https://www.valueresearchonline.com/
+
+nav chart
+https://www.indiainfoline.com/mutualfunds/axis-long-term-equity-fund-g/85235920
+
+standard deviation:
+https://www.youtube.com/watch?v=RcYTJ6ltFsc
+how risky/volatile investment is: stability of folio
+meany return of fund would vary by standard deviation form its mean. it shows stability of fund around its mean. shouldn't be considered in isolation. should be considered with alpha, beta etc..
+eg: sd = 10 around mean 18 is 8%-28% min-max changes
+
+
+alpha/beta: 
+https://www.youtube.com/watch?v=sf-LDqvMH5Y
+performance of fund comparison to index; index will be different for different category of funds:
+fund perf = index perf X beta
+
+alpha: shows returns generated in correlation to beta value. if fund performs differently that predicted by beta, then extra margin is alpha.
+eg: for b=1.2, on 10% growth in index; fund should perform at 12%, but it performed 15%... thus alpha is 3 here... is due to decisions made by FM instead of stock market
+good fund should return alpha regularly
+
+sharpe ratio:
+https://www.youtube.com/watch?v=eYpOa4hPyKc
+= ( avg return of your folio - returns of risk free investment)/standard deviation
+=> returns generated per unit of risk taken
+used to find investment with good return for moderate risk vs risky investments
+comparison with same category funds
+https://www.youtube.com/watch?v=glaT-NJDyqw
+
+
+
+
 todo:
 read mf articles on moneycontrol
+https://www.thebalance.com/picking-winning-mutual-funds-357957
 https://www.youtube.com/watch?v=q3LJXyC5mtA
-
-
-
+comparison and various terms in mf - do analysis
+https://economictimes.indiatimes.com/mf/analysis/best-multi-cap-mutual-funds-to-invest-in-2020/articleshow/73240086.cms?from=mdr
 
 questions:
 why few funds are under elss other are not?
@@ -95,7 +128,7 @@ how risky are mutual funds, subject to market fluctuations
 how to decide which sector should be chosen for mf long term investment
 debt fund/gold plan look same but how there is differences among their values? 
 how news/budget/stocks impact mf
-
+diff b/w direct vs regular mf
 
 
 

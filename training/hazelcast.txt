@@ -13,4 +13,7 @@ hz
 bling41!
 
 
+hazelcast docs feature wise
+https://hazelcast.org/imdg/imdg-features/
+
 curl 'http://localhost:8080/hazelcast-mancenter/security/saveConfig' -H 'Origin: http://localhost:8080' -H 'Acceptent-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: http://localhost:8080/hazelcast-mancenter/login.html' -H 'X-Requested-With: XMLHttpRequest'  --data 'providerHiddenInput=Default&usernameInput=emre&passwordInput=pass1357&confirmPasswordInput=pass1357'

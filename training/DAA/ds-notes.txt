@@ -5,6 +5,19 @@ Creation-Date: 2018-08-06T08:27:04+05:30
 ====== ds-notes ======
 Created Monday 06 August 2018
 
+techniques on array 
+simple search
+sorting & binary search
+use hashmap/stack/queue
+two pointers: move one behind other, move in expanding opposite direction, move in contracting opposite direction
+slow fast pointers
+two heaps
+subsets
+sliding window
+merge interval
+backtraking
+DP if none of above works
+
 if in intermediate step there is some arr of elements; and need for sorting to get result => consider traversing original array from right side, sometimes it saves sorting
 
 while deciding complexity for RxC matrix, take example for 3x3 say, try to find number of calls on each cell. tree will give call on each level, summing them gives the result, eg:
@@ -156,6 +169,8 @@ result = ab+rest;
 below is correct:
  Math.max( Math.abs(x2-x1), Math.abs(y2-y1) ); 
 
+maximum area of 1's under matrix can be converted to maximum area under histogram. we can add all 1's in column and generate height array which can be solved to find max area under histogram.
+
 **dp**
 modify array to maximize sum of adjacent differences where each element can be 1 or x, can be converted into assemly line scheduling problelm
 
@@ -172,6 +187,9 @@ In undirected graphs, either Breadth First Search or Depth First Search can be u
 painters' partition problem: it can be solvevd using DP O( k*n^3 ) but using binary search can be solved using O(k*n^2); bs trick is : consider 1 painter can paint in sum and excess painters can paint in max time; we need to increase/decrease partition size and find #required painters, compare it with #availpainters to change low/high value of partition
 https://www.geeksforgeeks.org/painters-partition-problem-set-2/
 
+if function want to return two values, pass array in input, fill one/more results in that array.
+
+https://leetcode.com/problems/binary-tree-maximum-path-sum: we don't need to return diameter/max_path_diameter, we compare and store it into global variable, only max_path_till_leaf + root.val needs to be returned which is done by method
 
 
 todo

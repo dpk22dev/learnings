@@ -9,3 +9,6 @@ apache camel
 https://dzone.com/articles/open-source-integration-apache
 
 https://dhscalqalglf02a:5848/common/index.jsf
+
+lombok:
+https://www.baeldung.com/intro-to-project-lombok

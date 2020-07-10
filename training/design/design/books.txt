@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-06-07T18:07:45+05:30
+
+====== books ======
+Created Sunday 07 June 2020
+
+theory of datastore systems
+http://book.mixu.net/distsys/single-page.html
+
+
+https://github.com/wx-chevalier/Awesome-CS-Books-and-Digests/tree/master/Infrastructure

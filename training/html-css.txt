@@ -49,14 +49,6 @@ https://designshack.net/articles/css/whats-the-deal-with-display-inline-block/
 **css units**
 https://webplatform.github.io/docs/tutorials/understanding-css-units/
 
-In <title> we are using & and when i remove it it gives error
-use &amp; instead
-
-why <META> tag is used. is it valid???
-No
-
-why xhtml is used
-
 why different versions of html? which one is best? which one are you using and why?
 what will happen if we don't use xmlns="http://www.w3.org/1999/xhtml"?
 how do we know wchih version to use?
@@ -185,6 +177,12 @@ https://stackoverflow.com/questions/15604182/why-use-an-attribute-selector-to-ma
 http://www.w3.org/TR/selectors/ defines the selectors for css
 
 inline vs inline-block: http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
+
+bootstrap css:
+https://getbootstrap.com/docs/4.5/layout/grid/
+Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use .col-4.
+Grid breakpoints are based on minimum width media queries, meaning they apply to that one breakpoint and all those above it (e.g., .col-sm-4 applies to small, medium, large, and extra large devices, but not the first xs breakpoint).
+
 
 __todo__
 read concepts of display, ~~position, float with examples~~, forms and inputs, media, flex

@@ -14,6 +14,9 @@ http://www.oxfordmathcenter.com/drupal7/node/42
 how floating point numbers are stored
 http://www.oxfordmathcenter.com/drupal7/node/43
 
+practical coding books:
+http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf
+
 segment tree: with extra storage, kind of working like heap: O(logN)
 using double pointers while traversing linked list
 whenever you have to do things backward
@@ -32,6 +35,7 @@ when need to update value in tree, get diff keep on applying downwards. eg: segm
 BITree
 https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a
 
+https://leetcode.com/discuss/career/216554/from-0-to-clearing-uberappleamazonlinkedingoogle
 
 __tricky:__
 https://www.geeksforgeeks.org/sorted-linked-list-to-balanced-bst/ doing this in O(n)
@@ -45,47 +49,14 @@ https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/
 
 
 __status__
-ll : start with cirq
-arrays: Search an element in a sorted and rotated array
-stack: Design a stack with operations on middle element
-queue: LRU Cache Implementation
-bt: avl with duplicate key
-bst: Sorted Array to Balanced BST
-heap: heap sort
-hash: Print a Binary Tree in Vertical Order | Set 2 (Hashmap based Method)
 
 __important__
-https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
- number
-https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
-https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
-
+https://leetcode.com/problemset/top-interview-questions/
 
 __questions left out__
-ll:
-arrays:
-stack:
-queue:
-bt:
-bst:
-heap:
-	https://www.geeksforgeeks.org/binomial-heap-2/
-	https://www.geeksforgeeks.org/leftist-tree-leftist-heap/
 	
 
 
 
 __visible questions on gfg__
-ll 100
-stk 80
-q 45
-bt 60
-bst 85
-heap 50
-hash 40
-graph 220
-matrix 40
-misc 230
-adt 200
-
 

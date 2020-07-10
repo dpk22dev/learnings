@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-18T13:49:08+05:30
+
+====== micrometer ======
+Created Monday 18 May 2020
+
+Micrometer is not a distributed tracing system or an event logger.
+
+https://www.youtube.com/watch?v=deBSrmskpcY
+
+https://blog.autsoft.hu/defining-custom-metrics-in-a-spring-boot-application-using-micrometer/
+
+observability
+logging, - slf4j, log4j, logback 
+metrics, - micrometer, prometheus, datadog
+tracing - zipkin
+
+equivalent logging 
+facade - meter registery
+muting - meter filters
+multiple dest - composite registry
+common metadata- commontags
