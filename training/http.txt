@@ -39,6 +39,16 @@ https://stackoverflow.com/questions/31089221/what-is-the-difference-between-put-
 access control vs cache control headers
 https://stackoverflow.com/questions/40731465/access-control-max-age-vs-cache-control
 
+http2 insights
+https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference
+binary protocol, hpack for header compression, streams to remove head of line blocking on same tcp connection, streamId and prioritization for concurrent requests, server push
+
+http2 rfc
+https://tools.ietf.org/html/rfc7540#section-2
+
+server side events for stock ticker
+https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/
+
 **MIME**
 for sending more than simple text, info and how to process data to receiver
 content-type: (type/sub-type) eg: text/plain, multipart/mixed; boundary=frontier

@@ -54,6 +54,11 @@ Complete: level order is enough, 1,2,4,8.. nodes at each level . eg: hea**p**( c
 full: each node has 0/2 childeren. 
 BT: preoder + inorder
 
+BIT tree explanation
+https://www.hackerearth.com/practice/data-structures/advanced-data-structures/fenwick-binary-indexed-trees/tutorial/
+
+if we want to update range and find single index value, for update(l,r,val) we can for arr[l]+val, arr[r]-val in O(1) and get(l) : iterate and elements 0->l to get value at l. same logic can be applied to BIT for above type of query
+
 https://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/
 we can use lmin array for storing min element on left side, rmax for max element on right side. then iterating i over lmin, j over rmax; we can find pair(i,j) when diff(i,j) is max
 
@@ -70,6 +75,11 @@ int colNum[] = {0, -1, 1, 0};
 			int col = pt.y + colNum[i]; 
 		 isValid( row, col )
 }
+
+or keep it clubbed, helpful in 3D data
+ int[][] directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};    
+for(int[] dir : directions){ x = x + dir[0]; y = y + dir[1]; }
+
 
 count of digit in perfect powers of 10
 count( 10^d ) = 9 * count( 10 ^ (d-1) ) + 10^(d-1)
@@ -144,6 +154,8 @@ prefix evaluation: read right to left, put operands and their result onto stack 
 
 due to pointer limitations in java, xor llist is not possible
 
+for doing calcuation on infix notation, we need to convert into postfix -> calculation on postfix. but if question involves +,-, *,/ only we can use shortcut. instead of converting in postfix, then processing through stack. we can push +/-ve numbers and process them later onto stack. while encountering *,/ we store the result using top numbers. then on completion we add numbers present on stack to return result.
+
 avl tree: balance tree after insertion/deletion
 store height of node along with key, update it with operations; it makes avl perform better
 for finding LL, LR, RL, RR case we can get balance +/- and key smaller/large than node.left/node.right key we can find the case
@@ -191,6 +203,72 @@ if function want to return two values, pass array in input, fill one/more result
 
 https://leetcode.com/problems/binary-tree-maximum-path-sum: we don't need to return diameter/max_path_diameter, we compare and store it into global variable, only max_path_till_leaf + root.val needs to be returned which is done by method
 
+in case of 2D array[m][n] traversal for BFS,  its value = i*m+j can be pushed into Queue<Integer> instead of queue of<Pair>. similarly row can obtained as r = pos/m, column can be obtained as c = pos%m; Also rather than storing state in separate 2D matrix, 0 can be converted to intermediate value say 1, then converted back to 2 etc...
+
+disjoint set for 2D array needs row,col to be converted into number which can be used as index for set property., for dummySet use m*n as  separate set.
+
+if we want smaller element on left use stack, keep popping untill there is smaller element on stack; similarly for greater element on left. symmetry allows us to do this from right side if we want next smaller/larger element on right.
+But if we want count of smaller/greater elements on left  we need to iterate left to right and store elements in BST while keeping count, freq of element in node
+Similarly for smaller/greater elements on right,we need to iterate right to left and store elements in BST
+
+in zig zag labeled full binary tree, if we want to print path upto root, we need to find parent
+label + symmetricNode = lowest node at level + highest node at level
+= 2^(l-1) + 2^(l)-1
+=> parent = ( 2^(l-1) + 2^(l)-1 - label)/2
+
+if keeping sign of numbers as indication of visited, be careful about 0 value... you won;t be able to figure out if that was visited or not
+
+for comparing numbers lexically, use comparator to compare two string- trick is to concat s1+s2, s2+s1 and return their comparison
+
+remove beg / end space using s.trim()
+remove intermediate space using: s = s.replaceAll("\\s+", "");
+
+treap implementation
+https://www.techiedelight.com/implementation-treap-data-structure-cpp-java-insert-search-delete/
+in java we don't have pass by reference for references. so return reference eg root and update root in calling method.
+
+if we want to sort string, convert them into char[] sort them and create string agian
+char[] arr = str.toCharArray();
+Arrays.sort( arr );
+res = String.valueOf( arr );
+
+while creating iterative solution of preorder/inorder to bst... we use stack of nodes, can keep sequence of inorder nodes in hashmap for quick lookup if element is on left side/right side
+https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/564571/Python-and-Java-RecursionIterative
+
+in iterative travel of inorder, push all left nodes on stack, then push right node of node on top.... then cycle again by pushing all left nodes of top node.
+
+
+container with most water seems it can be solved using stack, but intuition is max area is when poles are distant apart, limited by minimum of two poles. use start, end and compare with existing maxArea to update new area. move start/end whichever is smaller
+
+for finding next permutaion of sequence, instinct can be derived from below. Elements in last would be in decreasing sequence. iterate from last in increasing sequence, find element which breaks this sequence. again iterate from last and swap this element with just greater element in right sequence. now reverse the right sequence to get next permutation.
+https://www.youtube.com/watch?v=quAS1iydq7U
+
+in trapping rain water O(n) with O(1) space solution is possible. we can move l, r from extreme ends untill they meet in middle. if arr[l] is less than arr[r], it its greater than maxleft, update maxLeft, if its smaller than maxLeft then add (maxLeft-arr[l]) to result. similarly think from right.
+
+while finding unique comb of repeating numbers, we can use hashset of numbers. we will swap and recurse only if current number is not in hashset.
+for iterative solution, make queue of arraylist. for each element in input array... insert that element at all possible indexes in each of dequeued arraylist in queue, requeue new arraylist into queue.
+
+for generating  parenthesis iteratively, we can build current solution over previous one. 
+f(0): ""
+f(1): "("f(0)")"
+f(2): "("f(0)")"f(1), "("f(1)")"
+f(3): "("f(0)")"f(2), "("f(1)")"f(1), "("f(2)")"
+So f(n) = "("f(0)")"f(n-1) , "("f(1)")"f(n-2) "("f(2)")"f(n-3) ... "("f(i)")"f(n-1-i) ... "(f(n-1)")"
+we don't have to 
+
+few questions don't seem that they can be solved divide and conquer. but it possible. eg: finding maximum sum subarray in array. in divide step we find leftMax, rightMax, in merge step we take mergeStepMax = max( leftSubArraySum, rightSubArraySum, leftSubArraySum + rightSubArraySum)... then return max( leftMax, rightMax, mergeStepMax)
+https://leetcode.com/problems/maximum-subarray/discuss/20357/Divide-and-Conquer-Java-solution.
+
+finding largest subarray with sum equal to k
+It can be solved by using cumSum array and hashmap of sum of incoming elements, index... if curSum - k exists in hashmap, we can update new length
+https://leetcode.com/problems/subarray-sum-equals-k/solution/
+
+heap vs bst vs segment tree vs bit tree vs interval tree
+heap gives min/max O(1) in all elements; doesn't give min/max on left/right of current index
+bst gives min/max/count of smaller/larger elements O(1); doesn't give min/max before / after current index
+segment tree: gives min/max/sum in given range O(log n)... helpful for range queries
+bit: same as segment tree but space required and complexity is less... helpful for range 
+intereval tree: helpful for range based data with range based intersection queries
 
 todo
 after trees https://codeforces.com/blog/entry/16221

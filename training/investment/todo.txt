@@ -11,3 +11,6 @@ make sector wise watch list, collect sector wise docs
 ticker analysis of stocks
 add nominee in zerodha
 mutual funds videos
+
+to read:
+https://www.drvijaymalik.com/2020/08/learning-from-analysing-2800-companies.html#.X0OfqtuM0dJ.whatsapp

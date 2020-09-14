@@ -18,6 +18,9 @@ config/data server: mongod
 query server: mongos
 config server stores meta info about cluster, database, collection, chunks; gets updated on chunk movement, node failures etc. generally 1/3 config servers are used, which remain in-sync using 2PC. query server gets updated on change in config server info. queries are routed to data servers thruogh query servers, sometimes query server aggregate data too.
 
+3 mongos will behave as sentinel, will add configs server details in config file, add dataserver set
+config server doesn't know about data server
+1p and 2sec mongo db sever is created dataset is created
 
 sharding in mongod
 https://docs.mongodb.com/manual/sharding/#data-partitioning

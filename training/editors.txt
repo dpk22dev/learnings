@@ -59,6 +59,7 @@ ctrl + shift + R : filename search
 shift+shift search everywhere
 ctrl + shift +a : do an action
 jump to line: ctrl + L or navigate > gotoline
+beautify: alt+ctrl+window+L
 
 **clion:**
 put caret on variable and press alt+f7 to find all usage 

@@ -38,6 +38,9 @@ for elastic
 sysctl -w vm.max_map_count=262144
 vm.max_map_count = 65530
 
+cheat sheets
+https://lzone.de/cheat-sheet/Redis
+
 ubuntu hangs on copying data
 https://askubuntu.com/questions/397249/system-freezes-unresponsive-unusable-when-copying-large-file-to-usb
 
@@ -112,5 +115,5 @@ ubuntu sound driver issue:( dummy output )
 https://itsfoss.com/fix-sound-ubuntu-1304-quick-tip/
 https://www.linuxuprising.com/2018/06/fix-no-sound-dummy-output-issue-in.html
 
- killall pulseaudio; rm -r ~/.config/pulse/* ; rm -r ~/.pulse*
+	 killall pulseaudio; rm -r ~/.config/pulse/* ; rm -r ~/.pulse*
 https://askubuntu.com/questions/464388/no-sound-from-laptop-speakers-in-ubuntu-14-04-after-booting-into-windows-8-1/464444#464444

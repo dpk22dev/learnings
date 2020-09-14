@@ -41,8 +41,15 @@ https://community.topcoder.com/tc?module=ProblemArchive&sr=&er=&sc=&sd=&class=di
 for practice: search on
 https://arena.topcoder.com/#/u/practiceProblemList
 
+data structures lectures
+https://www.youtube.com/channel/UCBLr7ISa_YDy5qeATupf26w
+
+advanced data structures
+https://www.youtube.com/playlist?list=PLM_KIlU0WoXmkV4QB1Dg8PtJaHTdWHwRS
+
 **topic wise:**
 https://www.topcoder.com/community/competitive-programming/tutorials/
+https://www.hackerearth.com/practice/data-structures/advanced-data-structures/fenwick-binary-indexed-trees/tutorial/
 
 https://www.careercup.com/categories 
 

@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-07-12T18:19:47+05:30
+
+====== cloud ======
+Created Sunday 12 July 2020
+
+https://www.nexsoftsys.com/articles/learn-spring-cloud-feign-and-hystrix-circuit-breaker.html
+
+http://www.vinsguru.com/architectural-design-pattern-saga-pattern-implementation-using-kafka/
+
+zuul api gateway/ proxy
+eureka: service registry, discovery
+ribbon: client side load balancer
+fien: library like rest-template
+hystrix: circuit breaker
+turbine: aggregator of hystrix data
+zipkin/sleuth: open distributed tracing
+
+Internally, Zuul uses Netflix Ribbon to look up for all instances of the service from the service discovery (Eureka Server).
+
+
+todo:
+internall chhange curency conversion service to use foreex thourhg zuul
+
+
+

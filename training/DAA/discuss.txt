@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-08-19T01:25:44+05:30
+
+====== discuss ======
+Created Wednesday 19 August 2020
+
+LIS in O( nlgn)
+silhoute of buildings
+shortest subarray with sum at least k
+https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/discuss/549959/Video-Solution-and-Java-Deque-Code
+
+https://leetcode.com/problems/k-inverse-pairs-array/solution/
+why condition if j-i >= 0
+int val = (dp[i - 1][j] + M - ((j - i) >= 0 ? dp[i - 1][j - i] : 0)) % M;
+
+https://leetcode.com/problems/number-of-digit-one/
+
+https://www.geeksforgeeks.org/count-the-number-of-ways-to-divide-n-in-k-groups-incrementally/
+why looping from prev to left, why not 1 to left?
+for(int i = prev; i <= left; i++)  

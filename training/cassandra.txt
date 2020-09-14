@@ -99,6 +99,9 @@ https://www.datastax.com/dev/blog/lightweight-transactions-in-cassandra-2-0
 cassandra pitfalls: 
 https://blog.parse.ly/post/1928/cass/
 
+cassandra hardening in office:
+https://confluence.dhisco.com/display/DQ/Cassandra
+
 
 source code analysis:
 https://wiki.apache.org/cassandra/ArchitectureInternals
@@ -176,3 +179,34 @@ cassandra in memory vs on disk
 supercolumns vs composite columns : diff 
 are supercolumns bad why
 materialized view why 
+
+
+
+https://www.instaclustr.com/apache-cassandra-compaction/
+	AND gc_grace_seconds = 86400
+	AND max_index_interval = 2048
+	AND memtable_flush_period_in_ms = 0
+	AND min_index_interval = 128
+	AND read_repair_chance = 0.0
+	AND speculative_retry = '99.0PERCENTILE';
+https://www.datastax.com/blog/2011/05/understanding-hinted-handoff-cassandra-08
+speculative retry
+UDT
+
+
+xml beam - projected framework
+
+IHG 400k 
+400k x 50 product 2000 k for 1 chain
+marriot
+...
+
+
+
+
+
+
+
+
+
+

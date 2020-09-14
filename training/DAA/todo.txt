@@ -16,3 +16,7 @@ try diff projects under diff package, see if code can still be build if one pack
 create git repo and push toit git
 
 different queue methods
+
+after reverse pair
+
+https://www.interviewbit.com/search/?q=Microsoft

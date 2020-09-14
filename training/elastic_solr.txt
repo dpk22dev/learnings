@@ -334,6 +334,9 @@ Use Elastica.io
 https://www.elastic.co/guide/en/elasticsearch/guide/current/update-doc.html
 https://www.elastic.co/guide/en/elasticsearch/guide/current/partial-updates.html
 
+elast alert
+https://help.logit.io/en/articles/3633552-how-can-i-check-my-elastalert-rule-is-configured-correctly
+
 for geo maps:
 string: lat, lon same goes for google maps url
 array: [ lon, lat ]

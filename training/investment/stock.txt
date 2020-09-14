@@ -22,6 +22,9 @@ for fundamental analysis
 https://tradebrains.in/how-to-do-fundamental-analysis-on-stocks-in-india/
 1) Use the financial ratios for initial screening, 2)Understand the company, 3) Study the financial reports of the company, 4) Check the debt, 5) Find the company’s competitors 6) Analyse the future prospects.
 
+reading annual reports
+https://www.youtube.com/watch?v=fTIOzRPOXsk
+
 screens
 https://www.screener.in/screens/
 
@@ -36,6 +39,15 @@ https://www.moneycontrol.com/news/business/markets/planning-to-invest-in-markets
 use screener/investing.com->screener to find relevant companies
 in depth ratios can be viewed on moneycontrol
 
+upload template excel to fetch data
+https://www.screener.in/excel/
+
+nifty pe, pb ratios charts
+https://www.equityfriend.com/investment-charts/nifty-pe-chart-nifty-pb-chart-nifty-dividend-yield-chart.html
+
+gross profit, operating income, net income and their ratios
+https://corporatefinanceinstitute.com/resources/knowledge/finance/net-profit-margin-formula/
+
 management analysis:
 red herring prospectus of company before IPO contains main vission and info about management
 which can be downloaded from internet
@@ -46,24 +58,14 @@ search for terms like fraud with management name
 investment by copy cating:
 https://www.investopedia.com/articles/investing/011414/how-be-perfect-copycat-investor.asp
 
-ujjivan
-jamna auto
-himadri
-inox
+market data
+https://www.nseindia.com/market-data/securities-available-for-trading
 
-cdsl
-hdfc, hdfc amc
-reliance
-polycab
-infosys
-hero 
-hul
+google sheet api for finance
+https://support.google.com/docs/answer/3093281?hl=en
 
-
-must buy
-hero, maruti suzuki
-bajaj finserv, hdfc
-tcs looks safe option
+blogs for getting started with fundamental analysis:
+https://www.drvijaymalik.com/start-here
 
 **todo**
 ~~try setting money in index stock~~
@@ -74,7 +76,7 @@ query using screener to find relevant investment companies
 verify already existing investment is ok
 for finding smallcap search through screener search criterias on net
 
-
+after pooint 8
 
 
 

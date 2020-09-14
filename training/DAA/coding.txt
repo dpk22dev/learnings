@@ -54,3 +54,57 @@ when we have correspondence; store mapping in hashmap or array to better code
 when using hashmap for be careful if input contains duplicate elements, it can lead to problems later
 set<list> will not remove duplicate elements from list
 
+in java we have object reference equality using == means both references point to same memory location / object. if we want equality to be value based, we can use equals() method
+
+we can binary search on matrix.. but it can be used to find kth smallest element 
+https://www.programcreek.com/2016/08/leetcode-kth-smallest-element-in-a-sorted-matrix-java/
+
+n Log n solution uses binary search to insert element in dp. Array.binarySearch returns -(pos) at which element would have been inserted.	
+https://leetcode.com/problems/longest-increasing-subsequence/solution/
+
+increasing triplet in O(n), we can update min, mid on exploring new number. if any number greater than mid is found we return true.
+
+reverse a string , as string itself doesn't have reverse method
+new StringBuilder( s ).reverse().toString()
+
+hist.put(w, !hist.containsKey(w) ? 1 : hist.get(w)+1);
+
+https://leetcode.com/problems/reaching-points/
+it is necessary to keep branching under control, simple dfs will go out of control. make sx to tx or sy to ty then reduce steps using modulo. O(2^N) vs O(logN)
+
+we can use KMP to find longest palindrome in string, in O(m). use KMP to find longest palindrome in s + | + rev(s)
+https://leetcode.com/problems/shortest-palindrome/discuss/60255/AC-Java-KMP-solution
+
+p * q = num, use both p, q as divisors while iterating till sqrt(num)
+for(int j=1;j<=Math.sqrt(num);j++) {
+				if(num%j==0) { use both j, num/j as divisors }
+}
+
+for cloning a 2D array:
+int[][] A = new int[R][C];
+for (int r = 0; r < R; ++r)
+	  A[r] = grid[r].clone();
+
+we can add element to DSU but can't remove it; in few questions we are asked to remove elements and still have to  use DSU say for calculating max size of component. it can be done by reversing order. We remove all elments first. then add elements one by one in reverse to calculate new size of component. diff will give use impacted elements if we would have gone in first order.... keep on adding elements to DSU and update max. Also ephemeral node at size of DSU can be used to keep track of all connected components....
+https://leetcode.com/problems/bricks-falling-when-hit/solution/
+
+when (y-x)%M if we want result to be positive, we can rewrite it as { y+(M-x) } % M
+this gives result whether x is smaller/larger than y
+this is equivalent to 
+y > x ? (y-x)%M : {M- ((x-y)%M) }
+
+generating grey code: consecutive number differ by 1 place. so put previous till ith iteration in list, then add 2(i-1) backwards till beg of list
+n = 0: 0
+n = 1: 0 | 1
+n = 2: 00, 01 | 11, 10
+n = 3: 000, 001, 011, 010 | 110, 111, 101, 100
+f(n) = f(n - 1) | 2 ^ (n - 1) + f(n - 1)
+
+maximum area under histogram intuition
+https://stackoverflow.com/questions/4311694/maximize-the-rectangular-area-under-histogram
+in stack approach we push larger elements, when smaller element comes we pop untill top is smaller than current element and calculate area( also keep updating maxArea). it makes sense to keep elements in increasing order in stack, so that while popping all greater elements are popped, because they can contribute in calculating new area.
+
+
+
+
+

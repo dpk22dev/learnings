@@ -5,12 +5,40 @@ Creation-Date: 2019-01-23T23:47:39+05:30
 ====== todo-extra ======
 Created Wednesday 23 January 2019
 
-minimalistic setup for rest api with backing store
-
-thinking fast and slow
 
 after
-https://medium.com/databasss/on-disk-io-part-1-flavours-of-io-8e1ace1de017
-https://nvie.com/posts/a-successful-git-branching-model/#release-branches
+https://thelastpickle.com/blog/2017/08/02/time-series-data-modeling-massive-scale.html
+https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39
 
-https://www.youtube.com/watch?v=lXTKMnSD_WA
+https://www.thebalance.com/picking-winning-mutual-funds-357957
+
+spring mvc
+ud reactive java
+existing project numbers
+existing project explanation, technologies used
+go through tech mentioned in resume
+
+
+system design list
+https://www.youtube.com/watch?v=dUMWMZmMsVE&list=PLkQkbY7JNJuC99VDJcpQdww-4aT3QhdJv
+
+new in java9, java11
+install and test them
+
+designing data intensive app
+88
+
+
+
+
+
+try composite key in db; @transactional in spring
+
+https://www.amazon.in/Havells-I-Cool-175mm-Personal-Silver/product-reviews/B00J5DYAKO/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews
+
+https://www.youtube.com/watch?v=jmQWOPDqxWA
+https://www.youtube.com/watch?v=dtzNgW7iju0
+
+
+
+

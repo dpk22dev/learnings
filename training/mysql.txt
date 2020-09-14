@@ -266,6 +266,13 @@ http://www.thecompletelistoffeatures.com/
 mysql glossary:( keywords used in docs )
 https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_dirty_page
 
+distributed transactions mysql
+https://dev.mysql.com/doc/refman/8.0/en/xa.html
+https://www.youtube.com/watch?v=btoCB6smoMs
+
+primary secondary index perf in mysql
+http://mysql.rjweb.org/doc.php/index_cookbook_mysql
+
 __todo__
 docs read after: https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html
 

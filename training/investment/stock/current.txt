@@ -1,0 +1,55 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-08-08T14:29:14+05:30
+
+====== current ======
+Created Saturday 08 August 2020
+
+
+titan
+muthot fina
+icicibank
+control protected
+bajaj finance
+vip
+relaxo
+hdfc
+hdfc bank
+hdfc amc
+hdfc life
+maruti
+bajaj finserv
+
+avanti
+bata
+dmart
+eicher
+excide
+heromoto
+infy
+inox
+irctc
+itc
+maruti
+pidilite
+reliance
+tcs
+tech mahindra
+kotak mahindra
+titan
+vip
+wipro
+
+==========
+don't buy now
+
+bajaj finance, finserv, reliance are costly need to be added
+
+put gtts for acc to 3 months market direction
+bata india, bajaj finance, finserv, controlptr etc
+
+
+how to add triggers based on performace of stock
+trigger based on debt and profit - color stocks as green, blue, white, yellow, red for past quarterss
+
+

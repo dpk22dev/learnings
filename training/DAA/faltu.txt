@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-08-28T00:22:51+05:30
+
+====== faltu ======
+Created Friday 28 August 2020
+
+problems based on digit dp
+https://leetcode.com/problems/number-of-digit-one/
+https://leetcode.com/problems/digit-count-in-range/
+https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
+https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/
+https://leetcode.com/problems/numbers-at-most-n-given-digit-set/
+https://leetcode.com/problems/count-numbers-with-unique-digits/
+https://leetcode.com/problems/numbers-with-repeated-digits/
+https://leetcode.com/problems/find-all-good-strings/
+

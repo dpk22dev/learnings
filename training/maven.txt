@@ -15,8 +15,8 @@ mvn -X clean install
 mvn effective:pom
 mvn tomcat:run
  mvn help:effective-settings
-mvn [[archetype:help]]
-mvn [[archetype:help|archetype:generate]]
+mvn archetype:help
+mvn archetype:generate
 
 
 https://zeroturnaround.com/rebellabs/your-maven-build-is-slow-speed-it-up/
