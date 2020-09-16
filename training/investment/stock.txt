@@ -5,6 +5,10 @@ Creation-Date: 2020-03-15T22:19:10+05:30
 ====== stock ======
 Created Sunday 15 March 2020
 
+zerodha each order type detail info:
+https://kite.trade/docs/kite/orders/
+https://www.youtube.com/watch?v=GbmlvrZEluU
+
 market stats:
 https://www.moneycontrol.com/stocks/marketstats/economic_survey/display_graph.php
 
@@ -66,6 +70,13 @@ https://support.google.com/docs/answer/3093281?hl=en
 
 blogs for getting started with fundamental analysis:
 https://www.drvijaymalik.com/start-here
+
+warren buffet learnings
+https://www.youtube.com/watch?v=_aU6ohpjNiw
+
+good investing playlist
+https://www.youtube.com/channel/UCAeAB8ABXGoGMbXuYPmiu2A
+
 
 **todo**
 ~~try setting money in index stock~~

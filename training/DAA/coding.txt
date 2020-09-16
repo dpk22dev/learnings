@@ -104,7 +104,8 @@ maximum area under histogram intuition
 https://stackoverflow.com/questions/4311694/maximize-the-rectangular-area-under-histogram
 in stack approach we push larger elements, when smaller element comes we pop untill top is smaller than current element and calculate area( also keep updating maxArea). it makes sense to keep elements in increasing order in stack, so that while popping all greater elements are popped, because they can contribute in calculating new area.
 
+coin change solution can be done in O(amount) space complexity rather than O( amount x coin-set-size)
+instead of dp[i-coin][j] we can select coin one by one and update ways till [coin->amount]
 
 
-
-
+in calculating nth ugly number, for popped element when inserting prime multiples of that number we can skip insertion of new number if count+q.size() is already greater than n. Also after inserting new element, if q.size() > n we can pollLast element as it won't be used.

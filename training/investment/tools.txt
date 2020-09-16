@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-09-16T00:51:04+05:30
+
+====== tools ======
+Created Wednesday 16 September 2020
+
+cagr calculator from initial to final amount over years
+https://www.angelbroking.com/cagr-calculator
+
+final amount using cagr
+https://cagrcalculator.net/reverse-cagr-result/
+
