@@ -77,20 +77,31 @@ https://www.youtube.com/watch?v=_aU6ohpjNiw
 good investing playlist
 https://www.youtube.com/channel/UCAeAB8ABXGoGMbXuYPmiu2A
 
+DCF
+https://www.safalniveshak.com/value-stocks-using-dcf/
+
+
+https://www.angelbroking.com/blog/categories/guide-to-fundamental-research
+
+warren buffet says:
+interest rates are like gravity on stock market, if low peope will pull money from bonds and put into stock market, if high people will put into bonds instead of stock market. 
+
+what influences market cycles:
+gdp of economy, shift in demography
+cycle in profits: p/e ratio — profits fluctuates more than price because of leverage in finances and operations of company
+credit cycle: debts of company by interest rates : prosperity lead to dec in interest rate -> increase share price -> inc in interest raates....
+psychology cycle: main
+where we stand in cycle is determined by below:
+historcal p/e ratio
+
 
 **todo**
-~~try setting money in index stock~~
-~~which index stock to purchase~~
-need to find monopolies in each sector; 
-find meaning of ratios in ratios section of moneycontrol
-query using screener to find relevant investment companies
-verify already existing investment is ok
-for finding smallcap search through screener search criterias on net
+go through all of : https://www.drvijaymalik.com/all-articles
+https://www.drvijaymalik.com/2016/02/margin-of-safety-in-stock-investing.html
+https://www.drvijaymalik.com/2015/05/how-many-stocks-you-should-own-in-your-portfolio.html
 
-after pooint 8
-
-
-
+questions
+can we be trapped in stoploss
 
 
 

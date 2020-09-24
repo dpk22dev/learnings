@@ -38,6 +38,8 @@ warrent buffet accounting book - reading financial statement for value investing
 security analysis
 https://tradebrains.in/how-to-do-fundamental-analysis-on-stocks-in-india/
 
+When the ROCE is greater than the ROE then it means that the company has made intelligent use of debt to reduce its overall cost of capital. But there is also a counter view to that. When the ROCE is greater than the ROE, it means that debt holders are being rewarded better than the equity shareholders. That is not good news for equities. both the ROE and the ROCE should be above 20% and close to each other. divergence is not good.
+
 
 todo
 balance sheet, p&l, cash flow, ratios of different sectors
