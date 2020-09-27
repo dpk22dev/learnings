@@ -20,6 +20,9 @@ https://www1.nseindia.com/products/content/equities/equities/bulk.htm
 macro economics graphs
 https://tradingeconomics.com/india/external-debt
 
+stock screener websites:
+screener.in, equitymaster.com, askkuber.com
+
 excel stock analysis sheets:
 screener.in/excel
 safal niveshak template

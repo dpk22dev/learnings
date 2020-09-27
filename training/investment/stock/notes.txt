@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-09-25T20:08:11+05:30
+
+====== notes ======
+Created Friday 25 September 2020
+
+cash flow statement:
+is the ROE attractive enough to justify? Or is the company better off distributing dividends to shareholders. 
+ while Income Statement and Balance Sheet are key to external presentation, it is the cash flow statement that is very useful to a company from an internal decision making perspective. — how
+
+pe chart for 
+
+https://www.investopedia.com/terms/r/ruleof72.asp

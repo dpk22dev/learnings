@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-09-22T01:53:40+05:30
+
+====== vijay malik notes ======
+Created Tuesday 22 September 2020
+
+https://www.drvijaymalik.com/all-articles
+
+purchase stocks wiht high margin of safety
+
+**sell only if**
+at least two consecutive year of declining sales
+not much concern about quarterly sales
+net profit margins are declining yoy
+Declining fixed asset turnover ratio, declining inventory turnover ratio and increasing receivables days
+inc in debt yoy for 2+ years
+govt regulates company/makes policies for business
+too many stosks in portfolio to manage
+stock with very small investments => they hinder monitoring of quality stocks
+
+too much money chasing large cap makes them costly
+companies with high p/e will come down even with godd profits
+many large cap are grwoing faster than small caps
+few companies have used their all CFO to increase growth thus increasing share price > 25 cagr, but they haven't provided dividnts. they shouldn't have debts or low debts.
+a lot of effort is required to find companies in small cap
+prominent reasons for the cumulative CFO being less than cumulative PAT for the last 10 years is that the money of the company gets stuck in working capital, primarily the receivables. It happens more for small cap as commpared to large cap
+for auto anciliarry OPM within 7-10% range, negative FCF with capital expenditure funded by debt.
+Companies acting as outsourced manufacturers for big brands give away profitability for assured busines eg: amber for ac, dixon for tech, hindustan food, vishal fabrics etc
+Most of the companies in some segments never report profits — small stock market brokerage firms, small nbfc, media and bollywood
+When a trend picks up, then share price of almost every company even remotely linked to the theme eg: pharma ingredient, graphite, chemical companies
+
+year on year performance is expected to vary significantly as the business environment keeps on changing year on year. Therefore, an investor should primarily focus on CAGR, however, she should also take care that the entire CAGR should not be because of abnormal growth in any one or two years.
+
+Contingent liabilities mean liabilities which the companies might need to pay in future; however, at this point in time, it is uncertain.
+kind of contingent liabilities:
+Corporate guarantees given on behalf of subsidiaries should definitely be considered as debt.
+Performance guarantees given as part of contracts are normal part of business and are ok.
+
+(NFA+CWIP) at Year end = (NFA+CWIP) at start of year – Dep+Capex
+: where NFA = Net fixed assets, CWIP= Capital work in progress
+FCF = CFO – Capex
+
+The raw material or goods that are purchased in a quarter may or may not be sold in the same quarter. If they are not sold in the same quarter and are available as inventory with the company; however their purchase cost is included in the cost of goods consumed, then the value of increase in inventory is deducted from the expenses.
+Moreover, if inventory that was already available at start of the quarter, is sold during the quarter, then the value of decrease in inventory is added to expenses.
+
+in debt to equity ratio, equity as “Shareholder’s Funds”, which includes equity as well as reserves and surplus.
+
+security deposits can be under assets as well as liabilities:
+The deposits that a company has received from its customers/vendors are shown under liabilities.
+The deposits that the company has paid to service providers etc. like security deposit paid to the owner of a building, which it has taken on rent for office/factory is shown under assets.
+
+extinguishment/buyback of shares => increase in EPS
+
+
+
+questions
+how to decide which large cap companies are declining towards mid/small cap to stay away from them
+IGAAP vs Ind AS in balance sheet
