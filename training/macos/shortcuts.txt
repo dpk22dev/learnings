@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-08T15:19:13+05:30
+
+====== shortcuts ======
+Created Thursday 08 October 2020
+
+Shortcuts
+
+Command + shift + 3 : screenshot
+Command + shift + 4 : areal screenshot 
+Command + option + Q : quit current window
+command + space: spotlight search 
+Command + tab : switch among apps
+
+Command +. Option + esc : open force quit app
+Command + ctrl + Q : logoff
+
+Press space to open preview
+
+Browser shortcuts
+Command + w : close individual tab
+Command + z : reopen closed tab
+Command + t : new tab open
+Control + tab : move across tab
+Control + ~ : move across tabs
+
+Terminal
+Control + tab : switch among tabs
+Control + c : skip current command
+Control + w: remove previous word
+
+Windows
+Control + up : Show desktop and apps
+Control + down: hide apps
+
+Move across tabs in browser
+Minimize mazimize shortcuts
+Double click using fast clicks
+Selecting text using double click and scrolling
+Why it moves to another desktop on maximising
+ 

@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-17T23:31:35+05:30
+
+====== terraform ======
+Created Saturday 17 October 2020
+
+similar to ansible, infrastructure as a code 
+automate, manage your platform and service that runs on it
+provisioning, configuring the infra ← here terraform helps
+deploying app
+
+has 2 input sources:
+tf-config: core part with configurations
+state: current state of infra
+
+terraform is declarative tool: means instead of defining steps to do, you provide end state to terraform
+core updates/changes config to reach to desired state then interacts with IaaS providers, Paas, SaaS
+
+these providers provide resources which are managed by terraform
+
+refresh / plan / apply / destroy

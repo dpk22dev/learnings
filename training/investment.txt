@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2017-09-18T12:07:43+05:30
 
 ====== investment ======
@@ -34,6 +34,13 @@ low risk high return
 principles by ray dalio
 
 https://economictimes.indiatimes.com/wealth/invest/should-you-buy-physical-gold-gold-etfs-or-sovereign-gold-bond-this-akshaya-tritiya/articleshow/69212826.cms?from=mdr
+
+5 investment Money Rules:
+1. Avoid Credit Cards
+2. Invest First and spend later
+3. Build Passive Income Pipelines
+4. Automate Investment
+5. Monitor Asset Allocation Regularly
 
 __todo__
 module5 : 45

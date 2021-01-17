@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-05-03T13:56:35+05:30
 
 ====== books ======
@@ -11,6 +11,20 @@ what if - randall monroe, on immunity, how to lie with statistics- berrel huff, 
 
 read
 alchemist, 5point someone, 
+
+Domain-Driven Design:
+Implementing Domain-Driven Design
+Data and Reality
+Designing Data-Intensive Applications
+A Philosophy of Software Design
+
+Extreme Ownership: How US Navy Seals Lead and Win
+From the Bürgeramt to the Bedroom
+What got you here won’t get you there. 
+The Effective Executive.
+Breakthrough Rapid Reading. 
+
+
 
 
 summary

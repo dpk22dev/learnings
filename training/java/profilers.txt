@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2019-11-18T16:14:00+05:30
 
 ====== profilers ======
@@ -7,6 +7,21 @@ Created Monday 18 November 2019
 
 
 https://medium.com/software-under-the-hood/under-the-hood-java-peak-safepoints-dd45af07d766
+
+heapdump analysis
+
+jxray
+html report
+./jxray.sh /Users/deepak/Documents/jfr-s3/groot/input/69p62/java-091220180001.hprof test1.html
+common memory problems:
+https://jxray.com/documentation#live_vs_garbage_objects
+
+
+jprofiler
+analyzing hprof heapdumps
+
+joverflow docs
+https://docs.azul.com/zmc/zmcdocs/ZMCUserGuide/GettingStarted/ViewingHeapDump.htm#:~:text=JOverflow%20is%20the%20ZMC%20plugin,problems%2C%20and%20calculates%20overhead%20values.
 
 yourkit
 - the profiler agent log file ~/.yjp/log/<session name>-<pid>.log

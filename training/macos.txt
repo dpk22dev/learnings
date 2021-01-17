@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-08T01:23:55+05:30
+
+====== macos ======
+Created Thursday 08 October 2020
+
+airdroid app can be used to transfer files b/w mac and android
+
+managing java home 
+https://medium.com/notes-for-geeks/java-home-and-java-home-on-macos-f246cab643bd

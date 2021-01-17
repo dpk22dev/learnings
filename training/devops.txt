@@ -1,8 +1,15 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-07-09T12:14:47+05:30
 
 ====== devops ======
 Created Monday 09 July 2018
 
 https://www.edureka.co/blog/chef-vs-puppet-vs-ansible-vs-saltstack/
+
+infrastructure as code:
+https://www.youtube.com/watch?v=POPP2WTJ8es
+provisioning, deployment, configuration, orchestration
+
+container orchestration engines:
+docker swarm, apache mesos, k8

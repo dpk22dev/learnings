@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-17T22:51:23+05:30
+
+====== helm ======
+Created Saturday 17 October 2020
+
+package manager for kubernetes
+distributing yaml files over repositoris
+database, monitoring apps have helm charts available in helm repos
+
+helm chart install appname -> we can reuse config already made by someone
+
+helm cli, helm server -> tiller
+create chart from cli and send it tiller which will distribute configs in k8 cluster. 
+release, rollback, update is possible using helm 
+
+functions written in helm templating language
+
+basics of helm chart
+https://www.youtube.com/watch?v=9cwjtN3gkD4

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-12-20T06:17:57+05:30
+
+====== node ======
+Created Sunday 20 December 2020
+
+https://medium.com/javascript-in-plain-english/build-an-amazing-application-using-react-and-nodejs-together-fad13ab7b49c
+[[/Users/deepak/Documents/apps/self/me/pract/node/p_one]]
+node + react + redux 
+
+
+[[/Users/deepak/Documents/apps/self/me/pract/node/p_two]]
+node + express - rest apis

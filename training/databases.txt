@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2016-06-16T07:56:59+05:30
 
 ====== databases ======
@@ -76,6 +76,7 @@ https://bigdata-madesimple.com/18-free-and-widely-used-open-source-nosql-databas
 
 comparison of various databases with specs
 https://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
+
 
 ******** questions *****
 diff b/w json and bson, why not store simply as json string

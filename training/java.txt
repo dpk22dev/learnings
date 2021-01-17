@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2016-04-21T11:51:39+05:30
 
 ====== java ======
@@ -28,7 +28,7 @@ https://dzone.com/articles/effective-eclipse-shortcut-key
 http://stackoverflow.com/questions/275555/maven-snapshot-repository-vs-release-repository
 http://stackoverflow.com/questions/2107484/what-is-the-difference-between-ga-rc-and-m2-release
 
-mvn -Declipse.workspace="/home/dpk/eclipse-workspace" [[eclipse:configure-workspace]]
+mvn -Declipse.workspace="/home/dpk/eclipse-workspace" eclipse:configure-workspace
 
 **running java app in debug mode**
 java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n \
@@ -193,7 +193,7 @@ jpa spring-jpa
 http://www.in28minutes.com/jpa-hibernate-tutorial-for-beginners
 https://www.objectdb.com/api/java/jpa jpa reference
 
-h2 db runs at: http://localhost:8080/h2-console
+h2 db runs at: [[http://localhost:8080/h2-console]]
 
 java unit testing:
 http://www.vogella.com/tutorials/JUnit/article.html
@@ -257,7 +257,7 @@ https://www.youtube.com/watch?v=zwBLgQ1_WuE
 
 troubleshooting java application: comparison of tools jmap, jhat, jconsole, jvisual, new relic
 https://www.youtube.com/watch?v=mzT7etWjj0Q
-use [[--XX:dumpHeapOnOOM]] to generate heapdump
+use --XX:dumpHeapOnOOM to generate heapdump
 jmap : prints memory map of java running process,
 jhat: reads heap dumps, needs size equivalent of your heap dump: increase mem space for running it
 JVisualVM: attaches to local/remote running process, provide heap dump, memory leaks, gc monitoring, CPU profiling
@@ -288,6 +288,9 @@ https://stackoverflow.com/questions/2811319/difference-between-and
 
 jndi tutorial
 https://docs.oracle.com/javase/jndi/tutorial/TOC.html
+
+java heap dump analysis
+https://stackoverflow.com/questions/2511315/method-for-finding-memory-leak-in-large-java-heap-dumps
 
 **questions**
 https://stackoverflow.com/search?q=core+java

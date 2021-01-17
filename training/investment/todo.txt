@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-04-20T12:04:41+05:30
 
 ====== todo ======
@@ -12,5 +12,16 @@ ticker analysis of stocks
 add nominee in zerodha
 mutual funds videos
 
+read charges by zerodha
+https://zerodha.com/charges#tab-equities
+
 to read:
 https://www.drvijaymalik.com/2020/08/learning-from-analysing-2800-companies.html#.X0OfqtuM0dJ.whatsapp
+
+sourabh mukharjea videos:
+https://www.youtube.com/watch?v=ewSKcUTF1kM
+https://www.youtube.com/watch?v=lT4_q0xe3Bs
+https://www.youtube.com/watch?v=V80J7KQFft8
+https://www.youtube.com/watch?v=DUsc9MVexLs	
+https://www.youtube.com/watch?v=gnjL3lVl_Gk
+https://www.youtube.com/watch?v=EpUs3x98Tow

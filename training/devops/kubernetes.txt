@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-05-31T15:02:09+05:30
 
 ====== kubernetes ======
@@ -38,10 +38,23 @@ we can use --type=LoadBalancer
 earlier we had to handle images, containers and pods; now deployments can handle start/stop/resume/rolling/rollback
 labels and selectors can beused to add meta info to cluster nodes
 
+there are different types of controllers like replicaSet, deployments
+
+deployment : include replicaSet, 
+strategies:
+recreate, rolliungUpdate, canaryDeployment( pods are added to pool and then removed to keep count constant), blue/green( up a parallel cluster, move traffic to new cluster using load balancer)
+
+service: grouping of pods
+service discovery happens through labels
+types: cluster-ip, Node port, loadbalancer
+job is controller in k8s — run to completion job, scheduled job
+
 todo
 types of services in kubectl
 after
 https://www.youtube.com/watch?v=SOGyvkZKVw0&list=PLot-YkcC7wZ9xwMzkzR_EkOrPahSofe5Q&index=8
+
+https://gist.github.com/kevin-smets/b91a34cea662d0c523968472a81788f7
 
 questions:
 how autoscaling happens, do vm's need to be cut explicitely

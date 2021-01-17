@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-20T19:34:27+05:30
+
+====== aws ======
+Created Tuesday 20 October 2020
+
+for uping localstack
+env TMPDIR=/private$TMPDIR docker-compose up
+
+cd [[/Users/deepak/Documents/sources/localstack]]
+aws configure
+
+aws --endpoint-url=[[http://localhost:4572]] s3 ls
+aws --endpoint-url=[[http://localhost:4566]] s3 mb [[s3://test1]]
+
+awscli v2 docs
+https://awscli.amazonaws.com/v2/documentation/api/latest/index.html

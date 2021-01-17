@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-02-28T14:35:13+05:30
 
 ====== spring ======
@@ -121,6 +121,9 @@ https://www.javacodegeeks.com/2013/06/jpa-2-dynamic-queries-vs-named-queries.htm
 
 project reactor docs:
 https://projectreactor.io/docs/core/release/reference/index.html
+
+to check swagger config is ok:
+http://editor.swagger.io
 
 **questions**
 entity confusion in onetomany and manytoone mapping

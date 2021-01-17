@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-03-15T22:19:10+05:30
 
 ====== stock ======
@@ -31,6 +31,12 @@ https://www.youtube.com/watch?v=fTIOzRPOXsk
 
 screens
 https://www.screener.in/screens/
+
+wide moat stocks
+https://www.morningstar.in/tools/wide-moat-stocks.aspx
+
+don't dos in stock market
+https://www.valueresearchonline.com/stories/31799/don-t-buy-stocks-that-have-no-competitive-advantage?
 
 eg:
 https://www.screener.in/company/MARICO/consolidated/
