@@ -1,9 +1,11 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2017-06-02T08:03:07+05:30
 
 ====== python ======
 Created Friday 02 June 2017
+
+https://stackoverflow.com/questions/33181071/why-is-python-saying-i-have-no-module-named-venv
 
 https://benzidwael.wordpress.com/2015/04/17/installing-different-python-versions-in-ubuntu/
 
@@ -19,13 +21,46 @@ https://pypi.org/
 python installation on rhel
 https://developers.redhat.com/blog/2018/08/13/install-python3-rhel/
 
+data types and data structures in python
+https://realpython.com/python-data-types/
+https://realpython.com/python-data-structures/
+
+all modules in python core
+https://docs.python.org/3/py-modindex.html
+https://docs.python.org/3/library/index.html
+
+built in methods in python
+https://docs.python.org/3.6/library/functions.html#all
+
+python tricks
+https://www.geeksforgeeks.org/python-tricks-competitive-coding/
+
+_ in naming variable in python
+https://medium.com/python-features/naming-conventions-with-underscores-in-python-791251ac7097
+
+links to various good materials for github dsa, design patterns
+https://awesome-python.com/
+https://www.freecodecamp.org/news/an-a-z-of-useful-python-tricks-b467524ee747/
+
+
+anonymous lambda function in python
+https://www.geeksforgeeks.org/python-lambda-anonymous-functions-filter-map-reduce/
+
+iterators in python
+https://www.geeksforgeeks.org/python-itertools/
+
+python onternals
+https://www.youtube.com/watch?v=arxWaw-E8QQ&list=PLTdyJRA-IxGa9eU_VOeZRfSMPk7b4ZaEl
+
 **todo**
 setup python framework and start working and debugging
+dsa, dpp
+framework libs django
+db connections, fs libs, other libs
+core python - adv concepts
+testing in python
 
 **quest**
-__why debugger is not working__
-what should be placed in _init.py
-how to use pdb
-~~how to use tfdebug ~~
-running different versions of python on same system
-reshape
+__init_, self in constructors
+comprehensive like if root is None how to know what dialects are valid?
+what are those ds internally?

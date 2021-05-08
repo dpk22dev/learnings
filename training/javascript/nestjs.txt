@@ -1,0 +1,62 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-18T20:46:17+05:30
+
+====== nestjs ======
+Created Monday 18 January 2021
+
+all nest js related resources
+https://github.com/juliandavidmr/awesome-nestjs
+
+we need to register the service with Nest so that it can perform the injection. We do this by editing our module file (app.module.ts) and adding the service to the providers array of the @Module() decorator.
+
+we can't use middleware for validation
+This is because middleware is unaware of the execution context, including the handler that will be called and any of its parameters.
+
+middleware are good for something not bound to route level. they are passed for global level like authentication
+guards handle authorization. middleware, by its nature, is dumb. It doesn't know which handler will be executed after calling the next() function. On the other hand, Guards have access to the ExecutionContext instance, and thus know exactly what's going to be executed next.
+
+Guards are executed after each middleware, but before any interceptor or pipe.
+
+observable is helpful in processing some object after handler is run on request object.
+
+in graphql implementation, we can put all arguments of query resolver in separate ArgType class and put all relevant field mappings there. these argtype classes work with validation pipes as well. Heirarachy through inheritance is possible
+
+graphql basics
+https://www.howtographql.com/basics/2-core-concepts/
+
+
+https://graphql.org/learn/queries/
+
+questions
+do we use code first or schema first in graphql, is there pros / cons of each approach
+
+todo
+nestjs integration with monitoring tools like elk/prometheus metrics
+microservices execution context
+scroll through - techniques, fundamentals, graphql, security, microservices, recipes, websockets
+
+
+meaning of below constructs
+findAllRecipe: [Recipe!]! // why two !!
+
+include?: Function[];
+
+some! : value!
+
+export function Paginated<T>(classRef: Type<T>): any {
+  @ObjectType(`${classRef.name}Edge`)
+  abstract class EdgeType {
+  }
+
+	  @ObjectType({ isAbstract: true })
+	  abstract class PaginatedType {
+		@Field((type) => [EdgeType], { nullable: true })
+		edges: EdgeType[];
+	  }
+	return PaginatedType;
+}
+
+
+return this.usersService.findOne(+id); // why +1
+

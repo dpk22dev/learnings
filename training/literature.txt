@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-06-30T00:33:52+05:30
 
 ====== literature ======
@@ -14,3 +14,5 @@ read books,
 	read critical review of book
 watch movie, see camera angle, costumes, discussions, emotions of scenes with pausing, try to comment on it
 for individual field knowledge can be gathered from crash course youtube like psychology, physics etc
+
+https://www.quora.com/What-is-the-difference-among-Ghazal-Nazm-Sher-Doha-Rekhti-Marsiya-and-Rubai-What-are-their-English-counterparts

@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2019-09-25T03:06:45+05:30
 
 ====== hindi ======
@@ -14,3 +14,26 @@ https://www.gktoday.in/gk/various-yugas-kals-of-hindi-literature/
 https://www.quora.com/What-are-some-good-books-to-start-reading-Hindi-Literature
 
 https://www.scoopwhoop.com/starter-pack-hindi-literature/
+
+hindi
+https://hindwi.org/?ref=rfdict
+
+shers with meanings:
+https://www.rekhta.org/tags/dard-shayari/couplets
+
+index of writers
+http://kavitakosh.org/kk/index.php
+
+kamayani: http://kavitakosh.org/kk/%E0%A4%9A%E0%A4%BF%E0%A4%82%E0%A4%A4%E0%A4%BE_/_%E0%A4%AD%E0%A4%BE%E0%A4%97_%E0%A5%A7_/_%E0%A4%95%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%AF%E0%A4%A8%E0%A5%80_/_%E0%A4%9C%E0%A4%AF%E0%A4%B6%E0%A4%82%E0%A4%95%E0%A4%B0_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%BE%E0%A4%A6
+urvashi: http://kavitakosh.org/kk/%E0%A4%89%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%B6%E0%A5%80_/_%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%A7%E0%A4%BE%E0%A4%B0%E0%A5%80_%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9_%22%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A4%95%E0%A4%B0%22
+sunhaire shaival: http://kavitakosh.org/kk/%E0%A4%B8%E0%A5%81%E0%A4%A8%E0%A4%B9%E0%A4%B0%E0%A5%87_%E0%A4%B6%E0%A5%88%E0%A4%B5%E0%A4%BE%E0%A4%B2_/_%E0%A4%85%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A5%87%E0%A4%AF
+saye me dhoop: http://kavitakosh.org/kk/%E0%A4%B8%E0%A4%BE%E0%A4%AF%E0%A5%87_%E0%A4%AE%E0%A5%87%E0%A4%82_%E0%A4%A7%E0%A5%82%E0%A4%AA_/_%E0%A4%A6%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%AF%E0%A4%82%E0%A4%A4_%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0
+
+shayaris:
+gulzar: http://kavitakosh.org/kk/%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%9C%E0%A4%BC%E0%A4%BE%E0%A4%B0
+ahmed faraz: http://kavitakosh.org/kk/%E0%A4%85%E0%A4%B9%E0%A4%AE%E0%A4%A6_%E0%A4%AB%E0%A4%BC%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%BC
+bashir badr: http://kavitakosh.org/kk/%E0%A4%AC%E0%A4%B6%E0%A5%80%E0%A4%B0_%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%B0
+galib: http://kavitakosh.org/kk/%E0%A4%97%E0%A4%BC%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%AC	
+rahat indori: http://kavitakosh.org/kk/%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%A4_%E0%A4%87%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8C%E0%A4%B0%E0%A5%80
+kaifi azmi: http://kavitakosh.org/kk/%E0%A4%95%E0%A5%88%E0%A4%AB%E0%A4%BC%E0%A5%80_%E0%A4%86%E0%A4%9C%E0%A4%BC%E0%A4%AE%E0%A5%80
+jon elia: http://kavitakosh.org/kk/%E0%A4%9C%E0%A5%89%E0%A4%A8_%E0%A4%8F%E0%A4%B2%E0%A4%BF%E0%A4%AF%E0%A4%BE

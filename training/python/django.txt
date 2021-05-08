@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-14T19:50:03+05:30
+
+====== django ======
+Created Wednesday 14 April 2021
+
+source bin/activate
+pip install django==2.1.5
+pip freeze
+django-admin startproject trydjango .
+python manage.py runserver
+
+#create admin user
+python manage.py createsuperuser
+python manage.py startapp products
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py shell
+
+django basic project
+https://www.youtube.com/watch?v=F5mRW0jo-U4
+https://github.com/codingforentrepreneurs/Try-Django.git
+
+django model field types
+https://docs.djangoproject.com/en/3.2/ref/models/fields/
+
+django view template ref
+https://docs.djangoproject.com/en/3.2/ref/templates/builtins/
+
+django form fields ref
+https://docs.djangoproject.com/en/3.1/ref/forms/fields/

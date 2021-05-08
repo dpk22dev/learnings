@@ -1,12 +1,12 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2017-10-02T17:39:48+05:30
 
 ====== react ======
 Created Monday 02 October 2017
 
 after redux on tutorialspoint
-http://localhost:8081/
+[[http://localhost:8081/]]
 
 react: props, state and JSX
 gulp: build to convert jsx into javascript
@@ -16,6 +16,10 @@ react-router: routing
 
 component as a collection of HTML, CSS, JS, and some internal data specific to that component
 parent component provides data to child component
+
+A good rule of thumb is that elements inside the map() call need keys.
+
+
 
 react docs
 https://reactjs.org/docs/
@@ -35,6 +39,9 @@ https://reactnative.dev/docs/flexbox
 sample projects
 https://github.com/adrianhajdin/project_corona_tracker
 
+named export import
+https://stackoverflow.com/questions/33611812/export-const-vs-export-default-in-es6
+
 https://www.youtube.com/watch?v=khJlrj3Y6Ls&list=PL6QREj8te1P6wX9m5KnicnDVEucbOPsqR
 
 --------------------
@@ -52,6 +59,8 @@ development:
 install react extension, redux extension
 
 __todo__
+advanced guides > hooks > api refs
+
 react source code exploration
 how react works, its architecture
 SSR workign
@@ -70,5 +79,11 @@ redux: how are reducers which dpend on ajax, or db call used in reducers
 if parent component changes props of child component using state change, will callbacks be fired in children or changed props be available in child-
 why reducers should be immutable
 why connect
+
+memo, portal, fragment usage
+
+
+react redux material ut
+
 
 

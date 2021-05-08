@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2016-05-06T15:02:28+05:30
 
 ====== javascript ======
@@ -150,7 +150,13 @@ https://www.codementor.io/nihantanu/21-essential-javascript-tech-interview-pract
 async await in js
 https://www.youtube.com/watch?v=vn3tm0quoqE
 
-__** todo **__
+things we can do with npx
+https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
+
+run specific command with node version using npx
+npx node@7 -v
+
+**__ todo __**
 angular, jasmine
 
 
@@ -162,6 +168,10 @@ google polymer project
 try writing recursive, functional prog
 
 read links on https://www.quora.com/What-are-the-most-important-JavaScript-concepts-to-know-for-a-job-interview
+
+java script code review
+https://www.smashingmagazine.com/2011/10/lessons-from-a-review-of-javascript-code/
+
 
 __*** questions ****__
 ~~diff b/w ecma-script and  javascript~~

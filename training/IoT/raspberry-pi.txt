@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-03-21T20:51:17+05:30
+
+====== raspberry-pi ======
+Created Sunday 21 March 2021
+
+todo
+scratch language
+raspberry pi doc
+micropython
+
+
+raspberry pi old
+https://www.youtube.com/watch?v=41IO4Qe5Jzw&list=PL2m2YvnrOYxLOZG0TGQgm9LAEYuvaglzY
+
+micropython tuts
+https://www.youtube.com/watch?v=5W3WvXAmDJc&list=PL6F17pWypPy_KSmpnR5CV8x78QhAiKBIl
+https://www.youtube.com/watch?v=30qLYp0U3zY&list=PL2935W76vRNEV6PwvxiqJf47JVrbGzTkC&index=1
+
+micropython docs
+https://docs.micropython.org/en/latest/
+
+raspberry board gpio pins explanation
+https://www.youtube.com/watch?v=iL_oZGHLHvU&t=9s
+
+rpi gpio
+
+gpio zero
+https://gpiozero.readthedocs.io/en/stable/
+
+gpio docs
+https://www.raspberrypi.org/documentation/usage/gpio/
+gpio python docs
+https://www.raspberrypi.org/documentation/usage/gpio/python/README.md
+
+running raspoberry pi with oled
+https://www.youtube.com/watch?v=wCfZ1xEpKHM
+
+raspberry pico docc
+
+
+minicom can be used to directly send commands to pico. 
+micropython with pico:
+https://makersportal.com/blog/raspberry-pi-pico-tests-with-micropython
+
+
+todo
+try [[PiGPIO]] factory to remotely execute scritp on pi
+try various input devices
+
+
+
+
+
+

@@ -16,3 +16,7 @@ aws --endpoint-url=[[http://localhost:4566]] s3 mb [[s3://test1]]
 
 awscli v2 docs
 https://awscli.amazonaws.com/v2/documentation/api/latest/index.html
+
+
+aws lecture - solutions architect associate ; 16
+https://www.youtube.com/watch?v=Ia-UEYYR44s

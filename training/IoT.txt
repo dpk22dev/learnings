@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2016-05-21T15:50:52+05:30
 
 ====== IoT ======
@@ -22,3 +22,11 @@ https://www.youtube.com/watch?v=GUvKv7D4iZY&list=PLSVzLvRoaSwReW4nr7XbrpeD7VWH5J
 
 
 https://www.youtube.com/watch?v=7jSGJY1rj2o&index=7&list=PLw5h0DiJ-9PCxDZkP8pbgpyiDweF3DJ8c
+
+
+raspberry pi magazine : free ebook for projects
+https://magpi.raspberrypi.org/
+
+raspberry pi - pico : getting started
+https://www.youtube.com/watch?v=zlKJ5hvfs6s
+

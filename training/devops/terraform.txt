@@ -20,3 +20,13 @@ core updates/changes config to reach to desired state then interacts with IaaS p
 these providers provide resources which are managed by terraform
 
 refresh / plan / apply / destroy
+
+
+terraform 
+terraform for beginners
+https://www.youtube.com/watch?v=SLB_c_ayRMo
+
+terraform modules
+https://www.youtube.com/watch?v=LVgP63BkhKQ
+
+https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started

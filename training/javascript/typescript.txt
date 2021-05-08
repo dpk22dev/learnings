@@ -6,3 +6,84 @@ Creation-Date: 2021-01-17T08:14:31+05:30
 Created Sunday 17 January 2021
 
 https://code.visualstudio.com/docs/typescript/typescript-tutorial
+
+An undefined data type denotes uninitialized variable, whereas null represents a variable whose value is undefined.
+
+decorator method is evaluated, return fucntion is executed even if class is not initialized
+
+null, void, boolean, number, string, any
+
+generics,
+decorator
+static -> built-in, user-defined
+
+array, tuples
+interface, class, enum 
+
+
+null vs undefined
+Null is used to represent an intentional absence of value. 
+
+//Variable declared and assigned to null  
+var a = null;   
+console.log( a );   //output: null  
+console.log( typeof(a) );   //output: object  
+
+//Variable declaration without assigning any value to it  
+var a;        
+console.log(a);  //undefined  
+console.log(typeof(a));  //undefined  
+console.log(undeclaredVar);  //Uncaught ReferenceError: undeclaredVar is not defined  
+
+
+https://www.javatpoint.com/typescript-variables
+In TypeScript, there is always recommended to define a variable using let keyword because it provides the type safety.
+The let keyword is similar to var keyword in some respects, and const is an let which prevents prevents re-assignment to a variable.
+The Variable declared with the let keyword are scoped to the nearest enclosing block which can be smaller than a function block as in case of var variables. 
+hoisting of let: A variable declared with let keyword is not hoisted. If we try to use a let variable before it is declared, then it will result in a ReferenceError.
+
+typecasting:
+ The typecasting comes with runtime support, whereas type assertion has no impact on runtime. However, type assertions are purely a compile-time construct and provide hints to the compiler on how we want our code to be analyzed. below are two ways to do this:
+let empCode: any = 101;
+let emp1 = <number> empCode;
+let emp2 = empCode as number;
+
+defining objects:
+interface GateInfo{
+	color: string,
+	size: number
+}
+
+let g1: GateInfo = <GateInfo>{};
+g1.color = "red";
+g1.size = 12;
+
+let g2: GateInfo = { color: "g", size: 10 };
+
+arrays:
+let fr1: string[] = [ "g", "a", "v" ]; 
+let fr2: Array<string> = ["c", "s"];
+
+allowing multiple types of values:
+let value: number|string;  
+
+instead of union, we can define type using
+type Pet = 'cat' | 'dog' | 'Rabbit'; 
+let p: Pet = 'cat'; 
+
+heterogenous enums are possible. https://www.javatpoint.com/typescript-enums
+eg:
+enum AppStatus {  
+	ACTIVE = 'Yes',  
+	INACTIVE = 1,  
+	ONHOLD = 2,  
+	ONSTOP = 'STOP'  
+}  
+
+todo
+after https://www.javatpoint.com/typescript-classes
+
+
+
+
+

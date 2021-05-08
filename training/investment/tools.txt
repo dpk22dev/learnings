@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-09-16T00:51:04+05:30
 
 ====== tools ======
@@ -10,6 +10,9 @@ https://www.angelbroking.com/cagr-calculator
 
 final amount using cagr
 https://cagrcalculator.net/reverse-cagr-result/
+
+calculate cagr form initial, final amount with years
+https://cleartax.in/s/cagr-calculator
 
 DCF calc
 https://www.zionsbank.com/personal-banking/helpful-banking-resources/calculators/business-valuation/

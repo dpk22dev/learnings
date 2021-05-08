@@ -1,0 +1,88 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-13T17:37:43+05:30
+
+====== tricks ======
+Created Tuesday 13 April 2021
+
+array equality can be checked using a1 == a2
+
+ord("0") returns unicode of char
+chr(97) returns 'a'
+3 / 2 = 1.5, 3//2=1
+
+sorted( strArr, key=lambda _: len(_), reverse=True )
+word.replace(symbol, '[' + symbol + ']')
+
+len(arr) // len gives length of all collections arr.length doesn't exist
+
+my_list = map( lambda x: x*2, inp_list )
+
+multiple things can be returned from funciton 
+def fun():
+	return [], {}
+
+we can use operator on list of elements in map
+list(map(operator.mul, L1, L2))
+
+islice(iterable, start, stop, step) // select few elements from list
+
+there is no str.reverse method, instead use
+"".join(reversed(line))
+
+",".join(line) inserts command after each character
+word in line // works
+s = s[:3] + 'x' + s[4:] // for replacing char at index
+s = s.replace('x', 'y')
+
+person = {"name": "a", "age": 19}
+print("name is {name}, age is {age}".format(**person) )
+
+izip is pasted in zip in py3
+
+nums = [1,2,3,4,5,6]
+for i, num in enumerate( nums ):
+
+d = { some dictionary }
+for k in d:
+	if some condition
+ del d[k] // don't do this
+
+for k in d.keys():
+	if some condition
+	  del d[k] // ok
+	
+for k,v in d.items()
+	print(k,v) // memory issues for large items
+	
+for k,v in d.iteritems()
+	print(k,v) // ok
+	
+dict( zip(names, colors )) // making dict out of two lists
+
+dic.get(key, _default_)
+
+TestResult = namedtuple("TestResult", ['failed', 'attempted']) //named tuples show results
+
+x = 1
+def fun():
+	x = 3 // won't affect global scope
+	global x
+	x = 3 // need to explicitely say global x should be changed
+
+ll = list( filter( lambda x: x%2 == 0, inp ) ) // gives actual elements in output
+ll = list( map( lambda x: x%2 == 0, inp ) ) //gives boolean elements in output
+
+double for loop
+out = [ ( l, n ) for l in "abcd" for n in range(4) ]
+my_dic = { alpha: num+cap for alpha, num, cap in zip(l1, l2, l3) }
+
+my_gen = ( n*n for n in nums )
+
+to check all attributes of object
+e.__dict__
+
+first, last, salary = "john-doe-1200".split("-")
+
+
+
