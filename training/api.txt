@@ -10,23 +10,18 @@ http://restcookbook.com/
 POST: insert new data
 The PATCH method is the correct choice here as you're updating an existing resource - the group ID.  PUT should only be used if you're replacing a resource in it's entirety. The HTTP methods PATCH can be used to update partial resources. For instance, when you only need to update one field of the resource, PUTting a complete resource representation might be cumbersome and utilizes more bandwidth.
 
-for restful  api : 
-symfony not good, use phalcon, 
+for creating specific type of json data
+https://app.fakejson.com/member
+https://fakejson.com/documentation
 
-using restler for MyNaukriAPI
+for better mocked nested rest mocks using faker.js
+https://mockapi.io/projects/610992f9d71b6700176399d1
 
+for named nested exact mocks
+https://designer.mocky.io/design/confirmation
 
-are we using oauth, but seen it in code
-how do we design urls? like /user[[/profile/{id}]] ; why don't [[/user/id]] and then [[/profile/pid]]; eg: [[/user/profiles/{profileId}/certifications]]; can we create any url we want
-
-we are using POST [[/user/profiles/{profileId}/certifications]] to insert new certifications, but we need to GET first and then PUT whole data; so instead we are using PATCH [[/user/profiles/{profileId}/certifications]] to limit data flowing?
-
-by GET [[/user/profiles]]; aren't we exposing all user profiles to client; who can access and maybe modify data. maybe hateous can be helpful here => showing data for intended user only
-
-can we use postman on test servers to hit api?
-do we use hateos? like sending api links in api results?
-
-if user logs out of fb/ changes password, then token previously generated becomes invalid; all apps using token on behalf of users need to make user login again.
+for faking graphql
+https://github.com/APIs-guru/graphql-faker
 
 for integrated api documentation and examples
 https://apigee.com/resources/instagram
@@ -34,6 +29,9 @@ https://apigee.com/resources/instagram
 for rest apis
 https://jsonplaceholder.typicode.com/
 https://my-json-server.typicode.com/
+
+multiple conversion apps:
+https://retool.com/utilities
 
 free nasa apis
 https://api.nasa.gov/

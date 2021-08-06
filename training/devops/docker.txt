@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2015-04-08T15:14:40+05:30
 
 ====== docker ======
@@ -8,10 +8,27 @@ Created Wednesday 08 April 2015
 installation:
 follow https://blog.docker.com/2015/07/new-apt-and-yum-repos/
 
+
+docker network create some-network
+docker run --name some-cont -e ENC_VAR=my-secret-pw -p [host_ip]:[host_port]:[container_port] -v [/host/volume/location]:[/container/storage] --net some-network -d [docker_image:tag]
+
+when running mysql in docker container, and connecting from outside, below fails
+mysql -h localhost -P 3309 -u root -pmy-secret-pw
+need to provide below
+mysql -h localhost -P 3309 --protocol=tcp -u root -pmy-secret-pw
+Because you are running MySQL inside Docker container, socket is not available and you need to connect through TCP. 
+
+
+named volumes are better,
+docker run -v dirName:/container_path someImage
+docker will keep data in host system managed by itself
+
 if docker-compose gives problem use latest compose 
 curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > [[/usr/local/bin/docker-compose]]
 
 https://medium.com/@nagarwal/lifecycle-of-docker-container-d2da9f85959
+
+https://www.youtube.com/watch?v=WmcdMiyqfZs
 
 docker remove stopped containers
 docker rm $(docker ps -q -f status=exited)

@@ -13,7 +13,15 @@ helm chart install appname -> we can reuse config already made by someone
 
 helm cli, helm server -> tiller
 create chart from cli and send it tiller which will distribute configs in k8 cluster. 
-release, rollback, update is possible using helm 
+install, release, rollback, update is possible using helm 
+
+helm install chartname
+helm upgrade chartname
+helm rollback chartname
+
+for common configs across k8s files, we can use template functionality of helm
+for deployment across different env dev, stag, prod - package in helm chart and use
+values.yaml file can be overridden using my-values.yaml which can be overridden using cli
 
 functions written in helm templating language
 

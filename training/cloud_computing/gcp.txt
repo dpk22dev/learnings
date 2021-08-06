@@ -5,6 +5,18 @@ Creation-Date: 2021-02-13T20:25:10+05:30
 ====== gcp ======
 Created Saturday 13 February 2021
 
+you can copy rest api, console command while creating any resoure in gcp web interface
+
+gcloud config set account `ACCOUNT`
+gcloud config set project mypoj
+gcloud auth list #to see list of accounts
+
+gsutil used for storage comand interaction
+gsutil mb gs://some-bucket
 
 gcp lecture
 https://www.youtube.com/watch?v=gud65lqebrc
+after 2:30 vpc
+
+
+learninggcp

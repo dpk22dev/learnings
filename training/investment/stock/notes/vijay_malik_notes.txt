@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-09-22T01:53:40+05:30
 
 ====== vijay malik notes ======
@@ -52,6 +52,11 @@ The deposits that the company has paid to service providers etc. like security d
 
 extinguishment/buyback of shares => increase in EPS
 
+we should have margin of safety by buying at low PE. high PE is risky
+https://www.drvijaymalik.com/hidden-risk-of-investing-in-high-pe-stocks/
+
+various formula with meanings to be used while screening
+https://www.drvijaymalik.com/stocks-buying-checklist/
 
 
 questions

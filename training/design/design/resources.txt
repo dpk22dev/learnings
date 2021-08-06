@@ -1,8 +1,8 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-06-07T18:07:45+05:30
 
-====== books ======
+====== resources ======
 Created Sunday 07 June 2020
 
 theory of datastore systems
@@ -10,3 +10,12 @@ http://book.mixu.net/distsys/single-page.html
 
 
 https://github.com/wx-chevalier/Awesome-CS-Books-and-Digests/tree/master/Infrastructure
+
+https://www.youtube.com/watch?v=CZ3wIuvmHeM
+
+infoQ videos about tech
+https://www.youtube.com/nctv/videos
+
+
+todo
+infoQ videos

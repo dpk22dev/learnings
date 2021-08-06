@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-03T01:15:26+05:30
+
+====== retool ======
+Created Tuesday 03 August 2021
+
+  Navigate to:          [[http://localhost:3000/auth/signup]]    or    [publically_accessible_ip]:3000/auth/signup
+  To STOP Retool, run:  /Users/deepak/retool/retool-onpremise/stop-local-trial
+  To RESTART Retool, run:  [[/Users/deepak/retool/retool-onpremise/local-trial]]
+
+[[http://localhost:3000/]]
+
+https://www.youtube.com/watch?v=lqFgt4_BS6o
+
+
+https://dpk22dev.retool.com/embedded/public/e010ce26-7fc3-4b56-a3cb-791fc01b1ada
+r9mlkbs9nse
+
+todo:
+~~how to run services on local docker and connect with retool~~
+running diff stores in local & 
+showing data from multiple sources, saving data to multiple sources

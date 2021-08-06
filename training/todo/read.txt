@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-06-10T10:38:08+05:30
+
+====== read ======
+Created Thursday 10 June 2021
+
+https://www.digitalocean.com/community/tutorials/an-introduction-to-helm-the-package-manager-for-kubernetes
+https://www.digitalocean.com/community/tutorials/how-to-install-software-on-kubernetes-clusters-with-the-helm-2-package-manager
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-continuous-integration-pipelines-in-jenkins-on-ubuntu-16-04
+
+https://www.digitalocean.com/community/tutorials/an-introduction-to-continuous-integration-delivery-and-deployment
+https://www.digitalocean.com/community/tutorials/an-introduction-to-ci-cd-best-practices
+
+https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes
+https://www.digitalocean.com/community/tutorials/an-introduction-to-service-meshes
+https://istio.io/
+
+https://docs.newrelic.com/docs/telemetry-data-platform/convert-to-metrics/
+
+read building secure systems google book - 52
+DORA
+
+interesting articles
+https://www.youtube.com/watch?v=Wc3UDbYO_b4&list=RDCMUCB12jjYsYv-eipCvBDcMbXw&start_radio=1&t=38
+
+commit across multiple microservices
+managment of states in distributed transactions
+
+https://sre.google/sre-book/table-of-contents/

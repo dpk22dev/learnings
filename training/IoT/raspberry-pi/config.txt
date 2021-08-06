@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-05-30T08:31:22+05:30
+
+====== config ======
+Created Sunday 30 May 2021
+
+http://192.168.3.1/html/advance.html#landevices
+http://192.168.3.1/html/wizard/network.html
+
+get ip of pi from here
+
+ping 192.168.3.8
+
+ssh pi@192.168.3.8
+
+screen resolution issue in pi
+https://www.raspberrypi.org/forums/viewtopic.php?t=216737
+
+it has armv7 processor not x86
+
+
+todo
+file sharing across vnc=
+network sharing across vnc

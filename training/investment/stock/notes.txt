@@ -1,9 +1,35 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-09-25T20:08:11+05:30
 
 ====== notes ======
 Created Friday 25 September 2020
+
+each company is like biology, they die over time.
+
+companies can fall without debt, eg kaiser in US. they can downfall due to tech/management/people interest failures etc. we should know what the product is and how is product doing now, how much useful will it be 3/5/10 years ahead. eg AT&T, Xerox
+looks like buffet says it right, tech companies are hard to predict in next 5/10 years. very fast changes in tech domain can ruin them. eg 2000's bubble high have yet not been recovered.
+
+1964-81 interest rate on bonds rose from 4 to 15% causing dow jones to move 874 to 875 single avg point in 17 years although economy was performing well.
+
+sometimes market can crash and bounce back without reason like 1987 crash. we should be prepared with what businesses to buy.
+
+Even if markets are high, there are businesses which are selling at low P/E, continue buying them. Never go out of market. change asset allocation, change percentage in stocks, but keep investing in market.
+
+PE ratio might not be correct way to judge valuation of a company. instrinsic/fair value, margin of safety
+
+when to buy:
+you can keep sip in great company. whenever there is great opportunity for a company just buy it. it might not come again easily.
+change asset allocation, change percentage in stocks, but keep investing in market.
+
+when to sell:
+when there is change in dynamics of economy, company management, consumer taste which might reflect on company growth & balance sheets of company. 
+when there is better opportunity. you find another company with terrible price.
+
+
+what to look for buy:
+companies which can't be disrupted by technology. like food, railroad with wide moat
+
 
 cash flow statement:
 is the ROE attractive enough to justify? Or is the company better off distributing dividends to shareholders. 

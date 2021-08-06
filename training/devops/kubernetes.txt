@@ -10,11 +10,22 @@ http://www.tothenew.com/blog/getting-started-with-kubernetes/
 http://www.tothenew.com/blog/how-to-install-kubernetes-on-centos/
 http://www.tothenew.com/blog/understanding-kubernetes-architecture-and-setting-up-a-cluster-on-ubuntu/
 
+k8s examples hosted on github
+https://github.com/kubernetes/website/tree/master/content/en/examples
+
+creation to deployments of nodejs app to k8s
+https://www.digitalocean.com/community/tutorial_series/from-containers-to-kubernetes-with-node-js
+
+
 playlist for kubernetes basics
-https://www.youtube.com/watch?v=0rZcYXtbGpc&list=PLot-YkcC7wZ9xwMzkzR_EkOrPahSofe5Q&index=4
+https://www.youtube.com/watch?v=X48VuDVv0do
 
 command cheat sheet
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+we can use kompose to generate kubernetes config files from docker-compose
+https://www.digitalocean.com/community/tutorials/how-to-migrate-a-docker-compose-workflow-to-kubernetes
+not good enough, wrongs the sequencing in generated files X; copy sample files instead probably
 
 minikube provides local kubernetes cluster to play with
 minikube start
@@ -26,12 +37,22 @@ kubectl describe pod
 kubectl attach container-id
 kubectl exec -it container-id bash
 kubectl label pods  pod-id key=value
+kubectl create deployment nginx-dep --image=nginx
 #run a particular image
 kubectl run hazelcast --image=hazelcast:1.1 --port=5701
 kubectl scale --replicas=3 deployment-name
 kubectl describe  services service-name
 kubectl delete
+
+kubectl api-resources --namespace=false(/true)
+
+minikube addons enable ingress // to enable ingress addon in minikube
+
+minikube service mongo-express-service // for external service while running in minikube external ip address is not assigned. to assign this ip we need to tell minikube explicitely, which assigns ip and opens browser
 minikube stop
+
+kubectx k8s-cluster-1
+
 
 we can use --type=LoadBalancer
 
@@ -49,15 +70,28 @@ service discovery happens through labels
 types: cluster-ip, Node port, loadbalancer
 job is controller in k8s — run to completion job, scheduled job
 
+deployment manages a replicaSet manages pod which is abstraction over container
+
+strucuture of k8s config
+kind
+metadata
+spec // accordint to kind
+	template // is a configuration within spec with its own metadata and spec
+status // auto generated and added by k8s
+
+
+based on storage type, spec of persistent-volume can change. PV are not namespaced. 
+
+
+basic k8s
+https://gitlab.com/nanuchi/youtube-tutorial-series.git
+
 todo
 types of services in kubectl
-after
-https://www.youtube.com/watch?v=SOGyvkZKVw0&list=PLot-YkcC7wZ9xwMzkzR_EkOrPahSofe5Q&index=8
-
 https://gist.github.com/kevin-smets/b91a34cea662d0c523968472a81788f7
 
 questions:
-how autoscaling happens, do vm's need to be cut explicitely
-adding of extra node in say ES needs config change, re indexing : how is it done for example done by aws cluster of ES
-how does configuration file shared among pods: changes in cluster state intimated to members -> etcd
-how data files are provided to say mysql pod: shared disk or what?
+what can be done using tf repo in local
+
+
+

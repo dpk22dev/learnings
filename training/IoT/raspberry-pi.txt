@@ -45,8 +45,12 @@ micropython with pico:
 https://makersportal.com/blog/raspberry-pi-pico-tests-with-micropython
 
 
+install kubenetes
+https://opensource.com/article/20/6/kubernetes-raspberry-pi
+
+
 todo
-try [[PiGPIO]] factory to remotely execute scritp on pi
+try PiGPIO factory to remotely execute scritp on pi
 try various input devices
 
 

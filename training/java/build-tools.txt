@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-06-07T23:11:47+05:30
+
+====== build-tools ======
+Created Monday 07 June 2021
+
+intro to gradle
+https://www.youtube.com/watch?v=OFUEb7pLLXw
+
+gradle dependency configuration
+https://www.youtube.com/watch?v=7alCuE7cNVQ
+
+how groovy is used
+http://tutorials.jenkov.com/gradle/tasks.html
+
+create gradle plugin
+https://www.baeldung.com/gradle-create-plugin
+
+gradle dsl documentation
+https://docs.gradle.org/current/dsl/index.html
+
+gradle tasks
+gradle build
+gradle clean
+
+[[./gradlew]] dependencies --configuration compileClasspath
+[[./gradlew]] dependencies --configuration runtimeClasspath
+
+
+
+
+groovy code:
+task hello {
+  group "org.g" // this has to be propery of org.gradle.api.DefaultTask
+  description "some desc"
+   something "zzz" // won't work
+  println "config" // executed in configuration phase
+  doLast { println 'exec' } // executed in execution phase through queue
+  ext.greeting = "whooo"
+  doLast { println "yups $greeting" }
+}
+
+task runJar( type: Exec ){ //this is task of type exec
+	executable 'java' // we need to lookup Exec type in gradle dsl docs
+}

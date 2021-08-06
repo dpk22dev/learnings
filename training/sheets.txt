@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-07-15T00:17:55+05:30
+
+====== sheets ======
+Created Thursday 15 July 2021
+
+sumfs
+iferror
+indirect
+{} - places range at current cell location
+split: split in rows
+transpose: row ↔ coloumns
+trim: trim text around
+vlookup, index, match
+
+
+command + downkey moves to next empty cell
+
+
+control + shift + arrow keys move selection area
+double clicking right edge of formula fill all empty column
+
+vlookup searches in first column of selected range, use index+match for search and returning prev/any column value
+
+sheet!A1:C20
+mastering locking using $ is imp
+dropdown can be created using tricks of indirect method with column name same as named ranges

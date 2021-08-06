@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-07-03T22:35:58+05:30
+
+====== notes ======
+Created Saturday 03 July 2021
+
+use sonarlint, pmd plugins
+
+restdocs to generate rest docs -> asciidoctor toolchain to gen documentation
+@ResponseStatus for fixed status, extend ResponseStatusException coass for dynamic exception
+Assert library has methods which can raise IllegalArgumentException, IllegalStateException etc based on some conditions
+if we are not using spring-mvc/spring-boot we need to configure spring to activate annotation using context:annotation-config, context:component-scan
+
+JsonpControllerAdvice can be used to add jsonp support
+
+@Lazy has to be mentioned at bean definition as well before @Autowired
+
+@Bean(name = "myCustomBeanName") defines name of bean if we extends like class MyBeanName implements BeanNameAware
+
+@EventListener(classes = { ContextStartedEvent.class, ContextStoppedEvent.class }) can be used to take aciton on start, stop, close of context

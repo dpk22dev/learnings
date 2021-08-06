@@ -5,6 +5,52 @@ Creation-Date: 2021-01-08T18:22:38+05:30
 ====== techs ======
 Created Friday 08 January 2021
 
+**__hands on__**
+fe + be end 2 end deployment in cloud
+single app with various combination of techs
+akka java
+webflux java
+websockets + spring boot
+simple plugins for maven, gradle
+system design very basic versions of 
+bootstrap with spring web mvc
+react with spring boot
+adding authentication, authorization
+how hamcrest matcher library is built
 
-interesting articles
-https://www.youtube.com/watch?v=Wc3UDbYO_b4&list=RDCMUCB12jjYsYv-eipCvBDcMbXw&start_radio=1&t=38
+try multi module broken project in maven, gradle
+each env db access
+
+follow someone to know new happening in java, springboot
+try various design patterns
+try unit, component testing
+microservices libs usage
+managment of states in distributed transactions
+
+sharing of data among threads
+
+__LLD__
+try out in editor
+writing lib for framework like spring
+create framework like spring
+create datastores: redis, mongodb, mysql, kafka, cassandra, es
+— single, multinode dbs
+parsing configs - like yaml parser
+very simple language parser/compiler
+
+__HLD__
+high scalablity
+
+
+__projects__
+configurable url to return results based on testing configs
+
+
+
+testing concurrency
+
+
+
+
+
+

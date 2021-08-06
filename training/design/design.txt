@@ -1,7 +1,17 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-05-10T18:39:08+05:30
 
 ====== design ======
 Created Sunday 10 May 2020
 
+scaling system
+fault tolerance
+high availablility
+performance
+backup
+deployment
+security
+logging
+monitoring
+alerting

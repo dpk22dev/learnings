@@ -58,6 +58,8 @@ https://www.equityfriend.com/investment-charts/nifty-pe-chart-nifty-pb-chart-nif
 gross profit, operating income, net income and their ratios
 https://corporatefinanceinstitute.com/resources/knowledge/finance/net-profit-margin-formula/
 
+capitaline provides source of shares data which screener uses
+
 management analysis:
 red herring prospectus of company before IPO contains main vission and info about management
 which can be downloaded from internet
@@ -89,6 +91,17 @@ https://www.safalniveshak.com/value-stocks-using-dcf/
 
 https://www.angelbroking.com/blog/categories/guide-to-fundamental-research
 
+see top investor portfolios, their changes
+https://web.stockedge.com/top-investor-portfolios
+https://trendlyne.com/portfolio/superstar-shareholders/53781/latest/rakesh-jhunjhunwala/#fundamentals-qtr-results
+
+visual effects for first look
+https://simplywall.st/stocks/in/banks/nse-hdfcbank/hdfc-bank-shares
+
+intrinsic valuation of business
+https://www.youtube.com/watch?v=l-T-Vyk2txc
+
+
 warren buffet says:
 interest rates are like gravity on stock market, if low peope will pull money from bonds and put into stock market, if high people will put into bonds instead of stock market. 
 
@@ -100,6 +113,7 @@ psychology cycle: main
 where we stand in cycle is determined by below:
 historcal p/e ratio
 
+we can see crisil report on company for insights of actual business
 
 **todo**
 go through all of : https://www.drvijaymalik.com/all-articles
@@ -108,7 +122,7 @@ https://www.drvijaymalik.com/2015/05/how-many-stocks-you-should-own-in-your-port
 
 questions
 can we be trapped in stoploss
-
+how to calculate intrinsic value of businesses with margin of safety. is there site avail for the same?
 
 
 

@@ -5,6 +5,7 @@ Creation-Date: 2020-10-17T23:31:35+05:30
 ====== terraform ======
 Created Saturday 17 October 2020
 
+
 similar to ansible, infrastructure as a code 
 automate, manage your platform and service that runs on it
 provisioning, configuring the infra ← here terraform helps
@@ -17,9 +18,16 @@ state: current state of infra
 terraform is declarative tool: means instead of defining steps to do, you provide end state to terraform
 core updates/changes config to reach to desired state then interacts with IaaS providers, Paas, SaaS
 
-these providers provide resources which are managed by terraform
+these providers provide resources which are managed by terraform. Each resource type is implemented by a provider, which is a plugin for Terraform that offers a collection of resource types. The provider meta-argument specifies which provider configuration to use for a resource, overriding Terraform's default behavior of selecting one based on the resource type name.
+
+A data block requests that Terraform read from a given data source ("aws_ami") and export the result under the given local name ("example"). The name is used to refer to this resource from elsewhere in the same Terraform module, but has no significance outside of the scope of a module. The data source and name together serve as an identifier for a given resource and so must be unique within a module.
+
+
 
 refresh / plan / apply / destroy
+
+use tfenv for specific version on terraform
+tfenv install 0.12.20
 
 
 terraform 

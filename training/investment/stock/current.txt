@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-08-08T14:29:14+05:30
 
 ====== current ======
@@ -51,5 +51,12 @@ bata india, bajaj finance, finserv, controlptr etc
 
 how to add triggers based on performace of stock
 trigger based on debt and profit - color stocks as green, blue, white, yellow, red for past quarterss
+
+
+problems with copy cat investing
+what if we make some risky investment in companies hold by good investors
+
+research
+IEX, crisil
 
 

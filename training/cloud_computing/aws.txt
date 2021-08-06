@@ -18,5 +18,12 @@ awscli v2 docs
 https://awscli.amazonaws.com/v2/documentation/api/latest/index.html
 
 
+we can search for sdk for specific language
+https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html
+
 aws lecture - solutions architect associate ; 16
 https://www.youtube.com/watch?v=Ia-UEYYR44s
+till 4:37
+
+kubernetes on aws eks
+https://www.youtube.com/watch?v=VeC85k6PAY4

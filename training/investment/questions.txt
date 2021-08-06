@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-03-16T10:25:12+05:30
 
 ====== questions ======
@@ -12,6 +12,11 @@ how to check some fund/share is beating inflation
 terms to understand while purchasing house
 
 questions
+look into indian govt bonds
+impact of money rate fluctuations, oil prices, fiscal, monetary policy, inflation, gdp
+
+
+question for future
 what are fixed income instruments - bonds their practical examples
 how to invest in startups
 how professional manage their portfolio info: tools being used
