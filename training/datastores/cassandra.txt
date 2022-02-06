@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2017-07-20T11:33:08+05:30
 
 ====== cassandra ======
@@ -83,6 +83,8 @@ cqlsh
 Collection types cannot be nested, but frozen collection types can be nested inside frozen or non-frozen collections.
 
 If data already exists for the column, Cassandra indexes the data during the execution of this statement. After the index is created, Cassandra indexes new data for the column automatically when new data is inserted.
+
+Cassandra’s sorted immutable SSTables allow for linear reads, few seeks, and few overwrites, maximizing throughput for HDDs and lifespan of SSDs by avoiding write amplification. By separating the commitlog from the data directory, writes can benefit from sequential appends to the commitlog without having to seek around the platter as reads request data from various SSTables on disk.
 
 
 https://stackoverflow.com/questions/13010225/why-many-refer-to-cassandra-as-a-column-oriented-database
@@ -200,6 +202,7 @@ IHG 400k
 400k x 50 product 2000 k for 1 chain
 marriot
 ...
+
 
 
 

@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-04-09T22:32:03+05:30
 
 ====== mysql ======
@@ -84,6 +84,8 @@ https://stackoverflow.com/questions/33118170/parallel-transactions-in-mysql
 
 generating dummy data
 http://filldb.info/dummy/step1
+
+InnoDB uses clustered primary keys, so the primary key is stored along with the row in the data pages, not in separate index pages. create an additional non-primary index on just the column which will store a copy of that column in index pages which be much faster to scan.
 
 local db connection:
 mysql -h 127.0.0.1 --port=3307 -u root -p
@@ -215,6 +217,9 @@ making them master slave and vice-versa is not enough; to avoid collisions on wr
 The problem is that asynchronous replication will incur collisions and conflicts which needs to be resolved smartly by smartly-written and flawlessly implemented algorithms. You won't have that. Use MySQL cluster setup instead, if you need multi-master operations and can handle the limitations it brings.
 
 looks like multi master has its problems also.
+
+mysql arch
+http://www.datadisk.co.uk/html_docs/mysql/architecture.htm
 
 **locks vs transactions**
 https://stackoverflow.com/questions/4226766/mysql-transactions-vs-locking-tables

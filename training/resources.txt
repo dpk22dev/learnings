@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-01T16:00:41+05:30
+
+====== resources ======
+Created Tuesday 01 February 2022
+
+example postportem template
+https://sre.google/sre-book/example-postmortem/

@@ -5,6 +5,12 @@ git
 ===
 Created Friday 18 July 2014
 
+template blocks in gitlab cicd
+https://jsramblings.com/three-ways-to-reuse-commands-across-gitlab-jobs/
+https://docs.gitlab.com/ee/ci/yaml/#anchors
+https://docs.gitlab.com/ee/ci/yaml/#extends
+
+
 An untracked file is a file that exists in the working tree of a git repository but isn't listed in the index. 
 
 An unstaged is a file that is listed in the index, but the contents of the file in the working tree are different to the contents listed in the index - the sha1 hash of the file in the working tree is different to the sha1 hash for that the same file in the list maintained by the index, usually because the file has been edited since the index was last updated by a checkout, reset or add command.
@@ -16,7 +22,7 @@ use git add to make it tracked, whatever changes you make in tracked files are s
 when you git commit, objects are created index are created for those files 
 
 if you want to not see untracked files put their names in gitignore
-
+	
 for git autocompletion use: source /etc/bash_completion.d/git
 
 changes made to git are visible automatically to netbeans:

@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-05T16:07:06+05:30
+
+====== study ======
+Created Saturday 05 February 2022
+
+Uber: 
+Use Dijkstra algo. For optimization use blocks and apply border connectivity there
+uses GPS signals to find route taken, use Hidden Markov model, uses dp based viterbi alog
+engg channel
+https://www.youtube.com/watch?v=GyS3m5SyRuQ&list=PLLEUtp5eGr7DcknAkGa62w4LmyAfz37Au&t=123s

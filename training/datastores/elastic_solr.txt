@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2015-05-22T18:27:27+05:30
 
 ====== elastic solr ======
@@ -24,7 +24,7 @@ on local:
 /usr/share/elasticsearch/
 /var/lib/elasticsearch/
 
-http://localhost:5601
+[[http://localhost:5601]]
 
 installation of elk on ubutnu
 https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
@@ -38,6 +38,9 @@ ES from bottom up internals
 https://www.elastic.co/blog/found-elasticsearch-top-down
 https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up
 
+sizing estimaitons es
+https://www.elastic.co/blog/found-sizing-elasticsearch#data-flows-and-their-partitioning-strategies
+
 lucene file structure
 https://lucene.apache.org/core/5_1_0/core/org/apache/lucene/codecs/lucene50/package-summary.html#package_description
 
@@ -46,9 +49,6 @@ http://elasticsearch-cheatsheet.jolicode.com/
 
 monitoring
 https://www.datadoghq.com/blog/monitor-elasticsearch-performance-metrics/
-
-arch:
-https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up
 
 series of anatomy of es( google search for rest ):
 https://blog.insightdatascience.com/anatomy-of-an-elasticsearch-cluster-part-i-7ac9a13b05db
@@ -70,12 +70,19 @@ https://sematext.com/blog/x-pack-alternatives/
 uses optimistic concurrency control, provide version number to each record, so that we don't miss anything
 so we don;t need locking documents, which would have been difficult in distributed system
 
-a shard is a single instance of Lucene, and is a complete search engine in its own
-right. Our documents are stored and indexed in shards, but our applications don’t
-talk to them directly. Instead, they talk to an index.
+es index has preconfiguration of  x #shards which can't be changed later. each document is routed to specific shard.
+a shard is a single instance of Lucene. documents are reverse-indexed and flushed to disk in segments(immutable). backgournd merging and cache invalidation keeps on occuring in these segments. indexed elements are marked as deleted and removed on merging segments. updation is deletion + creation of new record in segment.
+
+lucene can provide transaction. Es doesn't do transaction, isolation which is hard, keeping it simple makes it fast. ES maintains transaction log where documents are to be indexed are appended for crash recovery. you can define consistency level while creating index, which requires every/quorum replica to index document before responding. For fully consistent replication has to be made sync or _preference for read query needs to be set to master. Read is not done form quorum nodes.
 
 **es cluster**
-es master slave arch is not there. master only node contains meta data for shards, data nodes contains actual data. master is incharge of cluster wide changes, adding/removing index etc. document level changes are handled by individual nodes.
+es master slave arch is not there. master only node contains meta data for shards, data nodes contains actual data. master is incharge of cluster wide changes, adding/removing index etc. document level changes are handled by individual data nodes. primary shard does changes and asks replicas to write to their index.
+
+for consensus ES has implemented its own zen discovery algo. election happens if ping_timeout happens to select master among master eleigible nodes. for fault detection master pings data/client nodes. Split brain can happen and avoid by setting:
+discovery.zen.minimum_master_nodes = int(# of master eligible nodes/2)+1 
+
+ES creates local idf shard level, no gloval idf. so pagination 50k-50010 pulls 50k*#shards records in PQ sorts them and returns result. use scroll api instead.
+
 
 es uses optimistic concurrency control, user has to decide based on old _version, new _version of document. if we pass _version with query, es will tell us if document has already been updated by other or not.
 
@@ -172,9 +179,9 @@ use
 GET: 
 PUT: insett/update
 DELETE: delete
-http://localhost:9200/<index>/<type>/[<id>]
+[[http://localhost:9200/]]<index>/<type>/[<id>]
 
-http://localhost:9200/movies/movie/_search
+[[http://localhost:9200/movies/movie/_search]]
 
 https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html
 

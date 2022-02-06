@@ -1,11 +1,11 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2015-11-17T18:19:19+05:30
 
 ====== rabbitmq ======
 Created Tuesday 17 November 2015
 
-http://localhost:15672/
+[[http://localhost:15672/]]
 dpk
 times41!
 

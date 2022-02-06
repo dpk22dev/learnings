@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2017-11-28T23:36:46+05:30
 
 ====== redis ======
@@ -20,6 +20,10 @@ redis uses database 0,1,2 etc in single server mode. cluster mode doesn't suppor
 we can dynamically add/remove nodes from cluster; 
 redis distriutes keys based on mod operation, we can send key on same shard using hashtag eg:  {user1000}.following, then only user1000 will be used for hashing
 
+pipelining is technique used by servers to accept multiple requests, process them and send response in single go. so instead of server waiting for each response to be read by client, it collects them in memory and responds back with a single response. This performs well as read/write sync call by user process has to context switch to kernel mode causing time delay. redis, pop3 mail server use this optimization technique. benchmarking on same machine for networked server is not right way because server OS has to context switch betwween server and client, majorly involving context switching time.
+
+https://www.pluralsight.com/guides/redis-as-a-dynamic-interconnecting-datastore
+
 does redis use consistent hashing
 https://stackoverflow.com/questions/50246763/does-redis-cluster-use-consistent-hashing
 
@@ -38,6 +42,10 @@ https://redis.io/documentation
 memory allocation/ deallocation in redis
 https://redis.io/topics/memory-optimization
 
+redlock with timeout and retry can be used deadlock free synchronization
+
+redis can send some keys for cache to client. it can broadcast if cached key changes or for any key changes
+partitioning ± : https://redis.io/topics/partitioning
 
 **questions**
 master-slave vs sentinel vs cluster

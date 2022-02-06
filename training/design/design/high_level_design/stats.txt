@@ -1,8 +1,15 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-01-25T17:15:49+05:30
 
 ====== stats ======
 Created Saturday 25 January 2020
 
  400m tweets per day; 5K/sec daily average; 7K/sec daily peak; >12K/sec during large events
+
+adobe behance used 125 mongo servers to store 20tb data
+48 cx instacnes
+CX : apple 10PB, netflix 420TB, adobe behance 50TB
+CX works in kind of fanout model. low data in mongo, but cx writes in consumers table for easy reads
+adobe behance: mongo -> cx -> neo4j
+33GB in neo4j 

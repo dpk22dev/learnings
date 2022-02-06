@@ -1,11 +1,11 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-12-19T16:02:44+05:30
 
 ====== spark ======
 Created Wednesday 19 December 2018
 
-http://localhost:4040/jobs/
+[[http://localhost:4040/jobs/]]
 
 overview
 https://spark.apache.org/docs/latest/spark-standalone.html

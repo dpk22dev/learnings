@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-09T11:33:23+05:30
+
+====== datastores ======
+Created Sunday 09 January 2022
+
+https://www.linode.com/docs/guides/what-is-nosql/
+
+consistent hashing: instead of hashing keys and distibutring to servers. 
+we create a ring of numbers say 0-2^32. keys are hashed to one of numbers in ring.
+servers are placed on ring and a set of numbers belong to next upcoming server. if server is added or removed only a subset of keys will be moved. but problem is set of keys will still be moved to server next to failed one. to mitigate this, server is give a weight. based on this weight x numbers of virtual nodes are placed on ring on behalf of this server. All keys mapped to those virtual nodes move to same physical server. This scheme well distributes keys across servers in addition/removal of servers.
+also keys are well distributed, but data can be un evenly distributed causing few servers as hotspot.virtual nodes also solves this problem
+
+implementation in java: https://www.fatalerrors.org/a/understanding-and-implementation-of-consistency-hash-algorithm.html
+
+for a distributed system, data can be partitioned and replicated. while considering CAP, consider read/write both. consistecy means data should be consistent can be achieved witouh partitioning & replication, both these make consistency harder in fact
+high avail means SPF shouldn't be there, to acheive this replication is required 
+partition tolerance
+
+we can be consistent with single node. but to achieve high avail, we replicate to different nodes. but this requires 2pc, 3pc and consistency becomes complicated. but network partitioning tolerance is still not there. to achieve it we partition data and put different partions on different nodes. which on partition makes avail or consistency compromised.
+
+comparison of different data stores
+https://medium.com/better-software/apache-cassandra-the-minimum-internals-you-need-to-know-89724603abb2
+
+in master slave or multi master split brain problem will always happen. such systems will lead to CA systems which are hard to scale because disk writes at random location tend to be slow.
+in peer to peer => AP system store sstable in sorted form, fast after indexes
+
+
+
+

@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-06-23T11:16:45+05:30
 
 ====== notes ======
@@ -138,6 +138,35 @@ is static inner class object created with each instance of outer class?
 no they have to be instantiated expliciterly, they are just way of encapsulating related class
 
 >>> logical shift just insert 0's in front, it might not necessarily mean divide by power of 2 if number is already in 2's complement negative form. >> arithmatic shift takes care of 2's complement nature and keeps 1 at first position
+
+private are never, public are always accessible.
+when we create object of class in same package, default, protected members, functions are accessible. but in other package only public ones are accessible. 
+when we inherit class in same package both this.protected, this.default are accessible, but when extended in different package only protected are accessible.
+
+same funciton can not have different return types in any class. that's why while implementing two interfaces 
+
+private, static, final methods are bonded during compile time. Even though private methods can be overriden in inner class by extending outer class. when called runtime polymorphism doesn't apply because of mentioned rule.
+
+runtime polymorphism applies to functions ie method is called of the object reference is pointing to. but in case of member variable, type of reference decides which value will be use not the object. although typecasting can be used to access child class's values.
+
+java uses comparator which has default, static methods which uses comparators class to reverse, NullCOmparator for returns which makes easier to do comparator method call on them... intelligent decision.
+
+Arrays are covariant. we can pass array[string] to funciton with array[object] in params, as string are subclass of object - flexibility
+COllection & generic types are invaraint, we can NOT pass list<String> to  fun with list<Object> in param - compile time type safety
+wildcard gives you flexibility & compile time type safety : Producer Extends Connsumer Source PECS applied to input parameters of function
+https://www.youtube.com/watch?v=V1vQf4qyMXg&t=1344s
+
+use two element enum instead of boolean
+
+in place of runnable we can pass single method of some object
+public void castSpell(Runnable runnable) {}
+wizard.castSpell(goblin::changeSize);
+
+people create interface with single method, users can create lambda function to pass on in place of that interface.
+interface operation(){ doOperation() }
+class Retry<T>{
+	Retry( Operation op ){ this.op = op; // do call op}
+}
 
 
 

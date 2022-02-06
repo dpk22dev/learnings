@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2017-06-26T22:12:59+05:30
 
 ====== mongo ======
@@ -12,11 +12,18 @@ mongo localhost:27017
 
 mongo has dropped support for master slave config, in place use sharded arch
 
+mongo in single server
+database > collection > 
+mongodb stores data in in linked list of extents. pages are on mercy of OS to be swapped out on disk which does it every 60s. index is b-tree pointing to data, it is stored in extents as well. uses journaling to ensure recovery which fsyncs every 100ms. during crash this 100ms worth of data can be lost. journaling is required because data is pushed out of sequence when synced to disk by OS.
+
+
 mongo in cluster
 https://www.linode.com/docs/databases/mongodb/build-database-clusters-with-mongodb
 config/data server: mongod
 query server: mongos
 config server stores meta info about cluster, database, collection, chunks; gets updated on chunk movement, node failures etc. generally 1/3 config servers are used, which remain in-sync using 2PC. query server gets updated on change in config server info. queries are routed to data servers thruogh query servers, sometimes query server aggregate data too.
+data server: data is shared at kept here. database, collection can be sharded through cli
+
 
 3 mongos will behave as sentinel, will add configs server details in config file, add dataserver set
 config server doesn't know about data server
@@ -57,6 +64,11 @@ schema design in mongodb
 https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
 Denormalizing only makes sense when there’s an high ratio of reads to updates.
 how you model your data depends – entirely – on your particular application’s data access patterns
+
+
+problems:
+ok for large reads, bad for writes
+fragmentations
 
 
 capped collection : good for logs, caching

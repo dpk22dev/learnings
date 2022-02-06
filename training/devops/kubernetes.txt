@@ -80,7 +80,7 @@ spec // accordint to kind
 status // auto generated and added by k8s
 
 
-based on storage type, spec of persistent-volume can change. PV are not namespaced. 
+based on storage type, spec of persistent-volume can change//. PV are not namespaced. 
 
 
 basic k8s

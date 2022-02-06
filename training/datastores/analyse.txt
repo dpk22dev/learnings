@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-28T21:49:31+05:30
+
+====== analyse ======
+Created Friday 28 January 2022
+
+installaiton &n basic commands
+architecture
+read, write path
+single & cluster mode
+
+
+todo
+postgress
+cockroachdb
+couchbase
+bigquiery
+h2
+spark
+spanner
+neo4j

@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-05-15T23:38:19+05:30
 
 ====== low level design ======
@@ -7,3 +7,22 @@ Created Friday 15 May 2020
 
 airport runway, atc
 airline reservation system
+design jackson lib
+design coffee machine
+task scheduling in distributes systems
+library
+book my show
+online auction
+in memory rdbms
+stock trading system
+elevator
+json parser
+jira workflow
+parking lot
+airtraffic control
+atm 
+traffic lights
+
+
+design junit, mockito framework
+retryclass that can handle exceptions, operations, retry mechanisms by callers

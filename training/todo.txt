@@ -5,26 +5,29 @@ Creation-Date: 2016-03-02T09:21:11+05:30
 ====== todo ======
 Created Wednesday 02 March 2016
 
-https://www.quora.com/Is-there-a-way-to-schedule-monthly-fund-transfer-using-NEFT-in-HDFC-Netbanking
+~~https://www.quora.com/Is-there-a-way-to-schedule-monthly-fund-transfer-using-NEFT-in-HDFC-Netbanking~~
 
 aim
 max hands on java, end2end deployment
 push regularly into github
 remember arch
 read engineering blogs, software engg books
+java design patterns
 
+jetbrains datagrip overview
 
 p1
+spring microservices projects
+spring security
 run a domain, tech hands on
 app acc to practice
 dockerfile config
 try thhings using helmfile lens
 
-thought process, operations in olx
-operational learnings in olx
-tech learnings in olx
 
 
+
+p2
 
 try running app with kubernetes, helm itegration
 lens integration with gcp, aws
@@ -32,7 +35,6 @@ try simple apps run on gcp infra
 running docker images with env values, mount options, 
 building images using dockerfile
 
-p2
 architect books on youtube
 
 p3
@@ -50,5 +52,9 @@ reading OS, diving into linux kernel and device drivers
 AI and ML etc
 
 
+
+~~thought process, operations in olx~~
+~~operational learnings in olx~~
+~~tech learnings in olx~~
 
 

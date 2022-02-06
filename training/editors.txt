@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2016-04-28T15:47:12+05:30
 
 ====== editors ======
@@ -98,3 +98,8 @@ https://stackoverflow.com/questions/8774024/intellij-working-on-multiple-project
 
 less
 ng jump to line number
+
+datagrip
+command + J : use template
+comand + option + L: beautify script
+

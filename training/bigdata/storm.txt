@@ -1,11 +1,11 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-12-20T14:48:29+05:30
 
 ====== storm ======
 Created Thursday 20 December 2018
 
-http://localhost:8080/index.html
+[[http://localhost:8080/index.html]]
 
 bin/storm nimbus
 bin/storm supervisor
@@ -25,3 +25,4 @@ __quesitons__
 storm vs spark
 
 __todo__
+

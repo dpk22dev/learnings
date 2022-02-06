@@ -9,3 +9,4 @@ psql -h localhost -p 5432 -U sphereuser -d sphere
 
 \d{ t, i, v, S} show tables, indexes, view, system tables 
 \d tablename : gives table info
+

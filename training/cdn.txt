@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-05T11:16:36+05:30
+
+====== cdn ======
+Created Saturday 05 February 2022
+
+akamai:
+delivery config, security config - WAF, [[BotMan]]
+waf : static security rules by OASS like xss, csrf
+bot : identification is difficult. botmanager apk/js has to be included in front end to identify bot
+
+security center: dashboarding & alerting can be applied
+
+client -> security config -> parent nodes( delivery confg) -> site shield nodes -> app LB

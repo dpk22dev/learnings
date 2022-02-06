@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-09-02T12:00:49+05:30
 
 ====== hadoop ======
@@ -44,7 +44,7 @@ after running use:
 localhost:50070
 localhost:8088
 localhost:19888
-http://localhost:8088/cluster
+[[http://localhost:8088/cluster]]
 
 apache hadoop framework ecosystem
 https://hortonworks.com/ecosystems/

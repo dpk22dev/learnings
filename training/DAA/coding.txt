@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2019-04-01T20:09:46+05:30
 
 ====== coding ======
@@ -111,5 +111,5 @@ instead of dp[i-coin][j] we can select coin one by one and update ways till [coi
 in calculating nth ugly number, for popped element when inserting prime multiples of that number we can skip insertion of new number if count+q.size() is already greater than n. Also after inserting new element, if q.size() > n we can pollLast element as it won't be used.
 
 https://leetcode.com/problems/dungeon-game/discuss/699793/JAVA-simple-DP-solution-faster-than-94-with-explaination-video-link.-Simple-CONCISE-easy
-sometimes we have to move from bottom up to build solution as top-down doesn't give the intuitive solution. So here we will be filling 2D array bottom-right to top-left. Be careful of conditions for returning 0 when cumulative sum is [[+ve]] instead of actual sum. It will reduce our requirement of minimum sum required at upper steps.
+sometimes we have to move from bottom up to build solution as top-down doesn't give the intuitive solution. So here we will be filling 2D array bottom-right to top-left. Be careful of conditions for returning 0 when cumulative sum is +ve instead of actual sum. It will reduce our requirement of minimum sum required at upper steps.
 

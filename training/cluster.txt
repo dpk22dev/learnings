@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-07-02T17:52:44+05:30
 
 ====== cluster ======
@@ -8,14 +8,99 @@ Created Monday 02 July 2018
 http://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/
 https://en.wikipedia.org/wiki/Consensus_(computer_science)
 
+concurrent systems:
+https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/djg-materials/ccds-01-08-2122-c.pdf
+https://www.cl.cam.ac.uk/teaching/2021/ConcDisSys/dist-sys-notes.pdf
+
 distributed computing
-https://www.youtube.com/watch?v=yjPBkvYh-ss
+https://www.youtube.com/watch?v=UEAMfLPZZhE&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB
+
+2 generals problem
+both agreed to attack only after confirmation: looks same from gen1's [[PoV]] but different form gen2's [[PoV]]
+gen1 will definitely attack, gen2 will attack on confirmation
+gen1 will only attack after gen2 confirmation, gen will definitely attack
+arbitray chains as No common knowlege. => impossible to have certainity
+merchant ↔ payment g/w ↔ user also have same problem, but it can be resolved because fallback mechanism of network repairing, charges reversal, not dispatching till charges are confirmed, manual intervention can happen
+=> messages can be lost, network issue
+
+byzantine problem
+malicious f, honest generals among x generals can behave in different ways
+=> need 3f+1 generals to tolerate f malicious generals
+=> nodes can be down, network is ok
+
+System behaviour:
+1) network behaviour: reliable( msg is received iff it is sent), fair loss( message can be lost, reordered but will eventually go through ), arbitrary link( malicious user can push fake message)
+
+fair loss -> retry + dedup -> reliable
+arbitrary -> tls -> fair loss
+
+2) Nodes behaviour: fail stop, fail recovery, fail arbitray( malicious node)
+
+3) Timing: synchronous( time taken by msg to arrive has upper bound, execution happens in finite time ), partially synchronous, asynchronous(no timing assumption- msg can be delayed arbitrarily, node can pause execution arbitrarily)
+
+for fault tolerance we need to detect fault. as timeouts can be due to network/node failure we can have eventually perfect fault detector. we can have false positive/negatives for a while. 
+
+physical clock: IAT( international atomic time) based on atomic clocks, GMT based on earth rotation, to make IAT consistent with astronomical observation UTC is used( leap second not same as leap year ). UTC is difficult to maintain so unix time, ISO 8001 human readable. some systems ignore leap second, some system smear 1 sec across day making clock slower/faster & don't need to make changes acc to leap second
+logical clocks: time of day clocks: clocks drift and skew happens which is corrected by querying NTP, PTP and slewing the clock
+nanotime() is monotonic clock so time will always be increasing but slewing can still happen. time is started from some event like system boot.
+
+if happens-before relationship can't be derived, the events are concurrent. happens-before event can be cause of next event causality relation
+
+physical clocks are inconsistent with causality.
+Lamport clock system can be used to decide ordering of events. 
+L(a) < L(b) => a happened before b OR a and b were concurrent, a definitely didn't happen after b
+We can use N(a) node-name for lexicographical comparison when L(a) = L(b)
+to detect which events were concurrent need to use vector clocks which consists of vector of Lamport timestamps
+
+instead of p2p, broadcasts are better way as sender can fail and few nodes might not get messages. 
+ways to broadcast:
+eager broadcast: send msg to everyone O(n^2). very high msgs
+gossip/epidemic br: send msg to x nodes. msg will reach all nodes with high probablty.
+we can add layer of reliability and acheive below modes of broadcast:
+FIFO
+Causal
+Total order:
+single leader approach: nodes need one leader node(sequencer) which defines the order. sender sends msg to leader, leader then FIFO to remaining nodes. but if leader fails we need to switch to another node for leader through consensus. not fault tolerant.
+lamport approach: attach timestamp to each msg & deliver in total order. not fault tolerant as msgs can't be resend in this approach. node failures can fail this approach. 
+
+replication is easy if data is not changing. but for updates
+for exactly once semantic retries + idempotent or deduplicate msg. combination of two or more idempotent operations might not be idempotent. 
+msg are passed to each node with logical timestamps. In replica instead of deleting some value, tombstones are created. Even if replicas have become inconsistent in data. after same time interval anti-antropy makes these nodes consistent.
+
+Both lamport and vector clocks can be used in logical timestamps. 
+lamport: supports total ordering which means we need to discard one entry in case of concurrent writes. as we can't detect concurrent requests in lamport system. this will overwrite one record over the other. this might work ok with few applications. strategy: Last writer win, First writer wins
+vector clock: we can detect concurrent requests, so we can give application both(or multiple) records. strategy: multi value register
+
 
 Examples of applications of consensus include whether to commit a transaction to a database, agreeing on the identity of a leader, state machine replication, and atomic broadcasts.
+
+when we read from replica set after writing. perfect consistency wants write should be successfull from all nodes, but that makes system less fault tolerant. instead we write to all nodes, if quorem say they have written successfully, we are happy. when we read we get response from quorum nodes, we can filter records based on timestamp.
+
+we can use any model of broadcast for replication. we will need to have assumptions about state update functions. SMR( state machine replication ) works for total order broadcast.
+
+It's been proven that no deterministic consensus algo with terminate in asynchronous/crash stop model. paxos/raft work on partially synchronous, crash recovery systems. There are consensus algos for partially synchronous byzantine systems used in blockchains as well.
+
+transactions commits are done leader. failure detection is suspected in some timeout, not right away. problem of two leaders called split brain can happen in cluster. for a message to be delivered leader needs to have quorum ok from followers, only then it delivers message.
+raft: guarantees atmost one leader in a term
+
+consistency has different meaning in diffrent contexts. ACID systems it means state should be consistent after transaction.
+For DS consistency means read-after-write consistency. in context of replication it means same data in replica nodes.
+atomic commit can not tolerate even single fault node. acheived via 2PC. 2PL is for serializability
+There is coordinator which prepare & commit/rollback msgs and gets back reply. if coordinator fails, it can crash recover from its logs & similarly the nodes. but problem can happen if coordinator fails after prepare then other nodes have hanging transaction => remedy is to have fault tolerant 2PC
+fault tolerant 2PC: relies on total order broadcast just like voting
 
 2 or 3PC used in distributed database systems for commit/abort transactions
 2PC is blocking while 3PC puts timeout, frees locks/resources on timeout at least 
 The Three-Phase Commit protocol as a fail-stop model that is able to prevent blocking problem or processes crashing and recover data and dependencies back to original state. Crashes can be detected accurately. If only coordinator fails, cohorts can communicate and know that transaction replied ok to be commited on each cohorts and everyone commits or aborts otherwise. However, the 3PC protocol will not work with network partitions or asynchronous communication. 
+
+serializability : isolation among txn. executing their statements such that result is same as txn are run in some order.
+linearizablity: all replicas look as single unit. read-write quorum are not sufficient for this. eg: it can happen set ops is sent to node1, but is delayed to node2, node3. meanwhile client reads form node2, node3. although quorum will give old value, but acc to linearizability new value was to be given. if we do read repair additionally on finding old data on few nodes, then algo becomes linearizable.
+linearizable CAS can be implemented using total order broadcast.
+
+linearizable system do lots of message passing causing performance bottleneck, leader as single point of failure/scalability bottleneck.
+
+A system can be either consistent(linearizable) or available in presence of network partition. 
+eventual consistency: weaker broadcast like causal, fifo can be used.
 
 for network failure recovery enhanced three-phase commit (E3PC) protocol is used to eliminate.
 

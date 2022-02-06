@@ -1,17 +1,46 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-01-25T17:15:42+05:30
 
 ====== high level design ======
 Created Saturday 25 January 2020
 
-separate write, read paths
+separate write( sync/async), read paths
+discuss resource crunch
+- CPU/memory/network
+discuss failure scenarios
+- application /service level
+- datacenter level / network partitioning
+- disaster recovery
+discuss breakup of services into microservices
+discuss testing
+- use chaos engineering for resiliency
+
+give back open source/ cloud specific solutions  like hadoop / s3, kafka/sqs
+some cases active user count plays important role to optimise index sizes
+for celebrity users precompute feed for the followers, as runtime IO will be large
+
+
+terms:
+streaming rpc
+
 
 questions
 design outlook calendar
 design bubble
 design mmt : airline reservation system
 train reservation system like irctc
+design newrelic
+
+pagerduty
+jira
+zoom
+slack
+gitlab
+honeycomb
+miro
+
+design exponea
 
 overview:
 https://www.freecodecamp.org/news/systems-design-for-interviews/
@@ -34,6 +63,8 @@ twitterr
 https://www.youtube.com/watch?v=wYk0xPP_P_8
 
 
+questions:
+how google s2 geohash library works
 
 
 

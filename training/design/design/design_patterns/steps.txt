@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2019-10-05T14:19:38+05:30
 
 ====== steps ======
@@ -30,10 +30,11 @@ make models to satisfy inheritance among entities, services for actions, control
 for some role/type of action: rules can be coded in app, way to store info about rule in db needs to be thought about
 
 
+try to find abstraction in heirachical objects. think if operations that you are thinking on concrete objects, can they be applied to abstract classes/interfaces. although concrete classes look different but abstraction can be built based on common operations, states.
 
 
-
-
+could not understand
+combinator
 
 
 

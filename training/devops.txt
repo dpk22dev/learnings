@@ -13,3 +13,6 @@ provisioning, deployment, configuration, orchestration
 
 container orchestration engines:
 docker swarm, apache mesos, k8
+
+terraform vs helm
+Terraform describes the way you want your infrastructure and resources to be. Helm explains the way you wish applications to behave in a Kubernetes context.

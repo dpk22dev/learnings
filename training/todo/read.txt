@@ -21,6 +21,26 @@ https://istio.io/
 
 https://docs.newrelic.com/docs/telemetry-data-platform/convert-to-metrics/
 
+dockerfile best practices
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+
+resources suggested by rajesh:
+
+https://www.infoq.com/articles/architecture-trends-2021/
+
+https://gist.github.com/vasanthk/485d1c25737e8e72759f
+
+http://highscalability.com/
+https://github.com/donnemartin/system-design-primer
+
+https://aws.amazon.com/architecture/
+https://aws.amazon.com/solutions/implementations/aws-blueprints/
+
+https://docs.microsoft.com/en-us/azure/architecture/guide/
+https://docs.microsoft.com/en-us/azure/architecture/patterns/
+
+
+
 read building secure systems google book - 52
 DORA
 

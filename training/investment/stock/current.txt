@@ -7,56 +7,53 @@ Created Saturday 08 August 2020
 
 
 titan
-muthot fina
-icicibank
-control protected
-bajaj finance
-vip
-relaxo
+muthot finance X
+icicibank X
+control protected X
+bajaj finance - check
+vip X
+relaxo - grab it when lower than median pe
 hdfc
 hdfc bank
-hdfc amc
-hdfc life
-maruti
-bajaj finserv
+hdfc amc X
+hdfc life - check
+maruti X
+bajaj finserv - check
 
-avanti
-bata
-dmart
-eicher
-excide
-heromoto
-infy
-inox
+avanti - check
+bata X
+dmart X
+eicher X
+excide X
+heromoto X
+infy X
+inox 
 irctc
 itc
-maruti
+maruti X
+pidilite - check
+reliance X
+tcs X
+tech mahindra X
+kotak mahindra X
+titan 
+vip X
+wipro X
+nestle : grab it when lower than median pe
+premium valuations, recent jump in PE very high
+
+dabur: grab it when lower than median pe
+P&G
+
+== keeping ==
+
+itc
+united spirits
 pidilite
-reliance
-tcs
-tech mahindra
-kotak mahindra
-titan
-vip
-wipro
-
-==========
-don't buy now
-
-bajaj finance, finserv, reliance are costly need to be added
-
-put gtts for acc to 3 months market direction
-bata india, bajaj finance, finserv, controlptr etc
+hdfc bank
 
 
-how to add triggers based on performace of stock
-trigger based on debt and profit - color stocks as green, blue, white, yellow, red for past quarterss
 
 
-problems with copy cat investing
-what if we make some risky investment in companies hold by good investors
-
-research
-IEX, crisil
 
 

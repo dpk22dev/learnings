@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2017-07-10T14:33:33+05:30
 
 ====== neo4j ======
@@ -19,7 +19,7 @@ http://www.apcjones.com/arrows/
 dumping data from neo4j container
 https://serverfault.com/questions/835092/how-do-you-perform-a-dump-of-a-neo4j-database-within-a-docker-container
 
-http://localhost:7474/browser/
+[[http://localhost:7474/browser/]]
 u: neo4j
 pass: times11!
 
@@ -31,6 +31,8 @@ https://neo4j.com/docs/operations-manual/current/performance/
 
 neo4j doesn't heirarchical object in properties
 https://stackoverflow.com/questions/40237021/insert-array-of-objects-as-property-into-neo4j
+
+similar to etag in http, graph uses bookmark in session to have causal relationship which is missing in raft algo
 
 graph storage
 graph compute
@@ -47,10 +49,18 @@ post processors
 loggers
 testing
 
+intro to neo4j/grpah dbs
+https://www.youtube.com/watch?v=fOFbDaaCwYo
+https://gauravsarma1992.medium.com/neo4j-storage-internals-be8d150028db
+
+normal RDBMS use 2PC, in which coordinator coordinates commit across multiple nodes. Single point of contention. Research shown that 13% of transactions need to be coordinated as they touch different servers/data. instead use chaining commit transaction, with each node having small responsibility of commit instead of single coordinator. if transaction overlap in single node they can be identified for their sequences. direction of transaction can be changed. even combination of small chains & coordinators can give huge scalability & strong consistency guarantees.
+
 __quest__
 what should be made node, relationship, label
 can we just store data in neo4j or it should be backed by other db
 how it stores data internally
+what is neo4j bad at
+
 
 **todo**
 read book
