@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-23T12:55:35+05:30
+
+====== drools ======
+Created Wednesday 23 February 2022
+
+https://medium.com/@fahimhossain_16989/installing-apache-tomcat-on-macos-mojave-using-homebrew-28ce039b4b2e
+https://vermastuti.medium.com/installing-kie-server-and-workbench-on-apache-tomcat-server-9a0dedaf6715
+
+drools workbench tutorials
+https://www.youtube.com/watch?v=82fMJ105H3s&list=PLcFdo-z-OWIkIu8fZmQkeFfvitRd57XeH
+
+
+
+
+

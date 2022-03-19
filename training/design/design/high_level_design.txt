@@ -5,6 +5,7 @@ Creation-Date: 2020-01-25T17:15:42+05:30
 ====== high level design ======
 Created Saturday 25 January 2020
 
+ask for fr( functional req), nfr
 separate write( sync/async), read paths
 discuss resource crunch
 - CPU/memory/network
@@ -15,15 +16,19 @@ discuss failure scenarios
 discuss breakup of services into microservices
 discuss testing
 - use chaos engineering for resiliency
+mention geographically distributed mysql with master slave for read write split
+
+choice of datastore based on scale, structure of data
 
 give back open source/ cloud specific solutions  like hadoop / s3, kafka/sqs
 some cases active user count plays important role to optimise index sizes
 for celebrity users precompute feed for the followers, as runtime IO will be large
 
 
+
 terms:
 streaming rpc
-
+query engine, multiparser, rate limiter, handler
 
 questions
 design outlook calendar
@@ -41,6 +46,10 @@ honeycomb
 miro
 
 design exponea
+
+multiplayer game
+cricbuzz
+
 
 overview:
 https://www.freecodecamp.org/news/systems-design-for-interviews/

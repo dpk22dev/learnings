@@ -1,0 +1,180 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-13T10:11:19+05:30
+
+====== notes ======
+Created Sunday 13 February 2022
+
+array is object itself in JS
+object access sometimes look very similar to array access
+obj["some key"] = val
+
+even key name can be given dynamically
+obj : {
+ [x] : val
+}
+
+
+property key name will be gen from value name
+fun( name, email ){
+		obj = {
+			name,
+			email,
+		}
+}
+
+typeof {} == typeof []
+to differentiate use Array.isArray(something)
+
+checking a key  exists in object with return type undefined can be risky if key had value as undefined in that object. soln is to use key in obj syntax.
+non-integer properties are listed in creational order
+
+objects are stored and copied “by reference”, whereas primitive are by value.
+
+copying multiple object properties into src object
+Object.assign(user, permissions1, permissions2);
+
+_.cloneDeep(obj) for deep cloning of object
+
+user {
+ sayHi(){} // shothand of sayHi: function(){...}
+}
+
+The value of this is evaluated during the run-time, depending on the context. Arrow functions are special: they don’t have their “own” this. If we reference this from such a function, it’s taken from the outer “normal” function.
+
+to make object creation flexible
+function User(name) {
+  if (!new.target) { // if you run me without new
+	return new User(name); // ...I will add new for you
+  }
+}
+
+optional chaining - for checking deep nested optionanality check, applies to method as well.
+user.address?.street?.lane
+userGuest.admin?.();
+user1?.[key]
+user?.name = "John" // can'tbe used for writing as user.name can lead to undefined
+
+Symbols allow us to create “hidden” properties of an object, that no other part of code can accidentally access or overwrite. they are skipped by fo..in loop, object.key() but copied by object.assign()
+
+sym = Symbol.for("some")
+str = Symbol.keyfor("sym"); //some
+
+js doesn't have operator overloading to add/subtract etc two objects.
+
+If an exception happens in “scheduled” code, like in setTimeout, then try...catch won’t catch it. works for synchronous code. finanlly will always execute before success/failure. even before return statement in try.
+
+A promise is a special JavaScript object that links the “producing code” and the “consuming code” together.
+
+Returning promises allows us to build chains of asynchronous actions.
+
+Promise handling is always asynchronous, as all promise actions pass through the internal “promise jobs” queue, also called “microtask queue
+
+So, async ensures that the function returns a promise, and wraps non-promises in it.
+await works only inside async functions. await makes JavaScript wait until that promise settles and returns its result. It’s just a more elegant syntax of getting the promise result than promise.then. And, it’s easier to read and write.
+
+In modern browsers, await on top level works just fine, when we’re inside a module. But for old browsers, wrap in aync self calling function.
+(async () => {
+  let response = await fetch('/article/promise-chaining/user.json');
+  let user = await response.json();
+  ...
+})();
+
+Like promise.then, await allows us to use thenable objects 
+
+If a promise resolves normally, then await promise returns the result. But in the case of a rejection, it throws the error, just as if there were a throw statement at that line. We can catch that error using try..catch, the same way as a regular throw. I works with Promis.all() as well.
+
+AMD( require.js ), commonJs, UMD module libraries were used before standardization
+
+export default class User{
+}
+this default can be imported using:
+import User from './user.js';
+
+JS engine generates wrapper objects when method on primitive is called.
+
+123456..toString(36) // to directly call toString method on some num
+
+strings are immutable in js. 
+str[0] = 'a' X
+
+if( ~str.indexOf("...") ) // because bitwise of -1 is true
+All strings are encoded using UTF-16 so use str.codePointAt(pos)
+
+An array is a special kind of object. The square brackets used to access a property arr[0] actually come from the object syntax. 
+
+the engine will see that we’re working with the array as with a regular object. Array-specific optimizations are not suited for such cases and will be turned off, their benefits disappear. Methods push/pop run fast, while shift/unshift are slow.
+length property automatically updates when we modify the array. To be precise, it is actually not the count of values in the array, but the greatest numeric index plus one.
+If new Array is called with a single argument which is a number, then it creates an array without items, but with the given length.
+let arr = new Array(20); //length 20
+
+as string is iterable in js, string is both iterable and arraylike
+for (let char of "test") {}
+
+Array.from takes an iterable and return array like
+
+Using objects as keys is one of the most notable and important Map features. The same does not count for Object.
+let map = new Map();
+let visitsCountObj = {}; // try to use an object
+visitsCountObj[ben] = 234; X
+map[ben] = 234; Y
+
+weakhashmap doesn't provide iterable methods like keys(), values(), entries() etc as we don't know when these objects will be garbage collected.
+
+primitive values can't be stored as keys in weakmap, weakset
+
+for iteration over object like map, we can use 
+Object.keys( obj ) // returns real array object instead of iterables
+when you want to do operation on object properties: Object.entries() -> map -> Object.fromEntries() to get back obj
+
+
+let arr = ["John", "conan", "Smith"]
+let [firstName, , surname] = arr;
+let [a, b, c] = "abc";
+let [one, two, three] = new Set([1, 2, 3]);
+
+for (let [key, value] of Object.entries(user)) {
+user = new Map([ ["name" : "asdf"], ]);
+for (let [key, value] of user) {
+
+let [a,b,...c] = ["x", "y", "z", "11", "12"]
+
+let [name = "Guest", surname = "Anonymous"] = ["Julius"];
+
+let {title, width, height} = options; // options.title, options.width and options.height are assigned to the corresponding variables. The order does not matter. 
+
+// { sourceProperty: targetVariable }
+let {width: w, height: h, title} = options;
+// for default values
+let {width = 100, height = 200, title} = options;
+let {width: w = 100, height: h = 200, title} = options;
+
+let title, width, height;
+// error in below line, as js considers as code block
+{title, width, height} = {title: "Menu", width: 200, height: 100};
+({title, width, height} = {title: "Menu", width: 200, height: 100}); // works
+
+nested destructing with nested objects also works 
+
+destructing should be used in fucntion with multiple params: order of arguments need not be remembered.
+function showMenu({title = "Untitled", width = 200, height = 100, items = []})
+showMenu(options);
+showMenu(); // fails as empty object is required, to mitigate this use below
+showMenu({ title = "Menu", width = 100, height = 200 } = {}) 
+
+autocorrection of date happens while adding/subtracting days from date
+
+normal method has access to arguments which contains list of input params to this method. arrow function doesn't have argument.
+rest-params which input rest of params in function is different from ...arr spread operator which expands to items
+
+
+
+
+
+
+
+
+
+
+
+

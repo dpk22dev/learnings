@@ -16,6 +16,8 @@ https://github.com/kubernetes/website/tree/master/content/en/examples
 creation to deployments of nodejs app to k8s
 https://www.digitalocean.com/community/tutorial_series/from-containers-to-kubernetes-with-node-js
 
+https://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/
+netflix oss vs k8s
 
 playlist for kubernetes basics
 https://www.youtube.com/watch?v=X48VuDVv0do
@@ -29,6 +31,12 @@ not good enough, wrongs the sequencing in generated files X; copy sample files i
 
 minikube provides local kubernetes cluster to play with
 minikube start
+sometimes we need to delete existing minikube using 
+minikube delete
+
+kubectl get namespaces
+kubectl config set-context --current --namespace=my-namespace
+
 kubectl apply -f ./deployment.yaml
 kubectl expose deployment tomcat-deployment --type=NodePort
 minikube service tomcat-deployment --url
@@ -50,6 +58,9 @@ minikube addons enable ingress // to enable ingress addon in minikube
 
 minikube service mongo-express-service // for external service while running in minikube external ip address is not assigned. to assign this ip we need to tell minikube explicitely, which assigns ip and opens browser
 minikube stop
+
+kind create cluster // to create cluster
+kind delete cluster
 
 kubectx k8s-cluster-1
 

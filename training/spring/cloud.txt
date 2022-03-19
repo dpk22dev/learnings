@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-07-12T18:19:47+05:30
 
 ====== cloud ======
@@ -19,6 +19,14 @@ zipkin/sleuth: open distributed tracing
 
 Internally, Zuul uses Netflix Ribbon to look up for all instances of the service from the service discovery (Eureka Server).
 
+this page defines cloud application related things required eg: configuration management, service discovery, circuit breakers, intelligent routing, micro-proxy, control bus, one-time tokens, global locks, leadership election, distributed sessions, cluster state
+https://spring.io/projects/spring-cloud
+
+aws cloud spring cloud integration docs
+https://docs.awspring.io/spring-cloud-aws/docs/2.3.1/reference/html/index.html
+
+spring google cloud 
+https://googlecloudplatform.github.io/spring-cloud-gcp/reference/html/index.html
 
 todo:
 internall chhange curency conversion service to use foreex thourhg zuul

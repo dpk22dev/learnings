@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2016-03-10T17:28:18+05:30
 
 ====== cloud computing ======
@@ -84,14 +84,14 @@ https://cloud.google.com/products/calculator/
 
 
 
+configuration management, service discovery, circuit breakers, intelligent routing, micro-proxy, control bus, one-time tokens, global locks, leadership election, distributed sessions, cluster state
 
 
 
 
-
-******************** ************** ********************
-__amazon aws account__
 ****************** ********** ******************
+__amazon aws account__
+**************** ****** ****************
 
 running lamp acc to: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html
 login using ssh -i "wordpress_kp.pem" ec2-user@ec2-52-66-150-192.ap-south-1.compute.amazonaws.com

@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-14T19:28:20+05:30
+
+====== newrelic ======
+Created Monday 14 March 2022
+
+https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/nrql-syntax-clauses-functions/
+
+Metrics: dimensional data is sent here
+There are different kind of events and their corresponding tables are diferent:
+APM events:-
+Transaction: events data
+TransactionError: when exception is thrown in some code path
+Span: trace data
+BrowserEvents:-
+PageView
+

@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-23T13:10:28+05:30
+
+====== servers ======
+Created Wednesday 23 February 2022
+
+tomcat
+brew services start tomcat
+brew services stop tomcat
+
+catalina start
+catalina stop

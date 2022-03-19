@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2019-08-02T23:49:30+05:30
 
 ====== food ======
@@ -25,6 +25,8 @@ lunch
 snack
 dinner+salad
 milk
+
+https://in.pinterest.com/tarladalal/_saved/
 
 increase weight diets:
 https://www.youtube.com/watch?v=RIJ2Jclv9Dg

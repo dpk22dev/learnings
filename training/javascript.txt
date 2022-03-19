@@ -8,6 +8,9 @@ Created Friday 06 May 2016
 **books: **
 object oriented javascript stoyan stefanov 
 
+js tutorial
+https://javascript.info/
+
 **design patterns for javascript:**
 http://www.dofactory.com/javascript/decorator-design-pattern
 
@@ -16,6 +19,7 @@ http://phrogz.net/JS/Classes/OOPinJS.html
 
 **module in js**
 https://medium.freecodecamp.org/javascript-modules-a-beginner-s-guide-783f7d7a5fcc
+https://javascript.info/import-export
 
 writing jquery plugins
 https://learn.jquery.com/plugins/advanced-plugin-concepts/

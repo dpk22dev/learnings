@@ -13,3 +13,7 @@ CX : apple 10PB, netflix 420TB, adobe behance 50TB
 CX works in kind of fanout model. low data in mongo, but cx writes in consumers table for easy reads
 adobe behance: mongo -> cx -> neo4j
 33GB in neo4j 
+
+whatsapp
+2B active monthly users
+65B msg per day

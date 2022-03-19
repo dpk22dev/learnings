@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-02-23T18:30:32+05:30
+
+====== best-practices ======
+Created Wednesday 23 February 2022
+
+micro service arch deosn't mean each team should use its own language/framework
+k8s based microservices is better than netflix oss( bound to java only)
+API first approach to first define schema and then generate code them. helpful in case of change of language. implement methods later on
+try to generate/consume events with defined structure rather than each service call ton of services
+don't let other service connect directly to db. it makes schema change harder
+database, domain endpoint naming should be consistent
+Using API first approach check if index is on the column => it should be automated while creating api
+generate mock clients to write simple tests
+standard health check for all applications
+schemas of all events should be defined before hand in binary. binary schema forces dev to generate code and breakings are recognised at compile time
+producers gaurantee at least once delivery: store data in journal table so that repush can happen on failuer
+consumers should gaurantee idempotency
+journal database is partitioned daily say for 3 days, on fourth day first partition is dropped

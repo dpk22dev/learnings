@@ -19,3 +19,5 @@ JsonpControllerAdvice can be used to add jsonp support
 @Bean(name = "myCustomBeanName") defines name of bean if we extends like class MyBeanName implements BeanNameAware
 
 @EventListener(classes = { ContextStartedEvent.class, ContextStoppedEvent.class }) can be used to take aciton on start, stop, close of context
+
+mvnw, gradlew provide image creation goals which makes it easy to create docker image

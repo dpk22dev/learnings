@@ -6,7 +6,7 @@ Creation-Date: 2022-02-05T11:16:36+05:30
 Created Saturday 05 February 2022
 
 akamai:
-delivery config, security config - WAF, [[BotMan]]
+delivery config, security config - WAF, BotMan
 waf : static security rules by OASS like xss, csrf
 bot : identification is difficult. botmanager apk/js has to be included in front end to identify bot
 

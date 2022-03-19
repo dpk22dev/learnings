@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2018-07-17T22:25:29+05:30
 
 ====== microservices ======
@@ -12,6 +12,9 @@ i guess resource requirement is higher
 
 distributed keystores used in microservices
 https://stackoverflow.com/questions/48635782/zookeeper-vs-eureka-for-microservices
+
+microservices learnings by flow CTO
+https://www.youtube.com/watch?v=j6ow-UemzBc
 
 
 https://www.datawire.io/guide/traffic/circuit-breakers-microservices-properly-use-hystrix/

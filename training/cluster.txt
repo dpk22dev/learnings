@@ -16,7 +16,7 @@ distributed computing
 https://www.youtube.com/watch?v=UEAMfLPZZhE&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB
 
 2 generals problem
-both agreed to attack only after confirmation: looks same from gen1's [[PoV]] but different form gen2's [[PoV]]
+both agreed to attack only after confirmation: looks same from gen1's PoV but different form gen2's PoV
 gen1 will definitely attack, gen2 will attack on confirmation
 gen1 will only attack after gen2 confirmation, gen will definitely attack
 arbitray chains as No common knowlege. => impossible to have certainity

@@ -26,6 +26,14 @@ https://medium.com/better-software/apache-cassandra-the-minimum-internals-you-ne
 in master slave or multi master split brain problem will always happen. such systems will lead to CA systems which are hard to scale because disk writes at random location tend to be slow.
 in peer to peer => AP system store sstable in sorted form, fast after indexes
 
+caching: redis, memcache, hazelcast
+blob like media/images: s3, hdfs, cdn
+text/fuzzy/autocompletion search: ES, Solr
+timeseries for dashboarding and append only logging: openTSDB, influxDb
+reporting for warehousing: hadoop, hive, spark
+structured & acid compliant: SQL stores like mysql, postgress
+unstrcutured document store: mongo, couchdb - different datatypes, queries on diff fields
+ever increasing data, finite set of queries - cx, hbase
 
 
 

@@ -5,3 +5,12 @@ Creation-Date: 2022-02-06T11:18:29+05:30
 ====== geo-databases ======
 Created Sunday 06 February 2022
 
+http://s2geometry.io/about/overview
+
+geohash vs s2
+https://blog.nobugware.com/post/2016/geo_db_s2_geohash_database/
+https://blog.christianperone.com/2015/08/googles-s2-geometry-on-the-sphere-cells-and-hilbert-curve/
+
+googlemaps
+https://www.youtube.com/watch?v=jk3yvVfNvds
+
