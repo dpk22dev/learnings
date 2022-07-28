@@ -1,9 +1,20 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-04-01T13:44:37+05:30
 
 ====== faltu ======
 Created Wednesday 01 April 2020
+
+Sales growth 3Years > 15 AND
+Sales growth 5Years > 15 AND
+Sales growth 7Years > 15 AND
+
+Return on equity > 15 AND
+
+Average return on capital employed 10Years > 15 AND
+Market Capitalization > 1000
+
+
 
 tcs good privagte
 infi 750

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-06-12T18:01:10+05:30
+
+====== redux ======
+Created Sunday 12 June 2022
+
+state management tool with CDS( central datastore )

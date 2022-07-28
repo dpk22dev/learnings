@@ -5,16 +5,28 @@ Creation-Date: 2016-03-02T09:21:11+05:30
 ====== todo ======
 Created Wednesday 02 March 2016
 
-~~https://www.quora.com/Is-there-a-way-to-schedule-monthly-fund-transfer-using-NEFT-in-HDFC-Netbanking~~
 
 aim
+
+https://www.youtube.com/watch?v=YSkULuV0srk&list=PL0azhNeBK66LfZ6uqG6DxR8i2yjd_bYe0
+
 max hands on java, end2end deployment
 push regularly into github
 remember arch
 read engineering blogs, software engg books
 java design patterns
 
-jetbrains datagrip overview
+aws networking:
+https://www.youtube.com/watch?v=gXca5faMp0o&list=PL0azhNeBK66LMfLE995Bi5-1IMZ524n2f
+
+aws advanced networking
+https://www.youtube.com/watch?v=ujPJuF_GZso&list=PL0azhNeBK66KSDh_CkEZldot8wq912TFV
+
+cloud architect
+https://www.youtube.com/watch?v=YSkULuV0srk&list=PL0azhNeBK66LfZ6uqG6DxR8i2yjd_bYe0
+
+
+
 
 p1
 spring microservices projects
@@ -52,7 +64,7 @@ reading OS, diving into linux kernel and device drivers
 AI and ML etc
 
 
-
+~~jetbrains datagrip overview~~
 ~~thought process, operations in olx~~
 ~~operational learnings in olx~~
 ~~tech learnings in olx~~

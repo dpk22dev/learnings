@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2016-04-05T17:50:23+05:30
 
 ====== tomcat ======
@@ -9,10 +9,13 @@ inside tomcat configurations: https://www.ntu.edu.sg/home/ehchua/programming/how
 
 installed at /opt/installs/tomcat/
 conf and startup scripts at above location
-running at http://localhost:8088/
+running at [[http://localhost:8088/]]
 
 server configuration tutorials:
 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html
+
+brew services start tomcat
+
 
 bin/shell scripts call catalina.sh passing various params
 

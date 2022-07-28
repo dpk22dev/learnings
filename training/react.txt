@@ -58,6 +58,12 @@ https://www.youtube.com/watch?v=93p3LxR9xfM
 development:
 install react extension, redux extension
 
+debugging:
+https://www.youtube.com/watch?v=_rnxOD9NKAs
+
+consolidated react repo
+https://github.com/enaqx/awesome-react
+
 __todo__
 advanced guides > hooks > api refs
 
@@ -67,7 +73,6 @@ SSR workign
 react hydrate
 
 ~~async await tut~~
-hooks in react
 react redux tut
 react native tut
 debugging app
@@ -83,7 +88,16 @@ why connect
 memo, portal, fragment usage
 
 
-react redux material ut
 
+~~react hooks~~
+~~redux hooks~~
+connect, thunk
+react/redux browser debugging
+saga
+code walkthrough and old ways of redux
+react redux material ui
+css with react
+testing with react redux
 
-
+Code
+RenderIf

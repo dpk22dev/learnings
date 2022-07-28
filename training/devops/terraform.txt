@@ -13,16 +13,27 @@ deploying app
 
 has 2 input sources:
 tf-config: core part with configurations
-state: current state of infra
+state: current state of infra. Terraform stores output values in its state file
+
+tfvars can contain all the values for variables which don't need to be provided by console
 
 terraform is declarative tool: means instead of defining steps to do, you provide end state to terraform
 core updates/changes config to reach to desired state then interacts with IaaS providers, Paas, SaaS
+
+terraform plan -target="module.s3_bucket"
+terraform apply -target="module.s3_bucket"
 
 these providers provide resources which are managed by terraform. Each resource type is implemented by a provider, which is a plugin for Terraform that offers a collection of resource types. The provider meta-argument specifies which provider configuration to use for a resource, overriding Terraform's default behavior of selecting one based on the resource type name.
 
 A data block requests that Terraform read from a given data source ("aws_ami") and export the result under the given local name ("example"). The name is used to refer to this resource from elsewhere in the same Terraform module, but has no significance outside of the scope of a module. The data source and name together serve as an identifier for a given resource and so must be unique within a module.
 
+data and resource can be found in terraform repo
 
+terraform tutorial
+https://learn.hashicorp.com/tutorials/terraform/state-cli?in=terraform/cli
+
+use cases tutorials:
+https://learn.hashicorp.com/collections/terraform/kubernetes
 
 refresh / plan / apply / destroy
 
@@ -38,3 +49,6 @@ terraform modules
 https://www.youtube.com/watch?v=LVgP63BkhKQ
 
 https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
+
+each terraform module has examples
+https://github.com/terraform-aws-modules/terraform-aws-eks/tree/master/examples

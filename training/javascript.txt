@@ -13,6 +13,8 @@ https://javascript.info/
 
 **design patterns for javascript:**
 http://www.dofactory.com/javascript/decorator-design-pattern
+https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
+https://www.educative.io/blog/ace-javascript-design-patterns-coding-interview
 
 **oops in javascript**
 http://phrogz.net/JS/Classes/OOPinJS.html
@@ -26,6 +28,9 @@ https://learn.jquery.com/plugins/advanced-plugin-concepts/
 
 ecma script 5 specs
 http://www.ecma-international.org/ecma-262/5.1/
+
+why babel is required
+https://stackoverflow.com/questions/39401836/why-do-i-need-babel-js#:~:text=Babel%20is%20responsible%20to%20converting,this%20if%20you%20need%20to.
 
 libs and frameworks: 
 angular
@@ -156,6 +161,11 @@ https://www.youtube.com/watch?v=vn3tm0quoqE
 
 things we can do with npx
 https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
+
+memory leaks in js
+https://sematext.com/blog/nodejs-memory-leaks
+https://blog.risingstack.com/finding-a-memory-leak-in-node-js/
+
 
 run specific command with node version using npx
 npx node@7 -v

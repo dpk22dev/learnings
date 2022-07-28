@@ -9,4 +9,12 @@ psql -h localhost -p 5432 -U sphereuser -d sphere
 
 \d{ t, i, v, S} show tables, indexes, view, system tables 
 \d tablename : gives table info
+\l : list databases
+\c db : swtich to specific db
 
+A database can contain one or multiple schemas and each schema belongs to only one database. a schema is a namespace that contains named database objects such as tables, views, indexes, data types, functions, stored procedures and operators.
+Users can only access objects in the schemas that they own. It means they cannot access any objects in the schemas that do not belong to them.
+
+search_path has $user value which causes logged-in user to search in his name schema.
+
+https://towardsdatascience.com/some-important-key-concepts-to-start-using-postgresql-c6de63ab683f

@@ -93,6 +93,9 @@ https://www7.fmovies.to/
 open github repo
 press . to open in web editor mode
 
+diagram history builder 
+https://mermaid.live/
+
 few good websites
 10 Minute Mail: https://10minutemail.com
 Project Alexandria: http://projectalexandria.net/

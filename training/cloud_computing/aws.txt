@@ -17,6 +17,11 @@ aws --endpoint-url=[[http://localhost:4566]] s3 mb [[s3://test1]]
 awscli v2 docs
 https://awscli.amazonaws.com/v2/documentation/api/latest/index.html
 
+guides and api ref:
+https://docs.aws.amazon.com/index.html
+
+vpc docs
+https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
 
 we can search for sdk for specific language
 https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html
@@ -27,3 +32,29 @@ till 4:37
 
 kubernetes on aws eks
 https://www.youtube.com/watch?v=VeC85k6PAY4
+
+use below command to configure different profiles for different access to accounts:
+aws configure --profile myprofile
+use below command to see different profiles:
+aws configure list
+cat [[~/.aws/credentials]] 
+cat [[~/.aws/config]]
+
+choose specific profiles using:
+export AWS_PROFILE=user1
+aws ec2 describe-instances --profile user1
+
+spring boot to aws:
+create iam user with aws program access, 
+
+existing aws arch:
+https://aws.amazon.com/architecture/
+
+example arch diagrams:
+https://www.gliffy.com/blog/aws-architecture-diagram-examples
+https://aws.amazon.com/architecture/reference-architecture-diagrams/
+
+todo
+https://aws.amazon.com/architecture/reference-architecture-diagrams/
+
+
