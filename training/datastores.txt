@@ -35,5 +35,6 @@ structured & acid compliant: SQL stores like mysql, postgress
 unstrcutured document store: mongo, couchdb - different datatypes, queries on diff fields
 ever increasing data, finite set of queries - cx, hbase
 
-
+discussion about datastores
+https://www.youtube.com/@techdiscussion3617/about
 

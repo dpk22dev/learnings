@@ -5,6 +5,24 @@ Creation-Date: 2020-11-01T21:33:37+05:30
 ====== etf ======
 Created Sunday 01 November 2020
 
+https://www.etfrc.com/VGT
+
+tech US etfs
+VGT: us tech stocks - yes
+OGIG: worldwide tech stocks - no
+wcld: cloud computing companies - no
+smh: semiconductor companies - no
+fdn: costly and no return
+
+s&p 500: VOO
+nasdaq: QQQ has outperformed VOO on long terms
+nasdaq 100: 
+nasdaq fang: for 10 tech index only
+
+
+i think better to focus on 
+
+
 low expnse ratio, high liquidity
 kotak bees 
 motilal oswal nasdaq 100 etf - OK

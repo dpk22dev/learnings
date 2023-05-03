@@ -103,3 +103,30 @@ datagrip
 command + J : use template
 comand + option + L: beautify script
 
+
+vscode
+select text, command + k and command + f
+com + shift + l : place cursor on all highlighted text
+com + opt + up/down arrow : place cursor on up/down lines
+com + opt + shift + left/right : expand selection left and right
+com + shift + up/down : select up / down full page text from cursor position
+com + f : find and replace in full file. select find in selection in widget
+com + shift + f : find and replace across all files
+com + k, com + f: format selection. for full file, select all file and apply this
+opt + click: place cursor where want
+
+
+vscode extensions
+liveserver
+
+
+openboard
+command + shift + i : zoomin 
+command + shift + o : zoomout
+comand + e : eraser
+command + i : pen
+com + j : line
+com +k: txt
+com + 0: zoom to 100%
+com + f: selector
+com + m: marker

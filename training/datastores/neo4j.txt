@@ -9,6 +9,11 @@ Created Monday 10 July 2017
 
 ~~ docker run -d -p 7474:7474 -p 7473:7473 -p 7687:7687 -v /data/docker_neo/neo_docker_import:/var/lib/neo4j/import -v /data/docker_neo/neo_docker_data:/data -v /data/docker_neo/neo_plugins:/var/lib/neo4j/plugins --name neo my_neo4j~~
 
+
+intro to neo4j/grpah dbs
+https://www.youtube.com/watch?v=fOFbDaaCwYo
+https://gauravsarma1992.medium.com/neo4j-storage-internals-be8d150028db
+
 **overriding security of apoc**
  docker run -d -p 7474:7474 -p 7473:7473 -p 7687:7687 -e NEO4J_dbms_security_procedures_unrestricted=apoc.\\\* -v /data/docker_neo/neo_docker_import:/var/lib/neo4j/import -v /data/docker_neo/neo_docker_data:/data -v /data/docker_neo/neo_plugins:/var/lib/neo4j/plugins --name neo my_neo4j
 
@@ -49,9 +54,6 @@ post processors
 loggers
 testing
 
-intro to neo4j/grpah dbs
-https://www.youtube.com/watch?v=fOFbDaaCwYo
-https://gauravsarma1992.medium.com/neo4j-storage-internals-be8d150028db
 
 normal RDBMS use 2PC, in which coordinator coordinates commit across multiple nodes. Single point of contention. Research shown that 13% of transactions need to be coordinated as they touch different servers/data. instead use chaining commit transaction, with each node having small responsibility of commit instead of single coordinator. if transaction overlap in single node they can be identified for their sequences. direction of transaction can be changed. even combination of small chains & coordinators can give huge scalability & strong consistency guarantees.
 

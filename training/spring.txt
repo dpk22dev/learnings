@@ -125,6 +125,9 @@ https://projectreactor.io/docs/core/release/reference/index.html
 to check swagger config is ok:
 http://editor.swagger.io
 
+project reactor
+https://projectreactor.io/docs/core/release/reference/
+
 **questions**
 entity confusion in onetomany and manytoone mapping
 why  few exteded functions/overriding in repositoryy

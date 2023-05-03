@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-03-19T11:51:53+05:30
+
+====== blockchain ======
+Created Sunday 19 March 2023
+
+https://docs.soliditylang.org/en/v0.8.13/
+
+full course: 2
+https://www.youtube.com/watch?v=gyMwXuJrbJQ
+
+metamask extension can be used to create account
+secret recovery phrase can be used ot acess all accounts
+
+etherscan.io
+
+demo website
+https://andersbrownworth.com/blockchain/hash
+https://andersbrownworth.com/blockchain/public-private-keys/keys
+
+https://eth-converter.com/

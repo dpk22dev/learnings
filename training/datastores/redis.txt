@@ -10,6 +10,9 @@ running servers:
  /etc/init.d/redis_6380 start
  /etc/init.d/redis_6381 start
 
+redis arch
+https://architecturenotes.co/redis/
+
 https://stackoverflow.com/questions/37953019/wrongtype-operation-against-a-key-holding-the-wrong-kind-of-value-php
 
 cat redirectlogs | awk -F',' '{print " SET \""$1"\" \""$1"\" \n"}' | redis-cli -p 6381 --pipe
@@ -26,6 +29,7 @@ https://www.pluralsight.com/guides/redis-as-a-dynamic-interconnecting-datastore
 
 does redis use consistent hashing
 https://stackoverflow.com/questions/50246763/does-redis-cluster-use-consistent-hashing
+yes key is hashed to specific slot, this set of slots are mapped to specific node. only specific keys associated with slots associated with node needs to bbe remapped if node goes down.
 
 redis geohash tutorial
 https://www.compose.com/articles/a-quick-guide-to-redis-3-2s-geo-support/
@@ -59,6 +63,31 @@ does it use consistent hashing
 	no
 how list/set are distributed
 
+
+[[QnA]]
+how is redis used in sentinel mode
+Redis Sentinel is a high-availability solution for Redis that provides automated failover and replication. It works by monitoring Redis instances and automatically promoting a replica to a master if the master fails.
+
+In Sentinel mode, Redis is used as a distributed system that is composed of multiple instances. The Sentinels work together to monitor the state of the Redis instances and perform failover operations when necessary.
+
+To use Redis in Sentinel mode, you need to set up a minimum of three Redis instances, one master and two replicas. You also need to set up a Sentinel process for each Redis instance. The Sentinel processes communicate with each other to monitor the Redis instances and coordinate failover operations.
+
+When a Redis instance fails, the Sentinel processes will elect a new master from the available replicas. The new master will then be promoted and the Sentinel processes will update the configuration of the other Redis instances to reflect the new master.
+
+Overall, Redis in Sentinel mode is used to provide high availability and automatic failover for Redis instances. It is a powerful tool for ensuring that Redis remains available even in the face of failures or other issues.
+
+
+does read write split happens in sentinel mode?
+Yes, read-write splitting can happen in Redis Sentinel mode. In Redis Sentinel mode, a client can connect to a Sentinel process and request the address of the current Redis master. The client can then connect to the Redis master and issue read and write commands to it.
+
+However, read-only clients can also connect to the Sentinel process and request the address of a Redis replica. The client can then connect to the replica and issue read commands to it. This allows for read load to be distributed across multiple replicas, which can improve overall system performance.
+
+Redis Sentinel mode can be configured to handle read-write splitting automatically. This can be done by configuring the Sentinel processes to send read-only commands to replicas and write commands to the master. This ensures that read and write load is distributed across the system appropriately.
+
+Overall, Redis Sentinel mode supports read-write splitting and can be configured to handle it automatically. This allows for read and write load to be distributed across the system appropriately and can improve overall system performance.
+
+engineering challeges in redis design
+Data consistency: Redis supports replication and clustering to improve availability and performance, but ensuring data consistency across replicas can be challenging. Redis uses asynchronous replication, which can lead to data inconsistencies if replication lag is not carefully managed.
 
 
 

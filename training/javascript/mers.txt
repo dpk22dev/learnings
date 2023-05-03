@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-03-12T14:40:16+05:30
+
+====== mers ======
+Created Sunday 12 March 2023
+
+while exporting models add check if model already exists otherwise below error might occur:
+OverwriteModelError: Cannot overwrite `Book` model once compiled.
+
+export default mongoose.models.Book || mongoose.model("Book", bookSchema);

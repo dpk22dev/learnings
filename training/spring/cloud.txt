@@ -9,6 +9,8 @@ https://www.nexsoftsys.com/articles/learn-spring-cloud-feign-and-hystrix-circuit
 
 http://www.vinsguru.com/architectural-design-pattern-saga-pattern-implementation-using-kafka/
 
+https://spring.io/blog/2015/07/14/microservices-with-spring
+
 zuul api gateway/ proxy
 eureka: service registry, discovery
 ribbon: client side load balancer

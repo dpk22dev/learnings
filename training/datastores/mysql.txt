@@ -19,6 +19,9 @@ after 4.2B rows uses BIGINT instead of INT , which is slow
 even at 100MB/s it can take hours to read 1TB table
 rnd to decide: key_buffer_size in myisam and  innodb_buffer_pool_size in innodb
 
+advanced RDBMS, concurrency control
+https://www.geeksforgeeks.org/concurrency-control-in-dbms/?ref=lbp
+
 consider nosql/hadoop 
 
 **datatypes in mysql:**
@@ -53,9 +56,6 @@ http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
 **queries per second handled by mysql**
 http://stackoverflow.com/questions/4566714/how-many-mysql-queries-second-can-be-handled-by-a-server
 http://serverfault.com/questions/164980/how-many-selects-per-second-can-a-mysql-server-run
-
-**mysql docs**
-https://dev.mysql.com/doc/internals/en/
 
 **mysql utilities**
 https://dev.mysql.com/doc/mysql-utilities/1.6/en/utils-ha.html

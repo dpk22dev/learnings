@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-11-17T22:52:31+05:30
+
+====== done ======
+Created Thursday 17 November 2022
+
+Lessons from Giant-Scale Services - Eric Brewer, UC Berkeley & Google
+Designs, Lessons and Advice from Building Large Distributed Systems - Jeff Dean, Google
+How to Design a Good API & Why it Matters - Joshua Bloch, CMU & Google
+Principles of Chaos Engineering
+Automate and Abstract: Lessons at Facebook
+Design for Evolution
+Monoliths and Microservices
+High Cohesion and Low Coupling

@@ -16,6 +16,8 @@ https://www.youtube.com/watch?v=CZ3wIuvmHeM
 infoQ videos about tech
 https://www.youtube.com/nctv/videos
 
+microsoft architecture and design patterns
+https://learn.microsoft.com/en-us/azure/architecture/patterns/
 
 todo
 infoQ videos

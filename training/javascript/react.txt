@@ -6,7 +6,7 @@ Creation-Date: 2017-10-02T17:39:48+05:30
 Created Monday 02 October 2017
 
 after redux on tutorialspoint
-[[http://localhost:8081/]]
+http://localhost:8081/
 
 react: props, state and JSX
 gulp: build to convert jsx into javascript
@@ -78,6 +78,17 @@ react native tut
 debugging app
 flex ui 
 
+optimizations:
+useMemo hooks
+move child components in their own files. atleast don't create nested component
+create separate directory for components with their css, test etc and export through index.js file
+use dynamic imports for large projects. use lazy and suspense for lazy loading
+
+gotchas
+setTutorial({ ...tutorial, [name]: value }); // here name is dynamic
+setTutorial({ ...tutorial, [name]: value }); // sets name 
+
+
 __questions__
 how to break into components
 redux: how are reducers which dpend on ajax, or db call used in reducers
@@ -85,7 +96,6 @@ if parent component changes props of child component using state change, will ca
 why reducers should be immutable
 why connect
 
-memo, portal, fragment usage
 
 
 
@@ -101,3 +111,10 @@ testing with react redux
 
 Code
 RenderIf
+
+checkout code
+react redux-toolkit with thunk sample
+https://github.com/bezkoder/redux-toolkit-example-crud-hooks
+
+
+

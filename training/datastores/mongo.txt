@@ -44,7 +44,7 @@ https://ayende.com/blog/162791/on-memory-mapped-files
 mongo cluster
 https://www.alibabacloud.com/blog/high-availability-mongodb-cluster-configuration-solutions_490866
 
-mongo storage internals
+mongo storage internals architecture
 https://stackoverflow.com/questions/9948483/mongodb-database-architecture
 https://2013.nosql-matters.org/bcn/wp-content/uploads/2013/12/storage-talk-mongodb.pdf
 

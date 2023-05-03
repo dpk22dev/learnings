@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-09-03T17:35:32+05:30
 
 ====== todo ======
@@ -7,3 +7,6 @@ Created Thursday 03 September 2020
 
 asciidoc
 JsonInheritance -> json type in render2ari
+
+architecture with java
+https://www.vinsguru.com/

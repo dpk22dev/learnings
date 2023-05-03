@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-03-09T01:15:09+05:30
+
+====== nextjs ======
+Created Thursday 09 March 2023
+
+nextjs app setup
+https://www.youtube.com/watch?v=Iu5aZDqZt8E
+https://github.com/alexeagleson/nextjs-fullstack-app-template
+
+nextjs tutorial with tsx
+https://www.youtube.com/watch?v=46V478kPL3A
+
+wiht jsx
+https://www.youtube.com/watch?v=os_CX9c0mJY&t=182s

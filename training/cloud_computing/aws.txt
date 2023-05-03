@@ -49,12 +49,61 @@ create iam user with aws program access,
 
 existing aws arch:
 https://aws.amazon.com/architecture/
+https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html
 
 example arch diagrams:
 https://www.gliffy.com/blog/aws-architecture-diagram-examples
 https://aws.amazon.com/architecture/reference-architecture-diagrams/
 
-todo
-https://aws.amazon.com/architecture/reference-architecture-diagrams/
+
+solutions architect
+
+workshops
+https://workshops.aws/
+https://explore.skillbuilder.aws/learn
 
 
+syllabus
+https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf
+
+~~https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#security-identity--compliance
+https://chloemcateer.medium.com/aws-solution-architect-associate-exam-study-notes-b6c5884ee500~~
+
+https://medium.com/awesome-cloud/aws-vpc-endpoints-overview-intro-getting-started-guide-91ca23b5af8d
+https://aws.amazon.com/faqs/
+
+~~https://docs.aws.amazon.com/index.html~~
+
+
+test
+https://www.knowledgehut.com/practice_tests/aws-solutions-architect-associate-practice-test-series-1-practice-test/Questions/TS9SVzF3WlA=
+full quest set
+https://www.youtube.com/watch?v=B52DwSvWEGM
+13
+
+ec2, s3, vpc, route53, rds, sqs
+
+IAM
+VPC
+KMS
+SNS, SQS, 
+EFS, EBS
+route 53, cloudfront
+databases
+
+action links
+https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html
+https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-mfa.html
+https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html
+https://aws.amazon.com/s3/features/access-points/
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html
+
+regional vs global vs az services
+https://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/
+
+sequnence of items
+https://medium.com/@annadil.zaman/how-to-study-for-the-aws-cert-in-7-days-8b16ac8bffe8 X
+
+https://github.com/keenanromain/AWS-SAA-C02-Study-Guide X
+https://github.com/leokhoa/Aws-Solution-Architect-Notes#tools-and-services-market-landscape
+https://gist.github.com/leonardofed/bbf6459ad154ad5215d354f3825435dc

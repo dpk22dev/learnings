@@ -9,6 +9,9 @@ zerodha each order type detail info:
 https://kite.trade/docs/kite/orders/
 https://www.youtube.com/watch?v=GbmlvrZEluU
 
+us stocks analysis
+https://www.youtube.com/watch?v=vtC126HQnGQ
+
 market stats:
 https://www.moneycontrol.com/stocks/marketstats/economic_survey/display_graph.php
 
@@ -21,6 +24,9 @@ https://economictimes.indiatimes.com/marketstats/exchange-NSE,pageno-1,pid-256,s
 
 getting started for stocks
 https://www.moneycontrol.com/news/business/markets/classroom-starting-your-stock-market-journey-equity-part-2-4475001.html
+
+good website for stock market analysis
+https://www.equitymaster.com/
 
 for fundamental analysis
 https://tradebrains.in/how-to-do-fundamental-analysis-on-stocks-in-india/

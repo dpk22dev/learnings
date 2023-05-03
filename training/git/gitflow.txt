@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-11-15T16:07:16+05:30
+
+====== gitflow ======
+Created Tuesday 15 November 2022
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+https://www.spritecloud.com/testing-in-a-scrum-team-which-uses-the-gitflow-workflow/
+
+https://softwareengineering.stackexchange.com/questions/344498/where-should-qa-team-do-the-testing-in-gitflow-branching-model
+
+https://about.gitlab.com/blog/2020/03/05/what-is-gitlab-flow/
+
+against git flow
+https://motiooon.medium.com/git-workflow-for-continuous-integration-320b7ab5464c
+https://gitential.com/git-branching-strategies-for-your-team-how-to-choose-the-best/
+https://blog.devgenius.io/choosing-the-right-git-branching-strategy-for-your-team-2a53144fcbdb

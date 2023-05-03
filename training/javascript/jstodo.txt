@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-01-08T11:06:53+05:30
+
+====== jstodo ======
+Created Sunday 08 January 2023
+
+netninja
+materialize
+material UI
+complete react tutorial with redux
+react, redux, firebase app
+tailwind css
+react testing lib
+
+todo
+responsive web design
+css positioning tutorials
+css tips and tricks
+sass tutorial
+webpack for beg
+grunt
+css grid
+mobile first apprach
+
+react query
+react skeleton screens
+
+react router 6, in depth
+make memory game
+
+asynchronous javascript tutorial
+javascript tips & tricks
+javascript es6 
+oauth passportjs
+firebase firestore tut
+webpack & typescript
+
+screencasting
+
+gothrough repos
+https://github.com/Exynize/exynize-platform
+https://github.com/krissnawat/medium-clone-on-node
+
+

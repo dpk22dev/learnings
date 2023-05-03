@@ -8,6 +8,10 @@ Created Thursday 20 July 2017
 cd /opt/installs/apache-cassandra-3.11.2
 
 cassandra cli doessn't accept "" quotes, use ' in string
+
+why cassandra scales internal architecture
+https://medium.com/techlogs/apache-cassandra-the-minimum-internals-you-need-to-know-89724603abb2
+
 official site
 https://docs.datastax.com/en/cassandra/3.0/cassandra/initialize/initSingleDS.html
 cql
@@ -76,8 +80,7 @@ yes cassandra stores data ordered acc to clusterging key. Cassandra achieves per
 https://stackoverflow.com/questions/35708118/where-and-order-by-clauses-in-cassandra-cql
 https://shermandigital.com/blog/designing-a-cassandra-data-model/
 
-why cassandra scales
-https://medium.com/techlogs/apache-cassandra-the-minimum-internals-you-need-to-know-89724603abb2
+
 
 cqlsh
 Collection types cannot be nested, but frozen collection types can be nested inside frozen or non-frozen collections.

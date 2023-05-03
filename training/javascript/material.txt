@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-03-13T22:16:58+05:30
+
+====== material ======
+Created Monday 13 March 2023
+
+here margin, padding multiple of default spacing in theme can be provided
+sx: {{ p: 2, m: 3}}
+subcolor also needs to be provided
+sx: {{ color: "customeColor.superRed" }}
+
+theme can be centralized to change spacing, color etc
+using styled we can override default components

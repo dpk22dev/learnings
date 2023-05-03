@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-02-02T14:29:19+05:30
+
+====== learnings ======
+Created Thursday 02 February 2023
+
+making contrcat changes in last is very cumbersome
+fields like appointmentLocation, storeLocation have to be in consensus with upstreams and aligned
+timestamps have to be nano/milli sec 

@@ -5,6 +5,10 @@ Creation-Date: 2018-06-18T17:24:38+05:30
 ====== kafka ======
 Created Monday 18 June 2018
 
+kafka arch
+https://thehoard.blog/how-kafkas-storage-internals-work-3a29b02e026
+http://cloudurable.com/blog/kafka-architecture-low-level/index.html
+
 https://www.cloudkarafka.com/blog/2016-11-30-part1-kafka-for-beginners-what-is-apache-kafka.html
 
 https://content.pivotal.io/blog/understanding-when-to-use-rabbitmq-or-apache-kafka
@@ -54,9 +58,6 @@ there is auto distribution of partition ownership among consumers
 zookeeper: required for comm among brokers
 Kafka REST Proxy provides a RESTful interface to a Kafka cluster as kafka doesn't provide rest api on its own
 
-kafka arch
-https://thehoard.blog/how-kafkas-storage-internals-work-3a29b02e026
-http://cloudurable.com/blog/kafka-architecture-low-level/index.html
 
 kafka uses replication for in-sync replicas, which can be made master on failure. its not for read balanacing
 we can dynamically change number of partitions, but kafka won't auto redistribute data

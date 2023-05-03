@@ -70,7 +70,7 @@ https://dzone.com/articles/intricacies-of-multi-threading-in-java?fromrel=true
 **Why Functional Interfaces in Java 8 have one Abstract Method?**
 Functional ''Interface'' lets us call an object as if it were a function, which lets us pass verbs(functions) around our program rather than nouns(objects). Implementations of Functional Interface perform a single well-defined action, as any method should, with a name like run, execute, perform, apply, or some other generic verb
 
-**streams **
+**streams** 
 http://winterbe.com/posts/2014/03/16/java-8-tutorial/
 http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
 https://zeroturnaround.com/rebellabs/java-8-streams-cheat-sheet/
@@ -193,7 +193,7 @@ jpa spring-jpa
 http://www.in28minutes.com/jpa-hibernate-tutorial-for-beginners
 https://www.objectdb.com/api/java/jpa jpa reference
 
-h2 db runs at: [[http://localhost:8080/h2-console]]
+h2 db runs at: http://localhost:8080/h2-console
 
 java unit testing:
 http://www.vogella.com/tutorials/JUnit/article.html
@@ -291,6 +291,9 @@ https://docs.oracle.com/javase/jndi/tutorial/TOC.html
 
 java heap dump analysis
 https://stackoverflow.com/questions/2511315/method-for-finding-memory-leak-in-large-java-heap-dumps
+
+design patterns and architecture patterns in java
+https://www.vinsguru.com/
 
 **questions**
 https://stackoverflow.com/search?q=core+java

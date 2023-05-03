@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-04-17T13:09:28+05:30
+
+====== learnings ======
+Created Monday 17 April 2023
+
+have mentor from different domain and have 121 atleast quarterly. have close network of experienced people - improve networking
+- process, product, arch, 
+think on targeting 10x betterment of juniors
+
+with high number of PRs focus on why and what, instead of how

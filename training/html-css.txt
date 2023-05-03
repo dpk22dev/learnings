@@ -1,20 +1,19 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2014-05-23T16:32:47+05:30
 
 ====== html-css ======
 Created Friday 23 May 2014
 
-**html 4 specs**
-https://www.w3.org/TR/REC-html40/cover.html#minitoc
-
-**html dom specification**
-https://www.w3.org/DOM/DOMTR
-https://www.w3.org/TR/DOM-Level-1/expanded-toc.html
-
-
 **html5 apis**
 http://html5index.org/
+
+html css reference cheatsheet
+https://supersimpledev.github.io/references/html-css-reference.pdf
+
+usable resources:
+hero icons
+google fonts
 
 **svg**
 http://tutorials.jenkov.com/svg/index.html
@@ -30,6 +29,8 @@ https://www.frontendhandbook.com/
 
 **complete css**
 https://webdesign.tutsplus.com/series/learn-css-the-complete-guide--cms-1065
+
+https://css-tricks.com/guides/
 
 **why content script and web page script don't interact**
 page dom is shared between them, but they can't call each others functions. first web-page might be using jquery1.2 while extension might be using v1.6 so to avoid conflicts. second extensions use previleged apis accessing user browsing history and data like runtime, chrome etc... while web-page js is sandboxed and has access to html api only. so both can manipulte dom but can't share js objects.
@@ -122,7 +123,7 @@ textarea
 block: tags used to define the structure. such as <div>, <table>, <list>. they have default **display: block**... 
 		so they acquire width of their parent block. they can contain other block and inline elements
 		
-inline: tags used to show the content. such as <p>, <a> . they have default **display: inline... **
+inline: tags used to show the content. such as <p>, <a> . they have default **display: inline...** 
 		so they acquire width according to their content. next element is put just after this element.
 		they can contain inline elements only.
 		
@@ -161,6 +162,9 @@ so space is automatically provided between these block elements
 how css is applied to html elements
 http://snook.ca/archives/html_and_css/css-parent-selectors
 
+tools for html development
+https://angrytools.com/gradient/
+
 specifity play good role in defining css rules:
 http://stackoverflow.com/questions/13532939/how-do-browsers-process-and-apply-css-styles-to-dom-elements
 
@@ -182,6 +186,14 @@ bootstrap css:
 https://getbootstrap.com/docs/4.5/layout/grid/
 Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use .col-4.
 Grid breakpoints are based on minimum width media queries, meaning they apply to that one breakpoint and all those above it (e.g., .col-sm-4 applies to small, medium, large, and extra large devices, but not the first xs breakpoint).
+
+**html 4 specs**
+https://www.w3.org/TR/REC-html40/cover.html#minitoc
+
+**html dom specification**
+https://www.w3.org/DOM/DOMTR
+https://www.w3.org/TR/DOM-Level-1/expanded-toc.html
+
 
 
 __todo__

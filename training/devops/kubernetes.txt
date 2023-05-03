@@ -81,6 +81,10 @@ service discovery happens through labels
 types: cluster-ip, Node port, loadbalancer
 job is controller in k8s — run to completion job, scheduled job
 
+external ip pending for minikube
+minikube tunnel
+https://stackoverflow.com/questions/44110876/kubernetes-service-external-ip-pending
+
 deployment manages a replicaSet manages pod which is abstraction over container
 
 strucuture of k8s config

@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-04-04T13:09:50+05:30
+
+====== AI websites ======
+Created Tuesday 04 April 2023
+
+AI based video links
+
+https://www.futuretools.io/ : get AI tool for your need
+
+https://pictory.ai/?ref=o3e7n
+https://www.deepbrain.io/aistudios generate video using human avatar from text
+https://beta.elevenlabs.io/ text to audio file
+https://stablediffusionweb.com/
+https://vidiq.com/blwmeai/
+https://www.canva.com/en_gb/
+https://www.synthesia.io/?via=fujioka
+https://podcast.adobe.com/enhance adobe podcast: remove noise and enhance audio
+descript: change audio according to text - doesn't work for hindi
+canva: change thumbnails for video
+ai image upscalar
+photopea : free photoshop
+https://www.animaker.com/ make animations
+https://openai.com/product/dall-e-2 dall-e image generator
+https://makeavideo.studio/
+https://www.d-id.com/ D-ID : ai video generator from text. you can add image from midjourney, audio form 11labs and still generate video
+BHuman: deep fake video generator
+how etsy, canva work
+openAI playground to transcribe or chatgpt feature
+MIXO : to generate simple website
+https://artlist.io/ : for royalty free music
+https://aitoolsarena.com/generative-video : video out of image
+https://www.myheritage.com/ai-time-machine : deep story video of character speaking something
+https://www.kaiber.ai/ text based video 
