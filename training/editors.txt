@@ -114,6 +114,7 @@ com + f : find and replace in full file. select find in selection in widget
 com + shift + f : find and replace across all files
 com + k, com + f: format selection. for full file, select all file and apply this
 opt + click: place cursor where want
+com + k,v for markdown preview
 
 
 vscode extensions

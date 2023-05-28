@@ -8,3 +8,6 @@ Created Thursday 02 February 2023
 making contrcat changes in last is very cumbersome
 fields like appointmentLocation, storeLocation have to be in consensus with upstreams and aligned
 timestamps have to be nano/milli sec 
+
+path to s/w architect
+https://medium.com/@nvashanin/the-path-to-becoming-a-software-architect-de53f1cb310a

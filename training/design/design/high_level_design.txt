@@ -5,8 +5,21 @@ Creation-Date: 2020-01-25T17:15:42+05:30
 ====== high level design ======
 Created Saturday 25 January 2020
 
-ask for fr( functional req), nfr
+ask for fr( functional req)
+- ask users of system admin, seller, buyer, analysts etc
+ask for nfr
+- avail 99.9, eventual consistency, push to user, latency percentile, 
+scope closure by must, good to have
 separate write( sync/async), read paths
+**take time to think** and create diagrams
+- find out actors and services( common ones like user, notif, search, inventory, catalogue or productlisting, productdetail, )
+- identify user journey/flows and link them to services
+quantization
+- based on numbers choose and add datastores to services
+- based on numbers add linking between services and choose method of comm. direct call vs queue based vs orchestration vs choreography 
+
+follow PASSMECD( perf, availability, scalability, security, maintainability, extensability, cost, disaster recovery)
+evolve system to microservices
 discuss resource crunch
 - CPU/memory/network
 discuss failure scenarios
@@ -16,7 +29,11 @@ discuss failure scenarios
 discuss breakup of services into microservices
 discuss testing
 - use chaos engineering for resiliency
-mention geographically distributed mysql with master slave for read write split
+discuss optimizations
+- mention geographically distributed mysql with master slave for read write split
+discuss operational excellence & security
+- logging, monitoring, alerting
+- security testing, ddos attacks
 
 choice of datastore based on scale, structure of data
 
@@ -27,8 +44,10 @@ for celebrity users precompute feed for the followers, as runtime IO will be lar
 
 
 terms:
-streaming rpc
-query engine, multiparser, rate limiter, handler
+streaming rpc, query engine, multiparser, rate limiter, handler, ingestor, 
+service names: 
+user, catalogue, inventory, item, search, purchase, pricing, warehouse, logistics, notification, analytics, recommendation, archival, tracking, 
+boxes over services: Order processing system, inventory management system
 
 questions
 design outlook calendar

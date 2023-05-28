@@ -5,6 +5,25 @@ Creation-Date: 2020-05-15T23:38:19+05:30
 ====== low level design ======
 Created Friday 15 May 2020
 
+clarify expectation from this round:
+ask whether its machine coding or LLD.
+- should it be workable code or interviewer want to judge on classes, interfaces and dp used correctly
+ask should you use springboot, jpa framework etc
+
+
+do requirement analysis
+- figure out use cases
+do scope closure
+- find entity, relationships & corresponding classes
+draw UML diagrams for classes
+discuss about extensibility, maintainablity of code
+- design principles like SOLID, DRY and design patterns
+
+
+machine coding round
+https://techwithkp.com/machine-coding-round-what-is-it-how-to-crack-it/
+- main aim is extensible working code with driver class
+
 airport runway, atc
 airline reservation system
 design jackson lib

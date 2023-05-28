@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2015-07-14T17:12:02+05:30
 
 ====== design patterns ======
@@ -23,6 +23,9 @@ State, Strategy, Template, visitor
 
 bridge: is used to segregate abstraction from implementations.eg remote <- customRemote , TV<-sony, uv, different implementations of TV can work with same remote
 decorator: rather than subclassing, we can decorate recursively as many times as wish
+
+GOF design pattern example implementations
+https://springframework.guru/gang-of-four-design-patterns/
 
 uml diagrams:
 https://tallyfy.com/uml-diagram/
